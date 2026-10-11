@@ -1,40 +1,40 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 176,
-   "seconds": 5.06
+   "rows": 177,
+   "seconds": 5.42
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.89
+   "seconds": 0.86
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.88
+   "seconds": 4.24
   },
   "viva-fall-river": {
-   "rows": 259,
-   "seconds": 19.58
+   "rows": 261,
+   "seconds": 18.99
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 6.31
+   "seconds": 11.79
   },
   "town-tiverton": {
-   "rows": 193,
-   "seconds": 0.73
+   "rows": 194,
+   "seconds": 0.7
   },
   "town-dartmouth": {
    "rows": 24,
-   "seconds": 0.45
+   "seconds": 0.36
   },
   "town-somerset": {
    "rows": 12,
-   "seconds": 0.86
+   "seconds": 0.6
   }
  },
  "errors": {},
- "primary_rows": 527,
+ "primary_rows": 530,
  "dropped": {
   "closure": 6,
   "holiday": 14
@@ -68,9 +68,9 @@
   "weekends": 1,
   "weekly": 36,
   "several-a-week": 2,
-  "once": 83,
+  "once": 81,
   "fortnightly": 5,
-  "monthly": 22,
+  "monthly": 24,
   "irregular": 5,
   "daily": 2
  },
@@ -85,9 +85,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 176,
+  "check_total": 177,
   "check_matched": 1,
-  "check_missed_rows": 175,
+  "check_missed_rows": 176,
   "check_missed_series": 56,
   "check_missed": [
    {
@@ -126,6 +126,13 @@
     "rows": 9
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-15T18:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Open Mic",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -151,13 +158,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-16T17:30:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-15T18:30:00-04:00",
     "rows": 8
    },
    {

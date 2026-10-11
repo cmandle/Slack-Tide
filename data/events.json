@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-11T18:52:37.446767+00:00",
+ "generated_at": "2026-10-11T22:32:19.177201+00:00",
  "series_count": 156,
- "occurrence_count": 492,
+ "occurrence_count": 495,
  "series": [
   {
    "id": "35d1f5717a55",
@@ -2579,8 +2579,8 @@
    "url": "https://www.vivafallriver.com/event/zach-guillette-thursdays/2026-10-15/",
    "cost": "",
    "first_start": "2026-10-15T18:00:00-04:00",
-   "last_start": "2026-12-03T18:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -2622,6 +2622,11 @@
     {
      "start": "2026-12-03T18:00:00-05:00",
      "end": "2026-12-03T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T21:00:00-05:00",
      "all_day": false
     }
    ]
@@ -4685,14 +4690,19 @@
    "url": "https://www.vivafallriver.com/event/ya-comics-club/2026-11-12/",
    "cost": "",
    "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 3,
    "occurrences": [
     {
      "start": "2026-11-12T18:00:00-05:00",
      "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T19:00:00-05:00",
      "all_day": false
     }
    ]
@@ -4707,14 +4717,19 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
    "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 3,
    "occurrences": [
     {
      "start": "2026-11-12T18:00:00-05:00",
      "end": "2026-11-12T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T23:59:00-05:00",
      "all_day": false
     }
    ]
