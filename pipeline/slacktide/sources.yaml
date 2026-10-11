@@ -1,0 +1,97 @@
+# Source registry. Every source the pipeline reads is declared here.
+# kind: tribe (WordPress Events Calendar REST) | ical | rss
+# town: default town when the record carries none. Must match config.TOWNS.
+# venue: default venue when the record carries none (single-venue sources such as a library).
+# role: primary | check   (check = used for reconciliation only, never published)
+# Verified-working dates refer to live fetches on 2026-09-20 and 2026-10-11.
+
+- id: explore-new-bedford
+  name: Explore New Bedford
+  kind: tribe
+  url: https://explorenewbedford.org/wp-json/tribe/events/v1/events
+  town: New Bedford
+  role: check
+  note: Aggregator of New Bedford venues. Coverage check only, decided 2026-10-11.
+
+- id: brownell-library
+  name: Brownell Library
+  kind: tribe
+  url: https://brownell-libraryri.org/wp-json/tribe/events/v1/events
+  town: Little Compton
+  venue: Brownell Library
+  role: primary
+  note: Feed sends an empty venue list on every event; the default above fills it.
+
+- id: dnrt
+  name: Dartmouth Natural Resources Trust
+  kind: tribe
+  url: https://dnrt.org/wp-json/tribe/events/v1/events
+  town: Dartmouth
+  role: primary
+
+- id: viva-fall-river
+  name: Viva Fall River
+  kind: tribe
+  url: https://www.vivafallriver.com/wp-json/tribe/events/v1/events
+  town: Fall River
+  role: primary
+
+- id: buzzards-bay-brewing
+  name: Buzzards Bay Brewing
+  kind: tribe
+  url: https://buzzardsbrew.com/wp-json/tribe/events/v1/events
+  town: Westport
+  role: primary
+  note: Site leaks PHP warnings before the JSON body. The tribe connector tolerates this.
+
+- id: little-compton-historical
+  name: Little Compton Historical Society
+  kind: tribe
+  url: https://littlecompton.org/wp-json/tribe/events/v1/events
+  town: Little Compton
+  role: primary
+  enabled: false
+  note: Plugin identified, endpoint not yet tested.
+
+- id: mattapoisett-land-trust
+  name: Mattapoisett Land Trust
+  kind: tribe
+  url: https://mattlandtrust.org/wp-json/tribe/events/v1/events
+  town: Mattapoisett
+  role: primary
+  enabled: false
+  note: Plugin identified, endpoint not yet tested.
+
+- id: town-tiverton
+  name: Town of Tiverton
+  kind: ical
+  url: https://www.tiverton.ri.gov/common/modules/iCalendar/iCalendar.aspx?catID={cat}&feed=calendar
+  categories: [14, 24]
+  town: Tiverton
+  role: primary
+  note: cat 14 is mostly public holidays (filtered); cat 24 is the senior centre programme.
+
+- id: town-dartmouth
+  name: Town of Dartmouth
+  kind: ical
+  url: https://www.dartmouthma.gov/common/modules/iCalendar/iCalendar.aspx?catID={cat}&feed=calendar
+  categories: [14, 24]
+  town: Dartmouth
+  role: primary
+
+- id: town-somerset
+  name: Town of Somerset
+  kind: ical
+  url: https://www.townofsomerset.org/common/modules/iCalendar/iCalendar.aspx?catID={cat}&feed=calendar
+  categories: [14, 23]
+  town: Somerset
+  role: primary
+
+- id: new-bedford-light
+  name: The New Bedford Light
+  kind: rss
+  url: https://newbedfordlight.org/feed/
+  town: New Bedford
+  role: primary
+  enabled: false
+  note: Articles, not events. Stored for a later extraction pass, not published directly.

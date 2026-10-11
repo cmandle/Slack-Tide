@@ -1,0 +1,51 @@
+# Deploys preview/ and site/ to GitHub Pages. Requires Settings > Pages > Source = "GitHub Actions".
+# The preview appears at https://cmandle.github.io/Slack-Tide/preview/ (see CLAUDE.md).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "preview/**"
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble the Pages artifact
+        run: |
+          mkdir -p _pages/preview
+          cp -r preview/. _pages/preview/
+          # site/ is generated in a later step of Phase 1; copy whatever is there.
+          if [ -n "$(ls -A site 2>/dev/null | grep -v '^\.gitkeep$')" ]; then cp -r site/. _pages/; fi
+          # Until site/ exists, the root points at the design preview.
+          if [ ! -f _pages/index.html ]; then
+            printf '%s\n' '<!doctype html>' '<meta charset="utf-8">' '<meta name="robots" content="noindex, nofollow">' \
+              '<meta http-equiv="refresh" content="0; url=preview/">' '<title>Slack Tide</title>' \
+              '<p>Slack Tide is not live yet. <a href="preview/">Design preview</a>.</p>' > _pages/index.html
+          fi
+          touch _pages/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

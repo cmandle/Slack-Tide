@@ -1,0 +1,10 @@
+<br />
+<b>Warning</b>:  Attempt to read property "ID" on null in <b>/home/36/01/2920136/web/wp-content/themes/u-design/functions.php</b> on line <b>1407</b><br />
+<br />
+<b>Warning</b>:  Attempt to read property "ID" on null in <b>/home/36/01/2920136/web/wp-content/themes/u-design/functions.php</b> on line <b>1407</b><br />
+{"events":[
+ {"id":101,"title":"2026 Summer Concert Series","start_date":"2099-01-03 19:00:00","end_date":"2099-01-03 21:00:00","all_day":false,"url":"https://buzzardsbrew.com/event/a/","cost":"Free","venue":{"venue":"Buzzards Bay Brewing","city":"Westport"},"categories":[{"name":"Music"}]},
+ {"id":102,"title":"Open Mic Jam Sesh FRIDAYS","start_date":"2099-01-02 21:00:00","end_date":"2099-01-02 23:00:00","all_day":false,"url":"https://buzzardsbrew.com/event/b/","cost":"","venue":{"venue":"Buzzards Bay Brewing","city":"Westport"},"categories":[]},
+ {"id":103,"title":"Open Mic Jam Sesh FRIDAYS","start_date":"2099-01-09 21:00:00","end_date":"2099-01-09 23:00:00","all_day":false,"url":"https://buzzardsbrew.com/event/b/","cost":"","venue":{"venue":"Buzzards Bay Brewing","city":"Westport"},"categories":[]},
+ {"id":104,"title":"Open Mic Jam Sesh FRIDAYS","start_date":"2099-01-16 21:00:00","end_date":"2099-01-16 23:00:00","all_day":false,"url":"https://buzzardsbrew.com/event/b/","cost":"","venue":{"venue":"Buzzards Bay Brewing","city":"Westport"},"categories":[]}
+],"total":4,"total_pages":1}
