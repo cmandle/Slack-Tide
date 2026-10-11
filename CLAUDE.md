@@ -44,13 +44,17 @@ Ruled out: Bandsintown (no open API, aggregation prohibited), Gannett papers (RS
 
 ## Next steps, in order
 
-1. First live run: `cd pipeline && pip install -e ".[dev]" && pytest && slacktide run`. Expect the fixtures to have missed things. Fix, rerun.
-2. Push to `cmandle/Slack-Tide`, enable GitHub Pages with source "GitHub Actions", trigger `ingest.yml` by hand once.
+Steps 1 and 2 were completed on 2026-10-11: first live run, fixes, push, Pages, and a manual `ingest.yml` run that committed `data/`. From here the to-do list lives in GitHub Issues under the milestone "Phase 1: data spine" at https://github.com/cmandle/Slack-Tide/milestone/1, one issue per item below plus the findings from the first live run. Check there before starting work; update the issue, not this list. Labels: source, pipeline, site, ops, taxonomy, quick win.
+
+1. Done. First live run: `cd pipeline && pip install -e ".[dev]" && pytest && slacktide run`.
+2. Done. Push to `cmandle/Slack-Tide`, enable GitHub Pages with source "GitHub Actions", trigger `ingest.yml` by hand once.
 3. Add the remaining CivicPlus towns and test the two untested Tribe endpoints in `sources.yaml` (`enabled: false`).
 4. WhoFi connector.
-5. Generate `site/` from `data/events.json`, matching the design in `preview/`: cream `#FBF8F1`, ink `#2E2A22`, sage `#4A6B4E`, Plus Jakarta Sans, eight muted category colours.
+5. Generate `site/` from `data/events.json`, matching the design in `preview/`: cream `#FBF8F1`, ink `#2E2A22`, sage `#4A6B4E`, Plus Jakarta Sans, eight muted category colours. The approval step (a person approves what goes live) must be designed first; it has its own issue.
 6. Haiku batch classifier replacing the rule classifier.
 7. Diffbot free tier for Tier 2 sources with no feed; Firecrawl as fallback.
+
+Measured on the first live run, 2026-10-11: 527 rows from eight sources, 156 series across seven towns; weekend gate 8 series across 3 towns against the target of 50 across 5; the 56 series Explore New Bedford has that we lack are the New Bedford venue connectors to build next.
 
 ## Conventions
 
