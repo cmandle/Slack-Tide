@@ -1,0 +1,493 @@
+{
+ "sources": {
+  "explore-new-bedford": {
+   "rows": 176,
+   "seconds": 5.06
+  },
+  "brownell-library": {
+   "rows": 22,
+   "seconds": 0.89
+  },
+  "dnrt": {
+   "rows": 14,
+   "seconds": 3.88
+  },
+  "viva-fall-river": {
+   "rows": 259,
+   "seconds": 19.58
+  },
+  "buzzards-bay-brewing": {
+   "rows": 3,
+   "seconds": 6.31
+  },
+  "town-tiverton": {
+   "rows": 193,
+   "seconds": 0.73
+  },
+  "town-dartmouth": {
+   "rows": 24,
+   "seconds": 0.45
+  },
+  "town-somerset": {
+   "rows": 12,
+   "seconds": 0.86
+  }
+ },
+ "errors": {},
+ "primary_rows": 527,
+ "dropped": {
+  "closure": 6,
+  "holiday": 14
+ },
+ "series": 156,
+ "by_town": {
+  "Fall River": 77,
+  "Tiverton": 34,
+  "Dartmouth": 22,
+  "Somerset": 10,
+  "Little Compton": 11,
+  "New Bedford": 1,
+  "Westport": 1
+ },
+ "by_category": {
+  "Food & Drink": 8,
+  "Markets & Fairs": 1,
+  "(unclassified)": 34,
+  "Sports & Recreation": 7,
+  "Volunteering & Causes": 2,
+  "Outdoors & Nature": 14,
+  "Library & Talks": 27,
+  "Civic & Town Meetings": 28,
+  "Arts & Theatre": 7,
+  "Music": 15,
+  "Family & Children": 10,
+  "Education & Workshops": 2,
+  "Museums & Exhibitions": 1
+ },
+ "by_cadence": {
+  "weekends": 1,
+  "weekly": 36,
+  "several-a-week": 2,
+  "once": 83,
+  "fortnightly": 5,
+  "monthly": 22,
+  "irregular": 5,
+  "daily": 2
+ },
+ "weekend_gate": {
+  "saturday": "2026-10-17",
+  "series": 8,
+  "towns": {
+   "Fall River": 6,
+   "Little Compton": 1,
+   "Dartmouth": 1
+  },
+  "passes": false
+ },
+ "reconcile": {
+  "check_total": 176,
+  "check_matched": 1,
+  "check_missed_rows": 175,
+  "check_missed_series": 56,
+  "check_missed": [
+   {
+    "title": "Shakespeare in New Bedford: Hamlet",
+    "venue": "Rotch-Jones-Duff House & Garden Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-15T19:30:00-04:00",
+    "rows": 24
+   },
+   {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-10-11T21:00:00-04:00",
+    "rows": 17
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-10-14T18:30:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-11T14:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-12T14:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-13T20:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "SnapLab: Photography Studio Sessions",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-13T18:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-14T18:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T17:30:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-15T18:30:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T18:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Boo at the Zoo",
+    "venue": "Buttonwood Park Zoo",
+    "town": "New Bedford",
+    "first_start": "2026-10-11T10:00:00-04:00",
+    "rows": 5
+   },
+   {
+    "title": "Monthly Artists Share!",
+    "venue": "Gallery X",
+    "town": "New Bedford",
+    "first_start": "2026-10-13T18:30:00-04:00",
+    "rows": 3
+   },
+   {
+    "title": "A Charlie Brown Christmas - Live On Stage at The Z",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-12-05T02:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Exit 27: Underground Dance Party",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T22:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Octave Avenue Open Mic",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T15:30:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Rhythm Is Going To Ge You",
+    "venue": "Fort Taber Community Center",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T19:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "The Ancestor Hour: Roots & Research Club",
+    "venue": "New Bedford Free Public Library",
+    "town": "New Bedford",
+    "first_start": "2026-10-24T13:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "A HALLOWEEN YOGA EXPERIENCE - CHASING AWAY YOUR SHADOW",
+    "venue": "YOGA ES VIDA COLLECTIVE",
+    "town": "New Bedford",
+    "first_start": "2026-10-31T10:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Art Talks! May Babcock",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-12-02T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Art from the Inside - Opening Night!",
+    "venue": "New Bedford Free Public Library",
+    "town": "New Bedford",
+    "first_start": "2026-10-15T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Author Book Talk: Janna Malamud Smith",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-29T12:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Author Book Talk: Jen Rose Smith",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-19T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Balance and Swing Contradance",
+    "venue": "Gallery X",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Boundless: The Book as Art",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T00:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Celebrate National Authors Day with Write With Community!",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T11:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Fall Open Studios",
+    "venue": "Hatch Street Studios",
+    "town": "New Bedford",
+    "first_start": "2026-11-14T11:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "First Friday: Sharks Come Cruisin' with the Whale Guitar",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-12-04T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "First Friday: The Art of Hip Hop",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-06T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Fort Taber~Fort Rodman Military Museum & Veterans Memorial Speaker Series",
+    "venue": "Fort Taber-Fort Rodman Military Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-18T14:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Hadestown Broadway National Tour at The Zeiterion",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-15T19:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Hand Building with Clay: Beyond the Wheel",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-27T17:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Movement at the Museum",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-13T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "NBSO Presents \"Goosby Plays Brahms\"",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-21T19:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Name Change Clinic with South Coastal Counties Legal Services",
+    "venue": "New Bedford Free Public Library",
+    "town": "New Bedford",
+    "first_start": "2026-11-17T18:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "National Authors' Day 2026",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T00:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "National Award-Winning Author, Nathaniel Philbrick, will discuss his newest book, THE RUSH at Spinner Publications Celebrates 45 Years \"Author Talk\"",
+    "venue": "The Steeple Playhouse",
+    "town": "New Bedford",
+    "first_start": "2026-11-18T18:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "New Ecologies: May Babcock",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-20T00:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "PRINTMAKING FOR THE HOLIDAYS",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-18T17:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "The Ancestor Hour: Roots & Research Club",
+    "venue": "New Bedford Public Library",
+    "town": "New Bedford",
+    "first_start": "2026-11-07T13:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "The Ten Commandments: Silent Film with Live Organ Accompaniment by Peter Krasinski",
+    "venue": "SaintAnthonyofNewBedford",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "WHEEL THROWING",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-26T17:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "WREATH MAKING WORKSHOP",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-21T11:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Walking Tour: The History of New Bedford Harbor",
+    "venue": "New Bedford Whaling National Historical Park",
+    "town": "New Bedford",
+    "first_start": "2026-10-11T10:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Wicked Sing-Along at The Z",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T14:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Witches' Ball",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-10-24T19:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Yoga Nidra & Affirmation Creation Workshop",
+    "venue": "YOGA ES VIDA COLLECTIVE",
+    "town": "New Bedford",
+    "first_start": "2026-10-11T10:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents MARIACHI HERENCIA DE MEXICO: DÍA DE MUERTOS TOUR",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-10-17T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents MYSTIC PIZZA: A NEW MUSICAL",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-10-30T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents Mariza",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-10-23T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents Parsons Dance",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-07T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents ROCKY HORROR PICTURE SHOW WITH LIVE SHADOWCAST BY RKO ARMY",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-10-31T19:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents THE PRICE IS RIGHT LIVE - ON STAG",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-10-29T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents The Lodger with organist Juan Cardona, Jr.",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-10-18T14:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Speakeasy's Broadway Piano Bar Afternoon",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Stage Door Live Presents Colby James & The Ramblers",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-05T19:30:00-05:00",
+    "rows": 1
+   }
+  ],
+  "check_towns": [
+   "New Bedford"
+  ],
+  "primary_only_count": 0,
+  "primary_only_series": 0,
+  "coverage_ratio": 0.006
+ }
+}

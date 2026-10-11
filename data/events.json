@@ -1,0 +1,5119 @@
+{
+ "generated_at": "2026-10-11T18:52:37.446767+00:00",
+ "series_count": 156,
+ "occurrence_count": 492,
+ "series": [
+  {
+   "id": "35d1f5717a55",
+   "title": "Weekend Brunch",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/weekend-brunch/2026-10-11/",
+   "cost": "",
+   "first_start": "2026-10-11T10:00:00-04:00",
+   "last_start": "2026-12-06T10:00:00-05:00",
+   "count": 17,
+   "cadence": "weekends",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-11T10:00:00-04:00",
+     "end": "2026-10-11T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-17T10:00:00-04:00",
+     "end": "2026-10-17T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-18T10:00:00-04:00",
+     "end": "2026-10-18T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-24T10:00:00-04:00",
+     "end": "2026-10-24T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-25T10:00:00-04:00",
+     "end": "2026-10-25T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-31T10:00:00-04:00",
+     "end": "2026-10-31T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T10:00:00-05:00",
+     "end": "2026-11-01T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-07T10:00:00-05:00",
+     "end": "2026-11-07T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-08T10:00:00-05:00",
+     "end": "2026-11-08T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-14T10:00:00-05:00",
+     "end": "2026-11-14T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-21T10:00:00-05:00",
+     "end": "2026-11-21T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-28T10:00:00-05:00",
+     "end": "2026-11-28T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-05T10:00:00-05:00",
+     "end": "2026-12-05T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T12:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8c160f8b93d5",
+   "title": "Poppin' Prosecco with Primo! Brunch",
+   "venue": "Primo on Water Street",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/poppin-prosecco-with-primo-brunch/2026-10-11/",
+   "cost": "",
+   "first_start": "2026-10-11T10:00:00-04:00",
+   "last_start": "2026-12-06T10:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-10-11T10:00:00-04:00",
+     "end": "2026-10-11T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-18T10:00:00-04:00",
+     "end": "2026-10-18T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-25T10:00:00-04:00",
+     "end": "2026-10-25T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T10:00:00-05:00",
+     "end": "2026-11-01T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-08T10:00:00-05:00",
+     "end": "2026-11-08T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e9ad9df618ac",
+   "title": "Fall River Farmers & Artisans Market",
+   "venue": "NoMa/Purchase St. Plaza",
+   "town": "Fall River",
+   "category": "Markets & Fairs",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/fall-river-farmers-artisans-market/2026-10-11/",
+   "cost": "",
+   "first_start": "2026-10-11T11:00:00-04:00",
+   "last_start": "2026-10-25T11:00:00-04:00",
+   "count": 3,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-10-11T11:00:00-04:00",
+     "end": "2026-10-11T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-18T11:00:00-04:00",
+     "end": "2026-10-18T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-25T11:00:00-04:00",
+     "end": "2026-10-25T15:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "49ea4bd6a62c",
+   "title": "Matt Silva Sunday Funday",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/matt-silva-sunday-funday/2026-10-11/",
+   "cost": "",
+   "first_start": "2026-10-11T16:00:00-04:00",
+   "last_start": "2026-12-06T16:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-10-11T16:00:00-04:00",
+     "end": "2026-10-11T19:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-18T16:00:00-04:00",
+     "end": "2026-10-18T19:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-25T16:00:00-04:00",
+     "end": "2026-10-25T19:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T16:00:00-05:00",
+     "end": "2026-11-01T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-08T16:00:00-05:00",
+     "end": "2026-11-08T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-15T16:00:00-05:00",
+     "end": "2026-11-15T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T16:00:00-05:00",
+     "end": "2026-11-22T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T16:00:00-05:00",
+     "end": "2026-11-29T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T16:00:00-05:00",
+     "end": "2026-12-06T19:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "ee5aab63f527",
+   "title": "Functional Fitness",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-12T09:00:00-04:00",
+   "last_start": "2026-12-09T00:00:00-05:00",
+   "count": 18,
+   "cadence": "several-a-week",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-12T09:00:00-04:00",
+     "end": "2026-10-12T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-14T00:00:00-04:00",
+     "end": "2026-10-14T00:00:00-04:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-10-19T09:00:00-04:00",
+     "end": "2026-10-19T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T00:00:00-04:00",
+     "end": "2026-10-21T00:00:00-04:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-10-26T09:00:00-04:00",
+     "end": "2026-10-26T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T00:00:00-04:00",
+     "end": "2026-10-28T00:00:00-04:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T00:00:00-05:00",
+     "end": "2026-11-04T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T00:00:00-05:00",
+     "end": "2026-11-11T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T00:00:00-05:00",
+     "end": "2026-11-18T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T00:00:00-05:00",
+     "end": "2026-11-25T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T00:00:00-05:00",
+     "end": "2026-12-02T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T00:00:00-05:00",
+     "end": "2026-12-09T00:00:00-05:00",
+     "all_day": true
+    }
+   ]
+  },
+  {
+   "id": "5a6902aea5cc",
+   "title": "TOPS",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-12T09:00:00-04:00",
+   "last_start": "2026-12-07T09:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-12T09:00:00-04:00",
+     "end": "2026-10-12T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-19T09:00:00-04:00",
+     "end": "2026-10-19T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T09:00:00-04:00",
+     "end": "2026-10-26T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T11:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "eb9c80990cb1",
+   "title": "Quilting for Charity",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Volunteering & Causes",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-12T10:00:00-04:00",
+   "last_start": "2026-12-07T10:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-12T10:00:00-04:00",
+     "end": "2026-10-12T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-19T10:00:00-04:00",
+     "end": "2026-10-19T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T10:00:00-04:00",
+     "end": "2026-10-26T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T10:00:00-05:00",
+     "end": "2026-11-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:00:00-05:00",
+     "end": "2026-11-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:00:00-05:00",
+     "end": "2026-11-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:00:00-05:00",
+     "end": "2026-11-23T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:00:00-05:00",
+     "end": "2026-11-30T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:00:00-05:00",
+     "end": "2026-12-07T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a04898c37ccd",
+   "title": "Senior Fitness with Terri",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-12T10:15:00-04:00",
+   "last_start": "2026-12-07T10:15:00-05:00",
+   "count": 12,
+   "cadence": "several-a-week",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-12T10:15:00-04:00",
+     "end": "2026-10-12T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-16T13:00:00-04:00",
+     "end": "2026-10-16T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-19T10:15:00-04:00",
+     "end": "2026-10-19T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T13:00:00-04:00",
+     "end": "2026-10-23T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T10:15:00-04:00",
+     "end": "2026-10-26T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T13:00:00-04:00",
+     "end": "2026-10-30T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T10:15:00-05:00",
+     "end": "2026-11-02T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:15:00-05:00",
+     "end": "2026-11-09T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:15:00-05:00",
+     "end": "2026-11-16T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:15:00-05:00",
+     "end": "2026-11-23T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:15:00-05:00",
+     "end": "2026-11-30T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:15:00-05:00",
+     "end": "2026-12-07T11:15:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "bd3e7d21ebe8",
+   "title": "PITCH~ High Lo Jack",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-12T12:30:00-04:00",
+   "last_start": "2026-12-07T12:30:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-12T12:30:00-04:00",
+     "end": "2026-10-12T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-19T12:30:00-04:00",
+     "end": "2026-10-19T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T12:30:00-04:00",
+     "end": "2026-10-26T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T12:30:00-05:00",
+     "end": "2026-11-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T12:30:00-05:00",
+     "end": "2026-11-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T12:30:00-05:00",
+     "end": "2026-11-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T12:30:00-05:00",
+     "end": "2026-11-23T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T12:30:00-05:00",
+     "end": "2026-11-30T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T12:30:00-05:00",
+     "end": "2026-12-07T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "bc68ff454c8d",
+   "title": "Learn Ukulele",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-12T13:00:00-04:00",
+   "last_start": "2026-12-07T13:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-12T13:00:00-04:00",
+     "end": "2026-10-12T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-19T13:00:00-04:00",
+     "end": "2026-10-19T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T13:00:00-04:00",
+     "end": "2026-10-26T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T13:00:00-05:00",
+     "end": "2026-11-02T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T13:00:00-05:00",
+     "end": "2026-11-09T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T13:00:00-05:00",
+     "end": "2026-11-16T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T13:00:00-05:00",
+     "end": "2026-11-23T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T13:00:00-05:00",
+     "end": "2026-11-30T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T13:00:00-05:00",
+     "end": "2026-12-07T14:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c0a7acde82f5",
+   "title": "$2 Oyster Mondays (weekly)",
+   "venue": "Pier 52",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/2-oyster-mondays-weekly/2026-10-12/",
+   "cost": "",
+   "first_start": "2026-10-12T16:00:00-04:00",
+   "last_start": "2026-10-12T16:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-12T16:00:00-04:00",
+     "end": "2026-10-12T22:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "714fd9ddd9f1",
+   "title": "Nick Sanfilippo",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "Outdoors & Nature",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/nick-sanfilippo/2026-10-12/",
+   "cost": "",
+   "first_start": "2026-10-12T18:30:00-04:00",
+   "last_start": "2026-12-07T18:30:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-12T18:30:00-04:00",
+     "end": "2026-10-12T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-19T18:30:00-04:00",
+     "end": "2026-10-19T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T18:30:00-04:00",
+     "end": "2026-10-26T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T18:30:00-05:00",
+     "end": "2026-11-02T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T18:30:00-05:00",
+     "end": "2026-11-09T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T18:30:00-05:00",
+     "end": "2026-11-16T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T18:30:00-05:00",
+     "end": "2026-11-23T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T18:30:00-05:00",
+     "end": "2026-11-30T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T18:30:00-05:00",
+     "end": "2026-12-07T21:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3c769e6096a9",
+   "title": "Chair Yoga",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-13T09:00:00-04:00",
+   "last_start": "2026-12-08T09:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T09:00:00-04:00",
+     "end": "2026-10-13T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T09:00:00-04:00",
+     "end": "2026-10-20T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T09:00:00-04:00",
+     "end": "2026-10-27T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T09:00:00-05:00",
+     "end": "2026-11-03T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T09:00:00-05:00",
+     "end": "2026-11-10T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T09:00:00-05:00",
+     "end": "2026-11-17T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T09:00:00-05:00",
+     "end": "2026-11-24T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T09:00:00-05:00",
+     "end": "2026-12-01T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T09:00:00-05:00",
+     "end": "2026-12-08T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "81e55c955a82",
+   "title": "Preschool Storytime",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/preschool-storytime/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T11:00:00-04:00",
+   "last_start": "2026-12-08T11:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T11:00:00-04:00",
+     "end": "2026-10-13T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T11:00:00-04:00",
+     "end": "2026-10-20T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T11:00:00-04:00",
+     "end": "2026-10-27T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T11:00:00-05:00",
+     "end": "2026-11-03T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T11:00:00-05:00",
+     "end": "2026-11-10T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T11:00:00-05:00",
+     "end": "2026-11-17T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T11:00:00-05:00",
+     "end": "2026-11-24T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T11:00:00-05:00",
+     "end": "2026-12-01T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T11:00:00-05:00",
+     "end": "2026-12-08T11:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "f8a3ec36a481",
+   "title": "Technical Review Committee",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-13T12:00:00-04:00",
+   "last_start": "2026-10-13T12:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T12:00:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8fc3df99b704",
+   "title": "Drums Alive!",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-13T12:45:00-04:00",
+   "last_start": "2026-12-08T12:45:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T12:45:00-04:00",
+     "end": "2026-10-13T13:45:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T12:45:00-04:00",
+     "end": "2026-10-20T13:45:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T12:45:00-04:00",
+     "end": "2026-10-27T13:45:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T12:45:00-05:00",
+     "end": "2026-11-03T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T12:45:00-05:00",
+     "end": "2026-11-10T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T12:45:00-05:00",
+     "end": "2026-11-17T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T12:45:00-05:00",
+     "end": "2026-11-24T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T12:45:00-05:00",
+     "end": "2026-12-01T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T12:45:00-05:00",
+     "end": "2026-12-08T13:45:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1895d477e2c2",
+   "title": "Community Resource Day",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/__trashed/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T13:00:00-04:00",
+   "last_start": "2026-12-08T13:00:00-05:00",
+   "count": 5,
+   "cadence": "fortnightly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T13:00:00-04:00",
+     "end": "2026-10-13T13:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T13:00:00-04:00",
+     "end": "2026-10-27T13:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T13:00:00-05:00",
+     "end": "2026-11-10T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T13:00:00-05:00",
+     "end": "2026-11-24T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T13:00:00-05:00",
+     "end": "2026-12-08T13:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "7bb4bc5fcf8f",
+   "title": "Art Class",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Arts & Theatre",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-13T14:00:00-04:00",
+   "last_start": "2026-12-08T14:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T14:00:00-04:00",
+     "end": "2026-10-13T15:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T14:00:00-04:00",
+     "end": "2026-10-20T15:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T14:00:00-04:00",
+     "end": "2026-10-27T15:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T14:00:00-05:00",
+     "end": "2026-11-03T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T14:00:00-05:00",
+     "end": "2026-11-10T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T14:00:00-05:00",
+     "end": "2026-11-17T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T14:00:00-05:00",
+     "end": "2026-11-24T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T14:00:00-05:00",
+     "end": "2026-12-01T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T14:00:00-05:00",
+     "end": "2026-12-08T15:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "ffbeefe10ae0",
+   "title": "Half Priced Food (weekly)",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/half-priced-food-weekly/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T16:00:00-04:00",
+   "last_start": "2026-12-08T16:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T16:00:00-04:00",
+     "end": "2026-10-13T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T16:00:00-04:00",
+     "end": "2026-10-20T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T16:00:00-04:00",
+     "end": "2026-10-27T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T16:00:00-05:00",
+     "end": "2026-11-03T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T16:00:00-05:00",
+     "end": "2026-11-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T16:00:00-05:00",
+     "end": "2026-11-17T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T16:00:00-05:00",
+     "end": "2026-11-24T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T16:00:00-05:00",
+     "end": "2026-12-01T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T16:00:00-05:00",
+     "end": "2026-12-08T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "66c50469282b",
+   "title": "Zoning Revision Committee",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-13T17:00:00-04:00",
+   "last_start": "2026-10-13T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T17:00:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5298b492f129",
+   "title": "Board of Library Trustees",
+   "venue": "732 Dartmouth St. Elsie Haskell Auditorium Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-13T17:00:00-04:00",
+   "last_start": "2026-10-13T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T17:00:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "21338802b7d2",
+   "title": "Parks & Recreation",
+   "venue": "400 Slocum Road Room 315 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-13T17:30:00-04:00",
+   "last_start": "2026-10-13T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T17:30:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1cef14d3d6ff",
+   "title": "Somerset School Committee",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-13T17:30:00-04:00",
+   "last_start": "2026-10-13T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T17:30:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "46863132316c",
+   "title": "DIMAN MSBA School Building Committee",
+   "venue": "251 Stonehaven Road Fall River MA 02723",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-13T17:30:00-04:00",
+   "last_start": "2026-10-13T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T17:30:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "4378e5a141df",
+   "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
+   "venue": "First Congregational Church of Fall River",
+   "town": "Fall River",
+   "category": "Sports & Recreation",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/free-all-levels-yoga-tuesdays-thursdays/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T18:00:00-04:00",
+   "last_start": "2026-12-08T18:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T18:00:00-04:00",
+     "end": "2026-10-13T18:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T18:00:00-04:00",
+     "end": "2026-10-20T18:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T18:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T18:00:00-05:00",
+     "end": "2026-11-03T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T18:00:00-05:00",
+     "end": "2026-11-10T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T18:00:00-05:00",
+     "end": "2026-11-17T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T18:00:00-05:00",
+     "end": "2026-11-24T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T18:00:00-05:00",
+     "end": "2026-12-01T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T18:00:00-05:00",
+     "end": "2026-12-08T18:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a59fb1a4ee29",
+   "title": "Conservation Commission",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-13T18:00:00-04:00",
+   "last_start": "2026-10-13T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T18:00:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1d8323e2eabc",
+   "title": "Monthly Artists Share!",
+   "venue": "Gallery X",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/monthly-artists-share/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T18:30:00-04:00",
+   "last_start": "2026-12-08T18:30:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T18:30:00-04:00",
+     "end": "2026-10-13T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T18:30:00-05:00",
+     "end": "2026-12-08T20:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "34f0f3a387d5",
+   "title": "Hop Quiz Trivia",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/hop-quiz-trivia/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T18:30:00-04:00",
+   "last_start": "2026-11-17T18:30:00-05:00",
+   "count": 4,
+   "cadence": "fortnightly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T18:30:00-04:00",
+     "end": "2026-10-13T18:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T18:30:00-04:00",
+     "end": "2026-10-27T18:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T18:30:00-05:00",
+     "end": "2026-11-03T18:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T18:30:00-05:00",
+     "end": "2026-11-17T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "54fe19a4eb7a",
+   "title": "Town Council Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-13T19:00:00-04:00",
+   "last_start": "2026-10-13T19:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-13T19:00:00-04:00",
+     "end": "2026-10-13T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "28b29108c4ea",
+   "title": "The Waiting Room - Comedy Open Mic",
+   "venue": "",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/the-waiting-room-comedy-open-mic/2026-10-13/",
+   "cost": "",
+   "first_start": "2026-10-13T19:30:00-04:00",
+   "last_start": "2026-12-08T19:30:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-13T19:30:00-04:00",
+     "end": "2026-10-13T20:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T19:30:00-04:00",
+     "end": "2026-10-20T20:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T19:30:00-04:00",
+     "end": "2026-10-27T20:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-03T19:30:00-05:00",
+     "end": "2026-11-03T20:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T19:30:00-05:00",
+     "end": "2026-11-10T20:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T19:30:00-05:00",
+     "end": "2026-11-17T20:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T19:30:00-05:00",
+     "end": "2026-11-24T20:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T19:30:00-05:00",
+     "end": "2026-12-01T20:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T19:30:00-05:00",
+     "end": "2026-12-08T20:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a1fa38068ad4",
+   "title": "Kids eat FREE on Wednesdays",
+   "venue": "Primo on Water Street",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/kids-eat-free-on-wednesdays/2026-10-14/",
+   "cost": "",
+   "first_start": "2026-10-14T07:00:00-04:00",
+   "last_start": "2026-12-09T07:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T07:00:00-04:00",
+     "end": "2026-10-14T23:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T07:00:00-04:00",
+     "end": "2026-10-21T23:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T07:00:00-04:00",
+     "end": "2026-10-28T23:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T07:00:00-05:00",
+     "end": "2026-11-04T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T07:00:00-05:00",
+     "end": "2026-11-11T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T07:00:00-05:00",
+     "end": "2026-11-18T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T07:00:00-05:00",
+     "end": "2026-11-25T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T07:00:00-05:00",
+     "end": "2026-12-02T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T07:00:00-05:00",
+     "end": "2026-12-09T23:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "714cdf18b259",
+   "title": "Council on Aging",
+   "venue": "115 Wood St. Somerset MA 02726",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-14T09:30:00-04:00",
+   "last_start": "2026-10-14T09:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T09:30:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "537986d051cd",
+   "title": "Baby and Toddler Playtime!",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Family & Children",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/baby-and-toddler-playtime-23/",
+   "cost": "",
+   "first_start": "2026-10-14T10:30:00-04:00",
+   "last_start": "2026-12-02T10:30:00-05:00",
+   "count": 7,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T10:30:00-04:00",
+     "end": "2026-10-14T12:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T10:30:00-04:00",
+     "end": "2026-10-21T12:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T10:30:00-04:00",
+     "end": "2026-10-28T12:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T10:30:00-05:00",
+     "end": "2026-11-04T12:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T10:30:00-05:00",
+     "end": "2026-11-18T12:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T10:30:00-05:00",
+     "end": "2026-11-25T12:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T10:30:00-05:00",
+     "end": "2026-12-02T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a136d19cf1cd",
+   "title": "Sandy's Live Music & Karaoke",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Music",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-14T12:15:00-04:00",
+   "last_start": "2026-12-09T12:15:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T12:15:00-04:00",
+     "end": "2026-10-14T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T12:15:00-04:00",
+     "end": "2026-10-21T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T12:15:00-04:00",
+     "end": "2026-10-28T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T12:15:00-05:00",
+     "end": "2026-11-04T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T12:15:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:15:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:15:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:15:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:15:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "cf4589ea0706",
+   "title": "Cribbage",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-14T12:30:00-04:00",
+   "last_start": "2026-12-09T12:30:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T12:30:00-04:00",
+     "end": "2026-10-14T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T12:30:00-04:00",
+     "end": "2026-10-21T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T12:30:00-04:00",
+     "end": "2026-10-28T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T12:30:00-05:00",
+     "end": "2026-11-04T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T12:30:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:30:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:30:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:30:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:30:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "2cbcbb4dcb14",
+   "title": "JOINT Hybrid Transportation Planning Group & Southeastern Regional Planning & Economic Development(SRPEDD)",
+   "venue": "88 Broadway Taunton MA 02780",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-14T14:00:00-04:00",
+   "last_start": "2026-10-14T14:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T14:00:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "0faceb54fac4",
+   "title": "Somerset Board of Water & Sewer Commissioners",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-14T16:00:00-04:00",
+   "last_start": "2026-10-14T16:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T16:00:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3a31fe132b30",
+   "title": "Community Preservation Committee",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-14T16:30:00-04:00",
+   "last_start": "2026-10-14T16:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T16:30:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e138a7e83f45",
+   "title": "WING WEDNESDAY!!",
+   "venue": "Saint James Irish Pub",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/wing-wednesday/2026-10-14/",
+   "cost": "",
+   "first_start": "2026-10-14T18:00:00-04:00",
+   "last_start": "2026-12-09T18:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:00:00-04:00",
+     "end": "2026-10-15T00:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T18:00:00-04:00",
+     "end": "2026-10-22T00:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T18:00:00-04:00",
+     "end": "2026-10-29T00:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T18:00:00-05:00",
+     "end": "2026-11-05T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T18:00:00-05:00",
+     "end": "2026-11-12T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T18:00:00-05:00",
+     "end": "2026-11-19T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T18:00:00-05:00",
+     "end": "2026-11-26T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T18:00:00-05:00",
+     "end": "2026-12-03T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T18:00:00-05:00",
+     "end": "2026-12-10T00:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b09d6aa1e060",
+   "title": "Blind Draw Double Elimination Cornhole (weekly)",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/blind-draw-double-elimination-cornhole-weekly/2026-10-14/",
+   "cost": "",
+   "first_start": "2026-10-14T18:00:00-04:00",
+   "last_start": "2026-11-18T18:00:00-05:00",
+   "count": 6,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:00:00-04:00",
+     "end": "2026-10-14T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T18:00:00-04:00",
+     "end": "2026-10-21T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T18:00:00-04:00",
+     "end": "2026-10-28T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T18:00:00-05:00",
+     "end": "2026-11-04T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T18:00:00-05:00",
+     "end": "2026-11-11T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T18:00:00-05:00",
+     "end": "2026-11-18T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "ce68dc402183",
+   "title": "Writing Group",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/writing-group/2026-10-14/",
+   "cost": "",
+   "first_start": "2026-10-14T18:00:00-04:00",
+   "last_start": "2026-12-09T18:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:00:00-04:00",
+     "end": "2026-10-14T18:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T18:00:00-05:00",
+     "end": "2026-11-11T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T18:00:00-05:00",
+     "end": "2026-12-09T18:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b5e39d79ece8",
+   "title": "Magic: The Gathering Commander Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/magic-the-gathering-commander-club/2026-10-14/",
+   "cost": "",
+   "first_start": "2026-10-14T18:00:00-04:00",
+   "last_start": "2026-12-09T18:00:00-05:00",
+   "count": 5,
+   "cadence": "fortnightly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:00:00-04:00",
+     "end": "2026-10-14T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T18:00:00-04:00",
+     "end": "2026-10-28T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T18:00:00-05:00",
+     "end": "2026-11-11T19:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T18:00:00-05:00",
+     "end": "2026-11-25T19:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T18:00:00-05:00",
+     "end": "2026-12-09T19:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "695fb1fa73ed",
+   "title": "Somerset Berkley Regional High School - School Advisory Council",
+   "venue": "VIA ZOOM https://zoom.us/j/92648746517?pwd=zovQPmTyQ34IOIwGyD8Ema9SI3krBr.1&jst=2 -",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-14T18:00:00-04:00",
+   "last_start": "2026-10-14T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:00:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "84aeb6b1dfa7",
+   "title": "All Ages Book Club",
+   "venue": "Gathering Grounds Cafe, Fall River Carousel",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/all-ages-book-club/2026-10-14/",
+   "cost": "",
+   "first_start": "2026-10-14T18:30:00-04:00",
+   "last_start": "2026-11-17T18:30:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:30:00-04:00",
+     "end": "2026-10-14T18:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T18:30:00-05:00",
+     "end": "2026-11-17T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b18658d67914",
+   "title": "Fire District 1 Prudential Committee",
+   "venue": "10 Bridge St Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-14T18:30:00-04:00",
+   "last_start": "2026-10-14T18:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-14T18:30:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "f35ef94df23d",
+   "title": "Musical Bingo (weekly)",
+   "venue": "The Liberal Club",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/musical-bingo-weekly/2026-10-14/",
+   "cost": "FREE",
+   "first_start": "2026-10-14T19:00:00-04:00",
+   "last_start": "2026-12-09T19:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T19:00:00-04:00",
+     "end": "2026-10-14T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T19:00:00-04:00",
+     "end": "2026-10-21T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T19:00:00-04:00",
+     "end": "2026-10-28T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T19:00:00-05:00",
+     "end": "2026-11-04T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T19:00:00-05:00",
+     "end": "2026-11-11T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T19:00:00-05:00",
+     "end": "2026-11-18T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T19:00:00-05:00",
+     "end": "2026-11-25T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": "2026-12-02T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": "2026-12-09T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "ba9467978d35",
+   "title": "Cemetery Commission Meeting",
+   "venue": "207 Canonicus Street Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-14T19:00:00-04:00",
+   "last_start": "2026-11-11T19:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-14T19:00:00-04:00",
+     "end": "2026-10-14T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T19:00:00-05:00",
+     "end": "2026-11-11T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8e83e1c7cbdf",
+   "title": "Board of Public Works Meeting",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-15T08:30:00-04:00",
+   "last_start": "2026-10-15T08:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T08:30:00-04:00",
+     "end": "2026-10-15T10:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "588fce2b7f63",
+   "title": "Parsons Reserve Trail Work Party",
+   "venue": "Parsons Reserve",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/parsons-reserve-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-10-15T09:00:00-04:00",
+   "last_start": "2026-10-15T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T09:00:00-04:00",
+     "end": "2026-10-15T12:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3139634ece53",
+   "title": "Balance and Mobility",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-15T09:00:00-04:00",
+   "last_start": "2026-12-10T09:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T09:00:00-04:00",
+     "end": "2026-10-15T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T09:00:00-04:00",
+     "end": "2026-10-22T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-29T09:00:00-04:00",
+     "end": "2026-10-29T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T09:00:00-05:00",
+     "end": "2026-11-05T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T09:00:00-05:00",
+     "end": "2026-11-12T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T09:00:00-05:00",
+     "end": "2026-11-19T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T09:00:00-05:00",
+     "end": "2026-11-26T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T09:00:00-05:00",
+     "end": "2026-12-03T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T09:00:00-05:00",
+     "end": "2026-12-10T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "48d760920948",
+   "title": "Knitting Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/knitting-club/2026-10-15/",
+   "cost": "",
+   "first_start": "2026-10-15T13:00:00-04:00",
+   "last_start": "2026-12-10T13:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T13:00:00-04:00",
+     "end": "2026-10-15T13:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T13:00:00-04:00",
+     "end": "2026-10-22T13:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-29T13:00:00-04:00",
+     "end": "2026-10-29T13:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T13:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "dd50f7398c80",
+   "title": "Bingo!",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-15T13:00:00-04:00",
+   "last_start": "2026-12-10T13:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T13:00:00-04:00",
+     "end": "2026-10-15T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T13:00:00-04:00",
+     "end": "2026-10-22T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-29T13:00:00-04:00",
+     "end": "2026-10-29T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8b749f1ec307",
+   "title": "Knitting for Charity",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Volunteering & Causes",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-15T13:00:00-04:00",
+   "last_start": "2026-12-10T13:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T13:00:00-04:00",
+     "end": "2026-10-15T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T13:00:00-04:00",
+     "end": "2026-10-22T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-29T13:00:00-04:00",
+     "end": "2026-10-29T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "4d805f1b843e",
+   "title": "Women, Power, and the Future of Democracy",
+   "venue": "Zeiterion Theater",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/women-power-and-the-future-of-democracy/",
+   "cost": "&#x24;70",
+   "first_start": "2026-10-15T17:00:00-04:00",
+   "last_start": "2026-10-15T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T17:00:00-04:00",
+     "end": "2026-10-15T20:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "963c52ecc98c",
+   "title": "Diman Housebuilding/Facilities Subcommittee",
+   "venue": "251 Stonehaven Road Fall River MA 02723",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-15T17:00:00-04:00",
+   "last_start": "2026-10-15T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T17:00:00-04:00",
+     "end": "2026-10-15T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1b1d8f9a020d",
+   "title": "Budgeting 101: Workshop Series",
+   "venue": "FSA Family Resource Center",
+   "town": "Fall River",
+   "category": "Education & Workshops",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/budgeting-101-workshop-series/",
+   "cost": "",
+   "first_start": "2026-10-15T17:30:00-04:00",
+   "last_start": "2026-10-15T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T17:30:00-04:00",
+     "end": "2026-10-15T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1e4f2dbdfcb8",
+   "title": "Cheers for a Cause",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/cheers-for-a-cause/",
+   "cost": "",
+   "first_start": "2026-10-15T17:30:00-04:00",
+   "last_start": "2026-10-15T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T17:30:00-04:00",
+     "end": "2026-10-15T17:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "bb0a255707a0",
+   "title": "Diman Greater Fall River Vocational School Committee Meeting",
+   "venue": "251 Stonehaven Road Fall River MA 02723",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-15T17:30:00-04:00",
+   "last_start": "2026-10-15T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T17:30:00-04:00",
+     "end": "2026-10-15T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c31ac24b3f29",
+   "title": "Zach Guillette Thursdays",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/zach-guillette-thursdays/2026-10-15/",
+   "cost": "",
+   "first_start": "2026-10-15T18:00:00-04:00",
+   "last_start": "2026-12-03T18:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T18:00:00-04:00",
+     "end": "2026-10-15T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T18:00:00-04:00",
+     "end": "2026-10-22T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-29T18:00:00-04:00",
+     "end": "2026-10-29T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T18:00:00-05:00",
+     "end": "2026-11-05T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T18:00:00-05:00",
+     "end": "2026-11-19T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T18:00:00-05:00",
+     "end": "2026-11-26T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T18:00:00-05:00",
+     "end": "2026-12-03T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "97a93ca6d58b",
+   "title": "Fantasy & Sci-Fi Book Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/fantasy-sci-fi-book-club/2026-10-15/",
+   "cost": "",
+   "first_start": "2026-10-15T18:00:00-04:00",
+   "last_start": "2026-11-19T18:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T18:00:00-04:00",
+     "end": "2026-10-15T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T18:00:00-05:00",
+     "end": "2026-11-19T19:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "65a0ccf01e7a",
+   "title": "Zoning Board of Appeals",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-15T18:00:00-04:00",
+   "last_start": "2026-10-22T18:00:00-04:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T18:00:00-04:00",
+     "end": "2026-10-15T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T18:00:00-04:00",
+     "end": "2026-10-22T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "86d8ad9de372",
+   "title": "Deathtrap",
+   "venue": "Little Theater Fire Barn",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/deathtrap/2026-10-15/",
+   "cost": "",
+   "first_start": "2026-10-15T19:30:00-04:00",
+   "last_start": "2026-10-24T19:30:00-04:00",
+   "count": 4,
+   "cadence": "daily",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-15T19:30:00-04:00",
+     "end": "2026-10-17T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T19:30:00-04:00",
+     "end": "2026-10-24T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T19:30:00-04:00",
+     "end": "2026-10-25T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-24T19:30:00-04:00",
+     "end": "2026-10-26T19:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e69b5d676110",
+   "title": "THURSDAY NIGHT TRIVIA",
+   "venue": "Saint James Irish Pub",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/thursday-night-trivia/2026-10-15/",
+   "cost": "",
+   "first_start": "2026-10-15T20:00:00-04:00",
+   "last_start": "2026-12-03T20:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-15T20:00:00-04:00",
+     "end": "2026-10-15T22:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-22T20:00:00-04:00",
+     "end": "2026-10-22T22:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-29T20:00:00-04:00",
+     "end": "2026-10-29T22:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T20:00:00-05:00",
+     "end": "2026-11-05T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-12T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T20:00:00-05:00",
+     "end": "2026-11-19T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T20:00:00-05:00",
+     "end": "2026-11-26T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-03T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "fe0247326a8a",
+   "title": "Zumba",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-16T09:00:00-04:00",
+   "last_start": "2026-12-04T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-16T09:00:00-04:00",
+     "end": "2026-10-16T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T09:00:00-04:00",
+     "end": "2026-10-23T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T09:00:00-04:00",
+     "end": "2026-10-30T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T09:00:00-05:00",
+     "end": "2026-11-06T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T09:00:00-05:00",
+     "end": "2026-11-13T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T09:00:00-05:00",
+     "end": "2026-11-20T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T09:00:00-05:00",
+     "end": "2026-11-27T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T09:00:00-05:00",
+     "end": "2026-12-04T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "d8600d4c5a09",
+   "title": "Grief Support Group",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-16T10:00:00-04:00",
+   "last_start": "2026-12-04T10:00:00-05:00",
+   "count": 6,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-16T10:00:00-04:00",
+     "end": "2026-10-16T11:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T10:00:00-04:00",
+     "end": "2026-10-23T11:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T10:00:00-05:00",
+     "end": "2026-11-06T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T10:00:00-05:00",
+     "end": "2026-11-13T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T10:00:00-05:00",
+     "end": "2026-11-20T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T10:00:00-05:00",
+     "end": "2026-12-04T11:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "417ee37db3b1",
+   "title": "Friday Night Volleyball (weekly)",
+   "venue": "Greater Fall River Re-CREATION",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/friday-night-volleyball-weekly/2026-10-16/",
+   "cost": "",
+   "first_start": "2026-10-16T17:00:00-04:00",
+   "last_start": "2026-12-04T17:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-16T17:00:00-04:00",
+     "end": "2026-10-16T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T17:00:00-04:00",
+     "end": "2026-10-23T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T17:00:00-04:00",
+     "end": "2026-10-30T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T17:00:00-05:00",
+     "end": "2026-11-06T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T17:00:00-05:00",
+     "end": "2026-11-13T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T17:00:00-05:00",
+     "end": "2026-11-20T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T17:00:00-05:00",
+     "end": "2026-11-27T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T17:00:00-05:00",
+     "end": "2026-12-04T17:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5629e8c7fa1b",
+   "title": "Factory of Terror (Friday - Sunday)",
+   "venue": "Factory of Terror",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/factory-of-terror/2026-10-16/",
+   "cost": "",
+   "first_start": "2026-10-16T19:00:00-04:00",
+   "last_start": "2026-10-30T19:00:00-04:00",
+   "count": 3,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-16T19:00:00-04:00",
+     "end": "2026-10-16T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T19:00:00-04:00",
+     "end": "2026-10-23T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T19:00:00-04:00",
+     "end": "2026-10-30T21:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "37d3ea357bd0",
+   "title": "Paul Bielatowicz's \"Nosferatu\" Live",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/paul-bielatowiczs-nosferatu-live/",
+   "cost": "",
+   "first_start": "2026-10-16T20:00:00-04:00",
+   "last_start": "2026-10-16T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-16T20:00:00-04:00",
+     "end": "2026-10-16T22:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "6da2a90a579e",
+   "title": "Primo After Dark - Weekly DJ Sets",
+   "venue": "Primo on Water Street",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/primo-after-dark-weekly-dj-sets/2026-10-16/",
+   "cost": "",
+   "first_start": "2026-10-16T20:00:00-04:00",
+   "last_start": "2026-12-04T20:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-16T20:00:00-04:00",
+     "end": "2026-10-16T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T20:00:00-04:00",
+     "end": "2026-10-23T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T20:00:00-04:00",
+     "end": "2026-10-30T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T20:00:00-05:00",
+     "end": "2026-11-06T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T20:00:00-05:00",
+     "end": "2026-11-13T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T20:00:00-05:00",
+     "end": "2026-11-20T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T20:00:00-05:00",
+     "end": "2026-11-27T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T20:00:00-05:00",
+     "end": "2026-12-04T20:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "288e210032e7",
+   "title": "Open Mic Jam Sesh FRIDAYS",
+   "venue": "Buzzards Bay Brewing",
+   "town": "Westport",
+   "category": "Music",
+   "source_id": "buzzards-bay-brewing",
+   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-70/",
+   "cost": "",
+   "first_start": "2026-10-16T21:00:00-04:00",
+   "last_start": "2026-10-30T21:00:00-04:00",
+   "count": 3,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-16T21:00:00-04:00",
+     "end": "2026-10-17T00:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T21:00:00-04:00",
+     "end": "2026-10-24T00:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T21:00:00-04:00",
+     "end": "2026-10-31T00:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b958f9b7825e",
+   "title": "Embroidered Flower Bookmark with Karen Katin",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/embroidered-flower-bookmark-with-karen-katin/",
+   "cost": "",
+   "first_start": "2026-10-17T10:30:00-04:00",
+   "last_start": "2026-10-17T10:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-17T10:30:00-04:00",
+     "end": "2026-10-17T12:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1c51bbd6d57c",
+   "title": "Eric Lindell",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Outdoors & Nature",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/eric-lindell/",
+   "cost": "",
+   "first_start": "2026-10-17T20:00:00-04:00",
+   "last_start": "2026-10-17T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-17T20:00:00-04:00",
+     "end": "2026-10-17T22:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "db02f6d55ec0",
+   "title": "Kids Yoga",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "Family & Children",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/kids-yoga/",
+   "cost": "$10",
+   "first_start": "2026-10-18T10:00:00-04:00",
+   "last_start": "2026-10-18T10:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-18T10:00:00-04:00",
+     "end": "2026-10-18T11:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a6bcdf37a0dc",
+   "title": "Underwater Archaeology: Exploring History where Land and Water Meet",
+   "venue": "Heritage State Park",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/underwater-archaeology-exploring-history-where-land-and-water-meet/",
+   "cost": "",
+   "first_start": "2026-10-18T10:00:00-04:00",
+   "last_start": "2026-10-18T10:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-18T10:00:00-04:00",
+     "end": "2026-10-18T14:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "01cf5fa5fd67",
+   "title": "Harbor Commission Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-19T00:00:00-04:00",
+   "last_start": "2026-11-16T00:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-19T00:00:00-04:00",
+     "end": "2026-10-19T00:00:00-04:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-16T00:00:00-05:00",
+     "end": "2026-11-16T00:00:00-05:00",
+     "all_day": true
+    }
+   ]
+  },
+  {
+   "id": "56d3b32e1db1",
+   "title": "Women's Walk",
+   "venue": "Slocum's River Reserve",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/womens-walk/",
+   "cost": "Free",
+   "first_start": "2026-10-19T09:00:00-04:00",
+   "last_start": "2026-10-19T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-19T09:00:00-04:00",
+     "end": "2026-10-19T10:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "9ee555514f59",
+   "title": "Knitting Group",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/knitting-group-38/",
+   "cost": "",
+   "first_start": "2026-10-19T13:00:00-04:00",
+   "last_start": "2026-10-26T13:00:00-04:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-19T13:00:00-04:00",
+     "end": "2026-10-19T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T13:00:00-04:00",
+     "end": "2026-10-26T14:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5f22e2e82441",
+   "title": "Children's Book Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/childrens-book-club/",
+   "cost": "",
+   "first_start": "2026-10-19T17:00:00-04:00",
+   "last_start": "2026-10-19T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-19T17:00:00-04:00",
+     "end": "2026-10-19T17:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "06e8dc2b3d7b",
+   "title": "Open Space & Land Preservation Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-19T18:00:00-04:00",
+   "last_start": "2026-11-16T18:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-19T18:00:00-04:00",
+     "end": "2026-10-19T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T18:00:00-05:00",
+     "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "94b85c808cc6",
+   "title": "Library Board of Trustees Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-19T19:00:00-04:00",
+   "last_start": "2026-11-16T19:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-19T19:00:00-04:00",
+     "end": "2026-10-19T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T19:00:00-05:00",
+     "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b9c65101ffb0",
+   "title": "FINANCE COMMITTEE MEETING",
+   "venue": "555 Bakerville Road Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-20T06:45:00-04:00",
+   "last_start": "2026-10-20T06:45:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T06:45:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "53a06499338a",
+   "title": "Conservation Commission Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-20T14:00:00-04:00",
+   "last_start": "2026-11-17T14:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-20T14:00:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T14:00:00-05:00",
+     "end": "2026-11-17T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3530ab528231",
+   "title": "Middle Grade Book Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/middle-grade-book-club/2026-10-20/",
+   "cost": "",
+   "first_start": "2026-10-20T17:00:00-04:00",
+   "last_start": "2026-11-17T17:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-20T17:00:00-04:00",
+     "end": "2026-10-20T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T17:00:00-05:00",
+     "end": "2026-11-17T17:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5c5cfeee6755",
+   "title": "Little Compton Writing Circle",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/little-compton-writing-circle-6/",
+   "cost": "",
+   "first_start": "2026-10-20T17:30:00-04:00",
+   "last_start": "2026-10-20T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T17:30:00-04:00",
+     "end": "2026-10-20T18:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e56681f6cb34",
+   "title": "Paint Nights",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/paint-nights/2026-10-20/",
+   "cost": "",
+   "first_start": "2026-10-20T18:30:00-04:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-20T18:30:00-04:00",
+     "end": "2026-10-20T18:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a49780394123",
+   "title": "Fall Annual Town Meeting",
+   "venue": "555 Bakerville Road Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-20T19:00:00-04:00",
+   "last_start": "2026-10-20T19:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T19:00:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "abe54e185761",
+   "title": "Balance and Fall Prevention with local resident Amy Simmons and colleague Andrea Wasylow",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/balance-and-fall-prevention-with-local-resident-amy-simmons-and-colleague-andrea-wasylow/",
+   "cost": "",
+   "first_start": "2026-10-21T13:00:00-04:00",
+   "last_start": "2026-10-21T13:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-21T13:00:00-04:00",
+     "end": "2026-10-21T14:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "677e2faba600",
+   "title": "Books & Tea Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/books-tea-club/2026-10-21/",
+   "cost": "",
+   "first_start": "2026-10-21T14:00:00-04:00",
+   "last_start": "2026-11-18T14:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-21T14:00:00-04:00",
+     "end": "2026-10-21T15:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T14:00:00-05:00",
+     "end": "2026-11-18T15:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "14c343c4bf87",
+   "title": "Historic Preservation Advisory Board Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-21T16:30:00-04:00",
+   "last_start": "2026-11-18T16:30:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-21T16:30:00-04:00",
+     "end": "2026-10-21T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T16:30:00-05:00",
+     "end": "2026-11-18T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a66020426520",
+   "title": "Building Code Board of Appeals Meeting",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-21T18:00:00-04:00",
+   "last_start": "2026-10-21T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-21T18:00:00-04:00",
+     "end": "2026-10-21T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "38602675fb60",
+   "title": "The Children's Museum of Greater Fall River's 3rd Annual Bingo Night",
+   "venue": "Fall River Elks Lodge #118",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/the-childrens-museum-of-greater-fall-rivers-3rd-annual-bingo-night/",
+   "cost": "",
+   "first_start": "2026-10-22T18:00:00-04:00",
+   "last_start": "2026-10-22T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-22T18:00:00-04:00",
+     "end": "2026-10-22T20:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "751653a5b5d1",
+   "title": "Dar Williams",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/dar-williams/",
+   "cost": "",
+   "first_start": "2026-10-22T20:00:00-04:00",
+   "last_start": "2026-10-22T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-22T20:00:00-04:00",
+     "end": "2026-10-22T22:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e2c44b0dc873",
+   "title": "Senior Social",
+   "venue": "Greater Fall River Re-CREATION",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/senior-social/2026-10-23/",
+   "cost": "",
+   "first_start": "2026-10-23T12:00:00-04:00",
+   "last_start": "2026-11-20T12:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T12:00:00-04:00",
+     "end": "2026-10-23T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T12:00:00-05:00",
+     "end": "2026-11-20T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "bfa5fafda125",
+   "title": "City of Fall River Trunk or Treat",
+   "venue": "Nagle Auditorium Parking Lot",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/city-of-fall-river-trunk-or-treat/",
+   "cost": "",
+   "first_start": "2026-10-23T17:00:00-04:00",
+   "last_start": "2026-10-23T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-23T17:00:00-04:00",
+     "end": "2026-10-23T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c9a0db79a74c",
+   "title": "Night Hike",
+   "venue": "Smith Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/night-hike/",
+   "cost": "Free",
+   "first_start": "2026-10-23T18:00:00-04:00",
+   "last_start": "2026-10-23T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-23T18:00:00-04:00",
+     "end": "2026-10-23T19:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "83d2f5f98d47",
+   "title": "Gremlin's Ghoul-A-Palooza",
+   "venue": "5 Water Street, Fall River, MA 02721",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/gremlins-ghoul-a-palooza/",
+   "cost": "&#x24;15.00",
+   "first_start": "2026-10-23T18:00:00-04:00",
+   "last_start": "2026-10-23T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-23T18:00:00-04:00",
+     "end": "2026-10-23T21:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "2ffa6254a927",
+   "title": "Beyond The Vision Board with Maria Holme",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Education & Workshops",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/beyond-the-vision-board-with-maria-holme/",
+   "cost": "",
+   "first_start": "2026-10-24T12:30:00-04:00",
+   "last_start": "2026-10-24T12:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-24T12:30:00-04:00",
+     "end": "2026-10-24T14:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "0ad064d6eefb",
+   "title": "Book Talk with Boston Globe theater critic Bob Abelman",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/book-talk-with-boston-globe-theater-critic-bob-abelman/",
+   "cost": "",
+   "first_start": "2026-10-24T13:30:00-04:00",
+   "last_start": "2026-10-24T13:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-24T13:30:00-04:00",
+     "end": "2026-10-24T14:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5ffe625ae90f",
+   "title": "Kids Art Workshop",
+   "venue": "SoCo Art Labs",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/kids-art-workshop/2026-10-24/",
+   "cost": "",
+   "first_start": "2026-10-24T15:00:00-04:00",
+   "last_start": "2026-10-24T15:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-24T15:00:00-04:00",
+     "end": "2026-10-24T16:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1128e989248e",
+   "title": "Kid's Art Workshop with artist, Susan Drayton",
+   "venue": "SoCo Art Labs",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/kids-art-workshop-with-artist-susan-drayton-2/",
+   "cost": "",
+   "first_start": "2026-10-24T15:00:00-04:00",
+   "last_start": "2026-10-24T15:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-24T15:00:00-04:00",
+     "end": "2026-10-24T16:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "66565a4e89b8",
+   "title": "Brick and Brush Arts Walk",
+   "venue": "NoMa/Purchase St. Plaza",
+   "town": "Fall River",
+   "category": "Outdoors & Nature",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/brick-and-brush-arts-walk/",
+   "cost": "",
+   "first_start": "2026-10-25T11:00:00-04:00",
+   "last_start": "2026-10-25T11:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-25T11:00:00-04:00",
+     "end": "2026-10-25T15:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "dae70086b9c7",
+   "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/sunday-funday-with-neal-mccarthy-band-and-mark-russell-on-fiddle/2026-10-25/",
+   "cost": "",
+   "first_start": "2026-10-25T17:00:00-04:00",
+   "last_start": "2026-11-29T17:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-25T17:00:00-04:00",
+     "end": "2026-10-25T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T17:00:00-05:00",
+     "end": "2026-11-29T20:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "1a6c5b627ed2",
+   "title": "Historical Fiction Book Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/historical-fiction-book-club/2026-10-26/",
+   "cost": "",
+   "first_start": "2026-10-26T18:00:00-04:00",
+   "last_start": "2026-11-30T18:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T18:00:00-04:00",
+     "end": "2026-10-26T19:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T18:00:00-05:00",
+     "end": "2026-11-30T19:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "77e878936379",
+   "title": "Town Council Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T19:00:00-04:00",
+   "last_start": "2026-11-23T19:00:00-05:00",
+   "count": 3,
+   "cadence": "fortnightly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T19:00:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T19:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T19:00:00-05:00",
+     "end": "2026-11-23T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5fb345f2d49c",
+   "title": "All the Genres Book Club",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/all-the-genres-book-club-12/",
+   "cost": "",
+   "first_start": "2026-10-27T16:00:00-04:00",
+   "last_start": "2026-10-27T18:00:00-04:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T16:00:00-04:00",
+     "end": "2026-10-27T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "beccdd66295b",
+   "title": "New England Ghosts with Jonah Knight",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/new-england-ghosts-with-jonah-knight/",
+   "cost": "",
+   "first_start": "2026-10-27T17:30:00-04:00",
+   "last_start": "2026-10-27T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T17:30:00-04:00",
+     "end": "2026-10-27T18:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8af4ed61eb2a",
+   "title": "Plant Bingo",
+   "venue": "Fall River Carousel",
+   "town": "Fall River",
+   "category": "Sports & Recreation",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/plant-bingo/2026-10-27/",
+   "cost": "",
+   "first_start": "2026-10-27T18:30:00-04:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 2,
+   "cadence": "fortnightly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:30:00-04:00",
+     "end": "2026-10-27T18:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a603e40a3ba8",
+   "title": "Medicare Help Sessions - Registration Required",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/more-than-medicare-help-sessions-registration-required/",
+   "cost": "",
+   "first_start": "2026-10-28T09:00:00-04:00",
+   "last_start": "2026-10-28T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T09:00:00-04:00",
+     "end": "2026-10-28T15:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "6df7127bdd79",
+   "title": "Destruction Brook Woods Trail Work Party",
+   "venue": "Destruction Brook Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/destruction-brook-woods-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-10-28T09:00:00-04:00",
+   "last_start": "2026-10-28T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T09:00:00-04:00",
+     "end": "2026-10-28T12:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "290b398cef9f",
+   "title": "Photography Group",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/photography-group/2026-10-28/",
+   "cost": "",
+   "first_start": "2026-10-28T18:00:00-04:00",
+   "last_start": "2026-11-25T18:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-28T18:00:00-04:00",
+     "end": "2026-10-28T19:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T18:00:00-05:00",
+     "end": "2026-11-25T19:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5df4b250f473",
+   "title": "Ally Venable Band",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/ally-venable-band/",
+   "cost": "",
+   "first_start": "2026-10-28T20:00:00-04:00",
+   "last_start": "2026-10-28T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T20:00:00-04:00",
+     "end": "2026-10-28T22:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e1e1173627d4",
+   "title": "Social Club Karaoke w/ DJ Dan Mac (weekly)",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/social-club-karaoke-w-dj-dan-mac-weekly-2/",
+   "cost": "",
+   "first_start": "2026-10-28T21:00:00-04:00",
+   "last_start": "2026-10-28T21:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T21:00:00-04:00",
+     "end": "2026-10-28T21:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "f73bbc49e92e",
+   "title": "The Banned Book Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/the-banned-book-club-2/2026-10-29/",
+   "cost": "",
+   "first_start": "2026-10-29T18:00:00-04:00",
+   "last_start": "2026-10-29T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-29T18:00:00-04:00",
+     "end": "2026-10-29T18:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "6dbf4d382c00",
+   "title": "Silent Book Club",
+   "venue": "Once Upon a Bookstore",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/silent-book-club-2/2026-10-29/",
+   "cost": "",
+   "first_start": "2026-10-29T18:30:00-04:00",
+   "last_start": "2026-11-26T18:30:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T18:30:00-04:00",
+     "end": "2026-10-29T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T18:30:00-05:00",
+     "end": "2026-11-26T20:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "68a76dd9ccdc",
+   "title": "East Nash Grass",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/east-nash-grass/",
+   "cost": "",
+   "first_start": "2026-10-29T20:00:00-04:00",
+   "last_start": "2026-10-29T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-29T20:00:00-04:00",
+     "end": "2026-10-29T22:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "86d5ca0715e3",
+   "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
+   "venue": "Munchies",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/aging-well-senior-lgbtq-breakfast-club-2/2026-10-30/",
+   "cost": "",
+   "first_start": "2026-10-30T08:00:00-04:00",
+   "last_start": "2026-11-27T08:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-30T08:00:00-04:00",
+     "end": "2026-10-30T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T08:00:00-05:00",
+     "end": "2026-11-27T17:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c3881a762a7d",
+   "title": "Halloween Throw & Glow- All Weekend Long",
+   "venue": "Stumpy's Hatchet House Fall River",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/halloween-throw-glow-all-weekend-long/2026-10-30/",
+   "cost": "",
+   "first_start": "2026-10-30T17:00:00-04:00",
+   "last_start": "2026-11-01T14:00:00-05:00",
+   "count": 3,
+   "cadence": "daily",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-30T17:00:00-04:00",
+     "end": "2026-10-30T23:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-31T14:00:00-04:00",
+     "end": "2026-10-31T23:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T14:00:00-05:00",
+     "end": "2026-11-01T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a4fc4e132b63",
+   "title": "Annual Halloween Party",
+   "venue": "Greater Fall River Re-CREATION",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/annual-halloween-party/",
+   "cost": "",
+   "first_start": "2026-10-31T17:00:00-04:00",
+   "last_start": "2026-10-31T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-31T17:00:00-04:00",
+     "end": "2026-10-31T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8b09bd6747a6",
+   "title": "Halloween Ghostly Gala at Red Cat Kitchen",
+   "venue": "Red Cat Kitchen",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/halloween-ghostly-gala-at-red-cat-kitchen/",
+   "cost": "&#x24;65",
+   "first_start": "2026-10-31T21:00:00-04:00",
+   "last_start": "2026-10-31T21:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-31T21:00:00-04:00",
+     "end": "2026-11-01T00:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "ded916859e37",
+   "title": "Celebrate National Authors Day with Write With Community!",
+   "venue": "New Bedford Whaling Museum",
+   "town": "Fall River",
+   "category": "Museums & Exhibitions",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/celebrate-national-authors-day-with-write-with-community/",
+   "cost": "Free",
+   "first_start": "2026-11-01T11:00:00-05:00",
+   "last_start": "2026-11-01T11:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-01T11:00:00-05:00",
+     "end": "2026-11-01T14:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c03a17f49c92",
+   "title": "Historical Cemeteries Commission Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T18:00:00-05:00",
+   "last_start": "2026-12-01T18:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T18:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T18:00:00-05:00",
+     "end": "2026-12-01T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "172f82176727",
+   "title": "Litter Committee Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-03T18:30:00-05:00",
+   "last_start": "2026-12-01T18:30:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-11-03T18:30:00-05:00",
+     "end": "2026-11-03T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T18:30:00-05:00",
+     "end": "2026-12-01T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3d65595383f1",
+   "title": "SHIP with Carla Sabatino",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-04T13:00:00-05:00",
+   "last_start": "2026-12-02T13:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-04T13:00:00-05:00",
+     "end": "2026-11-04T16:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T13:00:00-05:00",
+     "end": "2026-12-02T16:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "7e7010fd470a",
+   "title": "English Conversation Group",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/english-conversation-group/2026-11-04/",
+   "cost": "",
+   "first_start": "2026-11-04T18:00:00-05:00",
+   "last_start": "2026-12-02T18:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-04T18:00:00-05:00",
+     "end": "2026-11-04T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T18:00:00-05:00",
+     "end": "2026-12-02T18:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "34fe6ff2a95f",
+   "title": "Zoning Board of Review Meeting (as needed)",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-04T19:00:00-05:00",
+   "last_start": "2026-12-02T19:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-04T19:00:00-05:00",
+     "end": "2026-11-04T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": "2026-12-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "d8c831ab34ef",
+   "title": "Guided Meditation",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/spring-meditation/",
+   "cost": "$10",
+   "first_start": "2026-11-05T17:30:00-05:00",
+   "last_start": "2026-11-05T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-05T17:30:00-05:00",
+     "end": "2026-11-05T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c4b67d714fc0",
+   "title": "Open Mic Night",
+   "venue": "The Belmont Club",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/open-mic-night-2/2026-11-05/",
+   "cost": "",
+   "first_start": "2026-11-05T19:00:00-05:00",
+   "last_start": "2026-12-03T19:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-05T19:00:00-05:00",
+     "end": "2026-11-05T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T19:00:00-05:00",
+     "end": "2026-12-03T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "0dc8bfd57f1e",
+   "title": "AXE-celerated Dating at Stumpy's for 45+ Singles",
+   "venue": "Stumpy's Hatchet House Fall River",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/axe-celerated-dating-at-stumpys-for-45-singles/",
+   "cost": "&#x24;35.00",
+   "first_start": "2026-11-05T19:00:00-05:00",
+   "last_start": "2026-11-05T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-05T19:00:00-05:00",
+     "end": "2026-11-05T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "be494696e772",
+   "title": "Probate Court",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-06T08:30:00-05:00",
+   "last_start": "2026-12-04T08:30:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-11-06T08:30:00-05:00",
+     "end": "2026-11-06T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T08:30:00-05:00",
+     "end": "2026-12-04T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "440ef02afc78",
+   "title": "Jason Robert Brown with Special Broadway Guests",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/jason-robert-brown-with-special-broadway-guests/",
+   "cost": "",
+   "first_start": "2026-11-06T20:00:00-05:00",
+   "last_start": "2026-11-06T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-06T20:00:00-05:00",
+     "end": "2026-11-06T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b4831a984a43",
+   "title": "Amani Burnham live at the Narrows",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/amani-burnham-live-at-the-narrows/",
+   "cost": "",
+   "first_start": "2026-11-07T20:00:00-05:00",
+   "last_start": "2026-11-07T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-07T20:00:00-05:00",
+     "end": "2026-11-07T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e9a8f861a681",
+   "title": "Wernick Farm Trail Work Party",
+   "venue": "Wernick Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/wernick-farm-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-11-10T09:00:00-05:00",
+   "last_start": "2026-11-10T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T09:00:00-05:00",
+     "end": "2026-11-10T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e80a59b774f0",
+   "title": "Bobcat Ecology in Southern New England",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/bobcat-ecology-in-southern-new-england/",
+   "cost": "$10",
+   "first_start": "2026-11-10T18:00:00-05:00",
+   "last_start": "2026-11-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:00:00-05:00",
+     "end": "2026-11-10T19:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "b2d5b2a3e6ec",
+   "title": "Planning Board Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-10T18:30:00-05:00",
+   "last_start": "2026-12-01T18:30:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T18:30:00-05:00",
+     "end": "2026-12-01T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "fb9783ebc0d0",
+   "title": "Agricultural Commission",
+   "venue": "205 Bakerville Road Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-10T18:30:00-05:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "f460030b8544",
+   "title": "Jesse Cook - Fall River",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/jesse-cook-fall-river/",
+   "cost": "&#x24;30 – &#x24;75",
+   "first_start": "2026-11-12T00:00:00-05:00",
+   "last_start": "2026-11-12T00:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T00:00:00-05:00",
+     "end": "2026-11-12T23:59:59-05:00",
+     "all_day": true
+    }
+   ]
+  },
+  {
+   "id": "3940c79551d1",
+   "title": "YA Comics Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/ya-comics-club/2026-11-12/",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "cfade7af0588",
+   "title": "Economic Development Commission Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "33a1dd8b4b9f",
+   "title": "Robbie Fulks & Heath Maloney",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/robbie-fulks-heath-maloney/",
+   "cost": "",
+   "first_start": "2026-11-13T20:00:00-05:00",
+   "last_start": "2026-11-13T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-13T20:00:00-05:00",
+     "end": "2026-11-13T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "9b4c9e0bcc2e",
+   "title": "Little Rhody Mini Hoop with Karen Katin",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/little-rhody-mini-hoop-with-karen-katin/",
+   "cost": "",
+   "first_start": "2026-11-14T10:30:00-05:00",
+   "last_start": "2026-11-14T10:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T10:30:00-05:00",
+     "end": "2026-11-14T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e0ede651223a",
+   "title": "12th Annual Trail Race - 2026",
+   "venue": "Destruction Brook Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/trailrace/",
+   "cost": "$25 – $45",
+   "first_start": "2026-11-14T10:30:00-05:00",
+   "last_start": "2026-11-14T10:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T10:30:00-05:00",
+     "end": "2026-11-14T14:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "342cee2c5258",
+   "title": "Naturalist's Book Club",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "Library & Talks",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/naturalists-book-club/",
+   "cost": "Free",
+   "first_start": "2026-11-16T17:30:00-05:00",
+   "last_start": "2026-11-16T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-16T17:30:00-05:00",
+     "end": "2026-11-16T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "138a383d63b1",
+   "title": "Turtle Walk",
+   "venue": "Dike Creek Reserve",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/turtle-walk/",
+   "cost": "Free",
+   "first_start": "2026-11-19T10:00:00-05:00",
+   "last_start": "2026-11-19T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-19T10:00:00-05:00",
+     "end": "2026-11-19T11:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "afed249c6d1b",
+   "title": "Ocean View Farm Trail Work Party",
+   "venue": "Ocean View Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/ocean-view-farm-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-11-20T09:00:00-05:00",
+   "last_start": "2026-11-20T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-20T09:00:00-05:00",
+     "end": "2026-11-20T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "f78e0f8940ac",
+   "title": "Peter Wolf and The Midnight Travelers - Friday, Nov. 20",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/peter-wolf-and-the-midnight-travelers-friday-nov-20/",
+   "cost": "",
+   "first_start": "2026-11-20T20:00:00-05:00",
+   "last_start": "2026-11-20T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-20T20:00:00-05:00",
+     "end": "2026-11-20T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5e17f0b99941",
+   "title": "Falco and Book Play Jerry Garcia",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/falco-and-book-play-jerry-garcia/",
+   "cost": "",
+   "first_start": "2026-11-21T20:00:00-05:00",
+   "last_start": "2026-11-21T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-21T20:00:00-05:00",
+     "end": "2026-11-21T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a295d732b947",
+   "title": "11th Annual Music of Michael Troy Concert",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/11th-annual-music-of-michael-troy-concert/",
+   "cost": "",
+   "first_start": "2026-11-22T13:00:00-05:00",
+   "last_start": "2026-11-22T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-22T13:00:00-05:00",
+     "end": "2026-11-22T17:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "30bf1ea206b2",
+   "title": "Roomful of Blues - Fall River",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/roomful-of-blues-fall-river/",
+   "cost": "&#x24;30 – &#x24;75",
+   "first_start": "2026-11-27T00:00:00-05:00",
+   "last_start": "2026-11-27T00:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-27T00:00:00-05:00",
+     "end": "2026-11-27T23:59:59-05:00",
+     "all_day": true
+    }
+   ]
+  },
+  {
+   "id": "e9e34f0bd299",
+   "title": "Exercise Walk",
+   "venue": "Russells Mills Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/exercise-walk/",
+   "cost": "Free",
+   "first_start": "2026-11-28T09:00:00-05:00",
+   "last_start": "2026-11-28T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T09:00:00-05:00",
+     "end": "2026-11-28T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "9c0c5bea66c7",
+   "title": "Neal McCarthy Electric Band",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/neal-mccarthy-electric-band/",
+   "cost": "",
+   "first_start": "2026-11-28T20:00:00-05:00",
+   "last_start": "2026-11-28T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T20:00:00-05:00",
+     "end": "2026-11-28T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "708b832d2c80",
+   "title": "Chris Smither",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/chris-smither/",
+   "cost": "",
+   "first_start": "2026-12-03T20:00:00-05:00",
+   "last_start": "2026-12-03T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-03T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5b1a5e13da2c",
+   "title": "The Technicians",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/the-technicians/2026-12-05/",
+   "cost": "",
+   "first_start": "2026-12-05T13:00:00-05:00",
+   "last_start": "2026-12-05T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T13:00:00-05:00",
+     "end": "2026-12-05T16:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c9c73fe29781",
+   "title": "Fall River Children's Holiday Parade",
+   "venue": "Kennedy Park",
+   "town": "Fall River",
+   "category": "Family & Children",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/fall-river-childrens-holiday-parade/",
+   "cost": "",
+   "first_start": "2026-12-05T13:00:00-05:00",
+   "last_start": "2026-12-05T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T13:00:00-05:00",
+     "end": "2026-12-05T13:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "7fae9d50ff35",
+   "title": "Hidden Histories of African American Rhode Island with Jim Doherty",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/hidden-histories-of-african-american-rhode-island-with-jim-doherty/",
+   "cost": "",
+   "first_start": "2026-12-05T13:30:00-05:00",
+   "last_start": "2026-12-05T13:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T13:30:00-05:00",
+     "end": "2026-12-05T14:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "391cfde7e9c5",
+   "title": "Joan Osborne Sings the Songs of Bob Dylan",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/joan-osborne-sings-the-songs-of-bob-dylan/",
+   "cost": "",
+   "first_start": "2026-12-05T20:00:00-05:00",
+   "last_start": "2026-12-05T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T20:00:00-05:00",
+     "end": "2026-12-05T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "d54834761833",
+   "title": "Smith Farm Trail Work Party",
+   "venue": "Smith Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/smith-farm-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-12-09T09:00:00-05:00",
+   "last_start": "2026-12-09T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-09T09:00:00-05:00",
+     "end": "2026-12-09T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  }
+ ]
+}
