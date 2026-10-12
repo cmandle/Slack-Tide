@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 177,
-   "seconds": 5.42
+   "rows": 174,
+   "seconds": 4.81
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.86
+   "seconds": 0.71
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 4.24
+   "seconds": 4.12
   },
   "viva-fall-river": {
-   "rows": 261,
-   "seconds": 18.99
+   "rows": 258,
+   "seconds": 18.47
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 11.79
+   "seconds": 5.53
   },
   "town-tiverton": {
    "rows": 194,
-   "seconds": 0.7
+   "seconds": 0.56
   },
   "town-dartmouth": {
    "rows": 24,
-   "seconds": 0.36
+   "seconds": 0.4
   },
   "town-somerset": {
    "rows": 12,
-   "seconds": 0.6
+   "seconds": 0.64
   }
  },
  "errors": {},
- "primary_rows": 530,
+ "primary_rows": 527,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
  "series": 156,
  "by_town": {
-  "Fall River": 77,
   "Tiverton": 34,
+  "Fall River": 77,
   "Dartmouth": 22,
   "Somerset": 10,
   "Little Compton": 11,
@@ -50,29 +50,29 @@
   "Westport": 1
  },
  "by_category": {
-  "Food & Drink": 8,
-  "Markets & Fairs": 1,
-  "(unclassified)": 34,
   "Sports & Recreation": 7,
+  "(unclassified)": 34,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 14,
   "Library & Talks": 27,
   "Civic & Town Meetings": 28,
   "Arts & Theatre": 7,
+  "Food & Drink": 8,
   "Music": 15,
   "Family & Children": 10,
   "Education & Workshops": 2,
+  "Markets & Fairs": 1,
   "Museums & Exhibitions": 1
  },
  "by_cadence": {
-  "weekends": 1,
-  "weekly": 36,
   "several-a-week": 2,
+  "weekly": 36,
   "once": 81,
   "fortnightly": 5,
   "monthly": 24,
   "irregular": 5,
-  "daily": 2
+  "daily": 2,
+  "weekends": 1
  },
  "weekend_gate": {
   "saturday": "2026-10-17",
@@ -85,23 +85,23 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 177,
+  "check_total": 174,
   "check_matched": 1,
-  "check_missed_rows": 176,
-  "check_missed_series": 56,
+  "check_missed_rows": 173,
+  "check_missed_series": 54,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
     "first_start": "2026-10-15T19:30:00-04:00",
-    "rows": 24
+    "rows": 25
    },
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
-    "first_start": "2026-10-11T21:00:00-04:00",
+    "first_start": "2026-10-15T21:00:00-04:00",
     "rows": 17
    },
    {
@@ -109,13 +109,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-14T18:30:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-11T14:00:00-04:00",
     "rows": 9
    },
    {
@@ -161,6 +154,13 @@
     "rows": 8
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-18T14:00:00-04:00",
+    "rows": 8
+   },
+   {
     "title": "Sketchbook Club",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -171,8 +171,8 @@
     "title": "Boo at the Zoo",
     "venue": "Buttonwood Park Zoo",
     "town": "New Bedford",
-    "first_start": "2026-10-11T10:00:00-04:00",
-    "rows": 5
+    "first_start": "2026-10-17T10:00:00-04:00",
+    "rows": 4
    },
    {
     "title": "Monthly Artists Share!",
@@ -392,13 +392,6 @@
     "rows": 1
    },
    {
-    "title": "Walking Tour: The History of New Bedford Harbor",
-    "venue": "New Bedford Whaling National Historical Park",
-    "town": "New Bedford",
-    "first_start": "2026-10-11T10:30:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Wicked Sing-Along at The Z",
     "venue": "Zeiterion",
     "town": "New Bedford",
@@ -410,13 +403,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-24T19:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Yoga Nidra & Affirmation Creation Workshop",
-    "venue": "YOGA ES VIDA COLLECTIVE",
-    "town": "New Bedford",
-    "first_start": "2026-10-11T10:30:00-04:00",
     "rows": 1
    },
    {
