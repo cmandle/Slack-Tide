@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 174,
-   "seconds": 4.81
+   "rows": 176,
+   "seconds": 4.58
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.71
+   "seconds": 0.5
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 4.12
+   "seconds": 3.39
   },
   "viva-fall-river": {
-   "rows": 258,
-   "seconds": 18.47
+   "rows": 292,
+   "seconds": 18.82
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 5.53
+   "seconds": 4.58
   },
   "town-tiverton": {
-   "rows": 194,
-   "seconds": 0.56
+   "rows": 190,
+   "seconds": 0.59
   },
   "town-dartmouth": {
    "rows": 24,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   "town-somerset": {
    "rows": 12,
-   "seconds": 0.64
+   "seconds": 0.6
   }
  },
  "errors": {},
- "primary_rows": 527,
+ "primary_rows": 557,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
- "series": 156,
+ "series": 187,
  "by_town": {
+  "Fall River": 108,
   "Tiverton": 34,
-  "Fall River": 77,
   "Dartmouth": 22,
   "Somerset": 10,
   "Little Compton": 11,
@@ -50,44 +50,44 @@
   "Westport": 1
  },
  "by_category": {
+  "Food & Drink": 13,
+  "(unclassified)": 43,
+  "Outdoors & Nature": 16,
   "Sports & Recreation": 7,
-  "(unclassified)": 34,
-  "Volunteering & Causes": 2,
-  "Outdoors & Nature": 14,
-  "Library & Talks": 27,
+  "Library & Talks": 33,
   "Civic & Town Meetings": 28,
   "Arts & Theatre": 7,
-  "Food & Drink": 8,
-  "Music": 15,
-  "Family & Children": 10,
-  "Education & Workshops": 2,
+  "Music": 20,
+  "Family & Children": 13,
+  "Volunteering & Causes": 2,
+  "Education & Workshops": 3,
   "Markets & Fairs": 1,
   "Museums & Exhibitions": 1
  },
  "by_cadence": {
-  "several-a-week": 2,
+  "once": 112,
   "weekly": 36,
-  "once": 81,
   "fortnightly": 5,
   "monthly": 24,
+  "several-a-week": 2,
   "irregular": 5,
   "daily": 2,
   "weekends": 1
  },
  "weekend_gate": {
   "saturday": "2026-10-17",
-  "series": 8,
+  "series": 10,
   "towns": {
-   "Fall River": 6,
+   "Fall River": 8,
    "Little Compton": 1,
    "Dartmouth": 1
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 174,
+  "check_total": 176,
   "check_matched": 1,
-  "check_missed_rows": 173,
+  "check_missed_rows": 175,
   "check_missed_series": 54,
   "check_missed": [
    {
@@ -112,6 +112,13 @@
     "rows": 9
    },
    {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T17:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -133,6 +140,13 @@
     "rows": 9
    },
    {
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-16T18:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "SnapLab: Photography Studio Sessions",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -147,24 +161,10 @@
     "rows": 9
    },
    {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T17:30:00-04:00",
-    "rows": 8
-   },
-   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-18T14:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T18:00:00-04:00",
     "rows": 8
    },
    {
