@@ -1,114 +1,8 @@
 {
- "generated_at": "2026-10-12T22:32:52.314219+00:00",
- "series_count": 187,
- "occurrence_count": 520,
+ "generated_at": "2026-10-13T10:37:51.934803+00:00",
+ "series_count": 186,
+ "occurrence_count": 519,
  "series": [
-  {
-   "id": "7c7478967785",
-   "title": "Dinner of the Dead: A Candlelit Halloween Dinner",
-   "venue": "Primo on Water Street",
-   "town": "Fall River",
-   "category": "Food & Drink",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/dinner-of-the-dead-a-candlelit-halloween-dinner/",
-   "cost": "",
-   "first_start": "2026-10-12T08:00:00-04:00",
-   "last_start": "2026-10-12T08:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-12T08:00:00-04:00",
-     "end": "2026-10-12T17:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "c0a7acde82f5",
-   "title": "$2 Oyster Mondays (weekly)",
-   "venue": "Pier 52",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/2-oyster-mondays-weekly/2026-10-12/",
-   "cost": "",
-   "first_start": "2026-10-12T16:00:00-04:00",
-   "last_start": "2026-10-12T16:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-12T16:00:00-04:00",
-     "end": "2026-10-12T22:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "714fd9ddd9f1",
-   "title": "Nick Sanfilippo",
-   "venue": "The Tipsy Toboggan",
-   "town": "Fall River",
-   "category": "Outdoors & Nature",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/nick-sanfilippo/2026-10-12/",
-   "cost": "",
-   "first_start": "2026-10-12T18:30:00-04:00",
-   "last_start": "2026-12-07T18:30:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-12T18:30:00-04:00",
-     "end": "2026-10-12T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-19T18:30:00-04:00",
-     "end": "2026-10-19T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T18:30:00-04:00",
-     "end": "2026-10-26T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T18:30:00-05:00",
-     "end": "2026-11-02T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T18:30:00-05:00",
-     "end": "2026-11-09T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T18:30:00-05:00",
-     "end": "2026-11-16T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T18:30:00-05:00",
-     "end": "2026-11-23T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T18:30:00-05:00",
-     "end": "2026-11-30T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T18:30:00-05:00",
-     "end": "2026-12-07T21:30:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
   {
    "id": "3c769e6096a9",
    "title": "Chair Yoga",
@@ -2596,8 +2490,8 @@
    "url": "https://www.vivafallriver.com/event/primo-after-dark-weekly-dj-sets/2026-10-16/",
    "cost": "",
    "first_start": "2026-10-16T20:00:00-04:00",
-   "last_start": "2026-12-04T20:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-11T20:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 4,
    "occurrences": [
@@ -2639,6 +2533,11 @@
     {
      "start": "2026-12-04T20:00:00-05:00",
      "end": "2026-12-04T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T20:00:00-05:00",
+     "end": "2026-12-11T20:00:00-05:00",
      "all_day": false
     }
    ]
@@ -3394,6 +3293,63 @@
     {
      "start": "2026-11-16T18:00:00-05:00",
      "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "714fd9ddd9f1",
+   "title": "Nick Sanfilippo",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "Outdoors & Nature",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/nick-sanfilippo/2026-10-19/",
+   "cost": "",
+   "first_start": "2026-10-19T18:30:00-04:00",
+   "last_start": "2026-12-07T18:30:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-19T18:30:00-04:00",
+     "end": "2026-10-19T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T18:30:00-04:00",
+     "end": "2026-10-26T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T18:30:00-05:00",
+     "end": "2026-11-02T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T18:30:00-05:00",
+     "end": "2026-11-09T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T18:30:00-05:00",
+     "end": "2026-11-16T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T18:30:00-05:00",
+     "end": "2026-11-23T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T18:30:00-05:00",
+     "end": "2026-11-30T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T18:30:00-05:00",
+     "end": "2026-12-07T21:30:00-05:00",
      "all_day": false
     }
    ]
@@ -5778,6 +5734,28 @@
     {
      "start": "2026-12-11T17:00:00-05:00",
      "end": "2026-12-11T17:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "fdccbfdbe9d9",
+   "title": "The Empty Pockets - Holiday Tour",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Museums & Exhibitions",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/the-empty-pockets-holiday-tour/",
+   "cost": "",
+   "first_start": "2026-12-11T20:00:00-05:00",
+   "last_start": "2026-12-11T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-11T20:00:00-05:00",
+     "end": "2026-12-11T22:00:00-05:00",
      "all_day": false
     }
    ]

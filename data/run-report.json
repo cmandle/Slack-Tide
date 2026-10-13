@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 176,
-   "seconds": 4.58
+   "rows": 177,
+   "seconds": 5.02
   },
   "brownell-library": {
-   "rows": 22,
-   "seconds": 0.5
+   "rows": 21,
+   "seconds": 0.82
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.39
+   "seconds": 2.92
   },
   "viva-fall-river": {
-   "rows": 292,
-   "seconds": 18.82
+   "rows": 291,
+   "seconds": 18.91
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 4.58
+   "seconds": 6.72
   },
   "town-tiverton": {
    "rows": 190,
-   "seconds": 0.59
+   "seconds": 0.85
   },
   "town-dartmouth": {
    "rows": 24,
-   "seconds": 0.3
+   "seconds": 0.41
   },
   "town-somerset": {
    "rows": 12,
-   "seconds": 0.6
+   "seconds": 0.67
   }
  },
  "errors": {},
- "primary_rows": 557,
+ "primary_rows": 555,
  "dropped": {
-  "closure": 6,
+  "closure": 5,
   "holiday": 14
  },
- "series": 187,
+ "series": 186,
  "by_town": {
-  "Fall River": 108,
   "Tiverton": 34,
+  "Fall River": 107,
   "Dartmouth": 22,
   "Somerset": 10,
   "Little Compton": 11,
@@ -50,23 +50,23 @@
   "Westport": 1
  },
  "by_category": {
-  "Food & Drink": 13,
-  "(unclassified)": 43,
-  "Outdoors & Nature": 16,
   "Sports & Recreation": 7,
   "Library & Talks": 33,
   "Civic & Town Meetings": 28,
+  "(unclassified)": 42,
   "Arts & Theatre": 7,
+  "Food & Drink": 12,
   "Music": 20,
   "Family & Children": 13,
+  "Outdoors & Nature": 16,
   "Volunteering & Causes": 2,
   "Education & Workshops": 3,
   "Markets & Fairs": 1,
-  "Museums & Exhibitions": 1
+  "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 112,
   "weekly": 36,
+  "once": 111,
   "fortnightly": 5,
   "monthly": 24,
   "several-a-week": 2,
@@ -85,17 +85,17 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 176,
+  "check_total": 177,
   "check_matched": 1,
-  "check_missed_rows": 175,
-  "check_missed_series": 54,
+  "check_missed_rows": 176,
+  "check_missed_series": 55,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
     "first_start": "2026-10-15T19:30:00-04:00",
-    "rows": 25
+    "rows": 26
    },
    {
     "title": "Karaoke Nights!",
@@ -116,13 +116,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-16T17:30:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-12T14:00:00-04:00",
     "rows": 9
    },
    {
@@ -165,6 +158,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-18T14:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-19T14:00:00-04:00",
     "rows": 8
    },
    {
@@ -403,6 +403,13 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-24T19:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents A Doo Wop Christmas",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-12-11T19:30:00-05:00",
     "rows": 1
    },
    {
