@@ -2,60 +2,60 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 177,
-   "seconds": 5.02
+   "seconds": 5.31
   },
   "brownell-library": {
-   "rows": 21,
-   "seconds": 0.82
+   "rows": 22,
+   "seconds": 0.92
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 2.92
+   "seconds": 2.89
   },
   "viva-fall-river": {
-   "rows": 291,
-   "seconds": 18.91
+   "rows": 295,
+   "seconds": 19.3
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 6.72
+   "seconds": 5.13
   },
   "town-tiverton": {
-   "rows": 190,
-   "seconds": 0.85
+   "rows": 186,
+   "seconds": 0.68
   },
   "town-dartmouth": {
-   "rows": 24,
-   "seconds": 0.41
+   "rows": 28,
+   "seconds": 0.35
   },
   "town-somerset": {
-   "rows": 12,
-   "seconds": 0.67
+   "rows": 13,
+   "seconds": 0.62
   }
  },
  "errors": {},
- "primary_rows": 555,
+ "primary_rows": 561,
  "dropped": {
   "closure": 5,
   "holiday": 14
  },
- "series": 186,
+ "series": 194,
  "by_town": {
+  "Fall River": 108,
   "Tiverton": 34,
-  "Fall River": 107,
-  "Dartmouth": 22,
-  "Somerset": 10,
-  "Little Compton": 11,
+  "Dartmouth": 27,
+  "Somerset": 11,
+  "Little Compton": 12,
   "New Bedford": 1,
   "Westport": 1
  },
  "by_category": {
-  "Sports & Recreation": 7,
-  "Library & Talks": 33,
-  "Civic & Town Meetings": 28,
-  "(unclassified)": 42,
-  "Arts & Theatre": 7,
+  "Library & Talks": 35,
+  "Civic & Town Meetings": 31,
   "Food & Drink": 12,
+  "(unclassified)": 44,
+  "Sports & Recreation": 7,
+  "Arts & Theatre": 8,
   "Music": 20,
   "Family & Children": 13,
   "Outdoors & Nature": 16,
@@ -66,13 +66,13 @@
  },
  "by_cadence": {
   "weekly": 36,
-  "once": 111,
+  "once": 118,
   "fortnightly": 5,
-  "monthly": 24,
+  "monthly": 23,
   "several-a-week": 2,
-  "irregular": 5,
+  "irregular": 6,
   "daily": 2,
-  "weekends": 1
+  "weekends": 2
  },
  "weekend_gate": {
   "saturday": "2026-10-17",
