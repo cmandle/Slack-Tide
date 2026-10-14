@@ -1,63 +1,63 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 177,
-   "seconds": 5.31
+   "rows": 174,
+   "seconds": 4.76
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.92
+   "seconds": 0.89
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 2.89
+   "seconds": 2.79
   },
   "viva-fall-river": {
-   "rows": 295,
-   "seconds": 19.3
+   "rows": 289,
+   "seconds": 18.39
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 5.13
+   "seconds": 6.05
   },
   "town-tiverton": {
-   "rows": 186,
-   "seconds": 0.68
+   "rows": 183,
+   "seconds": 0.48
   },
   "town-dartmouth": {
-   "rows": 28,
-   "seconds": 0.35
+   "rows": 25,
+   "seconds": 0.34
   },
   "town-somerset": {
-   "rows": 13,
-   "seconds": 0.62
+   "rows": 11,
+   "seconds": 0.52
   }
  },
  "errors": {},
- "primary_rows": 561,
+ "primary_rows": 547,
  "dropped": {
   "closure": 5,
   "holiday": 14
  },
- "series": 194,
+ "series": 187,
  "by_town": {
-  "Fall River": 108,
-  "Tiverton": 34,
-  "Dartmouth": 27,
-  "Somerset": 11,
+  "Tiverton": 31,
+  "Fall River": 109,
+  "Somerset": 9,
   "Little Compton": 12,
+  "Dartmouth": 24,
   "New Bedford": 1,
   "Westport": 1
  },
  "by_category": {
-  "Library & Talks": 35,
-  "Civic & Town Meetings": 31,
-  "Food & Drink": 12,
-  "(unclassified)": 44,
   "Sports & Recreation": 7,
-  "Arts & Theatre": 8,
-  "Music": 20,
   "Family & Children": 13,
+  "(unclassified)": 43,
+  "Music": 21,
+  "Civic & Town Meetings": 24,
+  "Food & Drink": 12,
+  "Library & Talks": 35,
+  "Arts & Theatre": 8,
   "Outdoors & Nature": 16,
   "Volunteering & Causes": 2,
   "Education & Workshops": 3,
@@ -65,11 +65,11 @@
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "weekly": 36,
-  "once": 118,
-  "fortnightly": 5,
-  "monthly": 23,
   "several-a-week": 2,
+  "weekly": 36,
+  "once": 111,
+  "monthly": 23,
+  "fortnightly": 5,
   "irregular": 6,
   "daily": 2,
   "weekends": 2
@@ -85,17 +85,17 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 177,
+  "check_total": 174,
   "check_matched": 1,
-  "check_missed_rows": 176,
-  "check_missed_series": 55,
+  "check_missed_rows": 173,
+  "check_missed_series": 54,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
     "first_start": "2026-10-15T19:30:00-04:00",
-    "rows": 26
+    "rows": 27
    },
    {
     "title": "Karaoke Nights!",
@@ -126,24 +126,10 @@
     "rows": 9
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-13T20:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Sketchbook Club",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-16T18:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "SnapLab: Photography Studio Sessions",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-13T18:00:00-04:00",
     "rows": 9
    },
    {
@@ -168,18 +154,25 @@
     "rows": 8
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-20T20:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "SnapLab: Photography Studio Sessions",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-20T18:00:00-04:00",
+    "rows": 8
+   },
+   {
     "title": "Boo at the Zoo",
     "venue": "Buttonwood Park Zoo",
     "town": "New Bedford",
     "first_start": "2026-10-17T10:00:00-04:00",
     "rows": 4
-   },
-   {
-    "title": "Monthly Artists Share!",
-    "venue": "Gallery X",
-    "town": "New Bedford",
-    "first_start": "2026-10-13T18:30:00-04:00",
-    "rows": 3
    },
    {
     "title": "A Charlie Brown Christmas - Live On Stage at The Z",
@@ -193,6 +186,13 @@
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-10-16T22:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Monthly Artists Share!",
+    "venue": "Gallery X, Inc",
+    "town": "New Bedford",
+    "first_start": "2026-11-10T18:30:00-05:00",
     "rows": 2
    },
    {
@@ -253,7 +253,7 @@
    },
    {
     "title": "Balance and Swing Contradance",
-    "venue": "Gallery X",
+    "venue": "Gallery X, Inc",
     "town": "New Bedford",
     "first_start": "2026-10-16T18:00:00-04:00",
     "rows": 1
@@ -312,13 +312,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-27T17:30:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Movement at the Museum",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-13T18:00:00-04:00",
     "rows": 1
    },
    {
