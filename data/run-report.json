@@ -1,73 +1,73 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 174,
-   "seconds": 4.76
+   "rows": 176,
+   "seconds": 5.32
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.89
+   "seconds": 1.02
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 2.79
+   "seconds": 3.81
   },
   "viva-fall-river": {
-   "rows": 289,
-   "seconds": 18.39
+   "rows": 292,
+   "seconds": 19.18
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 6.05
+   "seconds": 5.87
   },
   "town-tiverton": {
-   "rows": 183,
-   "seconds": 0.48
+   "rows": 181,
+   "seconds": 0.9
   },
   "town-dartmouth": {
-   "rows": 25,
-   "seconds": 0.34
+   "rows": 30,
+   "seconds": 0.38
   },
   "town-somerset": {
-   "rows": 11,
-   "seconds": 0.52
+   "rows": 14,
+   "seconds": 0.59
   }
  },
  "errors": {},
- "primary_rows": 547,
+ "primary_rows": 556,
  "dropped": {
-  "closure": 5,
+  "closure": 6,
   "holiday": 14
  },
- "series": 187,
+ "series": 192,
  "by_town": {
   "Tiverton": 31,
   "Fall River": 109,
-  "Somerset": 9,
+  "Somerset": 11,
   "Little Compton": 12,
-  "Dartmouth": 24,
+  "Dartmouth": 27,
   "New Bedford": 1,
   "Westport": 1
  },
  "by_category": {
   "Sports & Recreation": 7,
   "Family & Children": 13,
-  "(unclassified)": 43,
-  "Music": 21,
-  "Civic & Town Meetings": 24,
+  "(unclassified)": 44,
+  "Civic & Town Meetings": 28,
   "Food & Drink": 12,
   "Library & Talks": 35,
   "Arts & Theatre": 8,
   "Outdoors & Nature": 16,
   "Volunteering & Causes": 2,
   "Education & Workshops": 3,
+  "Music": 21,
   "Markets & Fairs": 1,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
   "several-a-week": 2,
   "weekly": 36,
-  "once": 111,
+  "once": 116,
   "monthly": 23,
   "fortnightly": 5,
   "irregular": 6,
@@ -85,10 +85,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 174,
+  "check_total": 176,
   "check_matched": 1,
-  "check_missed_rows": 173,
-  "check_missed_series": 54,
+  "check_missed_rows": 175,
+  "check_missed_series": 55,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
@@ -119,6 +119,13 @@
     "rows": 9
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-18T14:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -138,13 +145,6 @@
     "town": "New Bedford",
     "first_start": "2026-10-14T18:00:00-04:00",
     "rows": 9
-   },
-   {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-18T14:00:00-04:00",
-    "rows": 8
    },
    {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
@@ -368,6 +368,13 @@
     "venue": "SaintAnthonyofNewBedford",
     "town": "New Bedford",
     "first_start": "2026-11-01T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "WHALE Holiday House Tour",
+    "venue": "Rotch-Jones-Duff House & Garden Museum",
+    "town": "New Bedford",
+    "first_start": "2026-12-13T12:00:00-05:00",
     "rows": 1
    },
    {

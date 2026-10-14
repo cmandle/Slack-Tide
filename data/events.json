@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-14T10:48:43.921598+00:00",
- "series_count": 187,
- "occurrence_count": 512,
+ "generated_at": "2026-10-14T22:44:59.601067+00:00",
+ "series_count": 192,
+ "occurrence_count": 520,
  "series": [
   {
    "id": "ee5aab63f527",
@@ -168,8 +168,8 @@
    ]
   },
   {
-   "id": "714cdf18b259",
-   "title": "Council on Aging",
+   "id": "fc734fa088d8",
+   "title": "CANCELLED Council on Aging",
    "venue": "115 Wood St. Somerset MA 02726",
    "town": "Somerset",
    "category": "",
@@ -237,130 +237,6 @@
     {
      "start": "2026-12-02T10:30:00-05:00",
      "end": "2026-12-02T12:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "a136d19cf1cd",
-   "title": "Sandy's Live Music & Karaoke",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Music",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-14T12:15:00-04:00",
-   "last_start": "2026-12-09T12:15:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-10-14T12:15:00-04:00",
-     "end": "2026-10-14T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-21T12:15:00-04:00",
-     "end": "2026-10-21T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-28T12:15:00-04:00",
-     "end": "2026-10-28T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T12:15:00-05:00",
-     "end": "2026-11-04T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T12:15:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:15:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:15:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:15:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:15:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "cf4589ea0706",
-   "title": "Cribbage",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-14T12:30:00-04:00",
-   "last_start": "2026-12-09T12:30:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-10-14T12:30:00-04:00",
-     "end": "2026-10-14T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-21T12:30:00-04:00",
-     "end": "2026-10-21T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-28T12:30:00-04:00",
-     "end": "2026-10-28T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T12:30:00-05:00",
-     "end": "2026-11-04T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T12:30:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:30:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:30:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:30:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:30:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
      "all_day": false
     }
    ]
@@ -1885,8 +1761,8 @@
    "url": "https://www.vivafallriver.com/event/weekend-brunch/2026-10-17/",
    "cost": "",
    "first_start": "2026-10-17T10:00:00-04:00",
-   "last_start": "2026-12-12T10:00:00-05:00",
-   "count": 17,
+   "last_start": "2026-12-13T10:00:00-05:00",
+   "count": 18,
    "cadence": "weekends",
    "weekday": null,
    "occurrences": [
@@ -1973,6 +1849,11 @@
     {
      "start": "2026-12-12T10:00:00-05:00",
      "end": "2026-12-12T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T12:30:00-05:00",
      "all_day": false
     }
    ]
@@ -2075,8 +1956,8 @@
    "url": "https://www.vivafallriver.com/event/poppin-prosecco-with-primo-brunch/2026-10-18/",
    "cost": "",
    "first_start": "2026-10-18T10:00:00-04:00",
-   "last_start": "2026-12-06T10:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-13T10:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 6,
    "occurrences": [
@@ -2118,6 +1999,11 @@
     {
      "start": "2026-12-06T10:00:00-05:00",
      "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2203,8 +2089,8 @@
    "url": "https://www.vivafallriver.com/event/matt-silva-sunday-funday/2026-10-18/",
    "cost": "",
    "first_start": "2026-10-18T16:00:00-04:00",
-   "last_start": "2026-12-06T16:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-13T16:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 6,
    "occurrences": [
@@ -2246,6 +2132,11 @@
     {
      "start": "2026-12-06T16:00:00-05:00",
      "end": "2026-12-06T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T16:00:00-05:00",
+     "end": "2026-12-13T19:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2846,6 +2737,60 @@
    ]
   },
   {
+   "id": "9eaee02c63a6",
+   "title": "Bristol County Public Health Emergency Preparedness Coalition",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-20T12:30:00-04:00",
+   "last_start": "2026-10-20T13:30:00-04:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T12:30:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T13:30:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "443301dfbb48",
+   "title": "Bristol County Public Health Emergency Preparedness Coalition",
+   "venue": "4 Precinct Street Lakeville MA 02347",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-20T12:30:00-04:00",
+   "last_start": "2026-10-20T13:30:00-04:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T12:30:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-20T13:30:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "8fc3df99b704",
    "title": "Drums Alive!",
    "venue": "",
@@ -2898,6 +2843,28 @@
     {
      "start": "2026-12-08T12:45:00-05:00",
      "end": "2026-12-08T13:45:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "46e1286d39b9",
+   "title": "Southeastern Massachusetts Metropolitan Planning Organization (SRPEDD)",
+   "venue": "https://us02web.zoom.us/webinar/register/WN_RrGH0Q8FSaaaUNAtFqcz_Q Meeting ID: 826 4809 2299 Passcode: 529061 -",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-20T13:00:00-04:00",
+   "last_start": "2026-10-20T13:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T13:00:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
      "all_day": false
     }
    ]
@@ -3088,6 +3055,28 @@
     {
      "start": "2026-10-20T17:30:00-04:00",
      "end": "2026-10-20T18:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "73a9455bc3d0",
+   "title": "Dartmouth School Committee/Policy Sub-Committee",
+   "venue": "555 Bakerville Road Guidance Conference Room Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-20T17:30:00-04:00",
+   "last_start": "2026-10-20T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-20T17:30:00-04:00",
+     "end": "2026-10-20T23:59:00-04:00",
      "all_day": false
     }
    ]
@@ -3295,6 +3284,142 @@
     {
      "start": "2026-12-08T19:30:00-05:00",
      "end": "2026-12-08T20:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "916b7254c0a7",
+   "title": "Board of Registrars Meeting",
+   "venue": "400 Slocum Road Room 309 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-21T09:00:00-04:00",
+   "last_start": "2026-10-21T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-21T09:00:00-04:00",
+     "end": "2026-10-21T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a136d19cf1cd",
+   "title": "Sandy's Live Music & Karaoke",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Music",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-21T12:15:00-04:00",
+   "last_start": "2026-12-09T12:15:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-21T12:15:00-04:00",
+     "end": "2026-10-21T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T12:15:00-04:00",
+     "end": "2026-10-28T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T12:15:00-05:00",
+     "end": "2026-11-04T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T12:15:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:15:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:15:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:15:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:15:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "cf4589ea0706",
+   "title": "Cribbage",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-21T12:30:00-04:00",
+   "last_start": "2026-12-09T12:30:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-10-21T12:30:00-04:00",
+     "end": "2026-10-21T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T12:30:00-04:00",
+     "end": "2026-10-28T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T12:30:00-05:00",
+     "end": "2026-11-04T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T12:30:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:30:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:30:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:30:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:30:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
      "all_day": false
     }
    ]
