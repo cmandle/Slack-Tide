@@ -1,77 +1,77 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 175,
-   "seconds": 3.96
+   "rows": 178,
+   "seconds": 3.76
   },
   "brownell-library": {
    "rows": 21,
-   "seconds": 0.46
+   "seconds": 0.76
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.56
+   "seconds": 2.26
   },
   "viva-fall-river": {
-   "rows": 285,
-   "seconds": 18.04
+   "rows": 286,
+   "seconds": 19.41
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 8.56
+   "seconds": 5.41
   },
   "town-tiverton": {
-   "rows": 180,
-   "seconds": 0.53
+   "rows": 183,
+   "seconds": 0.51
   },
   "town-dartmouth": {
-   "rows": 29,
-   "seconds": 0.31
+   "rows": 31,
+   "seconds": 0.35
   },
   "town-somerset": {
-   "rows": 9,
-   "seconds": 0.48
+   "rows": 13,
+   "seconds": 0.46
   }
  },
  "errors": {},
- "primary_rows": 541,
+ "primary_rows": 551,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
- "series": 186,
+ "series": 192,
  "by_town": {
-  "Dartmouth": 26,
-  "Tiverton": 31,
+  "Dartmouth": 28,
   "Fall River": 109,
   "New Bedford": 1,
-  "Somerset": 6,
+  "Somerset": 9,
+  "Tiverton": 32,
   "Westport": 1,
   "Little Compton": 12
  },
  "by_category": {
-  "Civic & Town Meetings": 25,
   "Outdoors & Nature": 16,
-  "Sports & Recreation": 7,
-  "Library & Talks": 35,
-  "Volunteering & Causes": 2,
+  "Library & Talks": 36,
   "Arts & Theatre": 8,
-  "(unclassified)": 41,
+  "(unclassified)": 42,
   "Education & Workshops": 3,
+  "Civic & Town Meetings": 29,
   "Food & Drink": 12,
   "Family & Children": 13,
+  "Sports & Recreation": 7,
   "Music": 21,
   "Markets & Fairs": 1,
+  "Volunteering & Causes": 2,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 111,
+  "once": 118,
   "weekly": 36,
   "irregular": 5,
   "daily": 2,
   "several-a-week": 2,
   "weekends": 2,
-  "monthly": 23,
+  "monthly": 22,
   "fortnightly": 5
  },
  "weekend_gate": {
@@ -85,10 +85,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 175,
+  "check_total": 178,
   "check_matched": 1,
-  "check_missed_rows": 174,
-  "check_missed_series": 55,
+  "check_missed_rows": 177,
+  "check_missed_series": 57,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
@@ -119,6 +119,13 @@
     "rows": 9
    },
    {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-19T14:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -137,13 +144,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-21T18:30:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-19T14:00:00-04:00",
     "rows": 8
    },
    {
@@ -215,6 +215,13 @@
     "town": "New Bedford",
     "first_start": "2026-10-24T13:00:00-04:00",
     "rows": 2
+   },
+   {
+    "title": "1st Annual New Bedford Powwow",
+    "venue": "Fort Taber Community Center",
+    "town": "New Bedford",
+    "first_start": "2026-10-24T12:00:00-04:00",
+    "rows": 1
    },
    {
     "title": "A HALLOWEEN YOGA EXPERIENCE - CHASING AWAY YOUR SHADOW",
@@ -312,6 +319,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-27T17:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Mishoon Burn at Community Boating Center",
+    "venue": "Community Boating Center",
+    "town": "New Bedford",
+    "first_start": "2026-10-21T00:00:00-04:00",
     "rows": 1
    },
    {
