@@ -1,78 +1,78 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 176,
-   "seconds": 5.32
+   "rows": 175,
+   "seconds": 3.96
   },
   "brownell-library": {
-   "rows": 22,
-   "seconds": 1.02
+   "rows": 21,
+   "seconds": 0.46
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.81
+   "seconds": 3.56
   },
   "viva-fall-river": {
-   "rows": 292,
-   "seconds": 19.18
+   "rows": 285,
+   "seconds": 18.04
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 5.87
+   "seconds": 8.56
   },
   "town-tiverton": {
-   "rows": 181,
-   "seconds": 0.9
+   "rows": 180,
+   "seconds": 0.53
   },
   "town-dartmouth": {
-   "rows": 30,
-   "seconds": 0.38
+   "rows": 29,
+   "seconds": 0.31
   },
   "town-somerset": {
-   "rows": 14,
-   "seconds": 0.59
+   "rows": 9,
+   "seconds": 0.48
   }
  },
  "errors": {},
- "primary_rows": 556,
+ "primary_rows": 541,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
- "series": 192,
+ "series": 186,
  "by_town": {
+  "Dartmouth": 26,
   "Tiverton": 31,
   "Fall River": 109,
-  "Somerset": 11,
-  "Little Compton": 12,
-  "Dartmouth": 27,
   "New Bedford": 1,
-  "Westport": 1
+  "Somerset": 6,
+  "Westport": 1,
+  "Little Compton": 12
  },
  "by_category": {
-  "Sports & Recreation": 7,
-  "Family & Children": 13,
-  "(unclassified)": 44,
-  "Civic & Town Meetings": 28,
-  "Food & Drink": 12,
-  "Library & Talks": 35,
-  "Arts & Theatre": 8,
+  "Civic & Town Meetings": 25,
   "Outdoors & Nature": 16,
+  "Sports & Recreation": 7,
+  "Library & Talks": 35,
   "Volunteering & Causes": 2,
+  "Arts & Theatre": 8,
+  "(unclassified)": 41,
   "Education & Workshops": 3,
+  "Food & Drink": 12,
+  "Family & Children": 13,
   "Music": 21,
   "Markets & Fairs": 1,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "several-a-week": 2,
+  "once": 111,
   "weekly": 36,
-  "once": 116,
-  "monthly": 23,
-  "fortnightly": 5,
-  "irregular": 6,
+  "irregular": 5,
   "daily": 2,
-  "weekends": 2
+  "several-a-week": 2,
+  "weekends": 2,
+  "monthly": 23,
+  "fortnightly": 5
  },
  "weekend_gate": {
   "saturday": "2026-10-17",
@@ -85,9 +85,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 176,
+  "check_total": 175,
   "check_matched": 1,
-  "check_missed_rows": 175,
+  "check_missed_rows": 174,
   "check_missed_series": 55,
   "check_missed": [
    {
@@ -102,14 +102,7 @@
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-10-15T21:00:00-04:00",
-    "rows": 17
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-10-14T18:30:00-04:00",
-    "rows": 9
+    "rows": 18
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -140,11 +133,11 @@
     "rows": 9
    },
    {
-    "title": "Universal Participation: Welcome to Yoga",
-    "venue": "New Bedford Art Museum",
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
-    "first_start": "2026-10-14T18:00:00-04:00",
-    "rows": 9
+    "first_start": "2026-10-21T18:30:00-04:00",
+    "rows": 8
    },
    {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
@@ -165,6 +158,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-20T18:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-21T18:00:00-04:00",
     "rows": 8
    },
    {
