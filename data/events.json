@@ -1,199 +1,8 @@
 {
- "generated_at": "2026-10-16T10:48:24.189937+00:00",
- "series_count": 183,
- "occurrence_count": 501,
+ "generated_at": "2026-10-16T22:45:44.725494+00:00",
+ "series_count": 187,
+ "occurrence_count": 514,
  "series": [
-  {
-   "id": "fe0247326a8a",
-   "title": "Zumba",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-16T09:00:00-04:00",
-   "last_start": "2026-12-11T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-16T09:00:00-04:00",
-     "end": "2026-10-16T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T09:00:00-04:00",
-     "end": "2026-10-23T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T09:00:00-04:00",
-     "end": "2026-10-30T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T09:00:00-05:00",
-     "end": "2026-11-06T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T09:00:00-05:00",
-     "end": "2026-11-13T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T09:00:00-05:00",
-     "end": "2026-11-20T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T09:00:00-05:00",
-     "end": "2026-11-27T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T09:00:00-05:00",
-     "end": "2026-12-04T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T09:00:00-05:00",
-     "end": "2026-12-11T10:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "d8600d4c5a09",
-   "title": "Grief Support Group",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-16T10:00:00-04:00",
-   "last_start": "2026-12-11T10:00:00-05:00",
-   "count": 7,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-16T10:00:00-04:00",
-     "end": "2026-10-16T11:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T10:00:00-04:00",
-     "end": "2026-10-23T11:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T10:00:00-05:00",
-     "end": "2026-11-06T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T10:00:00-05:00",
-     "end": "2026-11-13T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T10:00:00-05:00",
-     "end": "2026-11-20T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T10:00:00-05:00",
-     "end": "2026-12-04T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T10:00:00-05:00",
-     "end": "2026-12-11T11:30:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "a04898c37ccd",
-   "title": "Senior Fitness with Terri",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-16T13:00:00-04:00",
-   "last_start": "2026-12-14T10:15:00-05:00",
-   "count": 12,
-   "cadence": "several-a-week",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-16T13:00:00-04:00",
-     "end": "2026-10-16T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-19T10:15:00-04:00",
-     "end": "2026-10-19T11:15:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T13:00:00-04:00",
-     "end": "2026-10-23T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T10:15:00-04:00",
-     "end": "2026-10-26T11:15:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T13:00:00-04:00",
-     "end": "2026-10-30T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T10:15:00-05:00",
-     "end": "2026-11-02T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T10:15:00-05:00",
-     "end": "2026-11-09T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:15:00-05:00",
-     "end": "2026-11-16T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:15:00-05:00",
-     "end": "2026-11-23T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:15:00-05:00",
-     "end": "2026-11-30T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:15:00-05:00",
-     "end": "2026-12-07T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:15:00-05:00",
-     "end": "2026-12-14T11:15:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
   {
    "id": "417ee37db3b1",
    "title": "Friday Night Volleyball (weekly)",
@@ -1087,6 +896,78 @@
    ]
   },
   {
+   "id": "a04898c37ccd",
+   "title": "Senior Fitness with Terri",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-19T10:15:00-04:00",
+   "last_start": "2026-12-14T10:15:00-05:00",
+   "count": 11,
+   "cadence": "several-a-week",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-19T10:15:00-04:00",
+     "end": "2026-10-19T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-23T13:00:00-04:00",
+     "end": "2026-10-23T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T10:15:00-04:00",
+     "end": "2026-10-26T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T13:00:00-04:00",
+     "end": "2026-10-30T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T10:15:00-05:00",
+     "end": "2026-11-02T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:15:00-05:00",
+     "end": "2026-11-09T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:15:00-05:00",
+     "end": "2026-11-16T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:15:00-05:00",
+     "end": "2026-11-23T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:15:00-05:00",
+     "end": "2026-11-30T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:15:00-05:00",
+     "end": "2026-12-07T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T10:15:00-05:00",
+     "end": "2026-12-14T11:15:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "bd3e7d21ebe8",
    "title": "PITCH~ High Lo Jack",
    "venue": "",
@@ -1456,8 +1337,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-20T09:00:00-04:00",
-   "last_start": "2026-12-08T09:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T09:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1500,6 +1381,11 @@
      "start": "2026-12-08T09:00:00-05:00",
      "end": "2026-12-08T10:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-15T09:00:00-05:00",
+     "end": "2026-12-15T10:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1513,8 +1399,8 @@
    "url": "https://www.vivafallriver.com/event/preschool-storytime/2026-10-20/",
    "cost": "",
    "first_start": "2026-10-20T11:00:00-04:00",
-   "last_start": "2026-12-08T11:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T11:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1556,6 +1442,11 @@
     {
      "start": "2026-12-08T11:00:00-05:00",
      "end": "2026-12-08T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T11:00:00-05:00",
+     "end": "2026-12-15T11:00:00-05:00",
      "all_day": false
     }
    ]
@@ -1624,8 +1515,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-20T12:45:00-04:00",
-   "last_start": "2026-12-08T12:45:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T12:45:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1668,6 +1559,11 @@
      "start": "2026-12-08T12:45:00-05:00",
      "end": "2026-12-08T13:45:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-15T12:45:00-05:00",
+     "end": "2026-12-15T13:45:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1703,8 +1599,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
    "first_start": "2026-10-20T14:00:00-04:00",
-   "last_start": "2026-11-17T14:00:00-05:00",
-   "count": 2,
+   "last_start": "2026-12-15T14:00:00-05:00",
+   "count": 3,
    "cadence": "monthly",
    "weekday": 1,
    "occurrences": [
@@ -1716,6 +1612,11 @@
     {
      "start": "2026-11-17T14:00:00-05:00",
      "end": "2026-11-17T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T14:00:00-05:00",
+     "end": "2026-12-15T23:59:00-05:00",
      "all_day": false
     }
    ]
@@ -1730,8 +1631,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-20T14:00:00-04:00",
-   "last_start": "2026-12-08T14:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T14:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1774,6 +1675,11 @@
      "start": "2026-12-08T14:00:00-05:00",
      "end": "2026-12-08T15:30:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-15T14:00:00-05:00",
+     "end": "2026-12-15T15:30:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1787,8 +1693,8 @@
    "url": "https://www.vivafallriver.com/event/half-priced-food-weekly/2026-10-20/",
    "cost": "",
    "first_start": "2026-10-20T16:00:00-04:00",
-   "last_start": "2026-12-08T16:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T16:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1831,6 +1737,11 @@
      "start": "2026-12-08T16:00:00-05:00",
      "end": "2026-12-08T21:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-15T16:00:00-05:00",
+     "end": "2026-12-15T21:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1866,8 +1777,8 @@
    "url": "https://www.vivafallriver.com/event/middle-grade-book-club/2026-10-20/",
    "cost": "",
    "first_start": "2026-10-20T17:00:00-04:00",
-   "last_start": "2026-11-17T17:00:00-05:00",
-   "count": 2,
+   "last_start": "2026-12-15T17:00:00-05:00",
+   "count": 3,
    "cadence": "monthly",
    "weekday": 1,
    "occurrences": [
@@ -1879,6 +1790,11 @@
     {
      "start": "2026-11-17T17:00:00-05:00",
      "end": "2026-11-17T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T17:00:00-05:00",
+     "end": "2026-12-15T17:00:00-05:00",
      "all_day": false
     }
    ]
@@ -1964,8 +1880,8 @@
    "url": "https://www.vivafallriver.com/event/free-all-levels-yoga-tuesdays-thursdays/2026-10-20/",
    "cost": "",
    "first_start": "2026-10-20T18:00:00-04:00",
-   "last_start": "2026-12-08T18:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T18:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -2007,6 +1923,11 @@
     {
      "start": "2026-12-08T18:00:00-05:00",
      "end": "2026-12-08T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T18:00:00-05:00",
+     "end": "2026-12-15T18:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2065,10 +1986,10 @@
    "url": "https://www.vivafallriver.com/event/paint-nights/2026-10-20/",
    "cost": "",
    "first_start": "2026-10-20T18:30:00-04:00",
-   "last_start": "2026-11-10T18:30:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 1,
+   "last_start": "2026-12-15T18:30:00-05:00",
+   "count": 3,
+   "cadence": "irregular",
+   "weekday": null,
    "occurrences": [
     {
      "start": "2026-10-20T18:30:00-04:00",
@@ -2078,6 +1999,11 @@
     {
      "start": "2026-11-10T18:30:00-05:00",
      "end": "2026-11-10T18:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T18:30:00-05:00",
+     "end": "2026-12-15T18:30:00-05:00",
      "all_day": false
     }
    ]
@@ -3316,6 +3242,110 @@
    ]
   },
   {
+   "id": "fe0247326a8a",
+   "title": "Zumba",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-23T09:00:00-04:00",
+   "last_start": "2026-12-11T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T09:00:00-04:00",
+     "end": "2026-10-23T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T09:00:00-04:00",
+     "end": "2026-10-30T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T09:00:00-05:00",
+     "end": "2026-11-06T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T09:00:00-05:00",
+     "end": "2026-11-13T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T09:00:00-05:00",
+     "end": "2026-11-20T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T09:00:00-05:00",
+     "end": "2026-11-27T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T09:00:00-05:00",
+     "end": "2026-12-04T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T09:00:00-05:00",
+     "end": "2026-12-11T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "d8600d4c5a09",
+   "title": "Grief Support Group",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-23T10:00:00-04:00",
+   "last_start": "2026-12-11T10:00:00-05:00",
+   "count": 6,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T10:00:00-04:00",
+     "end": "2026-10-23T11:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T10:00:00-05:00",
+     "end": "2026-11-06T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T10:00:00-05:00",
+     "end": "2026-11-13T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T10:00:00-05:00",
+     "end": "2026-11-20T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T10:00:00-05:00",
+     "end": "2026-12-04T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T10:00:00-05:00",
+     "end": "2026-12-11T11:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "e2c44b0dc873",
    "title": "Senior Social",
    "venue": "Greater Fall River Re-CREATION",
@@ -3943,6 +3973,28 @@
    ]
   },
   {
+   "id": "6d29eed27da5",
+   "title": "PFAS Public Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Education & Workshops",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T18:00:00-04:00",
+   "last_start": "2026-10-27T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "8af4ed61eb2a",
    "title": "Plant Bingo",
    "venue": "Fall River Carousel",
@@ -4011,14 +4063,19 @@
    "url": "https://brownell-libraryri.org/event/more-than-medicare-help-sessions-registration-required/",
    "cost": "",
    "first_start": "2026-10-28T09:00:00-04:00",
-   "last_start": "2026-10-28T09:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
+   "last_start": "2026-12-04T10:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
    "weekday": null,
    "occurrences": [
     {
      "start": "2026-10-28T09:00:00-04:00",
      "end": "2026-10-28T15:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T10:00:00-05:00",
+     "end": "2026-12-04T15:00:00-05:00",
      "all_day": false
     }
    ]
@@ -4237,6 +4294,38 @@
     {
      "start": "2026-10-29T18:00:00-04:00",
      "end": "2026-10-29T18:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5f4ce9f24ae2",
+   "title": "Zoning Board of Appeals",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-29T18:00:00-04:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 3,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T18:00:00-04:00",
+     "end": "2026-10-29T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T18:00:00-05:00",
+     "end": "2026-11-05T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T23:59:00-05:00",
      "all_day": false
     }
    ]
@@ -4825,6 +4914,28 @@
    ]
   },
   {
+   "id": "6cc05440173a",
+   "title": "Medicare Help Sessions - Contact the Library to Register",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/medicare-help-sessions-contact-the-library-to-register-2/",
+   "cost": "",
+   "first_start": "2026-11-09T10:00:00-05:00",
+   "last_start": "2026-11-09T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T10:00:00-05:00",
+     "end": "2026-11-09T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "e9a8f861a681",
    "title": "Wernick Farm Trail Work Party",
    "venue": "Wernick Farm",
@@ -5175,6 +5286,28 @@
     {
      "start": "2026-11-16T17:30:00-05:00",
      "end": "2026-11-16T18:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "5d40edb42fd6",
+   "title": "All the Genres Book Club - The Quiet Librarian",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/all-the-genres-book-club-the-quiet-librarian/",
+   "cost": "",
+   "first_start": "2026-11-17T16:00:00-05:00",
+   "last_start": "2026-11-17T16:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-17T16:00:00-05:00",
+     "end": "2026-11-17T17:00:00-05:00",
      "all_day": false
     }
    ]

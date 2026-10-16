@@ -1,76 +1,76 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 173,
-   "seconds": 4.38
+   "rows": 174,
+   "seconds": 5.26
   },
   "brownell-library": {
-   "rows": 21,
-   "seconds": 0.41
+   "rows": 25,
+   "seconds": 0.62
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 3.55
+   "seconds": 3.06
   },
   "viva-fall-river": {
-   "rows": 276,
-   "seconds": 20.06
+   "rows": 281,
+   "seconds": 20.05
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 7.6
+   "seconds": 3.91
   },
   "town-tiverton": {
-   "rows": 184,
-   "seconds": 0.66
+   "rows": 187,
+   "seconds": 0.74
   },
   "town-dartmouth": {
    "rows": 30,
-   "seconds": 0.36
+   "seconds": 0.37
   },
   "town-somerset": {
-   "rows": 10,
-   "seconds": 0.58
+   "rows": 13,
+   "seconds": 0.67
   }
  },
  "errors": {},
- "primary_rows": 537,
+ "primary_rows": 552,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
- "series": 183,
+ "series": 187,
  "by_town": {
-  "Tiverton": 32,
   "Fall River": 105,
   "Westport": 1,
-  "Little Compton": 12,
+  "Little Compton": 14,
   "Dartmouth": 26,
-  "Somerset": 7
+  "Tiverton": 33,
+  "Somerset": 8
  },
  "by_category": {
   "(unclassified)": 39,
-  "Sports & Recreation": 7,
   "Music": 21,
   "Food & Drink": 12,
-  "Library & Talks": 36,
+  "Library & Talks": 38,
   "Outdoors & Nature": 15,
   "Family & Children": 12,
   "Markets & Fairs": 1,
-  "Civic & Town Meetings": 27,
+  "Civic & Town Meetings": 28,
+  "Sports & Recreation": 7,
   "Volunteering & Causes": 2,
   "Arts & Theatre": 7,
-  "Education & Workshops": 2,
+  "Education & Workshops": 3,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "weekly": 35,
-  "several-a-week": 2,
-  "once": 112,
+  "weekly": 36,
+  "once": 114,
   "weekends": 2,
-  "monthly": 22,
+  "several-a-week": 2,
+  "monthly": 21,
+  "irregular": 5,
   "daily": 2,
-  "irregular": 3,
   "fortnightly": 5
  },
  "weekend_gate": {
@@ -84,9 +84,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 173,
+  "check_total": 174,
   "check_matched": 0,
-  "check_missed_rows": 173,
+  "check_missed_rows": 174,
   "check_missed_series": 56,
   "check_missed": [
    {
@@ -132,6 +132,13 @@
     "rows": 9
    },
    {
+    "title": "SnapLab: Photography Studio Sessions",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-20T18:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
@@ -150,13 +157,6 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-20T20:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "SnapLab: Photography Studio Sessions",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-20T18:00:00-04:00",
     "rows": 8
    },
    {
