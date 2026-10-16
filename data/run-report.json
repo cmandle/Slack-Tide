@@ -1,77 +1,76 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 178,
-   "seconds": 3.76
+   "rows": 173,
+   "seconds": 4.38
   },
   "brownell-library": {
    "rows": 21,
-   "seconds": 0.76
+   "seconds": 0.41
   },
   "dnrt": {
-   "rows": 14,
-   "seconds": 2.26
+   "rows": 13,
+   "seconds": 3.55
   },
   "viva-fall-river": {
-   "rows": 286,
-   "seconds": 19.41
+   "rows": 276,
+   "seconds": 20.06
   },
   "buzzards-bay-brewing": {
    "rows": 3,
-   "seconds": 5.41
+   "seconds": 7.6
   },
   "town-tiverton": {
-   "rows": 183,
-   "seconds": 0.51
+   "rows": 184,
+   "seconds": 0.66
   },
   "town-dartmouth": {
-   "rows": 31,
-   "seconds": 0.35
+   "rows": 30,
+   "seconds": 0.36
   },
   "town-somerset": {
-   "rows": 13,
-   "seconds": 0.46
+   "rows": 10,
+   "seconds": 0.58
   }
  },
  "errors": {},
- "primary_rows": 551,
+ "primary_rows": 537,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
- "series": 192,
+ "series": 183,
  "by_town": {
-  "Dartmouth": 28,
-  "Fall River": 109,
-  "New Bedford": 1,
-  "Somerset": 9,
   "Tiverton": 32,
+  "Fall River": 105,
   "Westport": 1,
-  "Little Compton": 12
+  "Little Compton": 12,
+  "Dartmouth": 26,
+  "Somerset": 7
  },
  "by_category": {
-  "Outdoors & Nature": 16,
-  "Library & Talks": 36,
-  "Arts & Theatre": 8,
-  "(unclassified)": 42,
-  "Education & Workshops": 3,
-  "Civic & Town Meetings": 29,
-  "Food & Drink": 12,
-  "Family & Children": 13,
+  "(unclassified)": 39,
   "Sports & Recreation": 7,
   "Music": 21,
+  "Food & Drink": 12,
+  "Library & Talks": 36,
+  "Outdoors & Nature": 15,
+  "Family & Children": 12,
   "Markets & Fairs": 1,
+  "Civic & Town Meetings": 27,
   "Volunteering & Causes": 2,
+  "Arts & Theatre": 7,
+  "Education & Workshops": 2,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 118,
-  "weekly": 36,
-  "irregular": 5,
-  "daily": 2,
+  "weekly": 35,
   "several-a-week": 2,
+  "once": 112,
   "weekends": 2,
   "monthly": 22,
+  "daily": 2,
+  "irregular": 3,
   "fortnightly": 5
  },
  "weekend_gate": {
@@ -85,24 +84,24 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 178,
-  "check_matched": 1,
-  "check_missed_rows": 177,
-  "check_missed_series": 57,
+  "check_total": 173,
+  "check_matched": 0,
+  "check_missed_rows": 173,
+  "check_missed_series": 56,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
-    "first_start": "2026-10-15T19:30:00-04:00",
-    "rows": 27
+    "first_start": "2026-10-16T19:30:00-04:00",
+    "rows": 26
    },
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
-    "first_start": "2026-10-15T21:00:00-04:00",
-    "rows": 18
+    "first_start": "2026-10-18T21:00:00-04:00",
+    "rows": 17
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -126,13 +125,6 @@
     "rows": 9
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-15T18:30:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Sketchbook Club",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -144,6 +136,13 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-21T18:30:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-22T18:30:00-04:00",
     "rows": 8
    },
    {
@@ -235,13 +234,6 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-12-02T12:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Art from the Inside - Opening Night!",
-    "venue": "New Bedford Free Public Library",
-    "town": "New Bedford",
-    "first_start": "2026-10-15T18:00:00-04:00",
     "rows": 1
    },
    {
@@ -495,6 +487,6 @@
   ],
   "primary_only_count": 0,
   "primary_only_series": 0,
-  "coverage_ratio": 0.006
+  "coverage_ratio": 0.0
  }
 }
