@@ -1,72 +1,72 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 174,
-   "seconds": 5.26
+   "rows": 168,
+   "seconds": 4.46
   },
   "brownell-library": {
    "rows": 25,
-   "seconds": 0.62
+   "seconds": 0.52
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 3.06
+   "seconds": 3.92
   },
   "viva-fall-river": {
-   "rows": 281,
-   "seconds": 20.05
+   "rows": 276,
+   "seconds": 19.16
   },
   "buzzards-bay-brewing": {
-   "rows": 3,
-   "seconds": 3.91
+   "rows": 2,
+   "seconds": 4.41
   },
   "town-tiverton": {
-   "rows": 187,
-   "seconds": 0.74
+   "rows": 188,
+   "seconds": 0.45
   },
   "town-dartmouth": {
    "rows": 30,
-   "seconds": 0.37
+   "seconds": 0.29
   },
   "town-somerset": {
    "rows": 13,
-   "seconds": 0.67
+   "seconds": 0.39
   }
  },
  "errors": {},
- "primary_rows": 552,
+ "primary_rows": 547,
  "dropped": {
   "closure": 6,
   "holiday": 14
  },
- "series": 187,
+ "series": 185,
  "by_town": {
-  "Fall River": 105,
-  "Westport": 1,
+  "Fall River": 103,
   "Little Compton": 14,
   "Dartmouth": 26,
   "Tiverton": 33,
-  "Somerset": 8
+  "Somerset": 8,
+  "Westport": 1
  },
  "by_category": {
-  "(unclassified)": 39,
-  "Music": 21,
   "Food & Drink": 12,
   "Library & Talks": 38,
   "Outdoors & Nature": 15,
   "Family & Children": 12,
+  "(unclassified)": 37,
   "Markets & Fairs": 1,
   "Civic & Town Meetings": 28,
   "Sports & Recreation": 7,
   "Volunteering & Causes": 2,
   "Arts & Theatre": 7,
+  "Music": 21,
   "Education & Workshops": 3,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "weekly": 36,
-  "once": 114,
   "weekends": 2,
+  "once": 112,
+  "weekly": 36,
   "several-a-week": 2,
   "monthly": 21,
   "irregular": 5,
@@ -84,17 +84,17 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 174,
+  "check_total": 168,
   "check_matched": 0,
-  "check_missed_rows": 174,
-  "check_missed_series": 56,
+  "check_missed_rows": 168,
+  "check_missed_series": 54,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
-    "first_start": "2026-10-16T19:30:00-04:00",
-    "rows": 26
+    "first_start": "2026-10-17T19:30:00-04:00",
+    "rows": 25
    },
    {
     "title": "Karaoke Nights!",
@@ -102,13 +102,6 @@
     "town": "New Bedford",
     "first_start": "2026-10-18T21:00:00-04:00",
     "rows": 17
-   },
-   {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T17:30:00-04:00",
-    "rows": 9
    },
    {
     "title": "KidZone",
@@ -125,10 +118,10 @@
     "rows": 9
    },
    {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
-    "first_start": "2026-10-16T18:00:00-04:00",
+    "first_start": "2026-10-20T20:00:00-04:00",
     "rows": 9
    },
    {
@@ -146,6 +139,13 @@
     "rows": 8
    },
    {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-23T17:30:00-04:00",
+    "rows": 8
+   },
+   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -153,10 +153,10 @@
     "rows": 8
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
     "town": "New Bedford",
-    "first_start": "2026-10-20T20:00:00-04:00",
+    "first_start": "2026-10-23T18:00:00-04:00",
     "rows": 8
    },
    {
@@ -181,15 +181,8 @@
     "rows": 2
    },
    {
-    "title": "Exit 27: Underground Dance Party",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T22:00:00-04:00",
-    "rows": 2
-   },
-   {
     "title": "Monthly Artists Share!",
-    "venue": "Gallery X, Inc",
+    "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-10T18:30:00-05:00",
     "rows": 2
@@ -199,13 +192,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-11-01T15:30:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Rhythm Is Going To Ge You",
-    "venue": "Fort Taber Community Center",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T19:00:00-04:00",
     "rows": 2
    },
    {
@@ -251,24 +237,17 @@
     "rows": 1
    },
    {
-    "title": "Balance and Swing Contradance",
-    "venue": "Gallery X, Inc",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T18:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Boundless: The Book as Art",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-16T00:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Celebrate National Authors Day with Write With Community!",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-01T11:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Exit 27: Underground Dance Party",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-11-20T22:00:00-05:00",
     "rows": 1
    },
    {
@@ -360,6 +339,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-18T17:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Rhythm Is Going To Ge You",
+    "venue": "Fort Taber Community Center",
+    "town": "New Bedford",
+    "first_start": "2026-11-20T19:00:00-05:00",
     "rows": 1
    },
    {

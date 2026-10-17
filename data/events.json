@@ -1,240 +1,8 @@
 {
- "generated_at": "2026-10-16T22:45:44.725494+00:00",
- "series_count": 187,
- "occurrence_count": 514,
+ "generated_at": "2026-10-17T10:43:20.329155+00:00",
+ "series_count": 185,
+ "occurrence_count": 510,
  "series": [
-  {
-   "id": "417ee37db3b1",
-   "title": "Friday Night Volleyball (weekly)",
-   "venue": "Greater Fall River Re-CREATION",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/friday-night-volleyball-weekly/2026-10-16/",
-   "cost": "",
-   "first_start": "2026-10-16T17:00:00-04:00",
-   "last_start": "2026-12-11T17:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-16T17:00:00-04:00",
-     "end": "2026-10-16T17:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T17:00:00-04:00",
-     "end": "2026-10-23T17:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T17:00:00-04:00",
-     "end": "2026-10-30T17:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T17:00:00-05:00",
-     "end": "2026-11-06T17:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T17:00:00-05:00",
-     "end": "2026-11-13T17:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T17:00:00-05:00",
-     "end": "2026-11-20T17:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T17:00:00-05:00",
-     "end": "2026-11-27T17:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T17:00:00-05:00",
-     "end": "2026-12-04T17:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T17:00:00-05:00",
-     "end": "2026-12-11T17:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "cc3abf81657a",
-   "title": "Romance Panel",
-   "venue": "Once Upon a Bookstore",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/romance-panel/",
-   "cost": "",
-   "first_start": "2026-10-16T18:30:00-04:00",
-   "last_start": "2026-10-16T18:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-16T18:30:00-04:00",
-     "end": "2026-10-16T20:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "5629e8c7fa1b",
-   "title": "Factory of Terror (Friday - Sunday)",
-   "venue": "Factory of Terror",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/factory-of-terror/2026-10-16/",
-   "cost": "",
-   "first_start": "2026-10-16T19:00:00-04:00",
-   "last_start": "2026-10-30T19:00:00-04:00",
-   "count": 3,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-16T19:00:00-04:00",
-     "end": "2026-10-16T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T19:00:00-04:00",
-     "end": "2026-10-23T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T19:00:00-04:00",
-     "end": "2026-10-30T21:30:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "37d3ea357bd0",
-   "title": "Paul Bielatowicz's \"Nosferatu\" Live",
-   "venue": "Narrows Center for the Arts",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/paul-bielatowiczs-nosferatu-live/",
-   "cost": "",
-   "first_start": "2026-10-16T20:00:00-04:00",
-   "last_start": "2026-10-16T20:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-16T20:00:00-04:00",
-     "end": "2026-10-16T22:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "6da2a90a579e",
-   "title": "Primo After Dark - Weekly DJ Sets",
-   "venue": "Primo on Water Street",
-   "town": "Fall River",
-   "category": "Music",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/primo-after-dark-weekly-dj-sets/2026-10-16/",
-   "cost": "",
-   "first_start": "2026-10-16T20:00:00-04:00",
-   "last_start": "2026-12-11T20:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-16T20:00:00-04:00",
-     "end": "2026-10-16T20:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T20:00:00-04:00",
-     "end": "2026-10-23T20:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T20:00:00-04:00",
-     "end": "2026-10-30T20:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T20:00:00-05:00",
-     "end": "2026-11-06T20:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T20:00:00-05:00",
-     "end": "2026-11-13T20:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T20:00:00-05:00",
-     "end": "2026-11-20T20:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T20:00:00-05:00",
-     "end": "2026-11-27T20:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T20:00:00-05:00",
-     "end": "2026-12-04T20:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T20:00:00-05:00",
-     "end": "2026-12-11T20:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "288e210032e7",
-   "title": "Open Mic Jam Sesh FRIDAYS",
-   "venue": "Buzzards Bay Brewing",
-   "town": "Westport",
-   "category": "Music",
-   "source_id": "buzzards-bay-brewing",
-   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-70/",
-   "cost": "",
-   "first_start": "2026-10-16T21:00:00-04:00",
-   "last_start": "2026-10-30T21:00:00-04:00",
-   "count": 3,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-16T21:00:00-04:00",
-     "end": "2026-10-17T00:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T21:00:00-04:00",
-     "end": "2026-10-24T00:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T21:00:00-04:00",
-     "end": "2026-10-31T00:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
   {
    "id": "35d1f5717a55",
    "title": "Weekend Brunch",
@@ -670,68 +438,6 @@
    ]
   },
   {
-   "id": "5a6902aea5cc",
-   "title": "TOPS",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T09:00:00-04:00",
-   "last_start": "2026-12-14T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T09:00:00-04:00",
-     "end": "2026-10-19T11:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T09:00:00-04:00",
-     "end": "2026-10-26T11:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T09:00:00-05:00",
-     "end": "2026-11-02T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T11:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
    "id": "ee5aab63f527",
    "title": "Functional Fitness",
    "venue": "",
@@ -741,8 +447,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-19T09:00:00-04:00",
-   "last_start": "2026-12-14T09:00:00-05:00",
-   "count": 17,
+   "last_start": "2026-12-16T00:00:00-05:00",
+   "count": 18,
    "cadence": "several-a-week",
    "weekday": null,
    "occurrences": [
@@ -829,6 +535,73 @@
     {
      "start": "2026-12-14T09:00:00-05:00",
      "end": "2026-12-14T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T00:00:00-05:00",
+     "end": "2026-12-16T00:00:00-05:00",
+     "all_day": true
+    }
+   ]
+  },
+  {
+   "id": "5a6902aea5cc",
+   "title": "TOPS",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-19T09:00:00-04:00",
+   "last_start": "2026-12-14T09:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-19T09:00:00-04:00",
+     "end": "2026-10-19T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T09:00:00-04:00",
+     "end": "2026-10-26T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T09:00:00-05:00",
+     "end": "2026-12-14T11:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2062,8 +1835,8 @@
    "url": "https://www.vivafallriver.com/event/the-waiting-room-comedy-open-mic/2026-10-20/",
    "cost": "",
    "first_start": "2026-10-20T19:30:00-04:00",
-   "last_start": "2026-12-08T19:30:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-15T19:30:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -2105,6 +1878,11 @@
     {
      "start": "2026-12-08T19:30:00-05:00",
      "end": "2026-12-08T20:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T19:30:00-05:00",
+     "end": "2026-12-15T20:30:00-05:00",
      "all_day": false
     }
    ]
@@ -3373,6 +3151,63 @@
    ]
   },
   {
+   "id": "417ee37db3b1",
+   "title": "Friday Night Volleyball (weekly)",
+   "venue": "Greater Fall River Re-CREATION",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/friday-night-volleyball-weekly/2026-10-23/",
+   "cost": "",
+   "first_start": "2026-10-23T17:00:00-04:00",
+   "last_start": "2026-12-11T17:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T17:00:00-04:00",
+     "end": "2026-10-23T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T17:00:00-04:00",
+     "end": "2026-10-30T17:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T17:00:00-05:00",
+     "end": "2026-11-06T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T17:00:00-05:00",
+     "end": "2026-11-13T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T17:00:00-05:00",
+     "end": "2026-11-20T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T17:00:00-05:00",
+     "end": "2026-11-27T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T17:00:00-05:00",
+     "end": "2026-12-04T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T17:00:00-05:00",
+     "end": "2026-12-11T17:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "bfa5fafda125",
    "title": "City of Fall River Trunk or Treat",
    "venue": "Nagle Auditorium Parking Lot",
@@ -3461,6 +3296,33 @@
    ]
   },
   {
+   "id": "5629e8c7fa1b",
+   "title": "Factory of Terror (Friday - Sunday)",
+   "venue": "Factory of Terror",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/factory-of-terror/2026-10-23/",
+   "cost": "",
+   "first_start": "2026-10-23T19:00:00-04:00",
+   "last_start": "2026-10-30T19:00:00-04:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T19:00:00-04:00",
+     "end": "2026-10-23T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T19:00:00-04:00",
+     "end": "2026-10-30T21:30:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "6d33790d650f",
    "title": "Pearly Baker Acoustic with Drums",
    "venue": "Canned Heat Craft Beer Co.",
@@ -3478,6 +3340,90 @@
     {
      "start": "2026-10-23T19:00:00-04:00",
      "end": "2026-10-23T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "6da2a90a579e",
+   "title": "Primo After Dark - Weekly DJ Sets",
+   "venue": "Primo on Water Street",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/primo-after-dark-weekly-dj-sets/2026-10-23/",
+   "cost": "",
+   "first_start": "2026-10-23T20:00:00-04:00",
+   "last_start": "2026-12-11T20:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T20:00:00-04:00",
+     "end": "2026-10-23T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T20:00:00-04:00",
+     "end": "2026-10-30T20:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T20:00:00-05:00",
+     "end": "2026-11-06T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T20:00:00-05:00",
+     "end": "2026-11-13T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T20:00:00-05:00",
+     "end": "2026-11-20T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T20:00:00-05:00",
+     "end": "2026-11-27T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T20:00:00-05:00",
+     "end": "2026-12-04T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T20:00:00-05:00",
+     "end": "2026-12-11T20:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "288e210032e7",
+   "title": "Open Mic Jam Sesh FRIDAYS",
+   "venue": "Buzzards Bay Brewing",
+   "town": "Westport",
+   "category": "Music",
+   "source_id": "buzzards-bay-brewing",
+   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-71/",
+   "cost": "",
+   "first_start": "2026-10-23T21:00:00-04:00",
+   "last_start": "2026-10-30T21:00:00-04:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-23T21:00:00-04:00",
+     "end": "2026-10-24T00:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T21:00:00-04:00",
+     "end": "2026-10-31T00:00:00-04:00",
      "all_day": false
     }
    ]
