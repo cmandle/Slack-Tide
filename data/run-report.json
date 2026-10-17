@@ -1,49 +1,49 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 168,
-   "seconds": 4.46
+   "rows": 170,
+   "seconds": 4.97
   },
   "brownell-library": {
    "rows": 25,
-   "seconds": 0.52
+   "seconds": 0.72
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 3.92
+   "seconds": 4.45
   },
   "viva-fall-river": {
-   "rows": 276,
-   "seconds": 19.16
+   "rows": 280,
+   "seconds": 19.75
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 4.41
+   "seconds": 6.32
   },
   "town-tiverton": {
-   "rows": 188,
-   "seconds": 0.45
+   "rows": 191,
+   "seconds": 0.69
   },
   "town-dartmouth": {
-   "rows": 30,
-   "seconds": 0.29
+   "rows": 31,
+   "seconds": 0.44
   },
   "town-somerset": {
    "rows": 13,
-   "seconds": 0.39
+   "seconds": 0.64
   }
  },
  "errors": {},
- "primary_rows": 547,
+ "primary_rows": 555,
  "dropped": {
   "closure": 6,
-  "holiday": 14
+  "holiday": 13
  },
- "series": 185,
+ "series": 187,
  "by_town": {
   "Fall River": 103,
   "Little Compton": 14,
-  "Dartmouth": 26,
+  "Dartmouth": 28,
   "Tiverton": 33,
   "Somerset": 8,
   "Westport": 1
@@ -53,7 +53,7 @@
   "Library & Talks": 38,
   "Outdoors & Nature": 15,
   "Family & Children": 12,
-  "(unclassified)": 37,
+  "(unclassified)": 39,
   "Markets & Fairs": 1,
   "Civic & Town Meetings": 28,
   "Sports & Recreation": 7,
@@ -65,11 +65,11 @@
  },
  "by_cadence": {
   "weekends": 2,
-  "once": 112,
+  "once": 113,
   "weekly": 36,
   "several-a-week": 2,
   "monthly": 21,
-  "irregular": 5,
+  "irregular": 6,
   "daily": 2,
   "fortnightly": 5
  },
@@ -84,9 +84,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 168,
+  "check_total": 170,
   "check_matched": 0,
-  "check_missed_rows": 168,
+  "check_missed_rows": 170,
   "check_missed_series": 54,
   "check_missed": [
    {
@@ -102,6 +102,13 @@
     "town": "New Bedford",
     "first_start": "2026-10-18T21:00:00-04:00",
     "rows": 17
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-10-21T18:30:00-04:00",
+    "rows": 9
    },
    {
     "title": "KidZone",
@@ -132,11 +139,11 @@
     "rows": 9
    },
    {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
     "town": "New Bedford",
-    "first_start": "2026-10-21T18:30:00-04:00",
-    "rows": 8
+    "first_start": "2026-10-21T18:00:00-04:00",
+    "rows": 9
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -157,13 +164,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-23T18:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Universal Participation: Welcome to Yoga",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-21T18:00:00-04:00",
     "rows": 8
    },
    {

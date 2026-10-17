@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-17T10:43:20.329155+00:00",
- "series_count": 185,
- "occurrence_count": 510,
+ "generated_at": "2026-10-17T22:40:12.441016+00:00",
+ "series_count": 187,
+ "occurrence_count": 519,
  "series": [
   {
    "id": "35d1f5717a55",
@@ -1897,8 +1897,8 @@
    "url": "https://www.vivafallriver.com/event/kids-eat-free-on-wednesdays/2026-10-21/",
    "cost": "",
    "first_start": "2026-10-21T07:00:00-04:00",
-   "last_start": "2026-12-09T07:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-16T07:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -1940,6 +1940,11 @@
     {
      "start": "2026-12-09T07:00:00-05:00",
      "end": "2026-12-09T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T07:00:00-05:00",
+     "end": "2026-12-16T23:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2045,8 +2050,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-21T12:15:00-04:00",
-   "last_start": "2026-12-09T12:15:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-16T12:15:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2089,6 +2094,11 @@
      "start": "2026-12-09T12:15:00-05:00",
      "end": "2026-12-09T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-16T12:15:00-05:00",
+     "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2102,8 +2112,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-21T12:30:00-04:00",
-   "last_start": "2026-12-09T12:30:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-16T12:30:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2146,6 +2156,11 @@
      "start": "2026-12-09T12:30:00-05:00",
      "end": "2026-12-09T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-16T12:30:00-05:00",
+     "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2181,8 +2196,8 @@
    "url": "https://www.vivafallriver.com/event/books-tea-club/2026-10-21/",
    "cost": "",
    "first_start": "2026-10-21T14:00:00-04:00",
-   "last_start": "2026-11-18T14:00:00-05:00",
-   "count": 2,
+   "last_start": "2026-12-16T14:00:00-05:00",
+   "count": 3,
    "cadence": "monthly",
    "weekday": 2,
    "occurrences": [
@@ -2194,6 +2209,11 @@
     {
      "start": "2026-11-18T14:00:00-05:00",
      "end": "2026-11-18T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T14:00:00-05:00",
+     "end": "2026-12-16T15:30:00-05:00",
      "all_day": false
     }
    ]
@@ -2252,8 +2272,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
    "first_start": "2026-10-21T16:30:00-04:00",
-   "last_start": "2026-11-18T16:30:00-05:00",
-   "count": 2,
+   "last_start": "2026-12-16T16:30:00-05:00",
+   "count": 3,
    "cadence": "monthly",
    "weekday": 2,
    "occurrences": [
@@ -2265,6 +2285,11 @@
     {
      "start": "2026-11-18T16:30:00-05:00",
      "end": "2026-11-18T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T16:30:00-05:00",
+     "end": "2026-12-16T23:59:00-05:00",
      "all_day": false
     }
    ]
@@ -2292,6 +2317,28 @@
    ]
   },
   {
+   "id": "a1a6a321d9a3",
+   "title": "DeMello School Council",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-21T17:30:00-04:00",
+   "last_start": "2026-10-21T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-21T17:30:00-04:00",
+     "end": "2026-10-21T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "e138a7e83f45",
    "title": "WING WEDNESDAY!!",
    "venue": "Saint James Irish Pub",
@@ -2301,8 +2348,8 @@
    "url": "https://www.vivafallriver.com/event/wing-wednesday/2026-10-21/",
    "cost": "",
    "first_start": "2026-10-21T18:00:00-04:00",
-   "last_start": "2026-12-09T18:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-16T18:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2344,6 +2391,11 @@
     {
      "start": "2026-12-09T18:00:00-05:00",
      "end": "2026-12-10T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T18:00:00-05:00",
+     "end": "2026-12-17T00:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2531,6 +2583,28 @@
     {
      "start": "2026-12-09T19:00:00-05:00",
      "end": "2026-12-09T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "35fd19be8d36",
+   "title": "Greater New Bedford Regional Refuse Management District",
+   "venue": "400 Slocum Road Room 309 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-22T08:00:00-04:00",
+   "last_start": "2026-10-22T08:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-22T08:00:00-04:00",
+     "end": "2026-10-22T23:59:00-04:00",
      "all_day": false
     }
    ]
@@ -5268,14 +5342,19 @@
    "url": "https://www.vivafallriver.com/event/all-ages-book-club/2026-11-17/",
    "cost": "",
    "first_start": "2026-11-17T18:30:00-05:00",
-   "last_start": "2026-11-17T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
+   "last_start": "2026-12-16T18:30:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
    "weekday": null,
    "occurrences": [
     {
      "start": "2026-11-17T18:30:00-05:00",
      "end": "2026-11-17T18:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T18:30:00-05:00",
+     "end": "2026-12-16T18:30:00-05:00",
      "all_day": false
     }
    ]
