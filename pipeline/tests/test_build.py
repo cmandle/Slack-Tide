@@ -68,6 +68,29 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
         assert (out / "assets" / a).exists()
     assert "—" not in html   # no em dashes in public copy
 
+def test_card_art_by_family_and_stable_hash(data, tmp_path, monkeypatch):
+    art = tmp_path / "design" / "art"
+    art.mkdir(parents=True)
+    for name in ("music-1", "music-2", "music-3", "outdoors-1", "general-1", "general-2"):
+        (art / f"{name}.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6"/>', encoding="utf-8")
+    monkeypatch.setattr(build, "DESIGN", tmp_path / "design")
+    monkeypatch.setattr(build, "ART", art)
+    scenes = build.art_scenes()
+    assert set(scenes) == {"music", "outdoors", "general"} and len(scenes["music"]) == 3
+    gig = {"id": "tonight-gig", "category": "Music"}
+    assert build.art_for(gig, scenes).startswith("music-")
+    assert build.art_for(gig, scenes) == build.art_for(dict(gig), scenes)          # stable across builds
+    assert build.art_for({"id": "x", "category": "Sports & Recreation"}, scenes) == "outdoors-1.svg"   # by family
+    assert build.art_for({"id": "x", "category": ""}, scenes).startswith("general-")                     # unclassified
+    assert build.art_for({"id": "x", "category": "Library & Talks"}, scenes).startswith("general-")     # family with no scenes yet
+    picks = {build.art_for({"id": f"series-{i}", "category": "Music"}, scenes) for i in range(40)}
+    assert picks == {"music-1.svg", "music-2.svg", "music-3.svg"}                 # the hash spreads neighbours
+    out = tmp_path / "site"
+    r = build.build(data, out, now=NOW)
+    assert r["art"] == 6 and (out / "assets" / "art" / "music-2.svg").exists()
+    html = (out / "index.html").read_text(encoding="utf-8")
+    assert 'class="card-art ill"' in html and 'src="assets/art/music-' in html and 'class="card-art ht"' not in html
+
 def test_tide_parse_and_freshness(tmp_path):
     hilo = tide.parse_predictions(fixture_text("coops_hilo.json"))
     assert hilo[0] == {"t": "2098-12-31 01:57", "v": 3.37, "type": "H"} and len(hilo) == 8

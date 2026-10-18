@@ -12,7 +12,7 @@ Tonight shows series whose next occurrence is today. The week ahead lists the fo
 days with each collapsed series as one row, on the day of its next occurrence.
 """
 from __future__ import annotations
-import html, json, re, shutil
+import hashlib, html, json, os, re, shutil
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -21,7 +21,10 @@ from . import config, tide as tide_mod
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = Path(__file__).with_name("site_assets")
-DESIGN = ROOT / "design"
+# SLACKTIDE_DESIGN points the build at another checkout of design/, for building against a
+# design/* branch before it is merged. Default: the design/ folder of this repository.
+DESIGN = Path(os.environ.get("SLACKTIDE_DESIGN") or ROOT / "design")
+ART = DESIGN / "art"
 SITE_NAME = "Slack Tide"
 REGION = "Swansea to Little Compton"
 WEEK_DAYS = 7
@@ -71,6 +74,27 @@ def stock_var(cat: str) -> str:
 def short_label(cat: str) -> str:
     fam = family_of(cat)
     return config.CATEGORY_FAMILIES[fam][0] if fam else "Event"
+
+def art_scenes() -> dict[str, list[str]]:
+    """The card illustration set, design/art/<family>-<n>.svg, grouped by family. Empty when the
+    design package has no art yet."""
+    out: dict[str, list[str]] = {}
+    if ART.is_dir():
+        for p in sorted(ART.glob("*.svg")):
+            fam = p.stem.rsplit("-", 1)[0]
+            out.setdefault(fam, []).append(p.name)
+    return out
+
+def art_for(series: dict, scenes: dict[str, list[str]]) -> str:
+    """DESIGN.md, Images: a series without a photo shows a stock scene chosen by family, then by a
+    stable hash of the series id across the family's scenes. "general" when unclassified. Returns
+    the file name, or "" when the set has nothing to offer."""
+    fam = family_of(series.get("category") or "") or "general"
+    files = scenes.get(fam) or scenes.get("general") or []
+    if not files:
+        return ""
+    n = int(hashlib.sha1(series["id"].encode()).hexdigest(), 16)
+    return files[n % len(files)]
 
 def icon_svg(cat_slug: str) -> str:
     for base in (DESIGN / "reference" / "icons", ASSETS / "icons"):
@@ -256,15 +280,24 @@ def filters(towns_with: Counter, rel: str) -> str:
             f'<a class="btn" href="{rel}map/">{pin}Map</a></nav>'
             f'<div class="tiles" role="group" aria-label="Categories">{"".join(tiles)}</div></div>')
 
-def card(row: dict, sources: dict) -> str:
+def card(row: dict, sources: dict, scenes: dict[str, list[str]], rel: str = "") -> str:
     s, start, o = row["series"], row["start"], row["occ"]
     cat = s.get("category") or ""
     when = f'{start.strftime("%a").upper()} {"ALL DAY" if o.get("all_day") else fmt_time(start)}'
     where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
+    # Photographs take the halftone (.ht); illustrations render as drawn (.ill). No photo field
+    # exists in events.json yet, so every card shows a scene from the set.
+    photo = s.get("image_url") or ""
+    if photo:
+        art = f'<div class="card-art ht" aria-hidden="true"><img src="{esc(photo)}" alt="" loading="lazy">'
+    else:
+        scene = art_for(s, scenes)
+        art = (f'<div class="card-art ill" aria-hidden="true"><img src="{rel}assets/art/{esc(scene)}" alt="" loading="lazy">'
+               if scene else '<div class="card-art ht" aria-hidden="true">')
     return (f'<a class="card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
             f'data-category="{esc(cat)}" data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
             f'<div class="card-title">{esc(s["title"])}</div>'
-            f'<div class="card-media"><div class="card-art ht" aria-hidden="true"><span class="card-badge">Tonight</span></div>'
+            f'<div class="card-media">{art}<span class="card-badge">Tonight</span></div>'
             f'<div class="card-strip" title="{esc(cat)}">{esc(short_label(cat))}</div></div>'
             f'<div class="card-when"><span>{esc(when)}</span><span>{esc(s.get("cost") or "")}</span></div>'
             f'<div class="card-where">{esc(where)}</div>'
@@ -294,7 +327,8 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
         towns.update(r["series"]["town"] for r in rows)
     n_towns = len([t for t in towns if t])
     dateline = f'{now.strftime("%a")} {now.strftime("%b")} {now.day} · {REGION}'
-    cards_html = "".join(card(r, sources) for r in tonight)
+    scenes = art_scenes()
+    cards_html = "".join(card(r, sources, scenes) for r in tonight)
     rows_html = "".join(week_row(r, sources) for rows in week.values() for r in rows)
     n_week = sum(len(r) for r in week.values())
     description = (f"Gigs, markets, walks, talks and town meetings from {REGION}, gathered from the calendars "
@@ -345,6 +379,16 @@ def write_assets(out: Path) -> dict:
     shutil.copyfile(ASSETS / "site.css", assets / "site.css")
     shutil.copyfile(ASSETS / "site.js", assets / "site.js")
     used["icons"] = DESIGN / "reference" / "icons" if (DESIGN / "reference" / "icons").is_dir() else ASSETS / "icons"
+    art_out = assets / "art"
+    if art_out.is_dir():
+        shutil.rmtree(art_out)
+    scenes = art_scenes()
+    if scenes:
+        art_out.mkdir()
+        for files in scenes.values():
+            for f in files:
+                shutil.copyfile(ART / f, art_out / f)
+    used["art"] = sum(len(v) for v in scenes.values())
     return used
 
 def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
@@ -360,4 +404,5 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
         (d / "index.html").write_text(placeholder_page(key, now), encoding="utf-8")
     tonight, week = select(events["series"], now)
     return {"out": out, "tonight": len(tonight), "week": sum(len(r) for r in week.values()),
-            "tide": "ok" if tide else "unavailable", "tokens": used["tokens"], "icons": used["icons"]}
+            "tide": "ok" if tide else "unavailable", "tokens": used["tokens"], "icons": used["icons"],
+            "art": used["art"]}

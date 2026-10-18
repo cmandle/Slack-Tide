@@ -236,8 +236,11 @@ svg { display: block; }
 .card:hover { color: var(--st-ink); }
 .card:hover .card-title { color: var(--st-coral); }
 .card-title { padding: 8px; font: var(--st-card-title-phone); border-bottom: var(--st-border-card) solid var(--st-ink); min-height: 34px; display: flex; align-items: center; }
-.card-media { display: flex; border-bottom: var(--st-border-card) solid var(--st-ink); }
-.ht { position: relative; overflow: hidden; }
+.card-media { display: flex; position: relative; border-bottom: var(--st-border-card) solid var(--st-ink); }
+/* Two kinds of picture (DESIGN.md, Images): a photograph takes the halftone (.ht); a scene from
+   design/art/ renders as drawn (.ill). */
+.ht, .ill { position: relative; overflow: hidden; }
+.ill img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ht img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.2) brightness(1.05); mix-blend-mode: multiply; }
 .ht::after {
   content: ""; position: absolute; inset: 0;
