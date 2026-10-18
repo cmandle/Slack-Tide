@@ -1,47 +1,47 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 167,
-   "seconds": 4.33
+   "rows": 170,
+   "seconds": 7.95
   },
   "brownell-library": {
    "rows": 24,
-   "seconds": 0.38
+   "seconds": 2.64
   },
   "dnrt": {
-   "rows": 13,
-   "seconds": 4.42
+   "rows": 14,
+   "seconds": 7.99
   },
   "viva-fall-river": {
-   "rows": 278,
-   "seconds": 18.47
+   "rows": 281,
+   "seconds": 18.49
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 4.22
+   "seconds": 9.95
   },
   "town-tiverton": {
-   "rows": 191,
-   "seconds": 0.8
+   "rows": 194,
+   "seconds": 6.08
   },
   "town-dartmouth": {
-   "rows": 31,
-   "seconds": 0.3
+   "rows": 30,
+   "seconds": 0.36
   },
   "town-somerset": {
    "rows": 13,
-   "seconds": 0.63
+   "seconds": 8.14
   }
  },
  "errors": {},
- "primary_rows": 552,
+ "primary_rows": 558,
  "dropped": {
-  "closure": 6,
+  "closure": 5,
   "holiday": 13
  },
- "series": 185,
+ "series": 186,
  "by_town": {
-  "Dartmouth": 28,
+  "Dartmouth": 29,
   "Fall River": 102,
   "Tiverton": 33,
   "Little Compton": 13,
@@ -54,7 +54,7 @@
   "(unclassified)": 39,
   "Markets & Fairs": 1,
   "Civic & Town Meetings": 28,
-  "Outdoors & Nature": 14,
+  "Outdoors & Nature": 15,
   "Sports & Recreation": 7,
   "Volunteering & Causes": 2,
   "Library & Talks": 37,
@@ -68,7 +68,7 @@
   "weekends": 2,
   "weekly": 36,
   "several-a-week": 2,
-  "monthly": 21,
+  "monthly": 22,
   "irregular": 6,
   "daily": 2,
   "fortnightly": 5
@@ -83,10 +83,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 167,
+  "check_total": 170,
   "check_matched": 0,
-  "check_missed_rows": 167,
-  "check_missed_series": 53,
+  "check_missed_rows": 170,
+  "check_missed_series": 55,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
@@ -124,6 +124,13 @@
     "rows": 9
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-22T18:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Open Mic",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -149,13 +156,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-23T17:30:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-22T18:30:00-04:00",
     "rows": 8
    },
    {
@@ -236,6 +236,13 @@
     "rows": 1
    },
    {
+    "title": "Author Book Talk: Steve Mentz",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-12-17T12:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Celebrate National Authors Day with Write With Community!",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -289,6 +296,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-27T17:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Liquid Spine: Film, Dance, and Dialogue",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-12-17T17:30:00-05:00",
     "rows": 1
    },
    {
@@ -466,5 +480,6 @@
   "primary_only_count": 0,
   "primary_only_series": 0,
   "coverage_ratio": 0.0
- }
+ },
+ "tide_error": null
 }

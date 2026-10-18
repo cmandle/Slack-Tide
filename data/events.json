@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-18T10:43:47.809932+00:00",
- "series_count": 185,
- "occurrence_count": 517,
+ "generated_at": "2026-10-18T22:41:46.455901+00:00",
+ "series_count": 186,
+ "occurrence_count": 524,
  "series": [
   {
    "id": "af6c6a09be91",
@@ -2553,8 +2553,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-22T09:00:00-04:00",
-   "last_start": "2026-12-10T09:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-17T09:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -2597,6 +2597,11 @@
      "start": "2026-12-10T09:00:00-05:00",
      "end": "2026-12-10T10:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-17T09:00:00-05:00",
+     "end": "2026-12-17T10:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2610,8 +2615,8 @@
    "url": "https://www.vivafallriver.com/event/knitting-club/2026-10-22/",
    "cost": "",
    "first_start": "2026-10-22T13:00:00-04:00",
-   "last_start": "2026-12-10T13:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-17T13:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -2654,6 +2659,11 @@
      "start": "2026-12-10T13:00:00-05:00",
      "end": "2026-12-10T13:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T13:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2667,8 +2677,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-22T13:00:00-04:00",
-   "last_start": "2026-12-10T13:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-17T13:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -2710,6 +2720,11 @@
     {
      "start": "2026-12-10T13:00:00-05:00",
      "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2724,8 +2739,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-22T13:00:00-04:00",
-   "last_start": "2026-12-10T13:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-17T13:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -2768,6 +2783,11 @@
      "start": "2026-12-10T13:00:00-05:00",
      "end": "2026-12-10T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2781,8 +2801,8 @@
    "url": "https://www.vivafallriver.com/event/zach-guillette-thursdays/2026-10-22/",
    "cost": "",
    "first_start": "2026-10-22T18:00:00-04:00",
-   "last_start": "2026-12-10T18:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-17T18:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -2824,6 +2844,11 @@
     {
      "start": "2026-12-10T18:00:00-05:00",
      "end": "2026-12-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T18:00:00-05:00",
+     "end": "2026-12-17T21:00:00-05:00",
      "all_day": false
     }
    ]
@@ -5325,14 +5350,19 @@
    "url": "https://www.vivafallriver.com/event/fantasy-sci-fi-book-club/2026-11-19/",
    "cost": "",
    "first_start": "2026-11-19T18:00:00-05:00",
-   "last_start": "2026-11-19T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "last_start": "2026-12-17T18:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 3,
    "occurrences": [
     {
      "start": "2026-11-19T18:00:00-05:00",
      "end": "2026-11-19T19:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T18:00:00-05:00",
+     "end": "2026-12-17T19:30:00-05:00",
      "all_day": false
     }
    ]
@@ -5729,6 +5759,28 @@
     {
      "start": "2026-12-16T20:00:00-05:00",
      "end": "2026-12-16T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "73059079afa2",
+   "title": "Helfand Farm Trail Work Party",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/helfand-farm-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-12-17T09:00:00-05:00",
+   "last_start": "2026-12-17T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-17T09:00:00-05:00",
+     "end": "2026-12-17T12:00:00-05:00",
      "all_day": false
     }
    ]
