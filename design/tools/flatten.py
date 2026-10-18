@@ -20,12 +20,13 @@ import sys
 from pathlib import Path
 
 ASSETS = {
-    "6a65f717aa43af04e16f014d2192b26c": "assets/shore.jpg",
+    # the one photograph stand-in, shown with the halftone treatment
     "6b3c030ada2b926f2c8f42da495df9f1": "assets/harbor.jpg",
-    "b976d742d0697f6777a00634eac6f54e": "assets/field.jpg",
-    "6a46b0b89ea39646770acae21aa4f090": "assets/lawn.jpg",
-    "d9e0cfce90f3c5951e786c4ca51a226d": "assets/trail.jpg",
-    "e83fe3a4ccce34152c76cfdaf8999fbd": "assets/market.jpg",
+    # card illustrations from design/art/, shown as drawn
+    "6d579f224a254e1cf80daf4901b3f7ad": "../art/music-1.svg",
+    "fa44977142b21a8f508d62aea88ef582": "../art/arts-1.svg",
+    "653a020204c58a940d733b3b1cadff48": "../art/outdoors-2.svg",
+    "b41d7f4e50ae2633b43a25c7051c45cb": "../art/family-2.svg",
 }
 
 

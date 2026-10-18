@@ -14,7 +14,7 @@ Owner: the nonprofit's GitHub account `cmandle`. Collaborator: `loucommando` (Lu
 - `pipeline/slacktide/sources.yaml` the source registry. Add sources here, never in code. `role: check` sources are used for reconciliation only and never published.
 - `data/` pipeline output, committed by the scheduled workflow.
 - `preview/` four design mockups (Discover, Calendar, Map, Event). Served at `/preview/` on GitHub Pages with a noindex tag and a banner. These are not the site, and their look is superseded by `design/`.
-- `design/` the current design direction. Read `design/DESIGN.md` before any work on `site/` templates or CSS. `tokens.css` holds the values, `reference/` the flattened pages and screenshots, `canvas/` the artboard sources from the design canvas, `tools/flatten.py` regenerates `reference/` from `canvas/`.
+- `design/` the current design direction. Read `design/DESIGN.md` before any work on `site/` templates or CSS. `tokens.css` holds the values, `reference/` the flattened pages and screenshots, `art/` the card illustration set (three scenes per category family plus three general; the card image whenever a series has no photo), `canvas/` the artboard sources from the design canvas, `tools/flatten.py` regenerates `reference/` from `canvas/` and `tools/make_art.py` regenerates `art/`.
 - `site/` the generated static site, not yet built.
 - `.github/workflows/ingest.yml` runs tests and the pipeline twice daily and commits `data/`. `pages.yml` deploys `preview/` and `site/`.
 

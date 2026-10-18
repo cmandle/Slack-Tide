@@ -16,6 +16,8 @@ a{color:#1A1A1A}a:hover{color:#FF6B6C}
 .ht{position:relative;overflow:hidden}
 .ht img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.2) brightness(1.05);mix-blend-mode:multiply}
 .ht::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,#1A1A1A 0.8px,transparent 1.3px);background-size:4px 4px;mix-blend-mode:multiply;opacity:.3;pointer-events:none}
+.ill{position:relative;overflow:hidden}
+.ill img{display:block;width:100%;height:100%;object-fit:cover}
 .scroll{scrollbar-width:none}.scroll::-webkit-scrollbar{display:none}
 button,select{font-family:inherit;cursor:pointer}
 select{appearance:none;-webkit-appearance:none}
@@ -94,7 +96,7 @@ select{appearance:none;-webkit-appearance:none}
           <a href="#event" style="display: flex; flex-direction: column; text-decoration: none; color: #1A1A1A; background: #F6F1EE; border: 1px solid #1A1A1A">
             <div style="padding: 8px; font-size: 13px; font-weight: 700; line-height: 1.2; border-bottom: 1px solid #1A1A1A; min-height: 34px; display: flex; align-items: center">{{e.title}}</div>
             <div style="display: flex; border-bottom: 1px solid #1A1A1A">
-              <div class="ht" style="flex: 1; height: 76px; background: {{e.color}}">
+              <div class="{{e.kind}}" style="flex: 1; height: 76px; background: {{e.color}}">
                 <img src="{{e.img}}" alt="">
               </div>
               <div class="mono" style="flex: 0 0 26px; border-left: 1px solid #1A1A1A; background: {{e.color}}; display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase">{{e.cat}}</div>
@@ -146,8 +148,8 @@ class Component extends DCLogic {
     const cats = [['All', 'all', null], ['Music', 'music', 'music'], ['Arts', 'arts', 'arts'], ['Outdoors', 'outdoors', 'outdoors'], ['Family', 'family', 'family'], ['Library', 'library', 'library'], ['Markets', 'markets', 'markets'], ['Civic', 'civic', 'civic']]
       .map(([name, ik, k], i) => ({ name, p1: icons[ik][0], p2: icons[ik][1], color: k ? stock[k] : '#FFEF6B', bg: i === 0 ? '#FFEF6B' : paper }));
     const cards = [
-      { title: 'Sunset music on the lawn', when: 'SAT 7:00 PM', price: '$25', where: 'Westport Rivers Vineyard, Westport', k: 'music', cat: 'Music', prov: 'Posted by the venue', img: '/_blob/6a46b0b89ea39646770acae21aa4f090' },
-      { title: 'Late gallery hours', when: 'SAT 6:00 PM', price: 'Free', where: 'Hatch Street Studios, New Bedford', k: 'arts', cat: 'Arts', prov: 'Read by a person', img: '/_blob/6b3c030ada2b926f2c8f42da495df9f1' }
+      { title: 'Sunset music on the lawn', when: 'SAT 7:00 PM', price: '$25', where: 'Westport Rivers Vineyard, Westport', k: 'music', cat: 'Music', prov: 'Posted by the venue', kind: 'ill', img: '/_blob/6d579f224a254e1cf80daf4901b3f7ad' },
+      { title: 'Late gallery hours', when: 'SAT 6:00 PM', price: 'Free', where: 'Hatch Street Studios, New Bedford', k: 'arts', cat: 'Arts', prov: 'Read by a person', kind: 'ht', img: '/_blob/6b3c030ada2b926f2c8f42da495df9f1' }
     ].map(e => ({ ...e, color: stock[e.k] }));
     const week = [
       { when: 'SUN 25 · 8A', title: 'Harbor walk: winter birds', where: 'Ned’s Point, Mattapoisett', k: 'outdoors' },

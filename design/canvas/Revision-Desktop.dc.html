@@ -16,6 +16,8 @@ a{color:#1A1A1A}a:hover{color:#FF6B6C}
 .ht{position:relative;overflow:hidden}
 .ht img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.2) brightness(1.05);mix-blend-mode:multiply}
 .ht::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,#1A1A1A 0.8px,transparent 1.3px);background-size:4px 4px;mix-blend-mode:multiply;opacity:.3;pointer-events:none}
+.ill{position:relative;overflow:hidden}
+.ill img{display:block;width:100%;height:100%;object-fit:cover}
 button,select,input{font-family:inherit}
 select{appearance:none;-webkit-appearance:none;cursor:pointer}
 input::placeholder{color:#6B655A}
@@ -90,7 +92,7 @@ input::placeholder{color:#6B655A}
           <a href="#event" style="display: flex; flex-direction: column; text-decoration: none; color: #1A1A1A; background: #F6F1EE; border: 1px solid #1A1A1A">
             <div style="padding: 10px 12px; font-size: 16px; font-weight: 700; line-height: 1.2; border-bottom: 1px solid #1A1A1A; min-height: 40px; display: flex; align-items: center">{{e.title}}</div>
             <div style="display: flex; border-bottom: 1px solid #1A1A1A">
-              <div class="ht" style="flex: 1; height: 120px; background: {{e.color}}">
+              <div class="{{e.kind}}" style="flex: 1; height: 120px; background: {{e.color}}">
                 <img src="{{e.img}}" alt="">
                 <sc-if value="{{e.tonight}}" hint-placeholder-val="{{true}}">
                   <span class="mono" style="position: absolute; top: 8px; left: 8px; z-index: 1; background: #F6F1EE; color: #1A1A1A; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border: 1.5px solid #1A1A1A">Tonight</span>
@@ -146,10 +148,10 @@ class Component extends DCLogic {
     const cats = [['All', 'all', null], ['Music', 'music', 'music'], ['Arts', 'arts', 'arts'], ['Outdoors', 'outdoors', 'outdoors'], ['Family', 'family', 'family'], ['Library', 'library', 'library'], ['Markets', 'markets', 'markets'], ['Civic', 'civic', 'civic']]
       .map(([name, ik, k], i) => ({ name, p1: icons[ik][0], p2: icons[ik][1], color: k ? stock[k] : '#FFEF6B', bg: i === 0 ? '#FFEF6B' : paper }));
     const cards = [
-      { title: 'Sunset music on the lawn', when: 'SAT 7:00 PM', price: '$25', where: 'Westport Rivers Vineyard, Westport', k: 'music', cat: 'Music', tonight: true, prov: 'Posted by the venue', img: '/_blob/6a46b0b89ea39646770acae21aa4f090' },
-      { title: 'Late gallery hours', when: 'SAT 6:00 PM', price: 'Free', where: 'Hatch Street Studios, New Bedford', k: 'arts', cat: 'Arts', tonight: true, prov: 'Verified organizer', img: '/_blob/6b3c030ada2b926f2c8f42da495df9f1' },
-      { title: 'Harbor walk: winter birds', when: 'SUN 8:00 AM', price: 'Free', where: 'Ned’s Point, Mattapoisett', k: 'outdoors', cat: 'Outdoors', tonight: false, prov: 'Read by a person', img: '/_blob/6a65f717aa43af04e16f014d2192b26c' },
-      { title: 'Family day on the ship', when: 'SUN 2:00 PM', price: '$5', where: 'State Pier, New Bedford', k: 'family', cat: 'Family', tonight: false, prov: 'Read by a person', img: '/_blob/b976d742d0697f6777a00634eac6f54e' }
+      { title: 'Sunset music on the lawn', when: 'SAT 7:00 PM', price: '$25', where: 'Westport Rivers Vineyard, Westport', k: 'music', cat: 'Music', tonight: true, prov: 'Posted by the venue', kind: 'ill', img: '/_blob/6d579f224a254e1cf80daf4901b3f7ad' },
+      { title: 'Late gallery hours', when: 'SAT 6:00 PM', price: 'Free', where: 'Hatch Street Studios, New Bedford', k: 'arts', cat: 'Arts', tonight: true, prov: 'Verified organizer', kind: 'ill', img: '/_blob/fa44977142b21a8f508d62aea88ef582' },
+      { title: 'Harbor walk: winter birds', when: 'SUN 8:00 AM', price: 'Free', where: 'Ned’s Point, Mattapoisett', k: 'outdoors', cat: 'Outdoors', tonight: false, prov: 'Read by a person', kind: 'ill', img: '/_blob/653a020204c58a940d733b3b1cadff48' },
+      { title: 'Family day on the ship', when: 'SUN 2:00 PM', price: '$5', where: 'State Pier, New Bedford', k: 'family', cat: 'Family', tonight: false, prov: 'Read by a person', kind: 'ht', img: '/_blob/6b3c030ada2b926f2c8f42da495df9f1' }
     ].map(e => ({ ...e, color: stock[e.k] }));
     const week = [
       { when: 'TUE 27 · 10:30 AM', title: 'Toddler story hour', where: 'Elizabeth Taber Library, Marion', k: 'library' },
