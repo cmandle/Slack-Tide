@@ -73,8 +73,7 @@ svg { display: block; }
   justify-content: space-between;
   padding: 0 calc(var(--margin-inset) + 10px) 0 calc(var(--margin-inset) - var(--st-border-frame));
   border-bottom: var(--st-border-rule) solid var(--st-rule);
-  position: relative;
-  z-index: 6;
+  position: relative;   /* no z-index: the margin lines (z 5) paint over the yellow block */
 }
 .wordmark {
   display: flex;
@@ -135,14 +134,25 @@ svg { display: block; }
   flex-direction: column;
   gap: var(--gap);
 }
-.sticker { position: absolute; pointer-events: none; }
-.sticker-1 { right: 24px; top: 86px; width: 26px; height: 26px; }
-.sticker-2 { right: 54px; top: 112px; width: 18px; height: 18px; }
+/* Stickers: a small cluster laid out after the heading, so it lands in the empty space past the
+   end of the title on every page. site.js adds .is-nudged while a section tab is hovered or
+   focused, and the splats drift aside. */
+.hero-title { display: flex; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
+.stickers { position: relative; flex: 0 0 auto; width: 54px; height: 44px; pointer-events: none; }
+.sticker { position: absolute; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.sticker-1 { left: 0; top: 0; width: 26px; height: 26px; }
+.sticker-2 { left: 30px; top: 22px; width: 18px; height: 18px; }
 .sticker-3 { display: none; }
-@media (max-width: 359px) { .sticker { display: none; } }   /* DESIGN.md: drop them when they would collide with the tide panel */
+.stickers.is-nudged .sticker-1 { transform: translate(8px, -6px) rotate(25deg); }
+.stickers.is-nudged .sticker-2 { transform: translate(10px, 4px) rotate(-30deg); }
+.stickers.is-nudged .sticker-3 { transform: translate(6px, -10px) rotate(40deg); }
+@media (max-width: 359px) { .stickers { display: none; } }   /* DESIGN.md: drop them when they would collide */
 
-.hero { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+.hero { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; position: relative; }
 .hero-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+/* Phone: no room after the heading beside the tide panel, so the cluster takes the artboard's
+   spot at the panel's lower right corner instead of wrapping under the title. */
+.hero .stickers { position: absolute; right: 0; bottom: -10px; }
 .hero h1 { font: var(--st-h1-phone); letter-spacing: -0.02em; }
 .dateline { font: 400 11px/14px var(--st-font-mono); letter-spacing: var(--st-letterspacing-caps); text-transform: uppercase; }
 
@@ -310,10 +320,13 @@ svg { display: block; }
   .tab { height: 40px; padding: 0 18px; font: 700 14px/1 var(--st-font-sans); }
   .tab[aria-current="page"] { height: 46px; padding: 0 24px; font: var(--st-tab-desktop); }
   .content { padding-top: 28px; padding-bottom: 28px; }
-  /* The artboard places the stickers just past the end of the headline. */
-  .sticker-1 { left: 264px; right: auto; top: 26px; width: 34px; height: 34px; }
-  .sticker-2 { left: 306px; right: auto; top: 60px; width: 22px; height: 22px; }
-  .sticker-3 { display: block; left: 374px; top: 34px; width: 26px; height: 26px; }
+  /* The artboard's cluster: three splats spread over about 136 x 56, starting just past the headline. */
+  .hero-title { gap: 24px; }
+  .hero .stickers { position: relative; right: auto; bottom: auto; }
+  .stickers { width: 140px; height: 56px; }
+  .sticker-1 { left: 0; top: 0; width: 34px; height: 34px; }
+  .sticker-2 { left: 42px; top: 34px; width: 22px; height: 22px; }
+  .sticker-3 { display: block; left: 110px; top: 8px; width: 26px; height: 26px; }
   .hero { flex-wrap: wrap; gap: 16px 32px; }
   .hero-text { gap: 6px; }
   .hero h1 { font: var(--st-h1-desktop); letter-spacing: -0.02em; }

@@ -219,13 +219,16 @@ def head(active: str, rel: str) -> str:
     for key, long, short, href in SECTIONS:
         cur = ' aria-current="page"' if key == active else ""
         tabs.append(f'<a class="tab" href="{rel}{href}"{cur}><span class="long">{esc(long)}</span><span class="short">{esc(short)}</span></a>')
-    return (f'<header class="head"><div class="brandbar"><a class="wordmark" href="{rel}">Slack Tide</a></div>'
+    return (f'<header class="head"><div class="brandbar"><a class="wordmark" href="{rel}">slack-tide</a></div>'
             f'<nav class="tabs" aria-label="Sections">{"".join(tabs)}</nav></header>')
 
 def stickers() -> str:
-    return "".join(
-        f'<svg class="sticker sticker-{i}" viewBox="0 0 24 24" aria-hidden="true"><path d="{STICKER}" fill="{c}" stroke="#1A1A1A" stroke-width="1.2"/></svg>'
-        for i, c in ((1, "var(--st-coral)"), (2, "var(--st-green)"), (3, "var(--st-yellow)")))
+    """Three splats in the empty space after the heading. They are laid out after the h1, so they
+    land past the end of whatever the heading says on each page, and site.js nudges them while a
+    section tab is hovered or focused."""
+    return '<span class="stickers" aria-hidden="true">' + "".join(
+        f'<svg class="sticker sticker-{i}" viewBox="0 0 24 24"><path d="{STICKER}" fill="{c}" stroke="#1A1A1A" stroke-width="1.2"/></svg>'
+        for i, c in ((1, "var(--st-coral)"), (2, "var(--st-green)"), (3, "var(--st-yellow)"))) + '</span>'
 
 def footer(rel: str) -> str:
     towns = ", ".join(config.TOWNS[:-1]) + " and " + config.TOWNS[-1]
@@ -297,8 +300,8 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     description = (f"Gigs, markets, walks, talks and town meetings from {REGION}, gathered from the calendars "
                    "local organizations already keep. Every listing is read by a person.")
     body = (head("events", "") +
-            '<main class="content" id="main">' + stickers() +
-            f'<div class="hero"><div class="hero-text"><h1>Tonight</h1>'
+            '<main class="content" id="main">'
+            f'<div class="hero"><div class="hero-text"><div class="hero-title"><h1>Tonight</h1>{stickers()}</div>'
             f'<div class="dateline">{esc(dateline)}<span class="long"> · {n_towns} town{"" if n_towns == 1 else "s"}</span></div></div>'
             + tide_box(tide, now) + '</div>'
             + filters(towns, "") +
@@ -325,7 +328,7 @@ def placeholder_page(key: str, now: datetime) -> str:
     title, copy = PLACEHOLDER_COPY[key]
     active = key if key in ("groups", "volunteer") else "events"
     body = (head(active, rel) +
-            f'<main class="content placeholder" id="main">{stickers()}<div class="hero-text"><h1>{esc(title)}</h1>'
+            f'<main class="content placeholder" id="main"><div class="hero-text"><div class="hero-title"><h1>{esc(title)}</h1>{stickers()}</div>'
             f'<div class="dateline">Coming soon · {esc(REGION)}</div></div>'
             f'<p>{esc(title)} is coming. {esc(copy)} Until then, the Events page has everything we publish.</p>'
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))

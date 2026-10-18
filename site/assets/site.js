@@ -38,6 +38,15 @@
     });
   });
 
+  /* Stickers drift aside while a section tab is hovered or focused. */
+  var stickers = document.querySelector(".stickers");
+  if (stickers) {
+    Array.prototype.forEach.call(document.querySelectorAll(".tab"), function (tab) {
+      ["mouseenter", "focus"].forEach(function (ev) { tab.addEventListener(ev, function () { stickers.classList.add("is-nudged"); }); });
+      ["mouseleave", "blur"].forEach(function (ev) { tab.addEventListener(ev, function () { stickers.classList.remove("is-nudged"); }); });
+    });
+  }
+
   /* Tide panel */
   var panel = document.getElementById("tide");
   var dataEl = document.getElementById("tide-data");
