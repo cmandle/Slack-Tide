@@ -310,16 +310,10 @@ svg { display: block; }
   body { padding: 16px 24px 32px; }
   .long { display: inline; }
   .short { display: none; }
-  .head {
-    flex-direction: row; align-items: stretch;
-    height: var(--st-header-height-desktop);
-    padding-left: calc(var(--margin-inset) - var(--st-border-frame));
-    border-bottom: var(--st-border-rule) solid var(--st-rule);
-  }
-  .head::after { display: none; }
-  .brandbar { padding: 0; border: 0; }
+  /* Between the phone and 960 px the header keeps the phone's two rows (wordmark, then the tabs
+     on their own rule) at desktop sizes, because the three tabs do not fit beside the wordmark. */
   .wordmark { padding: 14px 26px; font: var(--st-wordmark-desktop); letter-spacing: -0.02em; }
-  .tabs { flex: 1 1 auto; gap: 6px; padding: 14px 20px 0 24px; overflow: visible; }
+  .tabs { gap: 6px; flex-wrap: wrap; overflow: visible; }
   .tab { height: 40px; padding: 0 18px; font: 700 14px/1 var(--st-font-sans); }
   .tab[aria-current="page"] { height: 46px; padding: 0 24px; font: var(--st-tab-desktop); }
   .content { padding-top: 28px; padding-bottom: 28px; }
@@ -383,4 +377,23 @@ svg { display: block; }
   .footer .lead { max-width: 70ch; }
   .placeholder h1 { font: var(--st-h1-desktop); letter-spacing: -0.02em; }
   .placeholder p { font: var(--st-meta-desktop); line-height: 1.6; }
+}
+
+/* Short tab labels until the long ones fit on one tabs row. */
+@media (min-width: 700px) and (max-width: 819px) {
+  .tab .long { display: none; }
+  .tab .short { display: inline; }
+}
+
+/* Wide desktop: the artboard's 81 px header with the tabs beside the wordmark. */
+@media (min-width: 960px) {
+  .head {
+    flex-direction: row; align-items: stretch;
+    height: var(--st-header-height-desktop);
+    padding-left: calc(var(--margin-inset) - var(--st-border-frame));
+    border-bottom: var(--st-border-rule) solid var(--st-rule);
+  }
+  .head::after { display: none; }
+  .brandbar { padding: 0; border: 0; }
+  .tabs { flex: 1 1 auto; flex-wrap: nowrap; padding: 14px 20px 0 24px; }
 }
