@@ -1,8 +1,30 @@
 {
- "generated_at": "2026-10-17T22:40:12.441016+00:00",
- "series_count": 187,
- "occurrence_count": 519,
+ "generated_at": "2026-10-18T10:43:47.809932+00:00",
+ "series_count": 185,
+ "occurrence_count": 517,
  "series": [
+  {
+   "id": "af6c6a09be91",
+   "title": "Kids Yoga - CANCELLED",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "Family & Children",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/kids-yoga/",
+   "cost": "$10",
+   "first_start": "2026-10-18T10:00:00-04:00",
+   "last_start": "2026-10-18T10:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-18T10:00:00-04:00",
+     "end": "2026-10-18T11:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
   {
    "id": "35d1f5717a55",
    "title": "Weekend Brunch",
@@ -10,19 +32,14 @@
    "town": "Fall River",
    "category": "Food & Drink",
    "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/weekend-brunch/2026-10-17/",
+   "url": "https://www.vivafallriver.com/event/weekend-brunch/2026-10-18/",
    "cost": "",
-   "first_start": "2026-10-17T10:00:00-04:00",
+   "first_start": "2026-10-18T10:00:00-04:00",
    "last_start": "2026-12-13T10:00:00-05:00",
-   "count": 18,
+   "count": 17,
    "cadence": "weekends",
    "weekday": null,
    "occurrences": [
-    {
-     "start": "2026-10-17T10:00:00-04:00",
-     "end": "2026-10-17T12:30:00-04:00",
-     "all_day": false
-    },
     {
      "start": "2026-10-18T10:00:00-04:00",
      "end": "2026-10-18T12:30:00-04:00",
@@ -106,94 +123,6 @@
     {
      "start": "2026-12-13T10:00:00-05:00",
      "end": "2026-12-13T12:30:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "b958f9b7825e",
-   "title": "Embroidered Flower Bookmark with Karen Katin",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/embroidered-flower-bookmark-with-karen-katin/",
-   "cost": "",
-   "first_start": "2026-10-17T10:30:00-04:00",
-   "last_start": "2026-10-17T10:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-17T10:30:00-04:00",
-     "end": "2026-10-17T12:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "03043a007267",
-   "title": "Fest on Ferry Community Beer Festival",
-   "venue": "Canned Heat Craft Beer Co.",
-   "town": "Fall River",
-   "category": "Food & Drink",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/fest-on-ferry-community-beer-festival/",
-   "cost": "",
-   "first_start": "2026-10-17T14:00:00-04:00",
-   "last_start": "2026-10-17T14:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-17T14:00:00-04:00",
-     "end": "2026-10-17T21:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "1c51bbd6d57c",
-   "title": "Eric Lindell",
-   "venue": "Narrows Center for the Arts",
-   "town": "Fall River",
-   "category": "Outdoors & Nature",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/eric-lindell/",
-   "cost": "",
-   "first_start": "2026-10-17T20:00:00-04:00",
-   "last_start": "2026-10-17T20:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-17T20:00:00-04:00",
-     "end": "2026-10-17T22:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "af6c6a09be91",
-   "title": "Kids Yoga - CANCELLED",
-   "venue": "DNRT Center @ Helfand Farm",
-   "town": "Dartmouth",
-   "category": "Family & Children",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/kids-yoga/",
-   "cost": "$10",
-   "first_start": "2026-10-18T10:00:00-04:00",
-   "last_start": "2026-10-18T10:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-18T10:00:00-04:00",
-     "end": "2026-10-18T11:00:00-04:00",
      "all_day": false
     }
    ]
@@ -2540,8 +2469,8 @@
    "url": "https://www.vivafallriver.com/event/musical-bingo-weekly/2026-10-21/",
    "cost": "FREE",
    "first_start": "2026-10-21T19:00:00-04:00",
-   "last_start": "2026-12-09T19:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-16T19:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2583,6 +2512,11 @@
     {
      "start": "2026-12-09T19:00:00-05:00",
      "end": "2026-12-09T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": "2026-12-16T21:00:00-05:00",
      "all_day": false
     }
    ]
@@ -5773,6 +5707,28 @@
     {
      "start": "2026-12-12T20:00:00-05:00",
      "end": "2026-12-12T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "169e854ff7d7",
+   "title": "Squirrel Nut Zippers Christmas Caravan 2026 live at the Narrows",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/squirrel-nut-zippers-christmas-caravan-2026-live-at-the-narrows/",
+   "cost": "",
+   "first_start": "2026-12-16T20:00:00-05:00",
+   "last_start": "2026-12-16T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-16T20:00:00-05:00",
+     "end": "2026-12-16T22:00:00-05:00",
      "all_day": false
     }
    ]

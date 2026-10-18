@@ -1,71 +1,71 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 170,
-   "seconds": 4.97
+   "rows": 167,
+   "seconds": 4.33
   },
   "brownell-library": {
-   "rows": 25,
-   "seconds": 0.72
+   "rows": 24,
+   "seconds": 0.38
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 4.45
+   "seconds": 4.42
   },
   "viva-fall-river": {
-   "rows": 280,
-   "seconds": 19.75
+   "rows": 278,
+   "seconds": 18.47
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 6.32
+   "seconds": 4.22
   },
   "town-tiverton": {
    "rows": 191,
-   "seconds": 0.69
+   "seconds": 0.8
   },
   "town-dartmouth": {
    "rows": 31,
-   "seconds": 0.44
+   "seconds": 0.3
   },
   "town-somerset": {
    "rows": 13,
-   "seconds": 0.64
+   "seconds": 0.63
   }
  },
  "errors": {},
- "primary_rows": 555,
+ "primary_rows": 552,
  "dropped": {
   "closure": 6,
   "holiday": 13
  },
- "series": 187,
+ "series": 185,
  "by_town": {
-  "Fall River": 103,
-  "Little Compton": 14,
   "Dartmouth": 28,
+  "Fall River": 102,
   "Tiverton": 33,
+  "Little Compton": 13,
   "Somerset": 8,
   "Westport": 1
  },
  "by_category": {
-  "Food & Drink": 12,
-  "Library & Talks": 38,
-  "Outdoors & Nature": 15,
   "Family & Children": 12,
+  "Food & Drink": 11,
   "(unclassified)": 39,
   "Markets & Fairs": 1,
   "Civic & Town Meetings": 28,
+  "Outdoors & Nature": 14,
   "Sports & Recreation": 7,
   "Volunteering & Causes": 2,
+  "Library & Talks": 37,
   "Arts & Theatre": 7,
-  "Music": 21,
+  "Music": 22,
   "Education & Workshops": 3,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
+  "once": 111,
   "weekends": 2,
-  "once": 113,
   "weekly": 36,
   "several-a-week": 2,
   "monthly": 21,
@@ -74,27 +74,26 @@
   "fortnightly": 5
  },
  "weekend_gate": {
-  "saturday": "2026-10-17",
-  "series": 10,
+  "saturday": "2026-10-24",
+  "series": 20,
   "towns": {
-   "Fall River": 8,
-   "Little Compton": 1,
-   "Dartmouth": 1
+   "Fall River": 19,
+   "Little Compton": 1
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 170,
+  "check_total": 167,
   "check_matched": 0,
-  "check_missed_rows": 170,
-  "check_missed_series": 54,
+  "check_missed_rows": 167,
+  "check_missed_series": 53,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
-    "first_start": "2026-10-17T19:30:00-04:00",
-    "rows": 25
+    "first_start": "2026-10-22T19:30:00-04:00",
+    "rows": 24
    },
    {
     "title": "Karaoke Nights!",
@@ -170,8 +169,8 @@
     "title": "Boo at the Zoo",
     "venue": "Buttonwood Park Zoo",
     "town": "New Bedford",
-    "first_start": "2026-10-17T10:00:00-04:00",
-    "rows": 4
+    "first_start": "2026-10-18T10:00:00-04:00",
+    "rows": 3
    },
    {
     "title": "A Charlie Brown Christmas - Live On Stage at The Z",
@@ -402,13 +401,6 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-12-11T19:30:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents MARIACHI HERENCIA DE MEXICO: DÍA DE MUERTOS TOUR",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-10-17T20:00:00-04:00",
     "rows": 1
    },
    {
