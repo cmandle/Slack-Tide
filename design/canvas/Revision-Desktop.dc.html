@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slack Tide, revision B, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;font-family:'Archivo',system-ui,sans-serif;color:#1A1A1A;background:#ECE6E0}
+a{color:#1A1A1A}a:hover{color:#FF6B6C}
+.mono{font-family:'IBM Plex Mono',Menlo,monospace}
+.ht{position:relative;overflow:hidden}
+.ht img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.2) brightness(1.05);mix-blend-mode:multiply}
+.ht::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,#1A1A1A 0.8px,transparent 1.3px);background-size:4px 4px;mix-blend-mode:multiply;opacity:.3;pointer-events:none}
+button,select,input{font-family:inherit}
+select{appearance:none;-webkit-appearance:none;cursor:pointer}
+input::placeholder{color:#6B655A}
+</style>
+</helmet>
+<div style="box-sizing: border-box; min-height: 100%; background: #ECE6E0; padding: 16px 24px 32px 24px; display: flex; flex-direction: column; gap: 10px; align-items: center">
+
+  <div class="mono" style="font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; text-align: center">Design preview · placeholder listings · illustrative dates</div>
+
+  <div style="width: 100%; max-width: 1200px; box-sizing: border-box; border: 2px solid #1A1A1A; border-radius: 24px; overflow: hidden; position: relative; background-color: #F6F1EE; background-image: linear-gradient(90deg, transparent 47px, {{margin}} 47px, {{margin}} 49px, transparent 49px), linear-gradient(270deg, transparent 47px, {{margin}} 47px, {{margin}} 49px, transparent 49px), linear-gradient({{grid}} 1px, transparent 1px), linear-gradient(90deg, {{grid}} 1px, transparent 1px); background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px; background-repeat: no-repeat, no-repeat, repeat, repeat; display: flex; flex-direction: column">
+    <div aria-hidden="true" style="position: absolute; left: 47px; top: 0; bottom: 0; width: 2px; background: {{margin}}; z-index: 5; pointer-events: none"></div>
+    <div aria-hidden="true" style="position: absolute; right: 47px; top: 0; bottom: 0; width: 2px; background: {{margin}}; z-index: 5; pointer-events: none"></div>
+
+    <header style="display: flex; flex-wrap: wrap; align-items: stretch; padding-left: 48px; border-bottom: 2px solid {{rule}}; height: 81px; position: relative">
+      <div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: {{rule}}; z-index: 6; pointer-events: none"></div>
+      <a href="#top" style="display: flex; align-items: center; padding: 14px 26px; background: #FFEF6B; text-decoration: none; color: #1A1A1A">
+        <span style="font-weight: 900; font-size: 26px; letter-spacing: -0.02em; line-height: 1">Slack Tide</span>
+      </a>
+      <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 6px; padding: 14px 20px 0 24px; flex: 1 1 auto">
+        <a href="#events" aria-current="page" style="display: flex; align-items: center; height: 46px; padding: 0 24px; border: 1.5px solid {{rule}}; border-bottom: 0; border-radius: 12px 12px 0 0; background: #6CCB77; color: #1A1A1A; font-size: 15px; font-weight: 700; text-decoration: none">Events</a>
+        <a href="#groups" style="display: flex; align-items: center; height: 40px; padding: 0 18px; border: 1.5px solid {{rule}}; border-radius: 12px 12px 0 0; background: #F6F1EE; font-size: 14px; font-weight: 700; text-decoration: none">Community groups &amp; meetups</a>
+        <a href="#volunteer" style="display: flex; align-items: center; height: 40px; padding: 0 18px; border: 1.5px solid {{rule}}; border-radius: 12px 12px 0 0; background: #F6F1EE; font-size: 14px; font-weight: 700; text-decoration: none">Volunteer opportunities</a>
+      </nav>
+      
+    </header>
+
+    <div style="padding: 28px 64px 28px 64px; display: flex; flex-direction: column; gap: 24px; position: relative">
+
+      <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: 410px; top: 26px"><path d="M12 2a3 3 0 013 3l-1 4 4-1a3 3 0 010 6l-4-1 1 4a3 3 0 01-6 0l1-4-4 1a3 3 0 010-6l4 1-1-4a3 3 0 013-3z" fill="#FF6B6C" stroke="#1A1A1A" stroke-width="1.2"></path></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: 452px; top: 60px"><path d="M12 2a3 3 0 013 3l-1 4 4-1a3 3 0 010 6l-4-1 1 4a3 3 0 01-6 0l1-4-4 1a3 3 0 010-6l4 1-1-4a3 3 0 013-3z" fill="#86B2CB" stroke="#1A1A1A" stroke-width="1.2"></path></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: 520px; top: 34px"><path d="M12 2a3 3 0 013 3l-1 4 4-1a3 3 0 010 6l-4-1 1 4a3 3 0 01-6 0l1-4-4 1a3 3 0 010-6l4 1-1-4a3 3 0 013-3z" fill="#FFEF6B" stroke="#1A1A1A" stroke-width="1.2"></path></svg>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px 32px">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <h1 style="margin: 0; font-size: 46px; font-weight: 900; line-height: 56px; letter-spacing: -0.02em">This weekend</h1>
+          <div class="mono" style="font-size: 12px; line-height: 14px; letter-spacing: 0.06em">SAT OCT 24 · SWANSEA TO LITTLE COMPTON · 14 TOWNS</div>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: center; background: #F6F1EE; border: 1px solid #1A1A1A; padding: 10px 14px">
+          <svg width="30" height="124" viewBox="0 0 22 84" role="img" aria-label="Tide staff, 3.8 feet and rising"><rect x="7" y="1" width="8" height="82" fill="#F6F1EE" stroke="#1A1A1A" stroke-width="1.5"></rect><path d="M7 11h4M7 21h6M7 31h4M7 41h6M7 51h4M7 61h6M7 71h4" stroke="#1A1A1A" stroke-width="1.2"></path><rect x="7" y="37" width="8" height="46" fill="#86B2CB"></rect><path d="M1 37h20" stroke="#FF6B6C" stroke-width="2"></path></svg>
+          <div class="mono" style="display: flex; flex-direction: column; gap: 3px; font-size: 11px; line-height: 14px; letter-spacing: 0.04em; text-transform: uppercase">
+            <span style="font-size: 20px; font-weight: 500; line-height: 24px">3.8 ft ↑ rising</span>
+            <span>High 4:52 PM · Low 11:08 PM</span>
+            <span style="opacity: 0.6">NOAA CO-OPS predictions · Fall River entrance</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="position: relative; width: 220px">
+          <select id="town" class="mono" style="width: 100%; height: 44px; box-sizing: border-box; border: 1px solid #1A1A1A; background: #F6F1EE; color: #1A1A1A; font-size: 12px; padding: 0 36px 0 12px">
+            <option>All towns</option><option>New Bedford</option><option>Fall River</option><option>Dartmouth</option><option>Westport</option><option>Fairhaven</option><option>Acushnet</option><option>Mattapoisett</option><option>Marion</option><option>Rochester</option><option>Wareham</option><option>Somerset</option><option>Swansea</option><option>Tiverton</option><option>Little Compton</option>
+          </select><label for="town" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Town</label>
+          
+          <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true" style="position: absolute; right: 12px; top: 18px; pointer-events: none"><path d="M1 1l5 5 5-5" fill="none" stroke="#1A1A1A" stroke-width="2"></path></svg>
+        </div><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px">
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 6px">
+          <sc-for list="{{cats}}" as="c" hint-placeholder-count="8">
+            <a href="#cat" class="mono" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; width: 66px; height: 66px; box-sizing: border-box; border: 1px solid #1A1A1A; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; background: {{c.bg}}; color: #1A1A1A">
+              <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="{{c.p1}}" fill="{{c.color}}" stroke="#1A1A1A" stroke-width="1.4" stroke-linejoin="round"></path><path d="{{c.p2}}" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <span>{{c.name}}</span>
+            </a>
+          </sc-for>
+        </div>
+        <div class="mono" style="margin-left: auto; display: flex; gap: 8px; font-size: 12px">
+          <a href="#calendar" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; height: 44px; padding: 0 14px; border: 1px solid #1A1A1A; background: #F6F1EE"><svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="4" width="16" height="14" fill="none" stroke="currentColor" stroke-width="2"></rect><path d="M2 8h16M6 2v4M14 2v4" stroke="currentColor" stroke-width="2"></path></svg>Calendar</a>
+          <a href="#map" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; height: 44px; padding: 0 14px; border: 1px solid #1A1A1A; background: #F6F1EE"><svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 18s-6-5.5-6-10a6 6 0 0112 0c0 4.5-6 10-6 10z" fill="none" stroke="currentColor" stroke-width="2"></path><circle cx="10" cy="8" r="2" fill="currentColor"></circle></svg>Map</a>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px">
+        <sc-for list="{{cards}}" as="e" hint-placeholder-count="4">
+          <a href="#event" style="display: flex; flex-direction: column; text-decoration: none; color: #1A1A1A; background: #F6F1EE; border: 1px solid #1A1A1A">
+            <div style="padding: 10px 12px; font-size: 16px; font-weight: 700; line-height: 1.2; border-bottom: 1px solid #1A1A1A; min-height: 40px; display: flex; align-items: center">{{e.title}}</div>
+            <div style="display: flex; border-bottom: 1px solid #1A1A1A">
+              <div class="ht" style="flex: 1; height: 120px; background: {{e.color}}">
+                <img src="{{e.img}}" alt="">
+                <sc-if value="{{e.tonight}}" hint-placeholder-val="{{true}}">
+                  <span class="mono" style="position: absolute; top: 8px; left: 8px; z-index: 1; background: #F6F1EE; color: #1A1A1A; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border: 1.5px solid #1A1A1A">Tonight</span>
+                </sc-if>
+              </div>
+              <div class="mono" style="flex: 0 0 34px; border-left: 1px solid #1A1A1A; background: {{e.color}}; display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase">{{e.cat}}</div>
+            </div>
+            <div class="mono" style="display: flex; justify-content: space-between; padding: 8px 12px; font-size: 11px; border-bottom: 1px solid #1A1A1A; background: #FFEF6B"><span>{{e.when}}</span><span>{{e.price}}</span></div>
+            <div class="mono" style="padding: 8px 12px 2px 12px; font-size: 11px; line-height: 1.4">{{e.where}}</div>
+            <div class="mono" style="padding: 2px 12px 10px 12px; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.75">{{e.prov}}</div>
+          </a>
+        </sc-for>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 28px 40px; align-items: flex-start">
+        <section style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column">
+          <h2 class="mono" style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; height: 28px; line-height: 28px; border-bottom: 2px solid #1A1A1A; display: flex; justify-content: space-between"><span>The week ahead</span><span>Oct 26 to Nov 1</span></h2>
+          <sc-for list="{{week}}" as="e" hint-placeholder-count="6">
+            <a href="#event" style="display: flex; align-items: flex-start; gap: 14px; height: 56px; text-decoration: none; color: #1A1A1A">
+              <span style="flex: 0 0 14px; height: 14px; margin-top: 7px; border: 1.5px solid #1A1A1A; background: {{e.color}}"></span>
+              <span class="mono" style="flex: 0 0 150px; font-size: 11px; line-height: 28px">{{e.when}}</span>
+              <span style="flex: 1; min-width: 0; font-size: 15px; font-weight: 700; line-height: 28px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{e.title}}</span>
+              <span class="mono" style="flex: 0 0 250px; font-size: 11px; line-height: 28px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{e.where}}</span>
+            </a>
+          </sc-for>
+          <a href="#month" class="mono" style="align-self: flex-start; font-size: 12px; line-height: 28px; margin-top: 4px">See the whole month →</a>
+        </section>
+      </div><a href="#add" style="display: inline-flex; align-items: center; height: 39px; padding: 0 18px; border: 2px solid #1A1A1A; background: #FF6B6C; color: #1A1A1A; font-size: 14px; font-weight: 700; text-decoration: none; width: 111px">Add your event</a>
+    </div>
+
+    <footer class="mono" style="border-top: 2px solid {{rule}}; background: #F6F1EE; padding: 14px 64px 18px 64px; font-size: 11px; line-height: 1.7; display: flex; flex-wrap: wrap; gap: 8px 40px; justify-content: space-between">
+      <div style="max-width: 70ch">Every listing is read by a person before it lands here. Swansea, Somerset, Fall River, Westport, Dartmouth, New Bedford, Acushnet, Fairhaven, Mattapoisett, Marion, Rochester, Wareham, Tiverton and Little Compton.</div>
+      <div>Spotted something wrong? <a href="#report">Let us know</a></div>
+    </footer>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"grid":{"editor":"color","default":"#C7D6DE","options":["#C7D6DE","#B9CBD6","#D6E0E6"]},"rule":{"editor":"color","default":"#A9C1CF","options":["#A9C1CF","#86B2CB","#C7D6DE"]},"margin":{"editor":"color","default":"#F3A6A4","options":["#F3A6A4","#FF6B6C","#E8402E"]},"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const paper = '#F6F1EE';
+    const stock = { music: '#FF6B6C', arts: '#86B2CB', outdoors: '#6CCB77', family: '#FFEF6B', library: '#C9A7E3', markets: '#FFA657', civic: '#B8C7D1' };
+    const icons = {
+      all: ['M12 2a3 3 0 013 3l-1 4 4-1a3 3 0 010 6l-4-1 1 4a3 3 0 01-6 0l1-4-4 1a3 3 0 010-6l4 1-1-4a3 3 0 013-3z', 'M12 12h.01'],
+      music: ['M6 18a3 3 0 106 0 3 3 0 00-6 0z', 'M12 18V4l6 2.5M12 9l6 2.5'],
+      arts: ['M12 3a9 9 0 100 18c2 0 2-2 1-3s0-2 2-2h2a4 4 0 004-4c0-5-4-9-9-9z', 'M8 9h.01M12 7h.01M16 9h.01M7 14h.01'],
+      outdoors: ['M12 3l7 11H5z', 'M12 14v7M9 21h6M12 8l3 4M12 8l-3 4'],
+      family: ['M12 2l8 8-8 10-8-10z', 'M12 2v18M4 10h16M12 20c-2 2-3 3-5 2'],
+      library: ['M3 5h7a2 2 0 012 2v13a2 2 0 00-2-2H3zM21 5h-7a2 2 0 00-2 2v13a2 2 0 012-2h7z', 'M12 7v13M6 9h3M15 9h3'],
+      markets: ['M12 7a8 7 0 100 14 8 7 0 000-14z', 'M12 7c0-2 1-4 3-4M12 7c0-2-1-3-3-3M12 7V3'],
+      civic: ['M4 10h16v10H4z', 'M3 10l9-6 9 6M8 14v6M12 14v6M16 14v6M3 20h18M12 4V1h3v2h-3']
+    };
+    const cats = [['All', 'all', null], ['Music', 'music', 'music'], ['Arts', 'arts', 'arts'], ['Outdoors', 'outdoors', 'outdoors'], ['Family', 'family', 'family'], ['Library', 'library', 'library'], ['Markets', 'markets', 'markets'], ['Civic', 'civic', 'civic']]
+      .map(([name, ik, k], i) => ({ name, p1: icons[ik][0], p2: icons[ik][1], color: k ? stock[k] : '#FFEF6B', bg: i === 0 ? '#FFEF6B' : paper }));
+    const cards = [
+      { title: 'Sunset music on the lawn', when: 'SAT 7:00 PM', price: '$25', where: 'Westport Rivers Vineyard, Westport', k: 'music', cat: 'Music', tonight: true, prov: 'Posted by the venue', img: '/_blob/6a46b0b89ea39646770acae21aa4f090' },
+      { title: 'Late gallery hours', when: 'SAT 6:00 PM', price: 'Free', where: 'Hatch Street Studios, New Bedford', k: 'arts', cat: 'Arts', tonight: true, prov: 'Verified organizer', img: '/_blob/6b3c030ada2b926f2c8f42da495df9f1' },
+      { title: 'Harbor walk: winter birds', when: 'SUN 8:00 AM', price: 'Free', where: 'Ned’s Point, Mattapoisett', k: 'outdoors', cat: 'Outdoors', tonight: false, prov: 'Read by a person', img: '/_blob/6a65f717aa43af04e16f014d2192b26c' },
+      { title: 'Family day on the ship', when: 'SUN 2:00 PM', price: '$5', where: 'State Pier, New Bedford', k: 'family', cat: 'Family', tonight: false, prov: 'Read by a person', img: '/_blob/b976d742d0697f6777a00634eac6f54e' }
+    ].map(e => ({ ...e, color: stock[e.k] }));
+    const week = [
+      { when: 'TUE 27 · 10:30 AM', title: 'Toddler story hour', where: 'Elizabeth Taber Library, Marion', k: 'library' },
+      { when: 'WED 28 · 7:00 PM', title: 'Select Board meeting', where: 'Town Hall, Rochester', k: 'civic' },
+      { when: 'THU 29 · 5:00 PM', title: 'AHA! Night: print studio open', where: 'Downtown New Bedford', k: 'arts' },
+      { when: 'FRI 30 · 6:30 PM', title: 'Halloween lantern walk', where: 'Town green, Marion', k: 'family' },
+      { when: 'SAT 31 · 9:00 AM', title: 'Trail stewards work morning', where: 'Destruction Brook Woods, Dartmouth', k: 'outdoors' },
+      { when: 'SAT 31 · 9:00 AM', title: 'Farmers market', where: 'Town Hall lot, Wareham', k: 'markets' }
+    ].map(e => ({ ...e, color: stock[e.k] }));
+    const groups = [
+      { name: 'Buzzards Bay paddlers', meta: 'Meets Wednesdays · Fairhaven' },
+      { name: 'South Coast birders', meta: 'Sunday mornings · Westport' },
+      { name: 'Wareham knitting circle', meta: 'Tuesdays · Wareham Free Library' }
+    ];
+    const volunteer = [
+      { name: 'Beach cleanup crew', meta: 'Sat Nov 7 · Horseneck Beach' },
+      { name: 'Food pantry packing', meta: 'Weekly · New Bedford' },
+      { name: 'Trail maintenance day', meta: 'Sun Nov 15 · Rochester' }
+    ];
+    return { grid: this.props.grid ?? '#C7D6DE', rule: this.props.rule ?? '#A9C1CF', margin: this.props.margin ?? '#F3A6A4', cats, cards, week, groups, volunteer };
+  }
+}
+</script>
+</body>
+</html>
