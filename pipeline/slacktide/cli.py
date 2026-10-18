@@ -1,4 +1,4 @@
-"""Command line: slacktide run | reconcile | report"""
+"""Command line: slacktide run | reconcile | report | tide | build"""
 from __future__ import annotations
 import argparse, sys, time
 from collections import Counter
@@ -11,10 +11,24 @@ from .normalize import normalize
 from .series import collapse
 from .reconcile import reconcile
 from .export import write
+from . import tide as tide_mod
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
+SITE = ROOT / "site"
 GATE_SERIES, GATE_TOWNS = 50, 5
+
+def fetch_tide(quiet=False) -> str | None:
+    """Best effort: a tide failure never fails the ingest. Returns the error text, if any."""
+    try:
+        p = tide_mod.write(tide_mod.fetch(), DATA)
+        if not quiet:
+            print(f"wrote {p}")
+        return None
+    except Exception as e:
+        err = f"{type(e).__name__}: {e}"
+        print(f"tide: {err} (keeping the previous tide.json, if any)", file=sys.stderr)
+        return err
 
 def _ingest(sources, no_cache=False):
     primary, check, errors, timings = [], [], {}, {}
@@ -61,6 +75,7 @@ def cmd_run(args):
         "by_cadence": dict(Counter(s.cadence for s in series)),
         "weekend_gate": gate,
         "reconcile": reconcile(primary, check) if check else None,
+        "tide_error": fetch_tide(quiet=True),
     }
     p = write(series, report, DATA)
     print(f"wrote {p}: {len(series)} series from {len(primary)} rows; dropped {dict(dropped)}; errors {errors}")
@@ -81,12 +96,33 @@ def cmd_report(args):
     print(json.dumps(json.loads(rp.read_text(encoding="utf-8")), indent=1))
     return 0
 
+def cmd_tide(args):
+    return 1 if fetch_tide() else 0
+
+def cmd_build(args):
+    from .build import build
+    now = None
+    if args.today:
+        d = datetime.fromisoformat(args.today)
+        now = d.replace(tzinfo=ZoneInfo(TZ)) if d.tzinfo is None else d
+    if not (DATA / "events.json").exists():
+        print("no data/events.json yet; run `slacktide run` first"); return 1
+    r = build(DATA, Path(args.out) if args.out else SITE, now=now)
+    print(f"wrote {r['out']}: {r['tonight']} tonight, {r['week']} in the week ahead; tide {r['tide']}; "
+          f"tokens from {r['tokens']}; icons from {r['icons']}")
+    return 0
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="slacktide")
     sub = ap.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("run", help="fetch, normalise, collapse, export"); r.add_argument("--no-cache", action="store_true"); r.set_defaults(fn=cmd_run)
     sub.add_parser("reconcile", help="alias for run; reconciliation is part of the report").set_defaults(fn=cmd_run)
     sub.add_parser("report", help="print the last run report").set_defaults(fn=cmd_report)
+    sub.add_parser("tide", help="fetch NOAA CO-OPS tide predictions into data/tide.json").set_defaults(fn=cmd_tide)
+    b = sub.add_parser("build", help="generate site/ from data/events.json and data/tide.json")
+    b.add_argument("--out", help="output folder (default: site/)")
+    b.add_argument("--today", help="build as if today were this date or datetime, e.g. 2026-10-18 or 2026-10-18T18:00")
+    b.set_defaults(fn=cmd_build)
     args = ap.parse_args(argv)
     sys.exit(args.fn(args))
 

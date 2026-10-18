@@ -27,4 +27,4 @@ where = ["."]
 include = ["slacktide*"]
 
 [tool.setuptools.package-data]
-slacktide = ["*.yaml"]
+slacktide = ["*.yaml", "site_assets/*", "site_assets/icons/*"]

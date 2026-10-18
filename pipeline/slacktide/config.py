@@ -39,6 +39,22 @@ CATEGORIES = [
     "Volunteering & Causes",
 ]
 
+# Display families for the Events section. design/DESIGN.md draws seven category tiles plus
+# All, with one icon and one colour each (design/reference/icons, design/tokens.css); the
+# taxonomy above has fourteen entries, so each entry belongs to a family for the tile row, the
+# swatch and the card label. The family slug is the icon file name and the --st-cat-* token.
+# Open with the taxonomy issue: whether the taxonomy itself should shrink to these seven.
+CATEGORY_FAMILIES = {
+    "music": ("Music", ["Music", "Festivals"]),
+    "arts": ("Arts", ["Arts & Theatre", "Museums & Exhibitions", "Education & Workshops"]),
+    "outdoors": ("Outdoors", ["Outdoors & Nature", "Sports & Recreation"]),
+    "family": ("Family", ["Family & Children"]),
+    "library": ("Library", ["Library & Talks", "Faith & Spiritual"]),
+    "markets": ("Markets", ["Markets & Fairs", "Food & Drink"]),
+    "civic": ("Civic", ["Civic & Town Meetings", "Volunteering & Causes"]),
+}
+CATEGORY_FAMILY_OF = {cat: slug for slug, (_, cats) in CATEGORY_FAMILIES.items() for cat in cats}
+
 # Municipal feeds carry public holidays as events. These are dropped.
 HOLIDAY_TITLES = {
     "new year's day", "new years day", "martin luther king day", "martin luther king jr. day",
@@ -57,6 +73,19 @@ CLOSURE_PATTERNS = [
     r"\bvoter registration\b", r"\b(state|town|general|primary) election\b", r"\belection day\b",
     r"\babsentee ballot\b", r"\badvanced? processing\b", r"\btrash (delay|schedule|pickup)\b",
 ]
+
+# Tide panel. NOAA CO-OPS tide prediction station, confirmed against the CO-OPS metadata API on
+# 2026-10-18: 8447386 "Fall River, Massachusetts" is a harmonic (reference) station at the head
+# of Mount Hope Bay. CO-OPS lists no station called "Fall River entrance"; the nearest subordinate
+# stations are Steep Brook (8447281) up the Taunton River and Bristol Ferry (8451552) at the
+# bay mouth. Datum MLLW, feet, local time.
+TIDE_STATION = "8447386"
+TIDE_STATION_NAME = "Fall River"
+TIDE_MAX_AGE_HOURS = 24
+
+# Provenance line on every published card. Sources may override with a `provenance:` key in
+# sources.yaml; the default is the human review step every record passes through.
+PROVENANCE_DEFAULT = "Read by a person"
 
 def load_sources(path: Path | None = None) -> list[dict]:
     p = path or Path(__file__).with_name("sources.yaml")
