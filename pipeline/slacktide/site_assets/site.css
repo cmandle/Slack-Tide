@@ -211,7 +211,8 @@ svg { display: block; }
   white-space: nowrap;
 }
 .btn:hover { color: var(--st-coral); }
-.links .btn-calendar { display: none; }
+/* DESIGN.md routes the phone to the calendar through "See the whole month"; the button is kept
+   at every width by request, so the select gives up the room on the phone. */
 .tiles { grid-area: tiles; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
 .tile {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
@@ -338,7 +339,6 @@ svg { display: block; }
   .select select { height: 40px; }
   .select svg { top: 16px; }
   .links { justify-self: end; }
-  .links .btn-calendar { display: inline-flex; }
   .btn { padding: 0 14px; }
   .tiles { display: flex; flex-wrap: wrap; gap: 6px; }
   .tile { width: var(--st-tile-size-desktop); height: var(--st-tile-size-desktop); gap: 3px; }
