@@ -1,0 +1,87 @@
+/* Slack Tide design tokens. Source of truth: design/DESIGN.md and the
+   design canvas in the Claude Project ("Slack Tide design proposals", row 4).
+   Revision B, 18 October 2026. Values are what the reference pages use. */
+
+:root {
+  /* Surfaces */
+  --st-canvas: #ECE6E0;        /* page background outside the frame */
+  --st-paper: #F6F1EE;         /* inside the frame; cards; controls */
+  --st-tab-idle: #F6F1EE;      /* inactive section tab fill */
+  --st-ink: #1A1A1A;           /* all text, frame, outlines */
+
+  /* Fumayo palette, sampled from the mood board */
+  --st-yellow: #FFEF6B;        /* wordmark block, Add your event, selected category tile, card date strip */
+  --st-green: #6CCB77;         /* active section tab */
+  --st-blue: #86B2CB;          /* tide staff fill, Tonight badge border context */
+  --st-coral: #FF6B6C;         /* tide marker line; category Music */
+
+  /* Page ruling */
+  --st-grid: #C7D6DE;          /* 1px square grid lines */
+  --st-grid-size: 28px;        /* grid cell and vertical leading */
+  --st-rule: #A9C1CF;          /* header and footer horizontal rules, tab outlines */
+  --st-margin: #F3A6A4;        /* vertical margin lines, both sides, full frame height */
+
+  /* Category colours. Ink text on every one. */
+  --st-cat-music: #FF6B6C;
+  --st-cat-arts: #86B2CB;
+  --st-cat-outdoors: #6CCB77;
+  --st-cat-family: #FFEF6B;
+  --st-cat-library: #C9A7E3;
+  --st-cat-markets: #FFA657;
+  --st-cat-civic: #B8C7D1;
+
+  /* Type */
+  --st-font-sans: 'Archivo', system-ui, sans-serif;        /* titles, tabs, buttons: 700 and 900 */
+  --st-font-mono: 'IBM Plex Mono', Menlo, monospace;        /* dates, places, labels, controls: 400 and 500 */
+  --st-h1-phone: 900 28px/28px var(--st-font-sans);
+  --st-h1-desktop: 900 46px/56px var(--st-font-sans);
+  --st-card-title-phone: 700 13px/1.2 var(--st-font-sans);
+  --st-card-title-desktop: 700 16px/1.2 var(--st-font-sans);
+  --st-row-title-phone: 700 14px/28px var(--st-font-sans);
+  --st-row-title-desktop: 700 15px/28px var(--st-font-sans);
+  --st-tab-phone: 700 13px/1 var(--st-font-sans);
+  --st-tab-desktop: 700 15px/1 var(--st-font-sans);
+  --st-wordmark-phone: 900 20px/1 var(--st-font-sans);
+  --st-wordmark-desktop: 900 26px/1 var(--st-font-sans);
+  --st-meta-phone: 400 10px/1.3 var(--st-font-mono);
+  --st-meta-desktop: 400 11px/1.4 var(--st-font-mono);
+  --st-control: 400 12px/1 var(--st-font-mono);
+  --st-tile-label: 400 9px/1 var(--st-font-mono);
+  --st-section-heading: 500 11px/28px var(--st-font-mono);
+  --st-letterspacing-caps: 0.04em;     /* uppercase mono labels */
+  --st-letterspacing-heading: 0.1em;   /* uppercase section headings */
+
+  /* Line weights */
+  --st-border-frame: 2px;      /* outer rounded frame, ink */
+  --st-border-rule: 2px;       /* header and footer rules, blue */
+  --st-border-tab: 1.5px;      /* section tab outlines, blue */
+  --st-border-control: 1px;    /* select, Map, Calendar, search, category tiles, tide panel, ink */
+  --st-border-card: 1px;       /* event card outer edge and internal cell dividers, ink */
+  --st-border-swatch: 1.5px;   /* category swatch squares, ink */
+  --st-margin-line: 1.5px;     /* vertical margin lines on the phone; 2px on desktop */
+
+  /* Radii. Only the frame and the tabs are rounded. */
+  --st-radius-frame-phone: 20px;
+  --st-radius-frame-desktop: 24px;
+  --st-radius-tab-phone: 10px 10px 0 0;
+  --st-radius-tab-desktop: 12px 12px 0 0;
+  --st-radius-control: 0;
+  --st-radius-card: 0;
+
+  /* Layout */
+  --st-frame-margin-phone: 8px;        /* canvas to frame */
+  --st-margin-inset-phone: 20px;       /* frame edge to margin line */
+  --st-margin-inset-desktop: 48px;
+  --st-content-pad-phone: 28px;        /* frame edge to content */
+  --st-content-pad-desktop: 64px;
+  --st-frame-max-width: 1200px;
+  --st-header-height-desktop: 81px;
+  --st-tap-target: 44px;
+  --st-tile-size-phone: 66px;          /* category tile height; width fills a 4-column grid */
+  --st-tile-size-desktop: 66px;
+  --st-row-height: 56px;               /* week-ahead row, two rulings */
+  --st-card-image-phone: 76px;
+  --st-card-image-desktop: 120px;
+  --st-gap-phone: 14px;
+  --st-gap-desktop: 24px;
+}

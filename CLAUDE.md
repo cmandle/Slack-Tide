@@ -13,7 +13,8 @@ Owner: the nonprofit's GitHub account `cmandle`. Collaborator: `loucommando` (Lu
 - `pipeline/` Python 3.11+ package `slacktide`. Entry point `slacktide run`. Tests: `cd pipeline && pytest` (21 offline tests, fixtures shaped like real responses).
 - `pipeline/slacktide/sources.yaml` the source registry. Add sources here, never in code. `role: check` sources are used for reconciliation only and never published.
 - `data/` pipeline output, committed by the scheduled workflow.
-- `preview/` four design mockups (Discover, Calendar, Map, Event). Served at `/preview/` on GitHub Pages with a noindex tag and a banner. These are not the site.
+- `preview/` four design mockups (Discover, Calendar, Map, Event). Served at `/preview/` on GitHub Pages with a noindex tag and a banner. These are not the site, and their look is superseded by `design/`.
+- `design/` the current design direction. Read `design/DESIGN.md` before any work on `site/` templates or CSS. `tokens.css` holds the values, `reference/` the flattened pages and screenshots, `canvas/` the artboard sources from the design canvas, `tools/flatten.py` regenerates `reference/` from `canvas/`.
 - `site/` the generated static site, not yet built.
 - `.github/workflows/ingest.yml` runs tests and the pipeline twice daily and commits `data/`. `pages.yml` deploys `preview/` and `site/`.
 
@@ -50,7 +51,7 @@ Steps 1 and 2 were completed on 2026-10-11: first live run, fixes, push, Pages, 
 2. Done. Push to `cmandle/Slack-Tide`, enable GitHub Pages with source "GitHub Actions", trigger `ingest.yml` by hand once.
 3. Add the remaining CivicPlus towns and test the two untested Tribe endpoints in `sources.yaml` (`enabled: false`).
 4. WhoFi connector.
-5. Generate `site/` from `data/events.json`, matching the design in `preview/`: cream `#FBF8F1`, ink `#2E2A22`, sage `#4A6B4E`, Plus Jakarta Sans, eight muted category colours. The approval step (a person approves what goes live) must be designed first; it has its own issue.
+5. Generate `site/` from `data/events.json`, matching `design/DESIGN.md` and `design/tokens.css` (Revision B, 18 October 2026: paper and grid, Archivo and IBM Plex Mono, Fumayo palette, three section tabs). The palette and type named for `preview/` no longer apply. The approval step (a person approves what goes live) must be designed first; it has its own issue.
 6. Haiku batch classifier replacing the rule classifier.
 7. Diffbot free tier for Tier 2 sources with no feed; Firecrawl as fallback.
 
