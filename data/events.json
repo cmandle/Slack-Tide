@@ -1,327 +1,8 @@
 {
- "generated_at": "2026-10-18T22:41:46.455901+00:00",
- "series_count": 186,
- "occurrence_count": 524,
+ "generated_at": "2026-10-19T10:48:18.878087+00:00",
+ "series_count": 183,
+ "occurrence_count": 518,
  "series": [
-  {
-   "id": "af6c6a09be91",
-   "title": "Kids Yoga - CANCELLED",
-   "venue": "DNRT Center @ Helfand Farm",
-   "town": "Dartmouth",
-   "category": "Family & Children",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/kids-yoga/",
-   "cost": "$10",
-   "first_start": "2026-10-18T10:00:00-04:00",
-   "last_start": "2026-10-18T10:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-18T10:00:00-04:00",
-     "end": "2026-10-18T11:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "35d1f5717a55",
-   "title": "Weekend Brunch",
-   "venue": "The Tipsy Toboggan",
-   "town": "Fall River",
-   "category": "Food & Drink",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/weekend-brunch/2026-10-18/",
-   "cost": "",
-   "first_start": "2026-10-18T10:00:00-04:00",
-   "last_start": "2026-12-13T10:00:00-05:00",
-   "count": 17,
-   "cadence": "weekends",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-18T10:00:00-04:00",
-     "end": "2026-10-18T12:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-24T10:00:00-04:00",
-     "end": "2026-10-24T12:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-25T10:00:00-04:00",
-     "end": "2026-10-25T12:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-31T10:00:00-04:00",
-     "end": "2026-10-31T12:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-01T10:00:00-05:00",
-     "end": "2026-11-01T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-07T10:00:00-05:00",
-     "end": "2026-11-07T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-08T10:00:00-05:00",
-     "end": "2026-11-08T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-14T10:00:00-05:00",
-     "end": "2026-11-14T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-21T10:00:00-05:00",
-     "end": "2026-11-21T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-28T10:00:00-05:00",
-     "end": "2026-11-28T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": "2026-11-29T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-05T10:00:00-05:00",
-     "end": "2026-12-05T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T10:00:00-05:00",
-     "end": "2026-12-06T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-12T10:00:00-05:00",
-     "end": "2026-12-12T12:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T10:00:00-05:00",
-     "end": "2026-12-13T12:30:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "8c160f8b93d5",
-   "title": "Poppin' Prosecco with Primo! Brunch",
-   "venue": "Primo on Water Street",
-   "town": "Fall River",
-   "category": "Food & Drink",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/poppin-prosecco-with-primo-brunch/2026-10-18/",
-   "cost": "",
-   "first_start": "2026-10-18T10:00:00-04:00",
-   "last_start": "2026-12-13T10:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-10-18T10:00:00-04:00",
-     "end": "2026-10-18T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-25T10:00:00-04:00",
-     "end": "2026-10-25T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-01T10:00:00-05:00",
-     "end": "2026-11-01T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-08T10:00:00-05:00",
-     "end": "2026-11-08T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": "2026-11-29T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T10:00:00-05:00",
-     "end": "2026-12-06T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T10:00:00-05:00",
-     "end": "2026-12-13T14:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "a6bcdf37a0dc",
-   "title": "Underwater Archaeology: Exploring History where Land and Water Meet",
-   "venue": "Heritage State Park",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/underwater-archaeology-exploring-history-where-land-and-water-meet/",
-   "cost": "",
-   "first_start": "2026-10-18T10:00:00-04:00",
-   "last_start": "2026-10-18T10:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-18T10:00:00-04:00",
-     "end": "2026-10-18T14:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "e9ad9df618ac",
-   "title": "Fall River Farmers & Artisans Market",
-   "venue": "NoMa/Purchase St. Plaza",
-   "town": "Fall River",
-   "category": "Markets & Fairs",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/fall-river-farmers-artisans-market/2026-10-18/",
-   "cost": "",
-   "first_start": "2026-10-18T11:00:00-04:00",
-   "last_start": "2026-10-25T11:00:00-04:00",
-   "count": 2,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-10-18T11:00:00-04:00",
-     "end": "2026-10-18T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-25T11:00:00-04:00",
-     "end": "2026-10-25T15:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "8e7f1407d3c0",
-   "title": "Book Tastings: The Horror Edition",
-   "venue": "Once Upon a Bookstore",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/book-tastings-the-horror-edition/",
-   "cost": "",
-   "first_start": "2026-10-18T14:00:00-04:00",
-   "last_start": "2026-10-18T14:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-18T14:00:00-04:00",
-     "end": "2026-10-18T15:30:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "49ea4bd6a62c",
-   "title": "Matt Silva Sunday Funday",
-   "venue": "The Tipsy Toboggan",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/matt-silva-sunday-funday/2026-10-18/",
-   "cost": "",
-   "first_start": "2026-10-18T16:00:00-04:00",
-   "last_start": "2026-12-13T16:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-10-18T16:00:00-04:00",
-     "end": "2026-10-18T19:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-25T16:00:00-04:00",
-     "end": "2026-10-25T19:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-01T16:00:00-05:00",
-     "end": "2026-11-01T19:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-08T16:00:00-05:00",
-     "end": "2026-11-08T19:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-15T16:00:00-05:00",
-     "end": "2026-11-15T19:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-22T16:00:00-05:00",
-     "end": "2026-11-22T19:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T16:00:00-05:00",
-     "end": "2026-11-29T19:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T16:00:00-05:00",
-     "end": "2026-12-06T19:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T16:00:00-05:00",
-     "end": "2026-12-13T19:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
   {
    "id": "e600dd5d26ce",
    "title": "Harbor Commission Meeting",
@@ -2983,8 +2664,8 @@
    "url": "https://www.vivafallriver.com/event/thursday-night-trivia/2026-10-22/",
    "cost": "",
    "first_start": "2026-10-22T20:00:00-04:00",
-   "last_start": "2026-12-10T20:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-17T20:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -3026,6 +2707,11 @@
     {
      "start": "2026-12-10T20:00:00-05:00",
      "end": "2026-12-10T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": "2026-12-17T22:00:00-05:00",
      "all_day": false
     }
    ]
@@ -3484,6 +3170,103 @@
    ]
   },
   {
+   "id": "35d1f5717a55",
+   "title": "Weekend Brunch",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/weekend-brunch/2026-10-24/",
+   "cost": "",
+   "first_start": "2026-10-24T10:00:00-04:00",
+   "last_start": "2026-12-13T10:00:00-05:00",
+   "count": 16,
+   "cadence": "weekends",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-24T10:00:00-04:00",
+     "end": "2026-10-24T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-25T10:00:00-04:00",
+     "end": "2026-10-25T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-31T10:00:00-04:00",
+     "end": "2026-10-31T12:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T10:00:00-05:00",
+     "end": "2026-11-01T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-07T10:00:00-05:00",
+     "end": "2026-11-07T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-08T10:00:00-05:00",
+     "end": "2026-11-08T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-14T10:00:00-05:00",
+     "end": "2026-11-14T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-21T10:00:00-05:00",
+     "end": "2026-11-21T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-28T10:00:00-05:00",
+     "end": "2026-11-28T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-05T10:00:00-05:00",
+     "end": "2026-12-05T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-12T10:00:00-05:00",
+     "end": "2026-12-12T12:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T12:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "5a5716b6bf85",
    "title": "Mobile Adventures; Footprints and Folklore",
    "venue": "Fall River Public Library",
@@ -3709,6 +3492,85 @@
    ]
   },
   {
+   "id": "8c160f8b93d5",
+   "title": "Poppin' Prosecco with Primo! Brunch",
+   "venue": "Primo on Water Street",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/poppin-prosecco-with-primo-brunch/2026-10-25/",
+   "cost": "",
+   "first_start": "2026-10-25T10:00:00-04:00",
+   "last_start": "2026-12-13T10:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-10-25T10:00:00-04:00",
+     "end": "2026-10-25T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T10:00:00-05:00",
+     "end": "2026-11-01T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-08T10:00:00-05:00",
+     "end": "2026-11-08T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e9ad9df618ac",
+   "title": "Fall River Farmers & Artisans Market",
+   "venue": "NoMa/Purchase St. Plaza",
+   "town": "Fall River",
+   "category": "Markets & Fairs",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/fall-river-farmers-artisans-market/2026-10-25/",
+   "cost": "",
+   "first_start": "2026-10-25T11:00:00-04:00",
+   "last_start": "2026-10-25T11:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-25T11:00:00-04:00",
+     "end": "2026-10-25T15:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "66565a4e89b8",
    "title": "Brick and Brush Arts Walk",
    "venue": "NoMa/Purchase St. Plaza",
@@ -3748,6 +3610,63 @@
     {
      "start": "2026-10-25T13:00:00-04:00",
      "end": "2026-10-25T16:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "49ea4bd6a62c",
+   "title": "Matt Silva Sunday Funday",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/matt-silva-sunday-funday/2026-10-25/",
+   "cost": "",
+   "first_start": "2026-10-25T16:00:00-04:00",
+   "last_start": "2026-12-13T16:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-10-25T16:00:00-04:00",
+     "end": "2026-10-25T19:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T16:00:00-05:00",
+     "end": "2026-11-01T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-08T16:00:00-05:00",
+     "end": "2026-11-08T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-15T16:00:00-05:00",
+     "end": "2026-11-15T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T16:00:00-05:00",
+     "end": "2026-11-22T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T16:00:00-05:00",
+     "end": "2026-11-29T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T16:00:00-05:00",
+     "end": "2026-12-06T19:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T16:00:00-05:00",
+     "end": "2026-12-13T19:00:00-05:00",
      "all_day": false
     }
    ]

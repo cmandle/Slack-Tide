@@ -1,76 +1,76 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 170,
-   "seconds": 7.95
+   "rows": 168,
+   "seconds": 4.33
   },
   "brownell-library": {
    "rows": 24,
-   "seconds": 2.64
+   "seconds": 0.55
   },
   "dnrt": {
-   "rows": 14,
-   "seconds": 7.99
+   "rows": 13,
+   "seconds": 4.8
   },
   "viva-fall-river": {
-   "rows": 281,
-   "seconds": 18.49
+   "rows": 276,
+   "seconds": 20.68
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 9.95
+   "seconds": 5.98
   },
   "town-tiverton": {
    "rows": 194,
-   "seconds": 6.08
+   "seconds": 0.38
   },
   "town-dartmouth": {
    "rows": 30,
-   "seconds": 0.36
+   "seconds": 0.31
   },
   "town-somerset": {
    "rows": 13,
-   "seconds": 8.14
+   "seconds": 0.29
   }
  },
  "errors": {},
- "primary_rows": 558,
+ "primary_rows": 552,
  "dropped": {
   "closure": 5,
   "holiday": 13
  },
- "series": 186,
+ "series": 183,
  "by_town": {
-  "Dartmouth": 29,
-  "Fall River": 102,
   "Tiverton": 33,
+  "Dartmouth": 28,
   "Little Compton": 13,
+  "Fall River": 100,
   "Somerset": 8,
   "Westport": 1
  },
  "by_category": {
-  "Family & Children": 12,
-  "Food & Drink": 11,
-  "(unclassified)": 39,
-  "Markets & Fairs": 1,
   "Civic & Town Meetings": 28,
   "Outdoors & Nature": 15,
   "Sports & Recreation": 7,
+  "(unclassified)": 37,
   "Volunteering & Causes": 2,
   "Library & Talks": 37,
   "Arts & Theatre": 7,
+  "Food & Drink": 11,
   "Music": 22,
+  "Family & Children": 11,
   "Education & Workshops": 3,
+  "Markets & Fairs": 1,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 111,
-  "weekends": 2,
-  "weekly": 36,
+  "once": 109,
   "several-a-week": 2,
+  "weekly": 35,
   "monthly": 22,
   "irregular": 6,
   "daily": 2,
+  "weekends": 2,
   "fortnightly": 5
  },
  "weekend_gate": {
@@ -83,23 +83,23 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 170,
+  "check_total": 168,
   "check_matched": 0,
-  "check_missed_rows": 170,
-  "check_missed_series": 55,
+  "check_missed_rows": 168,
+  "check_missed_series": 54,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
     "first_start": "2026-10-22T19:30:00-04:00",
-    "rows": 24
+    "rows": 25
    },
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
-    "first_start": "2026-10-18T21:00:00-04:00",
+    "first_start": "2026-10-22T21:00:00-04:00",
     "rows": 17
    },
    {
@@ -107,13 +107,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-21T18:30:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-18T14:00:00-04:00",
     "rows": 9
    },
    {
@@ -159,6 +152,13 @@
     "rows": 8
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-25T14:00:00-04:00",
+    "rows": 8
+   },
+   {
     "title": "Sketchbook Club",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -166,17 +166,17 @@
     "rows": 8
    },
    {
-    "title": "Boo at the Zoo",
-    "venue": "Buttonwood Park Zoo",
-    "town": "New Bedford",
-    "first_start": "2026-10-18T10:00:00-04:00",
-    "rows": 3
-   },
-   {
     "title": "A Charlie Brown Christmas - Live On Stage at The Z",
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-12-05T02:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Boo at the Zoo",
+    "venue": "Buttonwood Park Zoo",
+    "town": "New Bedford",
+    "first_start": "2026-10-24T10:00:00-04:00",
     "rows": 2
    },
    {
@@ -278,13 +278,6 @@
     "rows": 1
    },
    {
-    "title": "Fort Taber~Fort Rodman Military Museum & Veterans Memorial Speaker Series",
-    "venue": "Fort Taber-Fort Rodman Military Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-18T14:30:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Hadestown Broadway National Tour at The Zeiterion",
     "venue": "Zeiterion",
     "town": "New Bedford",
@@ -352,6 +345,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-18T17:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Pink Martini All-Stars present: A Season of Stars at The Z",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-12-17T20:00:00-05:00",
     "rows": 1
    },
    {
@@ -450,13 +450,6 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-10-29T20:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents The Lodger with organist Juan Cardona, Jr.",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-10-18T14:00:00-04:00",
     "rows": 1
    },
    {
