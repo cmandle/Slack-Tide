@@ -1,74 +1,74 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 168,
-   "seconds": 4.33
+   "rows": 180,
+   "seconds": 4.36
   },
   "brownell-library": {
    "rows": 24,
-   "seconds": 0.55
+   "seconds": 0.6
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 4.8
+   "seconds": 2.68
   },
   "viva-fall-river": {
-   "rows": 276,
-   "seconds": 20.68
+   "rows": 277,
+   "seconds": 18.35
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 5.98
+   "seconds": 4.28
   },
   "town-tiverton": {
-   "rows": 194,
-   "seconds": 0.38
+   "rows": 190,
+   "seconds": 0.54
   },
   "town-dartmouth": {
-   "rows": 30,
-   "seconds": 0.31
+   "rows": 31,
+   "seconds": 0.32
   },
   "town-somerset": {
-   "rows": 13,
-   "seconds": 0.29
+   "rows": 15,
+   "seconds": 1.11
   }
  },
  "errors": {},
  "primary_rows": 552,
  "dropped": {
   "closure": 5,
-  "holiday": 13
+  "holiday": 12
  },
- "series": 183,
+ "series": 186,
  "by_town": {
   "Tiverton": 33,
-  "Dartmouth": 28,
+  "Dartmouth": 30,
   "Little Compton": 13,
   "Fall River": 100,
-  "Somerset": 8,
+  "Somerset": 9,
   "Westport": 1
  },
  "by_category": {
-  "Civic & Town Meetings": 28,
+  "Civic & Town Meetings": 30,
   "Outdoors & Nature": 15,
-  "Sports & Recreation": 7,
-  "(unclassified)": 37,
-  "Volunteering & Causes": 2,
   "Library & Talks": 37,
+  "(unclassified)": 38,
+  "Sports & Recreation": 7,
   "Arts & Theatre": 7,
   "Food & Drink": 11,
   "Music": 22,
   "Family & Children": 11,
+  "Volunteering & Causes": 2,
   "Education & Workshops": 3,
   "Markets & Fairs": 1,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 109,
-  "several-a-week": 2,
+  "once": 112,
   "weekly": 35,
   "monthly": 22,
   "irregular": 6,
+  "several-a-week": 2,
   "daily": 2,
   "weekends": 2,
   "fortnightly": 5
@@ -83,10 +83,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 168,
+  "check_total": 180,
   "check_matched": 0,
-  "check_missed_rows": 168,
-  "check_missed_series": 54,
+  "check_missed_rows": 180,
+  "check_missed_series": 57,
   "check_missed": [
    {
     "title": "Shakespeare in New Bedford: Hamlet",
@@ -107,6 +107,13 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-21T18:30:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-23T17:30:00-04:00",
     "rows": 9
    },
    {
@@ -131,6 +138,13 @@
     "rows": 9
    },
    {
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-23T18:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "SnapLab: Photography Studio Sessions",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -145,13 +159,6 @@
     "rows": 9
    },
    {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-23T17:30:00-04:00",
-    "rows": 8
-   },
-   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -159,10 +166,10 @@
     "rows": 8
    },
    {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
-    "first_start": "2026-10-23T18:00:00-04:00",
+    "first_start": "2026-10-25T09:30:00-04:00",
     "rows": 8
    },
    {
@@ -369,6 +376,13 @@
     "rows": 1
    },
    {
+    "title": "The NB Rude Boys Skalloween Mosh",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-30T19:00:00-04:00",
+    "rows": 1
+   },
+   {
     "title": "The Ten Commandments: Silent Film with Live Organ Accompaniment by Peter Krasinski",
     "venue": "SaintAnthonyofNewBedford",
     "town": "New Bedford",
@@ -464,6 +478,13 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-11-05T19:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "stuffNjunk: An Afternoon of Dance, Art & Unexpected Stories",
+    "venue": "SoCo Movment Arts",
+    "town": "New Bedford",
+    "first_start": "2026-10-25T14:00:00-04:00",
     "rows": 1
    }
   ],

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-19T10:48:18.878087+00:00",
- "series_count": 183,
- "occurrence_count": 518,
+ "generated_at": "2026-10-19T22:44:44.373808+00:00",
+ "series_count": 186,
+ "occurrence_count": 519,
  "series": [
   {
    "id": "e600dd5d26ce",
@@ -48,371 +48,6 @@
    ]
   },
   {
-   "id": "ee5aab63f527",
-   "title": "Functional Fitness",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T09:00:00-04:00",
-   "last_start": "2026-12-16T00:00:00-05:00",
-   "count": 18,
-   "cadence": "several-a-week",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T09:00:00-04:00",
-     "end": "2026-10-19T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-21T00:00:00-04:00",
-     "end": "2026-10-21T00:00:00-04:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-10-26T09:00:00-04:00",
-     "end": "2026-10-26T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-28T00:00:00-04:00",
-     "end": "2026-10-28T00:00:00-04:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-02T09:00:00-05:00",
-     "end": "2026-11-02T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T00:00:00-05:00",
-     "end": "2026-11-04T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T00:00:00-05:00",
-     "end": "2026-11-11T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T00:00:00-05:00",
-     "end": "2026-11-18T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T00:00:00-05:00",
-     "end": "2026-11-25T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T00:00:00-05:00",
-     "end": "2026-12-02T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T00:00:00-05:00",
-     "end": "2026-12-09T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T00:00:00-05:00",
-     "end": "2026-12-16T00:00:00-05:00",
-     "all_day": true
-    }
-   ]
-  },
-  {
-   "id": "5a6902aea5cc",
-   "title": "TOPS",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T09:00:00-04:00",
-   "last_start": "2026-12-14T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T09:00:00-04:00",
-     "end": "2026-10-19T11:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T09:00:00-04:00",
-     "end": "2026-10-26T11:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T09:00:00-05:00",
-     "end": "2026-11-02T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T11:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "eb9c80990cb1",
-   "title": "Quilting for Charity",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Volunteering & Causes",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T10:00:00-04:00",
-   "last_start": "2026-12-14T10:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T10:00:00-04:00",
-     "end": "2026-10-19T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T10:00:00-04:00",
-     "end": "2026-10-26T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T10:00:00-05:00",
-     "end": "2026-11-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T10:00:00-05:00",
-     "end": "2026-11-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:00:00-05:00",
-     "end": "2026-11-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:00:00-05:00",
-     "end": "2026-11-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:00:00-05:00",
-     "end": "2026-11-30T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:00:00-05:00",
-     "end": "2026-12-07T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:00:00-05:00",
-     "end": "2026-12-14T15:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "a04898c37ccd",
-   "title": "Senior Fitness with Terri",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T10:15:00-04:00",
-   "last_start": "2026-12-14T10:15:00-05:00",
-   "count": 11,
-   "cadence": "several-a-week",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T10:15:00-04:00",
-     "end": "2026-10-19T11:15:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T13:00:00-04:00",
-     "end": "2026-10-23T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T10:15:00-04:00",
-     "end": "2026-10-26T11:15:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T13:00:00-04:00",
-     "end": "2026-10-30T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T10:15:00-05:00",
-     "end": "2026-11-02T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T10:15:00-05:00",
-     "end": "2026-11-09T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:15:00-05:00",
-     "end": "2026-11-16T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:15:00-05:00",
-     "end": "2026-11-23T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:15:00-05:00",
-     "end": "2026-11-30T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:15:00-05:00",
-     "end": "2026-12-07T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:15:00-05:00",
-     "end": "2026-12-14T11:15:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "bd3e7d21ebe8",
-   "title": "PITCH~ High Lo Jack",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T12:30:00-04:00",
-   "last_start": "2026-12-14T12:30:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T12:30:00-04:00",
-     "end": "2026-10-19T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T12:30:00-04:00",
-     "end": "2026-10-26T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T12:30:00-05:00",
-     "end": "2026-11-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T12:30:00-05:00",
-     "end": "2026-11-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T12:30:00-05:00",
-     "end": "2026-11-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T12:30:00-05:00",
-     "end": "2026-11-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T12:30:00-05:00",
-     "end": "2026-11-30T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T12:30:00-05:00",
-     "end": "2026-12-07T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T12:30:00-05:00",
-     "end": "2026-12-14T15:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
    "id": "9ee555514f59",
    "title": "Knitting Group",
    "venue": "Brownell Library",
@@ -435,68 +70,6 @@
     {
      "start": "2026-10-26T13:00:00-04:00",
      "end": "2026-10-26T14:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "bc68ff454c8d",
-   "title": "Learn Ukulele",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-19T13:00:00-04:00",
-   "last_start": "2026-12-14T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T13:00:00-04:00",
-     "end": "2026-10-19T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T13:00:00-04:00",
-     "end": "2026-10-26T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T13:00:00-05:00",
-     "end": "2026-11-02T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T13:00:00-05:00",
-     "end": "2026-11-09T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T13:00:00-05:00",
-     "end": "2026-11-16T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T13:00:00-05:00",
-     "end": "2026-11-23T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T13:00:00-05:00",
-     "end": "2026-11-30T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T13:00:00-05:00",
-     "end": "2026-12-07T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T13:00:00-05:00",
-     "end": "2026-12-14T14:00:00-05:00",
      "all_day": false
     }
    ]
@@ -1498,6 +1071,108 @@
    ]
   },
   {
+   "id": "ee5aab63f527",
+   "title": "Functional Fitness",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-21T00:00:00-04:00",
+   "last_start": "2026-12-16T00:00:00-05:00",
+   "count": 17,
+   "cadence": "several-a-week",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-21T00:00:00-04:00",
+     "end": "2026-10-21T00:00:00-04:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-10-26T09:00:00-04:00",
+     "end": "2026-10-26T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-28T00:00:00-04:00",
+     "end": "2026-10-28T00:00:00-04:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T00:00:00-05:00",
+     "end": "2026-11-04T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T00:00:00-05:00",
+     "end": "2026-11-11T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T00:00:00-05:00",
+     "end": "2026-11-18T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T00:00:00-05:00",
+     "end": "2026-11-25T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T00:00:00-05:00",
+     "end": "2026-12-02T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T00:00:00-05:00",
+     "end": "2026-12-09T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-12-14T09:00:00-05:00",
+     "end": "2026-12-14T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T00:00:00-05:00",
+     "end": "2026-12-16T00:00:00-05:00",
+     "all_day": true
+    }
+   ]
+  },
+  {
    "id": "a1fa38068ad4",
    "title": "Kids eat FREE on Wednesdays",
    "venue": "Primo on Water Street",
@@ -1905,6 +1580,33 @@
    ]
   },
   {
+   "id": "231b49804e93",
+   "title": "JOINT Somerset Public Library Board of Trustees & Board of Selectmen",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-21T17:00:00-04:00",
+   "last_start": "2026-10-21T18:00:00-04:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-21T17:00:00-04:00",
+     "end": "2026-10-21T23:59:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-21T18:00:00-04:00",
+     "end": "2026-10-21T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "86a6f2e3c68b",
    "title": "Inkwell Circle Groups at UMass Dartmouth",
    "venue": "Claire T. Carney Library Room LIB-135",
@@ -2282,6 +1984,28 @@
     {
      "start": "2026-12-17T09:00:00-05:00",
      "end": "2026-12-17T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "40d8a5bfc241",
+   "title": "Dartmouth Council on Aging, Board of Directors",
+   "venue": "84 Rogers Street Dr. Bullard Wellness Center Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-22T09:00:00-04:00",
+   "last_start": "2026-10-22T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-22T09:00:00-04:00",
+     "end": "2026-10-22T23:59:00-04:00",
      "all_day": false
     }
    ]
@@ -2748,8 +2472,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-23T09:00:00-04:00",
-   "last_start": "2026-12-11T09:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-18T09:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 4,
    "occurrences": [
@@ -2792,6 +2516,11 @@
      "start": "2026-12-11T09:00:00-05:00",
      "end": "2026-12-11T10:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-18T09:00:00-05:00",
+     "end": "2026-12-18T10:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2805,8 +2534,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-23T10:00:00-04:00",
-   "last_start": "2026-12-11T10:00:00-05:00",
-   "count": 6,
+   "last_start": "2026-12-18T10:00:00-05:00",
+   "count": 7,
    "cadence": "weekly",
    "weekday": 4,
    "occurrences": [
@@ -2839,6 +2568,11 @@
      "start": "2026-12-11T10:00:00-05:00",
      "end": "2026-12-11T11:30:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-18T10:00:00-05:00",
+     "end": "2026-12-18T11:30:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2870,6 +2604,73 @@
    ]
   },
   {
+   "id": "a04898c37ccd",
+   "title": "Senior Fitness with Terri",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-23T13:00:00-04:00",
+   "last_start": "2026-12-14T10:15:00-05:00",
+   "count": 10,
+   "cadence": "several-a-week",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-23T13:00:00-04:00",
+     "end": "2026-10-23T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-26T10:15:00-04:00",
+     "end": "2026-10-26T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T13:00:00-04:00",
+     "end": "2026-10-30T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T10:15:00-05:00",
+     "end": "2026-11-02T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:15:00-05:00",
+     "end": "2026-11-09T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:15:00-05:00",
+     "end": "2026-11-16T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:15:00-05:00",
+     "end": "2026-11-23T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:15:00-05:00",
+     "end": "2026-11-30T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:15:00-05:00",
+     "end": "2026-12-07T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T10:15:00-05:00",
+     "end": "2026-12-14T11:15:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "417ee37db3b1",
    "title": "Friday Night Volleyball (weekly)",
    "venue": "Greater Fall River Re-CREATION",
@@ -2879,8 +2680,8 @@
    "url": "https://www.vivafallriver.com/event/friday-night-volleyball-weekly/2026-10-23/",
    "cost": "",
    "first_start": "2026-10-23T17:00:00-04:00",
-   "last_start": "2026-12-11T17:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-18T17:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 4,
    "occurrences": [
@@ -2922,6 +2723,11 @@
     {
      "start": "2026-12-11T17:00:00-05:00",
      "end": "2026-12-11T17:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T17:00:00-05:00",
+     "end": "2026-12-18T17:00:00-05:00",
      "all_day": false
     }
    ]
@@ -3721,6 +3527,234 @@
    ]
   },
   {
+   "id": "5a6902aea5cc",
+   "title": "TOPS",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-26T09:00:00-04:00",
+   "last_start": "2026-12-14T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T09:00:00-04:00",
+     "end": "2026-10-26T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T09:00:00-05:00",
+     "end": "2026-12-14T11:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "eb9c80990cb1",
+   "title": "Quilting for Charity",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Volunteering & Causes",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-26T10:00:00-04:00",
+   "last_start": "2026-12-14T10:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T10:00:00-04:00",
+     "end": "2026-10-26T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T10:00:00-05:00",
+     "end": "2026-11-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:00:00-05:00",
+     "end": "2026-11-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:00:00-05:00",
+     "end": "2026-11-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:00:00-05:00",
+     "end": "2026-11-23T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:00:00-05:00",
+     "end": "2026-11-30T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:00:00-05:00",
+     "end": "2026-12-07T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T10:00:00-05:00",
+     "end": "2026-12-14T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "bd3e7d21ebe8",
+   "title": "PITCH~ High Lo Jack",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-26T12:30:00-04:00",
+   "last_start": "2026-12-14T12:30:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T12:30:00-04:00",
+     "end": "2026-10-26T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T12:30:00-05:00",
+     "end": "2026-11-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T12:30:00-05:00",
+     "end": "2026-11-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T12:30:00-05:00",
+     "end": "2026-11-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T12:30:00-05:00",
+     "end": "2026-11-23T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T12:30:00-05:00",
+     "end": "2026-11-30T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T12:30:00-05:00",
+     "end": "2026-12-07T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T12:30:00-05:00",
+     "end": "2026-12-14T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "bc68ff454c8d",
+   "title": "Learn Ukulele",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-26T13:00:00-04:00",
+   "last_start": "2026-12-14T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T13:00:00-04:00",
+     "end": "2026-10-26T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T13:00:00-05:00",
+     "end": "2026-11-02T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T13:00:00-05:00",
+     "end": "2026-11-09T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T13:00:00-05:00",
+     "end": "2026-11-16T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T13:00:00-05:00",
+     "end": "2026-11-23T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T13:00:00-05:00",
+     "end": "2026-11-30T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T13:00:00-05:00",
+     "end": "2026-12-07T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T13:00:00-05:00",
+     "end": "2026-12-14T14:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "1a6c5b627ed2",
    "title": "Historical Fiction Book Club",
    "venue": "Fall River Public Library",
@@ -3844,6 +3878,28 @@
     {
      "start": "2026-10-27T18:00:00-04:00",
      "end": "2026-10-27T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a9e2357c89fc",
+   "title": "BUDGET ADVISORY GROUP",
+   "venue": "400 SLOCUM ROAD Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T17:00:00-04:00",
+   "last_start": "2026-10-27T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T17:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
      "all_day": false
     }
    ]
