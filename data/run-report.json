@@ -1,62 +1,62 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 182,
-   "seconds": 4.66
+   "rows": 147,
+   "seconds": 3.44
   },
   "brownell-library": {
-   "rows": 23,
-   "seconds": 0.51
+   "rows": 21,
+   "seconds": 0.61
   },
   "dnrt": {
    "rows": 12,
-   "seconds": 4.37
+   "seconds": 4.31
   },
   "viva-fall-river": {
-   "rows": 277,
-   "seconds": 19.04
+   "rows": 278,
+   "seconds": 19.37
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 5.16
+   "seconds": 6.3
   },
   "town-tiverton": {
-   "rows": 187,
-   "seconds": 0.42
+   "rows": 183,
+   "seconds": 0.64
   },
   "town-dartmouth": {
-   "rows": 28,
-   "seconds": 0.37
+   "rows": 29,
+   "seconds": 0.32
   },
   "town-somerset": {
    "rows": 15,
-   "seconds": 0.43
+   "seconds": 0.51
   }
  },
  "errors": {},
- "primary_rows": 544,
+ "primary_rows": 540,
  "dropped": {
   "closure": 5,
-  "holiday": 12
+  "holiday": 11
  },
- "series": 181,
+ "series": 182,
  "by_town": {
-  "Tiverton": 32,
   "Fall River": 100,
-  "Dartmouth": 26,
+  "Dartmouth": 28,
   "Somerset": 9,
-  "Little Compton": 13,
+  "Tiverton": 32,
+  "Little Compton": 12,
   "Westport": 1
  },
  "by_category": {
-  "Sports & Recreation": 7,
-  "Library & Talks": 36,
-  "Civic & Town Meetings": 28,
+  "Library & Talks": 35,
+  "Civic & Town Meetings": 30,
   "(unclassified)": 36,
-  "Arts & Theatre": 7,
   "Food & Drink": 11,
+  "Sports & Recreation": 7,
   "Music": 23,
   "Family & Children": 11,
+  "Arts & Theatre": 7,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 14,
   "Education & Workshops": 3,
@@ -65,7 +65,7 @@
  },
  "by_cadence": {
   "weekly": 34,
-  "once": 109,
+  "once": 110,
   "monthly": 21,
   "irregular": 6,
   "several-a-week": 2,
@@ -83,18 +83,11 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 182,
+  "check_total": 147,
   "check_matched": 0,
-  "check_missed_rows": 182,
-  "check_missed_series": 57,
+  "check_missed_rows": 147,
+  "check_missed_series": 55,
   "check_missed": [
-   {
-    "title": "Shakespeare in New Bedford: Hamlet",
-    "venue": "Rotch-Jones-Duff House & Garden Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-22T19:30:00-04:00",
-    "rows": 26
-   },
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
@@ -135,13 +128,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-23T18:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "SnapLab: Photography Studio Sessions",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-20T18:00:00-04:00",
     "rows": 9
    },
    {
