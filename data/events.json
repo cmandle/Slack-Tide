@@ -1,288 +1,8 @@
 {
- "generated_at": "2026-10-19T22:44:44.373808+00:00",
- "series_count": 186,
- "occurrence_count": 519,
+ "generated_at": "2026-10-20T10:47:06.276290+00:00",
+ "series_count": 181,
+ "occurrence_count": 511,
  "series": [
-  {
-   "id": "e600dd5d26ce",
-   "title": "Harbor Commission Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-19T00:00:00-04:00",
-   "last_start": "2026-10-19T00:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T00:00:00-04:00",
-     "end": "2026-10-19T00:00:00-04:00",
-     "all_day": true
-    }
-   ]
-  },
-  {
-   "id": "56d3b32e1db1",
-   "title": "Women's Walk",
-   "venue": "Slocum's River Reserve",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/womens-walk/",
-   "cost": "Free",
-   "first_start": "2026-10-19T09:00:00-04:00",
-   "last_start": "2026-10-19T09:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T09:00:00-04:00",
-     "end": "2026-10-19T10:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "9ee555514f59",
-   "title": "Knitting Group",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/knitting-group-38/",
-   "cost": "",
-   "first_start": "2026-10-19T13:00:00-04:00",
-   "last_start": "2026-10-26T13:00:00-04:00",
-   "count": 2,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T13:00:00-04:00",
-     "end": "2026-10-19T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T13:00:00-04:00",
-     "end": "2026-10-26T14:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "13fe33f26900",
-   "title": "Quinn School Council Members",
-   "venue": "529 Hawthorn St Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-19T16:00:00-04:00",
-   "last_start": "2026-10-19T16:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T16:00:00-04:00",
-     "end": "2026-10-19T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "5f22e2e82441",
-   "title": "Children's Book Club",
-   "venue": "Fall River Public Library",
-   "town": "Fall River",
-   "category": "Library & Talks",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/childrens-book-club/",
-   "cost": "",
-   "first_start": "2026-10-19T17:00:00-04:00",
-   "last_start": "2026-10-19T17:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T17:00:00-04:00",
-     "end": "2026-10-19T17:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "197fd30dc272",
-   "title": "Dartmouth Housing Authority",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-19T17:30:00-04:00",
-   "last_start": "2026-10-19T17:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T17:30:00-04:00",
-     "end": "2026-10-19T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "06e8dc2b3d7b",
-   "title": "Open Space & Land Preservation Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-19T18:00:00-04:00",
-   "last_start": "2026-11-16T18:00:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T18:00:00-04:00",
-     "end": "2026-10-19T23:59:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T18:00:00-05:00",
-     "end": "2026-11-16T23:59:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "714fd9ddd9f1",
-   "title": "Nick Sanfilippo",
-   "venue": "The Tipsy Toboggan",
-   "town": "Fall River",
-   "category": "Outdoors & Nature",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/nick-sanfilippo/2026-10-19/",
-   "cost": "",
-   "first_start": "2026-10-19T18:30:00-04:00",
-   "last_start": "2026-12-14T18:30:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T18:30:00-04:00",
-     "end": "2026-10-19T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T18:30:00-04:00",
-     "end": "2026-10-26T21:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T18:30:00-05:00",
-     "end": "2026-11-02T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T18:30:00-05:00",
-     "end": "2026-11-09T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T18:30:00-05:00",
-     "end": "2026-11-16T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T18:30:00-05:00",
-     "end": "2026-11-23T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T18:30:00-05:00",
-     "end": "2026-11-30T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T18:30:00-05:00",
-     "end": "2026-12-07T21:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T18:30:00-05:00",
-     "end": "2026-12-14T21:30:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "94b85c808cc6",
-   "title": "Library Board of Trustees Meeting",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-19T19:00:00-04:00",
-   "last_start": "2026-12-14T19:00:00-05:00",
-   "count": 3,
-   "cadence": "monthly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-19T19:00:00-04:00",
-     "end": "2026-10-19T23:59:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T19:00:00-05:00",
-     "end": "2026-11-16T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T19:00:00-05:00",
-     "end": "2026-12-14T23:59:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "909b1c6def67",
-   "title": "Planning Board",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-19T19:00:00-04:00",
-   "last_start": "2026-10-19T19:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-19T19:00:00-04:00",
-     "end": "2026-10-19T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
   {
    "id": "3c769e6096a9",
    "title": "Chair Yoga",
@@ -2879,8 +2599,8 @@
    "url": "https://www.vivafallriver.com/event/primo-after-dark-weekly-dj-sets/2026-10-23/",
    "cost": "",
    "first_start": "2026-10-23T20:00:00-04:00",
-   "last_start": "2026-12-11T20:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-18T20:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 4,
    "occurrences": [
@@ -2922,6 +2642,11 @@
     {
      "start": "2026-12-11T20:00:00-05:00",
      "end": "2026-12-11T20:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T20:00:00-05:00",
+     "end": "2026-12-18T20:00:00-05:00",
      "all_day": false
     }
    ]
@@ -3698,6 +3423,28 @@
    ]
   },
   {
+   "id": "9ee555514f59",
+   "title": "Knitting Group",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/knitting-group-36/",
+   "cost": "",
+   "first_start": "2026-10-26T13:00:00-04:00",
+   "last_start": "2026-10-26T13:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T13:00:00-04:00",
+     "end": "2026-10-26T14:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "bc68ff454c8d",
    "title": "Learn Ukulele",
    "venue": "",
@@ -3777,6 +3524,63 @@
     {
      "start": "2026-11-30T18:00:00-05:00",
      "end": "2026-11-30T19:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "714fd9ddd9f1",
+   "title": "Nick Sanfilippo",
+   "venue": "The Tipsy Toboggan",
+   "town": "Fall River",
+   "category": "Outdoors & Nature",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/nick-sanfilippo/2026-10-26/",
+   "cost": "",
+   "first_start": "2026-10-26T18:30:00-04:00",
+   "last_start": "2026-12-14T18:30:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T18:30:00-04:00",
+     "end": "2026-10-26T21:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T18:30:00-05:00",
+     "end": "2026-11-02T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T18:30:00-05:00",
+     "end": "2026-11-09T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T18:30:00-05:00",
+     "end": "2026-11-16T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T18:30:00-05:00",
+     "end": "2026-11-23T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T18:30:00-05:00",
+     "end": "2026-11-30T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T18:30:00-05:00",
+     "end": "2026-12-07T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T18:30:00-05:00",
+     "end": "2026-12-14T21:30:00-05:00",
      "all_day": false
     }
    ]
@@ -5245,6 +5049,55 @@
    ]
   },
   {
+   "id": "06e8dc2b3d7b",
+   "title": "Open Space & Land Preservation Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-16T18:00:00-05:00",
+   "last_start": "2026-11-16T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-16T18:00:00-05:00",
+     "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "94b85c808cc6",
+   "title": "Library Board of Trustees Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-16T19:00:00-05:00",
+   "last_start": "2026-12-14T19:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-11-16T19:00:00-05:00",
+     "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T19:00:00-05:00",
+     "end": "2026-12-14T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "5d40edb42fd6",
    "title": "All the Genres Book Club - The Quiet Librarian",
    "venue": "Brownell Library",
@@ -5756,6 +5609,28 @@
     {
      "start": "2026-12-17T09:00:00-05:00",
      "end": "2026-12-17T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "0d2891414a7a",
+   "title": "Quinn Sullivan - Friday, Dec. 18",
+   "venue": "Narrows Center for the Arts",
+   "town": "Fall River",
+   "category": "Music",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/quinn-sullivan-friday-dec-18/",
+   "cost": "",
+   "first_start": "2026-12-18T20:00:00-05:00",
+   "last_start": "2026-12-18T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-18T20:00:00-05:00",
+     "end": "2026-12-18T22:00:00-05:00",
      "all_day": false
     }
    ]

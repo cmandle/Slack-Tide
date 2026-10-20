@@ -1,72 +1,72 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 180,
-   "seconds": 4.36
+   "rows": 182,
+   "seconds": 4.66
   },
   "brownell-library": {
-   "rows": 24,
-   "seconds": 0.6
+   "rows": 23,
+   "seconds": 0.51
   },
   "dnrt": {
-   "rows": 13,
-   "seconds": 2.68
+   "rows": 12,
+   "seconds": 4.37
   },
   "viva-fall-river": {
    "rows": 277,
-   "seconds": 18.35
+   "seconds": 19.04
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 4.28
+   "seconds": 5.16
   },
   "town-tiverton": {
-   "rows": 190,
-   "seconds": 0.54
+   "rows": 187,
+   "seconds": 0.42
   },
   "town-dartmouth": {
-   "rows": 31,
-   "seconds": 0.32
+   "rows": 28,
+   "seconds": 0.37
   },
   "town-somerset": {
    "rows": 15,
-   "seconds": 1.11
+   "seconds": 0.43
   }
  },
  "errors": {},
- "primary_rows": 552,
+ "primary_rows": 544,
  "dropped": {
   "closure": 5,
   "holiday": 12
  },
- "series": 186,
+ "series": 181,
  "by_town": {
-  "Tiverton": 33,
-  "Dartmouth": 30,
-  "Little Compton": 13,
+  "Tiverton": 32,
   "Fall River": 100,
+  "Dartmouth": 26,
   "Somerset": 9,
+  "Little Compton": 13,
   "Westport": 1
  },
  "by_category": {
-  "Civic & Town Meetings": 30,
-  "Outdoors & Nature": 15,
-  "Library & Talks": 37,
-  "(unclassified)": 38,
   "Sports & Recreation": 7,
+  "Library & Talks": 36,
+  "Civic & Town Meetings": 28,
+  "(unclassified)": 36,
   "Arts & Theatre": 7,
   "Food & Drink": 11,
-  "Music": 22,
+  "Music": 23,
   "Family & Children": 11,
   "Volunteering & Causes": 2,
+  "Outdoors & Nature": 14,
   "Education & Workshops": 3,
   "Markets & Fairs": 1,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 112,
-  "weekly": 35,
-  "monthly": 22,
+  "weekly": 34,
+  "once": 109,
+  "monthly": 21,
   "irregular": 6,
   "several-a-week": 2,
   "daily": 2,
@@ -83,9 +83,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 180,
+  "check_total": 182,
   "check_matched": 0,
-  "check_missed_rows": 180,
+  "check_missed_rows": 182,
   "check_missed_series": 57,
   "check_missed": [
    {
@@ -93,7 +93,7 @@
     "venue": "Rotch-Jones-Duff House & Garden Museum",
     "town": "New Bedford",
     "first_start": "2026-10-22T19:30:00-04:00",
-    "rows": 25
+    "rows": 26
    },
    {
     "title": "Karaoke Nights!",
@@ -114,13 +114,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-23T17:30:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-19T14:00:00-04:00",
     "rows": 9
    },
    {
@@ -166,6 +159,13 @@
     "rows": 8
    },
    {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-26T14:00:00-04:00",
+    "rows": 8
+   },
+   {
     "title": "Tai Chi at Buttonwood Park",
     "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
@@ -187,6 +187,13 @@
     "rows": 2
    },
    {
+    "title": "Exit 27: Underground Dance Party",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-11-20T22:00:00-05:00",
+    "rows": 2
+   },
+   {
     "title": "Monthly Artists Share!",
     "venue": "Gallery X",
     "town": "New Bedford",
@@ -198,6 +205,13 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-11-01T15:30:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Rhythm Is Going To Ge You",
+    "venue": "Fort Taber Community Center",
+    "town": "New Bedford",
+    "first_start": "2026-11-20T19:00:00-05:00",
     "rows": 2
    },
    {
@@ -254,13 +268,6 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-01T11:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Exit 27: Underground Dance Party",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T22:00:00-05:00",
     "rows": 1
    },
    {
@@ -359,13 +366,6 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-12-17T20:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Rhythm Is Going To Ge You",
-    "venue": "Fort Taber Community Center",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T19:00:00-05:00",
     "rows": 1
    },
    {
