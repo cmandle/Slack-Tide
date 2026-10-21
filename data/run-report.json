@@ -1,64 +1,64 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 146,
-   "seconds": 3.27
+   "rows": 149,
+   "seconds": 5.24
   },
   "brownell-library": {
-   "rows": 20,
-   "seconds": 0.49
+   "rows": 22,
+   "seconds": 0.63
   },
   "dnrt": {
    "rows": 12,
-   "seconds": 2.74
+   "seconds": 3.5
   },
   "viva-fall-river": {
-   "rows": 273,
-   "seconds": 18.26
+   "rows": 276,
+   "seconds": 16.87
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 9.92
+   "seconds": 3.81
   },
   "town-tiverton": {
-   "rows": 182,
-   "seconds": 0.45
+   "rows": 180,
+   "seconds": 0.63
   },
   "town-dartmouth": {
-   "rows": 23,
+   "rows": 24,
    "seconds": 0.3
   },
   "town-somerset": {
    "rows": 8,
-   "seconds": 0.42
+   "seconds": 0.4
   }
  },
  "errors": {},
- "primary_rows": 520,
+ "primary_rows": 524,
  "dropped": {
   "closure": 5,
-  "holiday": 11
+  "holiday": 10
  },
- "series": 171,
+ "series": 174,
  "by_town": {
   "Tiverton": 32,
   "Fall River": 100,
-  "Dartmouth": 23,
+  "Dartmouth": 25,
   "Somerset": 4,
-  "Little Compton": 11,
+  "Little Compton": 12,
   "Westport": 1
  },
  "by_category": {
   "Sports & Recreation": 7,
   "Family & Children": 11,
-  "Civic & Town Meetings": 21,
-  "Library & Talks": 34,
-  "Music": 23,
+  "Civic & Town Meetings": 23,
+  "Library & Talks": 35,
   "(unclassified)": 35,
   "Food & Drink": 11,
   "Arts & Theatre": 7,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 14,
+  "Music": 23,
   "Education & Workshops": 3,
   "Markets & Fairs": 1,
   "Museums & Exhibitions": 2
@@ -66,12 +66,12 @@
  "by_cadence": {
   "several-a-week": 2,
   "weekly": 34,
-  "once": 98,
+  "once": 100,
   "monthly": 21,
   "daily": 3,
   "weekends": 2,
   "irregular": 6,
-  "fortnightly": 5
+  "fortnightly": 6
  },
  "weekend_gate": {
   "saturday": "2026-10-24",
@@ -83,10 +83,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 146,
+  "check_total": 149,
   "check_matched": 0,
-  "check_missed_rows": 146,
-  "check_missed_series": 55,
+  "check_missed_rows": 149,
+  "check_missed_series": 56,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -110,6 +110,13 @@
     "rows": 9
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-25T14:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -124,18 +131,18 @@
     "rows": 9
    },
    {
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
+    "town": "New Bedford",
+    "first_start": "2026-10-25T09:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Universal Participation: Welcome to Yoga",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-21T18:00:00-04:00",
     "rows": 9
-   },
-   {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-25T14:00:00-04:00",
-    "rows": 8
    },
    {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
@@ -149,13 +156,6 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-27T20:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Tai Chi at Buttonwood Park",
-    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
-    "town": "New Bedford",
-    "first_start": "2026-10-25T09:30:00-04:00",
     "rows": 8
    },
    {
@@ -310,6 +310,13 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-11-21T19:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "NBSO Presents \"Holiday Pops - Afternoon\"",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-12-20T15:30:00-05:00",
     "rows": 1
    },
    {
