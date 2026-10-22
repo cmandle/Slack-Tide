@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-22T10:48:04.824105+00:00",
- "series_count": 163,
- "occurrence_count": 476,
+ "generated_at": "2026-10-22T22:45:12.823112+00:00",
+ "series_count": 174,
+ "occurrence_count": 492,
  "series": [
   {
    "id": "35fd19be8d36",
@@ -21,68 +21,6 @@
     {
      "start": "2026-10-22T08:00:00-04:00",
      "end": "2026-10-22T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "3139634ece53",
-   "title": "Balance and Mobility",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-22T09:00:00-04:00",
-   "last_start": "2026-12-17T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-22T09:00:00-04:00",
-     "end": "2026-10-22T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-29T09:00:00-04:00",
-     "end": "2026-10-29T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T09:00:00-05:00",
-     "end": "2026-11-05T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T09:00:00-05:00",
-     "end": "2026-11-12T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T09:00:00-05:00",
-     "end": "2026-11-19T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T09:00:00-05:00",
-     "end": "2026-11-26T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T09:00:00-05:00",
-     "end": "2026-12-03T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T09:00:00-05:00",
-     "end": "2026-12-10T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T09:00:00-05:00",
-     "end": "2026-12-17T10:00:00-05:00",
      "all_day": false
     }
    ]
@@ -189,130 +127,6 @@
     {
      "start": "2026-12-17T13:00:00-05:00",
      "end": "2026-12-17T13:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "dd50f7398c80",
-   "title": "Bingo!",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-22T13:00:00-04:00",
-   "last_start": "2026-12-17T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-22T13:00:00-04:00",
-     "end": "2026-10-22T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-29T13:00:00-04:00",
-     "end": "2026-10-29T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "8b749f1ec307",
-   "title": "Knitting for Charity",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Volunteering & Causes",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-22T13:00:00-04:00",
-   "last_start": "2026-12-17T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-22T13:00:00-04:00",
-     "end": "2026-10-22T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-29T13:00:00-04:00",
-     "end": "2026-10-29T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
      "all_day": false
     }
    ]
@@ -584,6 +398,28 @@
    ]
   },
   {
+   "id": "4285dd2f896f",
+   "title": "Work Party Schedule",
+   "venue": "Various Reserves",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/work-party-schedule/",
+   "cost": "Free",
+   "first_start": "2026-10-23T09:00:00-04:00",
+   "last_start": "2026-10-23T09:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-23T09:00:00-04:00",
+     "end": "2027-01-09T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "fe0247326a8a",
    "title": "Zumba",
    "venue": "",
@@ -734,8 +570,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-23T13:00:00-04:00",
-   "last_start": "2026-12-14T10:15:00-05:00",
-   "count": 10,
+   "last_start": "2026-12-21T10:15:00-05:00",
+   "count": 11,
    "cadence": "several-a-week",
    "weekday": null,
    "occurrences": [
@@ -787,6 +623,11 @@
     {
      "start": "2026-12-14T10:15:00-05:00",
      "end": "2026-12-14T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T10:15:00-05:00",
+     "end": "2026-12-21T11:15:00-05:00",
      "all_day": false
     }
    ]
@@ -1673,6 +1514,68 @@
    ]
   },
   {
+   "id": "5a6902aea5cc",
+   "title": "TOPS",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-26T09:00:00-04:00",
+   "last_start": "2026-12-21T09:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-10-26T09:00:00-04:00",
+     "end": "2026-10-26T11:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T09:00:00-05:00",
+     "end": "2026-12-14T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T09:00:00-05:00",
+     "end": "2026-12-21T11:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "ee5aab63f527",
    "title": "Functional Fitness",
    "venue": "",
@@ -1682,8 +1585,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-26T09:00:00-04:00",
-   "last_start": "2026-12-16T00:00:00-05:00",
-   "count": 16,
+   "last_start": "2026-12-21T09:00:00-05:00",
+   "count": 17,
    "cadence": "several-a-week",
    "weekday": null,
    "occurrences": [
@@ -1766,62 +1669,10 @@
      "start": "2026-12-16T00:00:00-05:00",
      "end": "2026-12-16T00:00:00-05:00",
      "all_day": true
-    }
-   ]
-  },
-  {
-   "id": "5a6902aea5cc",
-   "title": "TOPS",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-26T09:00:00-04:00",
-   "last_start": "2026-12-14T09:00:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-26T09:00:00-04:00",
-     "end": "2026-10-26T11:00:00-04:00",
-     "all_day": false
     },
     {
-     "start": "2026-11-02T09:00:00-05:00",
-     "end": "2026-11-02T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T11:00:00-05:00",
+     "start": "2026-12-21T09:00:00-05:00",
+     "end": "2026-12-21T10:00:00-05:00",
      "all_day": false
     }
    ]
@@ -1836,8 +1687,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-26T10:00:00-04:00",
-   "last_start": "2026-12-14T10:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-21T10:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -1880,6 +1731,11 @@
      "start": "2026-12-14T10:00:00-05:00",
      "end": "2026-12-14T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-21T10:00:00-05:00",
+     "end": "2026-12-21T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1893,8 +1749,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-26T12:30:00-04:00",
-   "last_start": "2026-12-14T12:30:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-21T12:30:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -1937,6 +1793,11 @@
      "start": "2026-12-14T12:30:00-05:00",
      "end": "2026-12-14T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-21T12:30:00-05:00",
+     "end": "2026-12-21T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1972,8 +1833,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-26T13:00:00-04:00",
-   "last_start": "2026-12-14T13:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-21T13:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -2015,6 +1876,33 @@
     {
      "start": "2026-12-14T13:00:00-05:00",
      "end": "2026-12-14T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T13:00:00-05:00",
+     "end": "2026-12-21T14:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "d79d89220691",
+   "title": "Select Board Meeting",
+   "venue": "400 SLOCUM RD Room 303 and 304 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T17:30:00-04:00",
+   "last_start": "2026-10-26T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T17:30:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
      "all_day": false
     }
    ]
@@ -2069,6 +1957,28 @@
    ]
   },
   {
+   "id": "1da38ea742d0",
+   "title": "Board of Assessor's meeting / joint Select Board meeting",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T18:00:00-04:00",
+   "last_start": "2026-10-26T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T18:00:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "714fd9ddd9f1",
    "title": "Nick Sanfilippo",
    "venue": "The Tipsy Toboggan",
@@ -2078,8 +1988,8 @@
    "url": "https://www.vivafallriver.com/event/nick-sanfilippo/2026-10-26/",
    "cost": "",
    "first_start": "2026-10-26T18:30:00-04:00",
-   "last_start": "2026-12-14T18:30:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-21T18:30:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -2121,6 +2031,11 @@
     {
      "start": "2026-12-14T18:30:00-05:00",
      "end": "2026-12-14T21:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T18:30:00-05:00",
+     "end": "2026-12-21T21:30:00-05:00",
      "all_day": false
     }
    ]
@@ -2517,6 +2432,28 @@
    "venue": "400 SLOCUM ROAD Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T17:00:00-04:00",
+   "last_start": "2026-10-27T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T17:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "7726a9fdc91d",
+   "title": "Zoning Board of Appeals",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
    "source_id": "town-dartmouth",
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
@@ -3382,6 +3319,177 @@
    ]
   },
   {
+   "id": "3139634ece53",
+   "title": "Balance and Mobility",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-29T09:00:00-04:00",
+   "last_start": "2026-12-17T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T09:00:00-04:00",
+     "end": "2026-10-29T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T09:00:00-05:00",
+     "end": "2026-11-05T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T09:00:00-05:00",
+     "end": "2026-11-12T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T09:00:00-05:00",
+     "end": "2026-11-19T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T09:00:00-05:00",
+     "end": "2026-11-26T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T09:00:00-05:00",
+     "end": "2026-12-03T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T09:00:00-05:00",
+     "end": "2026-12-10T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T09:00:00-05:00",
+     "end": "2026-12-17T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "dd50f7398c80",
+   "title": "Bingo!",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-29T13:00:00-04:00",
+   "last_start": "2026-12-17T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T13:00:00-04:00",
+     "end": "2026-10-29T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "8b749f1ec307",
+   "title": "Knitting for Charity",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Volunteering & Causes",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-29T13:00:00-04:00",
+   "last_start": "2026-12-17T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T13:00:00-04:00",
+     "end": "2026-10-29T15:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "f73bbc49e92e",
    "title": "The Banned Book Club",
    "venue": "Fall River Public Library",
@@ -3742,6 +3850,28 @@
    ]
   },
   {
+   "id": "b1593f3a3634",
+   "title": "Pop-up Women's Walk",
+   "venue": "Frank Knowles/Little River Reserve",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/pop-up-womens-walk/",
+   "cost": "Free",
+   "first_start": "2026-11-02T09:00:00-05:00",
+   "last_start": "2026-11-02T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "c03a17f49c92",
    "title": "Historical Cemeteries Commission Meeting",
    "venue": "34 Roosevelt Avenue Tiverton RI 02878",
@@ -3764,6 +3894,28 @@
     {
      "start": "2026-12-01T18:00:00-05:00",
      "end": "2026-12-01T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "897b69e759d7",
+   "title": "North End and Industrial/Business Park Advisory Subcommittee",
+   "venue": "207 Canonicus Street Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T18:00:00-05:00",
+   "last_start": "2026-11-02T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T18:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
      "all_day": false
     }
    ]
@@ -4286,6 +4438,28 @@
    ]
   },
   {
+   "id": "f54e688a31cc",
+   "title": "Hikes for Tykes",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/hikes-for-tykes/",
+   "cost": "$10",
+   "first_start": "2026-11-12T10:00:00-05:00",
+   "last_start": "2026-11-12T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T10:00:00-05:00",
+     "end": "2027-07-15T11:15:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "3940c79551d1",
    "title": "YA Comics Club",
    "venue": "Fall River Public Library",
@@ -4335,6 +4509,28 @@
     {
      "start": "2026-12-10T18:00:00-05:00",
      "end": "2026-12-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "95ff263664a6",
+   "title": "Tax Collectors Sale of Estates for Taxes and/or Assessments Due and Unpaid",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-13T10:00:00-05:00",
+   "last_start": "2026-11-13T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-13T10:00:00-05:00",
+     "end": "2026-11-13T23:59:00-05:00",
      "all_day": false
     }
    ]
@@ -4464,14 +4660,19 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
    "first_start": "2026-11-16T18:00:00-05:00",
-   "last_start": "2026-11-16T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
+   "last_start": "2026-12-21T18:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
    "weekday": null,
    "occurrences": [
     {
      "start": "2026-11-16T18:00:00-05:00",
      "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T18:00:00-05:00",
+     "end": "2026-12-21T23:59:00-05:00",
      "all_day": false
     }
    ]
@@ -4798,6 +4999,28 @@
    ]
   },
   {
+   "id": "aa916f2461c6",
+   "title": "Women's Walk",
+   "venue": "Russells Mills Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/womens-walk/",
+   "cost": "Free",
+   "first_start": "2026-11-23T09:00:00-05:00",
+   "last_start": "2026-11-23T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "30bf1ea206b2",
    "title": "Roomful of Blues - Fall River",
    "venue": "Narrows Center for the Arts",
@@ -4816,6 +5039,28 @@
      "start": "2026-11-27T00:00:00-05:00",
      "end": "2026-11-27T23:59:59-05:00",
      "all_day": true
+    }
+   ]
+  },
+  {
+   "id": "452cf38f822a",
+   "title": "Wellness Series",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Education & Workshops",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/wellness/",
+   "cost": "$10 – $20",
+   "first_start": "2026-11-28T09:00:00-05:00",
+   "last_start": "2026-11-28T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T09:00:00-05:00",
+     "end": "2026-11-28T10:30:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -5150,6 +5395,28 @@
     {
      "start": "2026-12-19T20:00:00-05:00",
      "end": "2026-12-19T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "c3aa825f1b94",
+   "title": "Solstice Stroll",
+   "venue": "Destruction Brook Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/solstice-stroll/",
+   "cost": "Free",
+   "first_start": "2026-12-21T10:00:00-05:00",
+   "last_start": "2026-12-21T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-21T10:00:00-05:00",
+     "end": "2026-12-21T11:30:00-05:00",
      "all_day": false
     }
    ]

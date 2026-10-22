@@ -1,76 +1,76 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 148,
-   "seconds": 3.68
+   "rows": 150,
+   "seconds": 4.51
   },
   "brownell-library": {
    "rows": 21,
-   "seconds": 0.72
+   "seconds": 0.65
   },
   "dnrt": {
-   "rows": 12,
-   "seconds": 4.02
+   "rows": 18,
+   "seconds": 3.92
   },
   "viva-fall-river": {
-   "rows": 266,
-   "seconds": 18.03
+   "rows": 267,
+   "seconds": 17.27
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 4.32
+   "seconds": 13.88
   },
   "town-tiverton": {
-   "rows": 178,
-   "seconds": 0.45
+   "rows": 184,
+   "seconds": 0.5
   },
   "town-dartmouth": {
-   "rows": 21,
-   "seconds": 0.37
+   "rows": 23,
+   "seconds": 0.42
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.57
+   "seconds": 0.52
   }
  },
  "errors": {},
- "primary_rows": 505,
+ "primary_rows": 520,
  "dropped": {
   "closure": 5,
-  "holiday": 10
+  "holiday": 9
  },
- "series": 163,
+ "series": 174,
  "by_town": {
-  "Dartmouth": 21,
-  "Tiverton": 31,
+  "Dartmouth": 30,
   "Fall River": 96,
   "Somerset": 2,
+  "Tiverton": 33,
   "Westport": 1,
   "Little Compton": 12
  },
  "by_category": {
-  "(unclassified)": 33,
-  "Sports & Recreation": 7,
-  "Civic & Town Meetings": 20,
+  "(unclassified)": 35,
+  "Civic & Town Meetings": 23,
   "Library & Talks": 31,
-  "Volunteering & Causes": 2,
   "Food & Drink": 11,
   "Family & Children": 9,
   "Arts & Theatre": 7,
-  "Outdoors & Nature": 14,
+  "Outdoors & Nature": 19,
+  "Sports & Recreation": 7,
   "Music": 23,
-  "Education & Workshops": 3,
+  "Education & Workshops": 4,
   "Markets & Fairs": 1,
+  "Volunteering & Causes": 2,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 88,
+  "once": 98,
   "weekly": 34,
   "daily": 3,
   "monthly": 21,
   "several-a-week": 2,
   "weekends": 2,
-  "irregular": 7,
+  "irregular": 8,
   "fortnightly": 6
  },
  "weekend_gate": {
@@ -83,10 +83,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 148,
+  "check_total": 150,
   "check_matched": 0,
-  "check_missed_rows": 148,
-  "check_missed_series": 56,
+  "check_missed_rows": 150,
+  "check_missed_series": 57,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -107,6 +107,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-25T14:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-26T14:00:00-04:00",
     "rows": 9
    },
    {
@@ -135,13 +142,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-28T18:30:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-26T14:00:00-04:00",
     "rows": 8
    },
    {
@@ -247,6 +247,13 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-12-17T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Balance & Swing Contradance",
+    "venue": "Gallery X",
+    "town": "New Bedford",
+    "first_start": "2026-11-25T18:00:00-05:00",
     "rows": 1
    },
    {
