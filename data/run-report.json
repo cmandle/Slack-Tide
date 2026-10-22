@@ -1,62 +1,62 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 149,
-   "seconds": 5.24
+   "rows": 148,
+   "seconds": 3.68
   },
   "brownell-library": {
-   "rows": 22,
-   "seconds": 0.63
+   "rows": 21,
+   "seconds": 0.72
   },
   "dnrt": {
    "rows": 12,
-   "seconds": 3.5
+   "seconds": 4.02
   },
   "viva-fall-river": {
-   "rows": 276,
-   "seconds": 16.87
+   "rows": 266,
+   "seconds": 18.03
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 3.81
+   "seconds": 4.32
   },
   "town-tiverton": {
-   "rows": 180,
-   "seconds": 0.63
+   "rows": 178,
+   "seconds": 0.45
   },
   "town-dartmouth": {
-   "rows": 24,
-   "seconds": 0.3
+   "rows": 21,
+   "seconds": 0.37
   },
   "town-somerset": {
-   "rows": 8,
-   "seconds": 0.4
+   "rows": 5,
+   "seconds": 0.57
   }
  },
  "errors": {},
- "primary_rows": 524,
+ "primary_rows": 505,
  "dropped": {
   "closure": 5,
   "holiday": 10
  },
- "series": 174,
+ "series": 163,
  "by_town": {
-  "Tiverton": 32,
-  "Fall River": 100,
-  "Dartmouth": 25,
-  "Somerset": 4,
-  "Little Compton": 12,
-  "Westport": 1
+  "Dartmouth": 21,
+  "Tiverton": 31,
+  "Fall River": 96,
+  "Somerset": 2,
+  "Westport": 1,
+  "Little Compton": 12
  },
  "by_category": {
+  "(unclassified)": 33,
   "Sports & Recreation": 7,
-  "Family & Children": 11,
-  "Civic & Town Meetings": 23,
-  "Library & Talks": 35,
-  "(unclassified)": 35,
-  "Food & Drink": 11,
-  "Arts & Theatre": 7,
+  "Civic & Town Meetings": 20,
+  "Library & Talks": 31,
   "Volunteering & Causes": 2,
+  "Food & Drink": 11,
+  "Family & Children": 9,
+  "Arts & Theatre": 7,
   "Outdoors & Nature": 14,
   "Music": 23,
   "Education & Workshops": 3,
@@ -64,13 +64,13 @@
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "several-a-week": 2,
+  "once": 88,
   "weekly": 34,
-  "once": 100,
-  "monthly": 21,
   "daily": 3,
+  "monthly": 21,
+  "several-a-week": 2,
   "weekends": 2,
-  "irregular": 6,
+  "irregular": 7,
   "fortnightly": 6
  },
  "weekend_gate": {
@@ -83,9 +83,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 149,
+  "check_total": 148,
   "check_matched": 0,
-  "check_missed_rows": 149,
+  "check_missed_rows": 148,
   "check_missed_series": 56,
   "check_missed": [
    {
@@ -93,14 +93,7 @@
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-10-22T21:00:00-04:00",
-    "rows": 17
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-10-21T18:30:00-04:00",
-    "rows": 9
+    "rows": 18
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -138,11 +131,11 @@
     "rows": 9
    },
    {
-    "title": "Universal Participation: Welcome to Yoga",
-    "venue": "New Bedford Art Museum",
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
-    "first_start": "2026-10-21T18:00:00-04:00",
-    "rows": 9
+    "first_start": "2026-10-28T18:30:00-04:00",
+    "rows": 8
    },
    {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
@@ -156,6 +149,13 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-27T20:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-28T18:00:00-04:00",
     "rows": 8
    },
    {
@@ -299,13 +299,6 @@
     "rows": 1
    },
    {
-    "title": "Mishoon Burn at Community Boating Center",
-    "venue": "Community Boating Center",
-    "town": "New Bedford",
-    "first_start": "2026-10-21T00:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "NBSO Presents \"Goosby Plays Brahms\"",
     "venue": "Zeiterion",
     "town": "New Bedford",
@@ -317,6 +310,13 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-12-20T15:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "NBSO Presents \"Holiday Pops - Evening\"",
+    "venue": "Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-12-20T19:00:00-05:00",
     "rows": 1
    },
    {
