@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-23T10:46:35.466128+00:00",
- "series_count": 166,
- "occurrence_count": 480,
+ "generated_at": "2026-10-23T22:45:38.445398+00:00",
+ "series_count": 174,
+ "occurrence_count": 494,
  "series": [
   {
    "id": "4285dd2f896f",
@@ -21,120 +21,6 @@
     {
      "start": "2026-10-23T09:00:00-04:00",
      "end": "2027-01-09T12:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "fe0247326a8a",
-   "title": "Zumba",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-23T09:00:00-04:00",
-   "last_start": "2026-12-18T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-23T09:00:00-04:00",
-     "end": "2026-10-23T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T09:00:00-04:00",
-     "end": "2026-10-30T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T09:00:00-05:00",
-     "end": "2026-11-06T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T09:00:00-05:00",
-     "end": "2026-11-13T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T09:00:00-05:00",
-     "end": "2026-11-20T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T09:00:00-05:00",
-     "end": "2026-11-27T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T09:00:00-05:00",
-     "end": "2026-12-04T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T09:00:00-05:00",
-     "end": "2026-12-11T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T09:00:00-05:00",
-     "end": "2026-12-18T10:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "d8600d4c5a09",
-   "title": "Grief Support Group",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-23T10:00:00-04:00",
-   "last_start": "2026-12-18T10:00:00-05:00",
-   "count": 7,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-23T10:00:00-04:00",
-     "end": "2026-10-23T11:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T10:00:00-05:00",
-     "end": "2026-11-06T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T10:00:00-05:00",
-     "end": "2026-11-13T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T10:00:00-05:00",
-     "end": "2026-11-20T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T10:00:00-05:00",
-     "end": "2026-12-04T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T10:00:00-05:00",
-     "end": "2026-12-11T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T10:00:00-05:00",
-     "end": "2026-12-18T11:30:00-05:00",
      "all_day": false
     }
    ]
@@ -162,78 +48,6 @@
     {
      "start": "2026-11-20T12:00:00-05:00",
      "end": "2026-11-20T15:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "a04898c37ccd",
-   "title": "Senior Fitness with Terri",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-23T13:00:00-04:00",
-   "last_start": "2026-12-21T10:15:00-05:00",
-   "count": 11,
-   "cadence": "several-a-week",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-23T13:00:00-04:00",
-     "end": "2026-10-23T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-26T10:15:00-04:00",
-     "end": "2026-10-26T11:15:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-30T13:00:00-04:00",
-     "end": "2026-10-30T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T10:15:00-05:00",
-     "end": "2026-11-02T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T10:15:00-05:00",
-     "end": "2026-11-09T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:15:00-05:00",
-     "end": "2026-11-16T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:15:00-05:00",
-     "end": "2026-11-23T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:15:00-05:00",
-     "end": "2026-11-30T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:15:00-05:00",
-     "end": "2026-12-07T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:15:00-05:00",
-     "end": "2026-12-14T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T10:15:00-05:00",
-     "end": "2026-12-21T11:15:00-05:00",
      "all_day": false
     }
    ]
@@ -1098,6 +912,28 @@
    ]
   },
   {
+   "id": "5f1ad199e224",
+   "title": "Fun Filled Bingo Night",
+   "venue": "Knights of Columbus Hall",
+   "town": "Fall River",
+   "category": "Sports & Recreation",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/fun-filled-bingo-night/",
+   "cost": "&#x24;25 – &#x24;40",
+   "first_start": "2026-10-25T16:00:00-04:00",
+   "last_start": "2026-10-25T16:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-25T16:00:00-04:00",
+     "end": "2026-10-25T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "dae70086b9c7",
    "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
    "venue": "Canned Heat Craft Beer Co.",
@@ -1368,6 +1204,73 @@
     {
      "start": "2026-12-21T10:00:00-05:00",
      "end": "2026-12-21T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a04898c37ccd",
+   "title": "Senior Fitness with Terri",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-26T10:15:00-04:00",
+   "last_start": "2026-12-21T10:15:00-05:00",
+   "count": 10,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T10:15:00-04:00",
+     "end": "2026-10-26T11:15:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-30T13:00:00-04:00",
+     "end": "2026-10-30T14:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-02T10:15:00-05:00",
+     "end": "2026-11-02T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:15:00-05:00",
+     "end": "2026-11-09T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:15:00-05:00",
+     "end": "2026-11-16T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:15:00-05:00",
+     "end": "2026-11-23T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:15:00-05:00",
+     "end": "2026-11-30T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:15:00-05:00",
+     "end": "2026-12-07T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T10:15:00-05:00",
+     "end": "2026-12-14T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T10:15:00-05:00",
+     "end": "2026-12-21T11:15:00-05:00",
      "all_day": false
     }
    ]
@@ -1720,8 +1623,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-27T09:00:00-04:00",
-   "last_start": "2026-12-15T09:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-22T09:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1764,6 +1667,11 @@
      "start": "2026-12-15T09:00:00-05:00",
      "end": "2026-12-15T10:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T09:00:00-05:00",
+     "end": "2026-12-22T10:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1777,8 +1685,8 @@
    "url": "https://www.vivafallriver.com/event/preschool-storytime/2026-10-27/",
    "cost": "",
    "first_start": "2026-10-27T11:00:00-04:00",
-   "last_start": "2026-12-15T11:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-22T11:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1821,6 +1729,11 @@
      "start": "2026-12-15T11:00:00-05:00",
      "end": "2026-12-15T11:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T11:00:00-05:00",
+     "end": "2026-12-22T11:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1834,8 +1747,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-27T12:45:00-04:00",
-   "last_start": "2026-12-15T12:45:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-22T12:45:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1878,6 +1791,11 @@
      "start": "2026-12-15T12:45:00-05:00",
      "end": "2026-12-15T13:45:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T12:45:00-05:00",
+     "end": "2026-12-22T13:45:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1891,8 +1809,8 @@
    "url": "https://www.vivafallriver.com/event/__trashed/2026-10-27/",
    "cost": "",
    "first_start": "2026-10-27T13:00:00-04:00",
-   "last_start": "2026-12-08T13:00:00-05:00",
-   "count": 4,
+   "last_start": "2026-12-22T13:00:00-05:00",
+   "count": 5,
    "cadence": "fortnightly",
    "weekday": 1,
    "occurrences": [
@@ -1915,6 +1833,11 @@
      "start": "2026-12-08T13:00:00-05:00",
      "end": "2026-12-08T13:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T13:00:00-05:00",
+     "end": "2026-12-22T13:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -1928,8 +1851,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-27T14:00:00-04:00",
-   "last_start": "2026-12-15T14:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-22T14:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1972,6 +1895,11 @@
      "start": "2026-12-15T14:00:00-05:00",
      "end": "2026-12-15T15:30:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T14:00:00-05:00",
+     "end": "2026-12-22T15:30:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2012,8 +1940,8 @@
    "url": "https://www.vivafallriver.com/event/half-priced-food-weekly/2026-10-27/",
    "cost": "",
    "first_start": "2026-10-27T16:00:00-04:00",
-   "last_start": "2026-12-15T16:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-22T16:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -2056,6 +1984,11 @@
      "start": "2026-12-15T16:00:00-05:00",
      "end": "2026-12-15T21:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T16:00:00-05:00",
+     "end": "2026-12-22T21:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2065,28 +1998,6 @@
    "venue": "400 SLOCUM ROAD Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-27T17:00:00-04:00",
-   "last_start": "2026-10-27T17:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-27T17:00:00-04:00",
-     "end": "2026-10-27T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "7726a9fdc91d",
-   "title": "Zoning Board of Appeals",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
    "source_id": "town-dartmouth",
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
@@ -2157,8 +2068,8 @@
    "url": "https://www.vivafallriver.com/event/free-all-levels-yoga-tuesdays-thursdays/2026-10-27/",
    "cost": "",
    "first_start": "2026-10-27T18:00:00-04:00",
-   "last_start": "2026-12-15T18:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-22T18:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -2201,6 +2112,11 @@
      "start": "2026-12-15T18:00:00-05:00",
      "end": "2026-12-15T18:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-22T18:00:00-05:00",
+     "end": "2026-12-22T18:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2211,6 +2127,50 @@
    "town": "Tiverton",
    "category": "Education & Workshops",
    "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T18:00:00-04:00",
+   "last_start": "2026-10-27T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3e9358fff135",
+   "title": "Water Quality Advisory Committee",
+   "venue": "400 SLOCUM RD Room 309 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T18:00:00-04:00",
+   "last_start": "2026-10-27T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "7f90d95fad0e",
+   "title": "Revised Zoning Board of Appeals",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
    "cost": "",
    "first_start": "2026-10-27T18:00:00-04:00",
@@ -2302,6 +2262,28 @@
    "occurrences": [
     {
      "start": "2026-10-27T18:30:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "a59fb1a4ee29",
+   "title": "Conservation Commission",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T19:00:00-04:00",
+   "last_start": "2026-10-27T19:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T19:00:00-04:00",
      "end": "2026-10-27T23:59:00-04:00",
      "all_day": false
     }
@@ -2622,6 +2604,28 @@
     {
      "start": "2026-12-16T12:30:00-05:00",
      "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "3a31fe132b30",
+   "title": "Community Preservation Committee",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-28T16:30:00-04:00",
+   "last_start": "2026-10-28T16:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T16:30:00-04:00",
+     "end": "2026-10-28T23:59:00-04:00",
      "all_day": false
     }
    ]
@@ -3424,6 +3428,63 @@
    ]
   },
   {
+   "id": "fe0247326a8a",
+   "title": "Zumba",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-10-30T09:00:00-04:00",
+   "last_start": "2026-12-18T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-10-30T09:00:00-04:00",
+     "end": "2026-10-30T10:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-06T09:00:00-05:00",
+     "end": "2026-11-06T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T09:00:00-05:00",
+     "end": "2026-11-13T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T09:00:00-05:00",
+     "end": "2026-11-20T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T09:00:00-05:00",
+     "end": "2026-11-27T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T09:00:00-05:00",
+     "end": "2026-12-04T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T09:00:00-05:00",
+     "end": "2026-12-11T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T09:00:00-05:00",
+     "end": "2026-12-18T10:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "fdf303a9d150",
    "title": "Dartmouth Fire District 1 Building Committee",
    "venue": "10 Bridge St Dartmouth MA 02748",
@@ -3958,6 +4019,53 @@
    ]
   },
   {
+   "id": "d8600d4c5a09",
+   "title": "Grief Support Group",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-06T10:00:00-05:00",
+   "last_start": "2026-12-18T10:00:00-05:00",
+   "count": 6,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-11-06T10:00:00-05:00",
+     "end": "2026-11-06T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T10:00:00-05:00",
+     "end": "2026-11-13T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T10:00:00-05:00",
+     "end": "2026-11-20T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T10:00:00-05:00",
+     "end": "2026-12-04T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T10:00:00-05:00",
+     "end": "2026-12-11T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T10:00:00-05:00",
+     "end": "2026-12-18T11:30:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "440ef02afc78",
    "title": "Jason Robert Brown with Special Broadway Guests",
    "venue": "Narrows Center for the Arts",
@@ -4002,6 +4110,33 @@
    ]
   },
   {
+   "id": "9daa042b56f8",
+   "title": "Board of Registrars Meeting",
+   "venue": "400 Slocum Road Room 203 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T09:00:00-05:00",
+   "last_start": "2026-11-16T09:00:00-05:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "6cc05440173a",
    "title": "Medicare Help Sessions - Contact the Library to Register",
    "venue": "Brownell Library",
@@ -4041,6 +4176,28 @@
     {
      "start": "2026-11-10T09:00:00-05:00",
      "end": "2026-11-10T12:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "abe54e185761",
+   "title": "Balance and Fall Prevention with local resident Amy Simmons and colleague Andrea Wasylow",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/balance-and-fall-prevention-with-local-resident-amy-simmons-and-colleague-andrea-wasylow/",
+   "cost": "",
+   "first_start": "2026-11-10T13:00:00-05:00",
+   "last_start": "2026-11-10T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T13:00:00-05:00",
+     "end": "2026-11-10T14:00:00-05:00",
      "all_day": false
     }
    ]
@@ -4825,6 +4982,28 @@
    ]
   },
   {
+   "id": "3eb5111dab1f",
+   "title": "Library will open at 11 AM",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/library-will-open-at-11-am-7/",
+   "cost": "",
+   "first_start": "2026-11-23T11:00:00-05:00",
+   "last_start": "2026-11-23T11:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-23T11:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "30bf1ea206b2",
    "title": "Roomful of Blues - Fall River",
    "venue": "Narrows Center for the Arts",
@@ -4908,6 +5087,33 @@
     {
      "start": "2026-11-28T20:00:00-05:00",
      "end": "2026-11-28T22:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "2643512474a2",
+   "title": "Dance Prism Ballet Presents \"The Nutcracker\"",
+   "venue": "Bristol Community College Arts Center",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/dance-prism-ballet-presents-the-nutcracker/2026-11-29/1/",
+   "cost": "",
+   "first_start": "2026-11-29T01:00:00-05:00",
+   "last_start": "2026-11-29T17:00:00-05:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-29T01:00:00-05:00",
+     "end": "2026-11-29T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T17:00:00-05:00",
+     "end": "2026-11-29T19:00:00-05:00",
      "all_day": false
     }
    ]

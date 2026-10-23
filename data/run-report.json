@@ -1,92 +1,92 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 148,
-   "seconds": 3.49
+   "rows": 149,
+   "seconds": 2.96
   },
   "brownell-library": {
-   "rows": 21,
-   "seconds": 0.57
+   "rows": 23,
+   "seconds": 0.51
   },
   "dnrt": {
    "rows": 18,
-   "seconds": 4.21
+   "seconds": 4.14
   },
   "viva-fall-river": {
-   "rows": 259,
-   "seconds": 17.93
+   "rows": 266,
+   "seconds": 19.67
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 26.98
+   "seconds": 20.93
   },
   "town-tiverton": {
-   "rows": 184,
-   "seconds": 0.56
+   "rows": 185,
+   "seconds": 0.63
   },
   "town-dartmouth": {
-   "rows": 20,
-   "seconds": 0.33
+   "rows": 23,
+   "seconds": 0.57
   },
   "town-somerset": {
-   "rows": 4,
-   "seconds": 0.4
+   "rows": 5,
+   "seconds": 0.53
   }
  },
  "errors": {},
- "primary_rows": 508,
+ "primary_rows": 522,
  "dropped": {
   "closure": 5,
-  "holiday": 9
+  "holiday": 8
  },
- "series": 166,
+ "series": 174,
  "by_town": {
-  "Dartmouth": 27,
-  "Tiverton": 33,
-  "Fall River": 92,
+  "Dartmouth": 30,
+  "Fall River": 94,
   "Westport": 1,
-  "Little Compton": 12,
-  "Somerset": 1
+  "Little Compton": 14,
+  "Tiverton": 33,
+  "Somerset": 2
  },
  "by_category": {
   "Outdoors & Nature": 19,
   "(unclassified)": 33,
-  "Sports & Recreation": 7,
   "Family & Children": 8,
   "Food & Drink": 10,
-  "Arts & Theatre": 7,
+  "Arts & Theatre": 8,
   "Music": 23,
-  "Library & Talks": 30,
+  "Library & Talks": 32,
   "Education & Workshops": 4,
   "Markets & Fairs": 1,
+  "Sports & Recreation": 8,
   "Volunteering & Causes": 2,
-  "Civic & Town Meetings": 20,
+  "Civic & Town Meetings": 24,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 90,
-  "weekly": 34,
+  "once": 97,
   "monthly": 21,
-  "several-a-week": 2,
+  "weekly": 35,
   "daily": 3,
   "weekends": 2,
-  "irregular": 8,
+  "irregular": 9,
+  "several-a-week": 1,
   "fortnightly": 6
  },
  "weekend_gate": {
   "saturday": "2026-10-24",
-  "series": 20,
+  "series": 21,
   "towns": {
-   "Fall River": 19,
+   "Fall River": 20,
    "Little Compton": 1
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 148,
+  "check_total": 149,
   "check_matched": 0,
-  "check_missed_rows": 148,
-  "check_missed_series": 57,
+  "check_missed_rows": 149,
+  "check_missed_series": 58,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -282,6 +282,13 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-06T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Greater New Bedford Choral Society presents Christmas Melodies Around the World",
+    "venue": "Our Lady of Mount Carmel New Bedford",
+    "town": "New Bedford",
+    "first_start": "2026-12-06T15:30:00-05:00",
     "rows": 1
    },
    {
