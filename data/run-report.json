@@ -1,74 +1,74 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 150,
-   "seconds": 4.51
+   "rows": 148,
+   "seconds": 3.49
   },
   "brownell-library": {
    "rows": 21,
-   "seconds": 0.65
+   "seconds": 0.57
   },
   "dnrt": {
    "rows": 18,
-   "seconds": 3.92
+   "seconds": 4.21
   },
   "viva-fall-river": {
-   "rows": 267,
-   "seconds": 17.27
+   "rows": 259,
+   "seconds": 17.93
   },
   "buzzards-bay-brewing": {
    "rows": 2,
-   "seconds": 13.88
+   "seconds": 26.98
   },
   "town-tiverton": {
    "rows": 184,
-   "seconds": 0.5
+   "seconds": 0.56
   },
   "town-dartmouth": {
-   "rows": 23,
-   "seconds": 0.42
+   "rows": 20,
+   "seconds": 0.33
   },
   "town-somerset": {
-   "rows": 5,
-   "seconds": 0.52
+   "rows": 4,
+   "seconds": 0.4
   }
  },
  "errors": {},
- "primary_rows": 520,
+ "primary_rows": 508,
  "dropped": {
   "closure": 5,
   "holiday": 9
  },
- "series": 174,
+ "series": 166,
  "by_town": {
-  "Dartmouth": 30,
-  "Fall River": 96,
-  "Somerset": 2,
+  "Dartmouth": 27,
   "Tiverton": 33,
+  "Fall River": 92,
   "Westport": 1,
-  "Little Compton": 12
+  "Little Compton": 12,
+  "Somerset": 1
  },
  "by_category": {
-  "(unclassified)": 35,
-  "Civic & Town Meetings": 23,
-  "Library & Talks": 31,
-  "Food & Drink": 11,
-  "Family & Children": 9,
-  "Arts & Theatre": 7,
   "Outdoors & Nature": 19,
+  "(unclassified)": 33,
   "Sports & Recreation": 7,
+  "Family & Children": 8,
+  "Food & Drink": 10,
+  "Arts & Theatre": 7,
   "Music": 23,
+  "Library & Talks": 30,
   "Education & Workshops": 4,
   "Markets & Fairs": 1,
   "Volunteering & Causes": 2,
+  "Civic & Town Meetings": 20,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 98,
+  "once": 90,
   "weekly": 34,
-  "daily": 3,
   "monthly": 21,
   "several-a-week": 2,
+  "daily": 3,
   "weekends": 2,
   "irregular": 8,
   "fortnightly": 6
@@ -83,17 +83,17 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 150,
+  "check_total": 148,
   "check_matched": 0,
-  "check_missed_rows": 150,
+  "check_missed_rows": 148,
   "check_missed_series": 57,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
-    "first_start": "2026-10-22T21:00:00-04:00",
-    "rows": 18
+    "first_start": "2026-10-25T21:00:00-04:00",
+    "rows": 17
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -117,13 +117,6 @@
     "rows": 9
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-22T18:30:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Sketchbook Club",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -142,6 +135,13 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-10-28T18:30:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-10-29T18:30:00-04:00",
     "rows": 8
    },
    {

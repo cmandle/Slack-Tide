@@ -1,402 +1,8 @@
 {
- "generated_at": "2026-10-22T22:45:12.823112+00:00",
- "series_count": 174,
- "occurrence_count": 492,
+ "generated_at": "2026-10-23T10:46:35.466128+00:00",
+ "series_count": 166,
+ "occurrence_count": 480,
  "series": [
-  {
-   "id": "35fd19be8d36",
-   "title": "Greater New Bedford Regional Refuse Management District",
-   "venue": "400 Slocum Road Room 309 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-22T08:00:00-04:00",
-   "last_start": "2026-10-22T08:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T08:00:00-04:00",
-     "end": "2026-10-22T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "40d8a5bfc241",
-   "title": "Dartmouth Council on Aging, Board of Directors",
-   "venue": "84 Rogers Street Dr. Bullard Wellness Center Dartmouth MA 02748",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-22T09:00:00-04:00",
-   "last_start": "2026-10-22T09:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T09:00:00-04:00",
-     "end": "2026-10-22T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "0c559eba4d0f",
-   "title": "Board of Assessor's Meeting",
-   "venue": "400 Slocum Rd Rm 213 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-22T10:30:00-04:00",
-   "last_start": "2026-10-22T10:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T10:30:00-04:00",
-     "end": "2026-10-22T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "48d760920948",
-   "title": "Knitting Club",
-   "venue": "Fall River Public Library",
-   "town": "Fall River",
-   "category": "Library & Talks",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/knitting-club/2026-10-22/",
-   "cost": "",
-   "first_start": "2026-10-22T13:00:00-04:00",
-   "last_start": "2026-12-17T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-22T13:00:00-04:00",
-     "end": "2026-10-22T13:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-29T13:00:00-04:00",
-     "end": "2026-10-29T13:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T13:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T13:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T13:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T13:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T13:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T13:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T13:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "c31ac24b3f29",
-   "title": "Zach Guillette Thursdays",
-   "venue": "Canned Heat Craft Beer Co.",
-   "town": "Fall River",
-   "category": "Food & Drink",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/zach-guillette-thursdays/2026-10-22/",
-   "cost": "",
-   "first_start": "2026-10-22T18:00:00-04:00",
-   "last_start": "2026-12-17T18:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-22T18:00:00-04:00",
-     "end": "2026-10-22T21:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-29T18:00:00-04:00",
-     "end": "2026-10-29T21:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T18:00:00-05:00",
-     "end": "2026-11-05T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T18:00:00-05:00",
-     "end": "2026-11-19T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T18:00:00-05:00",
-     "end": "2026-11-26T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T18:00:00-05:00",
-     "end": "2026-12-03T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T18:00:00-05:00",
-     "end": "2026-12-10T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T18:00:00-05:00",
-     "end": "2026-12-17T21:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "38602675fb60",
-   "title": "The Children's Museum of Greater Fall River's 3rd Annual Bingo Night",
-   "venue": "Fall River Elks Lodge #118",
-   "town": "Fall River",
-   "category": "Family & Children",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/the-childrens-museum-of-greater-fall-rivers-3rd-annual-bingo-night/",
-   "cost": "",
-   "first_start": "2026-10-22T18:00:00-04:00",
-   "last_start": "2026-10-22T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T18:00:00-04:00",
-     "end": "2026-10-22T20:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "e6b6a2fa5090",
-   "title": "A Journey Through the Haunted Library!",
-   "venue": "Fall River Public Library",
-   "town": "Fall River",
-   "category": "Library & Talks",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/a-journey-through-the-haunted-library/",
-   "cost": "",
-   "first_start": "2026-10-22T18:00:00-04:00",
-   "last_start": "2026-10-22T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T18:00:00-04:00",
-     "end": "2026-10-22T19:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "65a0ccf01e7a",
-   "title": "Zoning Board of Appeals",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-10-22T18:00:00-04:00",
-   "last_start": "2026-10-22T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T18:00:00-04:00",
-     "end": "2026-10-22T23:59:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "72bf0ede3c6b",
-   "title": "Adult Spelling Bee",
-   "venue": "Canned Heat Craft Beer Co.",
-   "town": "Fall River",
-   "category": "Food & Drink",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/adult-spelling-bee/",
-   "cost": "",
-   "first_start": "2026-10-22T18:30:00-04:00",
-   "last_start": "2026-10-22T18:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T18:30:00-04:00",
-     "end": "2026-10-22T18:30:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "86d8ad9de372",
-   "title": "Deathtrap",
-   "venue": "Little Theater Fire Barn",
-   "town": "Fall River",
-   "category": "Arts & Theatre",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/deathtrap/2026-10-22/",
-   "cost": "",
-   "first_start": "2026-10-22T19:30:00-04:00",
-   "last_start": "2026-10-24T19:30:00-04:00",
-   "count": 3,
-   "cadence": "daily",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T19:30:00-04:00",
-     "end": "2026-10-24T19:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-23T19:30:00-04:00",
-     "end": "2026-10-25T19:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-24T19:30:00-04:00",
-     "end": "2026-10-26T19:30:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "46c64a919d4a",
-   "title": "THURSDAY NIGHT TRIVIA",
-   "venue": "St James Irish Pub",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/thursday-night-trivia/2026-10-22/",
-   "cost": "",
-   "first_start": "2026-10-22T20:00:00-04:00",
-   "last_start": "2026-12-17T20:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-22T20:00:00-04:00",
-     "end": "2026-10-22T22:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-10-29T20:00:00-04:00",
-     "end": "2026-10-29T22:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T20:00:00-05:00",
-     "end": "2026-11-05T22:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-12T22:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T20:00:00-05:00",
-     "end": "2026-11-19T22:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T20:00:00-05:00",
-     "end": "2026-11-26T22:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T20:00:00-05:00",
-     "end": "2026-12-03T22:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T20:00:00-05:00",
-     "end": "2026-12-10T22:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T20:00:00-05:00",
-     "end": "2026-12-17T22:00:00-05:00",
-     "all_day": false
-    }
-   ]
-  },
-  {
-   "id": "751653a5b5d1",
-   "title": "Dar Williams",
-   "venue": "Narrows Center for the Arts",
-   "town": "Fall River",
-   "category": "",
-   "source_id": "viva-fall-river",
-   "url": "https://www.vivafallriver.com/event/dar-williams/",
-   "cost": "",
-   "first_start": "2026-10-22T20:00:00-04:00",
-   "last_start": "2026-10-22T20:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-22T20:00:00-04:00",
-     "end": "2026-10-22T22:00:00-04:00",
-     "all_day": false
-    }
-   ]
-  },
   {
    "id": "4285dd2f896f",
    "title": "Work Party Schedule",
@@ -827,6 +433,33 @@
     {
      "start": "2026-10-23T19:00:00-04:00",
      "end": "2026-10-23T19:00:00-04:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "86d8ad9de372",
+   "title": "Deathtrap",
+   "venue": "Little Theater Fire Barn",
+   "town": "Fall River",
+   "category": "Arts & Theatre",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/deathtrap/2026-10-23/",
+   "cost": "",
+   "first_start": "2026-10-23T19:30:00-04:00",
+   "last_start": "2026-10-24T19:30:00-04:00",
+   "count": 2,
+   "cadence": "daily",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-23T19:30:00-04:00",
+     "end": "2026-10-25T19:30:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-10-24T19:30:00-04:00",
+     "end": "2026-10-26T19:30:00-04:00",
      "all_day": false
     }
    ]
@@ -2994,9 +2627,9 @@
    ]
   },
   {
-   "id": "1ae01501a3f5",
+   "id": "e138a7e83f45",
    "title": "WING WEDNESDAY!!",
-   "venue": "St James Irish Pub",
+   "venue": "Saint James Irish Pub",
    "town": "Fall River",
    "category": "",
    "source_id": "viva-fall-river",
@@ -3376,6 +3009,63 @@
    ]
   },
   {
+   "id": "48d760920948",
+   "title": "Knitting Club",
+   "venue": "Fall River Public Library",
+   "town": "Fall River",
+   "category": "Library & Talks",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/knitting-club/2026-10-29/",
+   "cost": "",
+   "first_start": "2026-10-29T13:00:00-04:00",
+   "last_start": "2026-12-17T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T13:00:00-04:00",
+     "end": "2026-10-29T13:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T13:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T13:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "dd50f7398c80",
    "title": "Bingo!",
    "venue": "",
@@ -3490,6 +3180,63 @@
    ]
   },
   {
+   "id": "c31ac24b3f29",
+   "title": "Zach Guillette Thursdays",
+   "venue": "Canned Heat Craft Beer Co.",
+   "town": "Fall River",
+   "category": "Food & Drink",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/zach-guillette-thursdays/2026-10-29/",
+   "cost": "",
+   "first_start": "2026-10-29T18:00:00-04:00",
+   "last_start": "2026-12-17T18:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T18:00:00-04:00",
+     "end": "2026-10-29T21:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T18:00:00-05:00",
+     "end": "2026-11-05T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T18:00:00-05:00",
+     "end": "2026-11-19T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T18:00:00-05:00",
+     "end": "2026-11-26T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T18:00:00-05:00",
+     "end": "2026-12-03T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T18:00:00-05:00",
+     "end": "2026-12-17T21:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
    "id": "f73bbc49e92e",
    "title": "The Banned Book Club",
    "venue": "Fall River Public Library",
@@ -3566,6 +3313,63 @@
     {
      "start": "2026-11-26T18:30:00-05:00",
      "end": "2026-11-26T20:00:00-05:00",
+     "all_day": false
+    }
+   ]
+  },
+  {
+   "id": "e69b5d676110",
+   "title": "THURSDAY NIGHT TRIVIA",
+   "venue": "Saint James Irish Pub",
+   "town": "Fall River",
+   "category": "",
+   "source_id": "viva-fall-river",
+   "url": "https://www.vivafallriver.com/event/thursday-night-trivia/2026-10-29/",
+   "cost": "",
+   "first_start": "2026-10-29T20:00:00-04:00",
+   "last_start": "2026-12-17T20:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-10-29T20:00:00-04:00",
+     "end": "2026-10-29T22:00:00-04:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-05T20:00:00-05:00",
+     "end": "2026-11-05T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-12T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T20:00:00-05:00",
+     "end": "2026-11-19T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T20:00:00-05:00",
+     "end": "2026-11-26T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-03T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T20:00:00-05:00",
+     "end": "2026-12-10T22:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": "2026-12-17T22:00:00-05:00",
      "all_day": false
     }
    ]
