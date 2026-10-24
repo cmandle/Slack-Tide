@@ -1,43 +1,43 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 147,
-   "seconds": 3.61
+   "rows": 149,
+   "seconds": 3.96
   },
   "brownell-library": {
    "rows": 23,
-   "seconds": 0.83
+   "seconds": 0.76
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 4.02
+   "seconds": 3.88
   },
   "viva-fall-river": {
-   "rows": 258,
-   "seconds": 19.16
+   "rows": 261,
+   "seconds": 21.21
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 5.74
+   "seconds": 5.13
   },
   "town-tiverton": {
-   "rows": 186,
-   "seconds": 0.73
+   "rows": 188,
+   "seconds": 0.69
   },
   "town-dartmouth": {
-   "rows": 23,
-   "seconds": 0.55
+   "rows": 21,
+   "seconds": 0.41
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.56
+   "seconds": 0.61
   }
  },
  "errors": {},
- "primary_rows": 512,
+ "primary_rows": 515,
  "dropped": {
-  "closure": 5,
-  "holiday": 8
+  "closure": 4,
+  "holiday": 7
  },
  "series": 168,
  "by_town": {
@@ -83,9 +83,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 147,
+  "check_total": 149,
   "check_matched": 0,
-  "check_missed_rows": 147,
+  "check_missed_rows": 149,
   "check_missed_series": 57,
   "check_missed": [
    {
@@ -94,6 +94,13 @@
     "town": "New Bedford",
     "first_start": "2026-10-25T21:00:00-04:00",
     "rows": 17
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-10-28T18:30:00-04:00",
+    "rows": 9
    },
    {
     "title": "KidZone",
@@ -124,11 +131,11 @@
     "rows": 9
    },
    {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
     "town": "New Bedford",
-    "first_start": "2026-10-28T18:30:00-04:00",
-    "rows": 8
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 9
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -149,13 +156,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-30T18:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Universal Participation: Welcome to Yoga",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-28T18:00:00-04:00",
     "rows": 8
    },
    {

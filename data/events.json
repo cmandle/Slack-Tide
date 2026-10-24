@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-24T10:45:50.817209+00:00",
+ "generated_at": "2026-10-24T22:43:26.453982+00:00",
  "series_count": 168,
- "occurrence_count": 484,
+ "occurrence_count": 489,
  "series": [
   {
    "id": "589f68b1eb72",
@@ -2024,8 +2024,8 @@
    "url": "https://www.vivafallriver.com/event/kids-eat-free-on-wednesdays/2026-10-28/",
    "cost": "",
    "first_start": "2026-10-28T07:00:00-04:00",
-   "last_start": "2026-12-16T07:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-23T07:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2067,6 +2067,11 @@
     {
      "start": "2026-12-16T07:00:00-05:00",
      "end": "2026-12-16T23:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T07:00:00-05:00",
+     "end": "2026-12-23T23:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2172,8 +2177,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-28T12:15:00-04:00",
-   "last_start": "2026-12-16T12:15:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-23T12:15:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2216,6 +2221,11 @@
      "start": "2026-12-16T12:15:00-05:00",
      "end": "2026-12-16T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-23T12:15:00-05:00",
+     "end": "2026-12-23T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2229,8 +2239,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-28T12:30:00-04:00",
-   "last_start": "2026-12-16T12:30:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-23T12:30:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2273,6 +2283,11 @@
      "start": "2026-12-16T12:30:00-05:00",
      "end": "2026-12-16T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-23T12:30:00-05:00",
+     "end": "2026-12-23T15:00:00-05:00",
+     "all_day": false
     }
    ]
   },
@@ -2308,8 +2323,8 @@
    "url": "https://www.vivafallriver.com/event/wing-wednesday/2026-10-28/",
    "cost": "",
    "first_start": "2026-10-28T18:00:00-04:00",
-   "last_start": "2026-12-16T18:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-23T18:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -2351,6 +2366,11 @@
     {
      "start": "2026-12-16T18:00:00-05:00",
      "end": "2026-12-17T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T18:00:00-05:00",
+     "end": "2026-12-24T00:00:00-05:00",
      "all_day": false
     }
    ]
@@ -2429,8 +2449,8 @@
    "url": "https://www.vivafallriver.com/event/magic-the-gathering-commander-club/2026-10-28/",
    "cost": "",
    "first_start": "2026-10-28T18:00:00-04:00",
-   "last_start": "2026-12-09T18:00:00-05:00",
-   "count": 4,
+   "last_start": "2026-12-23T18:00:00-05:00",
+   "count": 5,
    "cadence": "fortnightly",
    "weekday": 2,
    "occurrences": [
@@ -2452,6 +2472,11 @@
     {
      "start": "2026-12-09T18:00:00-05:00",
      "end": "2026-12-09T19:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T18:00:00-05:00",
+     "end": "2026-12-23T19:30:00-05:00",
      "all_day": false
     }
    ]
