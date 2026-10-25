@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Week ahead, option A, cards, phone</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+body{margin:0;font-family:'Archivo',system-ui,sans-serif;color:#1A1A1A}
+a{color:#1A1A1A}a:hover{color:#FF6B6C}
+.mono{font-family:'IBM Plex Mono',Menlo,monospace}
+</style>
+</helmet>
+<div style="width: 390px; height: 1400px; box-sizing: border-box; overflow: hidden; background-color: #F6F1EE; background-image: linear-gradient(90deg, transparent 19px, #F3A6A4 19px, #F3A6A4 20.5px, transparent 20.5px, transparent 369.5px, #F3A6A4 369.5px, #F3A6A4 371px, transparent 371px), linear-gradient(#C7D6DE 1px, transparent 1px), linear-gradient(90deg, #C7D6DE 1px, transparent 1px); background-size: 100% 100%, 28px 28px, 28px 28px; background-repeat: no-repeat, repeat, repeat; padding: 16px 28px 18px 28px; display: flex; flex-direction: column">
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h2 class="mono" style="margin: 0; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; height: 28px; line-height: 28px; border-bottom: 2px solid #1A1A1A; display: flex; justify-content: space-between"><span>The week ahead</span><span>Oct 26 to Nov 1</span></h2>
+
+    <sc-for list="{{week}}" as="e" hint-placeholder-count="12">
+      <a href="#event" style="display: flex; text-decoration: none; color: #1A1A1A; background: #F6F1EE; border: 1px solid #1A1A1A; min-height: 84px">
+        <div style="flex: 0 0 76px; background: #FFEF6B; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 6px 4px; text-align: center">
+          <span style="font-size: 13px; font-weight: 700; line-height: 1">{{e.day}}</span>
+          <span class="mono" style="font-size: 10px; line-height: 1.2">{{e.time}}</span>
+        </div>
+        <div style="flex: 1; min-width: 0; padding: 9px 10px; display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 14px; font-weight: 700; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{e.title}}</span>
+          <span class="mono" style="font-size: 10px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{e.where}}</span>
+          <span style="display: flex; gap: 5px; margin-top: 2px">
+            <span class="mono" style="font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 6px; border: 1px solid #1A1A1A; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{e.town}}</span>
+          </span>
+        </div>
+        <span class="mono" style="flex: 0 0 24px; background: {{e.color}}; display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase">{{e.cat}}</span>
+      </a>
+    </sc-for>
+
+    <a href="#month" class="mono" style="align-self: flex-start; font-size: 11px; line-height: 28px">See the whole month →</a>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const stock = { music: '#FF6B6C', arts: '#86B2CB', outdoors: '#6CCB77', family: '#FFEF6B', library: '#C9A7E3', markets: '#FFA657', civic: '#B8C7D1' };
+    const label = k => k[0].toUpperCase() + k.slice(1);
+    const week = [
+      { day: 'MON 26', time: '9:00 AM', title: 'Women’s walk', where: 'Slocum’s River Reserve', town: 'Dartmouth', k: 'outdoors' },
+      { day: 'MON 26', time: '6:30 PM', title: 'Knitting circle', where: 'Wareham Free Library', town: 'Wareham', k: 'library' },
+      { day: 'TUE 27', time: '10:30 AM', title: 'Toddler story hour', where: 'Elizabeth Taber Library', town: 'Marion', k: 'library' },
+      { day: 'TUE 27', time: '7:00 PM', title: 'Select Board meeting', where: 'Town Hall', town: 'Rochester', k: 'civic' },
+      { day: 'WED 28', time: '5:30 PM', title: 'Open studio night', where: 'Hatch Street Studios', town: 'New Bedford', k: 'arts' },
+      { day: 'THU 29', time: '7:00 PM', title: 'Songwriters in the round', where: 'Narrows Center for the Arts', town: 'Fall River', k: 'music' },
+      { day: 'FRI 30', time: '6:30 PM', title: 'Halloween lantern walk', where: 'Town green', town: 'Marion', k: 'family' },
+      { day: 'SAT 31', time: '9:00 AM', title: 'Farmers market', where: 'Town Hall lot', town: 'Wareham', k: 'markets' },
+      { day: 'SAT 31', time: '9:00 AM', title: 'Trail stewards work morning', where: 'Destruction Brook Woods', town: 'Dartmouth', k: 'outdoors' },
+      { day: 'SAT 31', time: '7:00 PM', title: 'Harvest dance', where: 'Grange hall', town: 'Little Compton', k: 'music' },
+      { day: 'SUN NOV 1', time: '8:00 AM', title: 'Harbor walk: winter birds', where: 'Ned’s Point', town: 'Mattapoisett', k: 'outdoors' },
+      { day: 'SUN NOV 1', time: '1:00 PM', title: 'Harvest tasting', where: 'Main Street', town: 'Little Compton', k: 'markets' }
+    ].map(e => ({ ...e, cat: label(e.k), color: stock[e.k] }));
+    return { week };
+  }
+}
+</script>
+</body>
+</html>
