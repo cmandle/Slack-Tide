@@ -38,6 +38,31 @@ def clean_text(s: str) -> str:
     s = strip_html(s).translate(_PUNCT)
     return _WS.sub(" ", s).strip()
 
+_SMALL_WORDS = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "with"}
+# Two-letter words that are words, not acronyms: capitalised like any other word.
+_TWO_LETTER_WORDS = {"is", "it", "be", "if", "so", "up", "no", "my", "we", "us", "me", "do", "go", "vs", "am", "he", "oh"}
+
+def uncap(title: str) -> str:
+    """Theatre marketing shouts: 'MYSTIC PIZZA: A NEW MUSICAL', 'GET THE LED OUT'. When a title
+    has no lowercase letter at all, words of four letters or more are title-cased and the small
+    words lowered; short words stay as they are, so 'NBSO' and 'DJ' survive. Mixed-case titles
+    are left alone."""
+    letters = [c for c in title if c.isalpha()]
+    words = title.split(" ")
+    if len(letters) < 4 or len(words) < 2 or any(c.islower() for c in letters):
+        return title          # too short to judge, a lone acronym ("NBSO"), or already mixed case
+    out = []
+    for i, w in enumerate(words):
+        core = re.sub(r"[^A-Za-z]", "", w)
+        after_break = i == 0 or words[i - 1].endswith((":", "-", "!", "?", "."))
+        if core.lower() in _SMALL_WORDS and not after_break:
+            out.append(w.lower())
+        elif len(core) >= 3 or core.lower() in _SMALL_WORDS or core.lower() in _TWO_LETTER_WORDS:
+            out.append("'".join(p.capitalize() for p in w.split("'")))
+        else:
+            out.append(w)     # other one- and two-letter words stay: DJ, TV, NB
+    return " ".join(out)
+
 def venue_key(v: str) -> str:
     v = clean_text(v).lower()
     v = _VENUE_STRIP.sub("", v)
@@ -137,13 +162,17 @@ def classify(title: str, venue: str, description: str = "") -> str:
     return ""
 
 def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
-              default_venue_by_source: dict[str, str] | None = None) -> list[Occurrence]:
+              default_venue_by_source: dict[str, str] | None = None,
+              default_category_by_source: dict[str, str] | None = None) -> list[Occurrence]:
     """Clean every occurrence in place. `default_venue_by_source` fills the venue for
-    single-venue sources whose feed carries none (Brownell Library sends "venue": [])."""
+    single-venue sources whose feed carries none (Brownell Library sends "venue": []).
+    `default_category_by_source` is our own call for a single-purpose venue (a theatre is
+    Arts & Theatre) when the rule classifier finds nothing; it is never the source's category."""
     canon = VenueCanon()
     default_venue_by_source = default_venue_by_source or {}
+    default_category_by_source = default_category_by_source or {}
     for o in occs:
-        o.title = clean_text(o.title)
+        o.title = uncap(clean_text(o.title))
         o.description = clean_text(o.description)
         o.venue_raw = clean_text(o.venue_raw) or default_venue_by_source.get(o.source_id, "")
         o.venue = canon.resolve(o.venue_raw)
@@ -157,5 +186,5 @@ def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
         if not o.title:
             o.dropped = "no title"
             continue
-        o.category = classify(o.title, o.venue, o.description)
+        o.category = classify(o.title, o.venue, o.description) or default_category_by_source.get(o.source_id, "")
     return occs

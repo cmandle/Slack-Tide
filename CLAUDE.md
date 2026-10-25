@@ -10,13 +10,14 @@ Owner: the nonprofit's GitHub account `cmandle`. Collaborator: `loucommando` (Lu
 
 ## Where things are
 
-- `pipeline/` Python 3.11+ package `slacktide`. Entry point `slacktide run`. Tests: `cd pipeline && pytest` (21 offline tests, fixtures shaped like real responses).
-- `pipeline/slacktide/sources.yaml` the source registry. Add sources here, never in code. `role: check` sources are used for reconciliation only and never published.
-- `data/` pipeline output, committed by the scheduled workflow.
+- `pipeline/` Python 3.11+ package `slacktide`. Entry point `slacktide run`; also `build`, `pending`, `approve`, `reject`, `apply`, `digest`. Tests: `cd pipeline && pytest` (39 offline tests, fixtures shaped like real responses).
+- `pipeline/slacktide/sources.yaml` the source registry. Add sources here, never in code. `role: check` sources are used for reconciliation only and never published. `kind: html` sources carry their CSS selectors in the entry (see `connectors/html.py`).
+- `approvals.yaml` the approver's decisions, one entry per series id, appended by the review page at `/review/` or by `slacktide approve` and `slacktide reject`. The last entry for an id wins. The site build publishes only approved series.
+- `data/` pipeline output, committed by the scheduled workflow: `events.json` (every series with its approval state), `pending.json` (the review queue), `run-report.json`, `tide.json`.
 - `preview/` four design mockups (Discover, Calendar, Map, Event). Served at `/preview/` on GitHub Pages with a noindex tag and a banner. These are not the site, and their look is superseded by `design/`.
 - `design/` the current design direction. Read `design/DESIGN.md` before any work on `site/` templates or CSS. `tokens.css` holds the values, `reference/` the flattened pages and screenshots, `art/` the card illustration set (three scenes per category family plus three general; the card image whenever a series has no photo), `canvas/` the artboard sources from the design canvas, `tools/flatten.py` regenerates `reference/` from `canvas/` and `tools/make_art.py` regenerates `art/`.
-- `site/` the generated static site, not yet built.
-- `.github/workflows/ingest.yml` runs tests and the pipeline twice daily and commits `data/`. `pages.yml` deploys `preview/` and `site/`.
+- `site/` the generated static site, written by `slacktide build` from `data/`. The ingest workflow rebuilds it on every run, so approvals reach the site without a developer. `/review/` is the approver's queue (noindex), `/add/` the public submission form.
+- `.github/workflows/ingest.yml` runs tests, the pipeline and the site build twice daily and commits `data/` and `site/`. `review.yml` opens the Sunday review issue. `pages.yml` deploys `preview/` and `site/`.
 
 Companion documents live in the Claude Project "Coco's Project": the project brief (phases, decisions log, measured findings), the Phase 0 source tracker (135 researched organisations with verified feed URLs), and the design canvas.
 
@@ -30,10 +31,16 @@ Companion documents live in the Claude Project "Coco's Project": the project bri
 6. Municipal iCal feeds carry public holidays as events. `config.HOLIDAY_TITLES` drops them. Category IDs on CivicPlus must be discovered per town; most return empty.
 7. Venue canonicalisation is fuzzy (`rapidfuzz`, threshold 92) because sources spell the same place several ways. ZIP codes appear in city fields; `config.ZIP_TO_TOWN` resolves them.
 8. The Phase 1 gate: fifty DISTINCT events or series on a typical weekend across at least five towns, after holiday filtering and series collapsing. Rows are not the unit.
+9. No paid scraping services (decided 2026-10-25; replaces the Diffbot and Firecrawl plan). Venues with no feed are read by the `html` connector when their events page is server-rendered HTML. Venues that draw events in the browser, or through a booking widget (the Buzzards Bay Coalition uses FareHarbor), get a conversation asking for a feed, not a headless browser.
+10. Community aggregators are check sources, never published (decided 2026-10-25, extending decision 3 to Viva Fall River). Venues and organisations are ingested directly from their own sites. Measured before the flip: Viva Fall River supplied 103 of 185 series and 19 of the 20 weekend-gate series, so Fall River coverage falls until its venues (Fall River Public Library via WhoFi, Narrows Center, Canned Heat, Primo, Once Upon a Bookstore) have direct connectors. The check role's "missed" list is that to-do list.
+11. Collection is daily, approval is weekly (decided 2026-10-25). The ingest workflow keeps running twice a day; the approver reviews once a week, Sunday evening, from the queue at `/review/`. The unit of approval is the series: new dates on an approved series publish without a decision, a changed title or venue makes a new series id and comes back to the queue, and rejected series stay rejected. A source may carry `review: auto` in `sources.yaml` to publish without review once it has earned trust; none does yet. Series starting within seven days sit at the top of the queue. Every decision is a line in `approvals.yaml` with a name and a date.
+12. The submission API is parked (2026-10-25). Until Phase 2, organisers use the form at `/add/`, which posts to a Google Form when one is configured on the `submissions` source and falls back to email otherwise; the `sheet` connector reads the linked spreadsheet into the review queue. The message shape designed for the API is the form's field list, so the endpoint, when it comes, opens onto the same queue.
 
 ## Verified sources (live fetches, 2026-09-20 and 2026-10-11)
 
-WordPress Events Calendar REST (`/wp-json/tribe/events/v1/events`): explorenewbedford.org (1,020 future events, check role), brownell-libraryri.org, dnrt.org, vivafallriver.com, buzzardsbrew.com. Buzzards Bay Brewing leaks ~3,400 bytes of PHP warnings before the JSON body; `tribe.parse_json` skips to the first brace.
+WordPress Events Calendar REST (`/wp-json/tribe/events/v1/events`): explorenewbedford.org (1,020 future events, check role), brownell-libraryri.org, dnrt.org, vivafallriver.com (check role since 2026-10-25), buzzardsbrew.com. Buzzards Bay Brewing leaks ~3,400 bytes of PHP warnings before the JSON body; `tribe.parse_json` skips to the first brace. ahanewbedford.org has the plugin installed but only three 2022 test events in it; the AHA Night programme is published as pages.
+
+Server-rendered HTML (the `html` connector): zeiterion.org/events, a Webflow listing of 51 upcoming events with weekday, month, day and time in plain markup, two-date shows included (probed 2026-10-25). savebuzzardsbay.org is Craft CMS with no feed; its Bay Adventures dates live in a FareHarbor booking widget, so only the signature events are readable. ciscokitchenbar.com (BentoBox) describes weekly specials in prose with no dates.
 
 CivicPlus iCal (`/common/modules/iCalendar/iCalendar.aspx?catID={cat}&feed=calendar`): Tiverton (cats 14, 24), Dartmouth (14, 24), Somerset (14, 23). Acushnet, Freetown, Mattapoisett, Marion and Wareham run CivicPlus too and are expected to work with discovered catIDs.
 
@@ -53,7 +60,9 @@ Steps 1 and 2 were completed on 2026-10-11: first live run, fixes, push, Pages, 
 4. WhoFi connector.
 5. Generate `site/` from `data/events.json`, matching `design/DESIGN.md` and `design/tokens.css` (Revision B, 18 October 2026: paper and grid, Archivo and IBM Plex Mono, Fumayo palette, three section tabs). The palette and type named for `preview/` no longer apply. The approval step (a person approves what goes live) must be designed first; it has its own issue.
 6. Haiku batch classifier replacing the rule classifier.
-7. Diffbot free tier for Tier 2 sources with no feed; Firecrawl as fallback.
+7. Was Diffbot and Firecrawl; dropped by decision 9. Sources with no feed go through the `html` connector (Zeiterion first, 2026-10-25) or a request to the venue for a feed.
+8. Direct Fall River connectors to replace what the Viva Fall River check source used to supply (decision 10).
+9. Configure the Google Form behind `/add/` and the published sheet behind the `submissions` source (decision 12).
 
 Measured on the first live run, 2026-10-11: 527 rows from eight sources, 156 series across seven towns; weekend gate 8 series across 3 towns against the target of 50 across 5; the 56 series Explore New Bedford has that we lack are the New Bedford venue connectors to build next.
 
@@ -73,7 +82,7 @@ Sentence case in all copy. No em dashes. Venue names are real South Coast organi
 
 **Workflow files.** `.github/workflows/ingest.yml` and `pages.yml` could not be written by the Cowork session (protected path) and were delivered as downloads. Confirm both exist before the first push. `ingest.yml` needs `contents: write`, which it declares, and the repository's Actions settings must allow workflows to write (Settings, Actions, General, Workflow permissions: "Read and write permissions"). Trigger `ingest.yml` manually from the Actions tab once to confirm it runs on GitHub's machines, not only locally.
 
-**Secrets.** None are needed for Phase 1. When the Haiku classifier and Diffbot connector arrive, their keys go in Settings, Secrets and variables, Actions, as `ANTHROPIC_API_KEY` and `DIFFBOT_TOKEN`, read by the workflow as `${{ secrets.NAME }}`. Locally they go in `pipeline/.env`, which `.gitignore` already excludes. Never put a key in a file that is committed.
+**Secrets.** None are needed for Phase 1. When the Haiku classifier arrives, its key goes in Settings, Secrets and variables, Actions, as `ANTHROPIC_API_KEY`, read by the workflow as `${{ secrets.NAME }}`. The review page needs no secret in the repository: the approver pastes a fine-grained personal access token (this repository only, Contents read and write, Actions read and write) into the page once, and it stays in that browser. Locally they go in `pipeline/.env`, which `.gitignore` already excludes. Never put a key in a file that is committed.
 
 **ICDSoft.** Holds the domain registration and will hold a hosting account under the nonprofit, separate from any personal account. Its MySQL allows remote connections per user and is the Phase 2 database candidate alongside Supabase. For Phase 1 it provides email at the domain and DNS; nothing is deployed there.
 
@@ -81,4 +90,4 @@ Sentence case in all copy. No em dashes. Venue names are real South Coast organi
 
 **People.** A daily approver is identified; name and contact to be added here when confirmed. The approver, not the developer, decides what publishes.
 
-**Do not.** Ingest Facebook, Instagram, Meetup or Nextdoor. Store or republish results from Brave Search or Exa. Commit anything from `data/` by hand; the workflow owns that folder. Rebuild the design in a framework. Treat Explore New Bedford as a source of record.
+**Do not.** Ingest Facebook, Instagram, Meetup or Nextdoor. Store or republish results from Brave Search or Exa. Pay for a scraping service. Commit anything from `data/` or `site/` by hand; the workflow owns those folders. Rebuild the design in a framework. Treat Explore New Bedford or Viva Fall River as a source of record.

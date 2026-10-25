@@ -11,12 +11,12 @@ from slacktide import config, build, tide
 TZ = ZoneInfo("America/New_York")
 NOW = datetime(2098, 12, 31, 12, 0, tzinfo=TZ)   # a Wednesday
 
-def series(title, starts, town="Fall River", category="Music", cadence="once", source="viva-fall-river", all_day=False, sid=None):
+def series(title, starts, town="Fall River", category="Music", cadence="once", source="viva-fall-river", all_day=False, sid=None, approval="approved"):
     occ = [{"start": s.isoformat(), "end": (s + timedelta(hours=2)).isoformat(), "all_day": all_day} for s in starts]
     return {"id": sid or title.lower().replace(" ", "-"), "title": title, "venue": "Narrows Center for the Arts",
             "town": town, "category": category, "source_id": source, "url": "https://example.org/" + title,
             "cost": "", "first_start": occ[0]["start"], "last_start": occ[-1]["start"], "count": len(occ),
-            "cadence": cadence, "weekday": None, "occurrences": occ}
+            "cadence": cadence, "weekday": None, "occurrences": occ, "summary": "", "approval": approval, "decided_by": ""}
 
 @pytest.fixture
 def data(tmp_path):
@@ -29,6 +29,8 @@ def data(tmp_path):
         series("Next weekend fair", [today + timedelta(days=4)], town="Dartmouth", category="Markets & Fairs", all_day=True, source="dnrt"),
         series("Too far out", [today + timedelta(days=8)]),
         series("Unclassified talk", [today + timedelta(days=1, hours=10)], category="", town="Little Compton", source="brownell-library"),
+        series("Waiting for review", [today + timedelta(days=2, hours=20)], town="New Bedford", source="zeiterion", approval="pending"),
+        series("Rejected gig", [today.replace(hour=21)], town="New Bedford", source="zeiterion", approval="rejected"),
     ]
     payload = {"generated_at": NOW.isoformat(), "series_count": len(rows), "occurrence_count": sum(r["count"] for r in rows), "series": rows}
     (tmp_path / "events.json").write_text(json.dumps(payload), encoding="utf-8")
@@ -36,7 +38,7 @@ def data(tmp_path):
 
 def test_select_tonight_and_week(data):
     events = build.load_events(data / "events.json")
-    tonight, week = build.select(events["series"], NOW)
+    tonight, week = build.select(build.published(events["series"]), NOW)
     assert [r["series"]["title"] for r in tonight] == ["Tonight gig"]
     titles = {d: [r["series"]["title"] for r in rows] for d, rows in week.items() if rows}
     assert len(week) == 7 and set(sum(titles.values(), [])) == {"Weekly bingo", "Next weekend fair", "Unclassified talk"}
@@ -58,15 +60,30 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert 'data-source="viva-fall-river"' in html and 'class="card-prov" title="Viva Fall River">Read by a person' in html
     assert "Tide data unavailable" in html and 'data-state="unavailable"' in html
     assert "Too far out" not in html and "Already over" not in html
+    assert "Waiting for review" not in html and "Rejected gig" not in html   # decision 11: only approved series publish
+    assert r["published"] == 6 and r["pending"] == 1
     assert "FRI 2 · 6P" in html and "FRI 2 · 6:00 PM" in html   # phone and desktop forms of the when column
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
-    for sub in ("groups", "volunteer", "calendar", "map", "add"):
+    for sub in ("groups", "volunteer", "calendar", "map"):
         p = out / sub / "index.html"
         assert p.exists() and "is coming" in p.read_text(encoding="utf-8")
-    for a in ("tokens.css", "site.css", "site.js"):
+    for a in ("tokens.css", "site.css", "site.js", "review.js"):
         assert (out / "assets" / a).exists()
     assert "—" not in html   # no em dashes in public copy
+    # The call to action opens the pop-up form, which is the same form as /add/.
+    assert 'data-dialog="add-dialog"' in html and '<dialog class="add-dialog" id="add-dialog"' in html
+    add = (out / "add" / "index.html").read_text(encoding="utf-8")
+    assert 'class="add-form"' in add and 'name="website"' in add and "robots" not in add
+    for t in config.TOWNS:
+        assert f'<option value="{t}">{t}</option>' in add
+    assert 'data-action=""' in add and 'action="mailto:hello@slack-tide.org"' in add   # no Google Form configured yet
+    # The review queue: noindex, one card per pending series, the saved decision metadata on each.
+    review = (out / "review" / "index.html").read_text(encoding="utf-8")
+    assert 'name="robots" content="noindex' in review and 'data-repo="cmandle/Slack-Tide"' in review
+    assert review.count('class="rev"') == 1 and 'data-id="waiting-for-review"' in review and 'data-decide="approved"' in review
+    assert "Rejected gig" not in review and "Tonight gig" not in review
+    assert "review.js" in review and "—" not in review
 
 def test_card_art_by_family_and_stable_hash(data, tmp_path, monkeypatch):
     art = tmp_path / "design" / "art"

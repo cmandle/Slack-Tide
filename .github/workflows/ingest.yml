@@ -1,12 +1,17 @@
-# Runs the tests and the pipeline twice a day and commits data/. The workflow owns data/;
-# nobody commits that folder by hand (see CLAUDE.md). Needs Settings > Actions > General >
-# Workflow permissions = "Read and write permissions" in addition to the declaration below.
+# Runs the tests, the pipeline and the site build twice a day and commits data/ and site/. The
+# workflow owns both folders; nobody commits them by hand (see CLAUDE.md). Needs Settings >
+# Actions > General > Workflow permissions = "Read and write permissions" in addition to the
+# declaration below. The review page starts this workflow by hand after a round of approvals.
 name: Ingest events
 
 on:
   schedule:
     - cron: "17 10,22 * * *"   # 10:17 and 22:17 UTC, early morning and evening Eastern
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "approvals.yaml"       # a decision committed by hand rebuilds the site without waiting
 
 permissions:
   contents: write
@@ -37,14 +42,19 @@ jobs:
       - name: Run the pipeline against live sources
         run: slacktide run --no-cache
 
-      - name: Commit data/
+      - name: Build the site from data/
+        run: slacktide build
+
+      - name: Commit data/ and site/
         run: |
           git config user.name "slack-tide-bot"
           git config user.email "bot@slack-tide.org"
-          git add data/events.json data/run-report.json data/tide.json
+          git add data/events.json data/pending.json data/run-report.json data/tide.json site
           if git diff --cached --quiet; then
-            echo "No changes in data/"
+            echo "No changes in data/ or site/"
             exit 0
           fi
           git commit -m "Ingest $(date -u +%Y-%m-%dT%H:%MZ)"
+          # The approver may have committed approvals.yaml meanwhile; take it before pushing.
+          git pull --rebase origin main
           git push

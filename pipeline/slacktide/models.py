@@ -41,6 +41,9 @@ class Series:
     cadence: str               # once | daily | weekdays | weekends | weekly | several-a-week | fortnightly | monthly | irregular
     weekday: Optional[int]     # 0 = Monday, for weekly series
     occurrences: list[dict]    # [{start, end, all_day}]
+    summary: str = ""          # the first occurrence's description, trimmed, for the reviewer
+    approval: str = "pending"  # pending | approved | rejected, set by approval.apply
+    decided_by: str = ""       # the approver's name, or "source trust"
 
     def to_dict(self) -> dict:
         d = asdict(self)

@@ -47,6 +47,52 @@
     });
   }
 
+  /* Add your event: the call to action opens the pop-up where <dialog> exists, else follows the link. */
+  var dialog = document.getElementById("add-dialog");
+  if (dialog && typeof dialog.showModal === "function") {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-dialog='add-dialog']"), function (cta) {
+      cta.addEventListener("click", function (e) { e.preventDefault(); dialog.showModal(); });
+    });
+    Array.prototype.forEach.call(dialog.querySelectorAll("[data-close]"), function (b) { b.addEventListener("click", function () { dialog.close(); }); });
+    dialog.addEventListener("click", function (e) { if (e.target === dialog) dialog.close(); });
+  }
+
+  /* The form posts to a Google Form when one is configured (data-action), else it opens the
+     visitor's email client with the details filled in. The hidden "website" field catches bots. */
+  function formData(form) {
+    var d = {};
+    ["title", "date", "start", "end", "venue", "town", "url", "cost", "description", "name", "email"].forEach(function (k) {
+      var el = form.elements[k]; d[k] = el ? String(el.value || "").trim() : "";
+    });
+    return d;
+  }
+  function mailtoFor(form, d) {
+    var lines = ["Event: " + d.title, "Date: " + d.date, "Start: " + d.start, "End: " + d.end, "Venue: " + d.venue,
+                 "Town: " + d.town, "Link: " + d.url, "Cost: " + d.cost, "", d.description, "", "From: " + d.name + " <" + d.email + ">"];
+    return form.getAttribute("data-contact") + "?subject=" + encodeURIComponent("Event for Slack Tide: " + d.title) +
+           "&body=" + encodeURIComponent(lines.join("\n"));
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("form.add-form"), function (form) {
+    var statusEl = form.querySelector(".form-status");
+    function say(msg, bad) { if (statusEl) { statusEl.textContent = msg; statusEl.classList.toggle("is-bad", !!bad); } }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.elements.website && form.elements.website.value) { say("Thank you. We will read it on Sunday."); form.reset(); return; }
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var d = formData(form);
+      var action = form.getAttribute("data-action");
+      if (!action) { window.location.href = mailtoFor(form, d); say("Your email client should open with the details filled in."); return; }
+      var fields = {};
+      try { fields = JSON.parse(form.getAttribute("data-fields") || "{}"); } catch (err) {}
+      var body = new FormData();
+      Object.keys(fields).forEach(function (k) { if (d[k] !== undefined) body.append(fields[k], d[k]); });
+      say("Sending…");
+      fetch(action, { method: "POST", mode: "no-cors", body: body })
+        .then(function () { say("Thank you. A person reads every submission, usually on Sunday."); form.reset(); })
+        .catch(function () { say("That did not go through. Email us instead: " + form.getAttribute("data-contact").replace("mailto:", ""), true); });
+    });
+  });
+
   /* Tide panel */
   var panel = document.getElementById("tide");
   var dataEl = document.getElementById("tide-data");
