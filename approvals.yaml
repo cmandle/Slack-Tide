@@ -1,0 +1,373 @@
+# Approval decisions. One entry per series id; the last entry for an id wins.
+# Written by the review page (/review/) and by `slacktide approve` / `slacktide reject`.
+# Append, never rewrite history: a change of mind is a new entry below the old one.
+# title and venue are for the reader; matching is by id alone.
+- id: ee5aab63f527
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Functional Fitness
+  note: On the site before the approval step existed, 2026-10-25
+- id: 5a6902aea5cc
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: TOPS
+  note: On the site before the approval step existed, 2026-10-25
+- id: eb9c80990cb1
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Quilting for Charity
+  note: On the site before the approval step existed, 2026-10-25
+- id: a04898c37ccd
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Senior Fitness with Terri
+  note: On the site before the approval step existed, 2026-10-25
+- id: bd3e7d21ebe8
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: PITCH~ High Lo Jack
+  note: On the site before the approval step existed, 2026-10-25
+- id: 9ee555514f59
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Knitting Group
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: bc68ff454c8d
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Learn Ukulele
+  note: On the site before the approval step existed, 2026-10-25
+- id: 06e8dc2b3d7b
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Open Space & Land Preservation Meeting
+  venue: 34 Roosevelt Avenue Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 94b85c808cc6
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Library Board of Trustees Meeting
+  note: On the site before the approval step existed, 2026-10-25
+- id: 3c769e6096a9
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Chair Yoga
+  note: On the site before the approval step existed, 2026-10-25
+- id: 8fc3df99b704
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Drums Alive!
+  note: On the site before the approval step existed, 2026-10-25
+- id: 53a06499338a
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Conservation Commission Meeting
+  venue: 34 Roosevelt Avenue Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 7bb4bc5fcf8f
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Art Class
+  note: On the site before the approval step existed, 2026-10-25
+- id: 5c5cfeee6755
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Little Compton Writing Circle
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: 537986d051cd
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Baby and Toddler Playtime!
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: a136d19cf1cd
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Sandy's Live Music & Karaoke
+  note: On the site before the approval step existed, 2026-10-25
+- id: cf4589ea0706
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Cribbage
+  note: On the site before the approval step existed, 2026-10-25
+- id: abe54e185761
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Balance and Fall Prevention with local resident Amy Simmons and colleague Andrea Wasylow
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: 14c343c4bf87
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Historic Preservation Advisory Board Meeting
+  venue: 34 Roosevelt Avenue Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 3139634ece53
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Balance and Mobility
+  note: On the site before the approval step existed, 2026-10-25
+- id: dd50f7398c80
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Bingo!
+  note: On the site before the approval step existed, 2026-10-25
+- id: 8b749f1ec307
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Knitting for Charity
+  note: On the site before the approval step existed, 2026-10-25
+- id: fe0247326a8a
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Zumba
+  note: On the site before the approval step existed, 2026-10-25
+- id: d8600d4c5a09
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Grief Support Group
+  note: On the site before the approval step existed, 2026-10-25
+- id: 77e878936379
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Town Council Meeting
+  note: On the site before the approval step existed, 2026-10-25
+- id: 5fb345f2d49c
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: All the Genres Book Club
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: beccdd66295b
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: New England Ghosts with Jonah Knight
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: 6d29eed27da5
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: PFAS Public Meeting
+  note: On the site before the approval step existed, 2026-10-25
+- id: a603e40a3ba8
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Medicare Help Sessions - Registration Required
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: 6df7127bdd79
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Destruction Brook Woods Trail Work Party
+  venue: Destruction Brook Woods
+  note: On the site before the approval step existed, 2026-10-25
+- id: 5f4ce9f24ae2
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Zoning Board of Appeals
+  venue: 1480 County Street Somerset MA 02726
+  note: On the site before the approval step existed, 2026-10-25
+- id: fdf303a9d150
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Dartmouth Fire District 1 Building Committee
+  venue: 10 Bridge St Dartmouth MA 02748
+  note: On the site before the approval step existed, 2026-10-25
+- id: c03a17f49c92
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Historical Cemeteries Commission Meeting
+  venue: 34 Roosevelt Avenue Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 172f82176727
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Litter Committee Meeting
+  venue: 34 Roosevelt Avenue Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 3d65595383f1
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: SHIP with Carla Sabatino
+  note: On the site before the approval step existed, 2026-10-25
+- id: 34fe6ff2a95f
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Zoning Board of Review Meeting (as needed)
+  note: On the site before the approval step existed, 2026-10-25
+- id: d8c831ab34ef
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Guided Meditation
+  venue: DNRT Center @ Helfand Farm
+  note: On the site before the approval step existed, 2026-10-25
+- id: be494696e772
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Probate Court
+  venue: 343 Highland Rd Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 6cc05440173a
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Medicare Help Sessions - Contact the Library to Register
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: e9a8f861a681
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Wernick Farm Trail Work Party
+  venue: Wernick Farm
+  note: On the site before the approval step existed, 2026-10-25
+- id: e80a59b774f0
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Bobcat Ecology in Southern New England
+  venue: DNRT Center @ Helfand Farm
+  note: On the site before the approval step existed, 2026-10-25
+- id: b2d5b2a3e6ec
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Planning Board Meeting
+  note: On the site before the approval step existed, 2026-10-25
+- id: fb9783ebc0d0
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Agricultural Commission
+  venue: 205 Bakerville Road Dartmouth MA 02748
+  note: On the site before the approval step existed, 2026-10-25
+- id: ba9467978d35
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Cemetery Commission Meeting
+  venue: 207 Canonicus Street Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: cfade7af0588
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Economic Development Commission Meeting
+  venue: 34 Roosevelt Avenue Tiverton RI 02878
+  note: On the site before the approval step existed, 2026-10-25
+- id: 9b4c9e0bcc2e
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Little Rhody Mini Hoop with Karen Katin
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: e0ede651223a
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: 12th Annual Trail Race - 2026
+  venue: Destruction Brook Woods
+  note: On the site before the approval step existed, 2026-10-25
+- id: 01cf5fa5fd67
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Harbor Commission Meeting
+  note: On the site before the approval step existed, 2026-10-25
+- id: 342cee2c5258
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Naturalist's Book Club
+  venue: DNRT Center @ Helfand Farm
+  note: On the site before the approval step existed, 2026-10-25
+- id: 5d40edb42fd6
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: All the Genres Book Club - The Quiet Librarian
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: 138a383d63b1
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Turtle Walk
+  venue: Dike Creek Reserve
+  note: On the site before the approval step existed, 2026-10-25
+- id: afed249c6d1b
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Ocean View Farm Trail Work Party
+  venue: Ocean View Farm
+  note: On the site before the approval step existed, 2026-10-25
+- id: e9e34f0bd299
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Exercise Walk
+  venue: Russells Mills Woods
+  note: On the site before the approval step existed, 2026-10-25
+- id: 7fae9d50ff35
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Hidden Histories of African American Rhode Island with Jim Doherty
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25
+- id: d54834761833
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Smith Farm Trail Work Party
+  venue: Smith Farm
+  note: On the site before the approval step existed, 2026-10-25
+- id: aac00c049d70
+  status: approved
+  by: bootstrap
+  date: '2026-10-25'
+  title: Poinsetta Ornament with Karen Katin
+  venue: Brownell Library
+  note: On the site before the approval step existed, 2026-10-25

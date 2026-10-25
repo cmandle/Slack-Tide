@@ -129,6 +129,7 @@ def collapse(occs: list[Occurrence]) -> list[Series]:
             cadence=cadence, weekday=weekday,
             occurrences=[{"start": o.start.isoformat(), "end": o.end.isoformat() if o.end else None,
                           "all_day": o.all_day} for o in items],
+            summary=(first.description or "")[:300],
         ))
     out.sort(key=lambda s: s.first_start)
     return out

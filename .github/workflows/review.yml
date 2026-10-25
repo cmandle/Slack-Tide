@@ -1,0 +1,46 @@
+# Sunday morning: open the week's review issue from the queue the morning ingest left in
+# data/pending.json, and close last week's. The approver reviews Sunday evening at /review/
+# (decision 11). Set a repository variable REVIEW_ASSIGNEE to a GitHub login to assign the issue.
+name: Sunday review
+
+on:
+  schedule:
+    - cron: "0 13 * * 0"   # Sunday 13:00 UTC, after the 10:17 ingest; 8 or 9 in the morning Eastern
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the pipeline
+        run: pip install -e pipeline
+
+      - name: Write the digest
+        run: |
+          slacktide digest > digest.md
+          head -1 digest.md
+          echo "COUNT=$(python -c 'import json;print(json.load(open("data/pending.json"))["pending_count"])')" >> "$GITHUB_ENV"
+
+      - name: Open this week's issue and close last week's
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ASSIGNEE: ${{ vars.REVIEW_ASSIGNEE }}
+        run: |
+          gh label create review --description "Sunday review queue" --color FFEF6B --force
+          for n in $(gh issue list --label review --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Superseded by this week's review issue."
+          done
+          title="Sunday review: $COUNT series waiting ($(date -u +%Y-%m-%d))"
+          args=(--title "$title" --body-file digest.md --label review)
+          if [ -n "$ASSIGNEE" ]; then args+=(--assignee "$ASSIGNEE"); fi
+          gh issue create "${args[@]}"

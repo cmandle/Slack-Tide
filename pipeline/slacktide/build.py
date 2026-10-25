@@ -108,6 +108,12 @@ def icon_svg(cat_slug: str) -> str:
 def load_events(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
+def published(series: list[dict]) -> list[dict]:
+    """Decision 11: only approved series reach the public pages. A record with no approval
+    field predates the approval step and is treated as approved, so an old events.json still
+    builds."""
+    return [s for s in series if s.get("approval", "approved") == "approved"]
+
 def _parse(s: str) -> datetime:
     return datetime.fromisoformat(s)
 
@@ -213,7 +219,11 @@ def tide_box(tide: dict | None, now: datetime) -> str:
 
 # ---------------------------------------------------------------- markup
 
-def page(title: str, body: str, rel: str, description: str, generated: datetime) -> str:
+def page(title: str, body: str, rel: str, description: str, generated: datetime,
+         noindex: bool = False, scripts: tuple[str, ...] = ("site.js",)) -> str:
+    v = generated.strftime('%Y%m%d%H%M')
+    robots = '<meta name="robots" content="noindex, nofollow">\n' if noindex else ""
+    script_tags = "\n".join(f'<script src="{rel}assets/{s}?v={v}" defer></script>' for s in scripts)
     return f"""<!doctype html>
 <html lang="en-US">
 <head>
@@ -221,19 +231,19 @@ def page(title: str, body: str, rel: str, description: str, generated: datetime)
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
-<meta name="generator" content="slacktide build {esc(generated.isoformat(timespec='minutes'))}">
+{robots}<meta name="generator" content="slacktide build {esc(generated.isoformat(timespec='minutes'))}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT_URL}">
-<link rel="stylesheet" href="{rel}assets/tokens.css?v={generated.strftime('%Y%m%d%H%M')}">
-<link rel="stylesheet" href="{rel}assets/site.css?v={generated.strftime('%Y%m%d%H%M')}">
+<link rel="stylesheet" href="{rel}assets/tokens.css?v={v}">
+<link rel="stylesheet" href="{rel}assets/site.css?v={v}">
 </head>
 <body>
-<a class="skip" href="#main">Skip to events</a>
+<a class="skip" href="#main">Skip to content</a>
 <div class="frame">
 {body}
 </div>
-<script src="{rel}assets/site.js?v={generated.strftime('%Y%m%d%H%M')}" defer></script>
+{script_tags}
 </body>
 </html>
 """
@@ -321,7 +331,7 @@ def week_row(row: dict, sources: dict) -> str:
 
 def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     sources = source_index()
-    tonight, week = select(events["series"], now)
+    tonight, week = select(published(events["series"]), now)
     towns = Counter(r["series"]["town"] for r in tonight)
     for rows in week.values():
         towns.update(r["series"]["town"] for r in rows)
@@ -345,8 +355,8 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
             f'{rows_html}'
             f'<p class="empty" id="week-empty"{" hidden" if n_week else ""}>Nothing listed for the week ahead in this view.</p>'
             '<a class="week-more" href="calendar/">See the whole month →</a></section>'
-            '<a class="cta" href="add/">Add your event</a>'
-            '</main>' + footer(""))
+            '<a class="cta" href="add/" data-dialog="add-dialog">Add your event</a>'
+            '</main>' + footer("") + add_dialog("", sources))
     return page(f"{SITE_NAME} · Events, {REGION}", body, "", description, now)
 
 PLACEHOLDER_COPY = {
@@ -354,8 +364,137 @@ PLACEHOLDER_COPY = {
     "volunteer": ("Volunteer opportunities", "This section will list the land trusts, libraries, pantries and town committees that need hands, with dates where they have them."),
     "calendar": ("Calendar", "The calendar will expand every series into its dates, a month at a time."),
     "map": ("Map", "The map will place every venue we list, town by town."),
-    "add": ("Add your event", "Submissions open in Phase 2. Until then, publish your event on your own calendar and we will read it from there."),
 }
+
+# ---------------------------------------------------------------- add your event
+
+ADD_INTRO = ("Tell us about an event in one of our towns. A person reads every submission before it "
+             "goes on the site, usually on Sunday. If your organization already keeps a public calendar "
+             "online, say so in the details and we will read it from there every day instead.")
+
+def form_config(sources: dict[str, dict]) -> dict:
+    """The `form` block on the submissions source: a Google Form address and its entry ids.
+    Empty until the form exists; the page then falls back to email."""
+    cfg = (sources.get("submissions") or {}).get("form") or {}
+    return {"action": cfg.get("action") or "", "fields": {k: v for k, v in (cfg.get("fields") or {}).items() if v}}
+
+def submission_form(rel: str, sources: dict[str, dict], form_id: str) -> str:
+    cfg = form_config(sources)
+    towns = "".join(f'<option value="{esc(t)}">{esc(t)}</option>' for t in config.TOWNS)
+    fields = json.dumps(cfg["fields"]).replace('"', "&quot;")
+    def field(name, label, control):
+        return f'<div class="field"><label for="{form_id}-{name}">{label}</label>{control}</div>'
+    def inp(name, type_="text", required=False, extra=""):
+        req = " required" if required else ""
+        return f'<input id="{form_id}-{name}" name="{name}" type="{type_}"{req}{extra}>'
+    return (f'<form class="add-form" id="{form_id}" method="post" action="{esc(cfg["action"] or CONTACT)}" '
+            f'data-action="{esc(cfg["action"])}" data-fields="{fields}" data-contact="{esc(CONTACT)}" novalidate>'
+            + field("title", "Event title", inp("title", required=True, extra=' maxlength="120"'))
+            + '<div class="field-row">'
+            + field("date", "Date", inp("date", "date", required=True))
+            + field("start", "Start time", inp("start", "time", required=True))
+            + field("end", "End time", inp("end", "time"))
+            + '</div>'
+            + field("venue", "Venue", inp("venue", required=True, extra=' maxlength="120" placeholder="Where it happens"'))
+            + field("town", "Town", f'<select id="{form_id}-town" name="town" required><option value="">Choose a town</option>{towns}</select>')
+            + field("url", "Link", inp("url", "url", extra=' placeholder="https://"'))
+            + field("cost", "Cost", inp("cost", extra=' maxlength="60" placeholder="Free, $10, suggested donation"'))
+            + field("description", "Details", f'<textarea id="{form_id}-description" name="description" rows="4" maxlength="1200"></textarea>')
+            + '<div class="field-row">'
+            + field("name", "Your name", inp("name", required=True, extra=' maxlength="80" autocomplete="name"'))
+            + field("email", "Your email", inp("email", "email", required=True, extra=' autocomplete="email"'))
+            + '</div>'
+            + f'<div class="field hp" aria-hidden="true"><label for="{form_id}-website">Website</label>'
+              f'<input id="{form_id}-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>'
+            + f'<label class="check"><input type="checkbox" name="consent" required> I organize this event or have permission to list it.</label>'
+            + '<p class="form-note">Your name and email stay with us; they are never shown on the site.</p>'
+            + '<div class="form-actions"><button class="submit" type="submit">Send it in</button>'
+              '<span class="form-status" role="status" aria-live="polite"></span></div>'
+            '</form>')
+
+def add_dialog(rel: str, sources: dict[str, dict]) -> str:
+    """The pop-up version of the form, opened by the Events page call to action when the browser
+    supports it; the link still goes to /add/ otherwise."""
+    return ('<dialog class="add-dialog" id="add-dialog" aria-labelledby="add-dialog-h">'
+            '<div class="add-dialog-head"><h2 id="add-dialog-h">Add your event</h2>'
+            '<button class="dialog-close" type="button" data-close aria-label="Close">×</button></div>'
+            f'<p class="add-intro">{esc(ADD_INTRO)}</p>'
+            + submission_form(rel, sources, "add-form-dialog") + '</dialog>')
+
+def add_page(now: datetime, sources: dict[str, dict]) -> str:
+    rel = "../"
+    body = (head("events", rel) +
+            f'<main class="content add" id="main"><div class="hero-text"><div class="hero-title"><h1>Add your event</h1>{stickers()}</div>'
+            f'<div class="dateline">Free listing · {esc(REGION)}</div></div>'
+            f'<p class="add-intro">{esc(ADD_INTRO)}</p>'
+            + submission_form(rel, sources, "add-form") +
+            f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
+    return page(f"{SITE_NAME} · Add your event", body, rel,
+                f"List a community event from {REGION} on Slack Tide. Free, read by a person.", now)
+
+# ---------------------------------------------------------------- review queue
+
+REPO = "cmandle/Slack-Tide"
+APPROVALS_PATH = "approvals.yaml"
+INGEST_WORKFLOW = "ingest.yml"
+
+def fmt_when_long(start: datetime) -> str:
+    return f'{start.strftime("%a %b")} {start.day} · {fmt_time(start)}'
+
+def review_item(s: dict, sources: dict[str, dict]) -> str:
+    cat = s.get("category") or ""
+    nxt = _parse(s["next_start"]) if s.get("next_start") else _parse(s["first_start"])
+    occ = next((o for o in s["occurrences"] if o["start"] == s.get("next_start")), s["occurrences"][0])
+    when = f'{nxt.strftime("%a %b")} {nxt.day}' + ("" if occ.get("all_day") else f" · {fmt_time(nxt)}")
+    cadence = s.get("cadence", "once")
+    if cadence != "once":
+        when += f' · {cadence}, {s.get("count")} dates'
+    where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x) or "No venue or town"
+    soon = '<span class="rev-soon">Within 7 days</span>' if s.get("soon") else ""
+    summary = esc(s.get("summary") or "")
+    link = f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">View on {esc(source_name(s, sources))} ↗</a>' if s.get("url") else esc(source_name(s, sources))
+    return (f'<article class="rev" data-id="{esc(s["id"])}" data-title="{esc(s["title"])}" data-venue="{esc(s.get("venue") or "")}" '
+            f'data-decision="" style="--cat: {stock_var(cat)}">'
+            f'<div class="rev-main"><div class="rev-top"><span class="rev-swatch" aria-hidden="true"></span>'
+            f'<span class="rev-cat">{esc(cat or "Unclassified")}</span>{soon}</div>'
+            f'<h3 class="rev-title">{esc(s["title"])}</h3>'
+            f'<div class="rev-meta">{esc(when)}</div><div class="rev-meta">{esc(where)}</div>'
+            f'{"<p class=rev-summary>" + summary + "</p>" if summary else ""}'
+            f'<div class="rev-source">{link} · <code>{esc(s["id"])}</code></div></div>'
+            '<div class="rev-actions">'
+            '<button type="button" class="rev-btn rev-approve" data-decide="approved">Approve</button>'
+            '<button type="button" class="rev-btn rev-reject" data-decide="rejected">Reject</button></div>'
+            '</article>')
+
+def review_page(now: datetime, pending: dict, sources: dict[str, dict]) -> str:
+    rel = "../"
+    rows = pending.get("series", [])
+    items = "".join(review_item(s, sources) for s in rows)
+    gen = pending.get("generated_at", "")
+    gen_txt = _parse(gen).astimezone(now.tzinfo).strftime("%a %b %d, %I:%M %p").replace(" 0", " ") if gen else "unknown"
+    n, soon = pending.get("pending_count", len(rows)), pending.get("soon_count", 0)
+    body = (head("events", rel) +
+            f'<main class="content review" id="main" data-repo="{REPO}" data-approvals="{APPROVALS_PATH}" data-workflow="{INGEST_WORKFLOW}">'
+            f'<div class="hero-text"><div class="hero-title"><h1>Sunday review</h1>{stickers()}</div>'
+            f'<div class="dateline">{n} waiting · {soon} within 7 days · queue as of {esc(gen_txt)}</div></div>'
+            '<p class="add-intro">Approve what should publish, reject what should not, then save. New dates on an approved '
+            'series publish on their own; a retitled or moved series comes back here. Nothing changes on the site until the '
+            'next pipeline run, which the button below can start.</p>'
+            '<details class="setup"><summary>Who is reviewing</summary>'
+            '<div class="field"><label for="rev-name">Your name, for the record</label><input id="rev-name" type="text" maxlength="40"></div>'
+            '<div class="field"><label for="rev-token">GitHub token</label><input id="rev-token" type="password" autocomplete="off">'
+            '<p class="form-note">A fine-grained personal access token for this repository only, with Contents and Actions set to '
+            'read and write. It stays in this browser.</p></div>'
+            '<button type="button" class="rev-btn" id="rev-save-setup">Keep</button></details>'
+            f'<div class="rev-list" id="rev-list">{items}</div>'
+            f'<p class="empty" id="rev-empty"{"" if not rows else " hidden"}>Nothing is waiting. Enjoy the evening.</p>'
+            '<div class="rev-bar" id="rev-bar"><span class="rev-count" id="rev-count">0 decisions</span>'
+            '<button type="button" class="submit" id="rev-save" disabled>Save decisions</button>'
+            '<button type="button" class="rev-btn" id="rev-run">Run the pipeline now</button>'
+            '<span class="form-status" id="rev-status" role="status" aria-live="polite"></span></div>'
+            f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
+    return page(f"{SITE_NAME} · Review queue", body, rel, "The approver's queue. Not for the public.", now,
+                noindex=True, scripts=("site.js", "review.js"))
 
 def placeholder_page(key: str, now: datetime) -> str:
     rel = "../"
@@ -378,6 +517,7 @@ def write_assets(out: Path) -> dict:
     shutil.copyfile(used["tokens"], assets / "tokens.css")
     shutil.copyfile(ASSETS / "site.css", assets / "site.css")
     shutil.copyfile(ASSETS / "site.js", assets / "site.js")
+    shutil.copyfile(ASSETS / "review.js", assets / "review.js")
     used["icons"] = DESIGN / "reference" / "icons" if (DESIGN / "reference" / "icons").is_dir() else ASSETS / "icons"
     art_out = assets / "art"
     if art_out.is_dir():
@@ -397,12 +537,25 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
     tide = tide_mod.load(data_dir / "tide.json", now=now.astimezone(timezone.utc))
     out.mkdir(parents=True, exist_ok=True)
     used = write_assets(out)
+    sources = source_index()
     (out / "index.html").write_text(events_page(events, tide, now), encoding="utf-8")
     for key in PLACEHOLDER_COPY:
         d = out / key
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(placeholder_page(key, now), encoding="utf-8")
-    tonight, week = select(events["series"], now)
+    (out / "add").mkdir(parents=True, exist_ok=True)
+    (out / "add" / "index.html").write_text(add_page(now, sources), encoding="utf-8")
+    pending_path = data_dir / "pending.json"
+    if pending_path.exists():
+        pending = json.loads(pending_path.read_text(encoding="utf-8"))
+    else:
+        from .approval import pending_payload
+        pending = pending_payload(events["series"], now)
+    (out / "review").mkdir(parents=True, exist_ok=True)
+    (out / "review" / "index.html").write_text(review_page(now, pending, sources), encoding="utf-8")
+    live = published(events["series"])
+    tonight, week = select(live, now)
     return {"out": out, "tonight": len(tonight), "week": sum(len(r) for r in week.values()),
+            "published": len(live), "pending": pending.get("pending_count", 0),
             "tide": "ok" if tide else "unavailable", "tokens": used["tokens"], "icons": used["icons"],
             "art": used["art"]}

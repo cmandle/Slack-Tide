@@ -10,6 +10,7 @@ dependencies = [
   "rapidfuzz>=3.0",
   "python-dateutil>=2.9",
   "pyyaml>=6.0",
+  "beautifulsoup4>=4.12",
 ]
 
 [project.optional-dependencies]
@@ -27,4 +28,4 @@ where = ["."]
 include = ["slacktide*"]
 
 [tool.setuptools.package-data]
-slacktide = ["*.yaml", "site_assets/*", "site_assets/icons/*"]
+slacktide = ["*.yaml", "site_assets/*", "site_assets/icons/*", "site_assets/review/*"]

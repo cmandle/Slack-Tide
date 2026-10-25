@@ -1,8 +1,11 @@
 from .tribe import TribeConnector
 from .ical import ICalConnector
 from .rss import RSSConnector
+from .html import HtmlConnector
+from .sheet import SheetConnector
 
-CONNECTORS = {"tribe": TribeConnector, "ical": ICalConnector, "rss": RSSConnector}
+CONNECTORS = {"tribe": TribeConnector, "ical": ICalConnector, "rss": RSSConnector,
+              "html": HtmlConnector, "sheet": SheetConnector}
 
 def for_source(source: dict, **kw):
     try:

@@ -1,9 +1,11 @@
 # Source registry. Every source the pipeline reads is declared here.
-# kind: tribe (WordPress Events Calendar REST) | ical | rss
+# kind: tribe (WordPress Events Calendar REST) | ical | rss | html (server-rendered listing) | sheet (published CSV)
 # town: default town when the record carries none. Must match config.TOWNS.
 # venue: default venue when the record carries none (single-venue sources such as a library).
 # role: primary | check   (check = used for reconciliation only, never published)
-# Verified-working dates refer to live fetches on 2026-09-20 and 2026-10-11.
+# review: person | auto   (auto = series publish without a decision; none has earned it yet)
+# default_category: our taxonomy entry for a single-purpose venue when the classifier finds nothing
+# Verified-working dates refer to live fetches on 2026-09-20, 2026-10-11 and 2026-10-25.
 
 - id: explore-new-bedford
   name: Explore New Bedford
@@ -12,6 +14,17 @@
   town: New Bedford
   role: check
   note: Aggregator of New Bedford venues. Coverage check only, decided 2026-10-11.
+
+- id: viva-fall-river
+  name: Viva Fall River
+  kind: tribe
+  url: https://www.vivafallriver.com/wp-json/tribe/events/v1/events
+  town: Fall River
+  role: check
+  note: >-
+    Aggregator run by the city's destination marketing nonprofit; venues submit to it. Coverage
+    check only since 2026-10-25 (decision 10). Supplied 103 series across 34 venues before the
+    flip; the check report's missed list names the Fall River venues to connect directly.
 
 - id: brownell-library
   name: Brownell Library
@@ -29,13 +42,6 @@
   town: Dartmouth
   role: primary
 
-- id: viva-fall-river
-  name: Viva Fall River
-  kind: tribe
-  url: https://www.vivafallriver.com/wp-json/tribe/events/v1/events
-  town: Fall River
-  role: primary
-
 - id: buzzards-bay-brewing
   name: Buzzards Bay Brewing
   kind: tribe
@@ -43,6 +49,43 @@
   town: Westport
   role: primary
   note: Site leaks PHP warnings before the JSON body. The tribe connector tolerates this.
+
+- id: zeiterion
+  name: The Zeiterion
+  kind: html
+  url: https://zeiterion.org/events
+  town: New Bedford
+  venue: The Zeiterion
+  role: primary
+  provenance: Posted by the venue
+  default_category: Arts & Theatre   # our call for a theatre when the rule classifier finds nothing
+  select:
+    item: ".events-list_item"
+    title: ".ticket-block_title_text h2"
+    url: "a[href^='/events/']"
+    when: ".ticket-block_info_date_wrapper:not(.w-condition-invisible) .ticket-block_info_text:not(.w-condition-invisible)"
+  note: >-
+    Webflow CMS listing, server-rendered, no feed of any kind. 51 upcoming events on 2026-10-25.
+    Each listing shows weekday, month, day and time; two-date shows repeat the four in a second
+    block. Webflow hides unused blocks with the w-condition-invisible class, hence the :not().
+
+- id: buzzards-bay-coalition
+  name: Buzzards Bay Coalition
+  kind: html
+  url: https://savebuzzardsbay.org/events/bay-adventures
+  town: New Bedford
+  role: primary
+  enabled: false
+  select:
+    item: "a.discovery-card"
+    title: ".discovery-card-title"
+    url: "a.discovery-card"
+    when: ".discovery-card-meta"
+  note: >-
+    Craft CMS, no feed. The listing card says "October 25 at Onset Bay Center" for one-off
+    adventures but "Monthly at Horseneck Beach" for the recurring ones, whose dates are inside a
+    FareHarbor booking widget the connector cannot read. Ask the Coalition for an iCal or CSV
+    export before enabling; what this entry would yield is a handful of one-offs with no venue.
 
 - id: little-compton-historical
   name: Little Compton Historical Society
@@ -86,6 +129,36 @@
   categories: [14, 23]
   town: Somerset
   role: primary
+
+- id: submissions
+  name: Submitted through slack-tide.org
+  kind: sheet
+  url: ""
+  town: ""
+  role: primary
+  enabled: false
+  provenance: Verified organizer
+  # The public form at /add/ posts to a Google Form; its responses land in a Google Sheet that
+  # is published to the web as CSV (File, Share, Publish to web, the responses tab, CSV). Put
+  # that CSV address in `url` above and enable the source. `form.action` is the Google Form's
+  # formResponse address and `form.fields` maps our field names to its entry ids (open the
+  # form's prefilled-link tool to read them). Until `form.action` is set, /add/ opens the
+  # visitor's email client with the details filled in instead.
+  form:
+    action: ""
+    fields:
+      title: ""
+      date: ""
+      start: ""
+      end: ""
+      venue: ""
+      town: ""
+      url: ""
+      cost: ""
+      description: ""
+      name: ""
+      email: ""
+  note: Decision 12. Nothing from this source publishes without the approver; review stays "person".
 
 - id: new-bedford-light
   name: The New Bedford Light
