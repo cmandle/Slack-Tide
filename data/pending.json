@@ -1,0 +1,1232 @@
+{
+ "generated_at": "2026-10-25T16:43:57.854658+00:00",
+ "pending_count": 44,
+ "soon_count": 18,
+ "approved_count": 56,
+ "rejected_count": 0,
+ "series": [
+  {
+   "id": "d79d89220691",
+   "title": "Select Board Meeting",
+   "venue": "400 SLOCUM RD Room 303 and 304 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T17:30:00-04:00",
+   "last_start": "2026-10-26T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T17:30:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2932",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-26T17:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "826d5fe77ae4",
+   "title": "Zeiterion Member Open House",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/2026-member-open-house",
+   "cost": "",
+   "first_start": "2026-10-26T18:00:00-04:00",
+   "last_start": "2026-10-26T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T18:00:00-04:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-26T18:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "16ce409ac294",
+   "title": "Dartmouth School Committee",
+   "venue": "555 Bakerville Road Library Media Center Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T18:00:00-04:00",
+   "last_start": "2026-10-26T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T18:00:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2929",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-26T18:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "1da38ea742d0",
+   "title": "Board of Assessor's meeting / joint Select Board meeting",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T18:00:00-04:00",
+   "last_start": "2026-10-26T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T18:00:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2933",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-26T18:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "a9e2357c89fc",
+   "title": "Budget Advisory Group",
+   "venue": "400 SLOCUM ROAD Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T17:00:00-04:00",
+   "last_start": "2026-10-27T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T17:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2926",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-27T17:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "a89c306c29a4",
+   "title": "Dartmouth Fire District No. 3 Prudential Committee",
+   "venue": "140 Cross Road Room 120 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T17:30:00-04:00",
+   "last_start": "2026-10-27T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T17:30:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2930",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-27T17:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "3e9358fff135",
+   "title": "Water Quality Advisory Committee",
+   "venue": "400 SLOCUM RD Room 309 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T18:00:00-04:00",
+   "last_start": "2026-10-27T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2935",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-27T18:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "7f90d95fad0e",
+   "title": "Revised Zoning Board of Appeals",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T18:00:00-04:00",
+   "last_start": "2026-10-27T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2937",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-27T18:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "3f3f8d3a547f",
+   "title": "Dartmouth Pathways Committee",
+   "venue": "400 Slocum Road Room 315 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T18:30:00-04:00",
+   "last_start": "2026-10-27T18:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T18:30:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2927",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-27T18:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "a59fb1a4ee29",
+   "title": "Conservation Commission",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-27T19:00:00-04:00",
+   "last_start": "2026-10-27T19:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-27T19:00:00-04:00",
+     "end": "2026-10-27T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2934",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-27T19:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "3a31fe132b30",
+   "title": "Community Preservation Committee",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-28T16:30:00-04:00",
+   "last_start": "2026-10-28T16:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T16:30:00-04:00",
+     "end": "2026-10-28T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2001",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-28T16:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "62aa33f4df59",
+   "title": "Inside Parsons Dance: Learn How They Fly!",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/parsons-dance-barre",
+   "cost": "",
+   "first_start": "2026-10-28T19:00:00-04:00",
+   "last_start": "2026-10-28T19:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T19:00:00-04:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-28T19:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "0327b6e1aee1",
+   "title": "The Price Is Right Live - On Stage",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/the-price-is-right",
+   "cost": "",
+   "first_start": "2026-10-29T20:00:00-04:00",
+   "last_start": "2026-10-29T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-29T20:00:00-04:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-29T20:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "0d63c66afca6",
+   "title": "Mystic Pizza: A New Musical",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/mystic-pizza",
+   "cost": "",
+   "first_start": "2026-10-30T20:00:00-04:00",
+   "last_start": "2026-10-30T20:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-30T20:00:00-04:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-30T20:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "4f9834189883",
+   "title": "All Souls",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nbso-allsouls",
+   "cost": "",
+   "first_start": "2026-10-31T15:00:00-04:00",
+   "last_start": "2026-11-01T15:00:00-05:00",
+   "count": 2,
+   "cadence": "weekends",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-31T15:00:00-04:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-01T15:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-31T15:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "85a40327bbc2",
+   "title": "Rocky Horror Picture Show",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/rocky-horror-picture-show-2026",
+   "cost": "",
+   "first_start": "2026-10-31T19:30:00-04:00",
+   "last_start": "2026-10-31T19:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-31T19:30:00-04:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-31T19:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "978813e29371",
+   "title": "Wicked Sing-Along",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/wicked-sing-along",
+   "cost": "",
+   "first_start": "2026-11-01T14:00:00-05:00",
+   "last_start": "2026-11-01T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-01T14:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-01T14:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "35cf23a321bf",
+   "title": "South Coast Chamber Music Series Subscriptions",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nbso-2026-27-chamber-music-series",
+   "cost": "",
+   "first_start": "2026-11-01T15:00:00-05:00",
+   "last_start": "2026-11-01T15:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-01T15:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-01T15:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "287e6a76bb2c",
+   "title": "Speakeasy's Broadway Piano Bar Afternoon",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/speakeasys-broadway-piano-bar-afternoon",
+   "cost": "",
+   "first_start": "2026-11-01T17:00:00-05:00",
+   "last_start": "2026-11-01T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-01T17:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-01T17:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "b1593f3a3634",
+   "title": "Pop-up Women's Walk",
+   "venue": "Frank Knowles/Little River Reserve",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/pop-up-womens-walk/",
+   "cost": "Free",
+   "first_start": "2026-11-02T09:00:00-05:00",
+   "last_start": "2026-11-02T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us for a fun pop-up walk at Frank Knowles/Little River Reserve. This walk is led by volunteer Kathryn Gollub. Women's walks are typically held rain or shine, but please check our website and social media before the walk for any weather related cancellations. We don't have an official address, b",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-02T09:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "897b69e759d7",
+   "title": "North End and Industrial/Business Park Advisory Subcommittee",
+   "venue": "207 Canonicus Street Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T18:00:00-05:00",
+   "last_start": "2026-11-02T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T18:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2235",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-02T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "02b6bb19c462",
+   "title": "Zeiterion Guided Tours",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/guided-tours-november-3-2026",
+   "cost": "",
+   "first_start": "2026-11-03T18:00:00-05:00",
+   "last_start": "2026-12-15T18:00:00-05:00",
+   "count": 4,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-03T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-14T11:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-05T11:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-03T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "58f176411908",
+   "title": "Terrarium & Sip",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/member-night-terrarium-sip",
+   "cost": "",
+   "first_start": "2026-11-04T18:00:00-05:00",
+   "last_start": "2026-11-04T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-04T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-04T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "57d72e1b63cd",
+   "title": "Colby James & The Ramblers",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/colby-james-and-the-ramblers",
+   "cost": "",
+   "first_start": "2026-11-05T19:30:00-05:00",
+   "last_start": "2026-11-05T19:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-05T19:30:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-05T19:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "22d1e8f10fcd",
+   "title": "Parsons Dance Master Class",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/parsons-dance-master-class",
+   "cost": "",
+   "first_start": "2026-11-06T19:00:00-05:00",
+   "last_start": "2026-11-06T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-06T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-06T19:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "a517416d1b57",
+   "title": "Parsons Dance",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/parsons-dance",
+   "cost": "",
+   "first_start": "2026-11-07T20:00:00-05:00",
+   "last_start": "2026-11-07T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-07T20:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-07T20:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "9daa042b56f8",
+   "title": "Board of Registrars Meeting",
+   "venue": "400 Slocum Road Room 203 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T09:00:00-05:00",
+   "last_start": "2026-11-16T09:00:00-05:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2938",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-09T09:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "f54e688a31cc",
+   "title": "Hikes for Tykes",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/hikes-for-tykes/",
+   "cost": "$10",
+   "first_start": "2026-11-12T10:00:00-05:00",
+   "last_start": "2026-11-12T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T10:00:00-05:00",
+     "end": "2027-07-15T11:15:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-12T10:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "bad28f902f46",
+   "title": "Jazz Jam",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nov-jazz-jam",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-12T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "c63c8dfd6392",
+   "title": "After Dark",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nov-aha-after-dark",
+   "cost": "",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2026-11-12T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-12T20:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "95ff263664a6",
+   "title": "Tax Collectors Sale of Estates for Taxes and/or Assessments Due and Unpaid",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-13T10:00:00-05:00",
+   "last_start": "2026-11-13T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-13T10:00:00-05:00",
+     "end": "2026-11-13T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2234",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-13T10:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "67bacb13bd00",
+   "title": "HADESTOWN",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/hadestown",
+   "cost": "",
+   "first_start": "2026-11-15T19:30:00-05:00",
+   "last_start": "2026-11-15T19:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T19:30:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-15T19:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "e9ddfe0fb7a7",
+   "title": "Goosby Plays Brahms",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nbso-goosby-plays-brahms",
+   "cost": "",
+   "first_start": "2026-11-21T19:30:00-05:00",
+   "last_start": "2026-11-21T19:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-21T19:30:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-21T19:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "aa916f2461c6",
+   "title": "Women's Walk",
+   "venue": "Russells Mills Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/womens-walk/",
+   "cost": "Free",
+   "first_start": "2026-11-23T09:00:00-05:00",
+   "last_start": "2026-11-23T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us for a fun pop-up walk at Russells Mills Woods. This walk is led by volunteer Kathryn Gollub. Women's walks are typically held rain or shine, but please check our website and social media before the walk for any weather related cancellations. We don't have an official address, but our closest",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-23T09:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "3eb5111dab1f",
+   "title": "Library will open at 11 AM",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/library-will-open-at-11-am-7/",
+   "cost": "",
+   "first_start": "2026-11-23T11:00:00-05:00",
+   "last_start": "2026-11-23T11:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-23T11:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-23T11:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "452cf38f822a",
+   "title": "Wellness Series",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Education & Workshops",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/wellness/",
+   "cost": "$10 – $20",
+   "first_start": "2026-11-28T09:00:00-05:00",
+   "last_start": "2026-11-28T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T09:00:00-05:00",
+     "end": "2026-11-28T10:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us for six weeks of wellness, spread over the course of the year! Together, we'll explore themes like mindful awareness, natural movement, the health benefits of eating locally, and embracing joy through fun, community-centered activities. Whether you're looking to reboot your health routine, r",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-28T09:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "af8661b810e2",
+   "title": "A Charlie Brown Christmas - Live on Stage",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/a-charlie-brown-christmas",
+   "cost": "",
+   "first_start": "2026-12-05T14:00:00-05:00",
+   "last_start": "2026-12-05T19:00:00-05:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T14:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-05T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-05T14:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "3ae2e4cfbec0",
+   "title": "Pete the Cat",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/pete-the-cat",
+   "cost": "",
+   "first_start": "2026-12-09T12:30:00-05:00",
+   "last_start": "2026-12-09T12:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-09T12:30:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-09T12:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "b527625997d0",
+   "title": "A Doo Wop Christmas",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/doo-wop-2026",
+   "cost": "",
+   "first_start": "2026-12-11T19:30:00-05:00",
+   "last_start": "2026-12-11T19:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-11T19:30:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-11T19:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "e7e38fbf272a",
+   "title": "Carols & Cocktails",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nbft-carols-cocktails",
+   "cost": "",
+   "first_start": "2026-12-12T19:00:00-05:00",
+   "last_start": "2026-12-12T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-12T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-12T19:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "73059079afa2",
+   "title": "Helfand Farm Trail Work Party",
+   "venue": "DNRT Center @ Helfand Farm",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/helfand-farm-trail-work-party/",
+   "cost": "Free",
+   "first_start": "2026-12-17T09:00:00-05:00",
+   "last_start": "2026-12-17T09:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-17T09:00:00-05:00",
+     "end": "2026-12-17T12:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Details to come. Lunch following trail work. Tools and snacks provided. No registration required; just show up!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-17T09:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "35689837979c",
+   "title": "Pink Martini All-Stars present: A Season of Stars",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/pink-martini",
+   "cost": "",
+   "first_start": "2026-12-17T20:00:00-05:00",
+   "last_start": "2026-12-17T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-17T20:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "7fc848d57904",
+   "title": "Holiday Pops",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/nbso-holiday-pops",
+   "cost": "",
+   "first_start": "2026-12-20T15:30:00-05:00",
+   "last_start": "2026-12-20T19:00:00-05:00",
+   "count": 2,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-20T15:30:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-20T15:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "c3aa825f1b94",
+   "title": "Solstice Stroll",
+   "venue": "Destruction Brook Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/solstice-stroll/",
+   "cost": "Free",
+   "first_start": "2026-12-21T10:00:00-05:00",
+   "last_start": "2026-12-21T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-21T10:00:00-05:00",
+     "end": "2026-12-21T11:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Registration opens November 21.",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-21T10:00:00-05:00",
+   "soon": false
+  }
+ ]
+}

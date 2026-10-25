@@ -2,27 +2,27 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 145,
-   "seconds": 3.61
-  },
-  "brownell-library": {
-   "rows": 22,
-   "seconds": 0.72
-  },
-  "dnrt": {
-   "rows": 16,
-   "seconds": 4.59
+   "seconds": 4.11
   },
   "viva-fall-river": {
    "rows": 250,
-   "seconds": 18.68
+   "seconds": 19.6
   },
-  "buzzards-bay-brewing": {
-   "rows": 1,
-   "seconds": 6.04
+  "brownell-library": {
+   "rows": 22,
+   "seconds": 0.74
+  },
+  "dnrt": {
+   "rows": 16,
+   "seconds": 3.27
+  },
+  "zeiterion": {
+   "rows": 30,
+   "seconds": 0.69
   },
   "town-tiverton": {
-   "rows": 188,
-   "seconds": 0.6
+   "rows": 189,
+   "seconds": 0.74
   },
   "town-dartmouth": {
    "rows": 21,
@@ -30,68 +30,74 @@
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.43
+   "seconds": 0.59
   }
  },
- "errors": {},
- "primary_rows": 503,
+ "errors": {
+  "buzzards-bay-brewing": "HTTPError: 500 Server Error: Internal Server Error for url: https://buzzardsbrew.com/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-10-25"
+ },
+ "primary_rows": 283,
  "dropped": {
   "closure": 4,
   "holiday": 7
  },
- "series": 157,
+ "series": 100,
+ "approval": {
+  "approved": 56,
+  "pending": 44
+ },
  "by_town": {
-  "Fall River": 80,
   "Tiverton": 33,
   "Little Compton": 13,
   "Dartmouth": 28,
-  "Somerset": 2,
-  "Westport": 1
+  "New Bedford": 24,
+  "Somerset": 2
  },
  "by_category": {
-  "Food & Drink": 9,
-  "Arts & Theatre": 7,
-  "Markets & Fairs": 1,
-  "Outdoors & Nature": 15,
-  "Music": 21,
-  "(unclassified)": 32,
-  "Sports & Recreation": 8,
+  "Sports & Recreation": 5,
+  "(unclassified)": 14,
   "Volunteering & Causes": 2,
-  "Library & Talks": 29,
+  "Library & Talks": 13,
   "Civic & Town Meetings": 24,
-  "Education & Workshops": 3,
-  "Family & Children": 4,
-  "Museums & Exhibitions": 2
+  "Arts & Theatre": 24,
+  "Education & Workshops": 2,
+  "Outdoors & Nature": 13,
+  "Family & Children": 1,
+  "Music": 2
  },
  "by_cadence": {
-  "weekends": 1,
-  "weekly": 33,
-  "once": 85,
-  "irregular": 9,
   "several-a-week": 1,
-  "fortnightly": 6,
-  "monthly": 20,
-  "daily": 2
+  "weekly": 17,
+  "irregular": 6,
+  "once": 64,
+  "fortnightly": 2,
+  "weekends": 1,
+  "monthly": 9
  },
  "weekend_gate": {
   "saturday": "2026-10-31",
-  "series": 8,
-  "towns": {
-   "Fall River": 8
-  },
+  "series": 0,
+  "towns": {},
   "passes": false
  },
  "reconcile": {
-  "check_total": 145,
-  "check_matched": 0,
-  "check_missed_rows": 145,
-  "check_missed_series": 55,
+  "check_total": 395,
+  "check_matched": 15,
+  "check_missed_rows": 380,
+  "check_missed_series": 120,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-10-25T21:00:00-04:00",
+    "rows": 17
+   },
+   {
+    "title": "Weekend Brunch",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-10-25T10:00:00-04:00",
     "rows": 17
    },
    {
@@ -102,10 +108,31 @@
     "rows": 9
    },
    {
+    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
+    "venue": "First Congregational Church of Fall River",
+    "town": "Fall River",
+    "first_start": "2026-10-27T18:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Half Priced Food (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-27T16:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-25T14:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Kids eat FREE on Wednesdays",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-28T07:00:00-04:00",
     "rows": 9
    },
    {
@@ -116,10 +143,45 @@
     "rows": 9
    },
    {
+    "title": "Matt Silva Sunday Funday",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-10-25T16:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-10-28T19:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Nick Sanfilippo",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-10-26T18:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Open Mic",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-27T20:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Poppin' Prosecco with Primo! Brunch",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-25T10:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Preschool Storytime",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-27T11:00:00-04:00",
     "rows": 9
    },
    {
@@ -130,9 +192,23 @@
     "rows": 9
    },
    {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-10-27T19:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Universal Participation: Welcome to Yoga",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Wing Wednesday!!",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
     "first_start": "2026-10-28T18:00:00-04:00",
     "rows": 9
    },
@@ -144,10 +220,31 @@
     "rows": 8
    },
    {
+    "title": "Friday Night Volleyball (weekly)",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-10-30T17:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Knitting Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-29T13:00:00-04:00",
+    "rows": 8
+   },
+   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-29T18:30:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Primo After Dark - Weekly DJ Sets",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-30T20:00:00-04:00",
     "rows": 8
    },
    {
@@ -158,10 +255,108 @@
     "rows": 8
    },
    {
-    "title": "A Charlie Brown Christmas - Live On Stage at The Z",
-    "venue": "Zeiterion",
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-10-29T20:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Zach Guillette Thursdays",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-29T18:00:00-04:00",
+    "rows": 8
+   },
+   {
+    "title": "Community Resource Day",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-27T13:00:00-04:00",
+    "rows": 5
+   },
+   {
+    "title": "Magic: The Gathering Commander Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 5
+   },
+   {
+    "title": "Blind Draw Double Elimination Cornhole (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 4
+   },
+   {
+    "title": "Monthly Artists Share!",
+    "venue": "Gallery X",
     "town": "New Bedford",
-    "first_start": "2026-12-05T02:00:00-05:00",
+    "first_start": "2026-11-10T18:30:00-05:00",
+    "rows": 4
+   },
+   {
+    "title": "Plant Bingo",
+    "venue": "Fall River Carousel",
+    "town": "Fall River",
+    "first_start": "2026-10-27T18:30:00-04:00",
+    "rows": 4
+   },
+   {
+    "title": "Halloween Throw & Glow- All Weekend Long",
+    "venue": "Stumpy's Hatchet House Fall River",
+    "town": "Fall River",
+    "first_start": "2026-10-30T17:00:00-04:00",
+    "rows": 3
+   },
+   {
+    "title": "Hop Quiz Trivia",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-27T18:30:00-04:00",
+    "rows": 3
+   },
+   {
+    "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
+    "venue": "Munchies",
+    "town": "Fall River",
+    "first_start": "2026-10-30T08:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "All Ages Book Club",
+    "venue": "Gathering Grounds Cafe, Fall River Carousel",
+    "town": "Fall River",
+    "first_start": "2026-11-17T18:30:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Books & Tea Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-18T14:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Celebrate National Authors Day with Write With Community!",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T11:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Dance Prism Ballet Presents \"The Nutcracker\"",
+    "venue": "Bristol Community College Arts Center",
+    "town": "Fall River",
+    "first_start": "2026-11-29T01:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "English Conversation Group",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-04T18:00:00-05:00",
     "rows": 2
    },
    {
@@ -172,10 +367,45 @@
     "rows": 2
    },
    {
-    "title": "Monthly Artists Share!",
-    "venue": "Gallery X",
-    "town": "New Bedford",
-    "first_start": "2026-11-10T18:30:00-05:00",
+    "title": "Falco and Book Play Jerry Garcia",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-21T20:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Fantasy & Sci-Fi Book Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-19T18:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Historical Fiction Book Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-26T18:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Joan Osborne Sings The Songs of Bob Dylan - Fall River",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-05T00:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Middle Grade Book Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-17T17:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Neal McCarthy Electric Band - Fall River",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-28T00:00:00-05:00",
     "rows": 2
    },
    {
@@ -186,6 +416,34 @@
     "rows": 2
    },
    {
+    "title": "Open Mic Night",
+    "venue": "The Belmont Club",
+    "town": "Fall River",
+    "first_start": "2026-11-05T19:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Paint Nights",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-10T18:30:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Photography Group",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Quinn Sullivan - Friday, Dec. 18",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-18T20:00:00-05:00",
+    "rows": 2
+   },
+   {
     "title": "Rhythm Is Going To Ge You",
     "venue": "Fort Taber Community Center",
     "town": "New Bedford",
@@ -193,10 +451,80 @@
     "rows": 2
    },
    {
-    "title": "A HALLOWEEN YOGA EXPERIENCE - CHASING AWAY YOUR SHADOW",
+    "title": "Silent Book Club",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-10-29T18:30:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-25T17:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Writing Group",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-11T18:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "YA Comics Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-12T18:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "11th Annual Music of Michael Troy Concert",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-22T13:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "A Halloween Yoga Experience - Chasing Away Your Shadow",
     "venue": "YOGA ES VIDA COLLECTIVE",
     "town": "New Bedford",
     "first_start": "2026-10-31T10:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "AXE-celerated Dating at Stumpy's for 45+ Singles",
+    "venue": "Stumpy's Hatchet House Fall River",
+    "town": "Fall River",
+    "first_start": "2026-11-05T19:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Albert Cummings",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-12T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Ally Venable Band",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-10-28T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Amani Burnham live at the Narrows",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-07T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Annual Halloween Party",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-10-31T17:00:00-04:00",
     "rows": 1
    },
    {
@@ -242,10 +570,59 @@
     "rows": 1
    },
    {
-    "title": "Celebrate National Authors Day with Write With Community!",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T11:00:00-05:00",
+    "title": "Book Edge Stenciling",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-10-25T18:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Brick and Brush Arts Walk",
+    "venue": "NoMa/Purchase St. Plaza",
+    "town": "Fall River",
+    "first_start": "2026-10-25T11:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Chris Smither",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-03T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Create with a Date: Spooky Edition",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Dinner with Santa",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-12-11T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Dr. Gasp Performance",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "East Nash Grass",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-10-29T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Factory of Terror (Friday - Sunday)",
+    "venue": "Factory of Terror",
+    "town": "Fall River",
+    "first_start": "2026-10-30T19:00:00-04:00",
     "rows": 1
    },
    {
@@ -253,6 +630,20 @@
     "venue": "Hatch Street Studios",
     "town": "New Bedford",
     "first_start": "2026-11-14T11:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Fall River Children's Holiday Parade",
+    "venue": "Kennedy Park",
+    "town": "Fall River",
+    "first_start": "2026-12-05T13:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Fall River Farmers & Artisans Market",
+    "venue": "NoMa/Purchase St. Plaza",
+    "town": "Fall River",
+    "first_start": "2026-10-25T11:00:00-04:00",
     "rows": 1
    },
    {
@@ -270,6 +661,20 @@
     "rows": 1
    },
    {
+    "title": "Fun Filled Bingo Night",
+    "venue": "Knights of Columbus Hall",
+    "town": "Fall River",
+    "first_start": "2026-10-25T16:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Get Lucky (live music)",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-30T20:30:00-04:00",
+    "rows": 1
+   },
+   {
     "title": "Greater New Bedford Choral Society presents Christmas Melodies Around the World",
     "venue": "Our Lady of Mount Carmel New Bedford",
     "town": "New Bedford",
@@ -277,10 +682,10 @@
     "rows": 1
    },
    {
-    "title": "Hadestown Broadway National Tour at The Zeiterion",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-11-15T19:30:00-05:00",
+    "title": "Halloween Ghostly Gala at Red Cat Kitchen",
+    "venue": "Red Cat Kitchen",
+    "town": "Fall River",
+    "first_start": "2026-10-31T21:00:00-04:00",
     "rows": 1
    },
    {
@@ -291,6 +696,41 @@
     "rows": 1
    },
    {
+    "title": "Inaugural \"Forever & Beyond\" Dia de los Muertos Gala",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-10-30T18:30:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Jason Robert Brown with Special Broadway Guests",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-06T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Jesse Cook - Fall River",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-12T00:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Josh Simpson Glass Studio Sale & Live Glassblowing Demos",
+    "venue": "Josh Simpson Glass",
+    "town": "Fall River",
+    "first_start": "2026-10-25T10:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Junk Journaling",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-10-28T18:30:00-04:00",
+    "rows": 1
+   },
+   {
     "title": "Liquid Spine: Film, Dance, and Dialogue",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -298,24 +738,10 @@
     "rows": 1
    },
    {
-    "title": "NBSO Presents \"Goosby Plays Brahms\"",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-11-21T19:30:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "NBSO Presents \"Holiday Pops - Afternoon\"",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-12-20T15:30:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "NBSO Presents \"Holiday Pops - Evening\"",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-12-20T19:00:00-05:00",
+    "title": "Move n' On (live music)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-25T13:00:00-04:00",
     "rows": 1
    },
    {
@@ -347,17 +773,73 @@
     "rows": 1
    },
    {
-    "title": "PRINTMAKING FOR THE HOLIDAYS",
+    "title": "Nightmare on Water Street Costume Party",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-31T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Paranormal Investigation",
+    "venue": "The Lafayette-Durfee House",
+    "town": "Fall River",
+    "first_start": "2026-10-30T19:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Peter Wolf and The Midnight Travelers - Friday, Nov. 20",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-20T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Printmaking for the Holidays",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-18T17:30:00-05:00",
     "rows": 1
    },
    {
-    "title": "Pink Martini All-Stars present: A Season of Stars at The Z",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-12-17T20:00:00-05:00",
+    "title": "Robbie Fulks & Heath Maloney",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-13T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Robbie Fulks & Heather Maloney - Fall River",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-13T00:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Roomful of Blues - Fall River",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-11-27T00:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Senior Social",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-11-20T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Social Club Karaoke w/ DJ Dan Mac (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-10-28T21:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Squirrel Nut Zippers Christmas Caravan 2026 live at the Narrows",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-16T20:00:00-05:00",
     "rows": 1
    },
    {
@@ -375,10 +857,31 @@
     "rows": 1
    },
    {
+    "title": "The Banned Book Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-29T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "The Empty Pockets - Holiday Tour",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-11T20:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "The NB Rude Boys Skalloween Mosh",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-30T19:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "The Technicians",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-12-05T13:00:00-05:00",
     "rows": 1
    },
    {
@@ -396,73 +899,24 @@
     "rows": 1
    },
    {
-    "title": "WHEEL THROWING",
+    "title": "Wheel Throwing",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-26T17:30:00-04:00",
     "rows": 1
    },
    {
-    "title": "WREATH MAKING WORKSHOP",
+    "title": "Wicker Movie Outing",
+    "venue": "Pictureshow at SouthCoast Marketplace",
+    "town": "Fall River",
+    "first_start": "2026-10-30T18:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Wreath Making Workshop",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-21T11:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Wicked Sing-Along at The Z",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T14:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents A Doo Wop Christmas",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-12-11T19:30:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents MYSTIC PIZZA: A NEW MUSICAL",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-10-30T20:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents Parsons Dance",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-11-07T20:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents ROCKY HORROR PICTURE SHOW WITH LIVE SHADOWCAST BY RKO ARMY",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-10-31T19:30:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Presents THE PRICE IS RIGHT LIVE - ON STAG",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T20:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Speakeasy's Broadway Piano Bar Afternoon",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T17:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Zeiterion Stage Door Live Presents Colby James & The Ramblers",
-    "venue": "Zeiterion",
-    "town": "New Bedford",
-    "first_start": "2026-11-05T19:30:00-05:00",
     "rows": 1
    },
    {
@@ -474,11 +928,12 @@
    }
   ],
   "check_towns": [
+   "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 0,
-  "primary_only_series": 0,
-  "coverage_ratio": 0.0
+  "primary_only_count": 30,
+  "primary_only_series": 24,
+  "coverage_ratio": 0.038
  },
  "tide_error": null
 }
