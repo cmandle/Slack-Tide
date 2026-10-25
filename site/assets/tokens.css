@@ -79,7 +79,13 @@
   --st-tap-target: 44px;
   --st-tile-size-phone: 66px;          /* category tile height; width fills a 4-column grid */
   --st-tile-size-desktop: 66px;
-  --st-row-height: 56px;               /* week-ahead row, two rulings */
+  --st-week-card-min-h: 96px;          /* week card minimum height; 84px on the phone */
+  --st-week-card-min-h-phone: 84px;
+  --st-week-date-w: 104px;             /* yellow date cell; 76px on the phone */
+  --st-week-date-w-phone: 76px;
+  --st-week-band-w: 28px;              /* category band at the card's right edge; 24px on the phone */
+  --st-week-band-w-phone: 24px;
+  --st-week-gap: 14px 16px;            /* row and column gap, desktop; 10px on the phone */
   --st-card-image-phone: 76px;
   --st-card-image-desktop: 120px;
   --st-gap-phone: 14px;

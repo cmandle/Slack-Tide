@@ -2,19 +2,19 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 145,
-   "seconds": 4.11
+   "seconds": 3.08
   },
   "viva-fall-river": {
    "rows": 250,
-   "seconds": 19.6
+   "seconds": 21.89
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.74
+   "seconds": 0.17
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 3.27
+   "seconds": 3.76
   },
   "zeiterion": {
    "rows": 30,
@@ -22,15 +22,15 @@
   },
   "town-tiverton": {
    "rows": 189,
-   "seconds": 0.74
+   "seconds": 0.63
   },
   "town-dartmouth": {
    "rows": 21,
-   "seconds": 0.39
+   "seconds": 0.33
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.59
+   "seconds": 0.46
   }
  },
  "errors": {

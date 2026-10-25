@@ -181,14 +181,19 @@ svg { display: block; }
 .tide-source { opacity: 0.6; }
 .tide-unavailable { font-size: 11px; line-height: 14px; }
 
-/* Filters: town select, Map (and Calendar on the desktop), category tiles */
+/* Filters: town select with Calendar and Map beside it, then the category and section selects,
+   then the category tiles. The category select mirrors the tiles; the section select goes
+   where the tabs go. */
 .filters {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas: "select links" "tiles tiles";
-  gap: var(--gap) 8px;
+  grid-template-areas: "select links" "more more" "tiles tiles";
+  gap: 8px 8px;
 }
-.select { grid-area: select; position: relative; min-width: 0; }
+.filters > .select { grid-area: select; }
+.select { position: relative; min-width: 0; }
+.more { grid-area: more; display: flex; gap: 8px; margin-bottom: calc(var(--gap) - 8px); }
+.more .select { flex: 1 1 0; }
 .select select {
   width: 100%;
   height: var(--st-tap-target);
@@ -262,24 +267,44 @@ svg { display: block; }
 .card-prov { padding: 0 8px 7px; font: 400 8px/1.3 var(--st-font-mono); letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.75; }
 .empty { font: 400 11px/28px var(--st-font-mono); }
 
-/* The week ahead: rows of two rulings, transparent, on the grid */
-.week { display: flex; flex-direction: column; }
+/* The week ahead: a card grid (DESIGN.md, option 5A). One column on the phone, two on the
+   desktop. The 28 px rhythm does not govern this list. */
+.week { display: flex; flex-direction: column; gap: 10px; }
 .week h2 {
   font: var(--st-section-heading); letter-spacing: var(--st-letterspacing-heading); text-transform: uppercase;
   height: var(--unit);
   border-bottom: 2px solid var(--st-ink);
   display: flex; justify-content: space-between; gap: 12px;
 }
-.week h2 .range { display: none; }
-.week-row { display: flex; align-items: flex-start; gap: 10px; height: var(--st-row-height); color: var(--st-ink); }
-.week-row:hover { color: var(--st-ink); }
-.week-row:hover .week-title { color: var(--st-coral); }
-.week-swatch { flex: 0 0 12px; height: 12px; margin-top: 8px; border: var(--st-border-swatch) solid var(--st-ink); background: var(--cat); }
-/* The artboard's column is 64 px for "SUN 25 · 8A"; real data reaches "MON 19 · 12:30P". */
-.week-when { flex: 0 0 92px; font: 400 10px/28px var(--st-font-mono); white-space: nowrap; }
-.week-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
-.week-title { font: var(--st-row-title-phone); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.week-where { font: 400 10px/28px var(--st-font-mono); margin-top: -2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.week-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.week-card {
+  display: flex; min-height: var(--st-week-card-min-h-phone);
+  background: var(--st-paper); color: var(--st-ink);
+  border: var(--st-border-card) solid var(--st-ink);
+}
+.week-card:hover { color: var(--st-ink); }
+.week-card:hover .wk-title { color: var(--st-coral); }
+.wk-date {
+  flex: 0 0 var(--st-week-date-w-phone); background: var(--st-yellow);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  padding: 6px 4px; text-align: center;
+}
+.wk-day { font: 700 13px/1 var(--st-font-sans); }
+.wk-time { font: 400 10px/1.2 var(--st-font-mono); }
+.wk-body { flex: 1; min-width: 0; padding: 9px 10px; display: flex; flex-direction: column; gap: 4px; }
+.wk-title { font: 700 14px/1.2 var(--st-font-sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wk-place { font: 400 10px/1.3 var(--st-font-mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wk-chips { display: flex; gap: 5px; margin-top: 2px; min-width: 0; }
+.wk-chip {
+  font: 400 9px/1.2 var(--st-font-mono); letter-spacing: var(--st-letterspacing-caps); text-transform: uppercase;
+  padding: 2px 6px; border: 1px solid var(--st-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.wk-band {
+  flex: 0 0 var(--st-week-band-w-phone); background: var(--cat);
+  display: flex; align-items: center; justify-content: center;
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font: 400 9px/1 var(--st-font-mono); letter-spacing: 0.08em; text-transform: uppercase;
+}
 .week-more { align-self: flex-start; font: 400 11px/28px var(--st-font-mono); text-decoration: underline; }
 
 /* Organiser call to action and footer */
@@ -334,10 +359,12 @@ svg { display: block; }
   .tide-readings { gap: 3px; font-size: 11px; line-height: 14px; }
   .tide-now { font-size: 20px; line-height: 24px; }
   .tide-hilo span, .tide-hilo .sep { display: inline; }
-  .filters { grid-template-areas: "select select" "tiles links"; gap: var(--gap) 12px; align-items: center; }
+  .filters { grid-template-areas: "select more" "tiles links"; gap: var(--gap) 12px; align-items: center; }
   .select { width: 220px; }
   .select select { height: 40px; }
   .select svg { top: 16px; }
+  .more { justify-self: start; gap: 12px; margin-bottom: 0; }
+  .more .select { flex: 0 0 220px; }
   .links { justify-self: end; }
   .btn { padding: 0 14px; }
   .tiles { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -356,14 +383,19 @@ svg { display: block; }
   .card-when { padding: 8px 12px; font: var(--st-meta-desktop); }
   .card-where { padding: 8px 12px 2px; font: var(--st-meta-desktop); }
   .card-prov { padding: 2px 12px 10px; font-size: 9px; }
+  .week { gap: 14px; }
   .week h2 { font-size: 12px; }
-  .week h2 .range { display: inline; }
-  .week-row { gap: 14px; }
-  .week-swatch { flex-basis: 14px; height: 14px; margin-top: 7px; }
-  .week-when { flex-basis: 150px; font-size: 11px; }
-  .week-main { flex-direction: row; align-items: flex-start; }
-  .week-title { flex: 1; min-width: 0; font: var(--st-row-title-desktop); }
-  .week-where { flex: 0 0 250px; font-size: 11px; margin-top: 0; text-align: right; }
+  .week-grid { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: var(--st-week-gap); }
+  .week-card { min-height: var(--st-week-card-min-h); }
+  .wk-date { flex-basis: var(--st-week-date-w); padding: 8px 6px; }
+  .wk-day { font-size: 15px; }
+  .wk-time { font-size: 11px; }
+  .wk-body { padding: 12px 14px; gap: 5px; }
+  .wk-title { font-size: 15px; }
+  .wk-place { font-size: 11px; }
+  .wk-chips { gap: 6px; margin-top: 3px; }
+  .wk-chip { font-size: 10px; padding: 3px 8px; }
+  .wk-band { flex-basis: var(--st-week-band-w); font-size: 10px; }
   .week-more { font-size: 12px; margin-top: 4px; }
   /* The desktop placement of the call to action is an open item in DESIGN.md; this is the artboard's. */
   .cta { align-self: flex-start; height: 39px; padding: 0 18px; border: 2px solid var(--st-ink); background: var(--st-coral); }
