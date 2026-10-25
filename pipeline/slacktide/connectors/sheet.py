@@ -28,6 +28,8 @@ COLUMNS = {
     "description": ("description", "details", "about"),
     "status": ("status",),
     "stamp": ("timestamp", "submitted"),
+    "kind": ("listing type", "type", "kind"),
+    "category": ("category",),
 }
 SKIP_STATUSES = {"withdrawn", "cancelled", "canceled", "spam", "duplicate", "no"}
 
@@ -38,7 +40,7 @@ def map_columns(headers: list[str]) -> dict[str, int]:
     time' does not land on the start column the same way."""
     out: dict[str, int] = {}
     lower = [h.strip().lower() for h in headers]
-    for field in ("stamp", "end", "start", "title", "date", "venue", "town", "url", "cost", "description", "status"):
+    for field in ("stamp", "end", "start", "title", "date", "venue", "town", "url", "cost", "description", "status", "kind", "category"):
         for i, h in enumerate(lower):
             if i in out.values():
                 continue
@@ -91,5 +93,7 @@ class SheetConnector(Connector):
                 source_id=self.id, source_uid=uid, title=title, start=start, end=end,
                 all_day=not start_t, venue_raw=cell(row, "venue"), town=cell(row, "town"),
                 url=cell(row, "url"), description=cell(row, "description"), cost=cell(row, "cost"),
-                source_categories=[]))
+                # The organiser's own type and category. normalize() takes a category that names
+                # one of ours when the rules find nothing; it still passes the approver.
+                source_categories=[c for c in (cell(row, "kind"), cell(row, "category")) if c]))
         return out

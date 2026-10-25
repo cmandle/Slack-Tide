@@ -6,7 +6,9 @@
   var townSelect = document.getElementById("town");
   var tiles = Array.prototype.slice.call(document.querySelectorAll(".tile[data-cat]"));
   var cards = Array.prototype.slice.call(document.querySelectorAll(".card[data-town]"));
-  var rows = Array.prototype.slice.call(document.querySelectorAll(".week-row[data-town]"));
+  var rows = Array.prototype.slice.call(document.querySelectorAll(".week-card[data-town]"));
+  var catSelect = document.getElementById("category");
+  var sectionSelect = document.getElementById("section");
   var state = { town: "", cat: "" };
 
   function matches(el) {
@@ -25,10 +27,18 @@
     tiles.forEach(function (t) {
       t.setAttribute("aria-pressed", t.getAttribute("data-cat") === state.cat ? "true" : "false");
     });
+    if (catSelect && catSelect.value !== state.cat) catSelect.value = state.cat;
   }
 
   if (townSelect) {
     townSelect.addEventListener("change", function () { state.town = townSelect.value; applyFilters(); });
+  }
+  if (catSelect) {
+    catSelect.addEventListener("change", function () { state.cat = catSelect.value; applyFilters(); });
+  }
+  /* The section select is navigation: each option's value is the section's address. */
+  if (sectionSelect) {
+    sectionSelect.addEventListener("change", function () { if (sectionSelect.value) window.location.href = sectionSelect.value; });
   }
   tiles.forEach(function (t) {
     t.addEventListener("click", function () {
@@ -61,14 +71,15 @@
      visitor's email client with the details filled in. The hidden "website" field catches bots. */
   function formData(form) {
     var d = {};
-    ["title", "date", "start", "end", "venue", "town", "url", "cost", "description", "name", "email"].forEach(function (k) {
+    ["title", "date", "start", "end", "venue", "town", "kind", "category", "url", "cost", "description", "name", "email"].forEach(function (k) {
       var el = form.elements[k]; d[k] = el ? String(el.value || "").trim() : "";
     });
     return d;
   }
   function mailtoFor(form, d) {
     var lines = ["Event: " + d.title, "Date: " + d.date, "Start: " + d.start, "End: " + d.end, "Venue: " + d.venue,
-                 "Town: " + d.town, "Link: " + d.url, "Cost: " + d.cost, "", d.description, "", "From: " + d.name + " <" + d.email + ">"];
+                 "Town: " + d.town, "Type: " + d.kind, "Category: " + d.category, "Link: " + d.url, "Cost: " + d.cost,
+                 "", d.description, "", "From: " + d.name + " <" + d.email + ">"];
     return form.getAttribute("data-contact") + "?subject=" + encodeURIComponent("Event for Slack Tide: " + d.title) +
            "&body=" + encodeURIComponent(lines.join("\n"));
   }

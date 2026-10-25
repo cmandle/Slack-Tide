@@ -56,13 +56,22 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
         assert f'class="tile" type="button" data-cat="{fam}"' in html
     assert set(config.CATEGORY_FAMILY_OF) == set(config.CATEGORIES)   # every taxonomy entry has a family
     assert 'data-cat="outdoors" data-category="Sports &amp; Recreation"' in html   # bingo is Sports, family Outdoors
-    assert html.count('class="card"') == 1 and html.count('class="week-row"') == 3
+    assert html.count('class="card"') == 1 and html.count('class="week-card"') == 3 and 'class="week-grid"' in html
+    assert 'id="category"' in html and 'id="section"' in html   # the category and section selects
+    assert '<option value="music">Music</option>' in html and '<option value="" selected>Events</option>' in html
+    assert '<option value="groups/">Community groups &amp; meetups</option>' in html
     assert 'data-source="viva-fall-river"' in html and 'class="card-prov" title="Viva Fall River">Read by a person' in html
     assert "Tide data unavailable" in html and 'data-state="unavailable"' in html
     assert "Too far out" not in html and "Already over" not in html
     assert "Waiting for review" not in html and "Rejected gig" not in html   # decision 11: only approved series publish
     assert r["published"] == 6 and r["pending"] == 1
-    assert "FRI 2 · 6P" in html and "FRI 2 · 6:00 PM" in html   # phone and desktop forms of the when column
+    # The week card: date cell, time, place, town chip and the category band, in start order.
+    assert '<span class="wk-day">FRI JAN 2</span><span class="wk-time">6:00 PM</span>' in html   # NOW is Dec 31, the week is January
+    assert '<span class="wk-chip">Tiverton</span>' in html and '<span class="wk-band" title="Sports &amp; Recreation">Outdoors</span>' in html
+    assert '<span class="wk-time">All day</span>' in html
+    assert '<span class="wk-day">SUN JAN 4</span>' in html   # the month joins the day across the month boundary
+    order = [m for m in ("Unclassified talk", "Weekly bingo", "Next weekend fair") if m in html]
+    assert [html.index(t) for t in order] == sorted(html.index(t) for t in order)
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
     for sub in ("groups", "volunteer", "calendar", "map"):
