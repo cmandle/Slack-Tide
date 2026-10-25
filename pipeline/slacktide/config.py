@@ -75,12 +75,15 @@ CLOSURE_PATTERNS = [
 ]
 
 # Tide panel. NOAA CO-OPS tide prediction station, confirmed against the CO-OPS metadata API on
-# 2026-10-18: 8447386 "Fall River, Massachusetts" is a harmonic (reference) station at the head
-# of Mount Hope Bay. CO-OPS lists no station called "Fall River entrance"; the nearest subordinate
-# stations are Steep Brook (8447281) up the Taunton River and Bristol Ferry (8451552) at the
-# bay mouth. Datum MLLW, feet, local time.
-TIDE_STATION = "8447386"
-TIDE_STATION_NAME = "Fall River"
+# 2026-10-25: 8447636 "New Bedford Harbor, Marine Terminal" is a harmonic (reference) station
+# inside the hurricane barrier; 8447712 "Clarks Point" is the reference station just outside
+# it and reads within a few tenths of a foot. The panel showed 8447386 "Fall River" (head of
+# Mount Hope Bay) until 2026-10-25; CO-OPS lists no "Fall River entrance". Subordinate stations
+# for the other towns (Mattapoisett 8447531, Marion 8447385, Onset 8447277, Westport Harbor
+# 8447975, Sakonnet 8450768) are there when the panel becomes per-town. Datum MLLW, feet,
+# local time.
+TIDE_STATION = "8447636"
+TIDE_STATION_NAME = "New Bedford Harbor"
 TIDE_MAX_AGE_HOURS = 24
 
 # Provenance line on every published card. Sources may override with a `provenance:` key in
