@@ -1,72 +1,72 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 149,
-   "seconds": 3.96
+   "rows": 145,
+   "seconds": 3.61
   },
   "brownell-library": {
-   "rows": 23,
-   "seconds": 0.76
+   "rows": 22,
+   "seconds": 0.72
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 3.88
+   "seconds": 4.59
   },
   "viva-fall-river": {
-   "rows": 261,
-   "seconds": 21.21
+   "rows": 250,
+   "seconds": 18.68
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 5.13
+   "seconds": 6.04
   },
   "town-tiverton": {
    "rows": 188,
-   "seconds": 0.69
+   "seconds": 0.6
   },
   "town-dartmouth": {
    "rows": 21,
-   "seconds": 0.41
+   "seconds": 0.39
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.61
+   "seconds": 0.43
   }
  },
  "errors": {},
- "primary_rows": 515,
+ "primary_rows": 503,
  "dropped": {
   "closure": 4,
   "holiday": 7
  },
- "series": 168,
+ "series": 157,
  "by_town": {
-  "Fall River": 90,
-  "Little Compton": 14,
+  "Fall River": 80,
   "Tiverton": 33,
+  "Little Compton": 13,
   "Dartmouth": 28,
   "Somerset": 2,
   "Westport": 1
  },
  "by_category": {
-  "Outdoors & Nature": 17,
   "Food & Drink": 9,
-  "Library & Talks": 32,
-  "Arts & Theatre": 8,
-  "Education & Workshops": 4,
-  "Family & Children": 6,
-  "Music": 23,
+  "Arts & Theatre": 7,
   "Markets & Fairs": 1,
+  "Outdoors & Nature": 15,
+  "Music": 21,
   "(unclassified)": 32,
   "Sports & Recreation": 8,
   "Volunteering & Causes": 2,
+  "Library & Talks": 29,
   "Civic & Town Meetings": 24,
+  "Education & Workshops": 3,
+  "Family & Children": 4,
   "Museums & Exhibitions": 2
  },
  "by_cadence": {
-  "once": 95,
-  "weekends": 2,
+  "weekends": 1,
   "weekly": 33,
+  "once": 85,
   "irregular": 9,
   "several-a-week": 1,
   "fortnightly": 6,
@@ -74,19 +74,18 @@
   "daily": 2
  },
  "weekend_gate": {
-  "saturday": "2026-10-24",
-  "series": 21,
+  "saturday": "2026-10-31",
+  "series": 8,
   "towns": {
-   "Fall River": 20,
-   "Little Compton": 1
+   "Fall River": 8
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 149,
+  "check_total": 145,
   "check_matched": 0,
-  "check_missed_rows": 149,
-  "check_missed_series": 57,
+  "check_missed_rows": 145,
+  "check_missed_series": 55,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -166,13 +165,6 @@
     "rows": 2
    },
    {
-    "title": "Boo at the Zoo",
-    "venue": "Buttonwood Park Zoo",
-    "town": "New Bedford",
-    "first_start": "2026-10-24T10:00:00-04:00",
-    "rows": 2
-   },
-   {
     "title": "Exit 27: Underground Dance Party",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
@@ -199,20 +191,6 @@
     "town": "New Bedford",
     "first_start": "2026-11-20T19:00:00-05:00",
     "rows": 2
-   },
-   {
-    "title": "The Ancestor Hour: Roots & Research Club",
-    "venue": "New Bedford Free Public Library",
-    "town": "New Bedford",
-    "first_start": "2026-10-24T13:00:00-04:00",
-    "rows": 2
-   },
-   {
-    "title": "1st Annual New Bedford Powwow",
-    "venue": "Fort Taber Community Center",
-    "town": "New Bedford",
-    "first_start": "2026-10-24T12:00:00-04:00",
-    "rows": 1
    },
    {
     "title": "A HALLOWEEN YOGA EXPERIENCE - CHASING AWAY YOUR SHADOW",
@@ -254,6 +232,13 @@
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-25T18:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Boo at the Zoo",
+    "venue": "Buttonwood Park Zoo",
+    "town": "New Bedford",
+    "first_start": "2026-10-25T10:00:00-04:00",
     "rows": 1
    },
    {
@@ -383,6 +368,13 @@
     "rows": 1
    },
    {
+    "title": "The Ancestor Hour: Roots & Research Club",
+    "venue": "New Bedford Free Public Library",
+    "town": "New Bedford",
+    "first_start": "2026-12-05T13:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "The NB Rude Boys Skalloween Mosh",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -422,13 +414,6 @@
     "venue": "Zeiterion",
     "town": "New Bedford",
     "first_start": "2026-11-01T14:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Witches' Ball",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-10-24T19:00:00-04:00",
     "rows": 1
    },
    {
