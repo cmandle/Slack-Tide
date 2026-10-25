@@ -7,6 +7,8 @@
   var tiles = Array.prototype.slice.call(document.querySelectorAll(".tile[data-cat]"));
   var cards = Array.prototype.slice.call(document.querySelectorAll(".card[data-town]"));
   var rows = Array.prototype.slice.call(document.querySelectorAll(".week-card[data-town]"));
+  var calDays = Array.prototype.slice.call(document.querySelectorAll(".cal-day"));
+  var CAL_SHOW = 3;
   var catSelect = document.getElementById("category");
   var sectionSelect = document.getElementById("section");
   var state = { town: "", cat: "" };
@@ -24,6 +26,28 @@
     if (tonightEmpty) tonightEmpty.hidden = shown > 0;
     var weekEmpty = document.getElementById("week-empty");
     if (weekEmpty) weekEmpty.hidden = weekShown > 0;
+    /* Calendar cells: the first CAL_SHOW matches show, the rest sit behind "+N more" until the
+       cell is expanded; on the phone a day with no match disappears. */
+    var calShown = 0;
+    calDays.forEach(function (day) {
+      var evs = Array.prototype.slice.call(day.querySelectorAll(".cal-ev"));
+      var expanded = day.hasAttribute("data-expanded"), n = 0;
+      evs.forEach(function (ev) {
+        var on = matches(ev);
+        ev.hidden = !on || (!expanded && n >= CAL_SHOW && window.innerWidth >= 700);
+        if (on) n++;
+      });
+      calShown += n;
+      if (n) day.removeAttribute("data-hidden"); else if (!day.hasAttribute("data-outside")) day.setAttribute("data-hidden", "");
+      var more = day.querySelector(".cal-more");
+      if (more) {
+        var extra = n - CAL_SHOW;
+        more.hidden = expanded || extra <= 0 || window.innerWidth < 700;
+        more.textContent = "+" + Math.max(extra, 0) + " more";
+      }
+    });
+    var calEmpty = document.getElementById("cal-empty");
+    if (calEmpty) calEmpty.hidden = calShown > 0;
     tiles.forEach(function (t) {
       t.setAttribute("aria-pressed", t.getAttribute("data-cat") === state.cat ? "true" : "false");
     });
@@ -35,6 +59,15 @@
   }
   if (catSelect) {
     catSelect.addEventListener("change", function () { state.cat = catSelect.value; applyFilters(); });
+  }
+  calDays.forEach(function (day) {
+    var more = day.querySelector(".cal-more");
+    if (more) more.addEventListener("click", function () { day.setAttribute("data-expanded", ""); applyFilters(); });
+  });
+  if (calDays.length) {
+    var resized;
+    window.addEventListener("resize", function () { clearTimeout(resized); resized = setTimeout(applyFilters, 150); });
+    applyFilters();
   }
   /* The section select is navigation: each option's value is the section's address. */
   if (sectionSelect) {

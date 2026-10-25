@@ -2,46 +2,46 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 145,
-   "seconds": 3.89
+   "seconds": 4.84
   },
   "viva-fall-river": {
    "rows": 251,
-   "seconds": 19.89
+   "seconds": 21.91
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.72
+   "seconds": 0.49
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 4.23
+   "seconds": 4.15
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 4.54
+   "seconds": 5.75
   },
   "zeiterion": {
    "rows": 30,
-   "seconds": 0.81
+   "seconds": 0.54
   },
   "town-tiverton": {
    "rows": 191,
-   "seconds": 0.74
+   "seconds": 0.64
   },
   "town-dartmouth": {
-   "rows": 21,
-   "seconds": 0.45
+   "rows": 20,
+   "seconds": 0.37
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.61
+   "seconds": 0.47
   }
  },
  "errors": {},
- "primary_rows": 286,
+ "primary_rows": 285,
  "dropped": {
   "closure": 4,
-  "holiday": 7
+  "holiday": 6
  },
  "series": 101,
  "approval": {
