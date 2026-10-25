@@ -83,15 +83,18 @@ def test_default_category_is_ours_and_only_fills_gaps(frozen):
     assert all(o.town == "New Bedford" and o.venue == "The Zeiterion" for o in occs)
 
 def test_sheet_columns_and_rows(frozen):
-    cols = map_columns(["Timestamp", "Event title", "Date", "Start time", "End time", "Venue", "Town", "Link", "Cost", "Details", "Your name", "Your email", "Status"])
-    assert cols["title"] == 1 and cols["start"] == 3 and cols["end"] == 4 and cols["url"] == 7 and cols["status"] == 12
+    cols = map_columns(["Timestamp", "Event title", "Date", "Start time", "End time", "Venue", "Town", "Listing type", "Category", "Link", "Cost", "Details", "Your name", "Your email", "Status"])
+    assert cols["title"] == 1 and cols["start"] == 3 and cols["end"] == 4 and cols["kind"] == 7 and cols["category"] == 8 and cols["url"] == 9 and cols["status"] == 14
     c = SheetConnector({"id": "submissions", "kind": "sheet", "url": "x", "town": ""}, cache=False)
     occs = c.parse(fixture_text("submissions.csv"))
     titles = [o.title for o in occs]
-    assert titles == ["Holiday craft fair", "Yoga on the pier"]     # spam status and the dateless row are skipped
-    fair, yoga = occs
+    assert titles == ["Holiday craft fair", "Yoga on the pier", "Sakonnet shore morning"]   # spam status and the dateless row are skipped
+    fair, yoga, cleanup = occs
     assert fair.start.isoformat() == "2099-01-10T10:00:00-05:00" and fair.end.hour == 15 and fair.town == "Westport"
     assert yoga.start.isoformat() == "2099-01-12T08:00:00-05:00" and yoga.end is None and yoga.cost == "$10, cash"
     assert "pat@example.org" not in (fair.description + fair.title + fair.venue_raw)   # organiser details never enter a record
+    assert cleanup.source_categories == ["Volunteer opportunities", "Volunteering & Causes"]
     normalize(occs, {"submissions": ""}, {})
     assert fair.town == "Westport" and fair.category == "Markets & Fairs"
+    assert yoga.category == "Sports & Recreation"            # the rules win when they match
+    assert cleanup.category == "Volunteering & Causes"       # no rule word in the title, so the organiser's own category fills the gap

@@ -270,11 +270,24 @@ def footer(rel: str) -> str:
             f'<span class="towns">{esc(towns)}.</span></div>'
             f'<div>Spotted something wrong? <a href="{CONTACT}">Let us know</a></div></footer>')
 
-def filters(towns_with: Counter, rel: str) -> str:
+def chevron() -> str:
+    return '<svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="#1A1A1A" stroke-width="2"/></svg>'
+
+def filters(towns_with: Counter, rel: str, active: str = "events") -> str:
     opts = ['<option value="">All towns</option>']
     for t in config.TOWNS:
         dis = "" if towns_with.get(t) else " disabled"
         opts.append(f'<option value="{esc(t)}"{dis}>{esc(t)}</option>')
+    # Category as a select too, for the phone and for keyboards; it mirrors the tiles below.
+    cat_opts = ['<option value="">All categories</option>'] + [
+        f'<option value="{esc(fam)}">{esc(label)}</option>' for fam, (label, _) in config.CATEGORY_FAMILIES.items()]
+    # The section select goes where the tabs go: Events, Groups & meetups, Volunteer.
+    sec_opts = [f'<option value="{rel}{href}"{" selected" if key == active else ""}>{esc(long)}</option>'
+                for key, long, short, href in SECTIONS]
+    more = (f'<div class="more"><div class="select"><label class="visually-hidden" for="category">Category</label>'
+            f'<select id="category" name="category">{"".join(cat_opts)}</select>{chevron()}</div>'
+            f'<div class="select"><label class="visually-hidden" for="section">Section</label>'
+            f'<select id="section" name="section">{"".join(sec_opts)}</select>{chevron()}</div></div>')
     tiles = [f'<button class="tile" type="button" data-cat="" aria-pressed="true">{icon_svg("all")}<span>All</span></button>']
     for fam, (label, cats) in config.CATEGORY_FAMILIES.items():
         tiles.append(f'<button class="tile" type="button" data-cat="{esc(fam)}" aria-pressed="false" title="{esc(", ".join(cats))}">'
@@ -284,8 +297,8 @@ def filters(towns_with: Counter, rel: str) -> str:
     pin = ('<svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 18s-6-5.5-6-10a6 6 0 0112 0c0 4.5-6 10-6 10z" fill="none" stroke="currentColor" stroke-width="2"/>'
            '<circle cx="10" cy="8" r="2" fill="currentColor"/></svg>')
     return (f'<div class="filters"><div class="select"><label class="visually-hidden" for="town">Town</label>'
-            f'<select id="town" name="town">{"".join(opts)}</select>'
-            '<svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="#1A1A1A" stroke-width="2"/></svg></div>'
+            f'<select id="town" name="town">{"".join(opts)}</select>{chevron()}</div>'
+            + more +
             f'<nav class="links" aria-label="Views"><a class="btn btn-calendar" href="{rel}calendar/">{cal}Calendar</a>'
             f'<a class="btn" href="{rel}map/">{pin}Map</a></nav>'
             f'<div class="tiles" role="group" aria-label="Categories">{"".join(tiles)}</div></div>')
@@ -313,21 +326,23 @@ def card(row: dict, sources: dict, scenes: dict[str, list[str]], rel: str = "") 
             f'<div class="card-where">{esc(where)}</div>'
             f'<div class="card-prov" title="{esc(source_name(s, sources))}">{esc(provenance(s, sources))}</div></a>')
 
-def week_row(row: dict, sources: dict) -> str:
+def week_card(row: dict, sources: dict, today: date) -> str:
+    """DESIGN.md, The week ahead (option 5A, 25 October 2026): a three-part card. Yellow date
+    cell, body with title, place and one town chip, category band on the right edge reading
+    bottom to top. The month joins the day once the week crosses into the next month."""
     s, start, o = row["series"], row["start"], row["occ"]
     cat = s.get("category") or ""
-    day = f'{start.strftime("%a").upper()} {start.day}'
-    if o.get("all_day"):
-        when_short = when_long = f"{day} · All day"
-    else:
-        when_short, when_long = f"{day} · {fmt_time_short(start)}", f"{day} · {fmt_time(start)}"
-    where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
-    return (f'<a class="week-row" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
+    day = f'{start.strftime("%a").upper()} {start.day}' if start.month == today.month else \
+          f'{start.strftime("%a").upper()} {start.strftime("%b").upper()} {start.day}'
+    when = "All day" if o.get("all_day") else fmt_time(start)
+    place = f'<span class="wk-place">{esc(s["venue"])}</span>' if s.get("venue") else ""
+    chip = f'<span class="wk-chips"><span class="wk-chip">{esc(s["town"])}</span></span>' if s.get("town") else ""
+    return (f'<a class="week-card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
             f'data-category="{esc(cat)}" data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}" '
             f'title="{esc(provenance(s, sources))} · {esc(source_name(s, sources))}">'
-            f'<span class="week-swatch" aria-hidden="true"></span>'
-            f'<span class="week-when"><span class="short">{esc(when_short)}</span><span class="long">{esc(when_long)}</span></span>'
-            f'<span class="week-main"><span class="week-title">{esc(s["title"])}</span><span class="week-where">{esc(where)}</span></span></a>')
+            f'<span class="wk-date"><span class="wk-day">{esc(day)}</span><span class="wk-time">{esc(when)}</span></span>'
+            f'<span class="wk-body"><span class="wk-title">{esc(s["title"])}</span>{place}{chip}</span>'
+            f'<span class="wk-band" title="{esc(cat)}">{esc(short_label(cat))}</span></a>')
 
 def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     sources = source_index()
@@ -339,8 +354,11 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     dateline = f'{now.strftime("%a")} {now.strftime("%b")} {now.day} · {REGION}'
     scenes = art_scenes()
     cards_html = "".join(card(r, sources, scenes) for r in tonight)
-    rows_html = "".join(week_row(r, sources) for rows in week.values() for r in rows)
-    n_week = sum(len(r) for r in week.values())
+    # One grid for the whole week, ordered by start time; no day grouping (DESIGN.md).
+    week_rows = sorted((r for rows in week.values() for r in rows),
+                       key=lambda r: (r["start"], not r["occ"].get("all_day"), r["series"]["title"]))
+    rows_html = "".join(week_card(r, sources, now.date()) for r in week_rows)
+    n_week = len(week_rows)
     description = (f"Gigs, markets, walks, talks and town meetings from {REGION}, gathered from the calendars "
                    "local organizations already keep. Every listing is read by a person.")
     body = (head("events", "") +
@@ -352,7 +370,7 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
             f'<div class="cards" aria-label="Tonight">{cards_html}</div>'
             f'<p class="empty" id="tonight-empty"{"" if not tonight else " hidden"}>Nothing listed for tonight in this view.</p>'
             f'<section class="week" aria-labelledby="week-h"><h2 id="week-h"><span>The week ahead</span><span class="range">{esc(week_range_label(now.date()))}</span></h2>'
-            f'{rows_html}'
+            f'<div class="week-grid">{rows_html}</div>'
             f'<p class="empty" id="week-empty"{" hidden" if n_week else ""}>Nothing listed for the week ahead in this view.</p>'
             '<a class="week-more" href="calendar/">See the whole month →</a></section>'
             '<a class="cta" href="add/" data-dialog="add-dialog">Add your event</a>'
@@ -381,6 +399,10 @@ def form_config(sources: dict[str, dict]) -> dict:
 def submission_form(rel: str, sources: dict[str, dict], form_id: str) -> str:
     cfg = form_config(sources)
     towns = "".join(f'<option value="{esc(t)}">{esc(t)}</option>' for t in config.TOWNS)
+    # The three sections as listing types, and our taxonomy as the category; both are the
+    # organiser's suggestion and still pass through the approver.
+    kinds = "".join(f'<option value="{esc(long)}">{esc(long)}</option>' for _, long, _, _ in SECTIONS)
+    cats = "".join(f'<option value="{esc(c)}">{esc(c)}</option>' for c in config.CATEGORIES)
     fields = json.dumps(cfg["fields"]).replace('"', "&quot;")
     def field(name, label, control):
         return f'<div class="field"><label for="{form_id}-{name}">{label}</label>{control}</div>'
@@ -397,6 +419,10 @@ def submission_form(rel: str, sources: dict[str, dict], form_id: str) -> str:
             + '</div>'
             + field("venue", "Venue", inp("venue", required=True, extra=' maxlength="120" placeholder="Where it happens"'))
             + field("town", "Town", f'<select id="{form_id}-town" name="town" required><option value="">Choose a town</option>{towns}</select>')
+            + '<div class="field-row">'
+            + field("kind", "Listing type", f'<select id="{form_id}-kind" name="kind">{kinds}</select>')
+            + field("category", "Category", f'<select id="{form_id}-category" name="category"><option value="">Not sure, you choose</option>{cats}</select>')
+            + '</div>'
             + field("url", "Link", inp("url", "url", extra=' placeholder="https://"'))
             + field("cost", "Cost", inp("cost", extra=' maxlength="60" placeholder="Free, $10, suggested donation"'))
             + field("description", "Details", f'<textarea id="{form_id}-description" name="description" rows="4" maxlength="1200"></textarea>')

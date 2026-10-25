@@ -4,7 +4,7 @@ classify() later; the rest stays."""
 from __future__ import annotations
 import html, re
 from rapidfuzz import fuzz, process
-from .config import TOWNS, ZIP_TO_TOWN, TOWN_ALIASES, HOLIDAY_TITLES, CLOSURE_PATTERNS
+from .config import TOWNS, ZIP_TO_TOWN, TOWN_ALIASES, HOLIDAY_TITLES, CLOSURE_PATTERNS, CATEGORIES
 from .models import Occurrence
 
 _WS = re.compile(r"\s+")
@@ -186,5 +186,7 @@ def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
         if not o.title:
             o.dropped = "no title"
             continue
-        o.category = classify(o.title, o.venue, o.description) or default_category_by_source.get(o.source_id, "")
+        o.category = (classify(o.title, o.venue, o.description)
+                      or next((c for c in o.source_categories if c in CATEGORIES), "")   # a source naming OUR category exactly (the /add/ form does)
+                      or default_category_by_source.get(o.source_id, ""))
     return occs

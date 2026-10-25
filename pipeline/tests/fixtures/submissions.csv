@@ -1,5 +1,6 @@
-Timestamp,Event title,Date,Start time,End time,Venue,Town,Link,Cost,Details,Your name,Your email,Status
-2098/12/20 9:14:02 AM EST,Holiday craft fair,2099-01-10,10:00 AM,3:00 PM,Grange Hall,Westport,https://example.org/fair,Free,Forty local makers. Hot cider.,Pat Example,pat@example.org,
-2098/12/21 6:02:11 PM EST,Yoga on the pier,01/12/2099,8:00 AM,,Union Wharf,Fairhaven,,"$10, cash",Bring a mat.,Sam Example,sam@example.org,
-2098/12/22 1:00:00 PM EST,Spam post,2099-01-12,,,,,http://spam.example,,buy now,Bot,bot@example.org,spam
-2098/12/23 1:00:00 PM EST,No date given,,7:00 PM,,Somewhere,Marion,,,,A Person,a@example.org,
+Timestamp,Event title,Date,Start time,End time,Venue,Town,Listing type,Category,Link,Cost,Details,Your name,Your email,Status
+2098/12/20 9:14:02 AM EST,Holiday craft fair,2099-01-10,10:00 AM,3:00 PM,Grange Hall,Westport,Events,Markets & Fairs,https://example.org/fair,Free,Forty local makers. Hot cider.,Pat Example,pat@example.org,
+2098/12/21 6:02:11 PM EST,Yoga on the pier,01/12/2099,8:00 AM,,Union Wharf,Fairhaven,Events,,,"$10, cash",Bring a mat.,Sam Example,sam@example.org,
+2098/12/22 1:00:00 PM EST,Spam post,2099-01-12,,,,,Events,,http://spam.example,,buy now,Bot,bot@example.org,spam
+2098/12/23 1:00:00 PM EST,No date given,,7:00 PM,,Somewhere,Marion,Events,,,,,A Person,a@example.org,
+2098/12/23 2:00:00 PM EST,Sakonnet shore morning,2099-01-17,9:00 AM,,Town Landing,Tiverton,Volunteer opportunities,Volunteering & Causes,,,Gloves provided.,Jo Example,jo@example.org,

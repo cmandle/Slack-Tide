@@ -53,7 +53,13 @@ Seven tappable elements above the first listing on the phone; nothing else.
 
 On desktop a "Tonight" badge sits top-left on the image for same-day events: paper fill, 1.5 px ink outline, mono uppercase.
 
-**The week ahead.** A list on the ruling: each row is 56 px tall (two 28 px rulings), transparent, no borders. Left to right: a 12 px category swatch (14 desktop) with a 1.5 px ink outline; mono date and time; title in Archivo 700 on a 28 px line; place in mono on the next 28 px line (desktop puts the place at the right of the same line). Heading "The week ahead" is mono 11 px uppercase with a 2 px ink underline. Keep the vertical rhythm locked to 28 px so rows sit on the grid lines.
+**The week ahead.** A grid of cards, two across on desktop (`minmax(420px, 1fr)`) and one across on the phone, 16 px column gap and 14 px row gap on desktop, 10 px on the phone. The canvas sources are `design/canvas/Week-A-*.dc.html`; the flattened pages are `design/reference/week-desktop.html` and `week-phone.html`, with screenshots. Each card is a 1 px ink outline, square, minimum height 96 px (84 on the phone), three parts left to right:
+
+1. Date cell, 104 px wide (76 on the phone), yellow fill, no border on its right edge: day in Archivo 700 15 px (13) as "MON 26", time in mono 11 px (10) beneath, both centred.
+2. Body, 12 px by 14 px padding (9 by 10): title in Archivo 700 15 px (14) on one line with ellipsis, place in mono 11 px (10), then a single outlined town chip in mono 10 px (9) uppercase, 1 px ink border, no fill.
+3. Category band, 28 px wide (24), filled in the category colour, no border on its left edge, mono 10 px (9) uppercase label running vertically and reading bottom to top (`writing-mode: vertical-rl` plus `transform: rotate(180deg)`). Same device as the Tonight card's category block; note the Tonight block reads top to bottom.
+
+Heading "The week ahead" with the date range at the right is mono uppercase with a 2 px ink underline, as before, and "See the whole month" follows the grid. Cards replace the earlier transparent rows on the ruling; the 28 px rhythm no longer governs this list. Listings are ordered by start time across the week; no day grouping, and the date repeats on every card. Decided 25 October 2026 from option 5A on the canvas.
 
 **Images.** Every card carries a picture; the image cell is never an empty colour block. Two kinds, treated differently so they read as different things:
 
@@ -87,7 +93,7 @@ All text is ink `#1A1A1A` on every fill; no white text anywhere. Contrast of ink
 
 - 2 px: outer frame (ink), header and footer rules (blue), week-ahead heading underline (ink).
 - 1.5 px: tab outlines (blue), margin lines on the phone, swatch outlines.
-- 1 px: all controls, all cards and their internal dividers.
+- 1 px: all controls, all cards and their internal dividers (the week card's date cell and category band have no inner edge).
 - Rounded: frame corners and tab tops only. Everything else is square. No rotation, no dashed rules, no drop shadows.
 
 ## Copy

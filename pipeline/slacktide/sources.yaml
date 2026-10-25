@@ -153,6 +153,8 @@
       end: ""
       venue: ""
       town: ""
+      kind: ""        # Events | Community groups & meetups | Volunteer opportunities
+      category: ""    # one of config.CATEGORIES, or blank for "you choose"
       url: ""
       cost: ""
       description: ""
