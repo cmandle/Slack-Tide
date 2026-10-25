@@ -70,7 +70,7 @@ Heading "The week ahead" with the date range at the right is mono uppercase with
 
 A 1 px outlined panel in the hero, paper fill: the tide staff on the left (a ruled gauge with blue water fill and a coral marker line at the current level), readings on the right in mono uppercase: height and trend ("3.8 FT ↑", "rising" on desktop), next high and low with times, and a source line.
 
-Data: NOAA CO-OPS tide predictions for a station configured per town (default Fall River entrance, a PORTS station; confirm station IDs at implementation from the CO-OPS station lookup). Show predicted height now, direction, next high and low. Cache predictions for the day; the pipeline can fetch them in the scheduled run and write them beside `events.json`. If the data is missing or stale, show the staff unfilled with "Tide data unavailable" and no numbers. The staff is also the only brand mark; it does not appear beside the wordmark.
+Data: NOAA CO-OPS tide predictions for a station configured per town (default New Bedford Harbor, Marine Terminal, station 8447636, a reference station; the other towns' subordinate stations are listed in `config.py`). Show predicted height now, direction, next high and low. Cache predictions for the day; the pipeline can fetch them in the scheduled run and write them beside `events.json`. If the data is missing or stale, show the staff unfilled with "Tide data unavailable" and no numbers. The staff is also the only brand mark; it does not appear beside the wordmark.
 
 ## Organiser call to action and footer
 
