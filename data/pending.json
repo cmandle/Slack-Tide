@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-25T16:55:52.206603+00:00",
- "pending_count": 44,
- "soon_count": 18,
+ "generated_at": "2026-10-25T17:03:16.261958+00:00",
+ "pending_count": 45,
+ "soon_count": 20,
  "approved_count": 56,
  "rejected_count": 0,
  "series": [
@@ -384,6 +384,33 @@
    "soon": true
   },
   {
+   "id": "288e210032e7",
+   "title": "Open Mic Jam Sesh FRIDAYS",
+   "venue": "Buzzards Bay Brewing",
+   "town": "Westport",
+   "category": "Music",
+   "source_id": "buzzards-bay-brewing",
+   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-72/",
+   "cost": "",
+   "first_start": "2026-10-30T21:00:00-04:00",
+   "last_start": "2026-10-30T21:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-30T21:00:00-04:00",
+     "end": "2026-10-31T00:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us at the brewery for our weekly Open Mic Jam Sesh every Friday in the Kettle! Bring your instrument(s), singing voice, stand-up routine, or just come hang out for a fun, all-ages jam session. Sign-ups start at 5pm. All are welcome 🍻🎤 We will have rotating food trucks each week, so come hungry!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-30T21:00:00-04:00",
+   "soon": true
+  },
+  {
    "id": "4f9834189883",
    "title": "All Souls",
    "venue": "The Zeiterion",
@@ -521,7 +548,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-01T17:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "b1593f3a3634",

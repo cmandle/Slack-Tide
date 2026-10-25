@@ -2,56 +2,59 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 145,
-   "seconds": 3.08
+   "seconds": 3.89
   },
   "viva-fall-river": {
-   "rows": 250,
-   "seconds": 21.89
+   "rows": 251,
+   "seconds": 19.89
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.17
+   "seconds": 0.72
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 3.76
+   "seconds": 4.23
+  },
+  "buzzards-bay-brewing": {
+   "rows": 1,
+   "seconds": 4.54
   },
   "zeiterion": {
    "rows": 30,
-   "seconds": 0.69
+   "seconds": 0.81
   },
   "town-tiverton": {
-   "rows": 189,
-   "seconds": 0.63
+   "rows": 191,
+   "seconds": 0.74
   },
   "town-dartmouth": {
    "rows": 21,
-   "seconds": 0.33
+   "seconds": 0.45
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.46
+   "seconds": 0.61
   }
  },
- "errors": {
-  "buzzards-bay-brewing": "HTTPError: 500 Server Error: Internal Server Error for url: https://buzzardsbrew.com/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-10-25"
- },
- "primary_rows": 283,
+ "errors": {},
+ "primary_rows": 286,
  "dropped": {
   "closure": 4,
   "holiday": 7
  },
- "series": 100,
+ "series": 101,
  "approval": {
   "approved": 56,
-  "pending": 44
+  "pending": 45
  },
  "by_town": {
   "Tiverton": 33,
   "Little Compton": 13,
   "Dartmouth": 28,
   "New Bedford": 24,
-  "Somerset": 2
+  "Somerset": 2,
+  "Westport": 1
  },
  "by_category": {
   "Sports & Recreation": 5,
@@ -63,13 +66,13 @@
   "Education & Workshops": 2,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
-  "Music": 2
+  "Music": 3
  },
  "by_cadence": {
   "several-a-week": 1,
   "weekly": 17,
   "irregular": 6,
-  "once": 64,
+  "once": 65,
   "fortnightly": 2,
   "weekends": 1,
   "monthly": 9
@@ -81,9 +84,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 395,
+  "check_total": 396,
   "check_matched": 15,
-  "check_missed_rows": 380,
+  "check_missed_rows": 381,
   "check_missed_series": 120,
   "check_missed": [
    {
@@ -133,6 +136,13 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-10-28T07:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Knitting Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-10-29T13:00:00-04:00",
     "rows": 9
    },
    {
@@ -224,13 +234,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-10-30T17:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Knitting Club",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-29T13:00:00-04:00",
     "rows": 8
    },
    {
