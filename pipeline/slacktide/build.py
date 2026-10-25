@@ -380,7 +380,6 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
 PLACEHOLDER_COPY = {
     "groups": ("Community groups & meetups", "This section will list the standing groups, clubs and meetups along the coast: who meets, where, and how often."),
     "volunteer": ("Volunteer opportunities", "This section will list the land trusts, libraries, pantries and town committees that need hands, with dates where they have them."),
-    "calendar": ("Calendar", "The calendar will expand every series into its dates, a month at a time."),
     "map": ("Map", "The map will place every venue we list, town by town."),
 }
 
@@ -457,6 +456,107 @@ def add_page(now: datetime, sources: dict[str, dict]) -> str:
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
     return page(f"{SITE_NAME} · Add your event", body, rel,
                 f"List a community event from {REGION} on Slack Tide. Free, read by a person.", now)
+
+# ---------------------------------------------------------------- calendar
+
+CAL_SHOW = 3   # events shown per day cell on the desktop before "+N more"
+DOW = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+
+def month_span(now: datetime) -> list[tuple[int, int]]:
+    """(year, month) for every month the 60-day window touches, this month first."""
+    out, d, last = [], now.date().replace(day=1), (now + timedelta(days=config.WINDOW_DAYS)).date()
+    while d <= last:
+        out.append((d.year, d.month))
+        d = (d.replace(day=28) + timedelta(days=4)).replace(day=1)
+    return out
+
+def month_label(year: int, month: int) -> str:
+    return date(year, month, 1).strftime("%B %Y")
+
+def month_href(year: int, month: int, now: datetime, rel: str) -> str:
+    """This month lives at calendar/, the others at calendar/YYYY-MM/."""
+    if (year, month) == (now.year, now.month):
+        return f"{rel}calendar/"
+    return f"{rel}calendar/{year:04d}-{month:02d}/"
+
+def month_entries(series: list[dict], year: int, month: int) -> dict[date, list[dict]]:
+    """Every occurrence in the month, by day, all-day first then by time. Every series shows
+    on each of its dates here; the collapse is for the lists, not the calendar."""
+    days: dict[date, list[dict]] = {}
+    for s in series:
+        for o in s["occurrences"]:
+            start = _parse(o["start"])
+            if (start.year, start.month) == (year, month):
+                days.setdefault(start.date(), []).append({"series": s, "start": start, "occ": o})
+    for rows in days.values():
+        rows.sort(key=lambda r: (not r["occ"].get("all_day"), r["start"], r["series"]["title"]))
+    return days
+
+def cal_event(row: dict, sources: dict) -> str:
+    s, start, o = row["series"], row["start"], row["occ"]
+    cat = s.get("category") or ""
+    when = "All day" if o.get("all_day") else fmt_time_short(start)
+    where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
+    return (f'<a class="cal-ev" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
+            f'data-category="{esc(cat)}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}" '
+            f'title="{esc(s["title"])} · {esc(where)} · {esc(source_name(s, sources))}">'
+            f'<span class="cal-sw" aria-hidden="true"></span><span class="cal-time">{esc(when)}</span>'
+            f'<span class="cal-title">{esc(s["title"])}</span><span class="cal-where">{esc(where)}</span></a>')
+
+def calendar_page(events: dict, now: datetime, year: int, month: int, rel: str) -> str:
+    sources = source_index()
+    live = published(events["series"])
+    days = month_entries(live, year, month)
+    months = month_span(now)
+    first = date(year, month, 1)
+    last = (first.replace(day=28) + timedelta(days=4)).replace(day=1) - timedelta(days=1)
+    # Sunday-first grid, padded to whole weeks with the neighbouring months' days.
+    lead = (first.weekday() + 1) % 7
+    cursor = first - timedelta(days=lead)
+    cells = []
+    today = now.date()
+    while cursor <= last or len(cells) % 7:
+        rows = days.get(cursor, []) if first <= cursor <= last else []
+        flags = ""
+        if cursor < first or cursor > last:
+            flags += " data-outside"
+        if cursor == today:
+            flags += " data-today"
+        if cursor < today:
+            flags += " data-past"
+        if not rows:
+            flags += " data-empty"
+        evs = "".join(cal_event(r, sources) for r in rows)
+        more = len(rows) - CAL_SHOW
+        cells.append(f'<div class="cal-day" data-date="{cursor.isoformat()}"{flags}>'
+                     f'<span class="cal-num"><span class="cal-dow">{DOW[(cursor.weekday() + 1) % 7]}</span> {cursor.day}</span>'
+                     f'<div class="cal-list">{evs}</div>'
+                     f'<button class="cal-more" type="button"{"" if more > 0 else " hidden"}>+{max(more, 0)} more</button></div>')
+        cursor += timedelta(days=1)
+    i = months.index((year, month)) if (year, month) in months else -1
+    prev_m = months[i - 1] if i > 0 else None
+    next_m = months[i + 1] if 0 <= i < len(months) - 1 else None
+    nav = '<nav class="cal-nav" aria-label="Months">'
+    nav += (f'<a class="btn" href="{month_href(*prev_m, now, rel)}">← {esc(date(*prev_m, 1).strftime("%B"))}</a>' if prev_m
+            else '<span class="btn is-off">← </span>')
+    nav += (f'<a class="btn" href="{month_href(*next_m, now, rel)}">{esc(date(*next_m, 1).strftime("%B"))} →</a>' if next_m
+            else '<span class="btn is-off"> →</span>')
+    nav += '</nav>'
+    n_rows = sum(len(r) for r in days.values())
+    towns = Counter(r["series"]["town"] for rows in days.values() for r in rows)
+    n_towns = len([t for t in towns if t])
+    head_row = "".join(f'<span>{d}</span>' for d in DOW)
+    body = (head("events", rel) +
+            f'<main class="content cal" id="main">'
+            f'<div class="hero-text"><div class="hero-title"><h1>{esc(month_label(year, month))}</h1>{stickers()}</div>'
+            f'<div class="dateline">{n_rows} listing{"" if n_rows == 1 else "s"} · {n_towns} town{"" if n_towns == 1 else "s"} · {esc(REGION)}</div></div>'
+            + filters(towns, rel) + nav +
+            f'<div class="cal-head" aria-hidden="true">{head_row}</div>'
+            f'<div class="cal-grid">{"".join(cells)}</div>'
+            f'<p class="empty" id="cal-empty"{" hidden" if n_rows else ""}>Nothing listed this month in this view.</p>'
+            f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
+    return page(f"{SITE_NAME} · {month_label(year, month)}", body, rel,
+                f"Every listing from {REGION} for {month_label(year, month)}, a month at a time. Every listing is read by a person.", now)
 
 # ---------------------------------------------------------------- review queue
 
@@ -571,6 +671,17 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
         (d / "index.html").write_text(placeholder_page(key, now), encoding="utf-8")
     (out / "add").mkdir(parents=True, exist_ok=True)
     (out / "add" / "index.html").write_text(add_page(now, sources), encoding="utf-8")
+    # The calendar: this month at calendar/, each further month the window touches at calendar/YYYY-MM/.
+    cal_dir = out / "calendar"
+    if cal_dir.is_dir():
+        shutil.rmtree(cal_dir)
+    for year, month in month_span(now):
+        if (year, month) == (now.year, now.month):
+            d, rel = cal_dir, "../"
+        else:
+            d, rel = cal_dir / f"{year:04d}-{month:02d}", "../../"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(calendar_page(events, now, year, month, rel), encoding="utf-8")
     pending_path = data_dir / "pending.json"
     if pending_path.exists():
         pending = json.loads(pending_path.read_text(encoding="utf-8"))
