@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # to start the Pages deploy after committing site/
 
 concurrency:
   group: ingest
@@ -46,6 +47,7 @@ jobs:
         run: slacktide build
 
       - name: Commit data/ and site/
+        id: commit
         run: |
           git config user.name "slack-tide-bot"
           git config user.email "bot@slack-tide.org"
@@ -58,3 +60,12 @@ jobs:
           # The approver may have committed approvals.yaml meanwhile; take it before pushing.
           git pull --rebase origin main
           git push
+          if ! git diff --quiet HEAD~1 HEAD -- site; then echo "site_changed=true" >> "$GITHUB_OUTPUT"; fi
+
+      # A push made with the workflow's own token never starts another workflow, so the Pages
+      # deploy has to be asked for by name whenever site/ changed.
+      - name: Deploy the site
+        if: steps.commit.outputs.site_changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
