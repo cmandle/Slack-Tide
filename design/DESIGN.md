@@ -103,7 +103,8 @@ Public copy is American English (harbor, organizer, canceled). Sentence case in 
 ## Open items
 
 - Organiser call to action on the desktop page: footer link, or a tab-row element. Decide before `site/` is generated.
-- Event page, Calendar view and Map view are not yet designed in this direction. Carry the event page's provenance line and report link from `preview/event.html`.
+- Event page and Map view are not yet designed in this direction. Carry the event page's provenance line and report link from `preview/event.html`.
+- Calendar view: built 25 October 2026 straight from the vocabulary above, without a canvas artboard. Desktop is a Sunday-first month grid with 1 px ink rules, mono day numbers (today on a yellow block, past days dimmed, neighbouring months hatched), three listings per cell then "+N more"; the phone is a list of day cards in the week card's shape (yellow date cell, listings beside it), empty days left out. One page per month the 60-day window touches, with month links as the outlined buttons. Build screenshots: `design/reference/calendar-build-1280.png` and `calendar-build-390.png`. If the canvas later draws a calendar, the build follows it.
 - Groups and Volunteer sections: layouts to follow once the Events section is signed off.
 - Mascot: none. Illustration is the card scene set in `design/art/`; a character, if one ever comes, is a separate decision.
 - Splat stickers in the hero are decoration; keep at most three, and drop them on narrow phones if they collide with the tide panel.

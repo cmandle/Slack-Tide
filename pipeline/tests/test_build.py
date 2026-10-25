@@ -74,9 +74,21 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert [html.index(t) for t in order] == sorted(html.index(t) for t in order)
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
-    for sub in ("groups", "volunteer", "calendar", "map"):
+    for sub in ("groups", "volunteer", "map"):
         p = out / sub / "index.html"
         assert p.exists() and "is coming" in p.read_text(encoding="utf-8")
+    # The calendar: this month at calendar/, the next two months the window touches at calendar/YYYY-MM/.
+    cal = (out / "calendar" / "index.html").read_text(encoding="utf-8")
+    assert "<h1>December 2098</h1>" in cal and 'data-date="2098-12-31" data-today' in cal
+    assert cal.count('class="cal-day"') == 35 and 'data-date="2098-11-30" data-outside' in cal   # Dec 1 2098 is a Monday; Sunday-first, padded to whole weeks
+    assert '<a class="btn" href="../calendar/2099-01/">January →</a>' in cal and '<span class="btn is-off">← </span>' in cal
+    assert (out / "calendar" / "2099-01" / "index.html").exists() and (out / "calendar" / "2099-02" / "index.html").exists()
+    jan = (out / "calendar" / "2099-01" / "index.html").read_text(encoding="utf-8")
+    assert '<a class="btn" href="../../calendar/">December →'.replace("December →", "") in jan and "← December" in jan
+    today_cell = cal.split('data-date="2098-12-31"')[1].split('class="cal-day"')[0]
+    assert "Tonight gig" in today_cell and "Already over" in today_cell and "Rejected gig" not in today_cell   # the day shows its whole day; rejected never
+    assert 'data-date="2099-01-02"' in jan and "Weekly bingo" in jan and "Too far out" in jan   # every date of a series, 8 days out included
+    assert "Waiting for review" not in jan and 'id="category"' in cal
     for a in ("tokens.css", "site.css", "site.js", "review.js"):
         assert (out / "assets" / a).exists()
     assert "—" not in html   # no em dashes in public copy
