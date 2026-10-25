@@ -1,0 +1,105 @@
+town,name,domain,kind
+New Bedford,New Bedford Whaling Museum,whalingmuseum.org,museum
+New Bedford,New Bedford Art Museum,newbedfordart.org,museum
+New Bedford,New Bedford Free Public Library,nbfpl.org,library
+New Bedford,Buttonwood Park Zoo,bpzoo.org,attraction
+New Bedford,Rotch-Jones-Duff House,rjdmuseum.org,museum
+New Bedford,Gallery X,galleryx.org,arts
+New Bedford,New Bedford Symphony Orchestra,nbsymphony.org,music
+New Bedford,New Bedford Festival Theatre,nbfestivaltheatre.com,theatre
+New Bedford,Destination New Bedford (city tourism),destinationnewbedford.org,aggregator
+New Bedford,Downtown New Bedford Inc,downtownnb.org,aggregator
+New Bedford,AHA! New Bedford,ahanewbedford.org,arts
+New Bedford,Hatch Street Studios,hatchstreetstudios.com,arts
+New Bedford,The Vault Performing Arts Center,thevaultnb.com,venue
+New Bedford,Greasy Luck Brewpub,greasyluck.com,venue
+New Bedford,Co-Creative Center,cocreativecenter.org,arts
+New Bedford,New Bedford Fishing Heritage Center,fishingheritagecenter.org,museum
+New Bedford,WHALE (Waterfront Historic Area League),waterfrontleague.org,civic
+New Bedford,New Bedford Historical Society,nbhistoricalsociety.org,history
+New Bedford,Community Boating Center,communityboating.org,recreation
+New Bedford,Groundwork Southcoast,groundworksouthcoast.org,civic
+New Bedford,Feast of the Blessed Sacrament,feastoftheblessedsacrament.com,festival
+New Bedford,Moby Dick Brewing,mobydickbrewing.com,venue
+New Bedford,Kilburn Mill,kilburnmill.com,venue
+New Bedford,Your Theatre,yourtheatre.org,theatre
+New Bedford,Cisco Kitchen & Bar,ciscokitchenbar.com,venue
+New Bedford,New Bedford Whaling National Historical Park,nps.gov,park
+New Bedford,UMass Dartmouth,umassd.edu,college
+New Bedford,Seamen's Bethel,seamensbethel.org,history
+New Bedford,New Bedford Light,newbedfordlight.org,media
+New Bedford,New Bedford Guide,newbedfordguide.com,media
+Fall River,Narrows Center for the Arts,narrowscenter.org,venue
+Fall River,Battleship Cove,battleshipcove.org,museum
+Fall River,Lizzie Borden House,lizzie-borden.com,attraction
+Fall River,Fall River Historical Society,fallriverhistorical.org,history
+Fall River,Fall River Public Library,fallriverlibrary.org,library
+Fall River,Fall River Reporter,fallriverreporter.com,media
+Fall River,Canned Heat Craft Beer Co,cannedheatbeer.com,venue
+Fall River,The Tipsy Toboggan,thetipsytoboggan.com,venue
+Fall River,SoCo Art Labs,socoartlabs.com,arts
+Fall River,Greater Fall River Re-CREATION,re-creation.org,recreation
+Fall River,Lafayette-Durfee House,lafayettedurfeehouse.org,history
+Fall River,Children's Museum of Greater Fall River,cmgfr.org,museum
+Fall River,Fall River Little Theatre,fallriverlittletheatre.org,theatre
+Fall River,City of Fall River,fallriverma.org,town
+Fall River,Bristol Community College,bristolcc.edu,college
+Fall River,Viva Fall River,vivafallriver.com,aggregator
+Fall River,Marine Museum at Fall River,marinemuseumfr.org,museum
+Dartmouth,Lloyd Center for the Environment,lloydcenter.org,nature
+Dartmouth,Dartmouth Public Libraries,dartmouthpubliclibraries.org,library
+Dartmouth,Round the Bend Farm,roundthebendfarm.org,farm
+Dartmouth,Mass Audubon (Allens Pond),massaudubon.org,nature
+Dartmouth,The Trustees of Reservations,thetrustees.org,nature
+Dartmouth,Dartmouth Cultural Center,dartmouthculturalcenter.org,arts
+Westport,Westport Land Conservation Trust,westportlandtrust.org,nature
+Westport,Westport Rivers Vineyard,westportrivers.com,venue
+Westport,Westport Free Public Library,westportlibrary.org,library
+Westport,Town of Westport,westport-ma.com,town
+Westport,Westport Fair,westportfair.com,festival
+Westport,Westport Historical Society,wpthistory.org,history
+Fairhaven,Millicent Library,millicentlibrary.org,library
+Fairhaven,Town of Fairhaven,fairhaven-ma.gov,town
+Fairhaven,Fairhaven Historical Society,fairhavenhistory.org,history
+Acushnet,Town of Acushnet,acushnet.ma.us,town
+Acushnet,Russell Memorial Library,acushnetlibrary.org,library
+Freetown,Town of Freetown,freetownma.gov,town
+Freetown,James White Memorial Library,freetownlibrary.org,library
+Mattapoisett,Town of Mattapoisett,mattapoisett.net,town
+Mattapoisett,Mattapoisett Free Public Library,mattapoisettlibrary.org,library
+Mattapoisett,Mattapoisett Land Trust,mattlandtrust.org,nature
+Mattapoisett,Mattapoisett Historical Society,mattapoisetthistoricalsociety.org,history
+Mattapoisett,The Wanderer,wanderer.com,media
+Marion,Town of Marion,marionma.gov,town
+Marion,Elizabeth Taber Library,elizabethtaberlibrary.org,library
+Marion,Marion Art Center,marionartcenter.org,arts
+Marion,Sippican Historical Society,sippicanhistoricalsociety.org,history
+Marion,Marion Natural History Museum,marionmuseum.org,museum
+Marion,Sippican Lands Trust,sippicanlandstrust.org,nature
+Rochester,Town of Rochester,townofrochestermass.com,town
+Rochester,Joseph H. Plumb Memorial Library,plumblibrary.com,library
+Rochester,Rochester Land Trust,rochesterlandtrust.org,nature
+Wareham,Town of Wareham,wareham.ma.us,town
+Wareham,Wareham Free Library,warehamfreelibrary.org,library
+Wareham,Wareham Land Trust,warehamlandtrust.org,nature
+Wareham,YMCA Southcoast,ymcasouthcoast.org,recreation
+Somerset,Somerset Public Library,somersetpubliclibrary.org,library
+Swansea,Town of Swansea,swanseama.gov,town
+Swansea,Swansea Free Public Library,swansealibrary.org,library
+Tiverton,Tiverton Public Library,tivertonlibrary.org,library
+Tiverton,Tiverton Land Trust,tivertonlandtrust.org,nature
+Tiverton,Sakonnet Preservation Association,sakonnetpreservation.org,nature
+Tiverton,Four Corners Arts Center,fourcornersarts.org,arts
+Tiverton,Sandywoods Center for the Arts,sandywoodsmusic.com,venue
+Tiverton,Tiverton Historical Society,tivertonhistorical.org,history
+Little Compton,Little Compton Historical Society,littlecompton.org,history
+Little Compton,Sakonnet Vineyard,sakonnetwine.com,venue
+Little Compton,Little Compton Community Center,littlecomptoncommunitycenter.org,civic
+Little Compton,Town of Little Compton,littlecomptonri.org,town
+Little Compton,Sakonnet Times (East Bay Media),eastbayri.com,media
+Regional,Buzzards Bay Coalition,savebuzzardsbay.org,nature
+Regional,One SouthCoast Chamber,onesouthcoast.com,chamber
+Regional,South Coast Media Group (Dartmouth Week etc),theweektoday.com,media
+Regional,SouthCoast Artists,southcoastartists.org,arts
+Regional,SouthCoast Today (Gannett),southcoasttoday.com,media
+Regional,Explore New Bedford,explorenewbedford.org,aggregator

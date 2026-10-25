@@ -12,6 +12,7 @@ Owner: the nonprofit's GitHub account `cmandle`. Collaborator: `loucommando` (Lu
 
 - `pipeline/` Python 3.11+ package `slacktide`. Entry point `slacktide run`; also `build`, `pending`, `approve`, `reject`, `apply`, `digest`. Tests: `cd pipeline && pytest` (39 offline tests, fixtures shaped like real responses).
 - `pipeline/slacktide/sources.yaml` the source registry. Add sources here, never in code. `role: check` sources are used for reconciliation only and never published. `kind: html` sources carry their CSS selectors in the entry (see `connectors/html.py`).
+- `docs/SOURCES.md` the source inventory and outreach plan (25 October 2026): what we read, what we decided against, every candidate in the fifteen towns with the platform found and the route to it. `docs/sources-candidates.csv` is the probe list and `pipeline/tools/probe_sources.py` reruns the probe.
 - `approvals.yaml` the approver's decisions, one entry per series id, appended by the review page at `/review/` or by `slacktide approve` and `slacktide reject`. The last entry for an id wins. The site build publishes only approved series.
 - `data/` pipeline output, committed by the scheduled workflow: `events.json` (every series with its approval state), `pending.json` (the review queue), `run-report.json`, `tide.json`.
 - `preview/` four design mockups (Discover, Calendar, Map, Event). Served at `/preview/` on GitHub Pages with a noindex tag and a banner. These are not the site, and their look is superseded by `design/`.
