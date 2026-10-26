@@ -1,0 +1,14 @@
+# Who can approve. The login gate itself is the Cloudflare Access policy for /admin/ and
+# /review/ (Zero Trust, Access controls, Applications, Slack-Tide Admin, the Approvers policy);
+# this file is the record beside it: names, roles and dates, read by the admin page's People
+# tab and appended to by its add-approver form. Until the Phase B Worker syncs the two, an
+# email added here must also be added to the policy by hand. Roles: admin (sources, runs,
+# people, decisions) or approver (decisions).
+- name: Luke
+  email: mail@l3l.us
+  role: admin
+  added: "2026-10-26"
+- name: Coco
+  email: cmandle015@gmail.com
+  role: approver
+  added: "2026-10-26"

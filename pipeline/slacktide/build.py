@@ -567,7 +567,47 @@ INGEST_WORKFLOW = "ingest.yml"
 def fmt_when_long(start: datetime) -> str:
     return f'{start.strftime("%a %b")} {start.day} · {fmt_time(start)}'
 
-def review_item(s: dict, sources: dict[str, dict]) -> str:
+def review_redirect(now: datetime) -> str:
+    """/review/ was the queue's first home and is the address in the Sunday issues; it now lives
+    on the admin page's Queue tab. Behind the same Access gate, so the redirect is safe."""
+    return ('<!doctype html>\n<html lang="en-US"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow">'
+            '<meta http-equiv="refresh" content="0; url=../admin/#queue"><title>Slack Tide · Review queue</title></head>'
+            '<body><p>The review queue has moved to <a href="../admin/#queue">the admin page</a>.</p></body></html>\n')
+
+# ---------------------------------------------------------------- admin
+
+TRACKER_PATH = "docs/sources-tracker.csv"
+APPROVERS_PATH = "approvers.yaml"
+ACTIONS = ["Add now", "Enable", "Build connector", "Write selectors", "Email for feed address", "Ask for export",
+           "Offer the form", "Confirm domain", "Retry probe", "Keep as check", "Declined", "Done"]
+TRACKER_SHOWN = ("Organisation", "Town", "Route", "Priority", "Wave", "Action", "Notes")
+
+def load_tracker(root: Path = ROOT) -> list[dict]:
+    p = root / TRACKER_PATH
+    if not p.exists():
+        return []
+    import csv
+    with open(p, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+def load_approvers(root: Path = ROOT) -> list[dict]:
+    p = root / APPROVERS_PATH
+    if not p.exists():
+        return []
+    import yaml
+    return [a for a in (yaml.safe_load(p.read_text(encoding="utf-8")) or []) if isinstance(a, dict) and a.get("email")]
+
+def tag(text: str, cls: str = "") -> str:
+    return f'<span class="tag {cls}">{esc(text)}</span>'
+
+def chevron_select(id_: str, label: str, options: list[tuple[str, str]], selected: str = "") -> str:
+    opts = "".join(f'<option value="{esc(v)}"{" selected" if v == selected else ""}>{esc(t)}</option>' for v, t in options)
+    return (f'<div class="select"><label class="visually-hidden" for="{id_}">{esc(label)}</label>'
+            f'<select id="{id_}">{opts}</select>{chevron()}</div>')
+
+def queue_item(s: dict, sources: dict[str, dict]) -> str:
+    """One pending series. A submission through the site shows its organiser details here and
+    nowhere else, so the approver can judge it; they never reach a published record."""
     cat = s.get("category") or ""
     nxt = _parse(s["next_start"]) if s.get("next_start") else _parse(s["first_start"])
     occ = next((o for o in s["occurrences"] if o["start"] == s.get("next_start")), s["occurrences"][0])
@@ -578,49 +618,164 @@ def review_item(s: dict, sources: dict[str, dict]) -> str:
     where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x) or "No venue or town"
     soon = '<span class="rev-soon">Within 7 days</span>' if s.get("soon") else ""
     summary = esc(s.get("summary") or "")
-    link = f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">View on {esc(source_name(s, sources))} ↗</a>' if s.get("url") else esc(source_name(s, sources))
+    src_name = source_name(s, sources)
+    submitted = s["source_id"] == "submissions"
+    link = f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">View on {esc(src_name)} ↗</a>' if s.get("url") else ""
+    badge = tag("Submitted", "sub") if submitted else tag(src_name, "src")
+    extra = ('<button type="button" class="rev-btn" data-ask>Ask the sender</button>' if submitted else "")
     return (f'<article class="rev" data-id="{esc(s["id"])}" data-title="{esc(s["title"])}" data-venue="{esc(s.get("venue") or "")}" '
+            f'data-source="{esc(s["source_id"])}" data-town="{esc(s.get("town") or "")}" data-start="{esc(s.get("next_start") or s["first_start"])}" '
             f'data-decision="" style="--cat: {stock_var(cat)}">'
             f'<div class="rev-main"><div class="rev-top"><span class="rev-swatch" aria-hidden="true"></span>'
             f'<span class="rev-cat">{esc(cat or "Unclassified")}</span>{soon}</div>'
             f'<h3 class="rev-title">{esc(s["title"])}</h3>'
             f'<div class="rev-meta">{esc(when)}</div><div class="rev-meta">{esc(where)}</div>'
             f'{"<p class=rev-summary>" + summary + "</p>" if summary else ""}'
-            f'<div class="rev-source">{link} · <code>{esc(s["id"])}</code></div></div>'
+            f'<div class="rev-source">{badge}{" · " + link if link else ""} · <code>{esc(s["id"])}</code></div></div>'
             '<div class="rev-actions">'
             '<button type="button" class="rev-btn rev-approve" data-decide="approved">Approve</button>'
-            '<button type="button" class="rev-btn rev-reject" data-decide="rejected">Reject</button></div>'
-            '</article>')
+            '<button type="button" class="rev-btn rev-reject" data-decide="rejected">Reject</button>'
+            f'{extra}</div></article>')
 
-def review_page(now: datetime, pending: dict, sources: dict[str, dict]) -> str:
-    rel = "../"
+def admin_queue(pending: dict, sources: dict[str, dict]) -> str:
     rows = pending.get("series", [])
-    items = "".join(review_item(s, sources) for s in rows)
-    gen = pending.get("generated_at", "")
-    gen_txt = _parse(gen).astimezone(now.tzinfo).strftime("%a %b %d, %I:%M %p").replace(" 0", " ") if gen else "unknown"
+    items = "".join(queue_item(s, sources) for s in rows)
+    present = sorted({r["source_id"] for r in rows})
+    src_opts = [("", "All sources")] + [(sid, sources.get(sid, {}).get("name", sid)) for sid in present]
     n, soon = pending.get("pending_count", len(rows)), pending.get("soon_count", 0)
-    body = (head("events", rel) +
-            f'<main class="content review" id="main" data-repo="{REPO}" data-approvals="{APPROVALS_PATH}" data-workflow="{INGEST_WORKFLOW}">'
-            f'<div class="hero-text"><div class="hero-title"><h1>Sunday review</h1>{stickers()}</div>'
-            f'<div class="dateline">{n} waiting · {soon} within 7 days · queue as of {esc(gen_txt)}</div></div>'
+    return (f'<section class="adm-section" id="queue"><h2><span>Review queue</span><span>{n} waiting · {soon} within 7 days</span></h2>'
             '<p class="add-intro">Approve what should publish, reject what should not, then save. New dates on an approved '
-            'series publish on their own; a retitled or moved series comes back here. Nothing changes on the site until the '
-            'next pipeline run, which the button below can start.</p>'
-            '<details class="setup"><summary>Who is reviewing</summary>'
-            '<div class="field"><label for="rev-name">Your name, for the record</label><input id="rev-name" type="text" maxlength="40"></div>'
-            '<div class="field"><label for="rev-token">GitHub token</label><input id="rev-token" type="password" autocomplete="off">'
-            '<p class="form-note">A fine-grained personal access token for this repository only, with Contents and Actions set to '
-            'read and write. It stays in this browser.</p></div>'
-            '<button type="button" class="rev-btn" id="rev-save-setup">Keep</button></details>'
+            'series publish on their own; a retitled or moved series comes back here. The site changes on the next pipeline run.</p>'
+            '<div class="adm-filters">' + chevron_select("q-source", "Source", src_opts)
+            + chevron_select("q-sort", "Order", [("soon", "Soonest first"), ("town", "By town"), ("source", "By source")]) + '</div>'
             f'<div class="rev-list" id="rev-list">{items}</div>'
             f'<p class="empty" id="rev-empty"{"" if not rows else " hidden"}>Nothing is waiting. Enjoy the evening.</p>'
-            '<div class="rev-bar" id="rev-bar"><span class="rev-count" id="rev-count">0 decisions</span>'
+            '<div class="rev-bar"><span class="rev-count" id="rev-count">0 decisions</span>'
             '<button type="button" class="submit" id="rev-save" disabled>Save decisions</button>'
-            '<button type="button" class="rev-btn" id="rev-run">Run the pipeline now</button>'
-            '<span class="form-status" id="rev-status" role="status" aria-live="polite"></span></div>'
+            '<button type="button" class="rev-btn" data-run>Run the pipeline now</button>'
+            '<span class="form-status" data-status role="status" aria-live="polite"></span></div></section>')
+
+def admin_sources(report: dict, sources: dict[str, dict], tracker: list[dict]) -> str:
+    rows = ""
+    for sid, s in sources.items():
+        run = (report.get("sources") or {}).get(sid)
+        err = (report.get("errors") or {}).get(sid)
+        if err:
+            state = tag("error", "warn")
+        elif not s.get("enabled", True):
+            state = tag("off", "off")
+        else:
+            state = tag(s.get("role", "primary"), "ok" if s.get("role", "primary") == "primary" else "src")
+        rows += (f'<tr><td class="t">{esc(s["name"])}</td><td>{esc(s.get("town") or "any")}</td><td>{esc(s["kind"])}</td><td>{state}</td>'
+                 f'<td>{run["rows"] if run else "·"}</td><td>{str(run["seconds"]) + " s" if run else "·"}</td>'
+                 f'<td class="note">{esc(err or (s.get("note") or ""))}</td></tr>')
+    towns = sorted({r.get("Town", "") for r in tracker if r.get("Town")})
+    trs = ""
+    for i, r in enumerate(tracker):
+        if r.get("Status") not in ("Candidate", "Disabled"):
+            continue
+        opts = "".join(f'<option{" selected" if a == r.get("Action") else ""}>{a}</option>' for a in ACTIONS)
+        trs += (f'<tr class="trk" data-row="{i}" data-town="{esc(r.get("Town", ""))}" data-wave="{esc(r.get("Wave", ""))}" data-action="{esc(r.get("Action", ""))}">'
+                f'<td class="t">{esc(r.get("Organisation", ""))}<span class="sub">{esc(r.get("Domain", ""))}</span></td>'
+                f'<td>{esc(r.get("Town", ""))}</td><td>{esc(r.get("Route", ""))}<span class="sub">{esc(r.get("Platform found", ""))}</span></td>'
+                f'<td>{esc(r.get("Priority", ""))}</td><td>{esc(r.get("Wave", ""))}</td>'
+                f'<td><select data-field="Action">{opts}</select></td>'
+                f'<td><input type="text" data-field="Notes" value="{esc(r.get("Notes", ""))}" placeholder="who, when, what they said"></td></tr>')
+    town_opts = [("", "All towns")] + [(t, t) for t in towns]
+    return ('<section class="adm-section" id="sources" hidden><h2><span>Sources in the registry</span>'
+            f'<span>last run: weekend of {esc((report.get("weekend_gate") or {}).get("saturday", ""))}</span></h2>'
+            '<table class="tbl"><thead><tr><th>Source</th><th>Town</th><th>Kind</th><th>State</th><th>Rows</th><th>Time</th><th>Note or error</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table>'
+            '<h2><span>Candidates and outreach</span><span>docs/sources-tracker.csv</span></h2>'
+            '<div class="adm-filters">' + chevron_select("t-town", "Town", town_opts)
+            + chevron_select("t-wave", "Wave", [("", "Any wave"), ("1", "Wave 1"), ("2", "Wave 2"), ("3", "Wave 3"), ("4", "Wave 4")])
+            + chevron_select("t-action", "Action", [("", "Any action")] + [(a, a) for a in ACTIONS]) + '</div>'
+            '<table class="tbl" id="trk"><thead><tr><th>Organisation</th><th>Town</th><th>Route found</th><th>Priority</th><th>Wave</th><th>Action</th><th>Notes and contact log</th></tr></thead>'
+            f'<tbody>{trs}</tbody></table>'
+            '<div class="rev-bar"><span class="rev-count" id="trk-count">0 changes</span>'
+            '<button type="button" class="submit" id="trk-save" disabled>Save the tracker</button>'
+            '<span class="form-status" data-status role="status" aria-live="polite"></span></div></section>')
+
+def admin_runs(report: dict) -> str:
+    g = report.get("weekend_gate") or {}
+    ap = report.get("approval") or {}
+    rc = report.get("reconcile") or {}
+    errors = report.get("errors") or {}
+    missed = rc.get("check_missed") or []
+    by_venue: Counter = Counter()
+    for m in missed:
+        by_venue[m.get("venue") or "(no venue)"] += 1
+    top = ", ".join(f"{v} ({n})" for v, n in by_venue.most_common(5))
+    def stat(value, label, cls=""):
+        return f'<div class="stat {cls}"><b>{esc(value)}</b><span>{esc(label)}</span></div>'
+    err_rows = "".join(f'<tr><td class="t">{esc(k)}</td><td class="note">{esc(v)}</td></tr>' for k, v in errors.items())
+    return ('<section class="adm-section" id="runs" hidden><h2><span>Last run</span><span>twice daily · 10:17 and 22:17 UTC</span></h2>'
+            '<div class="stat-row">'
+            + stat(report.get("primary_rows", 0), "rows read") + stat(report.get("series", 0), "series")
+            + stat(ap.get("approved", 0), "published", "ok") + stat(ap.get("pending", 0), "waiting")
+            + stat(len(errors), "source errors", "bad" if errors else "ok")
+            + stat(f'{g.get("series", 0)} / {len(g.get("towns") or {})}', "weekend gate: series / towns (50 / 5)", "ok" if g.get("passes") else "bad")
+            + '</div>'
+            + (f'<table class="tbl"><thead><tr><th>Source with an error</th><th>What it said</th></tr></thead><tbody>{err_rows}</tbody></table>' if errors else "")
+            + '<table class="tbl"><thead><tr><th>Check sources</th><th>Rows matched</th><th>Series we miss</th><th>Top missed venues</th></tr></thead><tbody>'
+            f'<tr><td class="t">{esc(", ".join(rc.get("check_towns") or []))}</td><td>{rc.get("check_matched", 0)} of {rc.get("check_total", 0)}</td>'
+            f'<td>{rc.get("check_missed_series", 0)}</td><td class="note">{esc(top)}</td></tr></tbody></table>'
+            '<div class="rev-bar"><button type="button" class="rev-btn" data-run>Run the pipeline now</button>'
+            f'<a class="rev-btn" href="https://github.com/{REPO}/issues?q=is%3Aissue+label%3Areview" target="_blank" rel="noopener">Open the Sunday issue ↗</a>'
+            f'<a class="rev-btn" href="https://github.com/{REPO}/actions/workflows/{INGEST_WORKFLOW}" target="_blank" rel="noopener">Run history ↗</a>'
+            '<span class="form-status" data-status role="status" aria-live="polite"></span>'
+            '<span class="form-note">Each run commits data/ and site/ and starts the deploy.</span></div></section>')
+
+def admin_people(approvers: list[dict]) -> str:
+    rows = ""
+    for a in approvers:
+        role = a.get("role", "approver")
+        rows += (f'<tr data-email="{esc(a["email"])}"><td class="t">{esc(a.get("name") or "")}</td><td>{esc(a["email"])}</td>'
+                 f'<td>{tag(role, "ok" if role == "admin" else "src")}</td><td>{esc(str(a.get("added") or ""))}</td>'
+                 '<td><button type="button" class="rev-btn" data-remove>Remove</button></td></tr>')
+    return ('<section class="adm-section" id="people" hidden><h2><span>Approvers</span><span>approvers.yaml and the Access policy</span></h2>'
+            '<p class="add-intro">Anyone listed here can sign in to this page with an email code, and their address goes on every decision '
+            'they save. This list is the record; the gate itself is the Cloudflare Access policy, which must carry the same addresses '
+            'until the admin service keeps the two in step.</p>'
+            '<table class="tbl" id="ppl"><thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Added</th><th></th></tr></thead>'
+            f'<tbody>{rows}</tbody></table>'
+            '<h2><span>Add an approver</span><span></span></h2>'
+            '<form class="add-form" id="ppl-form" novalidate><div class="field-row">'
+            '<div class="field"><label for="ap-name">Name</label><input id="ap-name" type="text" maxlength="60" required></div>'
+            '<div class="field"><label for="ap-email">Email</label><input id="ap-email" type="email" required></div>'
+            '<div class="field"><label for="ap-role">Role</label><select id="ap-role"><option value="approver">Approver</option><option value="admin">Admin</option></select></div></div>'
+            '<p class="form-note">Approvers decide on listings. Admins also edit sources, run the pipeline and manage this list. '
+            'The person gets no email from us; they sign in with a code the first time they open the page.</p>'
+            '<div class="form-actions"><button class="submit" type="submit">Add approver</button>'
+            '<span class="form-status" data-status role="status" aria-live="polite"></span></div></form>'
+            f'<div class="rev-bar"><span class="form-note">Then add the same address to the Access policy: Zero Trust, Access controls, Applications, Slack-Tide Admin, Approvers. '
+            f'<a href="https://one.dash.cloudflare.com/" target="_blank" rel="noopener">Open Cloudflare ↗</a></span></div></section>')
+
+def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, dict], tracker: list[dict], approvers: list[dict]) -> str:
+    rel = "../"
+    gen = pending.get("generated_at", "")
+    gen_txt = _parse(gen).astimezone(now.tzinfo).strftime("%a %b %d, %I:%M %p").replace(" 0", " ") if gen else "unknown"
+    n_cand = sum(1 for r in tracker if r.get("Status") in ("Candidate", "Disabled"))
+    tabs = (f'<nav class="adm-tabs" aria-label="Admin sections">'
+            f'<a class="adm-tab" href="#queue" aria-current="page">Queue<span class="n">{pending.get("pending_count", 0)}</span></a>'
+            f'<a class="adm-tab" href="#sources">Sources<span class="n">{len(sources)} · {n_cand}</span></a>'
+            '<a class="adm-tab" href="#runs">Runs</a>'
+            f'<a class="adm-tab" href="#people">People<span class="n">{len(approvers)}</span></a></nav>')
+    gate = ('<div class="gate" id="gate"><span class="who" id="who">Checking who is signed in…</span>'
+            '<details class="setup" id="setup"><summary>GitHub token</summary>'
+            '<div class="field"><label for="rev-token">Token for saving</label><input id="rev-token" type="password" autocomplete="off">'
+            '<p class="form-note">Until the admin service exists, saving writes to the repository with a fine-grained personal access '
+            'token for this repository only, Contents and Actions read and write. It stays in this browser.</p></div>'
+            '<button type="button" class="rev-btn" id="rev-save-setup">Keep</button></details></div>')
+    body = (head("events", rel) +
+            f'<main class="content admin" id="main" data-repo="{REPO}" data-approvals="{APPROVALS_PATH}" data-tracker="{TRACKER_PATH}" '
+            f'data-approvers="{APPROVERS_PATH}" data-workflow="{INGEST_WORKFLOW}">'
+            f'<div class="hero-text"><div class="hero-title"><h1>Admin</h1>{stickers()}</div>'
+            f'<div class="dateline">Not public · queue as of {esc(gen_txt)}</div></div>'
+            + gate + tabs + admin_queue(pending, sources) + admin_sources(report, sources, tracker) + admin_runs(report) + admin_people(approvers) +
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
-    return page(f"{SITE_NAME} · Review queue", body, rel, "The approver's queue. Not for the public.", now,
-                noindex=True, scripts=("site.js", "review.js"))
+    return page(f"{SITE_NAME} · Admin", body, rel, "The approvers' page. Not for the public.", now,
+                noindex=True, scripts=("site.js", "admin.js"))
 
 def placeholder_page(key: str, now: datetime) -> str:
     rel = "../"
@@ -643,7 +798,8 @@ def write_assets(out: Path) -> dict:
     shutil.copyfile(used["tokens"], assets / "tokens.css")
     shutil.copyfile(ASSETS / "site.css", assets / "site.css")
     shutil.copyfile(ASSETS / "site.js", assets / "site.js")
-    shutil.copyfile(ASSETS / "review.js", assets / "review.js")
+    shutil.copyfile(ASSETS / "admin.js", assets / "admin.js")
+    (assets / "review.js").unlink(missing_ok=True)
     used["icons"] = DESIGN / "reference" / "icons" if (DESIGN / "reference" / "icons").is_dir() else ASSETS / "icons"
     art_out = assets / "art"
     if art_out.is_dir():
@@ -688,8 +844,13 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
     else:
         from .approval import pending_payload
         pending = pending_payload(events["series"], now)
+    report_path = data_dir / "run-report.json"
+    report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
+    (out / "admin").mkdir(parents=True, exist_ok=True)
+    (out / "admin" / "index.html").write_text(
+        admin_page(now, pending, report, sources, load_tracker(), load_approvers()), encoding="utf-8")
     (out / "review").mkdir(parents=True, exist_ok=True)
-    (out / "review" / "index.html").write_text(review_page(now, pending, sources), encoding="utf-8")
+    (out / "review" / "index.html").write_text(review_redirect(now), encoding="utf-8")
     live = published(events["series"])
     tonight, week = select(live, now)
     return {"out": out, "tonight": len(tonight), "week": sum(len(r) for r in week.values()),

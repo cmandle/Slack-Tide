@@ -1,0 +1,119 @@
+Town,Organisation,Domain,Kind,Status,Platform found,Feeds found,Route,Priority,Wave,Action,Owner,Contact name,Contact email,Contacted on,Response,Live on site,Notes
+New Bedford,The Zeiterion,zeiterion.org,venue,In use,Webflow,{},HTML listing,High,,Done,,,,,Not contacted,Yes,Webflow listing; added 25 Oct
+Westport,Buzzards Bay Brewing,buzzardsbrew.com,venue,In use,"WordPress, Tribe","{""tribe"": ""yes""}",Tribe REST,Medium,,Done,,,,,Not contacted,Yes,PHP warnings before JSON; 500 on 25 Oct
+Somerset,Town of Somerset,townofsomerset.org,town,In use,CivicPlus,"{""civicplus-ical"": ""cats 14, 23""}",CivicPlus iCal,High,,Done,,,,,Not contacted,Yes,Cats 14 and 23
+Dartmouth,Dartmouth Natural Resources Trust,dnrt.org,nature,In use,"WordPress, Tribe","{""tribe"": ""yes"", ""tribe-ical"": ""yes""}",Tribe REST,High,,Done,,,,,Not contacted,Yes,
+Dartmouth,Town of Dartmouth,dartmouthma.gov,town,In use,CivicPlus,"{""civicplus-ical"": ""cats 14, 24""}",CivicPlus iCal,High,,Done,,,,,Not contacted,Yes,Cats 14 and 24
+Tiverton,Town of Tiverton,tiverton.ri.gov,town,In use,CivicPlus,"{""civicplus-ical"": ""cats 14, 24""}",CivicPlus iCal,High,,Done,,,,,Not contacted,Yes,Cats 14 and 24; venues missing on most rows (issue 10)
+Little Compton,Brownell Library,brownell-libraryri.org,library,In use,"WordPress, Tribe","{""tribe"": ""yes""}",Tribe REST,High,,Done,,,,,Not contacted,Yes,Feed sends no venue; registry default fills it
+Fall River,Viva Fall River,vivafallriver.com,aggregator,Check,"Site Kit by Google 1.188.0 wordpress, tribe-plugin, squarespace, ics-link","{""tribe"": 1925, ""rss"": 10}",Check source,High,,Keep as check,,,,,Not contacted,No,Aggregator; check role since 25 Oct (decision 10)
+Regional,Explore New Bedford,explorenewbedford.org,aggregator,Check,"WordPress 7.1.3 wordpress, tribe-plugin, mailchimp, ics-link","{""tribe"": 923, ""tribe-ical"": 30, ""rss"": 10}",Check source,High,,Keep as check,,,,,Not contacted,No,Aggregator; 923 future events
+New Bedford,New Bedford Light,newbedfordlight.org,media,Disabled,(home 429),"{""rss"": 10}",None,Low,,Declined,,,,,Not contacted,No,"Articles, not events; later extraction (issue 14)"
+Mattapoisett,Mattapoisett Land Trust,mattlandtrust.org,nature,Disabled,"WordPress 6.8.11 wordpress, mailchimp, ics-link","{""tribe"": 2, ""rss"": 0}",Tribe REST,High,1,Enable,,,,,Not contacted,No,Probe confirmed 2 events
+Little Compton,Little Compton Historical Society,littlecompton.org,history,Disabled,"wordpress, tribe-plugin, mailchimp, ics-link, json-ld-event",{},Tribe REST,High,1,Enable,,,,,Not contacted,No,Probe rate-limited (429); test by hand
+Regional,Buzzards Bay Coalition,savebuzzardsbay.org,nature,Disabled,SEOmatic craft,{},Ticketing (ask),High,3,Ask for export,,,,,Not contacted,No,Bay Adventures dates in FareHarbor (issue 19)
+any,Submissions (the /add/ form),,form,Disabled,Google Form and Sheet,{},Submission form,High,1,Build connector,,,,,Not contacted,No,Configure the Google Form and sheet (issue 18)
+Fall River,Canned Heat Craft Beer Co,cannedheatbeer.com,venue,Candidate,(home SSLError),{},Submission form,High,4,Confirm domain,,,,,Not contacted,No,9 series missed; certificate error on probe
+Fall River,Children's Museum of Greater Fall River,cmgfr.org,museum,Candidate,squarespace,"{""squarespace-rss"": 28}",Squarespace JSON,High,1,Build connector,,,,,Not contacted,No,/events?format=json answers with 8 dated items
+Fall River,Fall River Public Library,fallriverlibrary.org,library,Candidate,"WordPress 7.1.3 wordpress, whofi","{""rss"": 0}",WhoFi,High,2,Build connector,,,,,Not contacted,No,fallriver-ma.whofi.com; 14 series missed
+Fall River,Narrows Center for the Arts,narrowscenter.org,venue,Candidate,wordpress,"{""rss"": 10}",HTML listing,High,2,Write selectors,,,,,Not contacted,No,19 series missed; tickets on ShoWare
+Fall River,Battleship Cove,battleshipcove.org,museum,Candidate,Wix.com Website Builder wix,{},Wix (ask),Medium,4,Email for feed address,,,,,Not contacted,No,Wix events viewer; 11 titles in page
+Fall River,City of Fall River,fallriverma.org,town,Candidate,(home 403),{},CivicPlus iCal,Medium,3,Email for feed address,,,,,Not contacted,No,Blocks the probe (403); confirm platform in a browser
+Fall River,Fall River Historical Society,fallriverhistorical.org,history,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 0}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,WordPress /events/
+Fall River,Greater Fall River Re-CREATION,re-creation.org,recreation,Candidate,,{},Submission form,Medium,4,Offer the form,,,,,Not contacted,No,No platform detected
+Fall River,SoCo Art Labs,socoartlabs.com,arts,Candidate,"WordPress 7.1.3 wordpress, tribe-plugin, eventbrite, ics-link","{""tribe"": 0, ""rss"": 0}",Eventbrite,Medium,3,Email for feed address,,,,,Not contacted,No,Tribe installed but empty; uses Eventbrite
+Fall River,Bristol Community College,bristolcc.edu,college,Candidate,,{},HTML listing,Low,2,Write selectors,,,,,Not contacted,No,Static upcoming events page
+Fall River,Fall River Little Theatre,fallriverlittletheatre.org,theatre,Candidate,(home ConnectionError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Unreachable
+Fall River,Fall River Reporter,fallriverreporter.com,media,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",None,Low,,Declined,,,,,Not contacted,No,Articles (RSS); later extraction
+Fall River,Lafayette-Durfee House,lafayettedurfeehouse.org,history,Candidate,(home SSLError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Certificate error
+Fall River,Lizzie Borden House,lizzie-borden.com,attraction,Candidate,(home 403),{},None,Low,4,Email for feed address,,,,,Not contacted,No,Blocks the probe (403)
+Fall River,Marine Museum at Fall River,marinemuseumfr.org,museum,Candidate,(home SSLError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Certificate error
+Fall River,The Tipsy Toboggan,thetipsytoboggan.com,venue,Candidate,Wix.com Website Builder wix,{},Submission form,Low,4,Offer the form,,,,,Not contacted,No,Wix
+New Bedford,Hatch Street Studios,hatchstreetstudios.com,arts,Candidate,squarespace,"{""squarespace-rss"": 25}",Squarespace JSON,High,1,Build connector,,,,,Not contacted,No,/events?format=json answers with 5 dated items
+New Bedford,New Bedford Art Museum,newbedfordart.org,museum,Candidate,WordPress 7.0.7 wordpress,"{""rss"": 0}",HTML listing,High,2,Write selectors,,,,,Not contacted,No,/events/ with 17 headings; 8 missed
+New Bedford,New Bedford Free Public Library,nbfpl.org,library,Candidate,Joomla! - Open Source Content Management google-calendar,{},Plain iCal,High,3,Email for feed address,,,,,Not contacted,No,Joomla with a Google Calendar embed; need calendar id
+New Bedford,New Bedford Whaling Museum,whalingmuseum.org,museum,Candidate,WP Rocket 3.23.5.1 wordpress,"{""rss"": 10}",HTML listing,High,2,Write selectors,,,,,Not contacted,No,"program post type at /wp-json/wp/v2/program, no date field; 11 missed"
+New Bedford,AHA! New Bedford,ahanewbedford.org,arts,Candidate,"All in One SEO (AIOSEO) 5.0.4 wordpress, tribe-plugin, ics-link","{""tribe"": 0, ""rss"": 10}",Tribe REST,Medium,3,Email for feed address,,,,,Not contacted,No,"Plugin installed, three 2022 test events; ask them to use it"
+New Bedford,Buttonwood Park Zoo,bpzoo.org,attraction,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",HTML listing,Medium,2,Retry probe,,,,,Not contacted,No,Find the events page
+New Bedford,Co-Creative Center,cocreativecenter.org,arts,Candidate,(home ConnectionError),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,Unreachable
+New Bedford,Gallery X,galleryx.org,arts,Candidate,"WordPress 7.1.3 wordpress, mailchimp","{""rss"": 10}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,"EventPrime, 32 event links"
+New Bedford,Greasy Luck Brewpub,greasyluck.com,venue,Candidate,(home 404),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,404
+New Bedford,New Bedford Fishing Heritage Center,fishingheritagecenter.org,museum,Candidate,WordPress 6.5.13 wordpress,"{""rss"": 10}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,/calendar/
+New Bedford,New Bedford Historical Society,nbhistoricalsociety.org,history,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",Eventbrite,Medium,2,Build connector,,,,,Not contacted,No,Imports Eventbrite
+New Bedford,Rotch-Jones-Duff House,rjdmuseum.org,museum,Candidate,wordpress,"{""rss"": 1}",HTML listing,Medium,2,Retry probe,,,,,Not contacted,No,Find the events page; Hamlet runs here
+New Bedford,The Vault Performing Arts Center,thevaultnb.com,venue,Candidate,(home ConnectionError),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,Unreachable; open mic venue in the check
+New Bedford,UMass Dartmouth,umassd.edu,college,Candidate,,{},Plain iCal,Medium,3,Email for feed address,,,,,Not contacted,No,Calendar looks like Localist
+New Bedford,Community Boating Center,communityboating.org,recreation,Candidate,"WordPress 7.1.3 wordpress, fareharbor","{""rss"": 10}",Ticketing (ask),Low,4,Ask for export,,,,,Not contacted,No,FareHarbor
+New Bedford,Downtown New Bedford Inc,downtownnb.org,aggregator,Candidate,Total WordPress Theme v5.4.4 wordpress,"{""rss"": 10}",None,Low,,Retry probe,,,,,Not contacted,No,No event pages found
+New Bedford,Feast of the Blessed Sacrament,feastoftheblessedsacrament.com,festival,Candidate,EventON 4.6.8 wordpress,"{""rss"": 7}",Submission form,Low,4,Offer the form,,,,,Not contacted,No,EventON; one weekend a year
+New Bedford,Groundwork Southcoast,groundworksouthcoast.org,civic,Candidate,"All in One SEO (AIOSEO) 5.0.1.1 wordpress, mailchimp","{""rss"": 5}",HTML listing,Low,2,Write selectors,,,,,Not contacted,No,/events/
+New Bedford,Kilburn Mill,kilburnmill.com,venue,Candidate,Site Kit by Google 1.187.0 wordpress,"{""rss"": 10}",HTML listing,Low,2,Write selectors,,,,,Not contacted,No,Events category posts
+New Bedford,Moby Dick Brewing,mobydickbrewing.com,venue,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",HTML listing,Low,2,Write selectors,,,,,Not contacted,No,/view-events/
+New Bedford,New Bedford Festival Theatre,nbfestivaltheatre.com,theatre,Candidate,Lume v3.0.11,{},None,Low,4,Email for feed address,,,,,Not contacted,No,Static site
+New Bedford,New Bedford Guide,newbedfordguide.com,media,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",Check source,Low,,Retry probe,,,,,Not contacted,No,Media site with an events category
+New Bedford,New Bedford Symphony Orchestra,nbsymphony.org,music,Candidate,"WordPress 7.1.3 wordpress, salesforce-tickets, mailchimp","{""rss"": 10}",None,Low,,Done,,,,,Not contacted,No,Concerts arrive through the Zeiterion listing
+New Bedford,New Bedford Whaling National Historical Park,nps.gov,park,Candidate,,{},Event plugin API,Low,3,Build connector,,,,,Not contacted,No,NPS API with a free key
+New Bedford,Seamen's Bethel,seamensbethel.org,history,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 0}",None,Low,4,Email for feed address,,,,,Not contacted,No,
+New Bedford,WHALE (Waterfront Historic Area League),waterfrontleague.org,civic,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",Ticketing (ask),Low,4,Ask for export,,,,,Not contacted,No,NeonCRM portal
+New Bedford,Your Theatre,yourtheatre.org,theatre,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 10}",HTML listing,Low,2,Retry probe,,,,,Not contacted,No,Find the season page
+Westport,Westport Free Public Library,westportlibrary.org,library,Candidate,(home 403),"{""tribe"": 1141, ""rss"": 10}",Tribe REST,High,1,Add now,,,,,Not contacted,No,"Tribe answers with 1,141 events though the home page is 403"
+Westport,Town of Westport,westport-ma.com,town,Candidate,(home 403),{},CivicPlus iCal,Medium,3,Email for feed address,,,,,Not contacted,No,Blocks the probe (403)
+Westport,Westport Historical Society,wpthistory.org,history,Candidate,WordPress 7.0.7 wordpress,"{""rss"": 9}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,WordPress /events/ pages
+Westport,Westport Land Conservation Trust,westportlandtrust.org,nature,Candidate,wordpress,"{""rss"": 12}",HTML listing,Medium,3,Email for feed address,,,,,Not contacted,No,Programmes page has no readable headings
+Westport,Westport Fair,westportfair.com,festival,Candidate,(home SSLError),{},Submission form,Low,4,Confirm domain,,,,,Not contacted,No,Certificate error; once a year
+Westport,Westport Rivers Vineyard,westportrivers.com,venue,Candidate,squarespace,{},Squarespace JSON,Low,3,Email for feed address,,,,,Not contacted,No,No dated items in the JSON
+Marion,Elizabeth Taber Library,elizabethtaberlibrary.org,library,Candidate,"WordPress 7.1.3 wordpress, tribe-plugin, libcal, ics-link, json-ld-event","{""tribe"": 185, ""tribe-ical"": 11, ""rss"": 1}",Tribe REST,High,1,Add now,,,,,Not contacted,No,"185 events; venue empty, set registry default"
+Marion,Town of Marion,marionma.gov,town,Candidate,civicplus,"{""civicplus-ical"": 46}",CivicPlus iCal,High,1,Add now,,,,,Not contacted,No,46 events on cat 14; discover other cats
+Marion,Marion Art Center,marionartcenter.org,arts,Candidate,Event Espresso Version 5.0.60 wordpress,"{""rss"": 0}",Event plugin API,Medium,2,Write selectors,,,,,Not contacted,No,Event Espresso; REST likely
+Marion,Marion Natural History Museum,marionmuseum.org,museum,Candidate,"wordpress, tribe-plugin, ics-link",{},Tribe REST,Medium,3,Email for feed address,,,,,Not contacted,No,"Tribe present, REST answers 403; try ?ical=1"
+Marion,Sippican Historical Society,sippicanhistoricalsociety.org,history,Candidate,(home 403),{},None,Low,4,Email for feed address,,,,,Not contacted,No,Blocks the probe
+Marion,Sippican Lands Trust,sippicanlandstrust.org,nature,Candidate,wordpress,"{""rss"": 0}",HTML listing,Low,2,Retry probe,,,,,Not contacted,No,Unreachable at probe time
+Mattapoisett,Mattapoisett Free Public Library,mattapoisettlibrary.org,library,Candidate,"Site Kit by Google 1.190.0 wordpress, whofi","{""rss"": 0}",WhoFi,High,2,Build connector,,,,,Not contacted,No,mattapoisett-ma.whofi.com
+Mattapoisett,Town of Mattapoisett,mattapoisett.net,town,Candidate,civicplus,"{""civicplus-ical"": 10}",CivicPlus iCal,High,1,Add now,,,,,Not contacted,No,10 events on cat 14
+Mattapoisett,The Wanderer,wanderer.com,media,Candidate,"wordpress, tribe-plugin, ics-link, json-ld-event","{""tribe"": 26, ""tribe-ical"": 8, ""rss"": 10}",Check source,Medium,1,Keep as check,,,,,Not contacted,No,Tri-town weekly; Tribe with 26 events
+Mattapoisett,Mattapoisett Historical Society,mattapoisetthistoricalsociety.org,history,Candidate,Wix.com Website Builder wix,{},Wix (ask),Low,4,Email for feed address,,,,,Not contacted,No,Wix
+Wareham,Town of Wareham,wareham.ma.us,town,Candidate,civicplus,"{""civicplus-ical"": 5}",CivicPlus iCal,High,1,Add now,,,,,Not contacted,No,5 events on cat 14; discover other cats
+Wareham,Wareham Free Library,warehamfreelibrary.org,library,Candidate,Drupal 10 (https://www.drupal.org) whofi,{},WhoFi,High,2,Build connector,,,,,Not contacted,No,wareham-ma.whofi.com
+Wareham,Wareham Land Trust,warehamlandtrust.org,nature,Candidate,"wordpress, mailchimp","{""rss"": 10}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,Calendar page with 10 headings
+Wareham,YMCA Southcoast,ymcasouthcoast.org,recreation,Candidate,"WordPress 7.1.3 wordpress, tribe-plugin, ics-link","{""tribe"": 2, ""tribe-ical"": 2, ""rss"": 10}",Tribe REST,Medium,1,Add now,,,,,Not contacted,No,2 events; programmes in Daxko
+Rochester,Joseph H. Plumb Memorial Library,plumblibrary.com,library,Candidate,"wordpress, whofi","{""rss"": 0}",WhoFi,High,2,Build connector,,,,,Not contacted,No,plumb-ma.whofi.com
+Rochester,Town of Rochester,townofrochestermass.com,town,Candidate,civicplus,"{""civicplus-ical"": 12}",CivicPlus iCal,High,1,Add now,,,,,Not contacted,No,12 events on cat 14
+Rochester,Rochester Land Trust,rochesterlandtrust.org,nature,Candidate,WordPress 7.1.3 wordpress,"{""rss"": 0}",None,Low,4,Email for feed address,,,,,Not contacted,No,No event pages found
+Freetown,Town of Freetown,freetownma.gov,town,Candidate,civicplus,"{""civicplus-ical"": 71}",CivicPlus iCal,High,1,Add now,,,,,Not contacted,No,71 events on cat 14; expect meetings
+Freetown,James White Memorial Library,freetownlibrary.org,library,Candidate,(home ConnectionError),{},WhoFi,Medium,2,Confirm domain,,,,,Not contacted,No,Domain did not resolve; SAILS library
+Acushnet,Town of Acushnet,acushnet.ma.us,town,Candidate,civicplus,"{""civicplus-ical"": 6}",CivicPlus iCal,High,1,Add now,,,,,Not contacted,No,6 events on cat 14
+Acushnet,Russell Memorial Library,acushnetlibrary.org,library,Candidate,(home ConnectionError),{},WhoFi,Medium,2,Confirm domain,,,,,Not contacted,No,Domain did not resolve; SAILS library
+Fairhaven,Millicent Library,millicentlibrary.org,library,Candidate,Drupal 10 (https://www.drupal.org),{},Plain iCal,High,3,Email for feed address,,,,,Not contacted,No,Drupal 10 events calendar
+Fairhaven,Town of Fairhaven,fairhaven-ma.gov,town,Candidate,(home 403),{},CivicPlus iCal,Medium,3,Email for feed address,,,,,Not contacted,No,Blocks the probe (403)
+Fairhaven,Fairhaven Historical Society,fairhavenhistory.org,history,Candidate,Wix.com Website Builder wix,{},Wix (ask),Low,4,Email for feed address,,,,,Not contacted,No,Wix
+Swansea,Swansea Free Public Library,swansealibrary.org,library,Candidate,Drupal 10 (https://www.drupal.org) whofi,{},WhoFi,High,2,Build connector,,,,,Not contacted,No,swanseafree-ma.whofi.com
+Swansea,Town of Swansea,swanseama.gov,town,Candidate,(home 403),{},CivicPlus iCal,Medium,3,Email for feed address,,,,,Not contacted,No,Blocks the probe (403)
+Somerset,Somerset Public Library,somersetpubliclibrary.org,library,Candidate,Wix.com Website Builder wix,{},WhoFi,High,2,Build connector,,,,,Not contacted,No,Wix site with WhoFi embedded
+Dartmouth,Dartmouth Public Libraries,dartmouthpubliclibraries.org,library,Candidate,(home ConnectionError),{},WhoFi,High,2,Confirm domain,,,,,Not contacted,No,Domain did not resolve
+Dartmouth,Lloyd Center for the Environment,lloydcenter.org,nature,Candidate,"WordPress 7.1.3 wordpress, mailchimp","{""rss"": 10}",HTML listing,High,2,Write selectors,,,,,Not contacted,No,Calendar with 8 event pages
+Dartmouth,Mass Audubon (Allens Pond),massaudubon.org,nature,Candidate,,{},Ticketing (ask),Medium,4,Ask for export,,,,,Not contacted,No,Own programme system
+Dartmouth,Round the Bend Farm,roundthebendfarm.org,farm,Candidate,WordPress 7.0.7 wordpress,"{""rss"": 10}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,WordPress /events/
+Dartmouth,The Trustees of Reservations,thetrustees.org,nature,Candidate,wordpress,"{""rss"": 10}",HTML listing,Medium,2,Write selectors,,,,,Not contacted,No,Filter to South Coast properties
+Dartmouth,Dartmouth Cultural Center,dartmouthculturalcenter.org,arts,Candidate,(home ConnectionError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Domain did not resolve
+Tiverton,Tiverton Public Library,tivertonlibrary.org,library,Candidate,"wordpress, libcal","{""rss"": 10}",LibCal,High,3,Email for feed address,,,,,Not contacted,No,tivertonlibrary.libcal.com; need calendar id
+Tiverton,Four Corners Arts Center,fourcornersarts.org,arts,Candidate,squarespace,"{""squarespace-rss"": 9}",Squarespace JSON,Medium,3,Email for feed address,,,,,Not contacted,No,Concerts page is not an events collection
+Tiverton,Sakonnet Preservation Association,sakonnetpreservation.org,nature,Candidate,"Elementor 4.3.5; features: additional_custom_breakpoints; se wordpress, eventbrite","{""rss"": 10}",Eventbrite,Medium,2,Build connector,,,,,Not contacted,No,Programmes on Eventbrite
+Tiverton,Sandywoods Center for the Arts,sandywoodsmusic.com,venue,Candidate,(home ConnectionError),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,Domain did not resolve; music venue
+Tiverton,Tiverton Historical Society,tivertonhistorical.org,history,Candidate,(home SSLError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Certificate error
+Tiverton,Tiverton Land Trust,tivertonlandtrust.org,nature,Candidate,"squarespace, mailchimp",{},Squarespace JSON,Low,3,Email for feed address,,,,,Not contacted,No,No dated items in the JSON
+Little Compton,Sakonnet Vineyard,sakonnetwine.com,venue,Candidate,squarespace,"{""squarespace-rss"": 32}",Squarespace JSON,High,1,Build connector,,,,,Not contacted,No,"12 dated items: live music, trivia"
+Little Compton,Little Compton Community Center,littlecomptoncommunitycenter.org,civic,Candidate,(home ConnectionError),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,Domain did not resolve
+Little Compton,Sakonnet Times (East Bay Media),eastbayri.com,media,Candidate,webflow,{},Check source,Low,,Retry probe,,,,,Not contacted,No,Webflow calendar; check candidate for the Sakonnet
+Little Compton,Town of Little Compton,littlecomptonri.org,town,Candidate,(home 403),{},None,Low,3,Email for feed address,,,,,Not contacted,No,Blocks the probe
+Regional,South Coast Media Group (Dartmouth Week etc),theweektoday.com,media,Candidate,Drupal 9 (http://drupal.org),{},Check source,Medium,,Retry probe,,,,,Not contacted,No,Drupal calendar; check candidate
+Regional,One SouthCoast Chamber,onesouthcoast.com,chamber,Candidate,wordpress,"{""rss"": 0}",Plain iCal,Low,3,Email for feed address,,,,,Not contacted,No,GrowthZone likely; has iCal
+Regional,SouthCoast Artists,southcoastartists.org,arts,Candidate,squarespace,{},Submission form,Low,4,Offer the form,,,,,Not contacted,No,Open studio tour
+New Bedford,City of New Bedford,newbedford-ma.gov,town,Declined,Bot challenge,{},None,Medium,4,Declined,,,,,Not contacted,No,Bot-detection challenge; needs a human relationship
+New Bedford,Cisco Kitchen & Bar,ciscokitchenbar.com,venue,Declined,bentobox,{},Submission form,Low,4,Offer the form,,,,,Not contacted,No,"Prose specials, no dates; music page 404"
+New Bedford,Destination New Bedford (city tourism),destinationnewbedford.org,aggregator,Declined,,{},None,Low,,Declined,,,,,Not contacted,No,Renders nothing without JavaScript; Explore NB covers it
+Regional,SouthCoast Today (Gannett),southcoasttoday.com,media,Declined,(home 402),{},None,Low,,Declined,,,,,Not contacted,No,Gannett; paywall code 402; RSS off since 2023
+any,Bandsintown,bandsintown.com,aggregator,Declined,,{},None,Low,,Declined,,,,,Not contacted,No,No open API; aggregation prohibited
+any,"Brave Search, Exa",,search,Declined,,{},None,Low,,Declined,,,,,Not contacted,No,Terms prohibit storing results
+any,"Diffbot, Firecrawl",,scraping service,Declined,,{},None,Low,,Declined,,,,,Not contacted,No,Decision 9: no paid scraping
+any,"Facebook, Instagram, Meetup, Nextdoor",,social,Declined,,{},None,Low,,Declined,,,,,Not contacted,No,Terms forbid automated collection; not a source of record
+any,Google Custom Search JSON API,,search,Declined,,{},None,Low,,Declined,,,,,Not contacted,No,Closed to new customers

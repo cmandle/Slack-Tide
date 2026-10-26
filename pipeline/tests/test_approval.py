@@ -64,8 +64,8 @@ def test_record_then_reapply_round_trip(tmp_path, monkeypatch):
     approval.record(["b"], "approved", "luke", by_id, path=path)
     assert approval.load(path)["b"]["status"] == "approved"
 
-def test_review_page_appended_entries_parse():
-    """review.js appends entries with JSON-quoted scalars; they must load as the CLI's do."""
+def test_admin_page_appended_entries_parse():
+    """admin.js appends entries with JSON-quoted scalars; they must load as the CLI's do."""
     import yaml
     text = ('- id: "abc"\n  status: approved\n  by: "Luke O\'Brien"\n  date: "2026-10-25"\n'
             '  title: "Say \\"hi\\": a show"\n  venue: "The Z"\n')
