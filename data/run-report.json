@@ -1,77 +1,77 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 142,
-   "seconds": 2.93
+   "rows": 144,
+   "seconds": 3.5
   },
   "viva-fall-river": {
-   "rows": 245,
-   "seconds": 14.58
+   "rows": 246,
+   "seconds": 18.79
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.63
+   "seconds": 0.73
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 4.11
+   "seconds": 2.94
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 4.1
+   "seconds": 12.67
   },
   "zeiterion": {
    "rows": 30,
-   "seconds": 0.98
+   "seconds": 0.68
   },
   "town-tiverton": {
-   "rows": 190,
-   "seconds": 0.47
+   "rows": 188,
+   "seconds": 0.52
   },
   "town-dartmouth": {
-   "rows": 19,
-   "seconds": 0.28
+   "rows": 18,
+   "seconds": 0.32
   },
   "town-somerset": {
-   "rows": 9,
-   "seconds": 0.54
+   "rows": 11,
+   "seconds": 0.4
   }
  },
  "errors": {},
- "primary_rows": 287,
+ "primary_rows": 286,
  "dropped": {
   "closure": 3,
-  "holiday": 8
+  "holiday": 7
  },
- "series": 105,
+ "series": 107,
  "approval": {
   "approved": 56,
-  "pending": 49
+  "pending": 51
  },
  "by_town": {
-  "Tiverton": 34,
   "Little Compton": 13,
+  "Tiverton": 34,
   "Dartmouth": 28,
   "New Bedford": 24,
-  "Somerset": 5,
+  "Somerset": 7,
   "Westport": 1
  },
  "by_category": {
-  "Volunteering & Causes": 2,
-  "(unclassified)": 15,
   "Library & Talks": 13,
-  "Civic & Town Meetings": 27,
+  "Civic & Town Meetings": 29,
   "Arts & Theatre": 24,
   "Sports & Recreation": 5,
+  "(unclassified)": 15,
   "Education & Workshops": 2,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
-  "Music": 3
+  "Music": 3,
+  "Volunteering & Causes": 2
  },
  "by_cadence": {
-  "weekly": 17,
-  "once": 69,
+  "once": 71,
   "fortnightly": 2,
+  "weekly": 17,
   "several-a-week": 1,
   "irregular": 6,
   "weekends": 1,
@@ -84,9 +84,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 387,
+  "check_total": 390,
   "check_matched": 15,
-  "check_missed_rows": 372,
+  "check_missed_rows": 375,
   "check_missed_series": 112,
   "check_missed": [
    {
@@ -111,10 +111,24 @@
     "rows": 9
    },
    {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-30T17:30:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
     "first_start": "2026-10-27T18:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Friday Night Volleyball (weekly)",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-10-30T17:00:00-04:00",
     "rows": 9
    },
    {
@@ -181,6 +195,13 @@
     "rows": 9
    },
    {
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-10-30T18:00:00-04:00",
+    "rows": 9
+   },
+   {
     "title": "The Waiting Room - Comedy Open Mic",
     "venue": "",
     "town": "Fall River",
@@ -216,20 +237,6 @@
     "rows": 9
    },
    {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-30T17:30:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Friday Night Volleyball (weekly)",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-10-30T17:00:00-04:00",
-    "rows": 8
-   },
-   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -255,13 +262,6 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-10-30T20:00:00-04:00",
-    "rows": 8
-   },
-   {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-30T18:00:00-04:00",
     "rows": 8
    },
    {
@@ -880,7 +880,7 @@
   ],
   "primary_only_count": 30,
   "primary_only_series": 24,
-  "coverage_ratio": 0.039
+  "coverage_ratio": 0.038
  },
  "tide_error": null
 }

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-26T18:13:55.894938+00:00",
- "pending_count": 49,
- "soon_count": 26,
+ "generated_at": "2026-10-26T22:49:27.166013+00:00",
+ "pending_count": 51,
+ "soon_count": 28,
  "approved_count": 56,
  "rejected_count": 0,
  "series": [
@@ -303,6 +303,33 @@
    "soon": true
   },
   {
+   "id": "c50637ae8239",
+   "title": "Board of Water & Sewer Commissioners",
+   "venue": "3249 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-28T16:00:00-04:00",
+   "last_start": "2026-10-28T16:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T16:00:00-04:00",
+     "end": "2026-10-28T23:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Commissioner's Office. https://www.townofsomerset.org/calendar.aspx?EID=2005",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-28T16:00:00-04:00",
+   "soon": true
+  },
+  {
    "id": "5b7e651c83a2",
    "title": "CANCELLED Community Preservation Committee",
    "venue": "1480 County Street Somerset MA 02726",
@@ -381,6 +408,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-10-28T17:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "889023365de3",
+   "title": "Board of Selectmen",
+   "venue": "3249 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-28T18:00:00-04:00",
+   "last_start": "2026-10-28T18:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T18:00:00-04:00",
+     "end": "2026-10-28T23:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library Cucinotta Community Room. https://www.townofsomerset.org/calendar.aspx?EID=2006",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-28T18:00:00-04:00",
    "soon": true
   },
   {
