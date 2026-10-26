@@ -1,47 +1,47 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 146,
-   "seconds": 3.91
+   "rows": 142,
+   "seconds": 4.25
   },
   "viva-fall-river": {
-   "rows": 252,
-   "seconds": 16.33
+   "rows": 243,
+   "seconds": 20.46
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.59
+   "seconds": 0.66
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 3.59
+   "seconds": 5.81
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 5.42
+   "seconds": 7.06
   },
   "zeiterion": {
    "rows": 30,
-   "seconds": 0.66
+   "seconds": 0.73
   },
   "town-tiverton": {
-   "rows": 191,
-   "seconds": 0.6
+   "rows": 192,
+   "seconds": 0.91
   },
   "town-dartmouth": {
-   "rows": 20,
-   "seconds": 0.33
+   "rows": 19,
+   "seconds": 0.44
   },
   "town-somerset": {
-   "rows": 5,
-   "seconds": 0.41
+   "rows": 6,
+   "seconds": 0.72
   }
  },
  "errors": {},
- "primary_rows": 285,
+ "primary_rows": 286,
  "dropped": {
-  "closure": 4,
-  "holiday": 6
+  "closure": 3,
+  "holiday": 8
  },
  "series": 101,
  "approval": {
@@ -84,24 +84,24 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 398,
+  "check_total": 385,
   "check_matched": 15,
-  "check_missed_rows": 383,
-  "check_missed_series": 120,
+  "check_missed_rows": 370,
+  "check_missed_series": 112,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
-    "first_start": "2026-10-25T21:00:00-04:00",
+    "first_start": "2026-10-29T21:00:00-04:00",
     "rows": 17
    },
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-10-25T10:00:00-04:00",
-    "rows": 17
+    "first_start": "2026-10-31T10:00:00-04:00",
+    "rows": 16
    },
    {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
@@ -125,13 +125,6 @@
     "rows": 9
    },
    {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-25T14:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Kids eat FREE on Wednesdays",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -150,13 +143,6 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-10-26T14:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Matt Silva Sunday Funday",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-10-25T16:00:00-04:00",
     "rows": 9
    },
    {
@@ -188,13 +174,6 @@
     "rows": 9
    },
    {
-    "title": "Poppin' Prosecco with Primo! Brunch",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-25T10:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Preschool Storytime",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -202,17 +181,17 @@
     "rows": 9
    },
    {
-    "title": "Tai Chi at Buttonwood Park",
-    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
-    "town": "New Bedford",
-    "first_start": "2026-10-25T09:30:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "The Waiting Room - Comedy Open Mic",
     "venue": "",
     "town": "Fall River",
     "first_start": "2026-10-27T19:30:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-10-29T20:00:00-04:00",
     "rows": 9
    },
    {
@@ -251,6 +230,27 @@
     "rows": 8
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T14:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Matt Silva Sunday Funday",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-01T16:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Poppin' Prosecco with Primo! Brunch",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-01T10:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Primo After Dark - Weekly DJ Sets",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -265,10 +265,10 @@
     "rows": 8
    },
    {
-    "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-10-29T20:00:00-04:00",
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T09:30:00-05:00",
     "rows": 8
    },
    {
@@ -461,13 +461,6 @@
     "rows": 2
    },
    {
-    "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-10-25T17:00:00-04:00",
-    "rows": 2
-   },
-   {
     "title": "Writing Group",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -566,27 +559,6 @@
     "rows": 1
    },
    {
-    "title": "Boo at the Zoo",
-    "venue": "Buttonwood Park Zoo",
-    "town": "New Bedford",
-    "first_start": "2026-10-25T10:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Book Edge Stenciling",
-    "venue": "Once Upon a Bookstore",
-    "town": "Fall River",
-    "first_start": "2026-10-25T18:30:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Brick and Brush Arts Walk",
-    "venue": "NoMa/Purchase St. Plaza",
-    "town": "Fall River",
-    "first_start": "2026-10-25T11:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Chris Smither",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -643,13 +615,6 @@
     "rows": 1
    },
    {
-    "title": "Fall River Farmers & Artisans Market",
-    "venue": "NoMa/Purchase St. Plaza",
-    "town": "Fall River",
-    "first_start": "2026-10-25T11:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "First Friday: Sharks Come Cruisin' with the Whale Guitar",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -661,13 +626,6 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Fun Filled Bingo Night",
-    "venue": "Knights of Columbus Hall",
-    "town": "Fall River",
-    "first_start": "2026-10-25T16:00:00-04:00",
     "rows": 1
    },
    {
@@ -720,13 +678,6 @@
     "rows": 1
    },
    {
-    "title": "Josh Simpson Glass Studio Sale & Live Glassblowing Demos",
-    "venue": "Josh Simpson Glass",
-    "town": "Fall River",
-    "first_start": "2026-10-25T10:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Junk Journaling",
     "venue": "Once Upon a Bookstore",
     "town": "Fall River",
@@ -738,13 +689,6 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-12-17T17:30:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Move n' On (live music)",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-10-25T13:00:00-04:00",
     "rows": 1
    },
    {
@@ -846,6 +790,13 @@
     "rows": 1
    },
    {
+    "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-29T17:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "The Ancestor Hour: Roots & Research Club",
     "venue": "New Bedford Public Library",
     "town": "New Bedford",
@@ -921,13 +872,6 @@
     "town": "New Bedford",
     "first_start": "2026-11-21T11:00:00-05:00",
     "rows": 1
-   },
-   {
-    "title": "stuffNjunk: An Afternoon of Dance, Art & Unexpected Stories",
-    "venue": "SoCo Movment Arts",
-    "town": "New Bedford",
-    "first_start": "2026-10-25T14:00:00-04:00",
-    "rows": 1
    }
   ],
   "check_towns": [
@@ -936,7 +880,7 @@
   ],
   "primary_only_count": 30,
   "primary_only_series": 24,
-  "coverage_ratio": 0.038
+  "coverage_ratio": 0.039
  },
  "tide_error": null
 }
