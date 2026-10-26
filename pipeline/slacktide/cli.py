@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 SITE = ROOT / "site"
 GATE_SERIES, GATE_TOWNS = 50, 5
-REVIEW_URL = "https://cmandle.github.io/Slack-Tide/review/"
+REVIEW_URL = "https://www.slack-tide.org/admin/#queue"
 
 def fetch_tide(quiet=False) -> str | None:
     """Best effort: a tide failure never fails the ingest. Returns the error text, if any."""

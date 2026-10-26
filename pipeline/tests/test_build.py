@@ -89,8 +89,9 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert "Tonight gig" in today_cell and "Already over" in today_cell and "Rejected gig" not in today_cell   # the day shows its whole day; rejected never
     assert 'data-date="2099-01-02"' in jan and "Weekly bingo" in jan and "Too far out" in jan   # every date of a series, 8 days out included
     assert "Waiting for review" not in jan and 'id="category"' in cal
-    for a in ("tokens.css", "site.css", "site.js", "review.js"):
+    for a in ("tokens.css", "site.css", "site.js", "admin.js"):
         assert (out / "assets" / a).exists()
+    assert not (out / "assets" / "review.js").exists()
     assert "—" not in html   # no em dashes in public copy
     # The call to action opens the pop-up form, which is the same form as /add/.
     assert 'data-dialog="add-dialog"' in html and '<dialog class="add-dialog" id="add-dialog"' in html
@@ -99,12 +100,18 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     for t in config.TOWNS:
         assert f'<option value="{t}">{t}</option>' in add
     assert 'data-action=""' in add and 'action="mailto:hello@slack-tide.org"' in add   # no Google Form configured yet
-    # The review queue: noindex, one card per pending series, the saved decision metadata on each.
+    # The admin page: noindex, four tabs, one queue card per pending series with the decision
+    # metadata on it, the registry table, the tracker rows, the approvers; /review/ redirects there.
+    admin = (out / "admin" / "index.html").read_text(encoding="utf-8")
+    assert 'name="robots" content="noindex' in admin and 'data-repo="cmandle/Slack-Tide"' in admin
+    for tab in ("#queue", "#sources", "#runs", "#people"):
+        assert f'href="{tab}"' in admin
+    assert admin.count('class="rev"') == 1 and 'data-id="waiting-for-review"' in admin and 'data-decide="approved"' in admin
+    assert 'data-source="zeiterion"' in admin and "Rejected gig" not in admin and "Tonight gig" not in admin
+    assert 'id="trk"' in admin and 'id="ppl"' in admin and "admin.js" in admin and "—" not in admin
+    assert 'data-approvals="approvals.yaml"' in admin and 'data-tracker="docs/sources-tracker.csv"' in admin
     review = (out / "review" / "index.html").read_text(encoding="utf-8")
-    assert 'name="robots" content="noindex' in review and 'data-repo="cmandle/Slack-Tide"' in review
-    assert review.count('class="rev"') == 1 and 'data-id="waiting-for-review"' in review and 'data-decide="approved"' in review
-    assert "Rejected gig" not in review and "Tonight gig" not in review
-    assert "review.js" in review and "—" not in review
+    assert 'url=../admin/#queue' in review and "noindex" in review
 
 def test_card_art_by_family_and_stable_hash(data, tmp_path, monkeypatch):
     art = tmp_path / "design" / "art"
