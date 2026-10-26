@@ -1,10 +1,37 @@
 {
- "generated_at": "2026-10-26T10:54:35.111835+00:00",
- "pending_count": 45,
- "soon_count": 21,
+ "generated_at": "2026-10-26T18:13:55.894938+00:00",
+ "pending_count": 49,
+ "soon_count": 26,
  "approved_count": 56,
  "rejected_count": 0,
  "series": [
+  {
+   "id": "4a7fb488a32e",
+   "title": "Zoning Revision Committee",
+   "venue": "207 Canonicus Street Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-10-26T17:00:00-04:00",
+   "last_start": "2026-10-26T17:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-26T17:00:00-04:00",
+     "end": "2026-10-26T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2236",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-26T17:00:00-04:00",
+   "soon": true
+  },
   {
    "id": "d79d89220691",
    "title": "Select Board Meeting",
@@ -276,8 +303,8 @@
    "soon": true
   },
   {
-   "id": "3a31fe132b30",
-   "title": "Community Preservation Committee",
+   "id": "5b7e651c83a2",
+   "title": "CANCELLED Community Preservation Committee",
    "venue": "1480 County Street Somerset MA 02726",
    "town": "Somerset",
    "category": "Civic & Town Meetings",
@@ -300,6 +327,60 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-10-28T16:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "63ce4500b08c",
+   "title": "Somerset Historical Commission",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-28T17:30:00-04:00",
+   "last_start": "2026-10-28T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T17:30:00-04:00",
+     "end": "2026-10-28T23:59:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2002",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-28T17:30:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "808080f196fd",
+   "title": "Historical Commission",
+   "venue": "1464 County St Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-28T17:30:00-04:00",
+   "last_start": "2026-10-28T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-28T17:30:00-04:00",
+     "end": "2026-10-28T23:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Local History Room Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2003",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-28T17:30:00-04:00",
    "soon": true
   },
   {
@@ -327,6 +408,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-10-28T19:00:00-04:00",
+   "soon": true
+  },
+  {
+   "id": "eb49a55bb2d9",
+   "title": "Veteran's Advisory Board",
+   "venue": "329 Washington Ave Somerset MA 02726",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-10-29T17:30:00-04:00",
+   "last_start": "2026-10-29T17:30:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-29T17:30:00-04:00",
+     "end": "2026-10-29T23:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: VFW Post 8500. https://www.townofsomerset.org/calendar.aspx?EID=2004",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-29T17:30:00-04:00",
    "soon": true
   },
   {
@@ -602,7 +710,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-02T18:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "02b6bb19c462",

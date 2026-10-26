@@ -2,78 +2,78 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 142,
-   "seconds": 4.25
+   "seconds": 2.93
   },
   "viva-fall-river": {
-   "rows": 243,
-   "seconds": 20.46
+   "rows": 245,
+   "seconds": 14.58
   },
   "brownell-library": {
    "rows": 22,
-   "seconds": 0.66
+   "seconds": 0.63
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 5.81
+   "seconds": 4.11
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 7.06
+   "seconds": 4.1
   },
   "zeiterion": {
    "rows": 30,
-   "seconds": 0.73
+   "seconds": 0.98
   },
   "town-tiverton": {
-   "rows": 192,
-   "seconds": 0.91
+   "rows": 190,
+   "seconds": 0.47
   },
   "town-dartmouth": {
    "rows": 19,
-   "seconds": 0.44
+   "seconds": 0.28
   },
   "town-somerset": {
-   "rows": 6,
-   "seconds": 0.72
+   "rows": 9,
+   "seconds": 0.54
   }
  },
  "errors": {},
- "primary_rows": 286,
+ "primary_rows": 287,
  "dropped": {
   "closure": 3,
   "holiday": 8
  },
- "series": 101,
+ "series": 105,
  "approval": {
   "approved": 56,
-  "pending": 45
+  "pending": 49
  },
  "by_town": {
-  "Tiverton": 33,
+  "Tiverton": 34,
   "Little Compton": 13,
   "Dartmouth": 28,
   "New Bedford": 24,
-  "Somerset": 2,
+  "Somerset": 5,
   "Westport": 1
  },
  "by_category": {
-  "Sports & Recreation": 5,
-  "(unclassified)": 14,
   "Volunteering & Causes": 2,
+  "(unclassified)": 15,
   "Library & Talks": 13,
-  "Civic & Town Meetings": 24,
+  "Civic & Town Meetings": 27,
   "Arts & Theatre": 24,
+  "Sports & Recreation": 5,
   "Education & Workshops": 2,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
   "Music": 3
  },
  "by_cadence": {
-  "several-a-week": 1,
   "weekly": 17,
-  "irregular": 6,
-  "once": 65,
+  "once": 69,
   "fortnightly": 2,
+  "several-a-week": 1,
+  "irregular": 6,
   "weekends": 1,
   "monthly": 9
  },
@@ -84,9 +84,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 385,
+  "check_total": 387,
   "check_matched": 15,
-  "check_missed_rows": 370,
+  "check_missed_rows": 372,
   "check_missed_series": 112,
   "check_missed": [
    {
@@ -307,6 +307,13 @@
     "rows": 4
    },
    {
+    "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
+    "venue": "Munchies",
+    "town": "Fall River",
+    "first_start": "2026-10-30T08:00:00-04:00",
+    "rows": 3
+   },
+   {
     "title": "Halloween Throw & Glow- All Weekend Long",
     "venue": "Stumpy's Hatchet House Fall River",
     "town": "Fall River",
@@ -321,11 +328,11 @@
     "rows": 3
    },
    {
-    "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
-    "venue": "Munchies",
+    "title": "Quinn Sullivan - Friday, Dec. 18",
+    "venue": "Narrows Center for the Arts",
     "town": "Fall River",
-    "first_start": "2026-10-30T08:00:00-04:00",
-    "rows": 2
+    "first_start": "2026-12-18T20:00:00-05:00",
+    "rows": 3
    },
    {
     "title": "All Ages Book Club",
@@ -437,13 +444,6 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-10-28T18:00:00-04:00",
-    "rows": 2
-   },
-   {
-    "title": "Quinn Sullivan - Friday, Dec. 18",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-12-18T20:00:00-05:00",
     "rows": 2
    },
    {
