@@ -1,203 +1,8 @@
 {
- "generated_at": "2026-10-27T10:52:15.593991+00:00",
- "series_count": 101,
- "occurrence_count": 260,
+ "generated_at": "2026-10-27T22:48:43.692921+00:00",
+ "series_count": 102,
+ "occurrence_count": 258,
  "series": [
-  {
-   "id": "3c769e6096a9",
-   "title": "Chair Yoga",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-27T09:00:00-04:00",
-   "last_start": "2026-12-22T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-10-27T09:00:00-04:00",
-     "end": "2026-10-27T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-03T09:00:00-05:00",
-     "end": "2026-11-03T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-10T09:00:00-05:00",
-     "end": "2026-11-10T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T09:00:00-05:00",
-     "end": "2026-11-17T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-24T09:00:00-05:00",
-     "end": "2026-11-24T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T09:00:00-05:00",
-     "end": "2026-12-01T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-08T09:00:00-05:00",
-     "end": "2026-12-08T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T09:00:00-05:00",
-     "end": "2026-12-15T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-22T09:00:00-05:00",
-     "end": "2026-12-22T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Instructor Shirley Pryor https://www.tiverton.ri.gov/calendar.aspx?EID=848",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "8fc3df99b704",
-   "title": "Drums Alive!",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-27T12:45:00-04:00",
-   "last_start": "2026-12-22T12:45:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-10-27T12:45:00-04:00",
-     "end": "2026-10-27T13:45:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-03T12:45:00-05:00",
-     "end": "2026-11-03T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-10T12:45:00-05:00",
-     "end": "2026-11-10T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T12:45:00-05:00",
-     "end": "2026-11-17T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-24T12:45:00-05:00",
-     "end": "2026-11-24T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T12:45:00-05:00",
-     "end": "2026-12-01T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-08T12:45:00-05:00",
-     "end": "2026-12-08T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T12:45:00-05:00",
-     "end": "2026-12-15T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-22T12:45:00-05:00",
-     "end": "2026-12-22T13:45:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1288",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "7bb4bc5fcf8f",
-   "title": "Art Class",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Arts & Theatre",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-27T14:00:00-04:00",
-   "last_start": "2026-12-22T14:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-10-27T14:00:00-04:00",
-     "end": "2026-10-27T15:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-03T14:00:00-05:00",
-     "end": "2026-11-03T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-10T14:00:00-05:00",
-     "end": "2026-11-10T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T14:00:00-05:00",
-     "end": "2026-11-17T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-24T14:00:00-05:00",
-     "end": "2026-11-24T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T14:00:00-05:00",
-     "end": "2026-12-01T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-08T14:00:00-05:00",
-     "end": "2026-12-08T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T14:00:00-05:00",
-     "end": "2026-12-15T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-22T14:00:00-05:00",
-     "end": "2026-12-22T15:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Acrylic painting; everyone does their own artwork no instructor fee is for supplies cost https://www.tiverton.ri.gov/calendar.aspx?EID=1350",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "5fb345f2d49c",
    "title": "All the Genres Book Club",
@@ -1794,6 +1599,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "61e30a663ddc",
+   "title": "Board of Health Meeting",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T17:00:00-05:00",
+   "last_start": "2026-11-02T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T17:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2940",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "c03a17f49c92",
    "title": "Historical Cemeteries Commission Meeting",
    "venue": "34 Roosevelt Avenue Tiverton RI 02878",
@@ -1847,6 +1677,186 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2235",
    "approval": "pending",
    "decided_by": ""
+  },
+  {
+   "id": "3c769e6096a9",
+   "title": "Chair Yoga",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-03T09:00:00-05:00",
+   "last_start": "2026-12-22T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-11-03T09:00:00-05:00",
+     "end": "2026-11-03T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T09:00:00-05:00",
+     "end": "2026-11-10T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T09:00:00-05:00",
+     "end": "2026-11-17T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T09:00:00-05:00",
+     "end": "2026-11-24T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T09:00:00-05:00",
+     "end": "2026-12-01T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T09:00:00-05:00",
+     "end": "2026-12-08T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T09:00:00-05:00",
+     "end": "2026-12-15T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-22T09:00:00-05:00",
+     "end": "2026-12-22T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. Instructor Shirley Pryor https://www.tiverton.ri.gov/calendar.aspx?EID=849",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "8fc3df99b704",
+   "title": "Drums Alive!",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-03T12:45:00-05:00",
+   "last_start": "2026-12-22T12:45:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-11-03T12:45:00-05:00",
+     "end": "2026-11-03T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T12:45:00-05:00",
+     "end": "2026-11-10T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T12:45:00-05:00",
+     "end": "2026-11-17T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T12:45:00-05:00",
+     "end": "2026-11-24T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T12:45:00-05:00",
+     "end": "2026-12-01T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T12:45:00-05:00",
+     "end": "2026-12-08T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T12:45:00-05:00",
+     "end": "2026-12-15T13:45:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-22T12:45:00-05:00",
+     "end": "2026-12-22T13:45:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1289",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "7bb4bc5fcf8f",
+   "title": "Art Class",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Arts & Theatre",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-03T14:00:00-05:00",
+   "last_start": "2026-12-22T14:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-11-03T14:00:00-05:00",
+     "end": "2026-11-03T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-10T14:00:00-05:00",
+     "end": "2026-11-10T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-17T14:00:00-05:00",
+     "end": "2026-11-17T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-24T14:00:00-05:00",
+     "end": "2026-11-24T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-01T14:00:00-05:00",
+     "end": "2026-12-01T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-08T14:00:00-05:00",
+     "end": "2026-12-08T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T14:00:00-05:00",
+     "end": "2026-12-15T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-22T14:00:00-05:00",
+     "end": "2026-12-22T15:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. Acrylic painting; everyone does their own artwork no instructor fee is for supplies cost https://www.tiverton.ri.gov/calendar.aspx?EID=1351",
+   "approval": "approved",
+   "decided_by": "bootstrap"
   },
   {
    "id": "5c5cfeee6755",

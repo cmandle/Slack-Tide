@@ -1,78 +1,78 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 142,
-   "seconds": 4.12
+   "rows": 150,
+   "seconds": 5.18
   },
   "viva-fall-river": {
-   "rows": 245,
-   "seconds": 17.8
+   "rows": 246,
+   "seconds": 15.05
   },
   "brownell-library": {
    "rows": 21,
-   "seconds": 0.82
+   "seconds": 0.72
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 4.07
+   "seconds": 4.32
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 6.02
+   "seconds": 5.7
   },
   "zeiterion": {
    "rows": 29,
-   "seconds": 0.65
+   "seconds": 0.61
   },
   "town-tiverton": {
-   "rows": 186,
-   "seconds": 0.53
+   "rows": 182,
+   "seconds": 0.67
   },
   "town-dartmouth": {
    "rows": 15,
-   "seconds": 0.35
+   "seconds": 0.39
   },
   "town-somerset": {
    "rows": 11,
-   "seconds": 0.58
+   "seconds": 0.61
   }
  },
  "errors": {},
- "primary_rows": 279,
+ "primary_rows": 275,
  "dropped": {
   "closure": 3,
-  "holiday": 7
+  "holiday": 6
  },
- "series": 101,
+ "series": 102,
  "approval": {
   "approved": 55,
-  "pending": 46
+  "pending": 47
  },
  "by_town": {
-  "Tiverton": 33,
   "Little Compton": 12,
-  "Dartmouth": 25,
+  "Dartmouth": 26,
+  "Tiverton": 33,
   "Somerset": 7,
   "New Bedford": 23,
   "Westport": 1
  },
  "by_category": {
-  "Sports & Recreation": 5,
-  "(unclassified)": 15,
-  "Arts & Theatre": 23,
   "Library & Talks": 12,
-  "Civic & Town Meetings": 25,
+  "(unclassified)": 15,
+  "Civic & Town Meetings": 26,
   "Education & Workshops": 2,
+  "Sports & Recreation": 5,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
   "Music": 3,
+  "Arts & Theatre": 23,
   "Volunteering & Causes": 2
  },
  "by_cadence": {
-  "weekly": 17,
-  "once": 65,
+  "once": 66,
   "several-a-week": 1,
   "irregular": 6,
+  "weekly": 17,
   "weekends": 1,
   "fortnightly": 1,
   "monthly": 10
@@ -84,10 +84,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 387,
+  "check_total": 396,
   "check_matched": 15,
-  "check_missed_rows": 372,
-  "check_missed_series": 111,
+  "check_missed_rows": 381,
+  "check_missed_series": 119,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -101,7 +101,7 @@
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-10-31T10:00:00-04:00",
-    "rows": 16
+    "rows": 17
    },
    {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
@@ -475,6 +475,13 @@
     "rows": 1
    },
    {
+    "title": "1440 Project - 11th Anniversary",
+    "venue": "St. Andrews Church",
+    "town": "New Bedford",
+    "first_start": "2026-11-14T19:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "A Halloween Yoga Experience - Chasing Away Your Shadow",
     "venue": "YOGA ES VIDA COLLECTIVE",
     "town": "New Bedford",
@@ -545,6 +552,13 @@
     "rows": 1
    },
    {
+    "title": "Author Talk & Book Signing with Reidar Bendiksen",
+    "venue": "New Bedford Fishing Heritage Center",
+    "town": "New Bedford",
+    "first_start": "2026-11-05T18:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Balance & Swing Contradance",
     "venue": "Gallery X",
     "town": "New Bedford",
@@ -573,6 +587,13 @@
     "rows": 1
    },
    {
+    "title": "Dock-u-mentary: Truth - Fishing Crisis or Mismanagement?",
+    "venue": "New Bedford Whaling National Historical Park Theater",
+    "town": "New Bedford",
+    "first_start": "2026-11-20T19:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Dr. Gasp Performance",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -584,6 +605,13 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-10-29T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "F/V Lillian B. Model Boat Showcase",
+    "venue": "New Bedford Fishing Heritage Center",
+    "town": "New Bedford",
+    "first_start": "2026-11-14T13:00:00-05:00",
     "rows": 1
    },
    {
@@ -685,10 +713,24 @@
     "rows": 1
    },
    {
+    "title": "Lighthouse Tavern Presents Escape the Box Comedy Night",
+    "venue": "Lighthouse Tavern",
+    "town": "New Bedford",
+    "first_start": "2026-11-05T20:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Liquid Spine: Film, Dance, and Dialogue",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-12-17T17:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Local Artisan Showcase at FHC",
+    "venue": "New Bedford Fishing Heritage Center",
+    "town": "New Bedford",
+    "first_start": "2026-11-12T17:00:00-05:00",
     "rows": 1
    },
    {
@@ -724,6 +766,13 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-10-31T20:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "OPEN HOUSE PACE YouthBuild",
+    "venue": "YouthBuild New Bedford",
+    "town": "New Bedford",
+    "first_start": "2026-10-29T14:00:00-04:00",
     "rows": 1
    },
    {
@@ -780,6 +829,13 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-10-28T21:00:00-04:00",
+    "rows": 1
+   },
+   {
+    "title": "Southcoast Festival of Choirs at ST. Anthony Church New Bedford",
+    "venue": "SaintAnthonyofNewBedford",
+    "town": "New Bedford",
+    "first_start": "2026-12-05T18:30:00-05:00",
     "rows": 1
    },
    {
@@ -873,7 +929,7 @@
   ],
   "primary_only_count": 29,
   "primary_only_series": 23,
-  "coverage_ratio": 0.039
+  "coverage_ratio": 0.038
  },
  "tide_error": null
 }

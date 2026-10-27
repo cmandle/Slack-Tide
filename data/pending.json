@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-27T10:52:15.593991+00:00",
- "pending_count": 46,
- "soon_count": 23,
+ "generated_at": "2026-10-27T22:48:43.692921+00:00",
+ "pending_count": 47,
+ "soon_count": 25,
  "approved_count": 55,
  "rejected_count": 0,
  "series": [
@@ -605,6 +605,33 @@
    "soon": true
   },
   {
+   "id": "61e30a663ddc",
+   "title": "Board of Health Meeting",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T17:00:00-05:00",
+   "last_start": "2026-11-02T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T17:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2940",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-02T17:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "897b69e759d7",
    "title": "North End and Industrial/Business Park Advisory Subcommittee",
    "venue": "207 Canonicus Street Tiverton RI 02878",
@@ -671,7 +698,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-03T18:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "58f176411908",
