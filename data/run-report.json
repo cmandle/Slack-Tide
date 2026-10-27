@@ -1,67 +1,67 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 144,
-   "seconds": 3.5
+   "rows": 142,
+   "seconds": 4.12
   },
   "viva-fall-river": {
-   "rows": 246,
-   "seconds": 18.79
+   "rows": 245,
+   "seconds": 17.8
   },
   "brownell-library": {
-   "rows": 22,
-   "seconds": 0.73
+   "rows": 21,
+   "seconds": 0.82
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 2.94
+   "seconds": 4.07
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 12.67
+   "seconds": 6.02
   },
   "zeiterion": {
-   "rows": 30,
-   "seconds": 0.68
+   "rows": 29,
+   "seconds": 0.65
   },
   "town-tiverton": {
-   "rows": 188,
-   "seconds": 0.52
+   "rows": 186,
+   "seconds": 0.53
   },
   "town-dartmouth": {
-   "rows": 18,
-   "seconds": 0.32
+   "rows": 15,
+   "seconds": 0.35
   },
   "town-somerset": {
    "rows": 11,
-   "seconds": 0.4
+   "seconds": 0.58
   }
  },
  "errors": {},
- "primary_rows": 286,
+ "primary_rows": 279,
  "dropped": {
   "closure": 3,
   "holiday": 7
  },
- "series": 107,
+ "series": 101,
  "approval": {
-  "approved": 56,
-  "pending": 51
+  "approved": 55,
+  "pending": 46
  },
  "by_town": {
-  "Little Compton": 13,
-  "Tiverton": 34,
-  "Dartmouth": 28,
-  "New Bedford": 24,
+  "Tiverton": 33,
+  "Little Compton": 12,
+  "Dartmouth": 25,
   "Somerset": 7,
+  "New Bedford": 23,
   "Westport": 1
  },
  "by_category": {
-  "Library & Talks": 13,
-  "Civic & Town Meetings": 29,
-  "Arts & Theatre": 24,
   "Sports & Recreation": 5,
   "(unclassified)": 15,
+  "Arts & Theatre": 23,
+  "Library & Talks": 12,
+  "Civic & Town Meetings": 25,
   "Education & Workshops": 2,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
@@ -69,13 +69,13 @@
   "Volunteering & Causes": 2
  },
  "by_cadence": {
-  "once": 71,
-  "fortnightly": 2,
   "weekly": 17,
+  "once": 65,
   "several-a-week": 1,
   "irregular": 6,
   "weekends": 1,
-  "monthly": 9
+  "fortnightly": 1,
+  "monthly": 10
  },
  "weekend_gate": {
   "saturday": "2026-10-31",
@@ -84,10 +84,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 390,
+  "check_total": 387,
   "check_matched": 15,
-  "check_missed_rows": 375,
-  "check_missed_series": 112,
+  "check_missed_rows": 372,
+  "check_missed_series": 111,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -153,13 +153,6 @@
     "rows": 9
    },
    {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-26T14:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -174,13 +167,6 @@
     "rows": 9
    },
    {
-    "title": "Nick Sanfilippo",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-10-26T18:30:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Open Mic",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -192,6 +178,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-10-27T11:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Primo After Dark - Weekly DJ Sets",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-10-30T20:00:00-04:00",
     "rows": 9
    },
    {
@@ -244,6 +237,13 @@
     "rows": 8
    },
    {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-02T14:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Matt Silva Sunday Funday",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
@@ -251,17 +251,17 @@
     "rows": 8
    },
    {
+    "title": "Nick Sanfilippo",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-02T18:30:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-01T10:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Primo After Dark - Weekly DJ Sets",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-30T20:00:00-04:00",
     "rows": 8
    },
    {
@@ -388,13 +388,6 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-19T18:00:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Historical Fiction Book Club",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-26T18:00:00-04:00",
     "rows": 2
    },
    {
@@ -657,6 +650,13 @@
     "rows": 1
    },
    {
+    "title": "Historical Fiction Book Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-30T18:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Inaugural \"Forever & Beyond\" Dia de los Muertos Gala",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -853,13 +853,6 @@
     "rows": 1
    },
    {
-    "title": "Wheel Throwing",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-26T17:30:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Wicker Movie Outing",
     "venue": "Pictureshow at SouthCoast Marketplace",
     "town": "Fall River",
@@ -878,9 +871,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 30,
-  "primary_only_series": 24,
-  "coverage_ratio": 0.038
+  "primary_only_count": 29,
+  "primary_only_series": 23,
+  "coverage_ratio": 0.039
  },
  "tide_error": null
 }

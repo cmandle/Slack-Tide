@@ -1,198 +1,8 @@
 {
- "generated_at": "2026-10-26T22:49:27.166013+00:00",
- "series_count": 107,
- "occurrence_count": 267,
+ "generated_at": "2026-10-27T10:52:15.593991+00:00",
+ "series_count": 101,
+ "occurrence_count": 260,
  "series": [
-  {
-   "id": "9ee555514f59",
-   "title": "Knitting Group",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/knitting-group-36/",
-   "cost": "",
-   "first_start": "2026-10-26T13:00:00-04:00",
-   "last_start": "2026-10-26T13:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-26T13:00:00-04:00",
-     "end": "2026-10-26T14:00:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "4a7fb488a32e",
-   "title": "Zoning Revision Committee",
-   "venue": "207 Canonicus Street Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-26T17:00:00-04:00",
-   "last_start": "2026-10-26T17:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-26T17:00:00-04:00",
-     "end": "2026-10-26T23:59:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2236",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "d79d89220691",
-   "title": "Select Board Meeting",
-   "venue": "400 SLOCUM RD Room 303 and 304 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-26T17:30:00-04:00",
-   "last_start": "2026-10-26T17:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-26T17:30:00-04:00",
-     "end": "2026-10-26T23:59:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2932",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "826d5fe77ae4",
-   "title": "Zeiterion Member Open House",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/2026-member-open-house",
-   "cost": "",
-   "first_start": "2026-10-26T18:00:00-04:00",
-   "last_start": "2026-10-26T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-26T18:00:00-04:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "16ce409ac294",
-   "title": "Dartmouth School Committee",
-   "venue": "555 Bakerville Road Library Media Center Dartmouth MA 02748",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-26T18:00:00-04:00",
-   "last_start": "2026-10-26T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-26T18:00:00-04:00",
-     "end": "2026-10-26T23:59:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2929",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "1da38ea742d0",
-   "title": "Board of Assessor's meeting / joint Select Board meeting",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-26T18:00:00-04:00",
-   "last_start": "2026-10-26T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-26T18:00:00-04:00",
-     "end": "2026-10-26T23:59:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2933",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "77e878936379",
-   "title": "Town Council Meeting",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-10-26T19:00:00-04:00",
-   "last_start": "2026-12-14T19:00:00-05:00",
-   "count": 4,
-   "cadence": "fortnightly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-10-26T19:00:00-04:00",
-     "end": "2026-10-26T23:59:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T19:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T19:00:00-05:00",
-     "end": "2026-11-23T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T19:00:00-05:00",
-     "end": "2026-12-14T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1929",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "3c769e6096a9",
    "title": "Chair Yoga",
@@ -419,8 +229,8 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "a9e2357c89fc",
-   "title": "Budget Advisory Group",
+   "id": "9d10ab6f6bdb",
+   "title": "Budget Advisory Group - Canceled",
    "venue": "400 SLOCUM ROAD Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "",
@@ -2455,6 +2265,41 @@
     }
    ],
    "summary": "",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "77e878936379",
+   "title": "Town Council Meeting",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T19:00:00-05:00",
+   "last_start": "2026-12-14T19:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-11-09T19:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T19:00:00-05:00",
+     "end": "2026-11-23T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T19:00:00-05:00",
+     "end": "2026-12-14T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1930",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
