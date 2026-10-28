@@ -1,77 +1,74 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 150,
-   "seconds": 5.18
+   "rows": 148,
+   "seconds": 4.45
   },
   "viva-fall-river": {
-   "rows": 246,
-   "seconds": 15.05
+   "rows": 239,
+   "seconds": 15.02
   },
   "brownell-library": {
-   "rows": 21,
-   "seconds": 0.72
+   "rows": 18,
+   "seconds": 0.54
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 4.32
-  },
-  "buzzards-bay-brewing": {
-   "rows": 1,
-   "seconds": 5.7
+   "seconds": 4.69
   },
   "zeiterion": {
    "rows": 29,
-   "seconds": 0.61
+   "seconds": 0.51
   },
   "town-tiverton": {
-   "rows": 182,
-   "seconds": 0.67
+   "rows": 181,
+   "seconds": 0.33
   },
   "town-dartmouth": {
-   "rows": 15,
-   "seconds": 0.39
+   "rows": 9,
+   "seconds": 0.33
   },
   "town-somerset": {
    "rows": 11,
-   "seconds": 0.61
+   "seconds": 0.55
   }
  },
- "errors": {},
- "primary_rows": 275,
+ "errors": {
+  "buzzards-bay-brewing": "ReadTimeout: HTTPSConnectionPool(host='buzzardsbrew.com', port=443): Read timed out. (read timeout=30)"
+ },
+ "primary_rows": 264,
  "dropped": {
   "closure": 3,
   "holiday": 6
  },
- "series": 102,
+ "series": 92,
  "approval": {
-  "approved": 55,
-  "pending": 47
+  "approved": 52,
+  "pending": 40
  },
  "by_town": {
-  "Little Compton": 12,
-  "Dartmouth": 26,
-  "Tiverton": 33,
+  "Tiverton": 32,
+  "Little Compton": 10,
+  "Dartmouth": 20,
   "Somerset": 7,
-  "New Bedford": 23,
-  "Westport": 1
+  "New Bedford": 23
  },
  "by_category": {
-  "Library & Talks": 12,
-  "(unclassified)": 15,
-  "Civic & Town Meetings": 26,
-  "Education & Workshops": 2,
   "Sports & Recreation": 5,
+  "Library & Talks": 10,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
-  "Music": 3,
+  "Music": 2,
+  "(unclassified)": 14,
+  "Civic & Town Meetings": 21,
   "Arts & Theatre": 23,
-  "Volunteering & Causes": 2
+  "Volunteering & Causes": 2,
+  "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 66,
   "several-a-week": 1,
   "irregular": 6,
+  "once": 56,
   "weekly": 17,
   "weekends": 1,
   "fortnightly": 1,
@@ -84,9 +81,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 396,
+  "check_total": 387,
   "check_matched": 15,
-  "check_missed_rows": 381,
+  "check_missed_rows": 372,
   "check_missed_series": 119,
   "check_missed": [
    {
@@ -118,24 +115,10 @@
     "rows": 9
    },
    {
-    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
-    "venue": "First Congregational Church of Fall River",
-    "town": "Fall River",
-    "first_start": "2026-10-27T18:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Friday Night Volleyball (weekly)",
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-10-30T17:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Half Priced Food (weekly)",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-10-27T16:00:00-04:00",
     "rows": 9
    },
    {
@@ -167,20 +150,6 @@
     "rows": 9
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-27T20:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Preschool Storytime",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-27T11:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Primo After Dark - Weekly DJ Sets",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -192,13 +161,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-30T18:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-10-27T19:30:00-04:00",
     "rows": 9
    },
    {
@@ -230,6 +192,20 @@
     "rows": 9
    },
    {
+    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
+    "venue": "First Congregational Church of Fall River",
+    "town": "Fall River",
+    "first_start": "2026-11-03T18:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Half Priced Food (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-03T16:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -258,10 +234,24 @@
     "rows": 8
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-03T20:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-01T10:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Preschool Storytime",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-03T11:00:00-05:00",
     "rows": 8
    },
    {
@@ -272,11 +262,11 @@
     "rows": 8
    },
    {
-    "title": "Community Resource Day",
-    "venue": "Fall River Public Library",
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
     "town": "Fall River",
-    "first_start": "2026-10-27T13:00:00-04:00",
-    "rows": 5
+    "first_start": "2026-11-03T19:30:00-05:00",
+    "rows": 8
    },
    {
     "title": "Magic: The Gathering Commander Club",
@@ -293,17 +283,17 @@
     "rows": 4
    },
    {
+    "title": "Community Resource Day",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-10T13:00:00-05:00",
+    "rows": 4
+   },
+   {
     "title": "Monthly Artists Share!",
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-10T18:30:00-05:00",
-    "rows": 4
-   },
-   {
-    "title": "Plant Bingo",
-    "venue": "Fall River Carousel",
-    "town": "Fall River",
-    "first_start": "2026-10-27T18:30:00-04:00",
     "rows": 4
    },
    {
@@ -318,13 +308,6 @@
     "venue": "Stumpy's Hatchet House Fall River",
     "town": "Fall River",
     "first_start": "2026-10-30T17:00:00-04:00",
-    "rows": 3
-   },
-   {
-    "title": "Hop Quiz Trivia",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-10-27T18:30:00-04:00",
     "rows": 3
    },
    {
@@ -391,6 +374,13 @@
     "rows": 2
    },
    {
+    "title": "Hop Quiz Trivia",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-03T18:30:00-05:00",
+    "rows": 2
+   },
+   {
     "title": "Joan Osborne Sings The Songs of Bob Dylan - Fall River",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -437,6 +427,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-10-28T18:00:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Plant Bingo",
+    "venue": "Fall River Carousel",
+    "town": "Fall River",
+    "first_start": "2026-11-10T18:30:00-05:00",
     "rows": 2
    },
    {
@@ -493,6 +490,13 @@
     "venue": "Stumpy's Hatchet House Fall River",
     "town": "Fall River",
     "first_start": "2026-11-05T19:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Adam Ezra Group live at the Narrows",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2026-12-26T20:00:00-05:00",
     "rows": 1
    },
    {
@@ -668,13 +672,6 @@
     "venue": "Red Cat Kitchen",
     "town": "Fall River",
     "first_start": "2026-10-31T21:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Hand Building with Clay: Beyond the Wheel",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-27T17:30:00-04:00",
     "rows": 1
    },
    {
@@ -929,7 +926,7 @@
   ],
   "primary_only_count": 29,
   "primary_only_series": 23,
-  "coverage_ratio": 0.038
+  "coverage_ratio": 0.039
  },
  "tide_error": null
 }
