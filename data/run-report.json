@@ -1,74 +1,77 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 148,
-   "seconds": 4.45
+   "rows": 150,
+   "seconds": 4.24
   },
   "viva-fall-river": {
-   "rows": 239,
-   "seconds": 15.02
+   "rows": 243,
+   "seconds": 13.87
   },
   "brownell-library": {
    "rows": 18,
-   "seconds": 0.54
+   "seconds": 0.68
   },
   "dnrt": {
    "rows": 16,
-   "seconds": 4.69
+   "seconds": 3.91
+  },
+  "buzzards-bay-brewing": {
+   "rows": 1,
+   "seconds": 5.43
   },
   "zeiterion": {
    "rows": 29,
-   "seconds": 0.51
+   "seconds": 1.09
   },
   "town-tiverton": {
-   "rows": 181,
-   "seconds": 0.33
+   "rows": 179,
+   "seconds": 0.57
   },
   "town-dartmouth": {
-   "rows": 9,
-   "seconds": 0.33
+   "rows": 8,
+   "seconds": 0.34
   },
   "town-somerset": {
-   "rows": 11,
-   "seconds": 0.55
+   "rows": 12,
+   "seconds": 0.41
   }
  },
- "errors": {
-  "buzzards-bay-brewing": "ReadTimeout: HTTPSConnectionPool(host='buzzardsbrew.com', port=443): Read timed out. (read timeout=30)"
- },
- "primary_rows": 264,
+ "errors": {},
+ "primary_rows": 263,
  "dropped": {
   "closure": 3,
-  "holiday": 6
+  "holiday": 5
  },
- "series": 92,
+ "series": 94,
  "approval": {
   "approved": 52,
-  "pending": 40
+  "pending": 42
  },
  "by_town": {
   "Tiverton": 32,
   "Little Compton": 10,
   "Dartmouth": 20,
-  "Somerset": 7,
-  "New Bedford": 23
+  "Somerset": 8,
+  "New Bedford": 23,
+  "Westport": 1
  },
  "by_category": {
   "Sports & Recreation": 5,
   "Library & Talks": 10,
   "Outdoors & Nature": 13,
   "Family & Children": 1,
-  "Music": 2,
-  "(unclassified)": 14,
-  "Civic & Town Meetings": 21,
+  "Civic & Town Meetings": 22,
   "Arts & Theatre": 23,
   "Volunteering & Causes": 2,
+  "(unclassified)": 14,
+  "Music": 3,
   "Education & Workshops": 1
  },
  "by_cadence": {
   "several-a-week": 1,
   "irregular": 6,
-  "once": 56,
+  "once": 58,
   "weekly": 17,
   "weekends": 1,
   "fortnightly": 1,
@@ -81,23 +84,23 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 387,
+  "check_total": 393,
   "check_matched": 15,
-  "check_missed_rows": 372,
+  "check_missed_rows": 378,
   "check_missed_series": 119,
   "check_missed": [
-   {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T21:00:00-04:00",
-    "rows": 17
-   },
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-10-31T10:00:00-04:00",
+    "rows": 18
+   },
+   {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-10-29T21:00:00-04:00",
     "rows": 17
    },
    {
@@ -122,6 +125,13 @@
     "rows": 9
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T14:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Kids eat FREE on Wednesdays",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -133,6 +143,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-10-29T13:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Matt Silva Sunday Funday",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-01T16:00:00-05:00",
     "rows": 9
    },
    {
@@ -150,6 +167,13 @@
     "rows": 9
    },
    {
+    "title": "Poppin' Prosecco with Primo! Brunch",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-01T10:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Primo After Dark - Weekly DJ Sets",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -161,6 +185,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-10-30T18:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T09:30:00-05:00",
     "rows": 9
    },
    {
@@ -206,24 +237,10 @@
     "rows": 8
    },
    {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T14:00:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-02T14:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Matt Silva Sunday Funday",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-01T16:00:00-05:00",
     "rows": 8
    },
    {
@@ -241,24 +258,10 @@
     "rows": 8
    },
    {
-    "title": "Poppin' Prosecco with Primo! Brunch",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-01T10:00:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "Preschool Storytime",
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-03T11:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Tai Chi at Buttonwood Park",
-    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T09:30:00-05:00",
     "rows": 8
    },
    {
@@ -448,6 +451,13 @@
     "venue": "Once Upon a Bookstore",
     "town": "Fall River",
     "first_start": "2026-10-29T18:30:00-04:00",
+    "rows": 2
+   },
+   {
+    "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-29T17:00:00-05:00",
     "rows": 2
    },
    {
@@ -843,13 +853,6 @@
     "rows": 1
    },
    {
-    "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-29T17:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "The Ancestor Hour: Roots & Research Club",
     "venue": "New Bedford Public Library",
     "town": "New Bedford",
@@ -926,7 +929,7 @@
   ],
   "primary_only_count": 29,
   "primary_only_series": 23,
-  "coverage_ratio": 0.039
+  "coverage_ratio": 0.038
  },
  "tide_error": null
 }

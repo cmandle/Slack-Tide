@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-28T10:59:13.544231+00:00",
- "pending_count": 40,
- "soon_count": 18,
+ "generated_at": "2026-10-28T22:52:34.751898+00:00",
+ "pending_count": 42,
+ "soon_count": 21,
  "approved_count": 52,
  "rejected_count": 0,
  "series": [
@@ -249,6 +249,33 @@
    "soon": true
   },
   {
+   "id": "288e210032e7",
+   "title": "Open Mic Jam Sesh FRIDAYS",
+   "venue": "Buzzards Bay Brewing",
+   "town": "Westport",
+   "category": "Music",
+   "source_id": "buzzards-bay-brewing",
+   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-72/",
+   "cost": "",
+   "first_start": "2026-10-30T21:00:00-04:00",
+   "last_start": "2026-10-30T21:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-30T21:00:00-04:00",
+     "end": "2026-10-31T00:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us at the brewery for our weekly Open Mic Jam Sesh every Friday in the Kettle! Bring your instrument(s), singing voice, stand-up routine, or just come hang out for a fun, all-ages jam session. Sign-ups start at 5pm. All are welcome 🍻🎤 We will have rotating food trucks each week, so come hungry!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-10-30T21:00:00-04:00",
+   "soon": true
+  },
+  {
    "id": "4f9834189883",
    "title": "All Souls",
    "venue": "The Zeiterion",
@@ -470,6 +497,33 @@
    "soon": true
   },
   {
+   "id": "8d53dd275b3a",
+   "title": "Somerset Conservation Commission",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-02T18:00:00-05:00",
+   "last_start": "2026-11-02T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T18:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2007",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-02T18:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "02b6bb19c462",
    "title": "Zeiterion Guided Tours",
    "venue": "The Zeiterion",
@@ -536,7 +590,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-04T18:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "57d72e1b63cd",

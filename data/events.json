@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-28T10:59:13.544231+00:00",
- "series_count": 92,
+ "generated_at": "2026-10-28T22:52:34.751898+00:00",
+ "series_count": 94,
  "occurrence_count": 247,
  "series": [
   {
@@ -205,136 +205,6 @@
     }
    ],
    "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "a136d19cf1cd",
-   "title": "Sandy's Live Music & Karaoke",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Music",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-28T12:15:00-04:00",
-   "last_start": "2026-12-23T12:15:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-10-28T12:15:00-04:00",
-     "end": "2026-10-28T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T12:15:00-05:00",
-     "end": "2026-11-04T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T12:15:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:15:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:15:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:15:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:15:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T12:15:00-05:00",
-     "end": "2026-12-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T12:15:00-05:00",
-     "end": "2026-12-23T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. \"Piano Man\" Sandy Cook entertains and coordinated Karaoke fun https://www.tiverton.ri.gov/calendar.aspx?EID=1577",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "cf4589ea0706",
-   "title": "Cribbage",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-28T12:30:00-04:00",
-   "last_start": "2026-12-23T12:30:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-10-28T12:30:00-04:00",
-     "end": "2026-10-28T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T12:30:00-05:00",
-     "end": "2026-11-04T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T12:30:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:30:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:30:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:30:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:30:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T12:30:00-05:00",
-     "end": "2026-12-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T12:30:00-05:00",
-     "end": "2026-12-23T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1515",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -949,6 +819,31 @@
    "decided_by": ""
   },
   {
+   "id": "288e210032e7",
+   "title": "Open Mic Jam Sesh FRIDAYS",
+   "venue": "Buzzards Bay Brewing",
+   "town": "Westport",
+   "category": "Music",
+   "source_id": "buzzards-bay-brewing",
+   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-72/",
+   "cost": "",
+   "first_start": "2026-10-30T21:00:00-04:00",
+   "last_start": "2026-10-30T21:00:00-04:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-10-30T21:00:00-04:00",
+     "end": "2026-10-31T00:00:00-04:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us at the brewery for our weekly Open Mic Jam Sesh every Friday in the Kettle! Bring your instrument(s), singing voice, stand-up routine, or just come hang out for a fun, all-ages jam session. Sign-ups start at 5pm. All are welcome 🍻🎤 We will have rotating food trucks each week, so come hungry!",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "4f9834189883",
    "title": "All Souls",
    "venue": "The Zeiterion",
@@ -1424,6 +1319,31 @@
    "decided_by": ""
   },
   {
+   "id": "8d53dd275b3a",
+   "title": "Somerset Conservation Commission",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-02T18:00:00-05:00",
+   "last_start": "2026-11-02T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T18:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2007",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "3c769e6096a9",
    "title": "Chair Yoga",
    "venue": "",
@@ -1700,6 +1620,126 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1991",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "a136d19cf1cd",
+   "title": "Sandy's Live Music & Karaoke",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Music",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-04T12:15:00-05:00",
+   "last_start": "2026-12-23T12:15:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-04T12:15:00-05:00",
+     "end": "2026-11-04T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T12:15:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:15:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:15:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:15:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:15:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T12:15:00-05:00",
+     "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T12:15:00-05:00",
+     "end": "2026-12-23T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. \"Piano Man\" Sandy Cook entertains and coordinated Karaoke fun https://www.tiverton.ri.gov/calendar.aspx?EID=1578",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "cf4589ea0706",
+   "title": "Cribbage",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-04T12:30:00-05:00",
+   "last_start": "2026-12-23T12:30:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-04T12:30:00-05:00",
+     "end": "2026-11-04T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T12:30:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:30:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:30:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:30:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:30:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T12:30:00-05:00",
+     "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T12:30:00-05:00",
+     "end": "2026-12-23T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1516",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
