@@ -1,203 +1,8 @@
 {
- "generated_at": "2026-10-29T10:59:14.284623+00:00",
- "series_count": 87,
- "occurrence_count": 237,
+ "generated_at": "2026-10-29T22:55:22.033173+00:00",
+ "series_count": 88,
+ "occurrence_count": 241,
  "series": [
-  {
-   "id": "3139634ece53",
-   "title": "Balance and Mobility",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-29T09:00:00-04:00",
-   "last_start": "2026-12-24T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-29T09:00:00-04:00",
-     "end": "2026-10-29T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T09:00:00-05:00",
-     "end": "2026-11-05T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T09:00:00-05:00",
-     "end": "2026-11-12T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T09:00:00-05:00",
-     "end": "2026-11-19T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T09:00:00-05:00",
-     "end": "2026-11-26T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T09:00:00-05:00",
-     "end": "2026-12-03T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T09:00:00-05:00",
-     "end": "2026-12-10T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T09:00:00-05:00",
-     "end": "2026-12-17T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T09:00:00-05:00",
-     "end": "2026-12-24T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1640",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "dd50f7398c80",
-   "title": "Bingo!",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-29T13:00:00-04:00",
-   "last_start": "2026-12-24T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-29T13:00:00-04:00",
-     "end": "2026-10-29T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T13:00:00-05:00",
-     "end": "2026-12-24T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1708",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "8b749f1ec307",
-   "title": "Knitting for Charity",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Volunteering & Causes",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-29T13:00:00-04:00",
-   "last_start": "2026-12-24T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-10-29T13:00:00-04:00",
-     "end": "2026-10-29T15:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T13:00:00-05:00",
-     "end": "2026-12-24T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1776",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "eb49a55bb2d9",
    "title": "Veteran's Advisory Board",
@@ -358,8 +163,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-10-30T13:00:00-04:00",
-   "last_start": "2026-12-21T10:15:00-05:00",
-   "count": 9,
+   "last_start": "2026-12-28T10:15:00-05:00",
+   "count": 10,
    "cadence": "irregular",
    "weekday": null,
    "occurrences": [
@@ -406,6 +211,11 @@
     {
      "start": "2026-12-21T10:15:00-05:00",
      "end": "2026-12-21T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-28T10:15:00-05:00",
+     "end": "2026-12-28T11:15:00-05:00",
      "all_day": false
     }
    ],
@@ -460,31 +270,6 @@
     }
    ],
    "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "288e210032e7",
-   "title": "Open Mic Jam Sesh FRIDAYS",
-   "venue": "Buzzards Bay Brewing",
-   "town": "Westport",
-   "category": "Music",
-   "source_id": "buzzards-bay-brewing",
-   "url": "https://buzzardsbrew.com/event/open-mic-jam-sesh-fridays-72/",
-   "cost": "",
-   "first_start": "2026-10-30T21:00:00-04:00",
-   "last_start": "2026-10-30T21:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-30T21:00:00-04:00",
-     "end": "2026-10-31T00:00:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join us at the brewery for our weekly Open Mic Jam Sesh every Friday in the Kettle! Bring your instrument(s), singing voice, stand-up routine, or just come hang out for a fun, all-ages jam session. Sign-ups start at 5pm. All are welcome 🍻🎤 We will have rotating food trucks each week, so come hungry!",
    "approval": "pending",
    "decided_by": ""
   },
@@ -644,6 +429,71 @@
    "decided_by": ""
   },
   {
+   "id": "5a6902aea5cc",
+   "title": "TOPS",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-02T09:00:00-05:00",
+   "last_start": "2026-12-28T09:00:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T09:00:00-05:00",
+     "end": "2026-12-14T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T09:00:00-05:00",
+     "end": "2026-12-21T11:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-28T09:00:00-05:00",
+     "end": "2026-12-28T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Game Room. Take off pounds sensibly (TOPS) https://www.tiverton.ri.gov/calendar.aspx?EID=725",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
    "id": "ee5aab63f527",
    "title": "Functional Fitness",
    "venue": "",
@@ -653,8 +503,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-02T09:00:00-05:00",
-   "last_start": "2026-12-23T00:00:00-05:00",
-   "count": 16,
+   "last_start": "2026-12-28T09:00:00-05:00",
+   "count": 17,
    "cadence": "several-a-week",
    "weekday": null,
    "occurrences": [
@@ -737,69 +587,14 @@
      "start": "2026-12-23T00:00:00-05:00",
      "end": "2026-12-23T00:00:00-05:00",
      "all_day": true
+    },
+    {
+     "start": "2026-12-28T09:00:00-05:00",
+     "end": "2026-12-28T10:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "Location: Dining Room. with instructor Debbie Gagnon. https://www.tiverton.ri.gov/calendar.aspx?EID=787",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "5a6902aea5cc",
-   "title": "TOPS",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-02T09:00:00-05:00",
-   "last_start": "2026-12-21T09:00:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-02T09:00:00-05:00",
-     "end": "2026-11-02T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T09:00:00-05:00",
-     "end": "2026-12-21T11:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. Take off pounds sensibly (TOPS) https://www.tiverton.ri.gov/calendar.aspx?EID=725",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -813,8 +608,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-02T10:00:00-05:00",
-   "last_start": "2026-12-21T10:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-28T10:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -857,6 +652,11 @@
      "start": "2026-12-21T10:00:00-05:00",
      "end": "2026-12-21T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-28T10:00:00-05:00",
+     "end": "2026-12-28T15:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "Location: Basement. Quilting and Organizing donations https://www.tiverton.ri.gov/calendar.aspx?EID=911",
@@ -873,8 +673,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-02T12:30:00-05:00",
-   "last_start": "2026-12-21T12:30:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-28T12:30:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -917,6 +717,11 @@
      "start": "2026-12-21T12:30:00-05:00",
      "end": "2026-12-21T15:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-28T12:30:00-05:00",
+     "end": "2026-12-28T15:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "Location: Game Room. Coordinator: Marie Whitty https://www.tiverton.ri.gov/calendar.aspx?EID=973",
@@ -933,8 +738,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-02T13:00:00-05:00",
-   "last_start": "2026-12-21T13:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-28T13:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 0,
    "occurrences": [
@@ -976,6 +781,11 @@
     {
      "start": "2026-12-21T13:00:00-05:00",
      "end": "2026-12-21T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-28T13:00:00-05:00",
+     "end": "2026-12-28T14:00:00-05:00",
      "all_day": false
     }
    ],
@@ -1064,6 +874,31 @@
    "decided_by": ""
   },
   {
+   "id": "6aaa21c8685a",
+   "title": "Historical Commission",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T18:00:00-05:00",
+   "last_start": "2026-11-02T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T18:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2941",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "8d53dd275b3a",
    "title": "Somerset Conservation Commission",
    "venue": "1480 County Street Somerset MA 02726",
@@ -1085,6 +920,31 @@
     }
    ],
    "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2007",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "909b1c6def67",
+   "title": "Planning Board",
+   "venue": "",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-02T19:00:00-05:00",
+   "last_start": "2026-11-02T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T19:00:00-05:00",
+     "end": "2026-11-02T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2942",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1610,6 +1470,186 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1980",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "3139634ece53",
+   "title": "Balance and Mobility",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-05T09:00:00-05:00",
+   "last_start": "2026-12-24T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-05T09:00:00-05:00",
+     "end": "2026-11-05T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T09:00:00-05:00",
+     "end": "2026-11-12T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T09:00:00-05:00",
+     "end": "2026-11-19T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T09:00:00-05:00",
+     "end": "2026-11-26T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T09:00:00-05:00",
+     "end": "2026-12-03T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T09:00:00-05:00",
+     "end": "2026-12-10T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T09:00:00-05:00",
+     "end": "2026-12-17T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T09:00:00-05:00",
+     "end": "2026-12-24T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1641",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "dd50f7398c80",
+   "title": "Bingo!",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-05T13:00:00-05:00",
+   "last_start": "2026-12-24T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T13:00:00-05:00",
+     "end": "2026-12-24T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1709",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "8b749f1ec307",
+   "title": "Knitting for Charity",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Volunteering & Causes",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-05T13:00:00-05:00",
+   "last_start": "2026-12-24T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-05T13:00:00-05:00",
+     "end": "2026-11-05T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T13:00:00-05:00",
+     "end": "2026-12-24T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1777",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
