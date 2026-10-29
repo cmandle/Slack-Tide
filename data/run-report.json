@@ -1,79 +1,79 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 150,
-   "seconds": 4.24
+   "rows": 149,
+   "seconds": 3.79
   },
   "viva-fall-river": {
-   "rows": 243,
-   "seconds": 13.87
+   "rows": 232,
+   "seconds": 15.19
   },
   "brownell-library": {
-   "rows": 18,
-   "seconds": 0.68
+   "rows": 16,
+   "seconds": 0.5
   },
   "dnrt": {
-   "rows": 16,
-   "seconds": 3.91
+   "rows": 15,
+   "seconds": 4.57
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 5.43
+   "seconds": 5.19
   },
   "zeiterion": {
-   "rows": 29,
-   "seconds": 1.09
+   "rows": 28,
+   "seconds": 0.59
   },
   "town-tiverton": {
-   "rows": 179,
-   "seconds": 0.57
+   "rows": 178,
+   "seconds": 0.41
   },
   "town-dartmouth": {
    "rows": 8,
-   "seconds": 0.34
+   "seconds": 0.42
   },
   "town-somerset": {
-   "rows": 12,
-   "seconds": 0.41
+   "rows": 7,
+   "seconds": 0.4
   }
  },
  "errors": {},
- "primary_rows": 263,
+ "primary_rows": 253,
  "dropped": {
   "closure": 3,
   "holiday": 5
  },
- "series": 94,
+ "series": 87,
  "approval": {
-  "approved": 52,
-  "pending": 42
+  "approved": 51,
+  "pending": 36
  },
  "by_town": {
   "Tiverton": 32,
-  "Little Compton": 10,
-  "Dartmouth": 20,
-  "Somerset": 8,
-  "New Bedford": 23,
-  "Westport": 1
+  "Somerset": 3,
+  "New Bedford": 22,
+  "Dartmouth": 19,
+  "Westport": 1,
+  "Little Compton": 10
  },
  "by_category": {
   "Sports & Recreation": 5,
-  "Library & Talks": 10,
-  "Outdoors & Nature": 13,
-  "Family & Children": 1,
-  "Civic & Town Meetings": 22,
-  "Arts & Theatre": 23,
   "Volunteering & Causes": 2,
   "(unclassified)": 14,
+  "Civic & Town Meetings": 17,
+  "Arts & Theatre": 22,
   "Music": 3,
+  "Outdoors & Nature": 12,
+  "Library & Talks": 10,
+  "Family & Children": 1,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "several-a-week": 1,
-  "irregular": 6,
-  "once": 58,
   "weekly": 17,
+  "once": 52,
+  "irregular": 5,
   "weekends": 1,
+  "several-a-week": 1,
   "fortnightly": 1,
   "monthly": 10
  },
@@ -84,31 +84,24 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 393,
+  "check_total": 381,
   "check_matched": 15,
-  "check_missed_rows": 378,
-  "check_missed_series": 119,
+  "check_missed_rows": 366,
+  "check_missed_series": 114,
   "check_missed": [
+   {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-10-29T21:00:00-04:00",
+    "rows": 18
+   },
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-10-31T10:00:00-04:00",
     "rows": 18
-   },
-   {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T21:00:00-04:00",
-    "rows": 17
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-10-28T18:30:00-04:00",
-    "rows": 9
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -132,13 +125,6 @@
     "rows": 9
    },
    {
-    "title": "Kids eat FREE on Wednesdays",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-28T07:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Knitting Club",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -157,13 +143,6 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-29T18:30:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-10-28T19:00:00-04:00",
     "rows": 9
    },
    {
@@ -196,23 +175,9 @@
    },
    {
     "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
+    "venue": "St James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-10-29T20:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Universal Participation: Welcome to Yoga",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-28T18:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-10-28T18:00:00-04:00",
     "rows": 9
    },
    {
@@ -221,6 +186,13 @@
     "town": "Fall River",
     "first_start": "2026-10-29T18:00:00-04:00",
     "rows": 9
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "The First Unitarian Church in New Bedford",
+    "town": "New Bedford",
+    "first_start": "2026-11-04T18:30:00-05:00",
+    "rows": 8
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -237,10 +209,24 @@
     "rows": 8
    },
    {
+    "title": "Kids eat FREE on Wednesdays",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-04T07:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-02T14:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-11-04T19:00:00-05:00",
     "rows": 8
    },
    {
@@ -272,24 +258,31 @@
     "rows": 8
    },
    {
-    "title": "Magic: The Gathering Commander Club",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-28T18:00:00-04:00",
-    "rows": 5
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-04T18:00:00-05:00",
+    "rows": 8
    },
    {
-    "title": "Blind Draw Double Elimination Cornhole (weekly)",
-    "venue": "Canned Heat Craft Beer Co.",
+    "title": "Wing Wednesday!!",
+    "venue": "St James Irish Pub",
     "town": "Fall River",
-    "first_start": "2026-10-28T18:00:00-04:00",
-    "rows": 4
+    "first_start": "2026-11-04T18:00:00-05:00",
+    "rows": 8
    },
    {
     "title": "Community Resource Day",
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-10T13:00:00-05:00",
+    "rows": 4
+   },
+   {
+    "title": "Magic: The Gathering Commander Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-11T18:00:00-05:00",
     "rows": 4
    },
    {
@@ -304,6 +297,13 @@
     "venue": "Munchies",
     "town": "Fall River",
     "first_start": "2026-10-30T08:00:00-04:00",
+    "rows": 3
+   },
+   {
+    "title": "Blind Draw Double Elimination Cornhole (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-04T18:00:00-05:00",
     "rows": 3
    },
    {
@@ -406,7 +406,7 @@
    },
    {
     "title": "Octave Avenue Open Mic",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "venue": "The First Unitarian Church in New Bedford",
     "town": "New Bedford",
     "first_start": "2026-11-01T15:30:00-05:00",
     "rows": 2
@@ -423,13 +423,6 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-10T18:30:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Photography Group",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-28T18:00:00-04:00",
     "rows": 2
    },
    {
@@ -517,13 +510,6 @@
     "rows": 1
    },
    {
-    "title": "Ally Venable Band",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-10-28T20:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Amani Burnham live at the Narrows",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -587,13 +573,6 @@
     "rows": 1
    },
    {
-    "title": "Create with a Date: Spooky Edition",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-28T18:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Dinner with Santa",
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
@@ -605,13 +584,6 @@
     "venue": "New Bedford Whaling National Historical Park Theater",
     "town": "New Bedford",
     "first_start": "2026-11-20T19:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Dr. Gasp Performance",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-28T18:00:00-04:00",
     "rows": 1
    },
    {
@@ -713,13 +685,6 @@
     "rows": 1
    },
    {
-    "title": "Junk Journaling",
-    "venue": "Once Upon a Bookstore",
-    "town": "Fall River",
-    "first_start": "2026-10-28T18:30:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Lighthouse Tavern Presents Escape the Box Comedy Night",
     "venue": "Lighthouse Tavern",
     "town": "New Bedford",
@@ -797,6 +762,13 @@
     "rows": 1
    },
    {
+    "title": "Photography Group",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-25T18:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Printmaking for the Holidays",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -829,13 +801,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-11-20T12:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Social Club Karaoke w/ DJ Dan Mac (weekly)",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-10-28T21:00:00-04:00",
     "rows": 1
    },
    {
@@ -927,9 +892,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 29,
-  "primary_only_series": 23,
-  "coverage_ratio": 0.038
+  "primary_only_count": 28,
+  "primary_only_series": 22,
+  "coverage_ratio": 0.039
  },
  "tide_error": null
 }

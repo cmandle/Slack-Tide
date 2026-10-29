@@ -1,363 +1,8 @@
 {
- "generated_at": "2026-10-28T22:52:34.751898+00:00",
- "series_count": 94,
- "occurrence_count": 247,
+ "generated_at": "2026-10-29T10:59:14.284623+00:00",
+ "series_count": 87,
+ "occurrence_count": 237,
  "series": [
-  {
-   "id": "ee5aab63f527",
-   "title": "Functional Fitness",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-28T00:00:00-04:00",
-   "last_start": "2026-12-23T00:00:00-05:00",
-   "count": 17,
-   "cadence": "several-a-week",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T00:00:00-04:00",
-     "end": "2026-10-28T00:00:00-04:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-02T09:00:00-05:00",
-     "end": "2026-11-02T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T00:00:00-05:00",
-     "end": "2026-11-04T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T00:00:00-05:00",
-     "end": "2026-11-11T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T00:00:00-05:00",
-     "end": "2026-11-18T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T00:00:00-05:00",
-     "end": "2026-11-25T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T00:00:00-05:00",
-     "end": "2026-12-02T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T00:00:00-05:00",
-     "end": "2026-12-09T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T00:00:00-05:00",
-     "end": "2026-12-16T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-21T09:00:00-05:00",
-     "end": "2026-12-21T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T00:00:00-05:00",
-     "end": "2026-12-23T00:00:00-05:00",
-     "all_day": true
-    }
-   ],
-   "summary": "Location: Dining Room. with instructor Debbie Gagnon. https://www.tiverton.ri.gov/calendar.aspx?EID=1417",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "a603e40a3ba8",
-   "title": "Medicare Help Sessions - Registration Required",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/more-than-medicare-help-sessions-registration-required/",
-   "cost": "",
-   "first_start": "2026-10-28T09:00:00-04:00",
-   "last_start": "2026-12-04T10:00:00-05:00",
-   "count": 2,
-   "cadence": "irregular",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T09:00:00-04:00",
-     "end": "2026-10-28T15:30:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T10:00:00-05:00",
-     "end": "2026-12-04T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "These sessions will focus specifically on Medicare and Medicare Advantage. Make an appointment with a representative from the United Way organization The Point for a free, confidential session to get help with Medicare-related decisions. Contact the library to make an appointment. Call, email, or st",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "6df7127bdd79",
-   "title": "Destruction Brook Woods Trail Work Party",
-   "venue": "Destruction Brook Woods",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/destruction-brook-woods-trail-work-party/",
-   "cost": "Free",
-   "first_start": "2026-10-28T09:00:00-04:00",
-   "last_start": "2026-10-28T09:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T09:00:00-04:00",
-     "end": "2026-10-28T12:00:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Before our Trail Race we will be having our work party at Destruction Brook Woods. We will be doing some work in preparation including some hedge trimming and potential chainsaw work if there are any trees down. We will also be having a group working on one of our access points to clear it of downed",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "537986d051cd",
-   "title": "Baby and Toddler Playtime!",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Family & Children",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/baby-and-toddler-playtime-21/",
-   "cost": "",
-   "first_start": "2026-10-28T10:30:00-04:00",
-   "last_start": "2026-12-02T10:30:00-05:00",
-   "count": 5,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-10-28T10:30:00-04:00",
-     "end": "2026-10-28T12:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-04T10:30:00-05:00",
-     "end": "2026-11-04T12:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T10:30:00-05:00",
-     "end": "2026-11-18T12:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T10:30:00-05:00",
-     "end": "2026-11-25T12:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T10:30:00-05:00",
-     "end": "2026-12-02T12:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "c50637ae8239",
-   "title": "Board of Water & Sewer Commissioners",
-   "venue": "3249 County Street Somerset MA 02726",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-10-28T16:00:00-04:00",
-   "last_start": "2026-10-28T16:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T16:00:00-04:00",
-     "end": "2026-10-28T23:00:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Commissioner's Office. https://www.townofsomerset.org/calendar.aspx?EID=2005",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "5b7e651c83a2",
-   "title": "CANCELLED Community Preservation Committee",
-   "venue": "1480 County Street Somerset MA 02726",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-10-28T16:30:00-04:00",
-   "last_start": "2026-10-28T16:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T16:30:00-04:00",
-     "end": "2026-10-28T23:59:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2001",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "63ce4500b08c",
-   "title": "Somerset Historical Commission",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-10-28T17:30:00-04:00",
-   "last_start": "2026-10-28T17:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T17:30:00-04:00",
-     "end": "2026-10-28T23:59:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2002",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "808080f196fd",
-   "title": "Historical Commission",
-   "venue": "1464 County St Somerset MA 02726",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-10-28T17:30:00-04:00",
-   "last_start": "2026-10-28T17:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T17:30:00-04:00",
-     "end": "2026-10-28T23:00:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Local History Room Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2003",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "889023365de3",
-   "title": "Board of Selectmen",
-   "venue": "3249 County Street Somerset MA 02726",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-10-28T18:00:00-04:00",
-   "last_start": "2026-10-28T18:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T18:00:00-04:00",
-     "end": "2026-10-28T23:00:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Public Library Cucinotta Community Room. https://www.townofsomerset.org/calendar.aspx?EID=2006",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "62aa33f4df59",
-   "title": "Inside Parsons Dance: Learn How They Fly!",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/parsons-dance-barre",
-   "cost": "",
-   "first_start": "2026-10-28T19:00:00-04:00",
-   "last_start": "2026-10-28T19:00:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-28T19:00:00-04:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
   {
    "id": "3139634ece53",
    "title": "Balance and Mobility",
@@ -999,6 +644,106 @@
    "decided_by": ""
   },
   {
+   "id": "ee5aab63f527",
+   "title": "Functional Fitness",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-02T09:00:00-05:00",
+   "last_start": "2026-12-23T00:00:00-05:00",
+   "count": 16,
+   "cadence": "several-a-week",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-02T09:00:00-05:00",
+     "end": "2026-11-02T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-04T00:00:00-05:00",
+     "end": "2026-11-04T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-09T09:00:00-05:00",
+     "end": "2026-11-09T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-11T00:00:00-05:00",
+     "end": "2026-11-11T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-16T09:00:00-05:00",
+     "end": "2026-11-16T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T00:00:00-05:00",
+     "end": "2026-11-18T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-23T09:00:00-05:00",
+     "end": "2026-11-23T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T00:00:00-05:00",
+     "end": "2026-11-25T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-11-30T09:00:00-05:00",
+     "end": "2026-11-30T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T00:00:00-05:00",
+     "end": "2026-12-02T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-12-07T09:00:00-05:00",
+     "end": "2026-12-07T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T00:00:00-05:00",
+     "end": "2026-12-09T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-12-14T09:00:00-05:00",
+     "end": "2026-12-14T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T00:00:00-05:00",
+     "end": "2026-12-16T00:00:00-05:00",
+     "all_day": true
+    },
+    {
+     "start": "2026-12-21T09:00:00-05:00",
+     "end": "2026-12-21T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T00:00:00-05:00",
+     "end": "2026-12-23T00:00:00-05:00",
+     "all_day": true
+    }
+   ],
+   "summary": "Location: Dining Room. with instructor Debbie Gagnon. https://www.tiverton.ri.gov/calendar.aspx?EID=787",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
    "id": "5a6902aea5cc",
    "title": "TOPS",
    "venue": "",
@@ -1620,6 +1365,46 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1991",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "537986d051cd",
+   "title": "Baby and Toddler Playtime!",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Family & Children",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/baby-and-toddler-playtime-18/",
+   "cost": "",
+   "first_start": "2026-11-04T10:30:00-05:00",
+   "last_start": "2026-12-02T10:30:00-05:00",
+   "count": 4,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-04T10:30:00-05:00",
+     "end": "2026-11-04T12:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T10:30:00-05:00",
+     "end": "2026-11-18T12:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T10:30:00-05:00",
+     "end": "2026-11-25T12:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T10:30:00-05:00",
+     "end": "2026-12-02T12:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "No fussing here ~ we are starting a new playtime specially designed for babies & toddlers! There will be a pint-sized ball pit, sensory friendly toys, and lots to engage the youngest minds! No registration required, just drop in and tell your friends!",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -2830,6 +2615,31 @@
     }
    ],
    "summary": "Join us for a fun walk through Russells Mills Woods. Throughout the hike, we will stop to perform other exercises, whether a standing yoga or strength pose, or something energetic. Explore nature, get your heartrate up, and feel strong! Led by Karen Rocha. About Karen: Karen is a DNRT Board Member a",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "a603e40a3ba8",
+   "title": "Medicare Help Sessions - Registration Required",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/medicare-help-sessions-registration-required/",
+   "cost": "",
+   "first_start": "2026-12-04T10:00:00-05:00",
+   "last_start": "2026-12-04T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-04T10:00:00-05:00",
+     "end": "2026-12-04T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
