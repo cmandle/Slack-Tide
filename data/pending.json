@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-30T10:57:47.169389+00:00",
- "pending_count": 36,
- "soon_count": 16,
+ "generated_at": "2026-10-30T22:50:47.596256+00:00",
+ "pending_count": 37,
+ "soon_count": 17,
  "approved_count": 51,
  "rejected_count": 0,
  "series": [
@@ -482,7 +482,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-06T19:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "a517416d1b57",
@@ -676,6 +676,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-15T19:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "796c750946c6",
+   "title": "Public Hearing for Transfer of and Change of Manager On-premise Restaurant All Alcoholic Beverage License",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-18T18:15:00-05:00",
+   "last_start": "2026-11-18T18:15:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-18T18:15:00-05:00",
+     "end": "2026-11-18T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2008",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-18T18:15:00-05:00",
    "soon": false
   },
   {

@@ -2,78 +2,78 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 148,
-   "seconds": 3.96
+   "seconds": 3.4
   },
   "viva-fall-river": {
-   "rows": 228,
-   "seconds": 16.11
+   "rows": 231,
+   "seconds": 15.52
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.6
+   "seconds": 0.53
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 4.82
+   "seconds": 3.99
   },
   "buzzards-bay-brewing": {
    "rows": 1,
-   "seconds": 5.05
+   "seconds": 6.87
   },
   "zeiterion": {
    "rows": 27,
-   "seconds": 0.75
+   "seconds": 0.53
   },
   "town-tiverton": {
-   "rows": 182,
-   "seconds": 0.66
+   "rows": 184,
+   "seconds": 0.36
   },
   "town-dartmouth": {
-   "rows": 9,
-   "seconds": 0.34
+   "rows": 8,
+   "seconds": 0.35
   },
   "town-somerset": {
-   "rows": 4,
-   "seconds": 0.59
+   "rows": 5,
+   "seconds": 0.44
   }
  },
  "errors": {},
- "primary_rows": 254,
+ "primary_rows": 256,
  "dropped": {
   "closure": 2,
-  "holiday": 4
+  "holiday": 3
  },
- "series": 87,
+ "series": 88,
  "approval": {
   "approved": 51,
-  "pending": 36
+  "pending": 37
  },
  "by_town": {
-  "Tiverton": 32,
   "Dartmouth": 21,
   "New Bedford": 21,
   "Westport": 1,
-  "Somerset": 2,
+  "Tiverton": 32,
+  "Somerset": 3,
   "Little Compton": 10
  },
  "by_category": {
-  "(unclassified)": 13,
-  "Sports & Recreation": 5,
-  "Civic & Town Meetings": 19,
+  "Civic & Town Meetings": 20,
   "Arts & Theatre": 21,
   "Music": 3,
   "Outdoors & Nature": 12,
+  "(unclassified)": 13,
+  "Sports & Recreation": 5,
   "Volunteering & Causes": 2,
   "Library & Talks": 10,
   "Family & Children": 1,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "weekly": 17,
-  "irregular": 5,
-  "once": 52,
+  "once": 53,
   "weekends": 1,
+  "weekly": 18,
   "several-a-week": 1,
+  "irregular": 4,
   "fortnightly": 2,
   "monthly": 9
  },
@@ -84,9 +84,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 376,
+  "check_total": 379,
   "check_matched": 14,
-  "check_missed_rows": 362,
+  "check_missed_rows": 365,
   "check_missed_series": 113,
   "check_missed": [
    {
@@ -111,10 +111,24 @@
     "rows": 9
    },
    {
+    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
+    "venue": "First Congregational Church of Fall River",
+    "town": "Fall River",
+    "first_start": "2026-11-03T18:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Friday Night Volleyball (weekly)",
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-10-30T17:00:00-04:00",
+    "rows": 9
+   },
+   {
+    "title": "Half Priced Food (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-03T16:00:00-05:00",
     "rows": 9
    },
    {
@@ -153,6 +167,13 @@
     "rows": 9
    },
    {
+    "title": "Preschool Storytime",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-03T11:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Primo After Dark - Weekly DJ Sets",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -178,20 +199,6 @@
     "venue": "The First Unitarian Church in New Bedford",
     "town": "New Bedford",
     "first_start": "2026-11-04T18:30:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
-    "venue": "First Congregational Church of Fall River",
-    "town": "Fall River",
-    "first_start": "2026-11-03T18:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Half Priced Food (weekly)",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-03T16:00:00-05:00",
     "rows": 8
    },
    {
@@ -227,13 +234,6 @@
     "venue": "The Vault Perfoming Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-03T20:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Preschool Storytime",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-11-03T11:00:00-05:00",
     "rows": 8
    },
    {

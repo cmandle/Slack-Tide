@@ -1,143 +1,8 @@
 {
- "generated_at": "2026-10-30T10:57:47.169389+00:00",
- "series_count": 87,
- "occurrence_count": 240,
+ "generated_at": "2026-10-30T22:50:47.596256+00:00",
+ "series_count": 88,
+ "occurrence_count": 242,
  "series": [
-  {
-   "id": "fe0247326a8a",
-   "title": "Zumba",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-30T09:00:00-04:00",
-   "last_start": "2026-12-25T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-10-30T09:00:00-04:00",
-     "end": "2026-10-30T10:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-06T09:00:00-05:00",
-     "end": "2026-11-06T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T09:00:00-05:00",
-     "end": "2026-11-13T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T09:00:00-05:00",
-     "end": "2026-11-20T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T09:00:00-05:00",
-     "end": "2026-11-27T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T09:00:00-05:00",
-     "end": "2026-12-04T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T09:00:00-05:00",
-     "end": "2026-12-11T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T09:00:00-05:00",
-     "end": "2026-12-18T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-25T09:00:00-05:00",
-     "end": "2026-12-25T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Zumba Gold https://www.tiverton.ri.gov/calendar.aspx?EID=1844",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "a04898c37ccd",
-   "title": "Senior Fitness with Terri",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-10-30T13:00:00-04:00",
-   "last_start": "2026-12-28T10:15:00-05:00",
-   "count": 10,
-   "cadence": "irregular",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-30T13:00:00-04:00",
-     "end": "2026-10-30T14:00:00-04:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-02T10:15:00-05:00",
-     "end": "2026-11-02T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-09T10:15:00-05:00",
-     "end": "2026-11-09T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:15:00-05:00",
-     "end": "2026-11-16T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:15:00-05:00",
-     "end": "2026-11-23T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:15:00-05:00",
-     "end": "2026-11-30T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:15:00-05:00",
-     "end": "2026-12-07T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:15:00-05:00",
-     "end": "2026-12-14T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T10:15:00-05:00",
-     "end": "2026-12-21T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-28T10:15:00-05:00",
-     "end": "2026-12-28T11:15:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Fitness Instructor Terri Zaborowski has over 25 years of experience, specializes in senior fitness & emphasizes the importance of building strength, improving mobility and preventing injury at any age.. https://www.tiverton.ri.gov/calendar.aspx?EID=2197",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "fdf303a9d150",
    "title": "Dartmouth Fire District 1 Building Committee",
@@ -604,6 +469,71 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "a04898c37ccd",
+   "title": "Senior Fitness with Terri",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-02T10:15:00-05:00",
+   "last_start": "2026-12-28T10:15:00-05:00",
+   "count": 9,
+   "cadence": "weekly",
+   "weekday": 0,
+   "occurrences": [
+    {
+     "start": "2026-11-02T10:15:00-05:00",
+     "end": "2026-11-02T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-09T10:15:00-05:00",
+     "end": "2026-11-09T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-16T10:15:00-05:00",
+     "end": "2026-11-16T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-23T10:15:00-05:00",
+     "end": "2026-11-23T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-30T10:15:00-05:00",
+     "end": "2026-11-30T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-07T10:15:00-05:00",
+     "end": "2026-12-07T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-14T10:15:00-05:00",
+     "end": "2026-12-14T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-21T10:15:00-05:00",
+     "end": "2026-12-21T11:15:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-28T10:15:00-05:00",
+     "end": "2026-12-28T11:15:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2205",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
    "id": "bd3e7d21ebe8",
    "title": "PITCH~ High Lo Jack",
    "venue": "",
@@ -898,8 +828,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-03T09:00:00-05:00",
-   "last_start": "2026-12-22T09:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-29T09:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -942,6 +872,11 @@
      "start": "2026-12-22T09:00:00-05:00",
      "end": "2026-12-22T10:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-29T09:00:00-05:00",
+     "end": "2026-12-29T10:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "Location: Dining Room. Instructor Shirley Pryor https://www.tiverton.ri.gov/calendar.aspx?EID=849",
@@ -958,8 +893,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-03T12:45:00-05:00",
-   "last_start": "2026-12-22T12:45:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-29T12:45:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1002,6 +937,11 @@
      "start": "2026-12-22T12:45:00-05:00",
      "end": "2026-12-22T13:45:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2026-12-29T12:45:00-05:00",
+     "end": "2026-12-29T13:45:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1289",
@@ -1018,8 +958,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-03T14:00:00-05:00",
-   "last_start": "2026-12-22T14:00:00-05:00",
-   "count": 8,
+   "last_start": "2026-12-29T14:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1061,6 +1001,11 @@
     {
      "start": "2026-12-22T14:00:00-05:00",
      "end": "2026-12-22T15:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-29T14:00:00-05:00",
+     "end": "2026-12-29T15:30:00-05:00",
      "all_day": false
     }
    ],
@@ -1700,6 +1645,66 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2151",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "fe0247326a8a",
+   "title": "Zumba",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-06T09:00:00-05:00",
+   "last_start": "2026-12-25T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-11-06T09:00:00-05:00",
+     "end": "2026-11-06T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-13T09:00:00-05:00",
+     "end": "2026-11-13T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T09:00:00-05:00",
+     "end": "2026-11-20T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T09:00:00-05:00",
+     "end": "2026-11-27T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T09:00:00-05:00",
+     "end": "2026-12-04T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T09:00:00-05:00",
+     "end": "2026-12-11T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T09:00:00-05:00",
+     "end": "2026-12-18T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-25T09:00:00-05:00",
+     "end": "2026-12-25T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. Zumba Gold https://www.tiverton.ri.gov/calendar.aspx?EID=1845",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -2457,6 +2462,31 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2043",
    "approval": "approved",
    "decided_by": "bootstrap"
+  },
+  {
+   "id": "796c750946c6",
+   "title": "Public Hearing for Transfer of and Change of Manager On-premise Restaurant All Alcoholic Beverage License",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-18T18:15:00-05:00",
+   "last_start": "2026-11-18T18:15:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-18T18:15:00-05:00",
+     "end": "2026-11-18T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2008",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "138a383d63b1",
