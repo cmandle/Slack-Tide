@@ -1,78 +1,81 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 153,
-   "seconds": 5.25
+   "rows": 148,
+   "seconds": 3.96
   },
   "viva-fall-river": {
-   "rows": 234,
-   "seconds": 15.22
+   "rows": 228,
+   "seconds": 16.11
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.65
+   "seconds": 0.6
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 2.54
+   "seconds": 4.82
+  },
+  "buzzards-bay-brewing": {
+   "rows": 1,
+   "seconds": 5.05
   },
   "zeiterion": {
-   "rows": 28,
-   "seconds": 0.44
+   "rows": 27,
+   "seconds": 0.75
   },
   "town-tiverton": {
-   "rows": 181,
-   "seconds": 0.6
+   "rows": 182,
+   "seconds": 0.66
   },
   "town-dartmouth": {
    "rows": 9,
-   "seconds": 0.33
+   "seconds": 0.34
   },
   "town-somerset": {
-   "rows": 6,
-   "seconds": 0.39
+   "rows": 4,
+   "seconds": 0.59
   }
  },
- "errors": {
-  "buzzards-bay-brewing": "ReadTimeout: HTTPSConnectionPool(host='buzzardsbrew.com', port=443): Read timed out. (read timeout=30)"
- },
- "primary_rows": 255,
+ "errors": {},
+ "primary_rows": 254,
  "dropped": {
   "closure": 2,
   "holiday": 4
  },
- "series": 88,
+ "series": 87,
  "approval": {
-  "pending": 37,
-  "approved": 51
+  "approved": 51,
+  "pending": 36
  },
  "by_town": {
-  "Somerset": 3,
-  "New Bedford": 22,
   "Tiverton": 32,
   "Dartmouth": 21,
+  "New Bedford": 21,
+  "Westport": 1,
+  "Somerset": 2,
   "Little Compton": 10
  },
  "by_category": {
-  "(unclassified)": 14,
-  "Civic & Town Meetings": 19,
-  "Arts & Theatre": 22,
+  "(unclassified)": 13,
   "Sports & Recreation": 5,
+  "Civic & Town Meetings": 19,
+  "Arts & Theatre": 21,
+  "Music": 3,
   "Outdoors & Nature": 12,
   "Volunteering & Causes": 2,
   "Library & Talks": 10,
   "Family & Children": 1,
-  "Music": 2,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 53,
   "weekly": 17,
   "irregular": 5,
+  "once": 52,
   "weekends": 1,
   "several-a-week": 1,
-  "fortnightly": 1,
-  "monthly": 10
+  "fortnightly": 2,
+  "monthly": 9
  },
  "weekend_gate": {
   "saturday": "2026-10-31",
@@ -81,24 +84,24 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 387,
-  "check_matched": 15,
-  "check_missed_rows": 372,
-  "check_missed_series": 117,
+  "check_total": 376,
+  "check_matched": 14,
+  "check_missed_rows": 362,
+  "check_missed_series": 113,
   "check_missed": [
-   {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T21:00:00-04:00",
-    "rows": 18
-   },
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-10-31T10:00:00-04:00",
     "rows": 18
+   },
+   {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-11-01T21:00:00-05:00",
+    "rows": 17
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -122,13 +125,6 @@
     "rows": 9
    },
    {
-    "title": "Knitting Club",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-29T13:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -140,13 +136,6 @@
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-11-01T16:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T18:30:00-04:00",
     "rows": 9
    },
    {
@@ -185,20 +174,6 @@
     "rows": 9
    },
    {
-    "title": "Thursday Night Trivia",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-10-29T20:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Zach Guillette Thursdays",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-10-29T18:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
     "venue": "The First Unitarian Church in New Bedford",
     "town": "New Bedford",
@@ -227,6 +202,20 @@
     "rows": 8
    },
    {
+    "title": "Knitting Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-05T13:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Musical Bingo",
+    "venue": "The Vault Perfoming Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-05T18:30:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Musical Bingo (weekly)",
     "venue": "The Liberal Club",
     "town": "Fall River",
@@ -235,7 +224,7 @@
    },
    {
     "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
+    "venue": "The Vault Perfoming Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-03T20:00:00-05:00",
     "rows": 8
@@ -255,6 +244,13 @@
     "rows": 8
    },
    {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-05T20:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Universal Participation: Welcome to Yoga",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -263,9 +259,16 @@
    },
    {
     "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
+    "venue": "Saint James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-11-04T18:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Zach Guillette Thursdays",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-05T18:00:00-05:00",
     "rows": 8
    },
    {
@@ -444,13 +447,6 @@
     "rows": 2
    },
    {
-    "title": "Silent Book Club",
-    "venue": "Once Upon a Bookstore",
-    "town": "Fall River",
-    "first_start": "2026-10-29T18:30:00-04:00",
-    "rows": 2
-   },
-   {
     "title": "Sunday Funday with Neal McCarthy Band and Mark Russell on Fiddle",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
@@ -535,13 +531,6 @@
     "rows": 1
    },
    {
-    "title": "Author Book Talk: Janna Malamud Smith",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T12:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Author Book Talk: Jen Rose Smith",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -595,13 +584,6 @@
     "venue": "New Bedford Whaling National Historical Park Theater",
     "town": "New Bedford",
     "first_start": "2026-11-20T19:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "East Nash Grass",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-10-29T20:00:00-04:00",
     "rows": 1
    },
    {
@@ -752,13 +734,6 @@
     "rows": 1
    },
    {
-    "title": "OPEN HOUSE PACE YouthBuild",
-    "venue": "YouthBuild New Bedford",
-    "town": "New Bedford",
-    "first_start": "2026-10-29T14:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Paranormal Investigation",
     "venue": "The Lafayette-Durfee House",
     "town": "Fall River",
@@ -822,6 +797,13 @@
     "rows": 1
    },
    {
+    "title": "Silent Book Club",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-11-26T18:30:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Southcoast Festival of Choirs at ST. Anthony Church New Bedford",
     "venue": "SaintAnthonyofNewBedford",
     "town": "New Bedford",
@@ -850,13 +832,6 @@
     "rows": 1
    },
    {
-    "title": "The Banned Book Club",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-10-29T18:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "The Empty Pockets - Holiday Tour",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -865,7 +840,7 @@
    },
    {
     "title": "The NB Rude Boys Skalloween Mosh",
-    "venue": "The Vault Performing Arts Center & Pub",
+    "venue": "The Vault Perfoming Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-10-30T19:00:00-04:00",
     "rows": 1
@@ -910,9 +885,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 28,
-  "primary_only_series": 22,
-  "coverage_ratio": 0.039
+  "primary_only_count": 27,
+  "primary_only_series": 21,
+  "coverage_ratio": 0.037
  },
  "tide_error": null
 }
