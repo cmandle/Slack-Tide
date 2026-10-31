@@ -1,44 +1,44 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 145,
-   "seconds": 3.88
+   "rows": 147,
+   "seconds": 3.02
   },
   "viva-fall-river": {
-   "rows": 223,
-   "seconds": 15.18
+   "rows": 227,
+   "seconds": 17.93
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.83
+   "seconds": 0.52
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 4.49
+   "seconds": 3.33
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 4.32
+   "seconds": 11.05
   },
   "zeiterion": {
    "rows": 26,
-   "seconds": 0.51
+   "seconds": 0.64
   },
   "town-tiverton": {
-   "rows": 185,
-   "seconds": 0.49
+   "rows": 187,
+   "seconds": 0.51
   },
   "town-dartmouth": {
    "rows": 7,
-   "seconds": 0.36
+   "seconds": 0.29
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.54
+   "seconds": 0.41
   }
  },
  "errors": {},
- "primary_rows": 254,
+ "primary_rows": 256,
  "dropped": {
   "closure": 2,
   "holiday": 3
@@ -83,10 +83,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 368,
+  "check_total": 374,
   "check_matched": 13,
-  "check_missed_rows": 355,
-  "check_missed_series": 107,
+  "check_missed_rows": 361,
+  "check_missed_series": 108,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -101,6 +101,13 @@
     "town": "New Bedford",
     "first_start": "2026-11-01T21:00:00-05:00",
     "rows": 17
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "The First Unitarian Church in New Bedford",
+    "town": "New Bedford",
+    "first_start": "2026-11-04T18:30:00-05:00",
+    "rows": 9
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -121,6 +128,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-01T14:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Kids eat FREE on Wednesdays",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-04T07:00:00-05:00",
     "rows": 9
    },
    {
@@ -180,11 +194,18 @@
     "rows": 9
    },
    {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "The First Unitarian Church in New Bedford",
+    "title": "Universal Participation: Welcome to Yoga",
+    "venue": "New Bedford Art Museum",
     "town": "New Bedford",
-    "first_start": "2026-11-04T18:30:00-05:00",
-    "rows": 8
+    "first_start": "2026-11-04T18:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Wing Wednesday!!",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-04T18:00:00-05:00",
+    "rows": 9
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -198,13 +219,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Kids eat FREE on Wednesdays",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-04T07:00:00-05:00",
     "rows": 8
    },
    {
@@ -247,20 +261,6 @@
     "venue": "Saint James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-11-05T20:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Universal Participation: Welcome to Yoga",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-04T18:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-04T18:00:00-05:00",
     "rows": 8
    },
    {
@@ -429,6 +429,13 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-10T18:30:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Photography Group",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-25T18:00:00-05:00",
     "rows": 2
    },
    {
@@ -670,6 +677,13 @@
     "rows": 1
    },
    {
+    "title": "Magic: The Gathering Meetup",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-12-30T17:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Name Change Clinic with South Coastal Counties Legal Services",
     "venue": "New Bedford Free Public Library",
     "town": "New Bedford",
@@ -716,13 +730,6 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-11-20T20:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Photography Group",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-11-25T18:00:00-05:00",
     "rows": 1
    },
    {
