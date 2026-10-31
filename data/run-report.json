@@ -1,78 +1,77 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 148,
-   "seconds": 3.4
+   "rows": 145,
+   "seconds": 3.88
   },
   "viva-fall-river": {
-   "rows": 231,
-   "seconds": 15.52
+   "rows": 223,
+   "seconds": 15.18
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.53
+   "seconds": 0.83
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 3.99
+   "seconds": 4.49
   },
   "buzzards-bay-brewing": {
-   "rows": 1,
-   "seconds": 6.87
+   "rows": 0,
+   "seconds": 4.32
   },
   "zeiterion": {
-   "rows": 27,
-   "seconds": 0.53
+   "rows": 26,
+   "seconds": 0.51
   },
   "town-tiverton": {
-   "rows": 184,
-   "seconds": 0.36
+   "rows": 185,
+   "seconds": 0.49
   },
   "town-dartmouth": {
-   "rows": 8,
-   "seconds": 0.35
+   "rows": 7,
+   "seconds": 0.36
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.44
+   "seconds": 0.54
   }
  },
  "errors": {},
- "primary_rows": 256,
+ "primary_rows": 254,
  "dropped": {
   "closure": 2,
   "holiday": 3
  },
- "series": 88,
+ "series": 85,
  "approval": {
-  "approved": 51,
-  "pending": 37
+  "pending": 35,
+  "approved": 50
  },
  "by_town": {
-  "Dartmouth": 21,
-  "New Bedford": 21,
-  "Westport": 1,
+  "New Bedford": 20,
+  "Dartmouth": 20,
   "Tiverton": 32,
   "Somerset": 3,
   "Little Compton": 10
  },
  "by_category": {
-  "Civic & Town Meetings": 20,
-  "Arts & Theatre": 21,
-  "Music": 3,
+  "Arts & Theatre": 20,
   "Outdoors & Nature": 12,
-  "(unclassified)": 13,
   "Sports & Recreation": 5,
+  "(unclassified)": 13,
   "Volunteering & Causes": 2,
+  "Civic & Town Meetings": 19,
   "Library & Talks": 10,
   "Family & Children": 1,
+  "Music": 2,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 53,
   "weekends": 1,
-  "weekly": 18,
+  "once": 50,
   "several-a-week": 1,
+  "weekly": 18,
   "irregular": 4,
   "fortnightly": 2,
   "monthly": 9
@@ -84,10 +83,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 379,
-  "check_matched": 14,
-  "check_missed_rows": 365,
-  "check_missed_series": 113,
+  "check_total": 368,
+  "check_matched": 13,
+  "check_missed_rows": 355,
+  "check_missed_series": 107,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -104,24 +103,10 @@
     "rows": 17
    },
    {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-30T17:30:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
     "first_start": "2026-11-03T18:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "Friday Night Volleyball (weekly)",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-10-30T17:00:00-04:00",
     "rows": 9
    },
    {
@@ -160,6 +145,13 @@
     "rows": 9
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-03T20:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -174,20 +166,6 @@
     "rows": 9
    },
    {
-    "title": "Primo After Dark - Weekly DJ Sets",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-30T20:00:00-04:00",
-    "rows": 9
-   },
-   {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-10-30T18:00:00-04:00",
-    "rows": 9
-   },
-   {
     "title": "Tai Chi at Buttonwood Park",
     "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
@@ -195,10 +173,31 @@
     "rows": 9
    },
    {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-11-03T19:30:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
     "venue": "The First Unitarian Church in New Bedford",
     "town": "New Bedford",
     "first_start": "2026-11-04T18:30:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-06T17:30:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Friday Night Volleyball (weekly)",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-11-06T17:00:00-05:00",
     "rows": 8
    },
    {
@@ -217,7 +216,7 @@
    },
    {
     "title": "Musical Bingo",
-    "venue": "The Vault Perfoming Arts Center & Pub",
+    "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-05T18:30:00-05:00",
     "rows": 8
@@ -230,17 +229,17 @@
     "rows": 8
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Perfoming Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-03T20:00:00-05:00",
+    "title": "Primo After Dark - Weekly DJ Sets",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-06T20:00:00-05:00",
     "rows": 8
    },
    {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-11-03T19:30:00-05:00",
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-06T18:00:00-05:00",
     "rows": 8
    },
    {
@@ -293,24 +292,10 @@
     "rows": 4
    },
    {
-    "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
-    "venue": "Munchies",
-    "town": "Fall River",
-    "first_start": "2026-10-30T08:00:00-04:00",
-    "rows": 3
-   },
-   {
     "title": "Blind Draw Double Elimination Cornhole (weekly)",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-04T18:00:00-05:00",
-    "rows": 3
-   },
-   {
-    "title": "Halloween Throw & Glow- All Weekend Long",
-    "venue": "Stumpy's Hatchet House Fall River",
-    "town": "Fall River",
-    "first_start": "2026-10-30T17:00:00-04:00",
     "rows": 3
    },
    {
@@ -319,6 +304,13 @@
     "town": "Fall River",
     "first_start": "2026-12-18T20:00:00-05:00",
     "rows": 3
+   },
+   {
+    "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
+    "venue": "Munchies",
+    "town": "Fall River",
+    "first_start": "2026-11-27T08:00:00-05:00",
+    "rows": 2
    },
    {
     "title": "All Ages Book Club",
@@ -374,6 +366,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-19T18:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Halloween Throw & Glow- All Weekend Long",
+    "venue": "Stumpy's Hatchet House Fall River",
+    "town": "Fall River",
+    "first_start": "2026-10-31T14:00:00-04:00",
     "rows": 2
    },
    {
@@ -594,13 +593,6 @@
     "rows": 1
    },
    {
-    "title": "Factory of Terror (Friday - Sunday)",
-    "venue": "Factory of Terror",
-    "town": "Fall River",
-    "first_start": "2026-10-30T19:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Fall Open Studios",
     "venue": "Hatch Street Studios",
     "town": "New Bedford",
@@ -629,13 +621,6 @@
     "rows": 1
    },
    {
-    "title": "Get Lucky (live music)",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-30T20:30:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Greater New Bedford Choral Society presents Christmas Melodies Around the World",
     "venue": "Our Lady of Mount Carmel New Bedford",
     "town": "New Bedford",
@@ -647,13 +632,6 @@
     "venue": "Red Cat Kitchen",
     "town": "Fall River",
     "first_start": "2026-10-31T21:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Inaugural \"Forever & Beyond\" Dia de los Muertos Gala",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-10-30T18:30:00-04:00",
     "rows": 1
    },
    {
@@ -731,13 +709,6 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-10-31T20:00:00-04:00",
-    "rows": 1
-   },
-   {
-    "title": "Paranormal Investigation",
-    "venue": "The Lafayette-Durfee House",
-    "town": "Fall River",
-    "first_start": "2026-10-30T19:00:00-04:00",
     "rows": 1
    },
    {
@@ -839,13 +810,6 @@
     "rows": 1
    },
    {
-    "title": "The NB Rude Boys Skalloween Mosh",
-    "venue": "The Vault Perfoming Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-10-30T19:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "The Technicians",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
@@ -867,13 +831,6 @@
     "rows": 1
    },
    {
-    "title": "Wicker Movie Outing",
-    "venue": "Pictureshow at SouthCoast Marketplace",
-    "town": "Fall River",
-    "first_start": "2026-10-30T18:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "Wreath Making Workshop",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -885,9 +842,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 27,
-  "primary_only_series": 21,
-  "coverage_ratio": 0.037
+  "primary_only_count": 26,
+  "primary_only_series": 20,
+  "coverage_ratio": 0.035
  },
  "tide_error": null
 }
