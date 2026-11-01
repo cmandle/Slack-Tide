@@ -2,31 +2,27 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 145,
-   "seconds": 4.0
+   "seconds": 3.59
   },
   "viva-fall-river": {
-   "rows": 223,
-   "seconds": 14.92
+   "rows": 224,
+   "seconds": 16.18
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.63
-  },
-  "dnrt": {
-   "rows": 15,
-   "seconds": 4.17
+   "seconds": 0.55
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 5.85
+   "seconds": 6.2
   },
   "zeiterion": {
-   "rows": 25,
-   "seconds": 0.52
+   "rows": 24,
+   "seconds": 0.69
   },
   "town-tiverton": {
-   "rows": 187,
-   "seconds": 0.6
+   "rows": 190,
+   "seconds": 0.69
   },
   "town-dartmouth": {
    "rows": 7,
@@ -34,42 +30,41 @@
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.46
+   "seconds": 0.48
   }
  },
- "errors": {},
- "primary_rows": 255,
+ "errors": {
+  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)"
+ },
+ "primary_rows": 242,
  "dropped": {
   "closure": 2,
   "holiday": 3
  },
- "series": 84,
+ "series": 69,
  "approval": {
-  "pending": 34,
-  "approved": 50
+  "pending": 28,
+  "approved": 41
  },
  "by_town": {
   "New Bedford": 19,
-  "Dartmouth": 20,
   "Tiverton": 32,
+  "Dartmouth": 5,
   "Somerset": 3,
   "Little Compton": 10
  },
  "by_category": {
   "Arts & Theatre": 19,
-  "Outdoors & Nature": 12,
   "Sports & Recreation": 5,
-  "(unclassified)": 13,
+  "(unclassified)": 12,
   "Volunteering & Causes": 2,
   "Civic & Town Meetings": 19,
-  "Library & Talks": 10,
+  "Library & Talks": 9,
   "Family & Children": 1,
-  "Music": 2,
-  "Education & Workshops": 1
+  "Music": 2
  },
  "by_cadence": {
-  "weekends": 1,
-  "once": 49,
+  "once": 35,
   "several-a-week": 1,
   "weekly": 18,
   "irregular": 4,
@@ -83,9 +78,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 368,
+  "check_total": 369,
   "check_matched": 12,
-  "check_missed_rows": 356,
+  "check_missed_rows": 357,
   "check_missed_series": 104,
   "check_missed": [
    {
@@ -135,6 +130,13 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-04T07:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Knitting Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-05T13:00:00-05:00",
     "rows": 9
    },
    {
@@ -226,13 +228,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Knitting Club",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-11-05T13:00:00-05:00",
     "rows": 8
    },
    {
@@ -821,7 +816,7 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 25,
+  "primary_only_count": 24,
   "primary_only_series": 19,
   "coverage_ratio": 0.033
  },
