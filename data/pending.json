@@ -1,37 +1,10 @@
 {
- "generated_at": "2026-10-31T22:48:35.241708+00:00",
- "pending_count": 35,
- "soon_count": 16,
+ "generated_at": "2026-11-01T10:51:52.380975+00:00",
+ "pending_count": 34,
+ "soon_count": 15,
  "approved_count": 50,
  "rejected_count": 0,
  "series": [
-  {
-   "id": "85a40327bbc2",
-   "title": "Rocky Horror Picture Show",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/rocky-horror-picture-show-2026",
-   "cost": "",
-   "first_start": "2026-10-31T19:30:00-04:00",
-   "last_start": "2026-10-31T19:30:00-04:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-10-31T19:30:00-04:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-10-31T19:30:00-04:00",
-   "soon": true
-  },
   {
    "id": "978813e29371",
    "title": "Wicked Sing-Along",

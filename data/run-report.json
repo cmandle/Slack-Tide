@@ -1,62 +1,62 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 147,
-   "seconds": 3.02
+   "rows": 145,
+   "seconds": 4.0
   },
   "viva-fall-river": {
-   "rows": 227,
-   "seconds": 17.93
+   "rows": 223,
+   "seconds": 14.92
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.52
+   "seconds": 0.63
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 3.33
+   "seconds": 4.17
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 11.05
+   "seconds": 5.85
   },
   "zeiterion": {
-   "rows": 26,
-   "seconds": 0.64
+   "rows": 25,
+   "seconds": 0.52
   },
   "town-tiverton": {
    "rows": 187,
-   "seconds": 0.51
+   "seconds": 0.6
   },
   "town-dartmouth": {
    "rows": 7,
-   "seconds": 0.29
+   "seconds": 0.4
   },
   "town-somerset": {
    "rows": 5,
-   "seconds": 0.41
+   "seconds": 0.46
   }
  },
  "errors": {},
- "primary_rows": 256,
+ "primary_rows": 255,
  "dropped": {
   "closure": 2,
   "holiday": 3
  },
- "series": 85,
+ "series": 84,
  "approval": {
-  "pending": 35,
+  "pending": 34,
   "approved": 50
  },
  "by_town": {
-  "New Bedford": 20,
+  "New Bedford": 19,
   "Dartmouth": 20,
   "Tiverton": 32,
   "Somerset": 3,
   "Little Compton": 10
  },
  "by_category": {
-  "Arts & Theatre": 20,
+  "Arts & Theatre": 19,
   "Outdoors & Nature": 12,
   "Sports & Recreation": 5,
   "(unclassified)": 13,
@@ -69,7 +69,7 @@
  },
  "by_cadence": {
   "weekends": 1,
-  "once": 50,
+  "once": 49,
   "several-a-week": 1,
   "weekly": 18,
   "irregular": 4,
@@ -77,29 +77,29 @@
   "monthly": 9
  },
  "weekend_gate": {
-  "saturday": "2026-10-31",
+  "saturday": "2026-11-07",
   "series": 0,
   "towns": {},
   "passes": false
  },
  "reconcile": {
-  "check_total": 374,
-  "check_matched": 13,
-  "check_missed_rows": 361,
-  "check_missed_series": 108,
+  "check_total": 368,
+  "check_matched": 12,
+  "check_missed_rows": 356,
+  "check_missed_series": 104,
   "check_missed": [
-   {
-    "title": "Weekend Brunch",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-10-31T10:00:00-04:00",
-    "rows": 18
-   },
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-11-01T21:00:00-05:00",
+    "rows": 17
+   },
+   {
+    "title": "Weekend Brunch",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-01T10:00:00-05:00",
     "rows": 17
    },
    {
@@ -149,6 +149,13 @@
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-11-01T16:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-11-04T19:00:00-05:00",
     "rows": 9
    },
    {
@@ -233,13 +240,6 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-05T18:30:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-11-04T19:00:00-05:00",
     "rows": 8
    },
    {
@@ -369,13 +369,6 @@
     "rows": 2
    },
    {
-    "title": "Halloween Throw & Glow- All Weekend Long",
-    "venue": "Stumpy's Hatchet House Fall River",
-    "town": "Fall River",
-    "first_start": "2026-10-31T14:00:00-04:00",
-    "rows": 2
-   },
-   {
     "title": "Historical Fiction Book Club",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -488,13 +481,6 @@
     "rows": 1
    },
    {
-    "title": "A Halloween Yoga Experience - Chasing Away Your Shadow",
-    "venue": "YOGA ES VIDA COLLECTIVE",
-    "town": "New Bedford",
-    "first_start": "2026-10-31T10:30:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "AXE-celerated Dating at Stumpy's for 45+ Singles",
     "venue": "Stumpy's Hatchet House Fall River",
     "town": "Fall River",
@@ -520,13 +506,6 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-11-07T20:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Annual Halloween Party",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-10-31T17:00:00-04:00",
     "rows": 1
    },
    {
@@ -635,10 +614,10 @@
     "rows": 1
    },
    {
-    "title": "Halloween Ghostly Gala at Red Cat Kitchen",
-    "venue": "Red Cat Kitchen",
+    "title": "Halloween Throw & Glow- All Weekend Long",
+    "venue": "Stumpy's Hatchet House Fall River",
     "town": "Fall River",
-    "first_start": "2026-10-31T21:00:00-04:00",
+    "first_start": "2026-11-01T14:00:00-05:00",
     "rows": 1
    },
    {
@@ -716,13 +695,6 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-20T00:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Nightmare on Water Street Costume Party",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-10-31T20:00:00-04:00",
     "rows": 1
    },
    {
@@ -849,9 +821,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 26,
-  "primary_only_series": 20,
-  "coverage_ratio": 0.035
+  "primary_only_count": 25,
+  "primary_only_series": 19,
+  "coverage_ratio": 0.033
  },
  "tide_error": null
 }
