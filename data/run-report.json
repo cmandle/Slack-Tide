@@ -1,72 +1,70 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 145,
-   "seconds": 3.59
+   "rows": 138,
+   "seconds": 3.43
   },
   "viva-fall-river": {
-   "rows": 224,
-   "seconds": 16.18
+   "rows": 223,
+   "seconds": 15.41
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.55
+   "seconds": 0.61
+  },
+  "dnrt": {
+   "rows": 15,
+   "seconds": 4.57
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 6.2
+   "seconds": 5.75
   },
   "zeiterion": {
-   "rows": 24,
-   "seconds": 0.69
+   "rows": 20,
+   "seconds": 0.53
   },
   "town-tiverton": {
-   "rows": 190,
-   "seconds": 0.69
-  },
-  "town-dartmouth": {
-   "rows": 7,
-   "seconds": 0.4
-  },
-  "town-somerset": {
-   "rows": 5,
-   "seconds": 0.48
+   "rows": 191,
+   "seconds": 0.55
   }
  },
  "errors": {
-  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)"
+  "town-dartmouth": "ConnectTimeout: HTTPSConnectionPool(host='www.dartmouthma.gov', port=443): Max retries exceeded with url: /common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.dartmouthma.gov', port=443) at 0x7fb52fdd08c0>, 'Connection to www.dartmouthma.gov timed out. (connect timeout=30)'))",
+  "town-somerset": "ConnectTimeout: HTTPSConnectionPool(host='www.townofsomerset.org', port=443): Max retries exceeded with url: /common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.townofsomerset.org', port=443) at 0x7fb52f4700e0>, 'Connection to www.townofsomerset.org timed out. (connect timeout=30)'))"
  },
  "primary_rows": 242,
  "dropped": {
   "closure": 2,
-  "holiday": 3
+  "holiday": 2
  },
- "series": 69,
+ "series": 72,
  "approval": {
-  "pending": 28,
-  "approved": 41
+  "pending": 24,
+  "approved": 48
  },
  "by_town": {
-  "New Bedford": 19,
+  "Dartmouth": 15,
   "Tiverton": 32,
-  "Dartmouth": 5,
-  "Somerset": 3,
-  "Little Compton": 10
+  "Little Compton": 10,
+  "New Bedford": 15
  },
  "by_category": {
-  "Arts & Theatre": 19,
+  "Outdoors & Nature": 12,
   "Sports & Recreation": 5,
-  "(unclassified)": 12,
+  "(unclassified)": 13,
   "Volunteering & Causes": 2,
-  "Civic & Town Meetings": 19,
-  "Library & Talks": 9,
+  "Civic & Town Meetings": 11,
+  "Arts & Theatre": 15,
+  "Library & Talks": 10,
   "Family & Children": 1,
-  "Music": 2
+  "Music": 2,
+  "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 35,
+  "once": 40,
   "several-a-week": 1,
-  "weekly": 18,
+  "weekly": 16,
   "irregular": 4,
   "fortnightly": 2,
   "monthly": 9
@@ -78,28 +76,28 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 369,
-  "check_matched": 12,
-  "check_missed_rows": 357,
-  "check_missed_series": 104,
+  "check_total": 361,
+  "check_matched": 10,
+  "check_missed_rows": 351,
+  "check_missed_series": 101,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
-    "first_start": "2026-11-01T21:00:00-05:00",
+    "first_start": "2026-11-05T21:00:00-05:00",
     "rows": 17
    },
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-01T10:00:00-05:00",
-    "rows": 17
+    "first_start": "2026-11-07T10:00:00-05:00",
+    "rows": 16
    },
    {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "The First Unitarian Church in New Bedford",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-11-04T18:30:00-05:00",
     "rows": 9
@@ -116,13 +114,6 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-03T16:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T14:00:00-05:00",
     "rows": 9
    },
    {
@@ -147,10 +138,10 @@
     "rows": 9
    },
    {
-    "title": "Matt Silva Sunday Funday",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-01T16:00:00-05:00",
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-05T18:30:00-05:00",
     "rows": 9
    },
    {
@@ -175,13 +166,6 @@
     "rows": 9
    },
    {
-    "title": "Poppin' Prosecco with Primo! Brunch",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-01T10:00:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "Preschool Storytime",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -189,17 +173,17 @@
     "rows": 9
    },
    {
-    "title": "Tai Chi at Buttonwood Park",
-    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T09:30:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "The Waiting Room - Comedy Open Mic",
     "venue": "",
     "town": "Fall River",
     "first_start": "2026-11-03T19:30:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-05T20:00:00-05:00",
     "rows": 9
    },
    {
@@ -217,6 +201,13 @@
     "rows": 9
    },
    {
+    "title": "Zach Guillette Thursdays",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-05T18:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Figure Drawing Open Studio",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -231,10 +222,24 @@
     "rows": 8
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
     "town": "New Bedford",
-    "first_start": "2026-11-05T18:30:00-05:00",
+    "first_start": "2026-11-08T14:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Matt Silva Sunday Funday",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-08T16:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Poppin' Prosecco with Primo! Brunch",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-08T10:00:00-05:00",
     "rows": 8
    },
    {
@@ -252,17 +257,10 @@
     "rows": 8
    },
    {
-    "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-05T20:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Zach Guillette Thursdays",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-05T18:00:00-05:00",
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
+    "town": "New Bedford",
+    "first_start": "2026-11-08T09:30:00-05:00",
     "rows": 8
    },
    {
@@ -319,13 +317,6 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-18T14:00:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Celebrate National Authors Day with Write With Community!",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T11:00:00-05:00",
     "rows": 2
    },
    {
@@ -399,13 +390,6 @@
     "rows": 2
    },
    {
-    "title": "Octave Avenue Open Mic",
-    "venue": "The First Unitarian Church in New Bedford",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T15:30:00-05:00",
-    "rows": 2
-   },
-   {
     "title": "Open Mic Night",
     "venue": "The Belmont Club",
     "town": "Fall River",
@@ -438,6 +422,13 @@
     "venue": "Fort Taber Community Center",
     "town": "New Bedford",
     "first_start": "2026-11-20T19:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Silent Book Club",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-11-26T18:30:00-05:00",
     "rows": 2
    },
    {
@@ -609,13 +600,6 @@
     "rows": 1
    },
    {
-    "title": "Halloween Throw & Glow- All Weekend Long",
-    "venue": "Stumpy's Hatchet House Fall River",
-    "town": "Fall River",
-    "first_start": "2026-11-01T14:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Jason Robert Brown with Special Broadway Guests",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -665,13 +649,6 @@
     "rows": 1
    },
    {
-    "title": "National Authors' Day 2026",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T00:00:00-04:00",
-    "rows": 1
-   },
-   {
     "title": "National Award-Winning Author, Nathaniel Philbrick, will discuss his newest book, THE RUSH at Spinner Publications Celebrates 45 Years \"Author Talk\"",
     "venue": "The Steeple Playhouse",
     "town": "New Bedford",
@@ -690,6 +667,13 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-20T00:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Octave Avenue Open Mic",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-12-06T15:30:00-05:00",
     "rows": 1
    },
    {
@@ -742,13 +726,6 @@
     "rows": 1
    },
    {
-    "title": "Silent Book Club",
-    "venue": "Once Upon a Bookstore",
-    "town": "Fall River",
-    "first_start": "2026-11-26T18:30:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Southcoast Festival of Choirs at ST. Anthony Church New Bedford",
     "venue": "SaintAnthonyofNewBedford",
     "town": "New Bedford",
@@ -777,6 +754,13 @@
     "rows": 1
    },
    {
+    "title": "The Banned Book Club",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-12-31T18:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "The Empty Pockets - Holiday Tour",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -788,13 +772,6 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-12-05T13:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "The Ten Commandments: Silent Film with Live Organ Accompaniment by Peter Krasinski",
-    "venue": "SaintAnthonyofNewBedford",
-    "town": "New Bedford",
-    "first_start": "2026-11-01T17:00:00-05:00",
     "rows": 1
    },
    {
@@ -816,9 +793,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 24,
-  "primary_only_series": 19,
-  "coverage_ratio": 0.033
+  "primary_only_count": 20,
+  "primary_only_series": 15,
+  "coverage_ratio": 0.028
  },
  "tide_error": null
 }
