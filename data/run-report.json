@@ -1,73 +1,79 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 138,
-   "seconds": 3.43
+   "rows": 141,
+   "seconds": 3.83
   },
   "viva-fall-river": {
-   "rows": 223,
-   "seconds": 15.41
+   "rows": 224,
+   "seconds": 16.04
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.61
+   "seconds": 0.71
   },
   "dnrt": {
-   "rows": 15,
-   "seconds": 4.57
+   "rows": 16,
+   "seconds": 2.49
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 5.75
+   "seconds": 4.26
   },
   "zeiterion": {
    "rows": 20,
-   "seconds": 0.53
+   "seconds": 0.58
   },
   "town-tiverton": {
-   "rows": 191,
-   "seconds": 0.55
+   "rows": 186,
+   "seconds": 0.67
+  },
+  "town-dartmouth": {
+   "rows": 10,
+   "seconds": 0.4
+  },
+  "town-somerset": {
+   "rows": 8,
+   "seconds": 0.37
   }
  },
- "errors": {
-  "town-dartmouth": "ConnectTimeout: HTTPSConnectionPool(host='www.dartmouthma.gov', port=443): Max retries exceeded with url: /common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.dartmouthma.gov', port=443) at 0x7fb52fdd08c0>, 'Connection to www.dartmouthma.gov timed out. (connect timeout=30)'))",
-  "town-somerset": "ConnectTimeout: HTTPSConnectionPool(host='www.townofsomerset.org', port=443): Max retries exceeded with url: /common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.townofsomerset.org', port=443) at 0x7fb52f4700e0>, 'Connection to www.townofsomerset.org timed out. (connect timeout=30)'))"
- },
- "primary_rows": 242,
+ "errors": {},
+ "primary_rows": 256,
  "dropped": {
-  "closure": 2,
-  "holiday": 2
+  "closure": 3,
+  "holiday": 5
  },
- "series": 72,
+ "series": 85,
  "approval": {
-  "pending": 24,
-  "approved": 48
+  "pending": 35,
+  "approved": 50
  },
  "by_town": {
-  "Dartmouth": 15,
+  "Dartmouth": 24,
   "Tiverton": 32,
+  "Somerset": 4,
   "Little Compton": 10,
   "New Bedford": 15
  },
  "by_category": {
-  "Outdoors & Nature": 12,
-  "Sports & Recreation": 5,
+  "Outdoors & Nature": 13,
+  "Civic & Town Meetings": 23,
   "(unclassified)": 13,
-  "Volunteering & Causes": 2,
-  "Civic & Town Meetings": 11,
+  "Sports & Recreation": 5,
   "Arts & Theatre": 15,
   "Library & Talks": 10,
   "Family & Children": 1,
   "Music": 2,
+  "Volunteering & Causes": 2,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 40,
-  "several-a-week": 1,
-  "weekly": 16,
+  "once": 51,
   "irregular": 4,
+  "weekly": 18,
   "fortnightly": 2,
-  "monthly": 9
+  "monthly": 9,
+  "several-a-week": 1
  },
  "weekend_gate": {
   "saturday": "2026-11-07",
@@ -76,10 +82,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 361,
+  "check_total": 365,
   "check_matched": 10,
-  "check_missed_rows": 351,
-  "check_missed_series": 101,
+  "check_missed_rows": 355,
+  "check_missed_series": 103,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -103,10 +109,24 @@
     "rows": 9
    },
    {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-06T17:30:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
     "first_start": "2026-11-03T18:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Friday Night Volleyball (weekly)",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-11-06T17:00:00-05:00",
     "rows": 9
    },
    {
@@ -206,20 +226,6 @@
     "town": "Fall River",
     "first_start": "2026-11-05T18:00:00-05:00",
     "rows": 9
-   },
-   {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-06T17:30:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Friday Night Volleyball (weekly)",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 8
    },
    {
     "title": "KidZone",
@@ -467,6 +473,13 @@
     "rows": 1
    },
    {
+    "title": "AHA! Night: Made in New Bedford",
+    "venue": "Downtown New Bedford",
+    "town": "New Bedford",
+    "first_start": "2026-11-12T16:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "AXE-celerated Dating at Stumpy's for 45+ Singles",
     "venue": "Stumpy's Hatchet House Fall River",
     "town": "Fall River",
@@ -527,6 +540,13 @@
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-25T18:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Breaking up Christmas",
+    "venue": "Gallery X",
+    "town": "New Bedford",
+    "first_start": "2026-12-26T15:00:00-05:00",
     "rows": 1
    },
    {
@@ -795,7 +815,7 @@
   ],
   "primary_only_count": 20,
   "primary_only_series": 15,
-  "coverage_ratio": 0.028
+  "coverage_ratio": 0.027
  },
  "tide_error": null
 }
