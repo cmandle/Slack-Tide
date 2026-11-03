@@ -2,78 +2,78 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 141,
-   "seconds": 3.38
+   "seconds": 4.04
   },
   "viva-fall-river": {
-   "rows": 224,
-   "seconds": 16.5
+   "rows": 225,
+   "seconds": 16.34
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.66
+   "seconds": 0.46
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 4.11
+   "seconds": 4.01
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 15.84
+   "seconds": 15.17
   },
   "zeiterion": {
    "rows": 20,
-   "seconds": 0.51
+   "seconds": 0.66
   },
   "town-tiverton": {
-   "rows": 184,
-   "seconds": 0.73
+   "rows": 180,
+   "seconds": 0.58
   },
   "town-dartmouth": {
-   "rows": 7,
-   "seconds": 0.33
+   "rows": 9,
+   "seconds": 0.44
   },
   "town-somerset": {
    "rows": 7,
-   "seconds": 0.63
+   "seconds": 0.64
   }
  },
  "errors": {},
- "primary_rows": 249,
+ "primary_rows": 247,
  "dropped": {
   "closure": 3,
   "holiday": 5
  },
- "series": 79,
+ "series": 81,
  "approval": {
   "approved": 50,
-  "pending": 29
+  "pending": 31
  },
  "by_town": {
-  "Tiverton": 31,
   "Little Compton": 10,
   "New Bedford": 15,
-  "Dartmouth": 20,
+  "Tiverton": 31,
+  "Dartmouth": 22,
   "Somerset": 3
  },
  "by_category": {
-  "Sports & Recreation": 5,
-  "(unclassified)": 12,
-  "Arts & Theatre": 15,
   "Library & Talks": 10,
-  "Civic & Town Meetings": 19,
+  "Arts & Theatre": 15,
+  "Civic & Town Meetings": 21,
+  "Sports & Recreation": 5,
   "Family & Children": 1,
   "Music": 2,
+  "(unclassified)": 12,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 12,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "weekly": 18,
   "fortnightly": 2,
   "irregular": 3,
   "monthly": 9,
   "several-a-week": 1,
-  "once": 46
+  "weekly": 18,
+  "once": 48
  },
  "weekend_gate": {
   "saturday": "2026-11-07",
@@ -82,9 +82,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 365,
+  "check_total": 366,
   "check_matched": 10,
-  "check_missed_rows": 355,
+  "check_missed_rows": 356,
   "check_missed_series": 103,
   "check_missed": [
    {
@@ -99,7 +99,7 @@
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-11-07T10:00:00-05:00",
-    "rows": 16
+    "rows": 17
    },
    {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
