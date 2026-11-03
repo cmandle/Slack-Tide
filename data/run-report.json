@@ -2,78 +2,78 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 141,
-   "seconds": 3.83
+   "seconds": 3.38
   },
   "viva-fall-river": {
    "rows": 224,
-   "seconds": 16.04
+   "seconds": 16.5
   },
   "brownell-library": {
    "rows": 16,
-   "seconds": 0.71
+   "seconds": 0.66
   },
   "dnrt": {
-   "rows": 16,
-   "seconds": 2.49
+   "rows": 15,
+   "seconds": 4.11
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 4.26
+   "seconds": 15.84
   },
   "zeiterion": {
    "rows": 20,
-   "seconds": 0.58
+   "seconds": 0.51
   },
   "town-tiverton": {
-   "rows": 186,
-   "seconds": 0.67
+   "rows": 184,
+   "seconds": 0.73
   },
   "town-dartmouth": {
-   "rows": 10,
-   "seconds": 0.4
+   "rows": 7,
+   "seconds": 0.33
   },
   "town-somerset": {
-   "rows": 8,
-   "seconds": 0.37
+   "rows": 7,
+   "seconds": 0.63
   }
  },
  "errors": {},
- "primary_rows": 256,
+ "primary_rows": 249,
  "dropped": {
   "closure": 3,
   "holiday": 5
  },
- "series": 85,
+ "series": 79,
  "approval": {
-  "pending": 35,
-  "approved": 50
+  "approved": 50,
+  "pending": 29
  },
  "by_town": {
-  "Dartmouth": 24,
-  "Tiverton": 32,
-  "Somerset": 4,
+  "Tiverton": 31,
   "Little Compton": 10,
-  "New Bedford": 15
+  "New Bedford": 15,
+  "Dartmouth": 20,
+  "Somerset": 3
  },
  "by_category": {
-  "Outdoors & Nature": 13,
-  "Civic & Town Meetings": 23,
-  "(unclassified)": 13,
   "Sports & Recreation": 5,
+  "(unclassified)": 12,
   "Arts & Theatre": 15,
   "Library & Talks": 10,
+  "Civic & Town Meetings": 19,
   "Family & Children": 1,
   "Music": 2,
   "Volunteering & Causes": 2,
+  "Outdoors & Nature": 12,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 51,
-  "irregular": 4,
   "weekly": 18,
   "fortnightly": 2,
+  "irregular": 3,
   "monthly": 9,
-  "several-a-week": 1
+  "several-a-week": 1,
+  "once": 46
  },
  "weekend_gate": {
   "saturday": "2026-11-07",
@@ -151,13 +151,6 @@
     "rows": 9
    },
    {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-02T14:00:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -172,13 +165,6 @@
     "rows": 9
    },
    {
-    "title": "Nick Sanfilippo",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-02T18:30:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "Open Mic",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -190,6 +176,20 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-03T11:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Primo After Dark - Weekly DJ Sets",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-06T20:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-06T18:00:00-05:00",
     "rows": 9
    },
    {
@@ -235,6 +235,13 @@
     "rows": 8
    },
    {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-09T14:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Matt Silva Sunday Funday",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
@@ -242,24 +249,17 @@
     "rows": 8
    },
    {
+    "title": "Nick Sanfilippo",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-09T18:30:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-08T10:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Primo After Dark - Weekly DJ Sets",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-06T20:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-06T18:00:00-05:00",
     "rows": 8
    },
    {
