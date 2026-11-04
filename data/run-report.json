@@ -1,79 +1,79 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 140,
-   "seconds": 3.39
+   "rows": 143,
+   "seconds": 3.9
   },
   "viva-fall-river": {
-   "rows": 221,
-   "seconds": 15.49
+   "rows": 224,
+   "seconds": 18.99
   },
   "brownell-library": {
    "rows": 15,
-   "seconds": 0.38
+   "seconds": 0.95
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 3.15
+   "seconds": 3.51
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 24.83
+   "seconds": 15.37
   },
   "zeiterion": {
    "rows": 19,
-   "seconds": 0.62
+   "seconds": 0.77
   },
   "town-tiverton": {
-   "rows": 179,
-   "seconds": 0.57
+   "rows": 176,
+   "seconds": 0.79
   },
   "town-dartmouth": {
-   "rows": 8,
-   "seconds": 0.37
+   "rows": 7,
+   "seconds": 0.41
   },
   "town-somerset": {
-   "rows": 7,
-   "seconds": 0.46
+   "rows": 12,
+   "seconds": 0.66
   }
  },
  "errors": {},
- "primary_rows": 243,
+ "primary_rows": 244,
  "dropped": {
   "closure": 3,
   "holiday": 4
  },
- "series": 81,
+ "series": 85,
  "approval": {
-  "approved": 50,
-  "pending": 31
+  "approved": 49,
+  "pending": 36
  },
  "by_town": {
   "Tiverton": 31,
   "Little Compton": 10,
   "New Bedford": 15,
-  "Dartmouth": 22,
-  "Somerset": 3
+  "Somerset": 8,
+  "Dartmouth": 21
  },
  "by_category": {
   "Sports & Recreation": 5,
   "Family & Children": 1,
-  "Music": 2,
-  "(unclassified)": 12,
   "Arts & Theatre": 15,
-  "Civic & Town Meetings": 21,
+  "Civic & Town Meetings": 24,
+  "(unclassified)": 13,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 12,
   "Library & Talks": 10,
+  "Music": 2,
   "Education & Workshops": 1
  },
  "by_cadence": {
   "several-a-week": 1,
-  "weekly": 18,
-  "monthly": 8,
-  "once": 50,
-  "fortnightly": 1,
-  "irregular": 3
+  "weekly": 17,
+  "once": 55,
+  "monthly": 7,
+  "irregular": 4,
+  "fortnightly": 1
  },
  "weekend_gate": {
   "saturday": "2026-11-07",
@@ -82,23 +82,23 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 361,
+  "check_total": 367,
   "check_matched": 10,
-  "check_missed_rows": 351,
+  "check_missed_rows": 357,
   "check_missed_series": 104,
   "check_missed": [
-   {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-11-05T21:00:00-05:00",
-    "rows": 17
-   },
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-11-07T10:00:00-05:00",
+    "rows": 18
+   },
+   {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-11-05T21:00:00-05:00",
     "rows": 17
    },
    {
@@ -123,6 +123,13 @@
     "rows": 9
    },
    {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-08T14:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Kids eat FREE on Wednesdays",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -134,6 +141,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-05T13:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Matt Silva Sunday Funday",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-08T16:00:00-05:00",
     "rows": 9
    },
    {
@@ -151,6 +165,13 @@
     "rows": 9
    },
    {
+    "title": "Poppin' Prosecco with Primo! Brunch",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-08T10:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Primo After Dark - Weekly DJ Sets",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -162,6 +183,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-06T18:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
+    "town": "New Bedford",
+    "first_start": "2026-11-08T09:30:00-05:00",
     "rows": 9
    },
    {
@@ -207,24 +235,10 @@
     "rows": 8
    },
    {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-08T14:00:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-11-09T14:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Matt Silva Sunday Funday",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-08T16:00:00-05:00",
     "rows": 8
    },
    {
@@ -242,24 +256,10 @@
     "rows": 8
    },
    {
-    "title": "Poppin' Prosecco with Primo! Brunch",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-08T10:00:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "Preschool Storytime",
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-10T11:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Tai Chi at Buttonwood Park",
-    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
-    "town": "New Bedford",
-    "first_start": "2026-11-08T09:30:00-05:00",
     "rows": 8
    },
    {
@@ -386,6 +386,13 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-11-28T00:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Octave Avenue Open Mic",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-12-06T15:30:00-05:00",
     "rows": 2
    },
    {
@@ -697,13 +704,6 @@
     "rows": 1
    },
    {
-    "title": "Octave Avenue Open Mic",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-12-06T15:30:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Peter Wolf and The Midnight Travelers - Friday, Nov. 20",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -822,7 +822,7 @@
   ],
   "primary_only_count": 19,
   "primary_only_series": 15,
-  "coverage_ratio": 0.028
+  "coverage_ratio": 0.027
  },
  "tide_error": null
 }

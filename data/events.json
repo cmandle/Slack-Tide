@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-04T11:26:21.373880+00:00",
- "series_count": 81,
- "occurrence_count": 228,
+ "generated_at": "2026-11-04T22:59:41.115444+00:00",
+ "series_count": 85,
+ "occurrence_count": 229,
  "series": [
   {
    "id": "ee5aab63f527",
@@ -149,166 +149,6 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "a136d19cf1cd",
-   "title": "Sandy's Live Music & Karaoke",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Music",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-04T12:15:00-05:00",
-   "last_start": "2026-12-30T12:15:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-04T12:15:00-05:00",
-     "end": "2026-11-04T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T12:15:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:15:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:15:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:15:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:15:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T12:15:00-05:00",
-     "end": "2026-12-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T12:15:00-05:00",
-     "end": "2026-12-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T12:15:00-05:00",
-     "end": "2026-12-30T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. \"Piano Man\" Sandy Cook entertains and coordinated Karaoke fun https://www.tiverton.ri.gov/calendar.aspx?EID=1578",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "cf4589ea0706",
-   "title": "Cribbage",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-04T12:30:00-05:00",
-   "last_start": "2026-12-30T12:30:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-04T12:30:00-05:00",
-     "end": "2026-11-04T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T12:30:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:30:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:30:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:30:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:30:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T12:30:00-05:00",
-     "end": "2026-12-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T12:30:00-05:00",
-     "end": "2026-12-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T12:30:00-05:00",
-     "end": "2026-12-30T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1516",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "3d65595383f1",
-   "title": "SHIP with Carla Sabatino",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-04T13:00:00-05:00",
-   "last_start": "2026-12-02T13:00:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-04T13:00:00-05:00",
-     "end": "2026-11-04T16:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T13:00:00-05:00",
-     "end": "2026-12-02T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Call 401-735-1887 to make an appointment with Carla; Carla can assist with medical/health insurance; SNAP; Medicaid and Heating & Energy assistant applications. https://www.tiverton.ri.gov/calendar.aspx?EID=1910",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
    "id": "58f176411908",
    "title": "Terrarium & Sip",
    "venue": "The Zeiterion",
@@ -362,6 +202,36 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1980",
    "approval": "approved",
    "decided_by": "bootstrap"
+  },
+  {
+   "id": "97593680afeb",
+   "title": "Taunton River Stewardship Council (TRSC)",
+   "venue": "",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-04T19:00:00-05:00",
+   "last_start": "2026-11-12T19:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-04T19:00:00-05:00",
+     "end": "2026-11-04T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T19:00:00-05:00",
+     "end": "2026-11-12T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Taunton River Watershed Center. https://www.townofsomerset.org/calendar.aspx?EID=2014",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "3139634ece53",
@@ -584,8 +454,8 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "d3712eafca16",
-   "title": "Board of Assessors",
+   "id": "ce371b49a596",
+   "title": "JOINT Board of Assessors & Board of Selectmen",
    "venue": "",
    "town": "Somerset",
    "category": "Civic & Town Meetings",
@@ -634,34 +504,29 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "5f4ce9f24ae2",
+   "id": "65a0ccf01e7a",
    "title": "Zoning Board of Appeals",
-   "venue": "1480 County Street Somerset MA 02726",
+   "venue": "",
    "town": "Somerset",
    "category": "Civic & Town Meetings",
    "source_id": "town-somerset",
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
    "cost": "",
    "first_start": "2026-11-05T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 2,
-   "cadence": "weekly",
-   "weekday": 3,
+   "last_start": "2026-11-05T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
    "occurrences": [
     {
      "start": "2026-11-05T18:00:00-05:00",
      "end": "2026-11-05T23:59:00-05:00",
      "all_day": false
-    },
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T23:59:00-05:00",
-     "all_day": false
     }
    ],
-   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=1997",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=1997",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "e6948b4d4c1c",
@@ -1264,6 +1129,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "61d0d4421bf4",
+   "title": "Somerset Middle School Building Committee",
+   "venue": "(via Zoom) 309.205.3325 Meeting ID: 886 3340 7364 Passcode: 607000 OR: https://us06web.zoom.us/j/88633407364?pwd=I9AOdXTbanEB4Ie5V3VIdbobLBGEH8.1 -",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-09T17:00:00-05:00",
+   "last_start": "2026-11-09T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T17:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2012",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "77e878936379",
    "title": "Town Council Meeting",
    "venue": "",
@@ -1584,9 +1474,34 @@
    "decided_by": ""
   },
   {
-   "id": "f78d81e868bb",
+   "id": "1cef14d3d6ff",
+   "title": "Somerset School Committee",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-10T17:30:00-05:00",
+   "last_start": "2026-11-10T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T17:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Middle School. https://www.townofsomerset.org/calendar.aspx?EID=2011",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "baadf4958993",
    "title": "Agricultural Commission jointly with CPC",
-   "venue": "400 Slocum Road Room 315 Dartmouth MA 02747",
+   "venue": "400 Slocum Road Room 305 and 315 Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "Civic & Town Meetings",
    "source_id": "town-dartmouth",
@@ -1664,27 +1579,122 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "fb9783ebc0d0",
-   "title": "Agricultural Commission",
-   "venue": "205 Bakerville Road Dartmouth MA 02748",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "id": "a136d19cf1cd",
+   "title": "Sandy's Live Music & Karaoke",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Music",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
-   "first_start": "2026-11-10T18:30:00-05:00",
-   "last_start": "2026-11-10T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "first_start": "2026-11-11T12:15:00-05:00",
+   "last_start": "2026-12-30T12:15:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 2,
    "occurrences": [
     {
-     "start": "2026-11-10T18:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
+     "start": "2026-11-11T12:15:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:15:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:15:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:15:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:15:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T12:15:00-05:00",
+     "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T12:15:00-05:00",
+     "end": "2026-12-23T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T12:15:00-05:00",
+     "end": "2026-12-30T15:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2900",
+   "summary": "Location: Dining Room. \"Piano Man\" Sandy Cook entertains and coordinated Karaoke fun https://www.tiverton.ri.gov/calendar.aspx?EID=1579",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "cf4589ea0706",
+   "title": "Cribbage",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-11T12:30:00-05:00",
+   "last_start": "2026-12-30T12:30:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-11T12:30:00-05:00",
+     "end": "2026-11-11T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T12:30:00-05:00",
+     "end": "2026-11-18T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T12:30:00-05:00",
+     "end": "2026-11-25T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T12:30:00-05:00",
+     "end": "2026-12-02T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T12:30:00-05:00",
+     "end": "2026-12-09T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T12:30:00-05:00",
+     "end": "2026-12-16T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T12:30:00-05:00",
+     "end": "2026-12-23T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T12:30:00-05:00",
+     "end": "2026-12-30T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1517",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -1790,6 +1800,31 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1969",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "5f4ce9f24ae2",
+   "title": "Zoning Board of Appeals",
+   "venue": "1480 County Street Somerset MA 02726",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=1998",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -2179,6 +2214,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "d3712eafca16",
+   "title": "Board of Assessors",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-18T18:00:00-05:00",
+   "last_start": "2026-11-18T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-18T18:00:00-05:00",
+     "end": "2026-11-18T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2013",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "796c750946c6",
    "title": "Public Hearing for Transfer of and Change of Manager On-premise Restaurant All Alcoholic Beverage License",
    "venue": "",
@@ -2425,6 +2485,31 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1992",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "3d65595383f1",
+   "title": "SHIP with Carla Sabatino",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-12-02T13:00:00-05:00",
+   "last_start": "2026-12-02T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-02T13:00:00-05:00",
+     "end": "2026-12-02T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Call 401-735-1887 to make an appointment with Carla; Carla can assist with medical/health insurance; SNAP; Medicaid and Heating & Energy assistant applications. https://www.tiverton.ri.gov/calendar.aspx?EID=1911",
    "approval": "approved",
    "decided_by": "bootstrap"
   },

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-04T11:26:21.373880+00:00",
- "pending_count": 31,
- "soon_count": 11,
- "approved_count": 50,
+ "generated_at": "2026-11-04T22:59:41.115444+00:00",
+ "pending_count": 36,
+ "soon_count": 14,
+ "approved_count": 49,
  "rejected_count": 0,
  "series": [
   {
@@ -60,8 +60,8 @@
    "soon": true
   },
   {
-   "id": "d3712eafca16",
-   "title": "Board of Assessors",
+   "id": "ce371b49a596",
+   "title": "JOINT Board of Assessors & Board of Selectmen",
    "venue": "",
    "town": "Somerset",
    "category": "Civic & Town Meetings",
@@ -84,6 +84,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-05T17:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "65a0ccf01e7a",
+   "title": "Zoning Board of Appeals",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-05T18:00:00-05:00",
+   "last_start": "2026-11-05T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-05T18:00:00-05:00",
+     "end": "2026-11-05T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=1997",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-05T18:00:00-05:00",
    "soon": true
   },
   {
@@ -227,6 +254,33 @@
    "soon": true
   },
   {
+   "id": "61d0d4421bf4",
+   "title": "Somerset Middle School Building Committee",
+   "venue": "(via Zoom) 309.205.3325 Meeting ID: 886 3340 7364 Passcode: 607000 OR: https://us06web.zoom.us/j/88633407364?pwd=I9AOdXTbanEB4Ie5V3VIdbobLBGEH8.1 -",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-09T17:00:00-05:00",
+   "last_start": "2026-11-09T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T17:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2012",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-09T17:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "89c483cc0d43",
    "title": "Dartmouth Waterways Management Commission",
    "venue": "",
@@ -281,9 +335,36 @@
    "soon": true
   },
   {
-   "id": "f78d81e868bb",
+   "id": "1cef14d3d6ff",
+   "title": "Somerset School Committee",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-10T17:30:00-05:00",
+   "last_start": "2026-11-10T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T17:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Middle School. https://www.townofsomerset.org/calendar.aspx?EID=2011",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-10T17:30:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "baadf4958993",
    "title": "Agricultural Commission jointly with CPC",
-   "venue": "400 Slocum Road Room 315 Dartmouth MA 02747",
+   "venue": "400 Slocum Road Room 305 and 315 Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "Civic & Town Meetings",
    "source_id": "town-dartmouth",
@@ -359,6 +440,38 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "97593680afeb",
+   "title": "Taunton River Stewardship Council (TRSC)",
+   "venue": "",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-04T19:00:00-05:00",
+   "last_start": "2026-11-12T19:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-04T19:00:00-05:00",
+     "end": "2026-11-04T23:59:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-12T19:00:00-05:00",
+     "end": "2026-11-12T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Taunton River Watershed Center. https://www.townofsomerset.org/calendar.aspx?EID=2014",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-12T19:00:00-05:00",
    "soon": false
   },
   {
@@ -477,6 +590,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-15T19:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "d3712eafca16",
+   "title": "Board of Assessors",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-18T18:00:00-05:00",
+   "last_start": "2026-11-18T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-18T18:00:00-05:00",
+     "end": "2026-11-18T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2013",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-18T18:00:00-05:00",
    "soon": false
   },
   {
