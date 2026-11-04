@@ -1,108 +1,8 @@
 {
- "generated_at": "2026-11-03T22:57:59.095918+00:00",
+ "generated_at": "2026-11-04T11:26:21.373880+00:00",
  "series_count": 81,
- "occurrence_count": 231,
+ "occurrence_count": 228,
  "series": [
-  {
-   "id": "5c5cfeee6755",
-   "title": "Little Compton Writing Circle",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/little-compton-writing-circle-5/",
-   "cost": "",
-   "first_start": "2026-11-03T17:30:00-05:00",
-   "last_start": "2026-11-17T17:30:00-05:00",
-   "count": 2,
-   "cadence": "fortnightly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-03T17:30:00-05:00",
-     "end": "2026-11-03T18:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T17:30:00-05:00",
-     "end": "2026-11-17T18:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "02b6bb19c462",
-   "title": "Zeiterion Guided Tours",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/guided-tours-november-3-2026",
-   "cost": "",
-   "first_start": "2026-11-03T18:00:00-05:00",
-   "last_start": "2026-12-15T18:00:00-05:00",
-   "count": 4,
-   "cadence": "irregular",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-03T18:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-11-14T11:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-05T11:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T18:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "172f82176727",
-   "title": "Litter Committee Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-03T18:30:00-05:00",
-   "last_start": "2026-12-01T18:30:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-03T18:30:00-05:00",
-     "end": "2026-11-03T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T18:30:00-05:00",
-     "end": "2026-12-01T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1991",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "ee5aab63f527",
    "title": "Functional Fitness",
@@ -1994,6 +1894,41 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "02b6bb19c462",
+   "title": "Zeiterion Guided Tours",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/guided-tours-november-14-2026",
+   "cost": "",
+   "first_start": "2026-11-14T11:00:00-05:00",
+   "last_start": "2026-12-15T18:00:00-05:00",
+   "count": 3,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T11:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-05T11:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-15T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "67bacb13bd00",
    "title": "HADESTOWN",
    "venue": "The Zeiterion",
@@ -2181,6 +2116,31 @@
     {
      "start": "2026-11-17T16:00:00-05:00",
      "end": "2026-11-17T17:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "5c5cfeee6755",
+   "title": "Little Compton Writing Circle",
+   "venue": "Brownell Library",
+   "town": "Little Compton",
+   "category": "Library & Talks",
+   "source_id": "brownell-library",
+   "url": "https://brownell-libraryri.org/event/little-compton-writing-circle-6/",
+   "cost": "",
+   "first_start": "2026-11-17T17:30:00-05:00",
+   "last_start": "2026-11-17T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-17T17:30:00-05:00",
+     "end": "2026-11-17T18:30:00-05:00",
      "all_day": false
     }
    ],
@@ -2440,6 +2400,31 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2068",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "172f82176727",
+   "title": "Litter Committee Meeting",
+   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-12-01T18:30:00-05:00",
+   "last_start": "2026-12-01T18:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-01T18:30:00-05:00",
+     "end": "2026-12-01T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1992",
    "approval": "approved",
    "decided_by": "bootstrap"
   },

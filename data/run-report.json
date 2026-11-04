@@ -1,47 +1,47 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 141,
-   "seconds": 4.04
+   "rows": 140,
+   "seconds": 3.39
   },
   "viva-fall-river": {
-   "rows": 225,
-   "seconds": 16.34
+   "rows": 221,
+   "seconds": 15.49
   },
   "brownell-library": {
-   "rows": 16,
-   "seconds": 0.46
+   "rows": 15,
+   "seconds": 0.38
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 4.01
+   "seconds": 3.15
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 15.17
+   "seconds": 24.83
   },
   "zeiterion": {
-   "rows": 20,
-   "seconds": 0.66
+   "rows": 19,
+   "seconds": 0.62
   },
   "town-tiverton": {
-   "rows": 180,
-   "seconds": 0.58
+   "rows": 179,
+   "seconds": 0.57
   },
   "town-dartmouth": {
-   "rows": 9,
-   "seconds": 0.44
+   "rows": 8,
+   "seconds": 0.37
   },
   "town-somerset": {
    "rows": 7,
-   "seconds": 0.64
+   "seconds": 0.46
   }
  },
  "errors": {},
- "primary_rows": 247,
+ "primary_rows": 243,
  "dropped": {
   "closure": 3,
-  "holiday": 5
+  "holiday": 4
  },
  "series": 81,
  "approval": {
@@ -49,31 +49,31 @@
   "pending": 31
  },
  "by_town": {
+  "Tiverton": 31,
   "Little Compton": 10,
   "New Bedford": 15,
-  "Tiverton": 31,
   "Dartmouth": 22,
   "Somerset": 3
  },
  "by_category": {
-  "Library & Talks": 10,
-  "Arts & Theatre": 15,
-  "Civic & Town Meetings": 21,
   "Sports & Recreation": 5,
   "Family & Children": 1,
   "Music": 2,
   "(unclassified)": 12,
+  "Arts & Theatre": 15,
+  "Civic & Town Meetings": 21,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 12,
+  "Library & Talks": 10,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "fortnightly": 2,
-  "irregular": 3,
-  "monthly": 9,
   "several-a-week": 1,
   "weekly": 18,
-  "once": 48
+  "monthly": 8,
+  "once": 50,
+  "fortnightly": 1,
+  "irregular": 3
  },
  "weekend_gate": {
   "saturday": "2026-11-07",
@@ -82,10 +82,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 366,
+  "check_total": 361,
   "check_matched": 10,
-  "check_missed_rows": 356,
-  "check_missed_series": 103,
+  "check_missed_rows": 351,
+  "check_missed_series": 104,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -116,24 +116,10 @@
     "rows": 9
    },
    {
-    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
-    "venue": "First Congregational Church of Fall River",
-    "town": "Fall River",
-    "first_start": "2026-11-03T18:00:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "Friday Night Volleyball (weekly)",
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "Half Priced Food (weekly)",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-03T16:00:00-05:00",
     "rows": 9
    },
    {
@@ -165,20 +151,6 @@
     "rows": 9
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-03T20:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "Preschool Storytime",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-11-03T11:00:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "Primo After Dark - Weekly DJ Sets",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -190,13 +162,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-06T18:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-11-03T19:30:00-05:00",
     "rows": 9
    },
    {
@@ -228,6 +193,20 @@
     "rows": 9
    },
    {
+    "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
+    "venue": "First Congregational Church of Fall River",
+    "town": "Fall River",
+    "first_start": "2026-11-10T18:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Half Priced Food (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-10T16:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -256,6 +235,13 @@
     "rows": 8
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-10T20:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -263,10 +249,24 @@
     "rows": 8
    },
    {
+    "title": "Preschool Storytime",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-11-10T11:00:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Tai Chi at Buttonwood Park",
     "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
     "first_start": "2026-11-08T09:30:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-11-10T19:30:00-05:00",
     "rows": 8
    },
    {
@@ -365,13 +365,6 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-30T18:00:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Hop Quiz Trivia",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-03T18:30:00-05:00",
     "rows": 2
    },
    {
@@ -613,10 +606,24 @@
     "rows": 1
    },
    {
+    "title": "Funky White Honkies",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2027-01-02T20:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Greater New Bedford Choral Society presents Christmas Melodies Around the World",
     "venue": "Our Lady of Mount Carmel New Bedford",
     "town": "New Bedford",
     "first_start": "2026-12-06T15:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Hop Quiz Trivia",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-17T18:30:00-05:00",
     "rows": 1
    },
    {
@@ -813,9 +820,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 20,
+  "primary_only_count": 19,
   "primary_only_series": 15,
-  "coverage_ratio": 0.027
+  "coverage_ratio": 0.028
  },
  "tide_error": null
 }
