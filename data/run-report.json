@@ -1,76 +1,76 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 142,
-   "seconds": 3.5
+   "rows": 144,
+   "seconds": 4.17
   },
   "viva-fall-river": {
    "rows": 219,
-   "seconds": 16.83
+   "seconds": 14.11
   },
   "brownell-library": {
    "rows": 14,
-   "seconds": 0.37
+   "seconds": 0.52
   },
   "dnrt": {
    "rows": 15,
-   "seconds": 3.23
+   "seconds": 4.15
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 11.29
+   "seconds": 5.73
   },
   "zeiterion": {
    "rows": 18,
-   "seconds": 0.6
+   "seconds": 0.67
   },
   "town-tiverton": {
-   "rows": 174,
-   "seconds": 0.51
+   "rows": 172,
+   "seconds": 0.68
   },
   "town-dartmouth": {
-   "rows": 7,
-   "seconds": 0.29
+   "rows": 11,
+   "seconds": 0.41
   },
   "town-somerset": {
-   "rows": 11,
-   "seconds": 0.32
+   "rows": 13,
+   "seconds": 0.58
   }
  },
  "errors": {},
- "primary_rows": 239,
+ "primary_rows": 243,
  "dropped": {
   "closure": 3,
   "holiday": 4
  },
- "series": 84,
+ "series": 91,
  "approval": {
-  "approved": 49,
-  "pending": 35
+  "pending": 42,
+  "approved": 49
  },
  "by_town": {
-  "Tiverton": 31,
-  "Dartmouth": 21,
-  "Somerset": 8,
+  "Dartmouth": 25,
+  "Somerset": 10,
   "New Bedford": 14,
+  "Tiverton": 32,
   "Little Compton": 10
  },
  "by_category": {
-  "Sports & Recreation": 5,
-  "Civic & Town Meetings": 24,
-  "Volunteering & Causes": 2,
+  "Civic & Town Meetings": 29,
   "Outdoors & Nature": 12,
   "Arts & Theatre": 14,
-  "(unclassified)": 13,
+  "(unclassified)": 15,
+  "Sports & Recreation": 5,
   "Library & Talks": 10,
+  "Volunteering & Causes": 2,
   "Music": 2,
   "Family & Children": 1,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "weekly": 17,
-  "once": 56,
+  "once": 63,
   "monthly": 6,
+  "weekly": 17,
   "several-a-week": 1,
   "fortnightly": 1,
   "irregular": 3
@@ -82,10 +82,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 361,
+  "check_total": 363,
   "check_matched": 10,
-  "check_missed_rows": 351,
-  "check_missed_series": 104,
+  "check_missed_rows": 353,
+  "check_missed_series": 105,
   "check_missed": [
    {
     "title": "Karaoke Nights!",
@@ -127,6 +127,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-05T13:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-09T14:00:00-05:00",
     "rows": 9
    },
    {
@@ -211,13 +218,6 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-11T07:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-09T14:00:00-05:00",
     "rows": 8
    },
    {
@@ -673,6 +673,13 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-12-30T17:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Meet the Funders: Panel & Networking for Cabo Verdean Heritage Month",
+    "venue": "Sgt. William H. Carney House",
+    "town": "New Bedford",
+    "first_start": "2026-11-15T15:00:00-05:00",
     "rows": 1
    },
    {

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-05T11:16:35.545043+00:00",
- "pending_count": 35,
- "soon_count": 14,
+ "generated_at": "2026-11-05T22:59:05.156415+00:00",
+ "pending_count": 42,
+ "soon_count": 24,
  "approved_count": 49,
  "rejected_count": 0,
  "series": [
@@ -87,9 +87,9 @@
    "soon": true
   },
   {
-   "id": "e6948b4d4c1c",
+   "id": "e0f23650c729",
    "title": "Russells Mills Historic District Commission",
-   "venue": "400 Slocum Road Room 315 Dartmouth MA 02747",
+   "venue": "400 SLOCUM RD Room 315 Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "Civic & Town Meetings",
    "source_id": "town-dartmouth",
@@ -227,6 +227,33 @@
    "soon": true
   },
   {
+   "id": "8fd0a1b6b32c",
+   "title": "Zoning Revision Committee",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T17:00:00-05:00",
+   "last_start": "2026-11-09T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T17:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2237",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-09T17:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "61d0d4421bf4",
    "title": "Somerset Middle School Building Committee",
    "venue": "(via Zoom) 309.205.3325 Meeting ID: 886 3340 7364 Passcode: 607000 OR: https://us06web.zoom.us/j/88633407364?pwd=I9AOdXTbanEB4Ie5V3VIdbobLBGEH8.1 -",
@@ -254,6 +281,60 @@
    "soon": true
   },
   {
+   "id": "8861b9f31303",
+   "title": "Dartmouth Housing Authority",
+   "venue": "2 Anderson Way Munroe Terrace Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T17:30:00-05:00",
+   "last_start": "2026-11-09T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T17:30:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2949",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-09T17:30:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "f44f84b8368e",
+   "title": "Dartmouth Fire District 2 Prudential Committee Meeting",
+   "venue": "1100 Russells Mills Road Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T19:00:00-05:00",
+   "last_start": "2026-11-09T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T19:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2948",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-09T19:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "89c483cc0d43",
    "title": "Dartmouth Waterways Management Commission",
    "venue": "",
@@ -278,6 +359,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-10T13:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "5ff711851550",
+   "title": "JOINT Transportation Planning Group & Southeastern Regional Planning & Economic Development(SRPEDD)",
+   "venue": "Zoom Registration Link: https://us02web.zoom.us/webinar/register/WN_2U7hWEn4TauckK0TqbodIQ Meeting ID: 858 6039 3336 / Passcode: 411636 -",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-10T14:00:00-05:00",
+   "last_start": "2026-11-10T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T14:00:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2017",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-10T14:00:00-05:00",
    "soon": true
   },
   {
@@ -362,6 +470,87 @@
    "soon": true
   },
   {
+   "id": "38d2183f685f",
+   "title": "Greater New Bedford Regional Vocational Technical High School School Committee",
+   "venue": "1121 Ashley Blvd. Student Forum and Live Stream - YouTube Channel New Bedford MA 02745",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-10T18:00:00-05:00",
+   "last_start": "2026-11-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:00:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2950",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-10T18:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "e9fb68875b95",
+   "title": "Community Preservation Committee Meeting",
+   "venue": "400 SLOCUM RD Room 315 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-10T18:30:00-05:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2951",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-10T18:30:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "1d5c0812ada9",
+   "title": "Economic Development Committee (EDC)",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-10T18:30:00-05:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2016",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-10T18:30:00-05:00",
+   "soon": true
+  },
+  {
    "id": "f54e688a31cc",
    "title": "Hikes for Tykes",
    "venue": "",
@@ -413,7 +602,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T18:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "97593680afeb",
@@ -440,7 +629,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T19:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "c63c8dfd6392",
@@ -467,7 +656,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T20:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "95ff263664a6",

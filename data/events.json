@@ -1,73 +1,8 @@
 {
- "generated_at": "2026-11-05T11:16:35.545043+00:00",
- "series_count": 84,
- "occurrence_count": 224,
+ "generated_at": "2026-11-05T22:59:05.156415+00:00",
+ "series_count": 91,
+ "occurrence_count": 228,
  "series": [
-  {
-   "id": "3139634ece53",
-   "title": "Balance and Mobility",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-05T09:00:00-05:00",
-   "last_start": "2026-12-31T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-05T09:00:00-05:00",
-     "end": "2026-11-05T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T09:00:00-05:00",
-     "end": "2026-11-12T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T09:00:00-05:00",
-     "end": "2026-11-19T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T09:00:00-05:00",
-     "end": "2026-11-26T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T09:00:00-05:00",
-     "end": "2026-12-03T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T09:00:00-05:00",
-     "end": "2026-12-10T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T09:00:00-05:00",
-     "end": "2026-12-17T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T09:00:00-05:00",
-     "end": "2026-12-24T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T09:00:00-05:00",
-     "end": "2026-12-31T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1641",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "0c559eba4d0f",
    "title": "Board of Assessor's Meeting",
@@ -92,136 +27,6 @@
    "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2943",
    "approval": "pending",
    "decided_by": ""
-  },
-  {
-   "id": "dd50f7398c80",
-   "title": "Bingo!",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-05T13:00:00-05:00",
-   "last_start": "2026-12-31T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T13:00:00-05:00",
-     "end": "2026-12-24T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T13:00:00-05:00",
-     "end": "2026-12-31T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1709",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "8b749f1ec307",
-   "title": "Knitting for Charity",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Volunteering & Causes",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-05T13:00:00-05:00",
-   "last_start": "2026-12-31T13:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-05T13:00:00-05:00",
-     "end": "2026-11-05T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T13:00:00-05:00",
-     "end": "2026-12-24T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T13:00:00-05:00",
-     "end": "2026-12-31T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1777",
-   "approval": "approved",
-   "decided_by": "bootstrap"
   },
   {
    "id": "ce371b49a596",
@@ -299,9 +104,9 @@
    "decided_by": ""
   },
   {
-   "id": "e6948b4d4c1c",
+   "id": "e0f23650c729",
    "title": "Russells Mills Historic District Commission",
-   "venue": "400 Slocum Road Room 315 Dartmouth MA 02747",
+   "venue": "400 SLOCUM RD Room 315 Dartmouth MA 02747",
    "town": "Dartmouth",
    "category": "Civic & Town Meetings",
    "source_id": "town-dartmouth",
@@ -999,6 +804,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "8fd0a1b6b32c",
+   "title": "Zoning Revision Committee",
+   "venue": "343 Highland Rd Tiverton RI 02878",
+   "town": "Tiverton",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T17:00:00-05:00",
+   "last_start": "2026-11-09T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T17:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2237",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "61d0d4421bf4",
    "title": "Somerset Middle School Building Committee",
    "venue": "(via Zoom) 309.205.3325 Meeting ID: 886 3340 7364 Passcode: 607000 OR: https://us06web.zoom.us/j/88633407364?pwd=I9AOdXTbanEB4Ie5V3VIdbobLBGEH8.1 -",
@@ -1020,6 +850,31 @@
     }
    ],
    "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2012",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "8861b9f31303",
+   "title": "Dartmouth Housing Authority",
+   "venue": "2 Anderson Way Munroe Terrace Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T17:30:00-05:00",
+   "last_start": "2026-11-09T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T17:30:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2949",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1062,6 +917,31 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1930",
    "approval": "approved",
    "decided_by": "bootstrap"
+  },
+  {
+   "id": "f44f84b8368e",
+   "title": "Dartmouth Fire District 2 Prudential Committee Meeting",
+   "venue": "1100 Russells Mills Road Dartmouth MA 02748",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-09T19:00:00-05:00",
+   "last_start": "2026-11-09T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-09T19:00:00-05:00",
+     "end": "2026-11-09T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2948",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "e9a8f861a681",
@@ -1319,6 +1199,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "5ff711851550",
+   "title": "JOINT Transportation Planning Group & Southeastern Regional Planning & Economic Development(SRPEDD)",
+   "venue": "Zoom Registration Link: https://us02web.zoom.us/webinar/register/WN_2U7hWEn4TauckK0TqbodIQ Meeting ID: 858 6039 3336 / Passcode: 411636 -",
+   "town": "Somerset",
+   "category": "",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-10T14:00:00-05:00",
+   "last_start": "2026-11-10T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T14:00:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2017",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "703d5b480e2d",
    "title": "Board of Library Trustees",
    "venue": "211 Cross Rd Dartmouth MA 02747",
@@ -1419,6 +1324,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "38d2183f685f",
+   "title": "Greater New Bedford Regional Vocational Technical High School School Committee",
+   "venue": "1121 Ashley Blvd. Student Forum and Live Stream - YouTube Channel New Bedford MA 02745",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-10T18:00:00-05:00",
+   "last_start": "2026-11-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:00:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2950",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "b2d5b2a3e6ec",
    "title": "Planning Board Meeting",
    "venue": "",
@@ -1447,6 +1377,56 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1956",
    "approval": "approved",
    "decided_by": "bootstrap"
+  },
+  {
+   "id": "e9fb68875b95",
+   "title": "Community Preservation Committee Meeting",
+   "venue": "400 SLOCUM RD Room 315 Dartmouth MA 02747",
+   "town": "Dartmouth",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-dartmouth",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "cost": "",
+   "first_start": "2026-11-10T18:30:00-05:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2951",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "1d5c0812ada9",
+   "title": "Economic Development Committee (EDC)",
+   "venue": "",
+   "town": "Somerset",
+   "category": "Civic & Town Meetings",
+   "source_id": "town-somerset",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "cost": "",
+   "first_start": "2026-11-10T18:30:00-05:00",
+   "last_start": "2026-11-10T18:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-10T18:30:00-05:00",
+     "end": "2026-11-10T23:59:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2016",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "a136d19cf1cd",
@@ -1594,6 +1574,66 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "3139634ece53",
+   "title": "Balance and Mobility",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-12T09:00:00-05:00",
+   "last_start": "2026-12-31T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T09:00:00-05:00",
+     "end": "2026-11-12T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T09:00:00-05:00",
+     "end": "2026-11-19T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T09:00:00-05:00",
+     "end": "2026-11-26T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T09:00:00-05:00",
+     "end": "2026-12-03T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T09:00:00-05:00",
+     "end": "2026-12-10T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T09:00:00-05:00",
+     "end": "2026-12-17T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T09:00:00-05:00",
+     "end": "2026-12-24T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T09:00:00-05:00",
+     "end": "2026-12-31T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1642",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
    "id": "f54e688a31cc",
    "title": "Hikes for Tykes",
    "venue": "",
@@ -1617,6 +1657,126 @@
    "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
    "approval": "pending",
    "decided_by": ""
+  },
+  {
+   "id": "dd50f7398c80",
+   "title": "Bingo!",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Sports & Recreation",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-12T13:00:00-05:00",
+   "last_start": "2026-12-31T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T13:00:00-05:00",
+     "end": "2026-12-24T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T13:00:00-05:00",
+     "end": "2026-12-31T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1710",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
+   "id": "8b749f1ec307",
+   "title": "Knitting for Charity",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "Volunteering & Causes",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-12T13:00:00-05:00",
+   "last_start": "2026-12-31T13:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T13:00:00-05:00",
+     "end": "2026-11-12T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T13:00:00-05:00",
+     "end": "2026-11-19T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T13:00:00-05:00",
+     "end": "2026-11-26T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T13:00:00-05:00",
+     "end": "2026-12-03T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T13:00:00-05:00",
+     "end": "2026-12-10T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T13:00:00-05:00",
+     "end": "2026-12-17T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T13:00:00-05:00",
+     "end": "2026-12-24T15:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T13:00:00-05:00",
+     "end": "2026-12-31T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1778",
+   "approval": "approved",
+   "decided_by": "bootstrap"
   },
   {
    "id": "bad28f902f46",
