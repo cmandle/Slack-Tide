@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-06T11:15:17.868408+00:00",
- "series_count": 85,
- "occurrence_count": 222,
+ "generated_at": "2026-11-06T22:55:21.989674+00:00",
+ "series_count": 69,
+ "occurrence_count": 205,
  "series": [
   {
    "id": "be494696e772",
@@ -30,121 +30,6 @@
     }
    ],
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2151",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "fe0247326a8a",
-   "title": "Zumba",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-06T09:00:00-05:00",
-   "last_start": "2027-01-01T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-11-06T09:00:00-05:00",
-     "end": "2026-11-06T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T09:00:00-05:00",
-     "end": "2026-11-13T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T09:00:00-05:00",
-     "end": "2026-11-20T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T09:00:00-05:00",
-     "end": "2026-11-27T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T09:00:00-05:00",
-     "end": "2026-12-04T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T09:00:00-05:00",
-     "end": "2026-12-11T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T09:00:00-05:00",
-     "end": "2026-12-18T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-25T09:00:00-05:00",
-     "end": "2026-12-25T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-01T09:00:00-05:00",
-     "end": "2027-01-01T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Zumba Gold https://www.tiverton.ri.gov/calendar.aspx?EID=1845",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "d8600d4c5a09",
-   "title": "Grief Support Group",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-06T10:00:00-05:00",
-   "last_start": "2026-12-18T10:00:00-05:00",
-   "count": 6,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-11-06T10:00:00-05:00",
-     "end": "2026-11-06T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-13T10:00:00-05:00",
-     "end": "2026-11-13T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T10:00:00-05:00",
-     "end": "2026-11-20T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T10:00:00-05:00",
-     "end": "2026-12-04T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T10:00:00-05:00",
-     "end": "2026-12-11T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T10:00:00-05:00",
-     "end": "2026-12-18T11:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1219",
    "approval": "approved",
    "decided_by": "bootstrap"
   },
@@ -357,36 +242,6 @@
    "summary": "Location: Game Room. Take off pounds sensibly (TOPS) https://www.tiverton.ri.gov/calendar.aspx?EID=726",
    "approval": "approved",
    "decided_by": "bootstrap"
-  },
-  {
-   "id": "9daa042b56f8",
-   "title": "Board of Registrars Meeting",
-   "venue": "400 Slocum Road Room 203 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T09:00:00-05:00",
-   "last_start": "2026-11-16T09:00:00-05:00",
-   "count": 2,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2938",
-   "approval": "pending",
-   "decided_by": ""
   },
   {
    "id": "6cc05440173a",
@@ -679,56 +534,6 @@
    "decided_by": ""
   },
   {
-   "id": "61d0d4421bf4",
-   "title": "Somerset Middle School Building Committee",
-   "venue": "(via Zoom) 309.205.3325 Meeting ID: 886 3340 7364 Passcode: 607000 OR: https://us06web.zoom.us/j/88633407364?pwd=I9AOdXTbanEB4Ie5V3VIdbobLBGEH8.1 -",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-09T17:00:00-05:00",
-   "last_start": "2026-11-09T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-09T17:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2012",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "8861b9f31303",
-   "title": "Dartmouth Housing Authority",
-   "venue": "2 Anderson Way Munroe Terrace Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T17:30:00-05:00",
-   "last_start": "2026-11-09T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-09T17:30:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2949",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "77e878936379",
    "title": "Town Council Meeting",
    "venue": "",
@@ -769,31 +574,6 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "f44f84b8368e",
-   "title": "Dartmouth Fire District 2 Prudential Committee Meeting",
-   "venue": "1100 Russells Mills Road Dartmouth MA 02748",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T19:00:00-05:00",
-   "last_start": "2026-11-09T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-09T19:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2948",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "e9a8f861a681",
    "title": "Wernick Farm Trail Work Party",
    "venue": "Wernick Farm",
@@ -828,8 +608,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-10T09:00:00-05:00",
-   "last_start": "2026-12-29T09:00:00-05:00",
-   "count": 8,
+   "last_start": "2027-01-05T09:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -871,6 +651,11 @@
     {
      "start": "2026-12-29T09:00:00-05:00",
      "end": "2026-12-29T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-05T09:00:00-05:00",
+     "end": "2027-01-05T10:00:00-05:00",
      "all_day": false
     }
    ],
@@ -964,31 +749,6 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "89c483cc0d43",
-   "title": "Dartmouth Waterways Management Commission",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T13:00:00-05:00",
-   "last_start": "2026-11-10T13:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T13:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2945",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "7bb4bc5fcf8f",
    "title": "Art Class",
    "venue": "",
@@ -998,8 +758,8 @@
    "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
    "cost": "",
    "first_start": "2026-11-10T14:00:00-05:00",
-   "last_start": "2026-12-29T14:00:00-05:00",
-   "count": 8,
+   "last_start": "2027-01-05T14:00:00-05:00",
+   "count": 9,
    "cadence": "weekly",
    "weekday": 1,
    "occurrences": [
@@ -1042,111 +802,16 @@
      "start": "2026-12-29T14:00:00-05:00",
      "end": "2026-12-29T15:30:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2027-01-05T14:00:00-05:00",
+     "end": "2027-01-05T15:30:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "Location: Dining Room. Acrylic painting; everyone does their own artwork no instructor fee is for supplies cost https://www.tiverton.ri.gov/calendar.aspx?EID=1352",
    "approval": "approved",
    "decided_by": "bootstrap"
-  },
-  {
-   "id": "5ff711851550",
-   "title": "JOINT Transportation Planning Group & Southeastern Regional Planning & Economic Development(SRPEDD)",
-   "venue": "Zoom Registration Link: https://us02web.zoom.us/webinar/register/WN_2U7hWEn4TauckK0TqbodIQ Meeting ID: 858 6039 3336 / Passcode: 411636 -",
-   "town": "Somerset",
-   "category": "",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T14:00:00-05:00",
-   "last_start": "2026-11-10T14:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T14:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2017",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "703d5b480e2d",
-   "title": "Board of Library Trustees",
-   "venue": "211 Cross Rd Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T17:00:00-05:00",
-   "last_start": "2026-11-10T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T17:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2947",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "1cef14d3d6ff",
-   "title": "Somerset School Committee",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T17:30:00-05:00",
-   "last_start": "2026-11-10T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T17:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Middle School. https://www.townofsomerset.org/calendar.aspx?EID=2011",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "baadf4958993",
-   "title": "Agricultural Commission jointly with CPC",
-   "venue": "400 Slocum Road Room 305 and 315 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T17:45:00-05:00",
-   "last_start": "2026-11-10T17:45:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T17:45:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2944",
-   "approval": "pending",
-   "decided_by": ""
   },
   {
    "id": "e80a59b774f0",
@@ -1172,31 +837,6 @@
    "summary": "Bobcats are important predators in eastern forests, and their numbers appear to be increasing locally according to recent camera trap data. The Rhode Island Bobcat Project uses GPS collars, camera traps, and citizen science to better understand how bobcats use highly fragmented, densely populated la",
    "approval": "approved",
    "decided_by": "bootstrap"
-  },
-  {
-   "id": "38d2183f685f",
-   "title": "Greater New Bedford Regional Vocational Technical High School School Committee",
-   "venue": "1121 Ashley Blvd. Student Forum and Live Stream - YouTube Channel New Bedford MA 02745",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T18:00:00-05:00",
-   "last_start": "2026-11-10T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2950",
-   "approval": "pending",
-   "decided_by": ""
   },
   {
    "id": "b2d5b2a3e6ec",
@@ -1227,56 +867,6 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1956",
    "approval": "approved",
    "decided_by": "bootstrap"
-  },
-  {
-   "id": "e9fb68875b95",
-   "title": "Community Preservation Committee Meeting",
-   "venue": "400 SLOCUM RD Room 315 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T18:30:00-05:00",
-   "last_start": "2026-11-10T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2951",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "1d5c0812ada9",
-   "title": "Economic Development Committee (EDC)",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T18:30:00-05:00",
-   "last_start": "2026-11-10T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2016",
-   "approval": "pending",
-   "decided_by": ""
   },
   {
    "id": "a136d19cf1cd",
@@ -1684,56 +1274,6 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "5f4ce9f24ae2",
-   "title": "Zoning Board of Appeals",
-   "venue": "1480 County Street Somerset MA 02726",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=1998",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "97593680afeb",
-   "title": "Taunton River Stewardship Council (TRSC)",
-   "venue": "",
-   "town": "Somerset",
-   "category": "",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-12T19:00:00-05:00",
-   "last_start": "2026-11-12T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T19:00:00-05:00",
-     "end": "2026-11-12T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Taunton River Watershed Center. https://www.townofsomerset.org/calendar.aspx?EID=2015",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "c63c8dfd6392",
    "title": "After Dark",
    "venue": "The Zeiterion",
@@ -1759,6 +1299,66 @@
    "decided_by": ""
   },
   {
+   "id": "fe0247326a8a",
+   "title": "Zumba",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-13T09:00:00-05:00",
+   "last_start": "2027-01-01T09:00:00-05:00",
+   "count": 8,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-11-13T09:00:00-05:00",
+     "end": "2026-11-13T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T09:00:00-05:00",
+     "end": "2026-11-20T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-27T09:00:00-05:00",
+     "end": "2026-11-27T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T09:00:00-05:00",
+     "end": "2026-12-04T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T09:00:00-05:00",
+     "end": "2026-12-11T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T09:00:00-05:00",
+     "end": "2026-12-18T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-25T09:00:00-05:00",
+     "end": "2026-12-25T10:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-01T09:00:00-05:00",
+     "end": "2027-01-01T10:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Dining Room. Zumba Gold https://www.tiverton.ri.gov/calendar.aspx?EID=1846",
+   "approval": "approved",
+   "decided_by": "bootstrap"
+  },
+  {
    "id": "95ff263664a6",
    "title": "Tax Collectors Sale of Estates for Taxes and/or Assessments Due and Unpaid",
    "venue": "343 Highland Rd Tiverton RI 02878",
@@ -1782,6 +1382,51 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2234",
    "approval": "pending",
    "decided_by": ""
+  },
+  {
+   "id": "d8600d4c5a09",
+   "title": "Grief Support Group",
+   "venue": "",
+   "town": "Tiverton",
+   "category": "",
+   "source_id": "town-tiverton",
+   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "cost": "",
+   "first_start": "2026-11-13T10:00:00-05:00",
+   "last_start": "2026-12-18T10:00:00-05:00",
+   "count": 5,
+   "cadence": "weekly",
+   "weekday": 4,
+   "occurrences": [
+    {
+     "start": "2026-11-13T10:00:00-05:00",
+     "end": "2026-11-13T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-20T10:00:00-05:00",
+     "end": "2026-11-20T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-04T10:00:00-05:00",
+     "end": "2026-12-04T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-11T10:00:00-05:00",
+     "end": "2026-12-11T11:30:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-18T10:00:00-05:00",
+     "end": "2026-12-18T11:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1221",
+   "approval": "approved",
+   "decided_by": "bootstrap"
   },
   {
    "id": "9b4c9e0bcc2e",
@@ -2152,56 +1797,6 @@
    "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2043",
    "approval": "approved",
    "decided_by": "bootstrap"
-  },
-  {
-   "id": "d3712eafca16",
-   "title": "Board of Assessors",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-18T18:00:00-05:00",
-   "last_start": "2026-11-18T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-18T18:00:00-05:00",
-     "end": "2026-11-18T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2013",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "796c750946c6",
-   "title": "Public Hearing for Transfer of and Change of Manager On-premise Restaurant All Alcoholic Beverage License",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-18T18:15:00-05:00",
-   "last_start": "2026-11-18T18:15:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-18T18:15:00-05:00",
-     "end": "2026-11-18T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2008",
-   "approval": "pending",
-   "decided_by": ""
   },
   {
    "id": "138a383d63b1",
