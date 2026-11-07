@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-07T10:55:12.000752+00:00",
+ "generated_at": "2026-11-07T22:50:30.906018+00:00",
  "pending_count": 37,
- "soon_count": 20,
+ "soon_count": 21,
  "approved_count": 48,
  "rejected_count": 0,
  "series": [
@@ -585,7 +585,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-14T11:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "67bacb13bd00",

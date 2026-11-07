@@ -2,39 +2,39 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 129,
-   "seconds": 2.99
+   "seconds": 3.51
   },
   "viva-fall-river": {
-   "rows": 222,
-   "seconds": 13.91
+   "rows": 223,
+   "seconds": 14.85
   },
   "brownell-library": {
    "rows": 14,
-   "seconds": 0.45
+   "seconds": 0.48
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 5.73
+   "seconds": 3.74
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 3.98
+   "seconds": 4.45
   },
   "zeiterion": {
    "rows": 16,
-   "seconds": 0.43
+   "seconds": 0.41
   },
   "town-tiverton": {
    "rows": 171,
-   "seconds": 0.46
+   "seconds": 0.55
   },
   "town-dartmouth": {
    "rows": 9,
-   "seconds": 0.39
+   "seconds": 0.34
   },
   "town-somerset": {
    "rows": 12,
-   "seconds": 0.39
+   "seconds": 0.41
   }
  },
  "errors": {},
@@ -82,9 +82,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 351,
+  "check_total": 352,
   "check_matched": 9,
-  "check_missed_rows": 342,
+  "check_missed_rows": 343,
   "check_missed_series": 101,
   "check_missed": [
    {
@@ -106,6 +106,13 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-08T14:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Kids eat FREE on Wednesdays",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-11T07:00:00-05:00",
     "rows": 9
    },
    {
@@ -190,13 +197,6 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-10T16:00:00-05:00",
-    "rows": 8
-   },
-   {
-    "title": "Kids eat FREE on Wednesdays",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-11T07:00:00-05:00",
     "rows": 8
    },
    {
