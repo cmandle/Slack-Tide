@@ -1,59 +1,65 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 131,
-   "seconds": 3.12
+   "rows": 129,
+   "seconds": 2.99
   },
   "viva-fall-river": {
-   "rows": 224,
-   "seconds": 15.24
+   "rows": 222,
+   "seconds": 13.91
   },
   "brownell-library": {
    "rows": 14,
-   "seconds": 0.62
+   "seconds": 0.45
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.06
+   "seconds": 5.73
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 6.29
+   "seconds": 3.98
   },
   "zeiterion": {
-   "rows": 17,
-   "seconds": 0.54
+   "rows": 16,
+   "seconds": 0.43
   },
   "town-tiverton": {
-   "rows": 172,
-   "seconds": 0.48
+   "rows": 171,
+   "seconds": 0.46
+  },
+  "town-dartmouth": {
+   "rows": 9,
+   "seconds": 0.39
+  },
+  "town-somerset": {
+   "rows": 12,
+   "seconds": 0.39
   }
  },
- "errors": {
-  "town-dartmouth": "ConnectTimeout: HTTPSConnectionPool(host='www.dartmouthma.gov', port=443): Max retries exceeded with url: /common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.dartmouthma.gov', port=443) at 0x7f3a07b28d10>, 'Connection to www.dartmouthma.gov timed out. (connect timeout=30)'))",
-  "town-somerset": "ConnectTimeout: HTTPSConnectionPool(host='www.townofsomerset.org', port=443): Max retries exceeded with url: /common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.townofsomerset.org', port=443) at 0x7f3a07358110>, 'Connection to www.townofsomerset.org timed out. (connect timeout=30)'))"
- },
- "primary_rows": 217,
+ "errors": {},
+ "primary_rows": 236,
  "dropped": {
-  "closure": 2,
-  "holiday": 2
+  "closure": 3,
+  "holiday": 4
  },
- "series": 69,
+ "series": 85,
  "approval": {
-  "approved": 47,
-  "pending": 22
+  "pending": 37,
+  "approved": 48
  },
  "by_town": {
+  "New Bedford": 12,
   "Tiverton": 32,
-  "New Bedford": 13,
+  "Dartmouth": 22,
   "Little Compton": 10,
-  "Dartmouth": 14
+  "Somerset": 9
  },
  "by_category": {
-  "Civic & Town Meetings": 12,
-  "Arts & Theatre": 13,
+  "Arts & Theatre": 12,
   "Sports & Recreation": 5,
-  "(unclassified)": 12,
+  "(unclassified)": 15,
+  "Civic & Town Meetings": 26,
   "Library & Talks": 10,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 11,
@@ -62,11 +68,11 @@
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "monthly": 6,
-  "once": 42,
+  "once": 58,
   "several-a-week": 1,
-  "weekly": 16,
+  "weekly": 17,
   "fortnightly": 1,
+  "monthly": 5,
   "irregular": 3
  },
  "weekend_gate": {
@@ -76,10 +82,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 355,
+  "check_total": 351,
   "check_matched": 9,
-  "check_missed_rows": 346,
-  "check_missed_series": 103,
+  "check_missed_rows": 342,
+  "check_missed_series": 101,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -94,20 +100,6 @@
     "town": "New Bedford",
     "first_start": "2026-11-08T21:00:00-05:00",
     "rows": 17
-   },
-   {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-06T17:30:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "Friday Night Volleyball (weekly)",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 9
    },
    {
     "title": "KidZone",
@@ -131,6 +123,13 @@
     "rows": 9
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-10T20:00:00-05:00",
+    "rows": 9
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -145,24 +144,17 @@
     "rows": 9
    },
    {
-    "title": "Primo After Dark - Weekly DJ Sets",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-06T20:00:00-05:00",
-    "rows": 9
-   },
-   {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-06T18:00:00-05:00",
-    "rows": 9
-   },
-   {
     "title": "Tai Chi at Buttonwood Park",
     "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
     "first_start": "2026-11-08T09:30:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-11-10T19:30:00-05:00",
     "rows": 9
    },
    {
@@ -173,10 +165,24 @@
     "rows": 8
    },
    {
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-13T17:30:00-05:00",
+    "rows": 8
+   },
+   {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
     "first_start": "2026-11-10T18:00:00-05:00",
+    "rows": 8
+   },
+   {
+    "title": "Friday Night Volleyball (weekly)",
+    "venue": "Greater Fall River Re-CREATION",
+    "town": "Fall River",
+    "first_start": "2026-11-13T17:00:00-05:00",
     "rows": 8
    },
    {
@@ -222,17 +228,17 @@
     "rows": 8
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-10T20:00:00-05:00",
+    "title": "Primo After Dark - Weekly DJ Sets",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-13T20:00:00-05:00",
     "rows": 8
    },
    {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-11-10T19:30:00-05:00",
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-13T18:00:00-05:00",
     "rows": 8
    },
    {
@@ -579,13 +585,6 @@
     "rows": 1
    },
    {
-    "title": "First Friday: The Art of Hip Hop",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-06T17:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Funky White Honkies",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -604,13 +603,6 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-17T18:30:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Jason Robert Brown with Special Broadway Guests",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-11-06T20:00:00-05:00",
     "rows": 1
    },
    {
@@ -807,9 +799,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 17,
-  "primary_only_series": 13,
-  "coverage_ratio": 0.025
+  "primary_only_count": 16,
+  "primary_only_series": 12,
+  "coverage_ratio": 0.026
  },
  "tide_error": null
 }
