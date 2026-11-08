@@ -41,7 +41,7 @@ From the run report of 25 October 2026 (`rows` is occurrences in the 60-day wind
 | Submissions | any | published Google Sheet | 0 | primary, disabled | Waiting on the form (issue 18). |
 | Little Compton Historical Society | Little Compton | Tribe REST | | disabled | Plugin confirmed; the probe hit a rate limit (429), so test by hand and enable. |
 | Mattapoisett Land Trust | Mattapoisett | Tribe REST | | disabled | Probe confirmed: 2 events. Enable. |
-| Buzzards Bay Coalition | regional | HTML listing | | disabled | Dates live in a FareHarbor widget; see section 5. |
+| Buzzards Bay Coalition | regional | HTML listing with detail pages | | enabled 8 Nov 2026 | One-off adventures dated on the listing; recurring programmes still in FareHarbor (issue 19). |
 | The New Bedford Light | New Bedford | RSS | | disabled | Articles, not events; a later extraction pass (issue 14). |
 
 Published towns today: Tiverton, Dartmouth, Little Compton, New Bedford, Somerset, Westport. The weekend gate needs fifty series across five towns, so the order of work below is about towns first and volume second.
@@ -55,7 +55,7 @@ The editors asked to pause most of what section 2 reads and concentrate on a nam
 | The Zeiterion | Webflow listing, `html` connector, `review: auto` | In use | Publishing |
 | AHA! New Bedford | The next-AHA page (`/next-aha/`) is an Elementor post loop, one card per activity with venue, description, "Ends:" and the start time as a WordPress tag class; the night's date is in the headings. The Tribe endpoint carries 28 test-titled entries and waits. | HTML listing with `page_when`, `when_class`, `end`; enabled as `aha-next-aha` | In use. AHA Night itself declared on `standing-new-bedford` |
 | DNRT | Tribe REST | In use | Publishing on approval |
-| Buzzards Bay Coalition | Craft CMS; Bay Adventures dates in FareHarbor | Ask (issue 19) | Entry disabled |
+| Buzzards Bay Coalition | The Bay Adventures listing now dates its one-off adventures, and each card's page gives time, venue and address. The recurring programmes (full moon walks, Itty Bitty, Adventure Ready) still keep their dates in FareHarbor. | HTML listing with `detail` pages, enabled; issue 19 still asks for the recurring ones | In use |
 | PLAY Arcade | Squarespace; "Trivia every Wednesday from 7-9PM. Karaoke every Thursday from 8PM-12AM." on the home page; no event collection | Declared schedule | Two series on `standing-new-bedford` |
 | New Beige | Squarespace, menus only; events on Instagram. Editor names Wednesday trivia; the only listing found online is Thursday music bingo | Declared schedule once the night and time are confirmed | Entry disabled |
 | Cisco Brewers Kitchen & Bar | ciscokitchenbar.com (BentoBox): `/live-music/` lists the month's shows as pairs of paragraphs, date then "artist 7pm"; `/happenings/` states the weekly brunch and the first- and third-Tuesday chef nights in prose | HTML listing with `group_next` (`cisco-live-music`); brunch and chef nights declared on `standing-new-bedford` | In use |

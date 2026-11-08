@@ -31,8 +31,17 @@ Source entry::
                                                    # no time of its own
         group_next: 1                              # optional; the item is this node plus the next N
                                                    # element siblings (a date <p> then an artist <p>)
+        detail:                                    # optional; follow each item's url and read these
+          when: ".event-date"                      # there, overriding the listing where they match
+          end: ".event-time"                       # (the Coalition's cards say "Saturday, November
+          venue: ".location-name"                  # 14"; the page behind says when, where and in
+          town: ".location-address"                # which town)
+          description: "p.intro"
+          cost: ".price"
 
-A title that ends in a time ("Day Drinkers 7pm") loses the time; it is read from `when`.
+`url` may name the item itself ("a.card" when the item is that anchor). `end` takes the last
+time in its text, so "3:00 PM - 6:30 PM" ends at 6:30. A `town` text that carries a ZIP code or
+a town name resolves to the town. A title that ends in a time ("Day Drinkers 7pm") loses the time; it is read from `when`.
 
 Dates are human-readable and site-specific ("Friday Oct 30 8:00 pm", "Sat 3:00 pm Oct 31
 Sun 3:00 pm Nov 1"). parse_when() finds every month-and-day and pairs each with the nearest
@@ -49,7 +58,10 @@ from datetime import datetime, time, timedelta
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from bs4.element import Tag
+import soupsieve
+from ..config import ZIP_TO_TOWN
 from ..models import Occurrence
+from ..normalize import town_in_text
 from .base import Connector
 
 MONTHS = {m: i + 1 for i, m in enumerate(
@@ -107,15 +119,34 @@ def has_time(text: str) -> bool:
     return bool(_TIME.search(text or ""))
 
 
-def first_time(text: str) -> time | None:
-    """The first clock time in `text` ("Ends: 8:00pm" -> 20:00), or None."""
-    m = _TIME.search(text or "")
-    if not m:
-        return None
+def _as_time(m: re.Match) -> time:
     hour, minute = int(m.group(1)) % 12, int(m.group(2) or 0)
     if m.group(3).lower().startswith("p"):
         hour += 12
     return time(hour, minute)
+
+
+def first_time(text: str) -> time | None:
+    """The first clock time in `text` ("Ends: 8:00pm" -> 20:00), or None."""
+    m = _TIME.search(text or "")
+    return _as_time(m) if m else None
+
+
+def last_time(text: str) -> time | None:
+    """The last clock time in `text` ("3:00 PM - 6:30 PM" -> 18:30), or None."""
+    found = list(_TIME.finditer(text or ""))
+    return _as_time(found[-1]) if found else None
+
+
+_ZIP = re.compile(r"\b(\d{5})\b")
+
+
+def town_from_text(text: str) -> str:
+    """A town from an address line: its ZIP code first, then a town name in the text, else ''."""
+    for z in _ZIP.findall(text or ""):
+        if z in ZIP_TO_TOWN:
+            return ZIP_TO_TOWN[z]
+    return town_in_text(text or "")
 
 
 _CLASS_TIME = re.compile(r"^(\d{1,2})(\d{2})?(am|pm)$", re.I)
@@ -164,7 +195,10 @@ class HtmlConnector(Connector):
 
     # -- parsing, separated from fetching so the tests can feed a saved page
 
-    def parse(self, page: str) -> list[Occurrence]:
+    def parse(self, page: str, fetch=None) -> list[Occurrence]:
+        """`fetch(url) -> html` reads detail pages when select.detail is set; the tests pass a
+        function over saved fixtures, the pipeline uses the connector's own cached fetch."""
+        fetch = fetch or self.fetch_text
         sel = self.source.get("select") or {}
         if "item" not in sel or "title" not in sel or ("when" not in sel and "page_when" not in sel):
             raise ValueError(f"{self.id}: an html source needs select.item, select.title and select.when (or select.page_when)")
@@ -198,13 +232,32 @@ class HtmlConnector(Connector):
                 t = first_time(when_text) or default_start
                 starts = [datetime.combine(page_date, t or time(0, 0), tzinfo=self.tz)]
                 timed = t is not None
-            if not starts:
-                continue
-            end_time = first_time(_text(item, sel.get("end"))) if sel.get("end") else None
+            end_time = last_time(_text(item, sel.get("end"))) if sel.get("end") else None
             venue = _text(item, sel.get("venue")) or self.source.get("venue", "")
             town = _text(item, sel.get("town"))
             cost = _text(item, sel.get("cost"))
             desc = _text_all(item, sel.get("description"))   # every matching node: Elementor splits a body over widgets
+            detail = sel.get("detail")
+            if detail and url:
+                try:
+                    page_detail = BeautifulSoup(fetch(url), "html.parser")
+                except Exception as e:       # one unreadable page must not sink the listing
+                    print(f"{self.id}: detail page {url} not read ({type(e).__name__}: {e})")
+                    page_detail = None
+                if page_detail is not None:
+                    d_when = " ".join(n.get_text(" ", strip=True) for n in page_detail.select(detail["when"])) if detail.get("when") else ""
+                    d_starts = parse_when(d_when, self.now)
+                    if d_starts:
+                        starts, timed = d_starts, has_time(d_when)
+                    if detail.get("end"):
+                        end_time = last_time(_text(page_detail, detail["end"])) or end_time
+                    venue = _text(page_detail, detail.get("venue")) or venue
+                    town = _text(page_detail, detail.get("town")) or town
+                    cost = _text(page_detail, detail.get("cost")) or cost
+                    desc = _text_all(page_detail, detail.get("description")) or desc
+            if not starts:
+                continue
+            town = town_from_text(town) or town
             for start in starts:
                 uid = f"{url or title}#{start.isoformat()}"
                 if uid in seen:
@@ -245,5 +298,7 @@ def _href(node: Tag, selector: str | None, base: str) -> str:
     if not selector:
         return ""
     found = node.select_one(selector)
+    if found is None and soupsieve.match(selector, node):   # the item is the anchor itself
+        found = node
     href = found.get("href") if found else None
     return urljoin(base, href) if href else ""

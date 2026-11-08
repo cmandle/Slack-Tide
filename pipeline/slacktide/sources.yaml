@@ -76,20 +76,29 @@
 - id: buzzards-bay-coalition
   name: Buzzards Bay Coalition
   kind: html
-  url: https://savebuzzardsbay.org/events/bay-adventures
-  town: New Bedford
+  url: https://www.savebuzzardsbay.org/events/bay-adventures/
+  town: ""
   role: primary
-  enabled: false
+  provenance: Posted by the organisation
+  default_category: Outdoors & Nature
   select:
     item: "a.discovery-card"
     title: ".discovery-card-title"
-    url: "a.discovery-card"
-    when: ".discovery-card-meta"
+    url: "a.discovery-card"            # the card is the anchor
+    when: ".discovery-card-meta"       # "Saturday, November 14", or "Monthly at Horseneck Beach"
+    detail:                            # the page behind each dated card
+      when: ".event-date-block-content"      # "November 12, 2026 3:00 PM - 6:30 PM"
+      end: ".event-date-block-time"
+      venue: ".location-block-name"
+      town: ".location-block-address"        # "186 Onset Avenue Onset, Massachusetts 02558"; the ZIP resolves the town
+      description: ".rich-text-content p.intro"
   note: >-
-    Craft CMS, no feed. The listing card says "October 25 at Onset Bay Center" for one-off
-    adventures but "Monthly at Horseneck Beach" for the recurring ones, whose dates are inside a
-    FareHarbor booking widget the connector cannot read. Ask the Coalition for an iCal or CSV
-    export before enabling; what this entry would yield is a handful of one-offs with no venue.
+    Craft CMS, no feed. Enabled 2026-11-08 (decision 13): the listing now dates its one-off
+    adventures ("Saturday, November 14"; six of nine cards on that day) and the page behind each
+    card gives the time, the venue and the address, so the town comes from the ZIP. The recurring
+    programmes (Full Moon Walks "Monthly at Horseneck Beach", Itty Bitty, Adventure Ready) keep
+    their dates inside a FareHarbor booking widget and yield nothing here; issue 19 asks the
+    Coalition for an export of those. Was disabled from 2026-10-25 to 2026-11-08.
 
 - id: little-compton-historical
   name: Little Compton Historical Society
