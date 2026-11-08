@@ -2,31 +2,35 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 178,
-   "seconds": 3.69
+   "seconds": 4.08
   },
   "viva-fall-river": {
    "rows": 312,
-   "seconds": 17.28
+   "seconds": 28.78
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.32
+   "seconds": 2.66
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.47
+   "seconds": 0.42
+  },
+  "buzzards-bay-coalition": {
+   "rows": 6,
+   "seconds": 4.77
   },
   "aha-next-aha": {
    "rows": 29,
-   "seconds": 0.25
+   "seconds": 0.42
   },
   "cisco-live-music": {
    "rows": 9,
-   "seconds": 0.12
+   "seconds": 0.13
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.3
+   "seconds": 0.28
   },
   "standing-new-bedford": {
    "rows": 48,
@@ -34,20 +38,24 @@
   }
  },
  "errors": {},
- "primary_rows": 123,
+ "primary_rows": 129,
  "dropped": {},
- "series": 75,
+ "series": 81,
  "approval": {
-  "pending": 50,
+  "pending": 56,
   "approved": 25
  },
  "by_town": {
   "New Bedford": 61,
-  "Dartmouth": 14
+  "Dartmouth": 14,
+  "Wareham": 2,
+  "": 2,
+  "Mattapoisett": 1,
+  "Acushnet": 1
  },
  "by_category": {
   "Music": 16,
-  "Outdoors & Nature": 11,
+  "Outdoors & Nature": 17,
   "(unclassified)": 1,
   "Sports & Recreation": 1,
   "Arts & Theatre": 31,
@@ -61,7 +69,7 @@
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 66,
+  "once": 72,
   "weekly": 4,
   "monthly": 3,
   "irregular": 1,
