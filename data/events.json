@@ -1,600 +1,115 @@
 {
- "generated_at": "2026-11-08T16:46:42.496219+00:00",
- "series_count": 90,
- "occurrence_count": 251,
+ "generated_at": "2026-11-08T17:34:06.875599+00:00",
+ "series_count": 75,
+ "occurrence_count": 123,
  "series": [
   {
-   "id": "ee5aab63f527",
-   "title": "Functional Fitness",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "id": "1397a2bbf9e5",
+   "title": "Truue Duo",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
-   "first_start": "2026-11-09T09:00:00-05:00",
-   "last_start": "2026-12-30T00:00:00-05:00",
-   "count": 16,
-   "cadence": "several-a-week",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-11T00:00:00-05:00",
-     "end": "2026-11-11T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T00:00:00-05:00",
-     "end": "2026-11-18T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T00:00:00-05:00",
-     "end": "2026-11-25T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T00:00:00-05:00",
-     "end": "2026-12-02T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T00:00:00-05:00",
-     "end": "2026-12-09T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T00:00:00-05:00",
-     "end": "2026-12-16T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-21T09:00:00-05:00",
-     "end": "2026-12-21T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T00:00:00-05:00",
-     "end": "2026-12-23T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-28T09:00:00-05:00",
-     "end": "2026-12-28T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T00:00:00-05:00",
-     "end": "2026-12-30T00:00:00-05:00",
-     "all_day": true
-    }
-   ],
-   "summary": "Location: Dining Room. with instructor Debbie Gagnon. https://www.tiverton.ri.gov/calendar.aspx?EID=788",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "5a6902aea5cc",
-   "title": "TOPS",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-09T09:00:00-05:00",
-   "last_start": "2026-12-28T09:00:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T09:00:00-05:00",
-     "end": "2026-11-30T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T09:00:00-05:00",
-     "end": "2026-12-07T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T09:00:00-05:00",
-     "end": "2026-12-14T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T09:00:00-05:00",
-     "end": "2026-12-21T11:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-28T09:00:00-05:00",
-     "end": "2026-12-28T11:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. Take off pounds sensibly (TOPS) https://www.tiverton.ri.gov/calendar.aspx?EID=726",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "9daa042b56f8",
-   "title": "Board of Registrars Meeting",
-   "venue": "400 Slocum Road Room 203 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T09:00:00-05:00",
-   "last_start": "2026-11-16T09:00:00-05:00",
-   "count": 2,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T09:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T09:00:00-05:00",
-     "end": "2026-11-16T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2938",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "6cc05440173a",
-   "title": "Medicare Help Sessions - Contact the Library to Register",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/medicare-help-sessions-contact-the-library-to-register-2/",
-   "cost": "",
-   "first_start": "2026-11-09T10:00:00-05:00",
-   "last_start": "2026-11-09T10:00:00-05:00",
+   "first_start": "2026-11-07T19:00:00-05:00",
+   "last_start": "2026-11-07T19:00:00-05:00",
    "count": 1,
    "cadence": "once",
    "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-09T10:00:00-05:00",
-     "end": "2026-11-09T15:00:00-05:00",
+     "start": "2026-11-07T19:00:00-05:00",
+     "end": null,
      "all_day": false
     }
    ],
    "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "eb9c80990cb1",
-   "title": "Quilting for Charity",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Volunteering & Causes",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-09T10:00:00-05:00",
-   "last_start": "2026-12-28T10:00:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T10:00:00-05:00",
-     "end": "2026-11-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:00:00-05:00",
-     "end": "2026-11-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:00:00-05:00",
-     "end": "2026-11-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:00:00-05:00",
-     "end": "2026-11-30T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:00:00-05:00",
-     "end": "2026-12-07T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:00:00-05:00",
-     "end": "2026-12-14T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T10:00:00-05:00",
-     "end": "2026-12-21T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-28T10:00:00-05:00",
-     "end": "2026-12-28T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Basement. Quilting and Organizing donations https://www.tiverton.ri.gov/calendar.aspx?EID=912",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "a04898c37ccd",
-   "title": "Senior Fitness with Terri",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-09T10:15:00-05:00",
-   "last_start": "2026-12-28T10:15:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T10:15:00-05:00",
-     "end": "2026-11-09T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T10:15:00-05:00",
-     "end": "2026-11-16T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T10:15:00-05:00",
-     "end": "2026-11-23T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T10:15:00-05:00",
-     "end": "2026-11-30T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T10:15:00-05:00",
-     "end": "2026-12-07T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T10:15:00-05:00",
-     "end": "2026-12-14T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T10:15:00-05:00",
-     "end": "2026-12-21T11:15:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-28T10:15:00-05:00",
-     "end": "2026-12-28T11:15:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2206",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "bd3e7d21ebe8",
-   "title": "PITCH~ High Lo Jack",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-09T12:30:00-05:00",
-   "last_start": "2026-12-28T12:30:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T12:30:00-05:00",
-     "end": "2026-11-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T12:30:00-05:00",
-     "end": "2026-11-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T12:30:00-05:00",
-     "end": "2026-11-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T12:30:00-05:00",
-     "end": "2026-11-30T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T12:30:00-05:00",
-     "end": "2026-12-07T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T12:30:00-05:00",
-     "end": "2026-12-14T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T12:30:00-05:00",
-     "end": "2026-12-21T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-28T12:30:00-05:00",
-     "end": "2026-12-28T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. Coordinator: Marie Whitty https://www.tiverton.ri.gov/calendar.aspx?EID=974",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "bc68ff454c8d",
-   "title": "Learn Ukulele",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-09T13:00:00-05:00",
-   "last_start": "2026-12-28T13:00:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T13:00:00-05:00",
-     "end": "2026-11-09T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-16T13:00:00-05:00",
-     "end": "2026-11-16T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-23T13:00:00-05:00",
-     "end": "2026-11-23T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-30T13:00:00-05:00",
-     "end": "2026-11-30T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-07T13:00:00-05:00",
-     "end": "2026-12-07T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T13:00:00-05:00",
-     "end": "2026-12-14T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T13:00:00-05:00",
-     "end": "2026-12-21T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-28T13:00:00-05:00",
-     "end": "2026-12-28T14:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Instructor: Otis Read Assistant Instructor: Mark Daniels https://www.tiverton.ri.gov/calendar.aspx?EID=1036",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "8fd0a1b6b32c",
-   "title": "Zoning Revision Committee",
-   "venue": "343 Highland Rd Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T17:00:00-05:00",
-   "last_start": "2026-11-09T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-09T17:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2237",
    "approval": "pending",
    "decided_by": ""
   },
   {
-   "id": "61d0d4421bf4",
-   "title": "Somerset Middle School Building Committee",
-   "venue": "(via Zoom) 309.205.3325 Meeting ID: 886 3340 7364 Passcode: 607000 OR: https://us06web.zoom.us/j/88633407364?pwd=I9AOdXTbanEB4Ie5V3VIdbobLBGEH8.1 -",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "id": "e2ba4aa4ad25",
+   "title": "Live Music Beatles Brunch",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
-   "first_start": "2026-11-09T17:00:00-05:00",
-   "last_start": "2026-11-09T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "first_start": "2026-11-08T10:00:00-05:00",
+   "last_start": "2027-01-31T10:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 6,
    "occurrences": [
     {
-     "start": "2026-11-09T17:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2012",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "8861b9f31303",
-   "title": "Dartmouth Housing Authority",
-   "venue": "2 Anderson Way Munroe Terrace Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T17:30:00-05:00",
-   "last_start": "2026-11-09T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-09T17:30:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2949",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "77e878936379",
-   "title": "Town Council Meeting",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T19:00:00-05:00",
-   "last_start": "2026-12-28T19:00:00-05:00",
-   "count": 4,
-   "cadence": "fortnightly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-09T19:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
+     "start": "2026-11-08T10:00:00-05:00",
+     "end": "2026-11-08T14:00:00-05:00",
      "all_day": false
     },
     {
-     "start": "2026-11-23T19:00:00-05:00",
-     "end": "2026-11-23T23:59:00-05:00",
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T14:00:00-05:00",
      "all_day": false
     },
     {
-     "start": "2026-12-14T19:00:00-05:00",
-     "end": "2026-12-14T23:59:00-05:00",
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T14:00:00-05:00",
      "all_day": false
     },
     {
-     "start": "2026-12-28T19:00:00-05:00",
-     "end": "2026-12-28T23:59:00-05:00",
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
      "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1930",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "f44f84b8368e",
-   "title": "Dartmouth Fire District 2 Prudential Committee Meeting",
-   "venue": "1100 Russells Mills Road Dartmouth MA 02748",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-09T19:00:00-05:00",
-   "last_start": "2026-11-09T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
+    },
     {
-     "start": "2026-11-09T19:00:00-05:00",
-     "end": "2026-11-09T23:59:00-05:00",
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T10:00:00-05:00",
+     "end": "2026-12-20T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-27T10:00:00-05:00",
+     "end": "2026-12-27T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-03T10:00:00-05:00",
+     "end": "2027-01-03T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-10T10:00:00-05:00",
+     "end": "2027-01-10T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-17T10:00:00-05:00",
+     "end": "2027-01-17T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-24T10:00:00-05:00",
+     "end": "2027-01-24T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-31T10:00:00-05:00",
+     "end": "2027-01-31T14:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2948",
+   "summary": "",
    "approval": "pending",
    "decided_by": ""
   },
@@ -624,411 +139,6 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "3c769e6096a9",
-   "title": "Chair Yoga",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-10T09:00:00-05:00",
-   "last_start": "2027-02-02T09:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-10T09:00:00-05:00",
-     "end": "2026-11-10T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T09:00:00-05:00",
-     "end": "2026-11-17T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-24T09:00:00-05:00",
-     "end": "2026-11-24T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T09:00:00-05:00",
-     "end": "2026-12-01T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-08T09:00:00-05:00",
-     "end": "2026-12-08T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T09:00:00-05:00",
-     "end": "2026-12-15T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-22T09:00:00-05:00",
-     "end": "2026-12-22T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-29T09:00:00-05:00",
-     "end": "2026-12-29T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-05T09:00:00-05:00",
-     "end": "2027-01-05T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-12T09:00:00-05:00",
-     "end": "2027-01-12T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-19T09:00:00-05:00",
-     "end": "2027-01-19T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-26T09:00:00-05:00",
-     "end": "2027-01-26T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-02T09:00:00-05:00",
-     "end": "2027-02-02T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Instructor Shirley Pryor https://www.tiverton.ri.gov/calendar.aspx?EID=850",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "8fc3df99b704",
-   "title": "Drums Alive!",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-10T12:45:00-05:00",
-   "last_start": "2026-12-29T12:45:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-10T12:45:00-05:00",
-     "end": "2026-11-10T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T12:45:00-05:00",
-     "end": "2026-11-17T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-24T12:45:00-05:00",
-     "end": "2026-11-24T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T12:45:00-05:00",
-     "end": "2026-12-01T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-08T12:45:00-05:00",
-     "end": "2026-12-08T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T12:45:00-05:00",
-     "end": "2026-12-15T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-22T12:45:00-05:00",
-     "end": "2026-12-22T13:45:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-29T12:45:00-05:00",
-     "end": "2026-12-29T13:45:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1290",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "abe54e185761",
-   "title": "Balance and Fall Prevention with local resident Amy Simmons and colleague Andrea Wasylow",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/balance-and-fall-prevention-with-local-resident-amy-simmons-and-colleague-andrea-wasylow/",
-   "cost": "",
-   "first_start": "2026-11-10T13:00:00-05:00",
-   "last_start": "2026-11-10T13:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T13:00:00-05:00",
-     "end": "2026-11-10T14:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join Amy Simmons, PT, DPT, MS and Andrea Wasylow, PT, DPT, ATC‑L of Connections Physical Therapy for an engaging and practical lecture at the Brownell Library on October 21st focused on one of the most important aspects of healthy aging: balance and fall prevention.",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "89c483cc0d43",
-   "title": "Dartmouth Waterways Management Commission",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T13:00:00-05:00",
-   "last_start": "2026-11-10T13:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T13:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2945",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "7bb4bc5fcf8f",
-   "title": "Art Class",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Arts & Theatre",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-10T14:00:00-05:00",
-   "last_start": "2027-02-02T14:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-10T14:00:00-05:00",
-     "end": "2026-11-10T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-17T14:00:00-05:00",
-     "end": "2026-11-17T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-24T14:00:00-05:00",
-     "end": "2026-11-24T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T14:00:00-05:00",
-     "end": "2026-12-01T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-08T14:00:00-05:00",
-     "end": "2026-12-08T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-15T14:00:00-05:00",
-     "end": "2026-12-15T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-22T14:00:00-05:00",
-     "end": "2026-12-22T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-29T14:00:00-05:00",
-     "end": "2026-12-29T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-05T14:00:00-05:00",
-     "end": "2027-01-05T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-12T14:00:00-05:00",
-     "end": "2027-01-12T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-19T14:00:00-05:00",
-     "end": "2027-01-19T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-26T14:00:00-05:00",
-     "end": "2027-01-26T15:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-02T14:00:00-05:00",
-     "end": "2027-02-02T15:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Acrylic painting; everyone does their own artwork no instructor fee is for supplies cost https://www.tiverton.ri.gov/calendar.aspx?EID=1352",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "5ff711851550",
-   "title": "JOINT Transportation Planning Group & Southeastern Regional Planning & Economic Development(SRPEDD)",
-   "venue": "Zoom Registration Link: https://us02web.zoom.us/webinar/register/WN_2U7hWEn4TauckK0TqbodIQ Meeting ID: 858 6039 3336 / Passcode: 411636 -",
-   "town": "Somerset",
-   "category": "",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T14:00:00-05:00",
-   "last_start": "2026-11-10T14:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T14:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.townofsomerset.org/calendar.aspx?EID=2017",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "0faceb54fac4",
-   "title": "Somerset Board of Water & Sewer Commissioners",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T16:00:00-05:00",
-   "last_start": "2026-11-10T16:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T16:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Water Department. https://www.townofsomerset.org/calendar.aspx?EID=2018",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "703d5b480e2d",
-   "title": "Board of Library Trustees",
-   "venue": "211 Cross Rd Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T17:00:00-05:00",
-   "last_start": "2026-11-10T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T17:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2947",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "1cef14d3d6ff",
-   "title": "Somerset School Committee",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T17:30:00-05:00",
-   "last_start": "2026-11-10T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T17:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Middle School. https://www.townofsomerset.org/calendar.aspx?EID=2011",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "baadf4958993",
-   "title": "Agricultural Commission jointly with CPC",
-   "venue": "400 Slocum Road Room 305 and 315 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T17:45:00-05:00",
-   "last_start": "2026-11-10T17:45:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T17:45:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2944",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "e80a59b774f0",
    "title": "Bobcat Ecology in Southern New England",
    "venue": "DNRT Center @ Helfand Farm",
@@ -1054,339 +164,89 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "38d2183f685f",
-   "title": "Greater New Bedford Regional Vocational Technical High School School Committee",
-   "venue": "1121 Ashley Blvd. Student Forum and Live Stream - YouTube Channel New Bedford MA 02745",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T18:00:00-05:00",
-   "last_start": "2026-11-10T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:00:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2950",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "b2d5b2a3e6ec",
-   "title": "Planning Board Meeting",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T18:30:00-05:00",
-   "last_start": "2026-12-01T18:30:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-01T18:30:00-05:00",
-     "end": "2026-12-01T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1956",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "e9fb68875b95",
-   "title": "Community Preservation Committee Meeting",
-   "venue": "400 SLOCUM RD Room 315 Dartmouth MA 02747",
-   "town": "Dartmouth",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-dartmouth",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-10T18:30:00-05:00",
-   "last_start": "2026-11-10T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.dartmouthma.gov/calendar.aspx?EID=2951",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "1d5c0812ada9",
-   "title": "Economic Development Committee (EDC)",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-10T18:30:00-05:00",
-   "last_start": "2026-11-10T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:30:00-05:00",
-     "end": "2026-11-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=2016",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "a136d19cf1cd",
-   "title": "Sandy's Live Music & Karaoke",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Music",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-11T12:15:00-05:00",
-   "last_start": "2026-12-30T12:15:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-11T12:15:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:15:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:15:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:15:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:15:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T12:15:00-05:00",
-     "end": "2026-12-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T12:15:00-05:00",
-     "end": "2026-12-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T12:15:00-05:00",
-     "end": "2026-12-30T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. \"Piano Man\" Sandy Cook entertains and coordinated Karaoke fun https://www.tiverton.ri.gov/calendar.aspx?EID=1579",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "cf4589ea0706",
-   "title": "Cribbage",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-11T12:30:00-05:00",
-   "last_start": "2026-12-30T12:30:00-05:00",
-   "count": 8,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-11T12:30:00-05:00",
-     "end": "2026-11-11T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T12:30:00-05:00",
-     "end": "2026-11-18T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T12:30:00-05:00",
-     "end": "2026-11-25T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T12:30:00-05:00",
-     "end": "2026-12-02T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T12:30:00-05:00",
-     "end": "2026-12-09T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T12:30:00-05:00",
-     "end": "2026-12-16T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T12:30:00-05:00",
-     "end": "2026-12-23T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T12:30:00-05:00",
-     "end": "2026-12-30T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1517",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "ba9467978d35",
-   "title": "Cemetery Commission Meeting",
-   "venue": "207 Canonicus Street Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "id": "59a471eb1d08",
+   "title": "Trivia night",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Sports & Recreation",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
    "cost": "",
    "first_start": "2026-11-11T19:00:00-05:00",
-   "last_start": "2026-11-11T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "last_start": "2027-02-03T19:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 2,
    "occurrences": [
     {
      "start": "2026-11-11T19:00:00-05:00",
-     "end": "2026-11-11T23:59:00-05:00",
+     "end": "2026-11-11T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T19:00:00-05:00",
+     "end": "2026-11-18T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T19:00:00-05:00",
+     "end": "2026-11-25T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": "2026-12-02T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": "2026-12-09T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": "2026-12-16T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T19:00:00-05:00",
+     "end": "2026-12-23T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T19:00:00-05:00",
+     "end": "2026-12-30T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-06T19:00:00-05:00",
+     "end": "2027-01-06T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-13T19:00:00-05:00",
+     "end": "2027-01-13T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-20T19:00:00-05:00",
+     "end": "2027-01-20T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-27T19:00:00-05:00",
+     "end": "2027-01-27T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-03T19:00:00-05:00",
+     "end": "2027-02-03T21:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2031",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "3139634ece53",
-   "title": "Balance and Mobility",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-11-12T09:00:00-05:00",
-   "last_start": "2027-02-04T09:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-12T09:00:00-05:00",
-     "end": "2026-11-12T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T09:00:00-05:00",
-     "end": "2026-11-19T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T09:00:00-05:00",
-     "end": "2026-11-26T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T09:00:00-05:00",
-     "end": "2026-12-03T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T09:00:00-05:00",
-     "end": "2026-12-10T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T09:00:00-05:00",
-     "end": "2026-12-17T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T09:00:00-05:00",
-     "end": "2026-12-24T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T09:00:00-05:00",
-     "end": "2026-12-31T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-07T09:00:00-05:00",
-     "end": "2027-01-07T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T09:00:00-05:00",
-     "end": "2027-01-14T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-21T09:00:00-05:00",
-     "end": "2027-01-21T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-28T09:00:00-05:00",
-     "end": "2027-01-28T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-04T09:00:00-05:00",
-     "end": "2027-02-04T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1642",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "f54e688a31cc",
@@ -1414,174 +274,589 @@
    "decided_by": ""
   },
   {
-   "id": "dd50f7398c80",
-   "title": "Bingo!",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Sports & Recreation",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "id": "831dc0dfaf05",
+   "title": "Create, Explore, and Collect! Happy Birthday National Park!",
+   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
-   "first_start": "2026-11-12T13:00:00-05:00",
-   "last_start": "2027-02-04T13:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 3,
+   "first_start": "2026-11-12T14:00:00-05:00",
+   "last_start": "2026-11-12T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T13:00:00-05:00",
-     "end": "2026-12-24T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T13:00:00-05:00",
-     "end": "2026-12-31T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-07T13:00:00-05:00",
-     "end": "2027-01-07T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T13:00:00-05:00",
-     "end": "2027-01-14T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-21T13:00:00-05:00",
-     "end": "2027-01-21T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-28T13:00:00-05:00",
-     "end": "2027-01-28T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-04T13:00:00-05:00",
-     "end": "2027-02-04T15:00:00-05:00",
+     "start": "2026-11-12T14:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "Location: Dining Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1710",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "summary": "Create, Explore, and Collect! Happy Birthday National Park! New Bedford Whaling National Historical Park, 33 William Street Start your adventure at the Visitor Center with a watercolor keepsake, then celebrate nearly 30 years of New Bedford Whaling National Historical Park by collecting anniversary ",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
-   "id": "8b749f1ec307",
-   "title": "Knitting for Charity",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Volunteering & Causes",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "id": "0c07b22c9feb",
+   "title": "Youth Services: Design Your Own Apron and Book Sale",
+   "venue": "New Bedford Main Library's Youth Services 613 Pleasant Street",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
-   "first_start": "2026-11-12T13:00:00-05:00",
-   "last_start": "2027-02-04T13:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 3,
+   "first_start": "2026-11-12T15:00:00-05:00",
+   "last_start": "2026-11-12T15:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-12T13:00:00-05:00",
-     "end": "2026-11-12T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T13:00:00-05:00",
-     "end": "2026-11-19T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T13:00:00-05:00",
-     "end": "2026-11-26T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T13:00:00-05:00",
-     "end": "2026-12-03T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T13:00:00-05:00",
-     "end": "2026-12-10T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T13:00:00-05:00",
-     "end": "2026-12-17T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T13:00:00-05:00",
-     "end": "2026-12-24T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T13:00:00-05:00",
-     "end": "2026-12-31T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-07T13:00:00-05:00",
-     "end": "2027-01-07T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T13:00:00-05:00",
-     "end": "2027-01-14T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-21T13:00:00-05:00",
-     "end": "2027-01-21T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-28T13:00:00-05:00",
-     "end": "2027-01-28T15:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-04T13:00:00-05:00",
-     "end": "2027-02-04T15:00:00-05:00",
+     "start": "2026-11-12T15:00:00-05:00",
+     "end": "2026-11-12T17:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1778",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "summary": "Youth Services: Design Your Own Apron and Book Sale New Bedford Main Library's Youth Services 613 Pleasant Street Visit the New Bedford Main Library's Youth Services on AHA Night to decorate your own apron! There is no registration for this free program and is available while supplies last. Families",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "f22fb3c9e0cb",
+   "title": "Nature Craft with Local Leaves and the Trustees!",
+   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T16:00:00-05:00",
+   "last_start": "2026-11-12T16:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T16:00:00-05:00",
+     "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Nature Craft with Local Leaves and the Trustees! New Bedford Whaling National Historical Park, 33 William St. Join the Trustees' Mobile Adventures Team at the New Bedford Whaling National Park to make your own leaf art! Harvested from our New Bedford's own Haskell Public Gardens, each leaf has a sto",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "c6a451820a9a",
+   "title": "Make a Party Hat with the 1850s Ladies",
+   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T16:00:00-05:00",
+   "last_start": "2026-11-12T16:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T16:00:00-05:00",
+     "end": "2026-11-12T17:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Make a Party Hat with the 1850s Ladies New Bedford Whaling National Historical Park, 33 William Street Planning on attending the 30th Anniversary Party? Step back in time and create your own Victorian-inspired bonnet with the 1850s Ladies at the Junior Ranger Station, then wear it during the celebra",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "2f913be9ed81",
+   "title": "Share Your Story. Preserve Our History.",
+   "venue": "Bristol Community College - 800 Purchase St.",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T16:00:00-05:00",
+   "last_start": "2026-11-12T16:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T16:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Share Your Story. Preserve Our History. Bristol Community College - 800 Purchase St. Students, families, and community members are invited to share their personal stories, traditions, and connections to New Bedford through recorded oral histories. These stories will become part of a mini-documentary",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "84bc68f72451",
+   "title": "See What's Made in NB at the NBRR Lab!",
+   "venue": "1265 Purchase Street",
+   "town": "New Bedford",
+   "category": "Museums & Exhibitions",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T16:30:00-05:00",
+   "last_start": "2026-11-12T16:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T16:30:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "See What's Made in NB at the NBRR Lab! 1265 Purchase Street See What's Made in NB at the NBRR Lab! Doors are open from 4:3 0 to 6:30 PM , and you're invited to explore our space in action. Tour the lab, watch our industrial robots create, design, and innovate using cutting-edge technologies. Whether",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "d0b17dd00a30",
+   "title": "Open House on AHA!",
+   "venue": "3rd EyE Youth Empowerment, 230 Union Street",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T16:30:00-05:00",
+   "last_start": "2026-11-12T16:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T16:30:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. 4:30 - 6:30pm Hands-on activities and resources with Livity Tree Art, South East Recovery Learning Community",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "ee9f9945b9c1",
+   "title": "FREE New Bedford Art Museum Admission & Activities!",
+   "venue": "New Bedford Art Museum, 608 Pleasant St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "FREE New Bedford Art Museum Admission & Activities! New Bedford Art Museum, 608 Pleasant St. Celebrate Made in NB with FREE admission to the New Bedford Art Museum! Explore our two brand-new exhibitions , Intuitive: A Survey of Visionary Art , celebrating the imagination and originality of self-taug",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "7f3f34d068db",
+   "title": "Kim's Myth",
+   "venue": "Interwoven Artist Gallery 634 Pleasant St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Kim's Myth Interwoven Artist Gallery 634 Pleasant St. Kim's Myth is the musical project and creative moniker of singer-songwriter and multimedia artist Kim Smith , a musician, performer, and community arts advocate known for building creative communities and developing interactive arts experiences. ",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "532613541e45",
+   "title": "Discover Downtown: Community, Resources & Prizes",
+   "venue": "House of Gamboa and Luisa Edits 121 Union St.",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Discover Downtown: Community, Resources & Prizes House of Gamboa and Luisa Edits 121 Union St. House of Gamboa , a boutique art gallery, retail shop, and event planning business, along with Luisa Edits , New Bedford's newest downtown boutique, will host a dynamic community engagement experience with",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "132bc6eabd89",
+   "title": "Whales! Whales! Whales!",
+   "venue": "Waterfront Card Shop 752 Purchase St.",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "WHALES! WHALES! WHALES! Waterfront Card Shop 752 Purchase St. The Waterfront Card Shop specializing in a wide variety of trading card games, sports cards, and collectible accessories in New Bedford, will host SAVE THE WHALES, featuring an interactive art station where children and adults can make or",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "4091f4f05647",
+   "title": "Salty Stitches",
+   "venue": "The Star Store 715 Purchase Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Salty Stitches The Star Store 715 Purchase Street Salty Stitches is a textile-based protest art exhibition, embroidering Donald Trump's words onto vintage fabrics, creating a material record of his presidency and of the movement against it. This exhibition serves as a visual reminder of the barrage ",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "268aa2cdeacc",
+   "title": "American Dream Exhibition",
+   "venue": "The Star Store 715 Purchase Street",
+   "town": "New Bedford",
+   "category": "Museums & Exhibitions",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "American Dream Exhibition The Star Store 715 Purchase Street On view at the Star Store is the American Dream exhibit. This exhibition features works, including interactive installations, sculptures, paintings, drawings, video and photography capturing the tension between collective mythology and ind",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "30b288493754",
+   "title": "AHA! Moment- The Art and Language of Food at the Artisan Market",
+   "venue": "The Star Store 715 Purchase Street",
+   "town": "New Bedford",
+   "category": "Markets & Fairs",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "AHA! Moment- The Art and Language of Food at the Artisan Market The Star Store 715 Purchase Street Rhonda M. Fazio believes food connects us to our cultural roots. Through The Art and Language of Food , she shares cooking and food preservation traditions inspired by the wisdom of grandmothers. Visit",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "0a7553e54914",
+   "title": "Nathan And Polly Johnson House 30th Anniversary Open House",
+   "venue": "21 Seventh Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T18:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Nathan And Polly Johnson House 30th Anniversary Open House 21 Seventh Street For November AHA The New Bedford Historical Society will be celebrating the 30 th anniversary of the Johnson House and of the New Bedford Whaling National Historical Park. Visitors to the park will be able to get a passport",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "f597ec40faf8",
+   "title": "Make Your Own Leaf Lantern",
+   "venue": "Pilgrim United Church Home, 634 Purchase Street",
+   "town": "New Bedford",
+   "category": "Faith & Spiritual",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Make Your Own Leaf Lantern Pilgrim United Church Home, 634 Purchase Street Join Pilgrim United Church of Christ and Mercy Meals & More to make your own Leaf Lantern and enjoy guitar music and singing with Dan and friends! While you're here, learn more about Booker T. Washington, who gave a speech in",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "732255e9c338",
+   "title": "Radiance - Tammi J. Meehan",
+   "venue": "Gallery X 169 William Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Radiance - Tammi J. Meehan Gallery X 169 William Street On view in the Frederick Douglass Gallery X @ Gallery X - Radiance , a solo exhibition by Tammi J. Meehan dedicated to the memory of Lorin Roche, Author of \"The Radiance Sutras,\" a translation of the Vijnana Bhairava Tantra. The exhibition will",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "f1e5a622959c",
+   "title": "Gallery X Artist & Vendor Market",
+   "venue": "Gallery X 169 William Street",
+   "town": "New Bedford",
+   "category": "Markets & Fairs",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Gallery X Artist & Vendor Market Gallery X 169 William Street Gallery X is hosting an artist and vendor market during November's AHA! night on November 12. Participating vendors and artists include; • Leah Bennett (Fairie Vomit) • Marguerite Cass • Ron Costa • Jason Eckhardt • Sherri George (Chickad",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "4acb0969e914",
+   "title": "Local Artisan Showcase",
+   "venue": "New Bedford Fishing Heritage Center, 38 Bethel Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Local Artisan Showcase New Bedford Fishing Heritage Center, 38 Bethel Street Shop local this holiday season at FHC! We're hosting a local artisan showcase. Stop by the Center from 5-8pm to shop a great selection of fishing- and maritime-themed clothing, jewelry, artwork, and other handmade items, ma",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "a61790e6d5b5",
+   "title": "AHA! Night",
+   "venue": "Downtown New Bedford",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "standing-new-bedford",
+   "url": "https://ahanewbedford.org/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2027-01-14T17:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T17:00:00-05:00",
+     "end": "2027-01-14T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "e42e7be3d548",
+   "title": "Serlingpa Meditation Center",
+   "venue": "Serlingpa Meditation Center 512 Pleasant St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:30:00-05:00",
+   "last_start": "2026-11-12T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:30:00-05:00",
+     "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Serlingpa Meditation Center Serlingpa Meditation Center 512 Pleasant St. AHA Thursday November 12th, Free, Theme: Made in NB Open House: 5:30-7pm, Brief Talk and Guided Meditation on Gratitude & Connecction at 6:00 pm Peaceful, happy people…one of THE best things Made In New Bedford. Come visit Serl",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "4a1d216214d6",
+   "title": "30th Anniversary Cake Cutting!",
+   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:30:00-05:00",
+   "last_start": "2026-11-12T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:30:00-05:00",
+     "end": "2026-11-12T18:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "30th Anniversary Cake Cutting! New Bedford Whaling National Historical Park, 33 William Street Join us for a slice of cake as we celebrate the 30th anniversary of the park. Stay for traditional Iñupiat dancing, a special presentation, and an interactive discussion exploring the rich history of Arcti",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "77b7f81478e5",
+   "title": "AHA! Night Jazz Jam Featuring Manny Escobar and Mwalim DaPhunkee Professor",
+   "venue": "Zeiterion 684 Purchase St",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:30:00-05:00",
+   "last_start": "2026-11-12T17:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:30:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "AHA! Night Jazz Jam Featuring Manny Escobar and Mwalim DaPhunkee Professor Zeiterion 684 Purchase St Calling all musicians, lovers of music and artistic expression! Join both sax player/ music educator Emmanuel \"Manny\" Escobar, and musician/ educator Mwalim DaPhunkee Professor for free, fun jam sess",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "bad28f902f46",
@@ -1609,43 +884,13 @@
    "decided_by": "source trust"
   },
   {
-   "id": "cfade7af0588",
-   "title": "Economic Development Commission Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-12-10T18:00:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T18:00:00-05:00",
-     "end": "2026-12-10T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1969",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "5f4ce9f24ae2",
-   "title": "Zoning Board of Appeals",
-   "venue": "1480 County Street Somerset MA 02726",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "id": "32b81d938faf",
+   "title": "Traditional Iñupiat Dancing, Presentation, and Q&A",
+   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
    "first_start": "2026-11-12T18:00:00-05:00",
    "last_start": "2026-11-12T18:00:00-05:00",
@@ -1655,22 +900,77 @@
    "occurrences": [
     {
      "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T23:59:00-05:00",
+     "end": "2026-11-12T19:30:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "Location: Somerset Old Town Hall. https://www.townofsomerset.org/calendar.aspx?EID=1998",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "summary": "Traditional Iñupiat Dancing, Presentation, and Q&A New Bedford Whaling National Historical Park, 33 William Street Join us as our Iñupiat Heritage Center partners demonstrate traditional Iñupiat dances, describe how the Iñupiat hunted whales historically and today, and answer questions about life in",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
-   "id": "97593680afeb",
-   "title": "Taunton River Stewardship Council (TRSC)",
-   "venue": "",
-   "town": "Somerset",
-   "category": "",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
+   "id": "2a3a4f533642",
+   "title": "Jazz with the Buttonwood Brass Band",
+   "venue": "New Bedford Harbor Hotel, 222 Union St.",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Jazz with the Buttonwood Brass Band New Bedford Harbor Hotel, 222 Union St. Enjoy some speakeasy jazz from the Buttonwood Brass Band , on every AHA! Night at the New Bedford Harbor Hotel. Ends: 8:00pm",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "bd542a86c2ff",
+   "title": "Day Drinkers",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-19T18:00:00-05:00",
+   "count": 2,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "4924dccc7a45",
+   "title": "The Art of Ecstatic Meditation",
+   "venue": "Sangha Yoga New Bedford 693 Purchase Street at the corner of Spring Street dNB",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
    "first_start": "2026-11-12T19:00:00-05:00",
    "last_start": "2026-11-12T19:00:00-05:00",
@@ -1680,11 +980,11 @@
    "occurrences": [
     {
      "start": "2026-11-12T19:00:00-05:00",
-     "end": "2026-11-12T23:59:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "Location: Taunton River Watershed Center. https://www.townofsomerset.org/calendar.aspx?EID=2015",
+   "summary": "THE ART OF ECSTATIC MEDITATION Sangha Yoga New Bedford 693 Purchase Street at the corner of Spring Street dNB Learn the 4 Stages of OSHO Active Ecstatic Meditation - SHAKE and DANCE in order to become aware of a silent point within you. \"You will feel festive, present, blissful . . . and at your cen",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1714,164 +1014,214 @@
    "decided_by": "source trust"
   },
   {
-   "id": "fe0247326a8a",
-   "title": "Zumba",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "id": "e58af8a95d62",
+   "title": "AHHHhhh!-AHA AFTER DARK",
+   "venue": "Speakeasy @ The Z! - 984 Purchase St",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
-   "first_start": "2026-11-13T09:00:00-05:00",
-   "last_start": "2027-01-08T09:00:00-05:00",
-   "count": 9,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-11-13T09:00:00-05:00",
-     "end": "2026-11-13T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T09:00:00-05:00",
-     "end": "2026-11-20T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-27T09:00:00-05:00",
-     "end": "2026-11-27T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T09:00:00-05:00",
-     "end": "2026-12-04T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T09:00:00-05:00",
-     "end": "2026-12-11T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T09:00:00-05:00",
-     "end": "2026-12-18T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-25T09:00:00-05:00",
-     "end": "2026-12-25T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-01T09:00:00-05:00",
-     "end": "2027-01-01T10:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-08T09:00:00-05:00",
-     "end": "2027-01-08T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Dining Room. Zumba Gold https://www.tiverton.ri.gov/calendar.aspx?EID=1846",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "95ff263664a6",
-   "title": "Tax Collectors Sale of Estates for Taxes and/or Assessments Due and Unpaid",
-   "venue": "343 Highland Rd Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-13T10:00:00-05:00",
-   "last_start": "2026-11-13T10:00:00-05:00",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2026-11-12T20:00:00-05:00",
    "count": 1,
    "cadence": "once",
    "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-13T10:00:00-05:00",
-     "end": "2026-11-13T23:59:00-05:00",
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-12T22:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2234",
+   "summary": "AHHHhhh!-AHA AFTER DARK Speakeasy @ The Z! - 984 Purchase St What happens when the freedom of jazz meets the pulse of House music? You get AHHHhhh!; a Deep Afro Jazz House jam where the grooves are deep, the improvisation is live, and anything can happen. This is where the jazz tradition of spontane",
    "approval": "pending",
    "decided_by": ""
   },
   {
-   "id": "d8600d4c5a09",
-   "title": "Grief Support Group",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
+   "id": "559a64b2956c",
+   "title": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan",
+   "venue": "Bento's Bar and Grille, 555 Pleasant St.",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
-   "first_start": "2026-11-13T10:00:00-05:00",
-   "last_start": "2026-12-18T10:00:00-05:00",
-   "count": 5,
-   "cadence": "weekly",
-   "weekday": 4,
-   "occurrences": [
-    {
-     "start": "2026-11-13T10:00:00-05:00",
-     "end": "2026-11-13T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-20T10:00:00-05:00",
-     "end": "2026-11-20T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-04T10:00:00-05:00",
-     "end": "2026-12-04T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-11T10:00:00-05:00",
-     "end": "2026-12-11T11:30:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-18T10:00:00-05:00",
-     "end": "2026-12-18T11:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Game Room. https://www.tiverton.ri.gov/calendar.aspx?EID=1221",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "9b4c9e0bcc2e",
-   "title": "Little Rhody Mini Hoop with Karen Katin",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/little-rhody-mini-hoop-with-karen-katin-2/",
-   "cost": "",
-   "first_start": "2026-11-14T10:30:00-05:00",
-   "last_start": "2026-11-14T10:30:00-05:00",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2026-11-12T20:00:00-05:00",
    "count": 1,
    "cadence": "once",
    "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-14T10:30:00-05:00",
-     "end": "2026-11-14T12:00:00-05:00",
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-12T22:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan Bento's Bar and Grille, 555 Pleasant St. Step into the spotlight and sing your heart out at Karaoke Night with DJ Chan! From today's biggest hits to favorite throwback tunes, there's a song for everyone. Whether you're taking the stage or cheer",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "da2c8cc09dec",
+   "title": "Neal McCarthy Trio",
+   "venue": "The Pour Farm Tavern, 780 Purchase St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2026-11-12T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-12T23:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Neal McCarthy Trio The Pour Farm Tavern, 780 Purchase St. Grab a bite or a pint and listen to Electric Blues & Rock with the Neal McCarthy Trio as they play from 8-11:30pm. Ends: 11:30 pm",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "cac5725fec76",
+   "title": "Karaoke at PLAY",
+   "venue": "PLAY Arcade, 34 Union St.",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2026-11-12T20:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "Karaoke at PLAY PLAY Arcade, 34 Union St. Belt out some tunes at PLAY Arcade! There's karaoke, food, fun, and games! Ends: Midnight",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "1fc8a5984799",
+   "title": "Karaoke",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
+   "cost": "",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2027-02-04T20:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-13T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T20:00:00-05:00",
+     "end": "2026-11-20T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T20:00:00-05:00",
+     "end": "2026-11-27T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-04T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T20:00:00-05:00",
+     "end": "2026-12-11T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": "2026-12-18T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T20:00:00-05:00",
+     "end": "2026-12-25T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T20:00:00-05:00",
+     "end": "2027-01-01T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-07T20:00:00-05:00",
+     "end": "2027-01-08T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T20:00:00-05:00",
+     "end": "2027-01-15T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-21T20:00:00-05:00",
+     "end": "2027-01-22T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-28T20:00:00-05:00",
+     "end": "2027-01-29T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-04T20:00:00-05:00",
+     "end": "2027-02-05T00:00:00-05:00",
      "all_day": false
     }
    ],
    "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "1c0a1cb21bcc",
+   "title": "Quincy Jacobs",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-13T19:00:00-05:00",
+   "last_start": "2026-11-13T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-13T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "e0ede651223a",
@@ -1934,6 +1284,56 @@
    "decided_by": "source trust"
   },
   {
+   "id": "89c9a9cb676f",
+   "title": "Chris Ballerini",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-14T19:00:00-05:00",
+   "last_start": "2026-11-14T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "4fdd5ffe5cdf",
+   "title": "World Day of Remembrance for Road Traffic Victims",
+   "venue": "Noah's Place Playground, 102 Popes Island, New Bedford, MA 02740, USA",
+   "town": "New Bedford",
+   "category": "Civic & Town Meetings",
+   "source_id": "south-coast-places-for-people",
+   "url": "",
+   "cost": "",
+   "first_start": "2026-11-15T13:30:00-05:00",
+   "last_start": "2026-11-15T13:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T13:30:00-05:00",
+     "end": "2026-11-15T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Get up-to-date information at: https://luma.com/southc-alcu Address: Noah's Place Playground New Bedford, MA United States Hosted by Will Gardner",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "67bacb13bd00",
    "title": "HADESTOWN",
    "venue": "The Zeiterion",
@@ -1957,36 +1357,6 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
-  },
-  {
-   "id": "01cf5fa5fd67",
-   "title": "Harbor Commission Meeting",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-16T00:00:00-05:00",
-   "last_start": "2026-12-21T00:00:00-05:00",
-   "count": 2,
-   "cadence": "irregular",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-16T00:00:00-05:00",
-     "end": "2026-11-16T00:00:00-05:00",
-     "all_day": true
-    },
-    {
-     "start": "2026-12-21T00:00:00-05:00",
-     "end": "2026-12-21T00:00:00-05:00",
-     "all_day": true
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1944",
-   "approval": "approved",
-   "decided_by": "bootstrap"
   },
   {
    "id": "342cee2c5258",
@@ -2014,257 +1384,37 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "06e8dc2b3d7b",
-   "title": "Open Space & Land Preservation Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "id": "32167176f284",
+   "title": "Chef Hiroki's omakase dinner",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Food & Drink",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
-   "first_start": "2026-11-16T18:00:00-05:00",
-   "last_start": "2026-12-21T18:00:00-05:00",
-   "count": 2,
-   "cadence": "irregular",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-16T18:00:00-05:00",
-     "end": "2026-11-16T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-21T18:00:00-05:00",
-     "end": "2026-12-21T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2015",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "94b85c808cc6",
-   "title": "Library Board of Trustees Meeting",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-16T19:00:00-05:00",
-   "last_start": "2026-12-14T19:00:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 0,
-   "occurrences": [
-    {
-     "start": "2026-11-16T19:00:00-05:00",
-     "end": "2026-11-16T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-14T19:00:00-05:00",
-     "end": "2026-12-14T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2003",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "53a06499338a",
-   "title": "Conservation Commission Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-17T14:00:00-05:00",
-   "last_start": "2026-12-15T14:00:00-05:00",
-   "count": 2,
+   "first_start": "2026-11-17T00:00:00-05:00",
+   "last_start": "2027-01-19T00:00:00-05:00",
+   "count": 3,
    "cadence": "monthly",
    "weekday": 1,
    "occurrences": [
     {
-     "start": "2026-11-17T14:00:00-05:00",
-     "end": "2026-11-17T23:59:00-05:00",
-     "all_day": false
+     "start": "2026-11-17T00:00:00-05:00",
+     "end": null,
+     "all_day": true
     },
     {
-     "start": "2026-12-15T14:00:00-05:00",
-     "end": "2026-12-15T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2055",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "5d40edb42fd6",
-   "title": "All the Genres Book Club - The Quiet Librarian",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/all-the-genres-book-club-the-quiet-librarian/",
-   "cost": "",
-   "first_start": "2026-11-17T16:00:00-05:00",
-   "last_start": "2026-11-17T16:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-17T16:00:00-05:00",
-     "end": "2026-11-17T17:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "5c5cfeee6755",
-   "title": "Little Compton Writing Circle",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/little-compton-writing-circle-6/",
-   "cost": "",
-   "first_start": "2026-11-17T17:30:00-05:00",
-   "last_start": "2026-11-17T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-17T17:30:00-05:00",
-     "end": "2026-11-17T18:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "537986d051cd",
-   "title": "Baby and Toddler Playtime!",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Family & Children",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/baby-and-toddler-playtime-16/",
-   "cost": "",
-   "first_start": "2026-11-18T10:30:00-05:00",
-   "last_start": "2026-12-02T10:30:00-05:00",
-   "count": 3,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-18T10:30:00-05:00",
-     "end": "2026-11-18T12:00:00-05:00",
-     "all_day": false
+     "start": "2026-12-15T00:00:00-05:00",
+     "end": null,
+     "all_day": true
     },
     {
-     "start": "2026-11-25T10:30:00-05:00",
-     "end": "2026-11-25T12:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T10:30:00-05:00",
-     "end": "2026-12-02T12:00:00-05:00",
-     "all_day": false
+     "start": "2027-01-19T00:00:00-05:00",
+     "end": null,
+     "all_day": true
     }
    ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "14c343c4bf87",
-   "title": "Historic Preservation Advisory Board Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-11-18T16:30:00-05:00",
-   "last_start": "2026-12-16T16:30:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-18T16:30:00-05:00",
-     "end": "2026-11-18T23:59:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T16:30:00-05:00",
-     "end": "2026-12-16T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2043",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "d3712eafca16",
-   "title": "Board of Assessors",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-18T18:00:00-05:00",
-   "last_start": "2026-11-18T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-18T18:00:00-05:00",
-     "end": "2026-11-18T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2013",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "796c750946c6",
-   "title": "Public Hearing for Transfer of and Change of Manager On-premise Restaurant All Alcoholic Beverage License",
-   "venue": "",
-   "town": "Somerset",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-somerset",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=23",
-   "cost": "",
-   "first_start": "2026-11-18T18:15:00-05:00",
-   "last_start": "2026-11-18T18:15:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-18T18:15:00-05:00",
-     "end": "2026-11-18T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Somerset Public Library. https://www.townofsomerset.org/calendar.aspx?EID=2008",
+   "summary": "A ten to twelve course omakase dinner. Reservations on the venue's page.",
    "approval": "pending",
    "decided_by": ""
   },
@@ -2319,6 +1469,56 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "650e2b12417f",
+   "title": "Benjamin Quinn",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-20T19:00:00-05:00",
+   "last_start": "2026-11-20T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-20T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "bc7996249b9b",
+   "title": "Matt Martin",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-21T19:00:00-05:00",
+   "last_start": "2026-11-21T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-21T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "e9ddfe0fb7a7",
    "title": "Goosby Plays Brahms",
    "venue": "The Zeiterion",
@@ -2369,23 +1569,23 @@
    "decided_by": ""
   },
   {
-   "id": "3eb5111dab1f",
-   "title": "Library will open at 11 AM",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/library-will-open-at-11-am-7/",
+   "id": "db13d4947a44",
+   "title": "Declan Kelehan",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
-   "first_start": "2026-11-23T11:00:00-05:00",
-   "last_start": "2026-11-23T11:00:00-05:00",
+   "first_start": "2026-11-27T19:00:00-05:00",
+   "last_start": "2026-11-27T19:00:00-05:00",
    "count": 1,
    "cadence": "once",
    "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-23T11:00:00-05:00",
-     "end": "2026-11-23T11:00:00-05:00",
+     "start": "2026-11-27T19:00:00-05:00",
+     "end": null,
      "all_day": false
     }
    ],
@@ -2444,179 +1644,64 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "c03a17f49c92",
-   "title": "Historical Cemeteries Commission Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+   "id": "cc95b9dda4c0",
+   "title": "Merrick Brannigan",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
-   "first_start": "2026-12-01T18:00:00-05:00",
-   "last_start": "2026-12-01T18:00:00-05:00",
+   "first_start": "2026-11-28T19:00:00-05:00",
+   "last_start": "2026-11-28T19:00:00-05:00",
    "count": 1,
    "cadence": "once",
    "weekday": null,
    "occurrences": [
     {
-     "start": "2026-12-01T18:00:00-05:00",
-     "end": "2026-12-01T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2068",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "172f82176727",
-   "title": "Litter Committee Meeting",
-   "venue": "34 Roosevelt Avenue Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-12-01T18:30:00-05:00",
-   "last_start": "2026-12-01T18:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-01T18:30:00-05:00",
-     "end": "2026-12-01T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=1992",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "3d65595383f1",
-   "title": "SHIP with Carla Sabatino",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=24",
-   "cost": "",
-   "first_start": "2026-12-02T13:00:00-05:00",
-   "last_start": "2026-12-02T13:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-02T13:00:00-05:00",
-     "end": "2026-12-02T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Location: Call 401-735-1887 to make an appointment with Carla; Carla can assist with medical/health insurance; SNAP; Medicaid and Heating & Energy assistant applications. https://www.tiverton.ri.gov/calendar.aspx?EID=1911",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "34fe6ff2a95f",
-   "title": "Zoning Board of Review Meeting (as needed)",
-   "venue": "",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-12-02T19:00:00-05:00",
-   "last_start": "2026-12-02T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-02T19:00:00-05:00",
-     "end": "2026-12-02T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2141",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "be494696e772",
-   "title": "Probate Court",
-   "venue": "343 Highland Rd Tiverton RI 02878",
-   "town": "Tiverton",
-   "category": "Civic & Town Meetings",
-   "source_id": "town-tiverton",
-   "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-   "cost": "",
-   "first_start": "2026-12-04T08:30:00-05:00",
-   "last_start": "2026-12-04T08:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-04T08:30:00-05:00",
-     "end": "2026-12-04T23:59:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "https://www.tiverton.ri.gov/calendar.aspx?EID=2152",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "a603e40a3ba8",
-   "title": "Medicare Help Sessions - Registration Required",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/medicare-help-sessions-registration-required/",
-   "cost": "",
-   "first_start": "2026-12-04T10:00:00-05:00",
-   "last_start": "2026-12-04T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-04T10:00:00-05:00",
-     "end": "2026-12-04T15:00:00-05:00",
+     "start": "2026-11-28T19:00:00-05:00",
+     "end": null,
      "all_day": false
     }
    ],
    "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "approval": "pending",
+   "decided_by": ""
   },
   {
-   "id": "7fae9d50ff35",
-   "title": "Hidden Histories of African American Rhode Island with Jim Doherty",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/hidden-histories-of-african-american-rhode-island-with-jim-doherty/",
+   "id": "23b0b58d6454",
+   "title": "Chef Hiroki tuna carving",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Food & Drink",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
-   "first_start": "2026-12-05T13:30:00-05:00",
-   "last_start": "2026-12-05T13:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
+   "first_start": "2026-12-01T00:00:00-05:00",
+   "last_start": "2027-02-02T00:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 1,
    "occurrences": [
     {
-     "start": "2026-12-05T13:30:00-05:00",
-     "end": "2026-12-05T14:30:00-05:00",
-     "all_day": false
+     "start": "2026-12-01T00:00:00-05:00",
+     "end": null,
+     "all_day": true
+    },
+    {
+     "start": "2027-01-05T00:00:00-05:00",
+     "end": null,
+     "all_day": true
+    },
+    {
+     "start": "2027-02-02T00:00:00-05:00",
+     "end": null,
+     "all_day": true
     }
    ],
-   "summary": "Jim Doherty will talk about the stories in his book \"The Anchor of the Soul: Tales of African American Rhode Island\" He weaves together little-known stories from the earliest days of RI's history to the present in twelve intertwining stories. BIO: Native Rhode Islander James Doherty is the author of",
-   "approval": "approved",
-   "decided_by": "bootstrap"
+   "summary": "A whole sustainably caught tuna carved in front of the room, served as sashimi and poke. Reservations on the venue's page.",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "af8661b810e2",
@@ -2722,31 +1807,6 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
-  },
-  {
-   "id": "aac00c049d70",
-   "title": "Poinsetta Ornament with Karen Katin",
-   "venue": "Brownell Library",
-   "town": "Little Compton",
-   "category": "Library & Talks",
-   "source_id": "brownell-library",
-   "url": "https://brownell-libraryri.org/event/poinsetta-ornament-with-karen-katin/",
-   "cost": "",
-   "first_start": "2026-12-12T10:30:00-05:00",
-   "last_start": "2026-12-12T10:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-12T10:30:00-05:00",
-     "end": "2026-12-12T12:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "bootstrap"
   },
   {
    "id": "e7e38fbf272a",
