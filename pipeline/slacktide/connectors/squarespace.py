@@ -17,6 +17,7 @@ Source entry::
       town: ""                                                   # when the walks move about
 """
 from __future__ import annotations
+import html
 import json
 from datetime import datetime, timezone
 from urllib.parse import urljoin
@@ -68,12 +69,12 @@ class SquarespaceConnector(Connector):
             if it.get("endDate") and it["endDate"] > it["startDate"]:
                 end = datetime.fromtimestamp(it["endDate"] / 1000, tz=timezone.utc).astimezone(self.tz).replace(microsecond=0)
             loc = it.get("location") or {}
-            venue = (loc.get("addressTitle") or "").strip()
+            venue = html.unescape(loc.get("addressTitle") or "").strip()   # "Carolyn&#39;s Sakonnet Vineyard"
             town_text = " ".join(str(loc.get(k) or "") for k in ("addressLine1", "addressLine2"))
             town = town_from_text(town_text) or ""
             cats = [str(c) for c in (it.get("categories") or []) + (it.get("tags") or []) if c]
             out.append(Occurrence(
-                source_id=self.id, source_uid=uid, title=str(it["title"]).strip(), start=start, end=end,
+                source_id=self.id, source_uid=uid, title=html.unescape(str(it["title"])).strip(), start=start, end=end,
                 all_day=bool(it.get("allDay")), venue_raw=venue, town=town or self.town,
                 url=urljoin(base, it.get("fullUrl") or ""),
                 description=body_text(it.get("excerpt") or "") or body_text(it.get("body") or ""),   # many sites leave the excerpt empty

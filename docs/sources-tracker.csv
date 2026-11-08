@@ -29,7 +29,7 @@ Fall River,Lafayette-Durfee House,lafayettedurfeehouse.org,history,Candidate,(ho
 Fall River,Lizzie Borden House,lizzie-borden.com,attraction,Candidate,(home 403),{},None,Low,4,Email for feed address,,,,,Not contacted,No,Blocks the probe (403)
 Fall River,Marine Museum at Fall River,marinemuseumfr.org,museum,Candidate,(home SSLError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Certificate error
 Fall River,The Tipsy Toboggan,thetipsytoboggan.com,venue,Candidate,Wix.com Website Builder wix,{},Submission form,Low,4,Offer the form,,,,,Not contacted,No,Wix
-New Bedford,Hatch Street Studios,hatchstreetstudios.com,arts,Candidate,squarespace,"{""squarespace-rss"": 25}",Squarespace JSON,High,1,Build connector,,,,,Not contacted,No,/events?format=json answers with 5 dated items
+New Bedford,Hatch Street Studios,hatchstreetstudios.com,arts,In use,squarespace,"{""squarespace"": 29}",Squarespace JSON,High,1,Done,,,,,Not contacted,No,"Enabled 8 Nov 2026 as hatch-street-studios through the squarespace connector; 5 events in the window (open studios, workshops)."
 New Bedford,New Bedford Art Museum,newbedfordart.org,museum,Candidate,WordPress 7.0.7 wordpress,"{""rss"": 0}",HTML listing,High,2,Write selectors,,,,,Not contacted,No,/events/ with 17 headings; 8 missed
 New Bedford,New Bedford Free Public Library,nbfpl.org,library,Candidate,Joomla! - Open Source Content Management google-calendar,{},Plain iCal,High,3,Email for feed address,,,,,Not contacted,No,Joomla with a Google Calendar embed; need calendar id
 New Bedford,New Bedford Whaling Museum,whalingmuseum.org,museum,Candidate,WP Rocket 3.23.5.1 wordpress,"{""rss"": 10}",HTML listing,High,2,Write selectors,,,,,Not contacted,No,"program post type at /wp-json/wp/v2/program, no date field; 11 missed"
@@ -101,7 +101,7 @@ Tiverton,Sakonnet Preservation Association,sakonnetpreservation.org,nature,Candi
 Tiverton,Sandywoods Center for the Arts,sandywoodsmusic.com,venue,Candidate,(home ConnectionError),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,Domain did not resolve; music venue
 Tiverton,Tiverton Historical Society,tivertonhistorical.org,history,Candidate,(home SSLError),{},None,Low,4,Confirm domain,,,,,Not contacted,No,Certificate error
 Tiverton,Tiverton Land Trust,tivertonlandtrust.org,nature,Candidate,"squarespace, mailchimp",{},Squarespace JSON,Low,3,Email for feed address,,,,,Not contacted,No,No dated items in the JSON
-Little Compton,Sakonnet Vineyard,sakonnetwine.com,venue,Candidate,squarespace,"{""squarespace-rss"": 32}",Squarespace JSON,High,1,Build connector,,,,,Not contacted,No,"12 dated items: live music, trivia"
+Little Compton,Sakonnet Vineyard,sakonnetwine.com,venue,In use,squarespace,"{""squarespace"": 40}",Squarespace JSON,High,1,Done,,,,,Not contacted,No,"Enabled 8 Nov 2026 as sakonnet-vineyard through the squarespace connector; 10 events in the window (live music, trivia, markets). Venue spelled two ways in the feed."
 Little Compton,Little Compton Community Center,littlecomptoncommunitycenter.org,civic,Candidate,(home ConnectionError),{},None,Medium,4,Confirm domain,,,,,Not contacted,No,Domain did not resolve
 Little Compton,Sakonnet Times (East Bay Media),eastbayri.com,media,Candidate,webflow,{},Check source,Low,,Retry probe,,,,,Not contacted,No,Webflow calendar; check candidate for the Sakonnet
 Little Compton,Town of Little Compton,littlecomptonri.org,town,Candidate,(home 403),{},None,Low,3,Email for feed address,,,,,Not contacted,No,Blocks the probe

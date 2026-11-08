@@ -282,6 +282,35 @@
     Sakonnet Vineyard answer the same way when they are wanted. The group's directory card
     links here through source_id.
 
+- id: hatch-street-studios
+  name: Hatch Street Studios
+  kind: squarespace
+  url: https://www.hatchstreetstudios.com/events
+  town: New Bedford
+  role: primary
+  provenance: Posted by the venue
+  default_category: Arts & Theatre
+  note: >-
+    Artist studios on Hatch Street. Squarespace events collection with the location block
+    filled (the building, or a studio inside it such as Catherine Carter Art School, Studio 210).
+    29 items on 2026-11-08, 5 in the window: open studios and craft workshops. Added the day
+    the squarespace connector landed; probed 2026-10-25 as "5 dated items".
+
+- id: sakonnet-vineyard
+  name: Sakonnet Vineyard
+  kind: squarespace
+  url: https://www.sakonnetwine.com/events
+  town: Little Compton
+  role: primary
+  provenance: Posted by the venue
+  default_category: Food & Drink
+  note: >-
+    Squarespace events collection: weekend live music, Friday trivia, pop-up markets. 40 items
+    on 2026-11-08, 10 in the window. The location block spells the venue two ways ("Sakonnet
+    Vineyard", "Carolyn's Sakonnet Vineyard"); the venue canon should fold them, and the
+    approver sees any that split. Little Compton's first venue source; Brownell Library is
+    paused (decision 13).
+
 - id: standing-new-bedford
   name: Standing schedules, New Bedford
   kind: recurring

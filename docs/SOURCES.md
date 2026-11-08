@@ -210,7 +210,7 @@ The Viva Fall River check carries 103 series across 34 venues. These are the ven
 | Organisation | Probe | Route | Priority |
 |---|---|---|---|
 | Little Compton Historical Society | Tribe plugin, probe rate-limited | Enable the existing registry entry after one manual check | High (feed) |
-| Sakonnet Vineyard | Squarespace; `/events?format=json` answers with 12 dated items (live music, trivia) | Squarespace JSON | High (feed, weekend content) |
+| Sakonnet Vineyard | Squarespace; `/events?format=json` answers with the season's live music, trivia and markets | Squarespace JSON, enabled 8 Nov 2026 as `sakonnet-vineyard` | In use |
 | Little Compton Community Center | Domain did not resolve | Confirm | Medium |
 | Town of Little Compton | Blocks our probe | Ask | Low |
 | Sakonnet Times (East Bay Media) | Webflow calendar page | Check source candidate for the Sakonnet shore, once read | Low |
@@ -225,7 +225,7 @@ The Explore New Bedford check lists what we miss; these are the venues behind it
 | New Bedford Art Museum | WordPress `/events/` with 17 headings; 8 series missed | HTML listing | High |
 | New Bedford Free Public Library | Joomla with a Google Calendar embed on the home page | Ask for the public calendar id, then plain iCal | High |
 | Gallery X | WordPress with EventPrime (32 event links) | HTML listing | Medium |
-| Hatch Street Studios | Squarespace; `/events?format=json` answers with 5 dated items | Squarespace JSON | High (feed) |
+| Hatch Street Studios | Squarespace; `/events?format=json` answers with open studios and workshops | Squarespace JSON, enabled 8 Nov 2026 as `hatch-street-studios` | In use |
 | New Bedford Symphony Orchestra | WordPress; tickets through the Zeiterion's Salesforce | Already arrives through the Zeiterion listing | Done |
 | New Bedford Historical Society | WordPress, imports from Eventbrite | Eventbrite organiser, or HTML | Medium |
 | New Bedford Fishing Heritage Center | WordPress `/calendar/` | HTML listing | Medium |
