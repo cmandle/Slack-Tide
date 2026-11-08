@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T18:25:38.339636+00:00",
+ "generated_at": "2026-11-08T21:57:49.628389+00:00",
  "pending_count": 73,
  "soon_count": 47,
  "approved_count": 25,
@@ -234,9 +234,9 @@
    "soon": true
   },
   {
-   "id": "831dc0dfaf05",
+   "id": "bd65c39d1d2d",
    "title": "Create, Explore, and Collect! Happy Birthday National Park!",
-   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "venue": "New Bedford Whaling National Historical Park",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -288,9 +288,9 @@
    "soon": true
   },
   {
-   "id": "0c07b22c9feb",
+   "id": "1a0526653ddc",
    "title": "Youth Services: Design Your Own Apron and Book Sale",
-   "venue": "New Bedford Main Library's Youth Services 613 Pleasant Street",
+   "venue": "New Bedford Free Public Library",
    "town": "New Bedford",
    "category": "Family & Children",
    "source_id": "aha-next-aha",
@@ -315,9 +315,9 @@
    "soon": true
   },
   {
-   "id": "f22fb3c9e0cb",
+   "id": "81b225f5592f",
    "title": "Nature Craft with Local Leaves and the Trustees!",
-   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "venue": "New Bedford Whaling National Historical Park",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -342,9 +342,9 @@
    "soon": true
   },
   {
-   "id": "c6a451820a9a",
+   "id": "6d6250163652",
    "title": "Make a Party Hat with the 1850s Ladies",
-   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "venue": "New Bedford Whaling National Historical Park",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -369,9 +369,9 @@
    "soon": true
   },
   {
-   "id": "2f913be9ed81",
+   "id": "a03568b215c2",
    "title": "Share Your Story. Preserve Our History.",
-   "venue": "Bristol Community College - 800 Purchase St.",
+   "venue": "Bristol Community College, New Bedford",
    "town": "New Bedford",
    "category": "Family & Children",
    "source_id": "aha-next-aha",
@@ -423,9 +423,9 @@
    "soon": true
   },
   {
-   "id": "d0b17dd00a30",
+   "id": "d4237e80a7f7",
    "title": "Open House on AHA!",
-   "venue": "3rd EyE Youth Empowerment, 230 Union Street",
+   "venue": "3rd EyE Youth Empowerment",
    "town": "New Bedford",
    "category": "Family & Children",
    "source_id": "aha-next-aha",
@@ -450,9 +450,9 @@
    "soon": true
   },
   {
-   "id": "ee9f9945b9c1",
+   "id": "1fa6441547ee",
    "title": "FREE New Bedford Art Museum Admission & Activities!",
-   "venue": "New Bedford Art Museum, 608 Pleasant St.",
+   "venue": "New Bedford Art Museum",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -477,9 +477,9 @@
    "soon": true
   },
   {
-   "id": "7f3f34d068db",
+   "id": "f6136a6fdf85",
    "title": "Kim's Myth",
-   "venue": "Interwoven Artist Gallery 634 Pleasant St.",
+   "venue": "Interwoven Artist Gallery",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -504,9 +504,9 @@
    "soon": true
   },
   {
-   "id": "532613541e45",
+   "id": "3c13cb7e8178",
    "title": "Discover Downtown: Community, Resources & Prizes",
-   "venue": "House of Gamboa and Luisa Edits 121 Union St.",
+   "venue": "House of Gamboa and Luisa Edits",
    "town": "New Bedford",
    "category": "Family & Children",
    "source_id": "aha-next-aha",
@@ -531,9 +531,9 @@
    "soon": true
   },
   {
-   "id": "132bc6eabd89",
+   "id": "8577b808d9f7",
    "title": "Whales! Whales! Whales!",
-   "venue": "Waterfront Card Shop 752 Purchase St.",
+   "venue": "Waterfront Card Shop",
    "town": "New Bedford",
    "category": "Family & Children",
    "source_id": "aha-next-aha",
@@ -558,9 +558,9 @@
    "soon": true
   },
   {
-   "id": "4091f4f05647",
+   "id": "0c484fdd1153",
    "title": "Salty Stitches",
-   "venue": "The Star Store 715 Purchase Street",
+   "venue": "The Star Store",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -585,9 +585,9 @@
    "soon": true
   },
   {
-   "id": "268aa2cdeacc",
+   "id": "78da7049f194",
    "title": "American Dream Exhibition",
-   "venue": "The Star Store 715 Purchase Street",
+   "venue": "The Star Store",
    "town": "New Bedford",
    "category": "Museums & Exhibitions",
    "source_id": "aha-next-aha",
@@ -612,9 +612,9 @@
    "soon": true
   },
   {
-   "id": "30b288493754",
+   "id": "d1b471b89212",
    "title": "AHA! Moment- The Art and Language of Food at the Artisan Market",
-   "venue": "The Star Store 715 Purchase Street",
+   "venue": "The Star Store",
    "town": "New Bedford",
    "category": "Markets & Fairs",
    "source_id": "aha-next-aha",
@@ -666,9 +666,9 @@
    "soon": true
   },
   {
-   "id": "f597ec40faf8",
+   "id": "3f287bb57237",
    "title": "Make Your Own Leaf Lantern",
-   "venue": "Pilgrim United Church Home, 634 Purchase Street",
+   "venue": "Pilgrim United Church",
    "town": "New Bedford",
    "category": "Faith & Spiritual",
    "source_id": "aha-next-aha",
@@ -693,9 +693,9 @@
    "soon": true
   },
   {
-   "id": "732255e9c338",
+   "id": "1ee3d2bc2945",
    "title": "Radiance - Tammi J. Meehan",
-   "venue": "Gallery X 169 William Street",
+   "venue": "Gallery X",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -720,9 +720,9 @@
    "soon": true
   },
   {
-   "id": "f1e5a622959c",
+   "id": "83c46c6f4115",
    "title": "Gallery X Artist & Vendor Market",
-   "venue": "Gallery X 169 William Street",
+   "venue": "Gallery X",
    "town": "New Bedford",
    "category": "Markets & Fairs",
    "source_id": "aha-next-aha",
@@ -747,9 +747,9 @@
    "soon": true
   },
   {
-   "id": "4acb0969e914",
+   "id": "9424eded0c87",
    "title": "Local Artisan Showcase",
-   "venue": "New Bedford Fishing Heritage Center, 38 Bethel Street",
+   "venue": "New Bedford Fishing Heritage Center",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -811,9 +811,9 @@
    "soon": true
   },
   {
-   "id": "e42e7be3d548",
+   "id": "9322db7e5868",
    "title": "Serlingpa Meditation Center",
-   "venue": "Serlingpa Meditation Center 512 Pleasant St.",
+   "venue": "Serlingpa Meditation Center",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -838,9 +838,9 @@
    "soon": true
   },
   {
-   "id": "4a1d216214d6",
+   "id": "a93562ee69ca",
    "title": "30th Anniversary Cake Cutting!",
-   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "venue": "New Bedford Whaling National Historical Park",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -865,9 +865,9 @@
    "soon": true
   },
   {
-   "id": "77b7f81478e5",
+   "id": "3ca9287d0776",
    "title": "AHA! Night Jazz Jam Featuring Manny Escobar and Mwalim DaPhunkee Professor",
-   "venue": "Zeiterion 684 Purchase St",
+   "venue": "The Zeiterion",
    "town": "New Bedford",
    "category": "Music",
    "source_id": "aha-next-aha",
@@ -892,9 +892,9 @@
    "soon": true
   },
   {
-   "id": "32b81d938faf",
+   "id": "0758bfc2dc1e",
    "title": "Traditional Iñupiat Dancing, Presentation, and Q&A",
-   "venue": "New Bedford Whaling National Historical Park, 33 William Street",
+   "venue": "New Bedford Whaling National Historical Park",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -919,9 +919,9 @@
    "soon": true
   },
   {
-   "id": "2a3a4f533642",
+   "id": "d9993e826e2c",
    "title": "Jazz with the Buttonwood Brass Band",
-   "venue": "New Bedford Harbor Hotel, 222 Union St.",
+   "venue": "New Bedford Harbor Hotel",
    "town": "New Bedford",
    "category": "Music",
    "source_id": "aha-next-aha",
@@ -978,9 +978,9 @@
    "soon": true
   },
   {
-   "id": "4924dccc7a45",
+   "id": "489c9533c6a1",
    "title": "The Art of Ecstatic Meditation",
-   "venue": "Sangha Yoga New Bedford 693 Purchase Street at the corner of Spring Street dNB",
+   "venue": "Sangha Yoga New Bedford",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -1005,9 +1005,9 @@
    "soon": true
   },
   {
-   "id": "e58af8a95d62",
+   "id": "9b2c28d4029e",
    "title": "AHHHhhh!-AHA AFTER DARK",
-   "venue": "Speakeasy @ The Z! - 984 Purchase St",
+   "venue": "The Zeiterion",
    "town": "New Bedford",
    "category": "Music",
    "source_id": "aha-next-aha",
@@ -1032,9 +1032,9 @@
    "soon": true
   },
   {
-   "id": "559a64b2956c",
+   "id": "8a044b453d85",
    "title": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan",
-   "venue": "Bento's Bar and Grille, 555 Pleasant St.",
+   "venue": "Bento's Bar and Grille",
    "town": "New Bedford",
    "category": "Music",
    "source_id": "aha-next-aha",
@@ -1059,9 +1059,9 @@
    "soon": true
   },
   {
-   "id": "da2c8cc09dec",
+   "id": "c05ad05cf130",
    "title": "Neal McCarthy Trio",
-   "venue": "The Pour Farm Tavern, 780 Purchase St.",
+   "venue": "The Pour Farm Tavern",
    "town": "New Bedford",
    "category": "Arts & Theatre",
    "source_id": "aha-next-aha",
@@ -1086,9 +1086,9 @@
    "soon": true
   },
   {
-   "id": "cac5725fec76",
+   "id": "19708b8ba512",
    "title": "Karaoke at PLAY",
-   "venue": "PLAY Arcade, 34 Union St.",
+   "venue": "PLAY Arcade",
    "town": "New Bedford",
    "category": "Music",
    "source_id": "aha-next-aha",
@@ -1254,9 +1254,9 @@
    "soon": true
   },
   {
-   "id": "90f1a5135d5f",
+   "id": "8efc1befa2dc",
    "title": "Juicy Market",
-   "venue": "Carolyn's Sakonnet Vineyard",
+   "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
    "category": "Markets & Fairs",
    "source_id": "sakonnet-vineyard",
@@ -1503,9 +1503,9 @@
    "soon": true
   },
   {
-   "id": "4fdd5ffe5cdf",
+   "id": "702e5491459b",
    "title": "World Day of Remembrance for Road Traffic Victims",
-   "venue": "Noah's Place Playground, 102 Popes Island, New Bedford, MA 02740, USA",
+   "venue": "Noah's Place Playground",
    "town": "New Bedford",
    "category": "Civic & Town Meetings",
    "source_id": "south-coast-places-for-people",
@@ -1621,9 +1621,9 @@
    "soon": false
   },
   {
-   "id": "93ea8c414435",
+   "id": "fceaea0689fd",
    "title": "Live Music: FrankenPhil",
-   "venue": "Carolyn's Sakonnet Vineyard",
+   "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
    "category": "Music",
    "source_id": "sakonnet-vineyard",
@@ -1901,9 +1901,9 @@
    "soon": false
   },
   {
-   "id": "af0cd305aa63",
+   "id": "5092e8abea61",
    "title": "Trivia w/ Gary Farias",
-   "venue": "Carolyn's Sakonnet Vineyard",
+   "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
    "category": "Food & Drink",
    "source_id": "sakonnet-vineyard",
@@ -1928,9 +1928,9 @@
    "soon": false
   },
   {
-   "id": "0ae0bcea3eee",
+   "id": "3f800ce1fd17",
    "title": "Juicy Market and Holiday Kick Off Party",
-   "venue": "Carolyn's Sakonnet Vineyard",
+   "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
    "category": "Markets & Fairs",
    "source_id": "sakonnet-vineyard",
@@ -2009,9 +2009,9 @@
    "soon": false
   },
   {
-   "id": "29bc94c80fe6",
+   "id": "a34b6600f405",
    "title": "Session 3: Water-Based Paints",
-   "venue": "Catherine Carter Art School, Studio 210",
+   "venue": "Catherine Carter Art School",
    "town": "New Bedford",
    "category": "Education & Workshops",
    "source_id": "hatch-street-studios",
@@ -2117,9 +2117,9 @@
    "soon": false
   },
   {
-   "id": "ea1be6eb6618",
+   "id": "6cce2c1d71ae",
    "title": "Live Music: Frank Foot",
-   "venue": "Carolyn's Sakonnet Vineyard",
+   "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
    "category": "Music",
    "source_id": "sakonnet-vineyard",

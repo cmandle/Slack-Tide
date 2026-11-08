@@ -2,47 +2,47 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 178,
-   "seconds": 4.46
+   "seconds": 5.13
   },
   "viva-fall-river": {
    "rows": 312,
-   "seconds": 19.81
+   "seconds": 19.54
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.92
+   "seconds": 3.95
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.58
+   "seconds": 0.46
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 5.21
+   "seconds": 9.53
   },
   "aha-next-aha": {
    "rows": 29,
-   "seconds": 0.25
+   "seconds": 2.39
   },
   "cisco-live-music": {
    "rows": 9,
-   "seconds": 0.12
+   "seconds": 0.14
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.3
+   "seconds": 0.34
   },
   "south-coast-girls-walk": {
    "rows": 1,
-   "seconds": 0.19
+   "seconds": 0.81
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.16
+   "seconds": 0.76
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 0.22
+   "seconds": 0.79
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -294,7 +294,7 @@
    },
    {
     "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
-    "venue": "Bristol Community College",
+    "venue": "Bristol Community College, New Bedford",
     "town": "Fall River",
     "first_start": "2026-11-11T17:30:00-05:00",
     "rows": 6
@@ -847,5 +847,5 @@
   "primary_only_series": 66,
   "coverage_ratio": 0.057
  },
- "tide_error": "HTTPError: 504 Server Error: Gateway Timeout for url: https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=8447636&product=predictions&datum=MLLW&units=english&time_zone=lst_ldt&format=json&interval=30&begin_date=20261108&range=48&application=slack-tide.org"
+ "tide_error": null
 }
