@@ -7,7 +7,8 @@ change of mind is a new line, not an edit, and the history stays readable.
 
 The unit is the series. Its id is a hash of source, title key and venue, so a decision outlives
 new dates, but a retitled or moved series is a new id and comes back to the queue. Sources with
-``review: auto`` in sources.yaml publish without a decision; none has earned that yet.
+``review: auto`` in sources.yaml publish without a decision; a recorded decision still wins, so a
+rejected series from such a source stays rejected. The Zeiterion was the first, 2026-11-08.
 """
 from __future__ import annotations
 from collections import Counter
