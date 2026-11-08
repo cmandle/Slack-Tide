@@ -1,5 +1,6 @@
 # Source registry. Every source the pipeline reads is declared here.
 # kind: tribe (WordPress Events Calendar REST) | ical | rss | html (server-rendered listing) | sheet (published CSV)
+#       | recurring (standing schedules declared below, see connectors/recurring.py)
 # town: default town when the record carries none. Must match config.TOWNS.
 # venue: default venue when the record carries none (single-venue sources such as a library).
 # role: primary | check   (check = used for reconciliation only, never published)
@@ -33,6 +34,7 @@
   town: Little Compton
   venue: Brownell Library
   role: primary
+  enabled: false   # paused 2026-11-08, decision 13: focus on the named list first
   note: Feed sends an empty venue list on every event; the default above fills it.
 
 - id: dnrt
@@ -48,6 +50,7 @@
   url: https://buzzardsbrew.com/wp-json/tribe/events/v1/events
   town: Westport
   role: primary
+  enabled: false   # paused 2026-11-08, decision 13: focus on the named list first
   note: Site leaks PHP warnings before the JSON body. The tribe connector tolerates this.
 
 - id: zeiterion
@@ -113,6 +116,7 @@
   categories: [14, 24]
   town: Tiverton
   role: primary
+  enabled: false   # paused 2026-11-08, decision 13: focus on the named list first
   note: cat 14 is mostly public holidays (filtered); cat 24 is the senior centre programme.
 
 - id: town-dartmouth
@@ -122,6 +126,7 @@
   categories: [14, 24]
   town: Dartmouth
   role: primary
+  enabled: false   # paused 2026-11-08, decision 13: focus on the named list first
 
 - id: town-somerset
   name: Town of Somerset
@@ -130,6 +135,7 @@
   categories: [14, 23]
   town: Somerset
   role: primary
+  enabled: false   # paused 2026-11-08, decision 13: focus on the named list first
 
 - id: submissions
   name: Submitted through slack-tide.org
@@ -171,3 +177,87 @@
   role: primary
   enabled: false
   note: Articles, not events. Stored for a later extraction pass, not published directly.
+
+# ---- Decision 13 (2026-11-08): the named list. Organisations and groups the editors asked for first.
+
+- id: aha-new-bedford
+  name: AHA! New Bedford
+  kind: tribe
+  url: https://ahanewbedford.org/wp-json/tribe/events/v1/events
+  town: New Bedford
+  role: primary
+  provenance: Posted by the organisation
+  default_category: Arts & Theatre
+  note: >-
+    Decision 13. On 2026-10-25 the plugin held three 2022 test events; on 2026-11-08 it answers
+    with 28, still titled "Tested" and "December Test" but already carrying the second-Thursday
+    After Dark pattern at 11 William Street and a Gallery X cookie swap. AHA is setting it up.
+    Test titles reach the queue and are rejected there; the real names arrive as new series.
+    When AHA Night itself appears here, retire the declared copy in standing-new-bedford.
+
+- id: south-coast-places-for-people
+  name: South Coast Places for People
+  kind: ical
+  url: https://api.lu.ma/ics/get?entity=calendar&id=cal-1cKC6jMQ8Hatgih
+  town: New Bedford
+  role: primary
+  provenance: Posted by the organisation
+  default_category: Civic & Town Meetings
+  note: >-
+    Decision 13. Housing, transport and public-space advocacy group: monthly meetups at the
+    Co-Creative Center, walk audits, talks. Publishes on Luma (luma.com/southcoastplacesforpeople);
+    every Luma calendar has this public iCal feed. 28 events on 2026-11-08, one of them upcoming;
+    the LOCATION line carries the street address, which the iCal connector splits.
+
+- id: standing-new-bedford
+  name: Standing schedules, New Bedford
+  kind: recurring
+  town: New Bedford
+  role: primary
+  provenance: Declared from the venue's published schedule
+  note: >-
+    Decision 13. Weekly and monthly events the venues state in prose with no feed behind them.
+    Each entry records where the schedule was seen and when; re-check them each season and remove
+    what has stopped. Publication still passes the approver. Categories for games nights are
+    provisional until issue 12 settles the taxonomy.
+  series:
+    - title: Trivia night
+      venue: PLAY Arcade
+      weekday: wednesday
+      start: "19:00"
+      end: "21:00"
+      url: https://www.playarcadenb.com/
+      category: Sports & Recreation
+      confirmed: 2026-11-08
+      confirmed_at: https://www.playarcadenb.com/   # home page: "Trivia every Wednesday from 7-9PM"
+    - title: Karaoke
+      venue: PLAY Arcade
+      weekday: thursday
+      start: "20:00"
+      end: "00:00"
+      url: https://www.playarcadenb.com/
+      category: Music
+      confirmed: 2026-11-08
+      confirmed_at: https://www.playarcadenb.com/   # home page: "Karaoke every Thursday from 8PM-12AM"
+    - title: Trivia night
+      venue: New Beige
+      weekday: wednesday
+      url: https://newbeigema.squarespace.com/
+      category: Sports & Recreation
+      enabled: false
+      # Named by the editor on 2026-11-08. The venue's site (Squarespace, 39 Union Street) has no
+      # events page and the only listing found online is Thursday music bingo. Add the start
+      # time once confirmed with the venue, then set enabled: true.
+    - title: AHA! Night
+      venue: Downtown New Bedford
+      weekday: thursday
+      week: 2
+      start: "17:00"
+      end: "21:00"
+      url: https://ahanewbedford.org/
+      category: Arts & Theatre
+      description: >-
+        Free arts and culture night across downtown New Bedford on the second Thursday of every
+        month. The month's theme and programme are on ahanewbedford.org.
+      confirmed: 2026-11-08
+      confirmed_at: https://ahanewbedford.org/

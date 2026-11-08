@@ -64,7 +64,7 @@ def _cadence(starts):
         return "daily", None
     if 13 <= med <= 15 and len(weekdays) == 1:
         return "fortnightly", starts[0].weekday()
-    if len(weekdays) == 1 and med <= 31:
+    if len(weekdays) == 1 and med <= 35:   # the Nth weekday of the month recurs at 28 or 35 days
         return "monthly", starts[0].weekday()
     return "irregular", None
 

@@ -21,6 +21,7 @@ Decisions that shape every choice below: venues and organisations are read direc
 | **Ticketing systems** | ShoWare (Narrows), Salesforce (Zeiterion, NBSO), FareHarbor (Coalition, Community Boating), NeonCRM (WHALE). The venue's own site usually mirrors them. | Read the venue site; ask the venue for an export where it does not. | HTML or ask |
 | **Submission form** | `/add/` on the site, posting to a Google Form the `sheet` connector reads. For organisations that only post on Facebook or by email. | Configure the form (issue 18); then it is their effort, not ours. | Built, form not yet configured |
 | **Check sources** | Aggregators and media calendars, read for the coverage report and never published. | A registry entry with `role: check`. | Built |
+| **Declared schedule** | A standing weekly or monthly event the venue states in prose ("Trivia every Wednesday from 7-9PM"), declared on a `recurring` source with the date and page it was confirmed on. | A registry entry per schedule; re-check each season. | Built (`recurring`, 8 Nov 2026) |
 
 ## 2. In use today
 
@@ -45,6 +46,27 @@ From the run report of 25 October 2026 (`rows` is occurrences in the 60-day wind
 
 Published towns today: Tiverton, Dartmouth, Little Compton, New Bedford, Somerset, Westport. The weekend gate needs fifty series across five towns, so the order of work below is about towns first and volume second.
 
+## 2a. The named list, 8 November 2026 (decision 13)
+
+The editors asked to pause most of what section 2 reads and concentrate on a named list of organisations and groups first. The municipal iCal feeds (Tiverton, Dartmouth, Somerset), Brownell Library and Buzzards Bay Brewing are paused with `enabled: false`, entries kept. Probed the same day:
+
+| Organisation | Found | Route | State |
+|---|---|---|---|
+| The Zeiterion | Webflow listing, `html` connector, `review: auto` | In use | Publishing |
+| AHA! New Bedford | Tribe endpoint now carries 28 entries, test titles, the second-Thursday pattern already in it | Tribe REST, enabled | Test titles rejected in the queue; AHA Night declared on `standing-new-bedford` meanwhile |
+| DNRT | Tribe REST | In use | Publishing on approval |
+| Buzzards Bay Coalition | Craft CMS; Bay Adventures dates in FareHarbor | Ask (issue 19) | Entry disabled |
+| PLAY Arcade | Squarespace; "Trivia every Wednesday from 7-9PM. Karaoke every Thursday from 8PM-12AM." on the home page; no event collection | Declared schedule | Two series on `standing-new-bedford` |
+| New Beige | Squarespace, menus only; events on Instagram. Editor names Wednesday trivia; the only listing found online is Thursday music bingo | Declared schedule once the night and time are confirmed | Entry disabled |
+| Cisco Brewers New Bedford | Squarespace; the New Bedford page sends visitors to Instagram, while the same site runs a readable events collection for Nantucket | One email: do for New Bedford what you do for Nantucket | Candidate |
+| Star Store | Owned by the Arts & Business Council of Greater Boston since May 2025; pop-ups until the 2027 reopening; their `ve_event` REST lists Boston events only | Ask them to list Star Store pop-ups | Candidate |
+| South Coast Places for People | Luma calendar `cal-1cKC6jMQ8Hatgih` with a public iCal feed, 28 events | Plain iCal, enabled | In use |
+| South Coast Walking Book Tour | South Coast Almanac, about four walks a year; Meetup (not ingested); the Almanac site refuses automated readers | One email for dates or an iCal | Candidate |
+| South Coast Girls Walk | Facebook group only | Submission form | Candidate |
+| FR•NB Artist Collaborative | Instagram only | Submission form | Candidate |
+
+Consequences: issue 18 (the form behind `/add/`) is now the route for three of the twelve, so it moves to the front. The Phase 1 weekend gate is not reachable from this list and is suspended, not removed; the run report keeps measuring it.
+
 ## 3. Decided against
 
 | What | Why | Instead |
@@ -57,7 +79,7 @@ Published towns today: Tiverton, Dartmouth, Little Compton, New Bedford, Somerse
 | Brave Search, Exa | Terms prohibit storing results. | |
 | Google Custom Search JSON API | Closed to new customers. | |
 | Explore New Bedford, Viva Fall River as sources of record | Aggregators: not their taxonomy, not their venue spellings, and anything nobody submitted is missing (decisions 3 and 10). | Check role; their venues directly. |
-| AHA! New Bedford's calendar | The Events Calendar plugin is installed but holds three 2022 test events; the programme is prose pages. | Ask AHA to use the plugin they have (section 5). The venues carry the actual AHA Night events. |
+| AHA! New Bedford's calendar | Was: the plugin held three 2022 test events. Since 8 November 2026 it holds 28 entries with test titles and the real second-Thursday pattern; AHA is setting it up. | Enabled as `aha-new-bedford` (section 2a). Test titles are rejected in the queue; AHA Night is declared on `standing-new-bedford` until it arrives in the feed. |
 | Cisco Kitchen & Bar's happenings page | Prose about weekly specials, no dates; the live music page is a 404. | A hand-entered series through the form, or nothing. |
 | Destination New Bedford | The city tourism site renders nothing readable without JavaScript. | Explore New Bedford already covers the same ground as a check. |
 
