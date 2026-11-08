@@ -167,7 +167,9 @@ def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
     """Clean every occurrence in place. `default_venue_by_source` fills the venue for
     single-venue sources whose feed carries none (Brownell Library sends "venue": []).
     `default_category_by_source` is our own call for a single-purpose venue (a theatre is
-    Arts & Theatre) when the rule classifier finds nothing; it is never the source's category."""
+    Arts & Theatre) when the rule classifier finds nothing; it is never the source's category.
+    A category the connector has already set (the recurring connector carries the editor's own
+    call) is kept."""
     canon = VenueCanon()
     default_venue_by_source = default_venue_by_source or {}
     default_category_by_source = default_category_by_source or {}
@@ -186,7 +188,8 @@ def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
         if not o.title:
             o.dropped = "no title"
             continue
-        o.category = (classify(o.title, o.venue, o.description)
+        o.category = (o.category                                   # already decided by the connector (a declared schedule's editor)
+                      or classify(o.title, o.venue, o.description)
                       or next((c for c in o.source_categories if c in CATEGORIES), "")   # a source naming OUR category exactly (the /add/ form does)
                       or default_category_by_source.get(o.source_id, ""))
     return occs
