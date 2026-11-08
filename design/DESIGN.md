@@ -8,7 +8,7 @@ Mood boards: analog and retro details with flat primary colours. The direct refe
 
 ## Structure
 
-Three sections, equal in the navigation: **Events**, **Community groups & meetups**, **Volunteer opportunities**. They are tabs. Events is the landing section. Calendar and Map are views of Events, reached from controls inside the section, not top-level navigation. Groups is a directory; Volunteer is a mixed list of dated and ongoing opportunities. Only the Events section is designed so far.
+Two sections, equal in the navigation: **Events** and **Community groups & meetups**. They are tabs. (Volunteer opportunities was a third tab until 8 November 2026, when it was removed; volunteer events list under the Civic family.) Events is the landing section. Calendar and Map are views of Events, reached from controls inside the section, not top-level navigation. Groups is a directory. Only the Events section is designed so far.
 
 Phase 1 scope on every page: listings, filters, the provenance line, the report link, the organiser call to action. No accounts, no going or saved markers, no calendar subscription, no ratings, no comments.
 
@@ -105,7 +105,7 @@ Public copy is American English (harbor, organizer, canceled). Sentence case in 
 - Organiser call to action on the desktop page: footer link, or a tab-row element. Decide before `site/` is generated.
 - Event page and Map view are not yet designed in this direction. Carry the event page's provenance line and report link from `preview/event.html`.
 - Calendar view: built 25 October 2026 straight from the vocabulary above, without a canvas artboard. Desktop is a Sunday-first month grid with 1 px ink rules, mono day numbers (today on a yellow block, past days dimmed, neighbouring months hatched), three listings per cell then "+N more"; the phone is a list of day cards in the week card's shape (yellow date cell, listings beside it), empty days left out. One page per month the 60-day window touches, with month links as the outlined buttons. Build screenshots: `design/reference/calendar-build-1280.png` and `calendar-build-390.png`. If the canvas later draws a calendar, the build follows it.
-- Groups section: built 8 November 2026 as a directory from `groups.yaml`, in the Events vocabulary without a canvas artboard: one outlined card per group with the name, an area chip and cadence in mono, a short purpose, `.btn` links to the website and social accounts, and the group's next dates when its events come through the pipeline. Two across on desktop, one on the phone. Build screenshots: `design/reference/groups-build-1280.png` and `groups-build-390.png`. If the canvas later draws the directory, the build follows it. Volunteer: layout to follow.
+- Groups section: built 8 November 2026 as a directory from `groups.yaml`, in the Events vocabulary without a canvas artboard: one outlined card per group with the name, an area chip and cadence in mono, a short purpose, `.btn` links to the website and social accounts, and the group's next dates when its events come through the pipeline. Two across on desktop, one on the phone. Build screenshots: `design/reference/groups-build-1280.png` and `groups-build-390.png`. If the canvas later draws the directory, the build follows it.
 - Mascot: none. Illustration is the card scene set in `design/art/`; a character, if one ever comes, is a separate decision.
 - Splat stickers in the hero are decoration; keep at most three, and drop them on narrow phones if they collide with the tide panel.
 
@@ -117,3 +117,7 @@ python3 design/tools/flatten.py design/canvas/Revision-Desktop.dc.html design/re
 ```
 
 Needs python3 and node. Screenshots in `design/reference/` were rendered from those pages with headless Chromium at 2x. `python3 design/tools/make_art.py` regenerates `design/art/`.
+
+## Filters, revised 8 November 2026
+
+One control row: the town select on the left, the Calendar and Map buttons on the right, at every width. The category and section selects are gone; the tiles are the only category control and the tabs the only section navigation. The tiles form a grid spanning the full content width, one row of eight when the filters block is at least 540 px wide (a container query, since the frame margins change with the viewport) and four by two below that. Calendar and Map are view buttons: Archivo 700 13 px, a 2 px ink offset that presses in on click, the tile yellow on hover and focus, and yellow and pressed in when the button names the page you are on (`aria-current="page"`).

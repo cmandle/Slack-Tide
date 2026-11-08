@@ -57,9 +57,8 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert set(config.CATEGORY_FAMILY_OF) == set(config.CATEGORIES)   # every taxonomy entry has a family
     assert 'data-cat="outdoors" data-category="Sports &amp; Recreation"' in html   # bingo is Sports, family Outdoors
     assert html.count('class="card"') == 1 and html.count('class="week-card"') == 3 and 'class="week-grid"' in html
-    assert 'id="category"' in html and 'id="section"' in html   # the category and section selects
-    assert '<option value="music">Music</option>' in html and '<option value="" selected>Events</option>' in html
-    assert '<option value="groups/">Community groups &amp; meetups</option>' in html
+    assert 'id="category"' not in html and 'id="section"' not in html   # removed 2026-11-08; tiles and tabs replace them
+    assert '<a class="tab" href="groups/">' in html and "Volunteer opportunities" not in html
     assert 'data-source="viva-fall-river"' in html and 'class="card-prov" title="Viva Fall River">Read by a person' in html
     assert "Tide data unavailable" in html and 'data-state="unavailable"' in html
     assert "Too far out" not in html and "Already over" not in html
@@ -74,9 +73,10 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert [html.index(t) for t in order] == sorted(html.index(t) for t in order)
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
-    for sub in ("volunteer", "map"):
-        p = out / sub / "index.html"
-        assert p.exists() and "is coming" in p.read_text(encoding="utf-8")
+    p = out / "map" / "index.html"
+    assert p.exists() and "is coming" in p.read_text(encoding="utf-8")
+    assert not (out / "volunteer").exists() and "volunteer/" not in html   # section retired 2026-11-08
+    assert 'id="category"' not in html and 'id="section"' not in html     # the tiles and tabs replace both selects
     assert (out / "groups" / "index.html").exists()   # the directory; test_groups.py covers it
     # The calendar: this month at calendar/, the next two months the window touches at calendar/YYYY-MM/.
     cal = (out / "calendar" / "index.html").read_text(encoding="utf-8")
@@ -89,7 +89,7 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     today_cell = cal.split('data-date="2098-12-31"')[1].split('class="cal-day"')[0]
     assert "Tonight gig" in today_cell and "Already over" in today_cell and "Rejected gig" not in today_cell   # the day shows its whole day; rejected never
     assert 'data-date="2099-01-02"' in jan and "Weekly bingo" in jan and "Too far out" in jan   # every date of a series, 8 days out included
-    assert "Waiting for review" not in jan and 'id="category"' in cal
+    assert "Waiting for review" not in jan and 'class="tile"' in cal and 'href="../calendar/" aria-current="page"' in cal and 'aria-current="page">' + '' not in html.split('class="links"')[1].split('</nav>')[0] and 'id="category"' not in cal
     for a in ("tokens.css", "site.css", "site.js", "admin.js"):
         assert (out / "assets" / a).exists()
     assert not (out / "assets" / "review.js").exists()

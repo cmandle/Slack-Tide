@@ -31,11 +31,11 @@ WEEK_DAYS = 7
 FONT_URL = "https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap"
 CONTACT = "mailto:hello@slack-tide.org"
 
-SECTIONS = [  # tabs; the first is this section, the rest are placeholders for now
+SECTIONS = [  # tabs; Volunteer opportunities was removed on 8 November 2026
     ("events", "Events", "Events", ""),
     ("groups", "Community groups & meetups", "Groups & meetups", "groups/"),
-    ("volunteer", "Volunteer opportunities", "Volunteer", "volunteer/"),
 ]
+RETIRED = ("volunteer",)  # pages an earlier build wrote; build() deletes them so the URL stops serving
 LINKS = [("calendar", "Calendar", "calendar/"), ("map", "Map", "map/"), ("add", "Add your event", "add/")]
 STICKER = ("M12 2a3 3 0 013 3l-1 4 4-1a3 3 0 010 6l-4-1 1 4a3 3 0 01-6 0l1-4-4 1a3 3 0 010-6l4 1-1-4a3 3 0 013-3z")
 
@@ -273,21 +273,14 @@ def footer(rel: str) -> str:
 def chevron() -> str:
     return '<svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="#1A1A1A" stroke-width="2"/></svg>'
 
-def filters(towns_with: Counter, rel: str, active: str = "events") -> str:
+def filters(towns_with: Counter, rel: str, active: str = "events", view: str = "") -> str:
     opts = ['<option value="">All towns</option>']
     for t in config.TOWNS:
         dis = "" if towns_with.get(t) else " disabled"
         opts.append(f'<option value="{esc(t)}"{dis}>{esc(t)}</option>')
-    # Category as a select too, for the phone and for keyboards; it mirrors the tiles below.
-    cat_opts = ['<option value="">All categories</option>'] + [
-        f'<option value="{esc(fam)}">{esc(label)}</option>' for fam, (label, _) in config.CATEGORY_FAMILIES.items()]
-    # The section select goes where the tabs go: Events, Groups & meetups, Volunteer.
-    sec_opts = [f'<option value="{rel}{href}"{" selected" if key == active else ""}>{esc(long)}</option>'
-                for key, long, short, href in SECTIONS]
-    more = (f'<div class="more"><div class="select"><label class="visually-hidden" for="category">Category</label>'
-            f'<select id="category" name="category">{"".join(cat_opts)}</select>{chevron()}</div>'
-            f'<div class="select"><label class="visually-hidden" for="section">Section</label>'
-            f'<select id="section" name="section">{"".join(sec_opts)}</select>{chevron()}</div></div>')
+    # The category and section selects were removed on 8 November 2026: the tiles are the only
+    # category control (they are buttons, so keyboards reach them), and the tabs are the only
+    # section navigation.
     tiles = [f'<button class="tile" type="button" data-cat="" aria-pressed="true">{icon_svg("all")}<span>All</span></button>']
     for fam, (label, cats) in config.CATEGORY_FAMILIES.items():
         tiles.append(f'<button class="tile" type="button" data-cat="{esc(fam)}" aria-pressed="false" title="{esc(", ".join(cats))}">'
@@ -296,11 +289,11 @@ def filters(towns_with: Counter, rel: str, active: str = "events") -> str:
            '<path d="M2 8h16M6 2v4M14 2v4" stroke="currentColor" stroke-width="2"/></svg>')
     pin = ('<svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 18s-6-5.5-6-10a6 6 0 0112 0c0 4.5-6 10-6 10z" fill="none" stroke="currentColor" stroke-width="2"/>'
            '<circle cx="10" cy="8" r="2" fill="currentColor"/></svg>')
+    cur = {k: ' aria-current="page"' if k == view else "" for k in ("calendar", "map")}
     return (f'<div class="filters"><div class="select"><label class="visually-hidden" for="town">Town</label>'
             f'<select id="town" name="town">{"".join(opts)}</select>{chevron()}</div>'
-            + more +
-            f'<nav class="links" aria-label="Views"><a class="btn btn-calendar" href="{rel}calendar/">{cal}Calendar</a>'
-            f'<a class="btn" href="{rel}map/">{pin}Map</a></nav>'
+            f'<nav class="links" aria-label="Views"><a class="btn btn-calendar" href="{rel}calendar/"{cur["calendar"]}>{cal}Calendar</a>'
+            f'<a class="btn" href="{rel}map/"{cur["map"]}>{pin}Map</a></nav>'
             f'<div class="tiles" role="group" aria-label="Categories">{"".join(tiles)}</div></div>')
 
 def card(row: dict, sources: dict, scenes: dict[str, list[str]], rel: str = "") -> str:
@@ -378,7 +371,6 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     return page(f"{SITE_NAME} · Events, {REGION}", body, "", description, now)
 
 PLACEHOLDER_COPY = {
-    "volunteer": ("Volunteer opportunities", "This section will list the land trusts, libraries, pantries and town committees that need hands, with dates where they have them."),
     "map": ("Map", "The map will place every venue we list, town by town."),
 }
 
@@ -549,7 +541,7 @@ def calendar_page(events: dict, now: datetime, year: int, month: int, rel: str) 
             f'<main class="content cal" id="main">'
             f'<div class="hero-text"><div class="hero-title"><h1>{esc(month_label(year, month))}</h1>{stickers()}</div>'
             f'<div class="dateline">{n_rows} listing{"" if n_rows == 1 else "s"} · {n_towns} town{"" if n_towns == 1 else "s"} · {esc(REGION)}</div></div>'
-            + filters(towns, rel) + nav +
+            + filters(towns, rel, view="calendar") + nav +
             f'<div class="cal-head" aria-hidden="true">{head_row}</div>'
             f'<div class="cal-grid">{"".join(cells)}</div>'
             f'<p class="empty" id="cal-empty"{" hidden" if n_rows else ""}>Nothing listed this month in this view.</p>'
@@ -779,7 +771,7 @@ def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, di
 def placeholder_page(key: str, now: datetime) -> str:
     rel = "../"
     title, copy = PLACEHOLDER_COPY[key]
-    active = key if key in ("groups", "volunteer") else "events"
+    active = key if key == "groups" else "events"
     body = (head(active, rel) +
             f'<main class="content placeholder" id="main"><div class="hero-text"><div class="hero-title"><h1>{esc(title)}</h1>{stickers()}</div>'
             f'<div class="dateline">Coming soon · {esc(REGION)}</div></div>'
@@ -906,6 +898,9 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
     groups = load_groups()
     (out / "groups").mkdir(parents=True, exist_ok=True)
     (out / "groups" / "index.html").write_text(groups_page(groups, events, now), encoding="utf-8")
+    for key in RETIRED:
+        if (out / key).is_dir():
+            shutil.rmtree(out / key)
     for key in PLACEHOLDER_COPY:
         d = out / key
         d.mkdir(parents=True, exist_ok=True)

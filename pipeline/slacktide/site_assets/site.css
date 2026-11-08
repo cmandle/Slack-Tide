@@ -181,19 +181,20 @@ svg { display: block; }
 .tide-source { opacity: 0.6; }
 .tide-unavailable { font-size: 11px; line-height: 14px; }
 
-/* Filters: town select with Calendar and Map beside it, then the category and section selects,
-   then the category tiles. The category select mirrors the tiles; the section select goes
-   where the tabs go. */
+/* Filters (revised 8 November 2026): one control row, the town select on the left and the
+   Calendar and Map buttons on the right, then the category tiles as a grid that spans the same
+   width, so both rows share their left and right edges at every size. The tiles are a 4 x 2
+   grid until the row holds eight at a readable width, then one row of eight. A container query
+   decides, because the content width depends on the frame margins as well as the viewport. */
 .filters {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas: "select links" "more more" "tiles tiles";
-  gap: 8px 8px;
+  grid-template-areas: "select links" "tiles tiles";
+  gap: 8px;
+  container-type: inline-size;
 }
 .filters > .select { grid-area: select; }
 .select { position: relative; min-width: 0; }
-.more { grid-area: more; display: flex; gap: 8px; margin-bottom: calc(var(--gap) - 8px); }
-.more .select { flex: 1 1 0; }
 .select select {
   width: 100%;
   height: var(--st-tap-target);
@@ -216,6 +217,18 @@ svg { display: block; }
   white-space: nowrap;
 }
 .btn:hover { color: var(--st-coral); }
+/* Calendar and Map: view buttons, not links. Archivo bold like the tabs, a hard ink offset that
+   presses in on click, and the tiles' yellow on hover and focus. */
+.links .btn {
+  font: 700 13px/1 var(--st-font-sans);
+  box-shadow: 2px 2px 0 var(--st-ink);
+  transition: background-color 80ms, box-shadow 80ms, transform 80ms;
+}
+.links .btn:hover, .links .btn:focus-visible { background: var(--st-yellow); color: var(--st-ink); }
+.links .btn:focus-visible { outline: 2px solid var(--st-ink); outline-offset: 2px; }
+.links .btn:active { box-shadow: 0 0 0 var(--st-ink); transform: translate(2px, 2px); }
+/* The view you are on: yellow and pressed in, like a selected tile. */
+.links .btn[aria-current="page"] { background: var(--st-yellow); color: var(--st-ink); box-shadow: 0 0 0 var(--st-ink); transform: translate(2px, 2px); }
 /* DESIGN.md routes the phone to the calendar through "See the whole month"; the button is kept
    at every width by request, so the select gives up the room on the phone. */
 .tiles { grid-area: tiles; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
@@ -231,6 +244,9 @@ svg { display: block; }
 }
 .tile svg { width: 28px; height: 28px; }
 .tile[aria-pressed="true"], .tile:hover { background: var(--st-yellow); color: var(--st-ink); }
+@container (min-width: 540px) {
+  .tiles { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+}
 
 /* Cards: title cell, image with a category label block, date and price strip */
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
@@ -359,16 +375,16 @@ svg { display: block; }
   .tide-readings { gap: 3px; font-size: 11px; line-height: 14px; }
   .tide-now { font-size: 20px; line-height: 24px; }
   .tide-hilo span, .tide-hilo .sep { display: inline; }
-  .filters { grid-template-areas: "select more" "tiles links"; gap: var(--gap) 12px; align-items: center; }
+  .filters { gap: 12px; align-items: center; }
+  .filters > .select { width: 260px; }
   .select { width: 220px; }
   .select select { height: 40px; }
   .select svg { top: 16px; }
-  .more { justify-self: start; gap: 12px; margin-bottom: 0; }
-  .more .select { flex: 0 0 220px; }
-  .links { justify-self: end; }
+  .links { justify-self: end; gap: 10px; }
   .btn { padding: 0 14px; }
-  .tiles { display: flex; flex-wrap: wrap; gap: 6px; }
-  .tile { width: var(--st-tile-size-desktop); height: var(--st-tile-size-desktop); gap: 3px; }
+  .links .btn { height: 40px; padding: 0 16px; }
+  .tiles { gap: 8px; }
+  .tile { height: var(--st-tile-size-desktop); gap: 3px; }
   .tile svg { width: 30px; height: 30px; }
   .cards { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
   .card-title { padding: 10px 12px; font: var(--st-card-title-desktop); min-height: 40px; }
