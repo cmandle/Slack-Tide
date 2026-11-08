@@ -2,27 +2,27 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 178,
-   "seconds": 4.68
+   "seconds": 4.55
   },
   "viva-fall-river": {
    "rows": 312,
-   "seconds": 23.01
+   "seconds": 20.91
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 2.62
+   "seconds": 4.08
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.35
+   "seconds": 0.73
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 5.67
+   "seconds": 6.15
   },
   "aha-next-aha": {
    "rows": 29,
-   "seconds": 0.41
+   "seconds": 0.57
   },
   "cisco-live-music": {
    "rows": 9,
@@ -30,34 +30,38 @@
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.33
+   "seconds": 0.43
+  },
+  "south-coast-girls-walk": {
+   "rows": 1,
+   "seconds": 0.58
   },
   "standing-new-bedford": {
-   "rows": 48,
+   "rows": 61,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 129,
+ "primary_rows": 143,
  "dropped": {},
- "series": 81,
+ "series": 83,
  "approval": {
-  "pending": 56,
+  "pending": 58,
   "approved": 25
  },
  "by_town": {
-  "New Bedford": 61,
+  "New Bedford": 62,
   "Dartmouth": 14,
   "Wareham": 2,
-  "": 2,
+  "": 3,
   "Mattapoisett": 1,
   "Acushnet": 1
  },
  "by_category": {
   "Music": 16,
-  "Outdoors & Nature": 17,
+  "Outdoors & Nature": 18,
   "(unclassified)": 1,
-  "Sports & Recreation": 1,
+  "Sports & Recreation": 2,
   "Arts & Theatre": 31,
   "Family & Children": 5,
   "Museums & Exhibitions": 2,
@@ -69,8 +73,8 @@
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 72,
-  "weekly": 4,
+  "once": 73,
+  "weekly": 5,
   "monthly": 3,
   "irregular": 1,
   "weekends": 1
@@ -837,8 +841,8 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 109,
-  "primary_only_series": 61,
+  "primary_only_count": 122,
+  "primary_only_series": 62,
   "coverage_ratio": 0.055
  },
  "tide_error": null

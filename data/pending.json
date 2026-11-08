@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-08T17:53:24.776979+00:00",
- "pending_count": 56,
- "soon_count": 41,
+ "generated_at": "2026-11-08T18:04:17.275703+00:00",
+ "pending_count": 58,
+ "soon_count": 43,
  "approved_count": 25,
  "rejected_count": 0,
  "series": [
@@ -114,6 +114,93 @@
     }
    ],
    "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-11T19:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "4c93cfea1082",
+   "title": "Trivia night",
+   "venue": "New Beige",
+   "town": "New Bedford",
+   "category": "Sports & Recreation",
+   "source_id": "standing-new-bedford",
+   "url": "https://newbeigema.squarespace.com/",
+   "cost": "",
+   "first_start": "2026-11-11T19:00:00-05:00",
+   "last_start": "2027-02-03T19:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-11T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-18T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-06T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-13T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-20T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-27T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-03T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-11T19:00:00-05:00",
@@ -1275,6 +1362,33 @@
     }
    ],
    "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-15T10:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "b7301c4db9eb",
+   "title": "Daydreaming of Summer",
+   "venue": "",
+   "town": "",
+   "category": "Outdoors & Nature",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/daydreaming-of-summer",
+   "cost": "",
+   "first_start": "2026-11-15T10:00:00-05:00",
+   "last_start": "2026-11-15T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "While we are loving all of the new and exciting places we've been this year, we are missing one of our all-time favorites, so we're bringing it back. Bundle up and join us this week for a morning stroll along the beautiful horseneck beach. This time, with all of our furry friends",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-15T10:00:00-05:00",
