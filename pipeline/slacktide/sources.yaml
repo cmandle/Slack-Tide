@@ -3,7 +3,7 @@
 # town: default town when the record carries none. Must match config.TOWNS.
 # venue: default venue when the record carries none (single-venue sources such as a library).
 # role: primary | check   (check = used for reconciliation only, never published)
-# review: person | auto   (auto = series publish without a decision; none has earned it yet)
+# review: person | auto   (auto = series publish without a decision; the Zeiterion since 2026-11-08)
 # default_category: our taxonomy entry for a single-purpose venue when the classifier finds nothing
 # Verified-working dates refer to live fetches on 2026-09-20, 2026-10-11 and 2026-10-25.
 
@@ -57,6 +57,7 @@
   town: New Bedford
   venue: The Zeiterion
   role: primary
+  review: auto   # first source trusted to publish without review, 2026-11-08; recorded decisions still win
   provenance: Posted by the venue
   default_category: Arts & Theatre   # our call for a theatre when the rule classifier finds nothing
   select:
