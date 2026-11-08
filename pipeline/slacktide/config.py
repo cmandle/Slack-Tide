@@ -4,7 +4,7 @@ from pathlib import Path
 import yaml
 
 TZ = "America/New_York"
-WINDOW_DAYS = 60
+WINDOW_DAYS = 90   # was 60 until 2026-11-08; venues such as the Zeiterion list a season ahead
 
 # Canonical town list. Order is presentation order.
 TOWNS = [
