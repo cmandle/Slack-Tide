@@ -264,10 +264,12 @@ class HtmlConnector(Connector):
                     continue
                 seen.add(uid)
                 end = None
-                if end_time is not None and timed:
+                if end_time is not None and timed and end_time != start.time():
                     end = datetime.combine(start.date(), end_time, tzinfo=self.tz)
-                    if end <= start:
+                    if end < start:
                         end += timedelta(days=1)
+                    if end - start > timedelta(hours=12):   # "6:00 PM - 8:30 AM" is an am/pm slip, not an all-nighter
+                        end = None
                 out.append(Occurrence(
                     source_id=self.id, source_uid=uid, title=title, start=start, end=end,
                     all_day=not timed, venue_raw=venue, town=town, url=url or base_url,

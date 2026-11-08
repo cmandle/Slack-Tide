@@ -20,6 +20,8 @@ PAGES = {
     "https://savebuzzardsbay.org/events/bay-adventures/baysgiving-shellfishing-and-quahog-boil": "bbc_detail_baysgiving.html",
     "https://savebuzzardsbay.org/events/bay-adventures/full-moon-walks": "bbc_detail_full_moon.html",
     "https://savebuzzardsbay.org/events/bay-adventures/turkey-trot-at-the-bogs": "bbc_detail_turkey_trot.html",
+    "https://savebuzzardsbay.org/events/bay-adventures/intro-to-shellfishing-at-north-cove": "bbc_detail_north_cove.html",
+    "https://savebuzzardsbay.org/events/bay-adventures/stargazing-social-at-the-sawmill": "bbc_detail_stargazing.html",
 }
 
 
@@ -51,6 +53,12 @@ def test_detail_pages_fill_time_venue_and_town(frozen):
     assert bays.description.startswith("Join us for a BaysGiving")
     trot = by_title["Turkey Trot at The Bogs"]
     assert (trot.start.time(), trot.end.time(), trot.venue_raw, trot.town) == (time(9, 0), time(10, 0), "The Bogs", "Mattapoisett")
+    # A page with a single time and no location: timed, no end, no venue (the Coalition left it out).
+    cove = by_title["Intro to Shellfishing at North Cove"]
+    assert (cove.start.time(), cove.end, cove.all_day, cove.venue_raw, cove.town) == (time(14, 30), None, False, "", "")
+    # "6:00 PM - 8:30 AM" on the page is an am/pm slip: the start stands, the end is dropped.
+    stars = by_title["Stargazing Social at The Sawmill"]
+    assert (stars.start.time(), stars.end, stars.venue_raw, stars.town) == (time(18, 0), None, "The Sawmill", "Acushnet")
     # A card whose page could not be read keeps the listing's date, all-day, no venue.
-    intro = by_title["Intro to Shellfishing at North Cove"]
-    assert (intro.start.month, intro.start.day, intro.all_day, intro.venue_raw, intro.town) == (11, 14, True, "", "")
+    beach = by_title["Intro to Shellfishing at Monument Beach"]
+    assert (beach.start.month, beach.start.day, beach.all_day, beach.venue_raw, beach.town) == (11, 21, True, "", "")
