@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-08T18:04:17.275703+00:00",
- "series_count": 83,
- "occurrence_count": 143,
+ "generated_at": "2026-11-08T18:13:52.690424+00:00",
+ "series_count": 98,
+ "occurrence_count": 158,
  "series": [
   {
    "id": "1397a2bbf9e5",
@@ -1394,6 +1394,81 @@
    "decided_by": "source trust"
   },
   {
+   "id": "3a6790f33c36",
+   "title": "Fall Open Studios",
+   "venue": "Hatch Street Studios",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "hatch-street-studios",
+   "url": "https://www.hatchstreetstudios.com/events/fall-open-studios",
+   "cost": "",
+   "first_start": "2026-11-14T11:00:00-05:00",
+   "last_start": "2026-11-14T11:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T11:00:00-05:00",
+     "end": "2026-11-15T17:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Art. Creativity. Inspiration. All in One Place. Open Studios is a chance to experience Hatch in a way you simply can't from the outside. Wander through both buildings, step inside working artist studios, meet the people behind the work, and see the spaces where ideas become paintings, pottery, photo",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "90f1a5135d5f",
+   "title": "Juicy Market",
+   "venue": "Carolyn's Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Markets & Fairs",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/juicy-market",
+   "cost": "",
+   "first_start": "2026-11-14T12:00:00-05:00",
+   "last_start": "2026-11-14T12:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T12:00:00-05:00",
+     "end": "2026-11-14T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us from 12-4 PM for a special pop-up market with Juicy Market! Shop a variety of local vendors in our barn, discover unique handmade goods, and enjoy an afternoon of shopping while supporting small businesses at Sakonnet Vineyard!",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "1bda4b003b62",
+   "title": "Live Music: Alex Cohen",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-alex-cohen-1",
+   "cost": "",
+   "first_start": "2026-11-14T13:00:00-05:00",
+   "last_start": "2026-11-14T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-14T13:00:00-05:00",
+     "end": "2026-11-14T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "82f70d3ffaef",
    "title": "Intro to Shellfishing at North Cove",
    "venue": "",
@@ -1465,6 +1540,31 @@
     }
    ],
    "summary": "While we are loving all of the new and exciting places we've been this year, we are missing one of our all-time favorites, so we're bringing it back. Bundle up and join us this week for a morning stroll along the beautiful horseneck beach. This time, with all of our furry friends",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "82a616dd4aad",
+   "title": "The Holiday Poppy Workshop",
+   "venue": "Hatch Street Studios",
+   "town": "New Bedford",
+   "category": "Education & Workshops",
+   "source_id": "hatch-street-studios",
+   "url": "https://www.hatchstreetstudios.com/events/the-holiday-poppy-workshop",
+   "cost": "",
+   "first_start": "2026-11-15T10:00:00-05:00",
+   "last_start": "2026-11-15T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Red Poppies, with touches of green and black make a dramatic addition to your mantel or table. Bad weather date - Nov. 22 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so sign up early! For more information email: alyncarlson@gmail.com",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1679,6 +1779,31 @@
    "decided_by": ""
   },
   {
+   "id": "93ea8c414435",
+   "title": "Live Music: FrankenPhil",
+   "venue": "Carolyn's Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-frankenphil-1",
+   "cost": "",
+   "first_start": "2026-11-21T13:00:00-05:00",
+   "last_start": "2026-11-21T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-21T13:00:00-05:00",
+     "end": "2026-11-21T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "bc7996249b9b",
    "title": "Matt Martin",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1779,6 +1904,31 @@
    "decided_by": ""
   },
   {
+   "id": "d89f8045f686",
+   "title": "Live Music: Tayla Davis",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-tayla-davis",
+   "cost": "",
+   "first_start": "2026-11-27T15:00:00-05:00",
+   "last_start": "2026-11-27T15:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-27T15:00:00-05:00",
+     "end": "2026-11-27T18:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "db13d4947a44",
    "title": "Declan Kelehan",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1854,6 +2004,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "0f566c0e4bb0",
+   "title": "Live Music: Dave Alves",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/c5bsdjd6p8wwgxn3kywflc47z6n7wc",
+   "cost": "",
+   "first_start": "2026-11-28T13:00:00-05:00",
+   "last_start": "2026-11-28T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T13:00:00-05:00",
+     "end": "2026-11-28T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "cc95b9dda4c0",
    "title": "Merrick Brannigan",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1914,6 +2089,81 @@
    "decided_by": ""
   },
   {
+   "id": "af0cd305aa63",
+   "title": "Trivia w/ Gary Farias",
+   "venue": "Carolyn's Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Food & Drink",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/trivia-w-gary-farias-1",
+   "cost": "",
+   "first_start": "2026-12-04T18:00:00-05:00",
+   "last_start": "2026-12-04T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-04T18:00:00-05:00",
+     "end": "2026-12-04T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "0ae0bcea3eee",
+   "title": "Juicy Market and Holiday Kick Off Party",
+   "venue": "Carolyn's Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Markets & Fairs",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/juicy-market-and-holiday-kick-off",
+   "cost": "",
+   "first_start": "2026-12-05T12:00:00-05:00",
+   "last_start": "2026-12-05T12:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T12:00:00-05:00",
+     "end": "2026-12-05T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Kick off the holiday season with us at Sakonnet Vineyard! Join us from 12-4 PM for a festive afternoon filled with holiday fun, including cookie decorating, a visit from Santa, and a holiday market in the barn featuring local vendors from Juicy Market! Bring the whole family and get into the holiday",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "eb05dc6421e3",
+   "title": "Live Music: Danilo Henriquez",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/gpd2rpatpbzn6lj4apfdgg87xewbng-khnm2",
+   "cost": "",
+   "first_start": "2026-12-05T13:00:00-05:00",
+   "last_start": "2026-12-05T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T13:00:00-05:00",
+     "end": "2026-12-05T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "af8661b810e2",
    "title": "A Charlie Brown Christmas - Live on Stage",
    "venue": "The Zeiterion",
@@ -1942,6 +2192,56 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
+  },
+  {
+   "id": "583ace92d403",
+   "title": "The Pajaki Chandelier Workshop",
+   "venue": "Hatch Street Studios",
+   "town": "New Bedford",
+   "category": "Education & Workshops",
+   "source_id": "hatch-street-studios",
+   "url": "https://www.hatchstreetstudios.com/events/the-pajaki-workshop",
+   "cost": "",
+   "first_start": "2026-12-06T10:00:00-05:00",
+   "last_start": "2026-12-06T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "A tradition in Poland, this fun paper chandelier is so versatile. Students have made them to celebrate the birth of a child, give a wedding tent extra pizazz and add sparkle to a New Year's Eve party. Bad weather date - Dec. 13 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so ",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "29bc94c80fe6",
+   "title": "Session 3: Water-Based Paints",
+   "venue": "Catherine Carter Art School, Studio 210",
+   "town": "New Bedford",
+   "category": "Education & Workshops",
+   "source_id": "hatch-street-studios",
+   "url": "https://www.hatchstreetstudios.com/events/session-3-water-based-paints",
+   "cost": "",
+   "first_start": "2026-12-06T14:00:00-05:00",
+   "last_start": "2026-12-06T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-06T14:00:00-05:00",
+     "end": "2026-12-06T17:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "ART SUPPLY BASICS Workshop Series for Adults Session 3: Water-Based Paints Including acrylics, watercolor, water-soluble colored pencils, and water-mixable oil paints. Join Catherine for a series of three workshops highlighting the properties and possibilities of a variety of drawing and painting ma",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "443923d848e0",
@@ -2044,6 +2344,31 @@
    "decided_by": "source trust"
   },
   {
+   "id": "1667c518b923",
+   "title": "Live Music: Stefan Couture",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/gpd2rpatpbzn6lj4apfdgg87xewbng-khnm2-8zh9a",
+   "cost": "",
+   "first_start": "2026-12-12T13:00:00-05:00",
+   "last_start": "2026-12-12T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-12T13:00:00-05:00",
+     "end": "2026-12-12T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "e7e38fbf272a",
    "title": "Carols & Cocktails",
    "venue": "The Zeiterion",
@@ -2117,6 +2442,31 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
+  },
+  {
+   "id": "ea1be6eb6618",
+   "title": "Live Music: Frank Foot",
+   "venue": "Carolyn's Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/xs4hadsax6n2zs422md567hd687rcr",
+   "cost": "",
+   "first_start": "2026-12-19T13:00:00-05:00",
+   "last_start": "2026-12-19T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-19T13:00:00-05:00",
+     "end": "2026-12-19T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "7fc848d57904",
@@ -2252,6 +2602,31 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
+  },
+  {
+   "id": "0d6ba8328ca3",
+   "title": "The Paper Dying Workshop",
+   "venue": "Hatch Street Studios",
+   "town": "New Bedford",
+   "category": "Education & Workshops",
+   "source_id": "hatch-street-studios",
+   "url": "https://www.hatchstreetstudios.com/events/the-paper-dying-workshop",
+   "cost": "",
+   "first_start": "2027-01-10T10:00:00-05:00",
+   "last_start": "2027-01-10T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2027-01-10T10:00:00-05:00",
+     "end": "2027-01-10T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Take your paper flower making, to the next level. We will hand dye with inks, food coloring and even coffee to get surprising and exciting variations. You'll leave with a collection of unique papers to make bunches of bouquets. Bad weather date - Jan. 17 Lunch, snacks + drinks included Fee: $150 + a",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "ae04a769c7ad",

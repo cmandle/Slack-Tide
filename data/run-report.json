@@ -2,39 +2,47 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 178,
-   "seconds": 4.55
+   "seconds": 5.54
   },
   "viva-fall-river": {
    "rows": 312,
-   "seconds": 20.91
+   "seconds": 18.64
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 4.08
+   "seconds": 3.56
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.73
+   "seconds": 0.47
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 6.15
+   "seconds": 5.91
   },
   "aha-next-aha": {
    "rows": 29,
-   "seconds": 0.57
+   "seconds": 2.71
   },
   "cisco-live-music": {
    "rows": 9,
-   "seconds": 0.28
+   "seconds": 0.25
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.43
+   "seconds": 0.26
   },
   "south-coast-girls-walk": {
    "rows": 1,
-   "seconds": 0.58
+   "seconds": 0.37
+  },
+  "hatch-street-studios": {
+   "rows": 5,
+   "seconds": 0.44
+  },
+  "sakonnet-vineyard": {
+   "rows": 10,
+   "seconds": 0.43
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -42,38 +50,39 @@
   }
  },
  "errors": {},
- "primary_rows": 143,
+ "primary_rows": 158,
  "dropped": {},
- "series": 83,
+ "series": 98,
  "approval": {
-  "pending": 58,
+  "pending": 73,
   "approved": 25
  },
  "by_town": {
-  "New Bedford": 62,
+  "New Bedford": 67,
   "Dartmouth": 14,
   "Wareham": 2,
+  "Little Compton": 10,
   "": 3,
   "Mattapoisett": 1,
   "Acushnet": 1
  },
  "by_category": {
-  "Music": 16,
+  "Music": 23,
   "Outdoors & Nature": 18,
   "(unclassified)": 1,
   "Sports & Recreation": 2,
-  "Arts & Theatre": 31,
+  "Arts & Theatre": 32,
   "Family & Children": 5,
   "Museums & Exhibitions": 2,
-  "Markets & Fairs": 2,
+  "Markets & Fairs": 4,
   "Faith & Spiritual": 1,
+  "Education & Workshops": 5,
   "Civic & Town Meetings": 1,
   "Library & Talks": 1,
-  "Food & Drink": 2,
-  "Education & Workshops": 1
+  "Food & Drink": 3
  },
  "by_cadence": {
-  "once": 73,
+  "once": 88,
   "weekly": 5,
   "monthly": 3,
   "irregular": 1,
@@ -90,9 +99,9 @@
  },
  "reconcile": {
   "check_total": 490,
-  "check_matched": 27,
-  "check_missed_rows": 463,
-  "check_missed_series": 106,
+  "check_matched": 28,
+  "check_missed_rows": 462,
+  "check_missed_series": 105,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -571,13 +580,6 @@
     "rows": 1
    },
    {
-    "title": "Fall Open Studios",
-    "venue": "Hatch Street Studios",
-    "town": "New Bedford",
-    "first_start": "2026-11-14T11:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Fall River Children's Holiday Parade",
     "venue": "Kennedy Park",
     "town": "Fall River",
@@ -841,9 +843,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 122,
-  "primary_only_series": 62,
-  "coverage_ratio": 0.055
+  "primary_only_count": 126,
+  "primary_only_series": 66,
+  "coverage_ratio": 0.057
  },
  "tide_error": null
 }
