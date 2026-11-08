@@ -12,7 +12,7 @@ Decisions that shape every choice below: venues and organisations are read direc
 | **CivicPlus iCal** | Municipal sites on CivicPlus publish an ICS feed per calendar category at `/common/modules/iCalendar/iCalendar.aspx?catID=N&feed=calendar`. | A registry entry plus discovering the category ids per town. | Built (`ical`) |
 | **Plain iCal** | Any public ICS address: a Google Calendar's public feed, a LibCal calendar, a Squarespace or Tribe `?ical=1` twin. | A registry entry. | Built (`ical`, verify once with a non-CivicPlus feed) |
 | **Squarespace JSON** | Any Squarespace events page answers `?format=json` with every item's `startDate` and `endDate` in epoch milliseconds, title, excerpt and location. | A 40-line connector, then a registry entry per site. | To build |
-| **HTML listing** | A server-rendered events page read with CSS selectors declared on the registry entry. | Fifteen minutes per site to write the selectors and save a fixture; breaks on redesign and fails loudly. | Built (`html`) |
+| **HTML listing** | A server-rendered events page read with CSS selectors declared on the registry entry. Since 8 Nov 2026 it also takes a page-level date (`page_when`), times written as class names (`when_class`), an end-time selector and sibling grouping (`group_next`) for listings written as consecutive paragraphs. | Fifteen minutes per site to write the selectors and save a fixture; breaks on redesign and fails loudly. | Built (`html`) |
 | **WhoFi** | The library calendar system behind seven of our libraries (`<town>-ma.whofi.com/calendar/full`). No documented feed. | One connector covers all seven; ask WhoFi for an export first. | To build (issue 5) |
 | **LibCal** | Springshare's library calendar; each calendar has an iCal and RSS address once you know its id. | A registry entry once the library sends the id. | Plain iCal |
 | **Event plugins with their own API** | Event Espresso (REST at `/wp-json/ee/...`), EventPrime, EventON. | Small per-plugin connectors, only worth it for two or more sites each. | Not yet |
@@ -53,12 +53,12 @@ The editors asked to pause most of what section 2 reads and concentrate on a nam
 | Organisation | Found | Route | State |
 |---|---|---|---|
 | The Zeiterion | Webflow listing, `html` connector, `review: auto` | In use | Publishing |
-| AHA! New Bedford | Tribe endpoint now carries 28 entries, test titles, the second-Thursday pattern already in it | Tribe REST, enabled | Test titles rejected in the queue; AHA Night declared on `standing-new-bedford` meanwhile |
+| AHA! New Bedford | The next-AHA page (`/next-aha/`) is an Elementor post loop, one card per activity with venue, description, "Ends:" and the start time as a WordPress tag class; the night's date is in the headings. The Tribe endpoint carries 28 test-titled entries and waits. | HTML listing with `page_when`, `when_class`, `end`; enabled as `aha-next-aha` | In use. AHA Night itself declared on `standing-new-bedford` |
 | DNRT | Tribe REST | In use | Publishing on approval |
 | Buzzards Bay Coalition | Craft CMS; Bay Adventures dates in FareHarbor | Ask (issue 19) | Entry disabled |
 | PLAY Arcade | Squarespace; "Trivia every Wednesday from 7-9PM. Karaoke every Thursday from 8PM-12AM." on the home page; no event collection | Declared schedule | Two series on `standing-new-bedford` |
 | New Beige | Squarespace, menus only; events on Instagram. Editor names Wednesday trivia; the only listing found online is Thursday music bingo | Declared schedule once the night and time are confirmed | Entry disabled |
-| Cisco Brewers New Bedford | Squarespace; the New Bedford page sends visitors to Instagram, while the same site runs a readable events collection for Nantucket | One email: do for New Bedford what you do for Nantucket | Candidate |
+| Cisco Brewers Kitchen & Bar | ciscokitchenbar.com (BentoBox): `/live-music/` lists the month's shows as pairs of paragraphs, date then "artist 7pm"; `/happenings/` states the weekly brunch and the first- and third-Tuesday chef nights in prose | HTML listing with `group_next` (`cisco-live-music`); brunch and chef nights declared on `standing-new-bedford` | In use |
 | Star Store | Owned by the Arts & Business Council of Greater Boston since May 2025; pop-ups until the 2027 reopening; their `ve_event` REST lists Boston events only | Ask them to list Star Store pop-ups | Candidate |
 | South Coast Places for People | Luma calendar `cal-1cKC6jMQ8Hatgih` with a public iCal feed, 28 events | Plain iCal, enabled | In use |
 | South Coast Walking Book Tour | South Coast Almanac, about four walks a year; Meetup (not ingested); the Almanac site refuses automated readers | One email for dates or an iCal | Candidate |
@@ -80,7 +80,7 @@ Consequences: issue 18 (the form behind `/add/`) is now the route for three of t
 | Google Custom Search JSON API | Closed to new customers. | |
 | Explore New Bedford, Viva Fall River as sources of record | Aggregators: not their taxonomy, not their venue spellings, and anything nobody submitted is missing (decisions 3 and 10). | Check role; their venues directly. |
 | AHA! New Bedford's calendar | Was: the plugin held three 2022 test events. Since 8 November 2026 it holds 28 entries with test titles and the real second-Thursday pattern; AHA is setting it up. | Enabled as `aha-new-bedford` (section 2a). Test titles are rejected in the queue; AHA Night is declared on `standing-new-bedford` until it arrives in the feed. |
-| Cisco Kitchen & Bar's happenings page | Prose about weekly specials, no dates; the live music page is a 404. | A hand-entered series through the form, or nothing. |
+| Cisco Kitchen & Bar's happenings page | Was: prose specials and a 404 live music page. Since 8 Nov 2026 the live music page lists dated shows and the happenings page states weekly schedules. | Read: `cisco-live-music` and declared series on `standing-new-bedford` (section 2a). |
 | Destination New Bedford | The city tourism site renders nothing readable without JavaScript. | Explore New Bedford already covers the same ground as a check. |
 
 ## 4. Candidates, by town
