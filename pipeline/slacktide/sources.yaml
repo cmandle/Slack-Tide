@@ -1,6 +1,7 @@
 # Source registry. Every source the pipeline reads is declared here.
 # kind: tribe (WordPress Events Calendar REST) | ical | rss | html (server-rendered listing) | sheet (published CSV)
 #       | recurring (standing schedules declared below, see connectors/recurring.py)
+#       | squarespace (an events collection page; the connector adds ?format=json)
 # town: default town when the record carries none. Must match config.TOWNS.
 # venue: default venue when the record carries none (single-venue sources such as a library).
 # role: primary | check   (check = used for reconciliation only, never published)
@@ -264,6 +265,23 @@
     every Luma calendar has this public iCal feed. 28 events on 2026-11-08, one of them upcoming;
     the LOCATION line carries the street address, which the iCal connector splits.
 
+- id: south-coast-girls-walk
+  name: South Coast Girls Walk
+  kind: squarespace
+  url: https://www.southcoastgirlswalk.com/our-schedule
+  town: ""
+  role: primary
+  provenance: Posted by the organisation
+  default_category: Sports & Recreation
+  note: >-
+    Decision 13. Squarespace events collection ("Walk Schedule"); ?format=json answers with
+    upcoming and past walks, start and end in epoch milliseconds, the excerpt, and an empty
+    location block, so the meeting place is in the text and the town is usually unresolved
+    until the approver reads it (titles such as "Cemetery Stroll - Swansea" help). 28 walks on
+    2026-11-08, one upcoming. First use of the squarespace connector; Hatch Street Studios and
+    Sakonnet Vineyard answer the same way when they are wanted. The group's directory card
+    links here through source_id.
+
 - id: standing-new-bedford
   name: Standing schedules, New Bedford
   kind: recurring
@@ -297,12 +315,12 @@
     - title: Trivia night
       venue: New Beige
       weekday: wednesday
+      start: "19:00"
       url: https://newbeigema.squarespace.com/
       category: Sports & Recreation
-      enabled: false
-      # Named by the editor on 2026-11-08. The venue's site (Squarespace, 39 Union Street) has no
-      # events page and the only listing found online is Thursday music bingo. Add the start
-      # time once confirmed with the venue, then set enabled: true.
+      description: Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.
+      confirmed: 2026-11-08
+      confirmed_at: https://www.instagram.com/p/DYN1GvmFbWQ/   # the venue's post: "Every Wednesday at 7pm"; seen by the editor, not read by the pipeline
     - title: AHA! Night
       venue: Downtown New Bedford
       weekday: thursday

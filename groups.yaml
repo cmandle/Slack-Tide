@@ -44,9 +44,13 @@
     A free walking group for women, started by two friends who wanted a way to walk, talk and
     try the area's coffee shops together. It has grown into a region-wide community with charity
     walks and spin-offs such as South Coast Girls Night.
-  meets: Weekly walks, announced in the group
-  join: Free. The group lives on Facebook; search for it by name.
-  # The Facebook group's address is not on file; add it as links.facebook when known.
+  meets: Weekly walks, listed on their schedule page
+  join: Free; just turn up
+  website: https://www.southcoastgirlswalk.com/
+  links:
+    facebook: https://www.facebook.com/groups/southcoastgirlswalk
+    instagram: https://www.instagram.com/southcoastgirlswalk/
+  source_id: south-coast-girls-walk
   added: "2026-11-08"
 
 - id: frnb-artist-collaborative
