@@ -1,0 +1,411 @@
+# Venues: the places behind the map (2026-11-08). One entry per real place. The normaliser
+# reads the aliases, so every spelling listed here lands on the one name; the site build reads
+# the coordinates, so the place gets a pin. Edited by hand; the pipeline never writes it.
+#
+# Fields: id, name (the canonical display name; it is hashed into every series id at that
+# place, so renaming an entry sends its approved series back through review), town (one of
+# config.TOWNS), address (street address for the geocoder and the popup; optional), lat and
+# lon (decimal degrees; empty until geocoded), geocoded (census, nominatim or hand, with the
+# date), aliases (raw venue strings seen in sources, as they appear), url (optional), note.
+#
+# Filling in coordinates: python pipeline/tools/geocode_venues.py writes lat and lon into
+# every entry that lacks them, from the US Census geocoder for street addresses and from
+# OpenStreetMap's Nominatim for named places, both free and keyless. The same tool with
+# --missing lists the venue strings in data/events.json that match no entry here: the to-do
+# list. A series whose venue matches nothing sits at its town centre (config.TOWN_CENTERS),
+# marked approximate.
+
+# ---------------------------------------------------------------- New Bedford
+
+- id: zeiterion
+  name: The Zeiterion
+  town: New Bedford
+  address: 684 Purchase St, New Bedford, MA 02740
+  lat: 41.63302
+  lon: -70.92554
+  geocoded: census 2026-11-08
+  url: https://zeiterion.org/
+  aliases:
+    - Zeiterion 684 Purchase St
+    - Zeiterion Performing Arts Center
+    - Zeiterion Theatre
+    - The Z
+    - Speakeasy @ The Z! - 984 Purchase St   # the Z's cabaret room; the card's 984 is a typo for 684
+
+- id: cisco-brewers-kitchen-bar
+  name: Cisco Brewers Kitchen & Bar
+  town: New Bedford
+  lat: 41.61026
+  lon: -70.90578
+  geocoded: census 2026-11-08
+  address: 1480 E Rodney French Blvd, New Bedford, MA 02744
+  url: https://www.ciscokitchenbar.com/
+  aliases:
+    - Cisco Kitchen & Bar
+    - Cisco Brewers New Bedford
+
+- id: hatch-street-studios
+  name: Hatch Street Studios
+  town: New Bedford
+  lat: 41.67211
+  lon: -70.92279
+  geocoded: census 2026-11-08
+  address: 88 Hatch St, New Bedford, MA 02745
+  url: https://www.hatchstreetstudios.com/
+  aliases:
+    - Hatch Street Studios, 88 Hatch Street
+
+- id: play-arcade
+  name: PLAY Arcade
+  town: New Bedford
+  lat: 41.63456
+  lon: -70.92196
+  geocoded: census 2026-11-08
+  address: 34 Union St, New Bedford, MA 02740
+  url: https://www.playarcadenb.com/
+  aliases:
+    - PLAY Arcade, 34 Union St.
+    - Play Arcade
+
+- id: new-beige
+  name: New Beige
+  town: New Bedford
+  url: https://newbeigema.squarespace.com/
+  note: Street address not on the venue's site; pinned at the town centre until it is confirmed.
+
+- id: gallery-x
+  name: Gallery X
+  town: New Bedford
+  lat: 41.63513
+  lon: -70.92886
+  geocoded: census 2026-11-08
+  address: 169 William St, New Bedford, MA 02740
+  url: https://galleryx.org/
+  aliases:
+    - Gallery X 169 William Street
+    - Gallery X, Inc
+
+- id: new-bedford-art-museum
+  name: New Bedford Art Museum
+  town: New Bedford
+  lat: 41.63496
+  lon: -70.92687
+  geocoded: census 2026-11-08
+  address: 608 Pleasant St, New Bedford, MA 02740
+  url: https://newbedfordart.org/
+  aliases:
+    - New Bedford Art Museum, 608 Pleasant St.
+    - New Bedford Art Museum/ArtWorks!
+
+- id: whaling-national-historical-park
+  name: New Bedford Whaling National Historical Park
+  town: New Bedford
+  lat: 41.63561
+  lon: -70.92423
+  geocoded: census 2026-11-08
+  address: 33 William St, New Bedford, MA 02740
+  url: https://www.nps.gov/nebe/
+  aliases:
+    - New Bedford Whaling National Historical Park, 33 William Street
+    - Whaling National Historical Park Visitor Center
+
+- id: star-store
+  name: The Star Store
+  town: New Bedford
+  lat: 41.63417
+  lon: -70.92589
+  geocoded: census 2026-11-08
+  address: 715 Purchase St, New Bedford, MA 02740
+  aliases:
+    - The Star Store 715 Purchase Street
+    - Star Store
+
+- id: fishing-heritage-center
+  name: New Bedford Fishing Heritage Center
+  town: New Bedford
+  lat: 41.63568
+  lon: -70.9235
+  geocoded: census 2026-11-08
+  address: 38 Bethel St, New Bedford, MA 02740
+  url: https://fishingheritagecenter.org/
+  aliases:
+    - New Bedford Fishing Heritage Center, 38 Bethel Street
+
+- id: new-bedford-harbor-hotel
+  name: New Bedford Harbor Hotel
+  town: New Bedford
+  lat: 41.63405
+  lon: -70.92709
+  geocoded: census 2026-11-08
+  address: 222 Union St, New Bedford, MA 02740
+  aliases:
+    - New Bedford Harbor Hotel, 222 Union St.
+
+- id: new-bedford-free-public-library
+  name: New Bedford Free Public Library
+  town: New Bedford
+  lat: 41.63521
+  lon: -70.92706
+  geocoded: census 2026-11-08
+  address: 613 Pleasant St, New Bedford, MA 02740
+  url: https://www.newbedford-ma.gov/library/
+  aliases:
+    - New Bedford Main Library's Youth Services 613 Pleasant Street
+    - New Bedford Free Public Library, Main Library
+    - New Bedford Public Library
+
+- id: bristol-community-college-new-bedford
+  name: Bristol Community College, New Bedford
+  town: New Bedford
+  lat: 41.6352
+  lon: -70.92591
+  geocoded: census 2026-11-08
+  address: 800 Purchase St, New Bedford, MA 02740
+  aliases:
+    - Bristol Community College - 800 Purchase St.
+
+- id: catherine-carter-art-school
+  name: Catherine Carter Art School
+  town: New Bedford
+  aliases:
+    - Catherine Carter Art School, Studio 210
+  note: Studio 210; the building is not named on the card. Town centre until confirmed.
+
+- id: 3rd-eye-youth-empowerment
+  name: 3rd EyE Youth Empowerment
+  town: New Bedford
+  lat: 41.63403
+  lon: -70.9273
+  geocoded: census 2026-11-08
+  address: 230 Union St, New Bedford, MA 02740
+  aliases:
+    - 3rd EyE Youth Empowerment, 230 Union Street
+
+- id: bentos-bar-and-grille
+  name: Bento's Bar and Grille
+  town: New Bedford
+  lat: 41.63434
+  lon: -70.92692
+  geocoded: census 2026-11-08
+  address: 555 Pleasant St, New Bedford, MA 02740
+  aliases:
+    - Bento's Bar and Grille, 555 Pleasant St.
+
+- id: downtown-new-bedford
+  name: Downtown New Bedford
+  town: New Bedford
+  lat: 41.6352
+  lon: -70.9277
+  geocoded: hand 2026-11-08
+  note: AHA! Night and other events spread across downtown; the pin is William and Purchase Streets.
+
+- id: house-of-gamboa
+  name: House of Gamboa and Luisa Edits
+  town: New Bedford
+  lat: 41.6344
+  lon: -70.92462
+  geocoded: census 2026-11-08
+  address: 121 Union St, New Bedford, MA 02740
+  aliases:
+    - House of Gamboa and Luisa Edits 121 Union St.
+
+- id: interwoven-artist-gallery
+  name: Interwoven Artist Gallery
+  town: New Bedford
+  lat: 41.63543
+  lon: -70.92694
+  geocoded: census 2026-11-08
+  address: 634 Pleasant St, New Bedford, MA 02740
+  aliases:
+    - Interwoven Artist Gallery 634 Pleasant St.
+
+- id: noahs-place-playground
+  name: Noah's Place Playground
+  town: New Bedford
+  lat: 41.64117
+  lon: -70.9116
+  geocoded: census 2026-11-08
+  address: 102 Popes Island, New Bedford, MA 02740
+  aliases:
+    - Noah's Place Playground, 102 Popes Island, New Bedford, MA 02740, USA
+
+- id: pilgrim-united-church
+  name: Pilgrim United Church
+  town: New Bedford
+  lat: 41.63225
+  lon: -70.92542
+  geocoded: census 2026-11-08
+  address: 634 Purchase St, New Bedford, MA 02740
+  aliases:
+    - Pilgrim United Church Home, 634 Purchase Street
+    - Pilgrim United Church of Christ
+
+- id: sangha-yoga
+  name: Sangha Yoga New Bedford
+  town: New Bedford
+  lat: 41.63341
+  lon: -70.92576
+  geocoded: census 2026-11-08
+  address: 693 Purchase St, New Bedford, MA 02740
+  aliases:
+    - Sangha Yoga New Bedford 693 Purchase Street at the corner of Spring Street dNB
+    - Sangha Yoga
+
+- id: serlingpa-meditation-center
+  name: Serlingpa Meditation Center
+  town: New Bedford
+  lat: 41.63366
+  lon: -70.92663
+  geocoded: census 2026-11-08
+  address: 512 Pleasant St, New Bedford, MA 02740
+  aliases:
+    - Serlingpa Meditation Center 512 Pleasant St.
+
+- id: pour-farm-tavern
+  name: The Pour Farm Tavern
+  town: New Bedford
+  lat: 41.63502
+  lon: -70.92588
+  geocoded: census 2026-11-08
+  address: 780 Purchase St, New Bedford, MA 02740
+  aliases:
+    - The Pour Farm Tavern, 780 Purchase St.
+    - Pour Farm Tavern
+
+- id: waterfront-card-shop
+  name: Waterfront Card Shop
+  town: New Bedford
+  lat: 41.63477
+  lon: -70.92584
+  geocoded: census 2026-11-08
+  address: 752 Purchase St, New Bedford, MA 02740
+  aliases:
+    - Waterfront Card Shop 752 Purchase St.
+
+- id: 1265-purchase-street
+  name: 1265 Purchase Street
+  town: New Bedford
+  lat: 41.6653
+  lon: -70.93911
+  geocoded: nominatim 2026-11-08
+  address: 1265 Purchase St, New Bedford, MA 02740
+  note: An AHA! card gives only the address. Name the business here when it is known.
+
+- id: 21-seventh-street
+  name: 21 Seventh Street
+  town: New Bedford
+  lat: 41.63289
+  lon: -70.92847
+  geocoded: census 2026-11-08
+  address: 21 Seventh St, New Bedford, MA 02740
+  note: An AHA! card gives only the address. Name the business here when it is known.
+
+# ---------------------------------------------------------------- Dartmouth (DNRT reserves)
+
+- id: dnrt-center-helfand-farm
+  name: DNRT Center @ Helfand Farm
+  town: Dartmouth
+  lat: 41.61456
+  lon: -71.00116
+  geocoded: census 2026-11-08
+  address: 305 Chase Rd, Dartmouth, MA 02747
+  url: https://dnrt.org/
+  aliases:
+    - Helfand Farm
+    - DNRT Center at Helfand Farm
+
+- id: destruction-brook-woods
+  name: Destruction Brook Woods
+  town: Dartmouth
+  lat: 41.57712
+  lon: -71.01585
+  geocoded: nominatim 2026-11-08
+  url: https://dnrt.org/
+
+- id: dike-creek-reserve
+  name: Dike Creek Reserve
+  town: Dartmouth
+  url: https://dnrt.org/
+  note: Not in OpenStreetMap (2026-11-08); town centre until the trailhead is pinned by hand.
+
+- id: ocean-view-farm
+  name: Ocean View Farm
+  town: Dartmouth
+  lat: 41.53225
+  lon: -71.00607
+  geocoded: nominatim 2026-11-08
+  url: https://dnrt.org/
+  aliases:
+    - Ocean View Farm Reserve
+
+- id: russells-mills-woods
+  name: Russells Mills Woods
+  town: Dartmouth
+  url: https://dnrt.org/
+  note: Not in OpenStreetMap (2026-11-08); town centre until the trailhead is pinned by hand.
+
+- id: smith-farm
+  name: Smith Farm
+  town: Dartmouth
+  lat: 41.54913
+  lon: -70.94775
+  geocoded: nominatim 2026-11-08
+  url: https://dnrt.org/
+  aliases:
+    - Smith Farm Reserve
+
+- id: wernick-farm
+  name: Wernick Farm
+  town: Dartmouth
+  lat: 41.69008
+  lon: -71.04755
+  geocoded: nominatim 2026-11-08
+  url: https://dnrt.org/
+  aliases:
+    - Wernick Farm Reserve
+
+# ---------------------------------------------------------------- the rest of the coast
+
+- id: the-sawmill
+  name: The Sawmill
+  town: Acushnet
+  lat: 41.68409
+  lon: -70.92012
+  geocoded: census 2026-11-08
+  address: 32 Mill Rd, Acushnet, MA 02743
+  url: https://www.savebuzzardsbay.org/places-to-go/the-sawmill/
+  aliases:
+    - Sawmill
+    - The Sawmill, Acushnet
+
+- id: the-bogs
+  name: The Bogs
+  town: Mattapoisett
+  lat: 41.68337
+  lon: -70.85418
+  geocoded: census 2026-11-08
+  address: 200 Acushnet Rd, Mattapoisett, MA 02739
+  url: https://www.savebuzzardsbay.org/places-to-go/the-bogs/
+  aliases:
+    - The Bogs, Mattapoisett
+
+- id: onset-bay-center
+  name: Onset Bay Center
+  town: Wareham
+  lat: 41.7423
+  lon: -70.66007
+  geocoded: census 2026-11-08
+  address: 186 Onset Ave, Onset, MA 02558
+  url: https://www.savebuzzardsbay.org/onset-bay-center/
+
+- id: sakonnet-vineyard
+  name: Sakonnet Vineyard
+  town: Little Compton
+  lat: 41.53202
+  lon: -71.19718
+  geocoded: census 2026-11-08
+  address: 162 W Main Rd, Little Compton, RI 02837
+  url: https://www.sakonnetwine.com/
+  aliases:
+    - Carolyn's Sakonnet Vineyard
+    - Sakonnet Vineyards

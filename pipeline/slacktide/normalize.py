@@ -15,6 +15,12 @@ _VENUE_STRIP = re.compile(r"^(the)\s+|,?\s*(inc\.?|llc|ltd\.?)$|\s*-\s*(parish h
 _TOWN_ALT = "|".join(re.escape(t.lower()) for t in sorted(TOWNS, key=len, reverse=True))
 # "Narrows Center For The Arts Fall River MA" and "Narrows Center for the Arts" are one place.
 _VENUE_TOWN_SUFFIX = re.compile(r",?\s+(" + _TOWN_ALT + r")\s*,?\s*(ma|ri|massachusetts|rhode island)?\s*(\d{5})?\s*$")
+# A street address written into the venue name: "Gallery X 169 William Street", "New Bedford Art
+# Museum, 608 Pleasant St.", "Speakeasy @ The Z! - 984 Purchase St". AHA! Night's cards do this
+# for every venue (2026-11-08). The name is the place; the address goes to venues.yaml.
+_VENUE_ADDRESS_SUFFIX = re.compile(
+    r"[\s,-]+\d{1,5}[a-z]?\s+(?:[a-z0-9.']+\s+){0,3}?"
+    r"(?:street|st|avenue|ave|road|rd|lane|ln|drive|dr|boulevard|blvd|way|highway|hwy|route|rte|place|pl|square|sq|court|ct|terrace|ter|wharf|pier)\b\.?.*$")
 _TOWN_IN_TEXT = re.compile(r"\b(" + _TOWN_ALT + r")\b")
 # Curly quotes, dashes and non-breaking spaces to their ASCII equivalents.
 _PUNCT = str.maketrans({
@@ -66,17 +72,36 @@ def uncap(title: str) -> str:
 def venue_key(v: str) -> str:
     v = clean_text(v).lower()
     v = _VENUE_STRIP.sub("", v)
+    stripped = _VENUE_ADDRESS_SUFFIX.sub("", v)
+    if stripped.strip(" ,-"):            # a bare address ("1265 Purchase Street") keeps its key
+        v = stripped
     v = _VENUE_TOWN_SUFFIX.sub("", v)
     v = re.sub(r"[^a-z0-9 ]+", " ", v)
     return _WS.sub(" ", v).strip()
 
+def venue_aliases(venues: list[dict]) -> dict[str, str]:
+    """venues.yaml as a lookup: the key of the canonical name and of every alias, each to the
+    canonical name. The name itself is an alias of itself, so a source that already spells it
+    right still lands on the entry."""
+    out: dict[str, str] = {}
+    for v in venues:
+        for raw in [v["name"]] + list(v.get("aliases") or []):
+            k = venue_key(str(raw))
+            if k:
+                out[k] = v["name"]
+    return out
+
 class VenueCanon:
     """Maps raw venue strings to one canonical display name per real place.
     Observed collisions: 'Gallery X' vs 'Gallery X, Inc'; 'First Unitarian Church in New Bedford'
-    vs 'The First Unitarian Church in New Bedford' vs '... - Parish Hall'."""
+    vs 'The First Unitarian Church in New Bedford' vs '... - Parish Hall'. An alias table from
+    venues.yaml wins over the fuzzy match and over first-seen spelling: the file's name is the
+    display name, which is also what the series id hashes, so renaming a place there is a
+    deliberate act that sends its series back through review."""
     THRESHOLD = 92
 
-    def __init__(self):
+    def __init__(self, aliases: dict[str, str] | None = None):
+        self.aliases = aliases or {}
         self.canon: dict[str, str] = {}   # key -> display
 
     def resolve(self, raw: str) -> str:
@@ -86,6 +111,9 @@ class VenueCanon:
         k = venue_key(raw)
         if not k:
             return raw
+        if k in self.aliases:
+            self.canon[k] = self.aliases[k]
+            return self.canon[k]
         if k in self.canon:
             return self.canon[k]
         if self.canon:
@@ -163,14 +191,16 @@ def classify(title: str, venue: str, description: str = "") -> str:
 
 def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
               default_venue_by_source: dict[str, str] | None = None,
-              default_category_by_source: dict[str, str] | None = None) -> list[Occurrence]:
+              default_category_by_source: dict[str, str] | None = None,
+              venue_alias_table: dict[str, str] | None = None) -> list[Occurrence]:
     """Clean every occurrence in place. `default_venue_by_source` fills the venue for
     single-venue sources whose feed carries none (Brownell Library sends "venue": []).
     `default_category_by_source` is our own call for a single-purpose venue (a theatre is
     Arts & Theatre) when the rule classifier finds nothing; it is never the source's category.
     A category the connector has already set (the recurring connector carries the editor's own
-    call) is kept."""
-    canon = VenueCanon()
+    call) is kept. `venue_alias_table` is venue_aliases(venues.yaml): the spellings we have
+    already matched to a real place."""
+    canon = VenueCanon(venue_alias_table)
     default_venue_by_source = default_venue_by_source or {}
     default_category_by_source = default_category_by_source or {}
     for o in occs:
