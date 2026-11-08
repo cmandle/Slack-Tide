@@ -1,37 +1,10 @@
 {
- "generated_at": "2026-11-07T22:50:30.906018+00:00",
- "pending_count": 37,
- "soon_count": 21,
+ "generated_at": "2026-11-08T10:56:17.753280+00:00",
+ "pending_count": 36,
+ "soon_count": 20,
  "approved_count": 48,
  "rejected_count": 0,
  "series": [
-  {
-   "id": "a517416d1b57",
-   "title": "Parsons Dance",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/parsons-dance",
-   "cost": "",
-   "first_start": "2026-11-07T20:00:00-05:00",
-   "last_start": "2026-11-07T20:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-07T20:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-07T20:00:00-05:00",
-   "soon": true
-  },
   {
    "id": "9daa042b56f8",
    "title": "Board of Registrars Meeting",

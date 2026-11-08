@@ -1,32 +1,32 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 129,
-   "seconds": 3.51
+   "rows": 127,
+   "seconds": 3.16
   },
   "viva-fall-river": {
-   "rows": 223,
-   "seconds": 14.85
+   "rows": 224,
+   "seconds": 14.46
   },
   "brownell-library": {
    "rows": 14,
-   "seconds": 0.48
+   "seconds": 0.44
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.74
+   "seconds": 2.62
   },
   "buzzards-bay-brewing": {
    "rows": 0,
-   "seconds": 4.45
+   "seconds": 5.11
   },
   "zeiterion": {
-   "rows": 16,
-   "seconds": 0.41
+   "rows": 15,
+   "seconds": 0.37
   },
   "town-tiverton": {
    "rows": 171,
-   "seconds": 0.55
+   "seconds": 0.44
   },
   "town-dartmouth": {
    "rows": 9,
@@ -34,72 +34,82 @@
   },
   "town-somerset": {
    "rows": 12,
-   "seconds": 0.41
+   "seconds": 0.62
   }
  },
  "errors": {},
- "primary_rows": 236,
+ "primary_rows": 235,
  "dropped": {
   "closure": 3,
   "holiday": 4
  },
- "series": 85,
+ "series": 84,
  "approval": {
-  "pending": 37,
-  "approved": 48
+  "approved": 48,
+  "pending": 36
  },
  "by_town": {
-  "New Bedford": 12,
   "Tiverton": 32,
   "Dartmouth": 22,
   "Little Compton": 10,
-  "Somerset": 9
+  "Somerset": 9,
+  "New Bedford": 11
  },
  "by_category": {
-  "Arts & Theatre": 12,
   "Sports & Recreation": 5,
   "(unclassified)": 15,
   "Civic & Town Meetings": 26,
   "Library & Talks": 10,
   "Volunteering & Causes": 2,
   "Outdoors & Nature": 11,
+  "Arts & Theatre": 11,
   "Music": 2,
   "Family & Children": 1,
   "Education & Workshops": 1
  },
  "by_cadence": {
-  "once": 58,
   "several-a-week": 1,
   "weekly": 17,
+  "once": 57,
   "fortnightly": 1,
   "monthly": 5,
   "irregular": 3
  },
  "weekend_gate": {
-  "saturday": "2026-11-07",
-  "series": 0,
-  "towns": {},
+  "saturday": "2026-11-14",
+  "series": 2,
+  "towns": {
+   "Little Compton": 1,
+   "Dartmouth": 1
+  },
   "passes": false
  },
  "reconcile": {
-  "check_total": 352,
-  "check_matched": 9,
+  "check_total": 351,
+  "check_matched": 8,
   "check_missed_rows": 343,
-  "check_missed_series": 101,
+  "check_missed_series": 98,
   "check_missed": [
-   {
-    "title": "Weekend Brunch",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-07T10:00:00-05:00",
-    "rows": 18
-   },
    {
     "title": "Karaoke Nights!",
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-11-08T21:00:00-05:00",
     "rows": 17
+   },
+   {
+    "title": "Weekend Brunch",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-08T10:00:00-05:00",
+    "rows": 17
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-11-11T18:30:00-05:00",
+    "rows": 9
    },
    {
     "title": "KidZone",
@@ -127,6 +137,13 @@
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
     "first_start": "2026-11-08T16:00:00-05:00",
+    "rows": 9
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-11-11T19:00:00-05:00",
     "rows": 9
    },
    {
@@ -165,11 +182,11 @@
     "rows": 9
    },
    {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-11-11T18:30:00-05:00",
-    "rows": 8
+    "title": "Wing Wednesday!!",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-11T18:00:00-05:00",
+    "rows": 9
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -214,13 +231,6 @@
     "rows": 8
    },
    {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-11-11T19:00:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "Nick Sanfilippo",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
@@ -249,13 +259,6 @@
     "rows": 8
    },
    {
-    "title": "Wing Wednesday!!",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-11T18:00:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
@@ -266,8 +269,8 @@
     "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
     "venue": "Bristol Community College",
     "town": "Fall River",
-    "first_start": "2026-11-07T08:00:00-05:00",
-    "rows": 7
+    "first_start": "2026-11-11T17:30:00-05:00",
+    "rows": 6
    },
    {
     "title": "Community Resource Day",
@@ -281,7 +284,7 @@
     "venue": "Fall River Public Library",
     "town": "Fall River",
     "first_start": "2026-11-11T18:00:00-05:00",
-    "rows": 4
+    "rows": 5
    },
    {
     "title": "Monthly Artists Share!",
@@ -330,6 +333,13 @@
     "venue": "Bristol Community College Arts Center",
     "town": "Fall River",
     "first_start": "2026-11-29T01:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "English Conversation Group",
+    "venue": "Fall River Public Library",
+    "town": "Fall River",
+    "first_start": "2026-12-02T18:00:00-05:00",
     "rows": 2
    },
    {
@@ -480,13 +490,6 @@
     "rows": 1
    },
    {
-    "title": "Amani Burnham live at the Narrows",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-11-07T20:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Art Talks! May Babcock",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -529,13 +532,6 @@
     "rows": 1
    },
    {
-    "title": "Community Repair & Swap Day",
-    "venue": "Keith Middle School",
-    "town": "New Bedford",
-    "first_start": "2026-11-07T10:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Dinner with Santa",
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
@@ -547,13 +543,6 @@
     "venue": "New Bedford Whaling National Historical Park Theater",
     "town": "New Bedford",
     "first_start": "2026-11-20T19:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "English Conversation Group",
-    "venue": "Fall River Public Library",
-    "town": "Fall River",
-    "first_start": "2026-12-02T18:00:00-05:00",
     "rows": 1
    },
    {
@@ -740,13 +729,6 @@
    },
    {
     "title": "The Ancestor Hour: Roots & Research Club",
-    "venue": "New Bedford Public Library",
-    "town": "New Bedford",
-    "first_start": "2026-11-07T13:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "The Ancestor Hour: Roots & Research Club",
     "venue": "New Bedford Free Public Library",
     "town": "New Bedford",
     "first_start": "2026-12-05T13:00:00-05:00",
@@ -799,9 +781,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 16,
-  "primary_only_series": 12,
-  "coverage_ratio": 0.026
+  "primary_only_count": 15,
+  "primary_only_series": 11,
+  "coverage_ratio": 0.023
  },
  "tide_error": null
 }
