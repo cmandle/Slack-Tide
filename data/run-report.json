@@ -2,47 +2,47 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 178,
-   "seconds": 5.54
+   "seconds": 4.46
   },
   "viva-fall-river": {
    "rows": 312,
-   "seconds": 18.64
+   "seconds": 19.81
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 3.56
+   "seconds": 3.92
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.47
+   "seconds": 0.58
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 5.91
+   "seconds": 5.21
   },
   "aha-next-aha": {
    "rows": 29,
-   "seconds": 2.71
+   "seconds": 0.25
   },
   "cisco-live-music": {
    "rows": 9,
-   "seconds": 0.25
+   "seconds": 0.12
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.26
+   "seconds": 0.3
   },
   "south-coast-girls-walk": {
    "rows": 1,
-   "seconds": 0.37
+   "seconds": 0.19
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.44
+   "seconds": 0.16
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 0.43
+   "seconds": 0.22
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -847,5 +847,5 @@
   "primary_only_series": 66,
   "coverage_ratio": 0.057
  },
- "tide_error": null
+ "tide_error": "HTTPError: 504 Server Error: Gateway Timeout for url: https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=8447636&product=predictions&datum=MLLW&units=english&time_zone=lst_ldt&format=json&interval=30&begin_date=20261108&range=48&application=slack-tide.org"
 }

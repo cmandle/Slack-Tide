@@ -9,8 +9,6 @@
   var rows = Array.prototype.slice.call(document.querySelectorAll(".week-card[data-town]"));
   var calDays = Array.prototype.slice.call(document.querySelectorAll(".cal-day"));
   var CAL_SHOW = 3;
-  var catSelect = document.getElementById("category");
-  var sectionSelect = document.getElementById("section");
   var state = { town: "", cat: "" };
 
   function matches(el) {
@@ -51,14 +49,10 @@
     tiles.forEach(function (t) {
       t.setAttribute("aria-pressed", t.getAttribute("data-cat") === state.cat ? "true" : "false");
     });
-    if (catSelect && catSelect.value !== state.cat) catSelect.value = state.cat;
   }
 
   if (townSelect) {
     townSelect.addEventListener("change", function () { state.town = townSelect.value; applyFilters(); });
-  }
-  if (catSelect) {
-    catSelect.addEventListener("change", function () { state.cat = catSelect.value; applyFilters(); });
   }
   calDays.forEach(function (day) {
     var more = day.querySelector(".cal-more");
@@ -68,10 +62,6 @@
     var resized;
     window.addEventListener("resize", function () { clearTimeout(resized); resized = setTimeout(applyFilters, 150); });
     applyFilters();
-  }
-  /* The section select is navigation: each option's value is the section's address. */
-  if (sectionSelect) {
-    sectionSelect.addEventListener("change", function () { if (sectionSelect.value) window.location.href = sectionSelect.value; });
   }
   tiles.forEach(function (t) {
     t.addEventListener("click", function () {
