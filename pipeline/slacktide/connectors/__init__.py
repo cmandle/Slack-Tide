@@ -4,9 +4,10 @@ from .rss import RSSConnector
 from .html import HtmlConnector
 from .sheet import SheetConnector
 from .recurring import RecurringConnector
+from .squarespace import SquarespaceConnector
 
 CONNECTORS = {"tribe": TribeConnector, "ical": ICalConnector, "rss": RSSConnector,
-              "html": HtmlConnector, "sheet": SheetConnector, "recurring": RecurringConnector}
+              "html": HtmlConnector, "sheet": SheetConnector, "recurring": RecurringConnector, "squarespace": SquarespaceConnector}
 
 def for_source(source: dict, **kw):
     try:

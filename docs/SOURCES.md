@@ -11,7 +11,7 @@ Decisions that shape every choice below: venues and organisations are read direc
 | **Tribe REST** | WordPress "The Events Calendar" plugin answers at `/wp-json/tribe/events/v1/events` with clean JSON, venue and all. | A registry entry. | Built (`tribe`) |
 | **CivicPlus iCal** | Municipal sites on CivicPlus publish an ICS feed per calendar category at `/common/modules/iCalendar/iCalendar.aspx?catID=N&feed=calendar`. | A registry entry plus discovering the category ids per town. | Built (`ical`) |
 | **Plain iCal** | Any public ICS address: a Google Calendar's public feed, a LibCal calendar, a Squarespace or Tribe `?ical=1` twin. | A registry entry. | Built (`ical`, verify once with a non-CivicPlus feed) |
-| **Squarespace JSON** | Any Squarespace events page answers `?format=json` with every item's `startDate` and `endDate` in epoch milliseconds, title, excerpt and location. | A 40-line connector, then a registry entry per site. | To build |
+| **Squarespace JSON** | Any Squarespace events page answers `?format=json` with every item's `startDate` and `endDate` in epoch milliseconds, title, excerpt and location. | A registry entry per site. | Built (`squarespace`, 8 Nov 2026, first for South Coast Girls Walk) |
 | **HTML listing** | A server-rendered events page read with CSS selectors declared on the registry entry. Since 8 Nov 2026 it also takes a page-level date (`page_when`), times written as class names (`when_class`), an end-time selector and sibling grouping (`group_next`) for listings written as consecutive paragraphs. | Fifteen minutes per site to write the selectors and save a fixture; breaks on redesign and fails loudly. | Built (`html`) |
 | **WhoFi** | The library calendar system behind seven of our libraries (`<town>-ma.whofi.com/calendar/full`). No documented feed. | One connector covers all seven; ask WhoFi for an export first. | To build (issue 5) |
 | **LibCal** | Springshare's library calendar; each calendar has an iCal and RSS address once you know its id. | A registry entry once the library sends the id. | Plain iCal |
@@ -57,12 +57,12 @@ The editors asked to pause most of what section 2 reads and concentrate on a nam
 | DNRT | Tribe REST | In use | Publishing on approval |
 | Buzzards Bay Coalition | The Bay Adventures listing now dates its one-off adventures, and each card's page gives time, venue and address. The recurring programmes (full moon walks, Itty Bitty, Adventure Ready) still keep their dates in FareHarbor. | HTML listing with `detail` pages, enabled; issue 19 still asks for the recurring ones | In use |
 | PLAY Arcade | Squarespace; "Trivia every Wednesday from 7-9PM. Karaoke every Thursday from 8PM-12AM." on the home page; no event collection | Declared schedule | Two series on `standing-new-bedford` |
-| New Beige | Squarespace, menus only; events on Instagram. Editor names Wednesday trivia; the only listing found online is Thursday music bingo | Declared schedule once the night and time are confirmed | Entry disabled |
+| New Beige | Squarespace, menus only; events on Instagram. The venue's post confirms trivia every Wednesday at 7pm | Declared schedule on `standing-new-bedford` | In use |
 | Cisco Brewers Kitchen & Bar | ciscokitchenbar.com (BentoBox): `/live-music/` lists the month's shows as pairs of paragraphs, date then "artist 7pm"; `/happenings/` states the weekly brunch and the first- and third-Tuesday chef nights in prose | HTML listing with `group_next` (`cisco-live-music`); brunch and chef nights declared on `standing-new-bedford` | In use |
 | Star Store | Owned by the Arts & Business Council of Greater Boston since May 2025; pop-ups until the 2027 reopening; their `ve_event` REST lists Boston events only | Ask them to list Star Store pop-ups | Candidate |
 | South Coast Places for People | Luma calendar `cal-1cKC6jMQ8Hatgih` with a public iCal feed, 28 events | Plain iCal, enabled | In use |
 | South Coast Walking Book Tour | South Coast Almanac, about four walks a year; Meetup (not ingested); the Almanac site refuses automated readers | One email for dates or an iCal | Candidate |
-| South Coast Girls Walk | Facebook group only | Submission form | Candidate |
+| South Coast Girls Walk | southcoastgirlswalk.com, a Squarespace site whose schedule page is an events collection; `?format=json` lists the walks | Squarespace JSON, enabled as `south-coast-girls-walk` | In use |
 | FR•NB Artist Collaborative | Instagram only | Submission form | Candidate |
 
 Consequences: issue 18 (the form behind `/add/`) is now the route for three of the twelve, so it moves to the front. The Phase 1 weekend gate is not reachable from this list and is suspended, not removed; the run report keeps measuring it.
