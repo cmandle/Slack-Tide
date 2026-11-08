@@ -378,7 +378,6 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     return page(f"{SITE_NAME} · Events, {REGION}", body, "", description, now)
 
 PLACEHOLDER_COPY = {
-    "groups": ("Community groups & meetups", "This section will list the standing groups, clubs and meetups along the coast: who meets, where, and how often."),
     "volunteer": ("Volunteer opportunities", "This section will list the land trusts, libraries, pantries and town committees that need hands, with dates where they have them."),
     "map": ("Map", "The map will place every venue we list, town by town."),
 }
@@ -788,6 +787,89 @@ def placeholder_page(key: str, now: datetime) -> str:
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
     return page(f"{SITE_NAME} · {title}", body, rel, f"{title} is coming to Slack Tide.", now)
 
+# ---------------------------------------------------------------- community groups & meetups
+
+GROUPS_PATH = "groups.yaml"
+GROUP_LINKS = [("website", "Website"), ("luma", "Luma"), ("meetup", "Meetup"), ("instagram", "Instagram"),
+               ("facebook", "Facebook"), ("email", "Email")]
+GROUPS_INTRO = ("Standing groups along the coast: who they are, what they are for and where to find them. "
+                "When a group publishes dates, they are on the Events page too.")
+
+def load_groups(root: Path = ROOT) -> list[dict]:
+    """groups.yaml at the repository root: the directory behind /groups/. A missing file is an
+    empty directory, not an error, so the site still builds."""
+    import yaml
+    p = root / GROUPS_PATH
+    if not p.exists():
+        return []
+    rows = yaml.safe_load(p.read_text(encoding="utf-8")) or []
+    return [g for g in rows if isinstance(g, dict) and g.get("id") and g.get("name")]
+
+def next_dates(series: list[dict], source_id: str, now: datetime, limit: int = 2) -> list[tuple[datetime, dict, dict]]:
+    """The next `limit` published occurrences from one registry source, soonest first: what a
+    group's card shows under "Next" when the group's events come through the pipeline."""
+    rows = []
+    for s in published(series):
+        if s.get("source_id") != source_id:
+            continue
+        for o in s.get("occurrences", []):
+            start = _parse(o["start"])
+            if start >= now - timedelta(hours=3):
+                rows.append((start, o, s))
+    rows.sort(key=lambda r: r[0])
+    return rows[:limit]
+
+def group_card(g: dict, series: list[dict], now: datetime) -> str:
+    links = []
+    if g.get("website"):
+        links.append(("website", g["website"]))
+    for key, _ in GROUP_LINKS[1:]:
+        u = (g.get("links") or {}).get(key)
+        if u and u != g.get("website"):
+            links.append((key, u))
+    labels = dict(GROUP_LINKS)
+    links_html = "".join(
+        f'<a class="btn" href="mailto:{esc(u)}">{labels[k]}</a>' if k == "email" else
+        f'<a class="btn" href="{esc(u)}" rel="noopener" target="_blank">{labels[k]} ↗</a>'
+        for k, u in links)
+    meta = ""
+    if g.get("area"):
+        meta += f'<span class="wk-chip">{esc(g["area"])}</span>'
+    if g.get("meets"):
+        meta += f'<span class="gc-meets">{esc(g["meets"])}</span>'
+    join = f'<p class="gc-join">{esc(g["join"])}</p>' if g.get("join") else ""
+    nxt = ""
+    if g.get("source_id"):
+        items = "".join(
+            f'<span class="gc-next-item"><a href="{esc(s["url"] or "#")}">{esc(s["title"])}</a> <span class="gc-when">{esc(fmt_when_long(start))}</span></span>'
+            for start, o, s in next_dates(series, g["source_id"], now))
+        if items:
+            nxt = f'<div class="gc-next"><span class="gc-label">Next</span>{items}</div>'
+    return (f'<article class="group-card" id="{esc(slug(g["id"]))}" data-group="{esc(g["id"])}">'
+            f'<h2 class="gc-name">{esc(g["name"])}</h2>'
+            + (f'<div class="gc-meta">{meta}</div>' if meta else "")
+            + (f'<p class="gc-purpose">{esc(g["purpose"])}</p>' if g.get("purpose") else "")
+            + join
+            + (f'<div class="gc-links">{links_html}</div>' if links_html else "")
+            + nxt + '</article>')
+
+def groups_page(groups: list[dict], events: dict, now: datetime) -> str:
+    """The directory. DESIGN.md names Groups as a directory with its layout to follow; this page
+    uses the Events vocabulary (outlined cards, mono labels, .btn links) until the canvas draws one."""
+    rel = "../"
+    n = len(groups)
+    cards = "".join(group_card(g, events["series"], now) for g in groups)
+    empty = '' if n else '<p class="empty">No groups listed yet.</p>'
+    body = (head("groups", rel) +
+            f'<main class="content groups" id="main"><div class="hero-text"><div class="hero-title"><h1>Community groups &amp; meetups</h1>{stickers()}</div>'
+            f'<div class="dateline">{n} group{"" if n == 1 else "s"} · {esc(REGION)}</div></div>'
+            f'<p class="intro">{esc(GROUPS_INTRO)}</p>'
+            f'<div class="groups-grid">{cards}</div>{empty}'
+            f'<a class="cta" href="{rel}add/">Tell us about a group</a>'
+            f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
+    return page(f"{SITE_NAME} · Community groups & meetups", body, rel,
+                f"Standing groups, clubs and meetups from {REGION}: what they are for and where to find them.", now)
+
 # ---------------------------------------------------------------- build
 
 def write_assets(out: Path) -> dict:
@@ -821,6 +903,9 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
     used = write_assets(out)
     sources = source_index()
     (out / "index.html").write_text(events_page(events, tide, now), encoding="utf-8")
+    groups = load_groups()
+    (out / "groups").mkdir(parents=True, exist_ok=True)
+    (out / "groups" / "index.html").write_text(groups_page(groups, events, now), encoding="utf-8")
     for key in PLACEHOLDER_COPY:
         d = out / key
         d.mkdir(parents=True, exist_ok=True)

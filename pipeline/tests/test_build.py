@@ -74,9 +74,10 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert [html.index(t) for t in order] == sorted(html.index(t) for t in order)
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
-    for sub in ("groups", "volunteer", "map"):
+    for sub in ("volunteer", "map"):
         p = out / sub / "index.html"
         assert p.exists() and "is coming" in p.read_text(encoding="utf-8")
+    assert (out / "groups" / "index.html").exists()   # the directory; test_groups.py covers it
     # The calendar: this month at calendar/, the next two months the window touches at calendar/YYYY-MM/.
     cal = (out / "calendar" / "index.html").read_text(encoding="utf-8")
     assert "<h1>December 2098</h1>" in cal and 'data-date="2098-12-31" data-today' in cal

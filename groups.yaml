@@ -1,0 +1,62 @@
+# Community groups & meetups: the directory behind /groups/ (decision 13, 2026-11-08).
+# A group is a standing community, not an event: who they are, what they are for, where to find
+# them. Edited by hand for now (the admin page will get a tab); the site build reads it on every
+# run. Links to Facebook, Instagram and Meetup are fine here: we point at them, we never read
+# from them.
+#
+# Fields: id, name, area (towns, or the coast), purpose (one or two sentences, sentence case),
+# meets (cadence in words), join (cost or how to take part; optional), website (optional),
+# links (luma, meetup, instagram, facebook, email; optional), source_id (the registry entry whose
+# events are the group's, optional; the page then shows their next dates), added (date).
+
+- id: south-coast-places-for-people
+  name: South Coast Places for People
+  area: New Bedford and the South Coast
+  purpose: >-
+    Residents who want abundant housing, safe and easy ways to get around without a car, and
+    lively places to gather. They hold a monthly meetup, run walk audits of streets such as
+    Route 6, and bring in speakers on housing and transport.
+  meets: Monthly meetup, usually at the Co-Creative Center on Union Street, plus walks and talks
+  join: Free to attend; membership from $25 a year
+  website: https://luma.com/southcoastplacesforpeople
+  links:
+    luma: https://luma.com/southcoastplacesforpeople
+  source_id: south-coast-places-for-people
+  added: "2026-11-08"
+
+- id: south-coast-walking-book-tour
+  name: South Coast Walking Book Tour
+  area: The South Coast, a different town each time
+  purpose: >-
+    South Coast Almanac's walking book club. Each outing takes a book with a South Coast
+    connection as the starting point for a walk through the place it describes, often with the
+    author along. Free; some walks ask you to register.
+  meets: About four walks a year
+  website: https://southcoastalmanac.com/walking-book-club
+  links:
+    meetup: https://www.meetup.com/south-coast-walking-book-tour
+  added: "2026-11-08"
+
+- id: south-coast-girls-walk
+  name: South Coast Girls Walk
+  area: New Bedford, Fairhaven, Mattapoisett, Fall River and beyond
+  purpose: >-
+    A free walking group for women, started by two friends who wanted a way to walk, talk and
+    try the area's coffee shops together. It has grown into a region-wide community with charity
+    walks and spin-offs such as South Coast Girls Night.
+  meets: Weekly walks, announced in the group
+  join: Free. The group lives on Facebook; search for it by name.
+  # The Facebook group's address is not on file; add it as links.facebook when known.
+  added: "2026-11-08"
+
+- id: frnb-artist-collaborative
+  name: FR•NB Artist Collaborative
+  area: Fall River and New Bedford
+  purpose: >-
+    Artists from the two cities working together, founded by photographers Nathaniel Roberts and
+    Kaylin Pacheco. Open calls and group exhibitions, such as The City Of... Past, Present,
+    Future Fall River, open to any medium.
+  meets: Open calls and exhibitions through the year
+  links:
+    instagram: https://www.instagram.com/frnb.artistcollaborative/
+  added: "2026-11-08"
