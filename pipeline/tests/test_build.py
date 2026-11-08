@@ -1,5 +1,5 @@
-"""The site generator: selection rules, configuration-driven lists, the tide panel's three states,
-and the placeholder pages. Runs offline against a small events.json written by the test."""
+"""The site generator: selection rules, configuration-driven lists, the tide panel's three states
+and the pages. Runs offline against a small events.json written by the test."""
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -74,7 +74,7 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
     p = out / "map" / "index.html"
-    assert p.exists() and "is coming" in p.read_text(encoding="utf-8")
+    assert p.exists() and "is coming" not in p.read_text(encoding="utf-8")   # the Map view; test_map.py covers it
     assert not (out / "volunteer").exists() and "volunteer/" not in html   # section retired 2026-11-08
     assert 'id="category"' not in html and 'id="section"' not in html     # the tiles and tabs replace both selects
     assert (out / "groups" / "index.html").exists()   # the directory; test_groups.py covers it

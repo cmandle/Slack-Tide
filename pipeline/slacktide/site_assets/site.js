@@ -49,6 +49,10 @@
     tiles.forEach(function (t) {
       t.setAttribute("aria-pressed", t.getAttribute("data-cat") === state.cat ? "true" : "false");
     });
+    /* The map page listens (map.js) and filters its places and pins the same way. */
+    if (typeof CustomEvent === "function") {
+      document.dispatchEvent(new CustomEvent("st:filter", { detail: { town: state.town, cat: state.cat } }));
+    }
   }
 
   if (townSelect) {

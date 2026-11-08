@@ -1,6 +1,7 @@
 """Generate the Phase 1 static site, Events section, from data/events.json and data/tide.json.
 
-``slacktide build`` writes ``site/index.html``, the placeholder pages and ``site/assets/``.
+``slacktide build`` writes ``site/index.html``, the calendar, map, groups, add and admin pages
+and ``site/assets/``.
 Plain HTML, CSS and JavaScript; no framework (architecture decision 2). The look is
 design/DESIGN.md (Revision B of the Claude Design canvas): the stylesheet is design/tokens.css
 as the variable layer plus the component layer in ``site_assets/site.css``. When
@@ -18,6 +19,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from . import config, tide as tide_mod
+from .normalize import venue_key
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = Path(__file__).with_name("site_assets")
@@ -67,9 +69,11 @@ def family_of(cat: str) -> str:
     """The display family slug for a taxonomy category, or "" when unclassified."""
     return config.CATEGORY_FAMILY_OF.get(cat, "")
 
-def stock_var(cat: str) -> str:
-    fam = family_of(cat)
+def fam_var(fam: str) -> str:
     return f"var(--st-cat-{fam})" if fam else "var(--st-rule)"   # unclassified: the light blue rule colour
+
+def stock_var(cat: str) -> str:
+    return fam_var(family_of(cat))
 
 def short_label(cat: str) -> str:
     fam = family_of(cat)
@@ -117,6 +121,19 @@ def published(series: list[dict]) -> list[dict]:
 def _parse(s: str) -> datetime:
     return datetime.fromisoformat(s)
 
+def next_occurrence(s: dict, now: datetime) -> tuple[datetime, dict] | None:
+    """The series' first occurrence that has not finished: (start, occurrence), or None when
+    every date is past. An untimed end is two hours after the start; an all-day date lasts
+    until midnight."""
+    for o in s["occurrences"]:
+        start = _parse(o["start"])
+        end = _parse(o["end"]) if o.get("end") else start + timedelta(hours=2)
+        if o.get("all_day"):
+            end = max(end, start.replace(hour=23, minute=59))
+        if end >= now:
+            return start, o
+    return None
+
 def select(series: list[dict], now: datetime) -> tuple[list[dict], dict[date, list[dict]]]:
     """Return (tonight, week) where tonight is a list of {series, start, occ} for today and week
     maps each of the next seven dates to its rows. One row per series in each list."""
@@ -124,15 +141,7 @@ def select(series: list[dict], now: datetime) -> tuple[list[dict], dict[date, li
     horizon = today + timedelta(days=WEEK_DAYS)
     tonight, week = [], {today + timedelta(days=i): [] for i in range(1, WEEK_DAYS + 1)}
     for s in series:
-        nxt = None
-        for o in s["occurrences"]:
-            start = _parse(o["start"])
-            end = _parse(o["end"]) if o.get("end") else start + timedelta(hours=2)
-            if o.get("all_day"):
-                end = max(end, start.replace(hour=23, minute=59))
-            if end >= now:
-                nxt = (start, o)
-                break
+        nxt = next_occurrence(s, now)
         if not nxt:
             continue
         start, o = nxt
@@ -220,10 +229,13 @@ def tide_box(tide: dict | None, now: datetime) -> str:
 # ---------------------------------------------------------------- markup
 
 def page(title: str, body: str, rel: str, description: str, generated: datetime,
-         noindex: bool = False, scripts: tuple[str, ...] = ("site.js",)) -> str:
+         noindex: bool = False, scripts: tuple[str, ...] = ("site.js",), styles: tuple[str, ...] = ()) -> str:
+    """`styles` are extra stylesheets under assets/, linked before site.css so the site's rules
+    win over a library's (the map page adds Leaflet's)."""
     v = generated.strftime('%Y%m%d%H%M')
     robots = '<meta name="robots" content="noindex, nofollow">\n' if noindex else ""
     script_tags = "\n".join(f'<script src="{rel}assets/{s}?v={v}" defer></script>' for s in scripts)
+    style_tags = "".join(f'<link rel="stylesheet" href="{rel}assets/{s}?v={v}">\n' for s in styles)
     return f"""<!doctype html>
 <html lang="en-US">
 <head>
@@ -236,7 +248,7 @@ def page(title: str, body: str, rel: str, description: str, generated: datetime,
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT_URL}">
 <link rel="stylesheet" href="{rel}assets/tokens.css?v={v}">
-<link rel="stylesheet" href="{rel}assets/site.css?v={v}">
+{style_tags}<link rel="stylesheet" href="{rel}assets/site.css?v={v}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -369,10 +381,6 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
             '<a class="cta" href="add/" data-dialog="add-dialog">Add your event</a>'
             '</main>' + footer("") + add_dialog("", sources))
     return page(f"{SITE_NAME} · Events, {REGION}", body, "", description, now)
-
-PLACEHOLDER_COPY = {
-    "map": ("Map", "The map will place every venue we list, town by town."),
-}
 
 # ---------------------------------------------------------------- add your event
 
@@ -768,16 +776,143 @@ def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, di
     return page(f"{SITE_NAME} · Admin", body, rel, "The approvers' page. Not for the public.", now,
                 noindex=True, scripts=("site.js", "admin.js"))
 
-def placeholder_page(key: str, now: datetime) -> str:
+# ---------------------------------------------------------------- map
+
+# One pin per place with a listing still to come, from venues.yaml; a listing whose venue has
+# no coordinates sits on its town's pin at the town centre (config.TOWN_CENTERS), marked
+# approximate. Leaflet is vendored in site_assets/vendor/leaflet (BSD 2-clause). The basemap is
+# the OpenStreetMap Foundation's standard tiles, which need no key and allow light use with
+# attribution (a community site at this traffic is light use; CARTO's free basemaps started
+# demanding a key on 2026-11-08, which is why they are not used); a CSS filter in site.css
+# quietens them toward the paper. Changing provider is this constant and the attribution.
+MAP_SHOW = 3   # listings shown per place before "+N more"
+MAP_TILES = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+MAP_SUBDOMAINS = ""
+MAP_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+MAP_BOUNDS = ((41.45, -71.30), (41.85, -70.55))   # Little Compton to Wareham, when nothing is pinned
+MAP_INTRO = ("Every place with a listing coming up. Click a pin or a place for its dates. A dashed pin is a town "
+             "center standing in for venues we have not pinned yet.")
+
+def venue_index(venues: list[dict]) -> dict[str, dict]:
+    """venue_key of every name and alias in venues.yaml, to its entry."""
+    out: dict[str, dict] = {}
+    for v in venues:
+        for raw in [v["name"]] + list(v.get("aliases") or []):
+            k = venue_key(str(raw))
+            if k:
+                out[k] = v
+    return out
+
+def map_places(series: list[dict], venues: list[dict], now: datetime) -> tuple[list[dict], int]:
+    """Published series with a date still to come, grouped into places. A series at a venue the
+    file knows, with coordinates, gets that pin. One at a venue without coordinates, or at a venue
+    the file does not know, joins its town's approximate pin. One with neither venue nor town is
+    left off and counted. Returns (places in town order, left off)."""
+    index = venue_index(venues)
+    places: dict[str, dict] = {}
+    unplaced = 0
+    for s in series:
+        nxt = next_occurrence(s, now)
+        if not nxt:
+            continue
+        start, occ = nxt
+        raw = s.get("venue") or ""
+        v = index.get(venue_key(raw)) if raw else None
+        if v and v.get("lat") is not None and v.get("lon") is not None:
+            p = places.setdefault("v:" + v["id"], {
+                "id": v["id"], "name": v["name"], "town": v.get("town") or s.get("town") or "",
+                "lat": float(v["lat"]), "lon": float(v["lon"]), "address": v.get("address") or "",
+                "url": v.get("url") or "", "approx": False, "rows": []})
+        else:
+            town = (v.get("town") if v else "") or s.get("town") or ""
+            if town not in config.TOWN_CENTERS:
+                unplaced += 1
+                continue
+            lat, lon = config.TOWN_CENTERS[town]
+            p = places.setdefault("t:" + town, {
+                "id": "town-" + slug(town), "name": town, "town": town, "lat": lat, "lon": lon,
+                "address": "", "url": "", "approx": True, "rows": []})
+        p["rows"].append({"series": s, "start": start, "occ": occ})
+    order = {t: i for i, t in enumerate(config.TOWNS)}
+    for p in places.values():
+        p["rows"].sort(key=lambda r: (r["start"], r["series"]["title"]))
+        fams = Counter(family_of(r["series"].get("category") or "") for r in p["rows"])
+        p["family"] = fams.most_common(1)[0][0] if fams else ""
+    out = sorted(places.values(), key=lambda p: (order.get(p["town"], len(order)), p["approx"], p["name"].lower()))
+    return out, unplaced
+
+def place_event(row: dict, show_venue: bool) -> str:
+    s, start, o = row["series"], row["start"], row["occ"]
+    cat = s.get("category") or ""
+    day = f'{start.strftime("%a").upper()} {start.strftime("%b").upper()} {start.day}'
+    when = "All day" if o.get("all_day") else fmt_time(start)
+    cadence = s.get("cadence") or "once"
+    if cadence != "once":
+        when += f" · {cadence}"
+    venue = f'<span class="pe-venue">{esc(s["venue"])}</span>' if show_venue and s.get("venue") else ""
+    return (f'<a class="place-ev" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
+            f'data-category="{esc(cat)}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
+            f'<span class="cal-sw" aria-hidden="true"></span><span class="pe-when">{esc(day)} · {esc(when)}</span>'
+            f'<span class="pe-title">{esc(s["title"])}</span>{venue}</a>')
+
+def place_card(p: dict) -> str:
+    fams = sorted({family_of(r["series"].get("category") or "") for r in p["rows"]} - {""})
+    rows = "".join(place_event(r, show_venue=p["approx"]) for r in p["rows"])
+    more = len(p["rows"]) - MAP_SHOW
+    if p["approx"]:
+        name = f'{esc(p["name"])}<span class="place-approx">Town center, exact places to come</span>'
+    elif p["url"]:
+        name = f'<a href="{esc(p["url"])}" rel="noopener" target="_blank">{esc(p["name"])}</a>'
+    else:
+        name = esc(p["name"])
+    addr = f'<div class="place-addr">{esc(p["address"])}</div>' if p["address"] else ""
+    return (f'<article class="place" id="place-{esc(p["id"])}" data-place="{esc(p["id"])}" data-town="{esc(p["town"])}" '
+            f'data-cats="{esc(" ".join(fams))}" data-family="{esc(p["family"])}" data-lat="{p["lat"]:.5f}" data-lon="{p["lon"]:.5f}" '
+            f'data-approx="{1 if p["approx"] else 0}" style="--cat: {fam_var(p["family"])}">'
+            f'<div class="place-head"><span class="place-pin" aria-hidden="true"></span><h3 class="place-name">{name}</h3>'
+            f'<span class="wk-chip">{esc(p["town"])}</span></div>{addr}'
+            f'<div class="place-events">{rows}</div>'
+            f'<button class="place-more" type="button"{"" if more > 0 else " hidden"}>+{max(more, 0)} more</button></article>')
+
+def map_page(events: dict, venues: list[dict], now: datetime) -> str:
+    """The Map view of Events. Built from the DESIGN.md vocabulary without a canvas artboard
+    (like the calendar and the groups directory): the control row with Map pressed, the map in
+    a 1 px ink frame, the places as outlined cards beside it on the desktop and below it on the
+    phone. map.js draws the pins from the cards' data attributes; nothing is listed twice."""
     rel = "../"
-    title, copy = PLACEHOLDER_COPY[key]
-    active = key if key == "groups" else "events"
-    body = (head(active, rel) +
-            f'<main class="content placeholder" id="main"><div class="hero-text"><div class="hero-title"><h1>{esc(title)}</h1>{stickers()}</div>'
-            f'<div class="dateline">Coming soon · {esc(REGION)}</div></div>'
-            f'<p>{esc(title)} is coming. {esc(copy)} Until then, the Events page has everything we publish.</p>'
+    live = published(events["series"])
+    places, unplaced = map_places(live, venues, now)
+    towns: Counter = Counter()
+    for p in places:
+        towns.update(r["series"]["town"] for r in p["rows"])
+    n_series = sum(len(p["rows"]) for p in places)
+    n_pinned = sum(1 for p in places if not p["approx"])
+    n_towns = len([t for t in towns if t])
+    cards = "".join(place_card(p) for p in places)
+    note = MAP_INTRO
+    if unplaced:
+        note += f" {unplaced} listing{'' if unplaced == 1 else 's'} with no venue or town {'is' if unplaced == 1 else 'are'} not on the map."
+    body = (head("events", rel) +
+            '<main class="content map-page" id="main">'
+            f'<div class="hero-text"><div class="hero-title"><h1>Map</h1>{stickers()}</div>'
+            f'<div class="dateline">{n_pinned} place{"" if n_pinned == 1 else "s"} · {n_series} listing{"" if n_series == 1 else "s"} · '
+            f'{n_towns} town{"" if n_towns == 1 else "s"} · {esc(REGION)}</div></div>'
+            + filters(towns, rel, view="map") +
+            '<div class="map-layout">'
+            f'<div class="map-stage"><div class="map" id="map" role="region" aria-label="Map of places with listings" tabindex="0" '
+            f'data-tiles="{esc(MAP_TILES)}" data-subdomains="{MAP_SUBDOMAINS}" data-attribution="{esc(MAP_ATTRIBUTION)}" '
+            f'data-bounds="{MAP_BOUNDS[0][0]},{MAP_BOUNDS[0][1]},{MAP_BOUNDS[1][0]},{MAP_BOUNDS[1][1]}" data-show="{MAP_SHOW}"></div>'
+            '<noscript><p class="empty">The map needs JavaScript; the places are listed here.</p></noscript></div>'
+            f'<section class="places" aria-labelledby="places-h"><h2 id="places-h"><span>Places</span>'
+            f'<span class="range" id="places-count">{len(places)} place{"" if len(places) == 1 else "s"}</span></h2>'
+            f'<div class="place-list" id="place-list">{cards}</div>'
+            f'<p class="empty" id="map-empty"{" hidden" if places else ""}>Nothing on the map in this view.</p></section>'
+            '</div>'
+            f'<p class="map-note">{esc(note)}</p>'
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
-    return page(f"{SITE_NAME} · {title}", body, rel, f"{title} is coming to Slack Tide.", now)
+    return page(f"{SITE_NAME} · Map", body, rel,
+                f"Every venue with a listing coming up, from {REGION}, on one map. Every listing is read by a person.",
+                now, scripts=("vendor/leaflet/leaflet.js", "site.js", "map.js"), styles=("vendor/leaflet/leaflet.css",))
 
 # ---------------------------------------------------------------- community groups & meetups
 
@@ -872,8 +1007,13 @@ def write_assets(out: Path) -> dict:
     shutil.copyfile(used["tokens"], assets / "tokens.css")
     shutil.copyfile(ASSETS / "site.css", assets / "site.css")
     shutil.copyfile(ASSETS / "site.js", assets / "site.js")
+    shutil.copyfile(ASSETS / "map.js", assets / "map.js")
     shutil.copyfile(ASSETS / "admin.js", assets / "admin.js")
     (assets / "review.js").unlink(missing_ok=True)
+    vendor = assets / "vendor" / "leaflet"
+    vendor.mkdir(parents=True, exist_ok=True)
+    for f in (ASSETS / "vendor" / "leaflet").iterdir():
+        shutil.copyfile(f, vendor / f.name)
     used["icons"] = DESIGN / "reference" / "icons" if (DESIGN / "reference" / "icons").is_dir() else ASSETS / "icons"
     art_out = assets / "art"
     if art_out.is_dir():
@@ -901,10 +1041,8 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
     for key in RETIRED:
         if (out / key).is_dir():
             shutil.rmtree(out / key)
-    for key in PLACEHOLDER_COPY:
-        d = out / key
-        d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(placeholder_page(key, now), encoding="utf-8")
+    (out / "map").mkdir(parents=True, exist_ok=True)
+    (out / "map" / "index.html").write_text(map_page(events, config.load_venues(), now), encoding="utf-8")
     (out / "add").mkdir(parents=True, exist_ok=True)
     (out / "add" / "index.html").write_text(add_page(now, sources), encoding="utf-8")
     # The calendar: this month at calendar/, each further month the window touches at calendar/YYYY-MM/.

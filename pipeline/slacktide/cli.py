@@ -5,9 +5,9 @@ from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from .config import TZ, load_sources
+from .config import TZ, load_sources, load_venues
 from .connectors import for_source
-from .normalize import normalize
+from .normalize import normalize, venue_aliases
 from .series import collapse
 from .reconcile import reconcile
 from .export import write
@@ -48,8 +48,9 @@ def _ingest(sources, no_cache=False):
     towns = {s["id"]: s.get("town", "") for s in sources}
     venues = {s["id"]: s.get("venue", "") for s in sources}
     categories = {s["id"]: s.get("default_category", "") for s in sources}
-    normalize(primary, towns, venues, categories)
-    normalize(check, towns, venues, categories)
+    aliases = venue_aliases(load_venues())
+    normalize(primary, towns, venues, categories, aliases)
+    normalize(check, towns, venues, categories, aliases)
     return primary, check, errors, timings
 
 def weekend_gate(series, now: datetime | None = None) -> dict:

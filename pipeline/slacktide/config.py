@@ -24,6 +24,17 @@ ZIP_TO_TOWN = {
     "02558": "Wareham", "02878": "Tiverton", "02837": "Little Compton",
 }
 
+# Town centres for the map: where a listing sits when its venue has no coordinates in
+# venues.yaml. Village centres by hand (2026-11-08), not geocoded; a pin here is marked
+# approximate on the page.
+TOWN_CENTERS = {
+    "New Bedford": (41.6356, -70.9270), "Fall River": (41.7015, -71.1550), "Dartmouth": (41.6128, -70.9545),
+    "Fairhaven": (41.6376, -70.9036), "Acushnet": (41.6806, -70.9078), "Westport": (41.5867, -71.0817),
+    "Somerset": (41.7701, -71.1287), "Swansea": (41.7482, -71.1898), "Freetown": (41.7898, -71.0600),
+    "Mattapoisett": (41.6584, -70.8161), "Marion": (41.7001, -70.7628), "Rochester": (41.7318, -70.8206),
+    "Wareham": (41.7612, -70.7198), "Tiverton": (41.6259, -71.1866), "Little Compton": (41.5093, -71.1631),
+}
+
 # Aliases that appear in source data for the same town.
 TOWN_ALIASES = {
     "new bedford.": "New Bedford", "south dartmouth": "Dartmouth", "north dartmouth": "Dartmouth",
@@ -89,6 +100,21 @@ TIDE_MAX_AGE_HOURS = 24
 # Provenance line on every published card. Sources may override with a `provenance:` key in
 # sources.yaml; the default is the human review step every record passes through.
 PROVENANCE_DEFAULT = "Read by a person"
+
+ROOT = Path(__file__).resolve().parents[2]
+VENUES_PATH = ROOT / "venues.yaml"
+
+def load_venues(path: Path | None = None) -> list[dict]:
+    """venues.yaml at the repository root: one entry per real place with its canonical name,
+    town, address, coordinates and the raw spellings sources use for it. The normaliser reads
+    the aliases, the map reads the coordinates. A missing file is an empty list, so the pipeline
+    runs on a checkout without it."""
+    p = path or VENUES_PATH
+    if not p.exists():
+        return []
+    with open(p, encoding="utf-8") as f:
+        rows = yaml.safe_load(f) or []
+    return [v for v in rows if isinstance(v, dict) and v.get("id") and v.get("name")]
 
 def load_sources(path: Path | None = None) -> list[dict]:
     p = path or Path(__file__).with_name("sources.yaml")
