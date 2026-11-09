@@ -1,37 +1,10 @@
 {
- "generated_at": "2026-11-08T22:50:47.670028+00:00",
- "pending_count": 73,
- "soon_count": 47,
- "approved_count": 25,
+ "generated_at": "2026-11-09T11:11:10.641085+00:00",
+ "pending_count": 40,
+ "soon_count": 17,
+ "approved_count": 17,
  "rejected_count": 0,
  "series": [
-  {
-   "id": "1397a2bbf9e5",
-   "title": "Truue Duo",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-07T19:00:00-05:00",
-   "last_start": "2026-11-07T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-07T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-07T19:00:00-05:00",
-   "soon": true
-  },
   {
    "id": "59a471eb1d08",
    "title": "Trivia night",
@@ -207,60 +180,6 @@
    "soon": true
   },
   {
-   "id": "f54e688a31cc",
-   "title": "Hikes for Tykes",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/hikes-for-tykes/",
-   "cost": "$10",
-   "first_start": "2026-11-12T10:00:00-05:00",
-   "last_start": "2026-11-12T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T10:00:00-05:00",
-     "end": "2027-07-15T11:15:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T10:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "bd65c39d1d2d",
-   "title": "Create, Explore, and Collect! Happy Birthday National Park!",
-   "venue": "New Bedford Whaling National Historical Park",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T14:00:00-05:00",
-   "last_start": "2026-11-12T14:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T14:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Create, Explore, and Collect! Happy Birthday National Park! New Bedford Whaling National Historical Park, 33 William Street Start your adventure at the Visitor Center with a watercolor keepsake, then celebrate nearly 30 years of New Bedford Whaling National Historical Park by collecting anniversary ",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T14:00:00-05:00",
-   "soon": true
-  },
-  {
    "id": "708b098931fa",
    "title": "Baysgiving Shellfishing and Quahog Boil",
    "venue": "Onset Bay Center",
@@ -285,492 +204,6 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T15:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "1a0526653ddc",
-   "title": "Youth Services: Design Your Own Apron and Book Sale",
-   "venue": "New Bedford Free Public Library",
-   "town": "New Bedford",
-   "category": "Family & Children",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T15:00:00-05:00",
-   "last_start": "2026-11-12T15:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T15:00:00-05:00",
-     "end": "2026-11-12T17:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Youth Services: Design Your Own Apron and Book Sale New Bedford Main Library's Youth Services 613 Pleasant Street Visit the New Bedford Main Library's Youth Services on AHA Night to decorate your own apron! There is no registration for this free program and is available while supplies last. Families",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T15:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "81b225f5592f",
-   "title": "Nature Craft with Local Leaves and the Trustees!",
-   "venue": "New Bedford Whaling National Historical Park",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T16:00:00-05:00",
-   "last_start": "2026-11-12T16:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T16:00:00-05:00",
-     "end": "2026-11-12T19:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Nature Craft with Local Leaves and the Trustees! New Bedford Whaling National Historical Park, 33 William St. Join the Trustees' Mobile Adventures Team at the New Bedford Whaling National Park to make your own leaf art! Harvested from our New Bedford's own Haskell Public Gardens, each leaf has a sto",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T16:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "6d6250163652",
-   "title": "Make a Party Hat with the 1850s Ladies",
-   "venue": "New Bedford Whaling National Historical Park",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T16:00:00-05:00",
-   "last_start": "2026-11-12T16:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T16:00:00-05:00",
-     "end": "2026-11-12T17:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Make a Party Hat with the 1850s Ladies New Bedford Whaling National Historical Park, 33 William Street Planning on attending the 30th Anniversary Party? Step back in time and create your own Victorian-inspired bonnet with the 1850s Ladies at the Junior Ranger Station, then wear it during the celebra",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T16:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "a03568b215c2",
-   "title": "Share Your Story. Preserve Our History.",
-   "venue": "Bristol Community College, New Bedford",
-   "town": "New Bedford",
-   "category": "Family & Children",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T16:00:00-05:00",
-   "last_start": "2026-11-12T16:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T16:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Share Your Story. Preserve Our History. Bristol Community College - 800 Purchase St. Students, families, and community members are invited to share their personal stories, traditions, and connections to New Bedford through recorded oral histories. These stories will become part of a mini-documentary",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T16:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "84bc68f72451",
-   "title": "See What's Made in NB at the NBRR Lab!",
-   "venue": "1265 Purchase Street",
-   "town": "New Bedford",
-   "category": "Museums & Exhibitions",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T16:30:00-05:00",
-   "last_start": "2026-11-12T16:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T16:30:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "See What's Made in NB at the NBRR Lab! 1265 Purchase Street See What's Made in NB at the NBRR Lab! Doors are open from 4:3 0 to 6:30 PM , and you're invited to explore our space in action. Tour the lab, watch our industrial robots create, design, and innovate using cutting-edge technologies. Whether",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T16:30:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "d4237e80a7f7",
-   "title": "Open House on AHA!",
-   "venue": "3rd EyE Youth Empowerment",
-   "town": "New Bedford",
-   "category": "Family & Children",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T16:30:00-05:00",
-   "last_start": "2026-11-12T16:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T16:30:00-05:00",
-     "end": "2026-11-12T21:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. 4:30 - 6:30pm Hands-on activities and resources with Livity Tree Art, South East Recovery Learning Community",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T16:30:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "1fa6441547ee",
-   "title": "FREE New Bedford Art Museum Admission & Activities!",
-   "venue": "New Bedford Art Museum",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "FREE New Bedford Art Museum Admission & Activities! New Bedford Art Museum, 608 Pleasant St. Celebrate Made in NB with FREE admission to the New Bedford Art Museum! Explore our two brand-new exhibitions , Intuitive: A Survey of Visionary Art , celebrating the imagination and originality of self-taug",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "f6136a6fdf85",
-   "title": "Kim's Myth",
-   "venue": "Interwoven Artist Gallery",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Kim's Myth Interwoven Artist Gallery 634 Pleasant St. Kim's Myth is the musical project and creative moniker of singer-songwriter and multimedia artist Kim Smith , a musician, performer, and community arts advocate known for building creative communities and developing interactive arts experiences. ",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "3c13cb7e8178",
-   "title": "Discover Downtown: Community, Resources & Prizes",
-   "venue": "House of Gamboa and Luisa Edits",
-   "town": "New Bedford",
-   "category": "Family & Children",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Discover Downtown: Community, Resources & Prizes House of Gamboa and Luisa Edits 121 Union St. House of Gamboa , a boutique art gallery, retail shop, and event planning business, along with Luisa Edits , New Bedford's newest downtown boutique, will host a dynamic community engagement experience with",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "8577b808d9f7",
-   "title": "Whales! Whales! Whales!",
-   "venue": "Waterfront Card Shop",
-   "town": "New Bedford",
-   "category": "Family & Children",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "WHALES! WHALES! WHALES! Waterfront Card Shop 752 Purchase St. The Waterfront Card Shop specializing in a wide variety of trading card games, sports cards, and collectible accessories in New Bedford, will host SAVE THE WHALES, featuring an interactive art station where children and adults can make or",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "0c484fdd1153",
-   "title": "Salty Stitches",
-   "venue": "The Star Store",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Salty Stitches The Star Store 715 Purchase Street Salty Stitches is a textile-based protest art exhibition, embroidering Donald Trump's words onto vintage fabrics, creating a material record of his presidency and of the movement against it. This exhibition serves as a visual reminder of the barrage ",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "78da7049f194",
-   "title": "American Dream Exhibition",
-   "venue": "The Star Store",
-   "town": "New Bedford",
-   "category": "Museums & Exhibitions",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "American Dream Exhibition The Star Store 715 Purchase Street On view at the Star Store is the American Dream exhibit. This exhibition features works, including interactive installations, sculptures, paintings, drawings, video and photography capturing the tension between collective mythology and ind",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "d1b471b89212",
-   "title": "AHA! Moment- The Art and Language of Food at the Artisan Market",
-   "venue": "The Star Store",
-   "town": "New Bedford",
-   "category": "Markets & Fairs",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "AHA! Moment- The Art and Language of Food at the Artisan Market The Star Store 715 Purchase Street Rhonda M. Fazio believes food connects us to our cultural roots. Through The Art and Language of Food , she shares cooking and food preservation traditions inspired by the wisdom of grandmothers. Visit",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "0a7553e54914",
-   "title": "Nathan And Polly Johnson House 30th Anniversary Open House",
-   "venue": "21 Seventh Street",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T18:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Nathan And Polly Johnson House 30th Anniversary Open House 21 Seventh Street For November AHA The New Bedford Historical Society will be celebrating the 30 th anniversary of the Johnson House and of the New Bedford Whaling National Historical Park. Visitors to the park will be able to get a passport",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "3f287bb57237",
-   "title": "Make Your Own Leaf Lantern",
-   "venue": "Pilgrim United Church",
-   "town": "New Bedford",
-   "category": "Faith & Spiritual",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T19:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Make Your Own Leaf Lantern Pilgrim United Church Home, 634 Purchase Street Join Pilgrim United Church of Christ and Mercy Meals & More to make your own Leaf Lantern and enjoy guitar music and singing with Dan and friends! While you're here, learn more about Booker T. Washington, who gave a speech in",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "1ee3d2bc2945",
-   "title": "Radiance - Tammi J. Meehan",
-   "venue": "Gallery X",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Radiance - Tammi J. Meehan Gallery X 169 William Street On view in the Frederick Douglass Gallery X @ Gallery X - Radiance , a solo exhibition by Tammi J. Meehan dedicated to the memory of Lorin Roche, Author of \"The Radiance Sutras,\" a translation of the Vijnana Bhairava Tantra. The exhibition will",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "83c46c6f4115",
-   "title": "Gallery X Artist & Vendor Market",
-   "venue": "Gallery X",
-   "town": "New Bedford",
-   "category": "Markets & Fairs",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Gallery X Artist & Vendor Market Gallery X 169 William Street Gallery X is hosting an artist and vendor market during November's AHA! night on November 12. Participating vendors and artists include; • Leah Bennett (Fairie Vomit) • Marguerite Cass • Ron Costa • Jason Eckhardt • Sherri George (Chickad",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "9424eded0c87",
-   "title": "Local Artisan Showcase",
-   "venue": "New Bedford Fishing Heritage Center",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2026-11-12T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Local Artisan Showcase New Bedford Fishing Heritage Center, 38 Bethel Street Shop local this holiday season at FHC! We're hosting a local artisan showcase. Stop by the Center from 5-8pm to shop a great selection of fishing- and maritime-themed clothing, jewelry, artwork, and other handmade items, ma",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:00:00-05:00",
    "soon": true
   },
   {
@@ -811,141 +244,6 @@
    "soon": true
   },
   {
-   "id": "9322db7e5868",
-   "title": "Serlingpa Meditation Center",
-   "venue": "Serlingpa Meditation Center",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:30:00-05:00",
-   "last_start": "2026-11-12T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:30:00-05:00",
-     "end": "2026-11-12T19:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Serlingpa Meditation Center Serlingpa Meditation Center 512 Pleasant St. AHA Thursday November 12th, Free, Theme: Made in NB Open House: 5:30-7pm, Brief Talk and Guided Meditation on Gratitude & Connecction at 6:00 pm Peaceful, happy people…one of THE best things Made In New Bedford. Come visit Serl",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:30:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "a93562ee69ca",
-   "title": "30th Anniversary Cake Cutting!",
-   "venue": "New Bedford Whaling National Historical Park",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:30:00-05:00",
-   "last_start": "2026-11-12T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:30:00-05:00",
-     "end": "2026-11-12T18:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "30th Anniversary Cake Cutting! New Bedford Whaling National Historical Park, 33 William Street Join us for a slice of cake as we celebrate the 30th anniversary of the park. Stay for traditional Iñupiat dancing, a special presentation, and an interactive discussion exploring the rich history of Arcti",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:30:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "3ca9287d0776",
-   "title": "AHA! Night Jazz Jam Featuring Manny Escobar and Mwalim DaPhunkee Professor",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T17:30:00-05:00",
-   "last_start": "2026-11-12T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:30:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "AHA! Night Jazz Jam Featuring Manny Escobar and Mwalim DaPhunkee Professor Zeiterion 684 Purchase St Calling all musicians, lovers of music and artistic expression! Join both sax player/ music educator Emmanuel \"Manny\" Escobar, and musician/ educator Mwalim DaPhunkee Professor for free, fun jam sess",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T17:30:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "0758bfc2dc1e",
-   "title": "Traditional Iñupiat Dancing, Presentation, and Q&A",
-   "venue": "New Bedford Whaling National Historical Park",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T19:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Traditional Iñupiat Dancing, Presentation, and Q&A New Bedford Whaling National Historical Park, 33 William Street Join us as our Iñupiat Heritage Center partners demonstrate traditional Iñupiat dances, describe how the Iñupiat hunted whales historically and today, and answer questions about life in",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T18:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "d9993e826e2c",
-   "title": "Jazz with the Buttonwood Brass Band",
-   "venue": "New Bedford Harbor Hotel",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": "2026-11-12T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Jazz with the Buttonwood Brass Band New Bedford Harbor Hotel, 222 Union St. Enjoy some speakeasy jazz from the Buttonwood Brass Band , on every AHA! Night at the New Bedford Harbor Hotel. Ends: 8:00pm",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T18:00:00-05:00",
-   "soon": true
-  },
-  {
    "id": "bd542a86c2ff",
    "title": "Day Drinkers",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -975,141 +273,6 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T18:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "489c9533c6a1",
-   "title": "The Art of Ecstatic Meditation",
-   "venue": "Sangha Yoga New Bedford",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T19:00:00-05:00",
-   "last_start": "2026-11-12T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T19:00:00-05:00",
-     "end": "2026-11-12T21:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "THE ART OF ECSTATIC MEDITATION Sangha Yoga New Bedford 693 Purchase Street at the corner of Spring Street dNB Learn the 4 Stages of OSHO Active Ecstatic Meditation - SHAKE and DANCE in order to become aware of a silent point within you. \"You will feel festive, present, blissful . . . and at your cen",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T19:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "9b2c28d4029e",
-   "title": "AHHHhhh!-AHA AFTER DARK",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2026-11-12T20:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-12T22:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "AHHHhhh!-AHA AFTER DARK Speakeasy @ The Z! - 984 Purchase St What happens when the freedom of jazz meets the pulse of House music? You get AHHHhhh!; a Deep Afro Jazz House jam where the grooves are deep, the improvisation is live, and anything can happen. This is where the jazz tradition of spontane",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T20:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "8a044b453d85",
-   "title": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan",
-   "venue": "Bento's Bar and Grille",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2026-11-12T20:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-12T22:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan Bento's Bar and Grille, 555 Pleasant St. Step into the spotlight and sing your heart out at Karaoke Night with DJ Chan! From today's biggest hits to favorite throwback tunes, there's a song for everyone. Whether you're taking the stage or cheer",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T20:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "c05ad05cf130",
-   "title": "Neal McCarthy Trio",
-   "venue": "The Pour Farm Tavern",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2026-11-12T20:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-12T23:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Neal McCarthy Trio The Pour Farm Tavern, 780 Purchase St. Grab a bite or a pint and listen to Electric Blues & Rock with the Neal McCarthy Trio as they play from 8-11:30pm. Ends: 11:30 pm",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T20:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "19708b8ba512",
-   "title": "Karaoke at PLAY",
-   "venue": "PLAY Arcade",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2026-11-12T20:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "Karaoke at PLAY PLAY Arcade, 34 Union St. Belt out some tunes at PLAY Arcade! There's karaoke, food, fun, and games! Ends: Midnight",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T20:00:00-05:00",
    "soon": true
   },
   {
@@ -1362,6 +525,33 @@
    "soon": true
   },
   {
+   "id": "e690327617e1",
+   "title": "Sunrise Stroll",
+   "venue": "",
+   "town": "",
+   "category": "Outdoors & Nature",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/35k47tdkh990g2amdbmgpuase6wrwo",
+   "cost": "",
+   "first_start": "2026-11-15T07:00:00-05:00",
+   "last_start": "2026-11-15T07:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T07:00:00-05:00",
+     "end": "2026-11-15T08:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Inspired by early birds like our ambassador and host this week Meg Feeney , this walk lets you get your steps in early, grab a smoothie from Farm2Cup , and still have a full, action-packed day ahead.",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-15T07:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "e2ba4aa4ad25",
    "title": "Live Music Beatles Brunch",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1371,8 +561,8 @@
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
    "first_start": "2026-11-08T10:00:00-05:00",
-   "last_start": "2027-01-31T10:00:00-05:00",
-   "count": 13,
+   "last_start": "2027-02-07T10:00:00-05:00",
+   "count": 14,
    "cadence": "weekly",
    "weekday": 6,
    "occurrences": [
@@ -1440,6 +630,11 @@
      "start": "2027-01-31T10:00:00-05:00",
      "end": "2027-01-31T14:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2027-02-07T10:00:00-05:00",
+     "end": "2027-02-07T14:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "",
@@ -1449,13 +644,13 @@
    "soon": true
   },
   {
-   "id": "b7301c4db9eb",
-   "title": "Daydreaming of Summer",
+   "id": "ddbedc78be36",
+   "title": "Walk for Warmth Kickoff",
    "venue": "",
    "town": "",
    "category": "Outdoors & Nature",
    "source_id": "south-coast-girls-walk",
-   "url": "https://www.southcoastgirlswalk.com/our-schedule/daydreaming-of-summer",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/rizu9dx7uameqd65gubj5hnztps4cx",
    "cost": "",
    "first_start": "2026-11-15T10:00:00-05:00",
    "last_start": "2026-11-15T10:00:00-05:00",
@@ -1469,7 +664,7 @@
      "all_day": false
     }
    ],
-   "summary": "While we are loving all of the new and exciting places we've been this year, we are missing one of our all-time favorites, so we're bringing it back. Bundle up and join us this week for a morning stroll along the beautiful horseneck beach. This time, with all of our furry friends",
+   "summary": "Join us this week for a beautiful stroll along the Mattapoisett rail trail where we will kick off our walk for warmth, our second winter giving initiative where we will begin collecting winter hats, gloves, and scarves for children in our community in partnership with the New Bedford Y!",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-15T10:00:00-05:00",
@@ -1702,30 +897,57 @@
    "soon": false
   },
   {
-   "id": "aa916f2461c6",
-   "title": "Women's Walk",
-   "venue": "Russells Mills Woods",
-   "town": "Dartmouth",
+   "id": "b7301c4db9eb",
+   "title": "DayDreaming of Summer",
+   "venue": "",
+   "town": "",
    "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/womens-walk/",
-   "cost": "Free",
-   "first_start": "2026-11-23T09:00:00-05:00",
-   "last_start": "2026-11-23T09:00:00-05:00",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/daydreaming-of-summer-1",
+   "cost": "",
+   "first_start": "2026-11-22T10:00:00-05:00",
+   "last_start": "2026-11-22T10:00:00-05:00",
    "count": 1,
    "cadence": "once",
    "weekday": null,
    "occurrences": [
     {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T10:00:00-05:00",
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T11:00:00-05:00",
      "all_day": false
     }
    ],
-   "summary": "Join us for a fun pop-up walk at Russells Mills Woods. This walk is led by volunteer Kathryn Gollub. Women's walks are typically held rain or shine, but please check our website and social media before the walk for any weather related cancellations. We don't have an official address, but our closest",
+   "summary": "This week we've got another double walk day, this time back to the shore to two of our favorite places! Start the morning with us at one of our all-time favorite spots, horseneck beach!",
    "approval": "pending",
    "decided_by": "",
-   "next_start": "2026-11-23T09:00:00-05:00",
+   "next_start": "2026-11-22T10:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "a9aff64785ba",
+   "title": "Sachuest Point",
+   "venue": "",
+   "town": "",
+   "category": "Sports & Recreation",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/q575dtg0zlp4ivt449vb5slyrt4kqp",
+   "cost": "",
+   "first_start": "2026-11-22T14:00:00-05:00",
+   "last_start": "2026-11-22T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-22T14:00:00-05:00",
+     "end": "2026-11-22T15:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us for an afternoon stroll along the water at Sachuest Point nature preserve this week!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-22T14:00:00-05:00",
    "soon": false
   },
   {
@@ -1780,33 +1002,6 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-27T19:00:00-05:00",
-   "soon": false
-  },
-  {
-   "id": "452cf38f822a",
-   "title": "Wellness Series",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Education & Workshops",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/wellness/",
-   "cost": "$10 – $20",
-   "first_start": "2026-11-28T09:00:00-05:00",
-   "last_start": "2026-11-28T09:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-28T09:00:00-05:00",
-     "end": "2026-11-28T10:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join us for six weeks of wellness, spread over the course of the year! Together, we'll explore themes like mindful awareness, natural movement, the health benefits of eating locally, and embracing joy through fun, community-centered activities. Whether you're looking to reboot your health routine, r",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-28T09:00:00-05:00",
    "soon": false
   },
   {
@@ -2090,33 +1285,6 @@
    "soon": false
   },
   {
-   "id": "73059079afa2",
-   "title": "Helfand Farm Trail Work Party",
-   "venue": "DNRT Center @ Helfand Farm",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/helfand-farm-trail-work-party/",
-   "cost": "Free",
-   "first_start": "2026-12-17T09:00:00-05:00",
-   "last_start": "2026-12-17T09:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-17T09:00:00-05:00",
-     "end": "2026-12-17T12:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Details to come. Lunch following trail work. Tools and snacks provided. No registration required; just show up!",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-12-17T09:00:00-05:00",
-   "soon": false
-  },
-  {
    "id": "6cce2c1d71ae",
    "title": "Live Music: Frank Foot",
    "venue": "Sakonnet Vineyard",
@@ -2144,33 +1312,6 @@
    "soon": false
   },
   {
-   "id": "c3aa825f1b94",
-   "title": "Solstice Stroll",
-   "venue": "Destruction Brook Woods",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/solstice-stroll/",
-   "cost": "Free",
-   "first_start": "2026-12-21T10:00:00-05:00",
-   "last_start": "2026-12-21T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-21T10:00:00-05:00",
-     "end": "2026-12-21T11:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Registration opens November 21.",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-12-21T10:00:00-05:00",
-   "soon": false
-  },
-  {
    "id": "921b296fd4c6",
    "title": "Stargazing Social at The Sawmill",
    "venue": "The Sawmill",
@@ -2195,33 +1336,6 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-26T18:00:00-05:00",
-   "soon": false
-  },
-  {
-   "id": "4edf208dd814",
-   "title": "New Year's Day Hike",
-   "venue": "Dike Creek Reserve",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/new-years-day-hike/",
-   "cost": "Free",
-   "first_start": "2027-01-01T10:00:00-05:00",
-   "last_start": "2027-01-01T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2027-01-01T10:00:00-05:00",
-     "end": "2027-01-01T11:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Happy New Year! Start 2027 on the right foot, with a hike through the beautiful Dike Creek Reserve. Led by Kathryn & Brian Gollub. Registration opens December 1.",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2027-01-01T10:00:00-05:00",
    "soon": false
   },
   {

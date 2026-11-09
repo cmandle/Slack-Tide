@@ -1,114 +1,102 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 178,
-   "seconds": 4.58
+   "rows": 175,
+   "seconds": 4.63
   },
   "viva-fall-river": {
-   "rows": 312,
-   "seconds": 18.84
-  },
-  "dnrt": {
-   "rows": 14,
-   "seconds": 3.74
+   "rows": 310,
+   "seconds": 19.44
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.53
+   "seconds": 0.51
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 4.78
-  },
-  "aha-next-aha": {
-   "rows": 29,
-   "seconds": 2.26
+   "seconds": 5.39
   },
   "cisco-live-music": {
-   "rows": 9,
-   "seconds": 0.13
+   "rows": 8,
+   "seconds": 0.33
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.34
+   "seconds": 0.53
   },
   "south-coast-girls-walk": {
-   "rows": 1,
-   "seconds": 0.2
+   "rows": 4,
+   "seconds": 0.85
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.14
+   "seconds": 0.33
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 0.14
+   "seconds": 0.87
   },
   "standing-new-bedford": {
-   "rows": 61,
+   "rows": 62,
    "seconds": 0.0
   }
  },
- "errors": {},
- "primary_rows": 158,
+ "errors": {
+  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)",
+  "aha-next-aha": "ValueError: no listings found at https://ahanewbedford.org/next-aha/; the selectors are probably stale"
+ },
+ "primary_rows": 118,
  "dropped": {},
- "series": 98,
+ "series": 57,
  "approval": {
-  "pending": 73,
-  "approved": 25
+  "pending": 40,
+  "approved": 17
  },
  "by_town": {
-  "New Bedford": 67,
-  "Dartmouth": 14,
+  "New Bedford": 37,
   "Wareham": 2,
   "Little Compton": 10,
-  "": 3,
+  "": 6,
   "Mattapoisett": 1,
   "Acushnet": 1
  },
  "by_category": {
-  "Music": 23,
-  "Outdoors & Nature": 18,
-  "(unclassified)": 1,
-  "Sports & Recreation": 2,
-  "Arts & Theatre": 32,
-  "Family & Children": 5,
-  "Museums & Exhibitions": 2,
-  "Markets & Fairs": 4,
-  "Faith & Spiritual": 1,
-  "Education & Workshops": 5,
+  "Music": 17,
+  "Sports & Recreation": 3,
+  "Outdoors & Nature": 9,
+  "Arts & Theatre": 18,
+  "Markets & Fairs": 2,
+  "Education & Workshops": 4,
   "Civic & Town Meetings": 1,
-  "Library & Talks": 1,
   "Food & Drink": 3
  },
  "by_cadence": {
-  "once": 88,
   "weekly": 5,
+  "once": 47,
   "monthly": 3,
   "irregular": 1,
   "weekends": 1
  },
  "weekend_gate": {
   "saturday": "2026-11-14",
-  "series": 3,
+  "series": 2,
   "towns": {
-   "Dartmouth": 1,
    "New Bedford": 2
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 490,
-  "check_matched": 28,
-  "check_missed_rows": 462,
-  "check_missed_series": 105,
+  "check_total": 485,
+  "check_matched": 27,
+  "check_missed_rows": 458,
+  "check_missed_series": 107,
   "check_missed": [
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-08T10:00:00-05:00",
-    "rows": 26
+    "first_start": "2026-11-14T10:00:00-05:00",
+    "rows": 25
    },
    {
     "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
@@ -129,20 +117,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-11-13T17:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-11-08T21:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "KidZone",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-08T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -167,13 +141,6 @@
     "rows": 13
    },
    {
-    "title": "Matt Silva Sunday Funday",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-08T16:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Musical Bingo",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -195,13 +162,6 @@
     "rows": 13
    },
    {
-    "title": "Poppin' Prosecco with Primo! Brunch",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-08T10:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Preschool Storytime",
     "venue": "Fall River Public Library",
     "town": "Fall River",
@@ -220,13 +180,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-11-13T18:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Tai Chi at Buttonwood Park",
-    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
-    "town": "New Bedford",
-    "first_start": "2026-11-08T09:30:00-05:00",
     "rows": 13
    },
    {
@@ -256,6 +209,41 @@
     "town": "Fall River",
     "first_start": "2026-11-12T18:00:00-05:00",
     "rows": 13
+   },
+   {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-11-15T21:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "KidZone",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-15T14:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Matt Silva Sunday Funday",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-15T16:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Poppin' Prosecco with Primo! Brunch",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-15T10:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Tai Chi at Buttonwood Park",
+    "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
+    "town": "New Bedford",
+    "first_start": "2026-11-15T09:30:00-05:00",
+    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -643,6 +631,13 @@
     "rows": 1
    },
    {
+    "title": "Local Artisan Showcase at FHC",
+    "venue": "New Bedford Fishing Heritage Center",
+    "town": "New Bedford",
+    "first_start": "2026-11-12T17:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Luke Winslow-King",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -825,6 +820,13 @@
     "rows": 1
    },
    {
+    "title": "Wildflowers: Kurt Elling with Fred Hersch",
+    "venue": "Narrows Center for the Arts",
+    "town": "Fall River",
+    "first_start": "2027-02-06T20:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Wreath Making Workshop",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -843,9 +845,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 126,
-  "primary_only_series": 66,
-  "coverage_ratio": 0.057
+  "primary_only_count": 97,
+  "primary_only_series": 36,
+  "coverage_ratio": 0.056
  },
  "tide_error": null
 }
