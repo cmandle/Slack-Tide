@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 179,
-   "seconds": 4.43
+   "rows": 180,
+   "seconds": 4.93
   },
   "viva-fall-river": {
    "rows": 256,
-   "seconds": 18.13
+   "seconds": 18.72
   },
   "dnrt": {
-   "rows": 14,
-   "seconds": 3.82
+   "rows": 15,
+   "seconds": 3.72
   },
   "zeiterion": {
-   "rows": 22,
-   "seconds": 0.67
+   "rows": 26,
+   "seconds": 0.46
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 5.29
+   "seconds": 10.87
   },
   "aha-next-aha": {
-   "rows": 29,
-   "seconds": 2.64
+   "rows": 30,
+   "seconds": 0.53
   },
   "cisco-live-music": {
    "rows": 8,
-   "seconds": 0.18
+   "seconds": 0.28
   },
   "south-coast-places-for-people": {
-   "rows": 1,
-   "seconds": 0.43
+   "rows": 2,
+   "seconds": 0.24
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 1.24
+   "seconds": 1.29
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 1.13
+   "seconds": 1.07
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 0.35
+   "seconds": 0.52
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -50,16 +50,16 @@
   }
  },
  "errors": {},
- "primary_rows": 160,
+ "primary_rows": 167,
  "dropped": {},
- "series": 99,
+ "series": 106,
  "approval": {
-  "approved": 25,
-  "pending": 74
+  "approved": 29,
+  "pending": 77
  },
  "by_town": {
-  "Dartmouth": 14,
-  "New Bedford": 66,
+  "Dartmouth": 15,
+  "New Bedford": 72,
   "Wareham": 2,
   "Little Compton": 9,
   "": 6,
@@ -70,8 +70,8 @@
   "Outdoors & Nature": 20,
   "(unclassified)": 1,
   "Sports & Recreation": 3,
-  "Arts & Theatre": 32,
-  "Family & Children": 5,
+  "Arts & Theatre": 36,
+  "Family & Children": 7,
   "Museums & Exhibitions": 2,
   "Markets & Fairs": 4,
   "Faith & Spiritual": 1,
@@ -79,10 +79,10 @@
   "Education & Workshops": 5,
   "Civic & Town Meetings": 1,
   "Library & Talks": 1,
-  "Food & Drink": 3
+  "Food & Drink": 4
  },
  "by_cadence": {
-  "once": 88,
+  "once": 95,
   "weekly": 5,
   "monthly": 4,
   "irregular": 1,
@@ -98,9 +98,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 435,
+  "check_total": 436,
   "check_matched": 28,
-  "check_missed_rows": 407,
+  "check_missed_rows": 408,
   "check_missed_series": 95,
   "check_missed": [
    {
@@ -150,6 +150,13 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-11T07:00:00-05:00",
+    "rows": 13
+   },
+   {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-16T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -235,13 +242,6 @@
     "town": "Fall River",
     "first_start": "2026-11-12T18:00:00-05:00",
     "rows": 13
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-16T14:00:00-05:00",
-    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -774,8 +774,8 @@
    "New Bedford",
    "Swansea"
   ],
-  "primary_only_count": 125,
-  "primary_only_series": 65,
+  "primary_only_count": 131,
+  "primary_only_series": 71,
   "coverage_ratio": 0.064
  },
  "tide_error": null

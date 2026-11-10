@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-10T11:02:58.540467+00:00",
- "series_count": 99,
- "occurrence_count": 160,
+ "generated_at": "2026-11-10T22:55:50.177904+00:00",
+ "series_count": 106,
+ "occurrence_count": 167,
  "series": [
   {
    "id": "e9a8f861a681",
@@ -884,6 +884,31 @@
    "decided_by": "source trust"
   },
   {
+   "id": "01d3efa9f310",
+   "title": "The Cummings Building Artist Studios - Open House",
+   "venue": "96 William St.",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "The Cummings Building Artist Studios - Open House 96 William St. Join artist, poet, author, actor, and singer-songwriter Deana Tavares in her studio #12 for a visit (until 8 pm), connect with the community, write a letter, or buy a small gift or poetry book. Energizing letter writing and words of ki",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "0758bfc2dc1e",
    "title": "Traditional Iñupiat Dancing, Presentation, and Q&A",
    "venue": "New Bedford Whaling National Historical Park",
@@ -1359,31 +1384,6 @@
    "decided_by": ""
   },
   {
-   "id": "82f70d3ffaef",
-   "title": "Intro to Shellfishing at North Cove",
-   "venue": "",
-   "town": "",
-   "category": "Outdoors & Nature",
-   "source_id": "buzzards-bay-coalition",
-   "url": "https://savebuzzardsbay.org/events/bay-adventures/intro-to-shellfishing-at-north-cove",
-   "cost": "",
-   "first_start": "2026-11-14T14:30:00-05:00",
-   "last_start": "2026-11-14T14:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-14T14:30:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "89c9a9cb676f",
    "title": "Chris Ballerini",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1679,6 +1679,31 @@
    "decided_by": ""
   },
   {
+   "id": "4b590850b626",
+   "title": "SCPFP November Meetup",
+   "venue": "Cork Wine and Tapas, 90 Front St, New Bedford, MA 02740, USA",
+   "town": "New Bedford",
+   "category": "Food & Drink",
+   "source_id": "south-coast-places-for-people",
+   "url": "",
+   "cost": "",
+   "first_start": "2026-11-18T18:00:00-05:00",
+   "last_start": "2026-11-18T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-18T18:00:00-05:00",
+     "end": "2026-11-18T19:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Get up-to-date information at: https://luma.com/8n8a60ur Address: Cork Wine and Tapas New Bedford, MA United States Hosted by Will Gardner",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "138a383d63b1",
    "title": "Turtle Walk",
    "venue": "Dike Creek Reserve",
@@ -1909,6 +1934,31 @@
    "decided_by": ""
   },
   {
+   "id": "59c576de1986",
+   "title": "National Lampoon's Christmas Vacation (1989)",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/national-lampoon",
+   "cost": "",
+   "first_start": "2026-11-22T14:00:00-05:00",
+   "last_start": "2026-11-22T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-22T14:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "approved",
+   "decided_by": "source trust"
+  },
+  {
    "id": "a9aff64785ba",
    "title": "Sachuest Point",
    "venue": "",
@@ -2059,6 +2109,31 @@
    "decided_by": "bootstrap"
   },
   {
+   "id": "1bf2b59ba8ce",
+   "title": "Compass Kids at Four Ponds",
+   "venue": "Four Ponds Conservation Area - Bourne Town Forest",
+   "town": "",
+   "category": "Family & Children",
+   "source_id": "buzzards-bay-coalition",
+   "url": "https://savebuzzardsbay.org/events/bay-adventures/compass-kids-at-four-ponds",
+   "cost": "",
+   "first_start": "2026-11-28T10:00:00-05:00",
+   "last_start": "2026-11-28T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "Turn your family trail walk into an outdoor navigation quest with Compass Kids!",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "0f566c0e4bb0",
    "title": "Live Music: Dave Alves",
    "venue": "Sakonnet Vineyard",
@@ -2140,6 +2215,31 @@
     }
    ],
    "summary": "A whole sustainably caught tuna carved in front of the room, served as sashimi and poke. Reservations on the venue's page.",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "12ec6103cd39",
+   "title": "Holiday Gnome Roam - Self-Guided Hike",
+   "venue": "Paskamansett Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/holiday-gnome-roam-self-guided-hike/",
+   "cost": "Free",
+   "first_start": "2026-12-01T08:00:00-05:00",
+   "last_start": "2026-12-01T08:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-01T08:00:00-05:00",
+     "end": "2026-12-31T17:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Our Gnomes are roamin' again! Look for Wallace and Pebbles, our resident gnomes, and their tiny friends along the trail. Take a hike and see the gnomes anytime from dawn to dusk throughout December.",
    "approval": "pending",
    "decided_by": ""
   },
@@ -2274,6 +2374,31 @@
    "decided_by": ""
   },
   {
+   "id": "ee040d6e7e41",
+   "title": "Home Alone (1990)",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/home-alone",
+   "cost": "",
+   "first_start": "2026-12-06T14:00:00-05:00",
+   "last_start": "2026-12-06T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-06T14:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "approved",
+   "decided_by": "source trust"
+  },
+  {
    "id": "a34b6600f405",
    "title": "Session 3: Water-Based Paints",
    "venue": "Catherine Carter Art School",
@@ -2374,6 +2499,31 @@
    "decided_by": "source trust"
   },
   {
+   "id": "8f4f66429cfe",
+   "title": "The Preacher's Wife (1996)",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/the-preachers-wife",
+   "cost": "",
+   "first_start": "2026-12-10T19:00:00-05:00",
+   "last_start": "2026-12-10T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "approved",
+   "decided_by": "source trust"
+  },
+  {
    "id": "b527625997d0",
    "title": "A Doo Wop Christmas",
    "venue": "The Zeiterion",
@@ -2440,6 +2590,31 @@
    "occurrences": [
     {
      "start": "2026-12-12T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "approved",
+   "decided_by": "source trust"
+  },
+  {
+   "id": "0371024d810a",
+   "title": "The Muppet Christmas Carol (1992)",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/the-muppet-christmas-carol",
+   "cost": "",
+   "first_start": "2026-12-13T14:00:00-05:00",
+   "last_start": "2026-12-13T14:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-13T14:00:00-05:00",
      "end": null,
      "all_day": false
     }

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-10T11:02:58.540467+00:00",
- "pending_count": 74,
+ "generated_at": "2026-11-10T22:55:50.177904+00:00",
+ "pending_count": 77,
  "soon_count": 48,
- "approved_count": 25,
+ "approved_count": 29,
  "rejected_count": 0,
  "series": [
   {
@@ -865,6 +865,33 @@
    "soon": true
   },
   {
+   "id": "01d3efa9f310",
+   "title": "The Cummings Building Artist Studios - Open House",
+   "venue": "96 William St.",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T18:00:00-05:00",
+   "last_start": "2026-11-12T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T18:00:00-05:00",
+     "end": "2026-11-12T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "The Cummings Building Artist Studios - Open House 96 William St. Join artist, poet, author, actor, and singer-songwriter Deana Tavares in her studio #12 for a visit (until 8 pm), connect with the community, write a letter, or buy a small gift or poetry book. Energizing letter writing and words of ki",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-12T18:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "0758bfc2dc1e",
    "title": "Traditional Iñupiat Dancing, Presentation, and Q&A",
    "venue": "New Bedford Whaling National Historical Park",
@@ -1281,33 +1308,6 @@
    "soon": true
   },
   {
-   "id": "82f70d3ffaef",
-   "title": "Intro to Shellfishing at North Cove",
-   "venue": "",
-   "town": "",
-   "category": "Outdoors & Nature",
-   "source_id": "buzzards-bay-coalition",
-   "url": "https://savebuzzardsbay.org/events/bay-adventures/intro-to-shellfishing-at-north-cove",
-   "cost": "",
-   "first_start": "2026-11-14T14:30:00-05:00",
-   "last_start": "2026-11-14T14:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-14T14:30:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-14T14:30:00-05:00",
-   "soon": true
-  },
-  {
    "id": "89c9a9cb676f",
    "title": "Chris Ballerini",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1565,6 +1565,33 @@
    "decided_by": "",
    "next_start": "2026-11-17T00:00:00-05:00",
    "soon": true
+  },
+  {
+   "id": "4b590850b626",
+   "title": "SCPFP November Meetup",
+   "venue": "Cork Wine and Tapas, 90 Front St, New Bedford, MA 02740, USA",
+   "town": "New Bedford",
+   "category": "Food & Drink",
+   "source_id": "south-coast-places-for-people",
+   "url": "",
+   "cost": "",
+   "first_start": "2026-11-18T18:00:00-05:00",
+   "last_start": "2026-11-18T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-18T18:00:00-05:00",
+     "end": "2026-11-18T19:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Get up-to-date information at: https://luma.com/8n8a60ur Address: Cork Wine and Tapas New Bedford, MA United States Hosted by Will Gardner",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-18T18:00:00-05:00",
+   "soon": false
   },
   {
    "id": "650e2b12417f",
@@ -1869,6 +1896,33 @@
    "soon": false
   },
   {
+   "id": "1bf2b59ba8ce",
+   "title": "Compass Kids at Four Ponds",
+   "venue": "Four Ponds Conservation Area - Bourne Town Forest",
+   "town": "",
+   "category": "Family & Children",
+   "source_id": "buzzards-bay-coalition",
+   "url": "https://savebuzzardsbay.org/events/bay-adventures/compass-kids-at-four-ponds",
+   "cost": "",
+   "first_start": "2026-11-28T10:00:00-05:00",
+   "last_start": "2026-11-28T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "Turn your family trail walk into an outdoor navigation quest with Compass Kids!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-28T10:00:00-05:00",
+   "soon": false
+  },
+  {
    "id": "0f566c0e4bb0",
    "title": "Live Music: Dave Alves",
    "venue": "Sakonnet Vineyard",
@@ -1957,6 +2011,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-01T00:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "12ec6103cd39",
+   "title": "Holiday Gnome Roam - Self-Guided Hike",
+   "venue": "Paskamansett Woods",
+   "town": "Dartmouth",
+   "category": "Outdoors & Nature",
+   "source_id": "dnrt",
+   "url": "https://dnrt.org/event/holiday-gnome-roam-self-guided-hike/",
+   "cost": "Free",
+   "first_start": "2026-12-01T08:00:00-05:00",
+   "last_start": "2026-12-01T08:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-01T08:00:00-05:00",
+     "end": "2026-12-31T17:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Our Gnomes are roamin' again! Look for Wallace and Pebbles, our resident gnomes, and their tiny friends along the trail. Take a hike and see the gnomes anytime from dawn to dusk throughout December.",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-01T08:00:00-05:00",
    "soon": false
   },
   {
