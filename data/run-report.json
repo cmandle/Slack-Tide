@@ -2,64 +2,64 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 179,
-   "seconds": 4.63
+   "seconds": 4.43
   },
   "viva-fall-river": {
-   "rows": 257,
-   "seconds": 17.81
+   "rows": 256,
+   "seconds": 18.13
   },
   "dnrt": {
    "rows": 14,
-   "seconds": 4.25
+   "seconds": 3.82
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.54
+   "seconds": 0.67
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 7.31
+   "seconds": 5.29
   },
   "aha-next-aha": {
    "rows": 29,
-   "seconds": 4.3
+   "seconds": 2.64
   },
   "cisco-live-music": {
    "rows": 8,
-   "seconds": 0.29
+   "seconds": 0.18
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.29
+   "seconds": 0.43
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 1.02
+   "seconds": 1.24
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.94
+   "seconds": 1.13
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 0.41
+   "seconds": 0.35
   },
   "standing-new-bedford": {
-   "rows": 62,
+   "rows": 61,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 161,
+ "primary_rows": 160,
  "dropped": {},
  "series": 99,
  "approval": {
-  "pending": 74,
-  "approved": 25
+  "approved": 25,
+  "pending": 74
  },
  "by_town": {
-  "New Bedford": 66,
   "Dartmouth": 14,
+  "New Bedford": 66,
   "Wareham": 2,
   "Little Compton": 9,
   "": 6,
@@ -67,7 +67,6 @@
   "Acushnet": 1
  },
  "by_category": {
-  "Music": 21,
   "Outdoors & Nature": 20,
   "(unclassified)": 1,
   "Sports & Recreation": 3,
@@ -76,14 +75,15 @@
   "Museums & Exhibitions": 2,
   "Markets & Fairs": 4,
   "Faith & Spiritual": 1,
+  "Music": 21,
   "Education & Workshops": 5,
   "Civic & Town Meetings": 1,
   "Library & Talks": 1,
   "Food & Drink": 3
  },
  "by_cadence": {
-  "weekly": 5,
   "once": 88,
+  "weekly": 5,
   "monthly": 4,
   "irregular": 1,
   "weekends": 1
@@ -98,9 +98,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 436,
+  "check_total": 435,
   "check_matched": 28,
-  "check_missed_rows": 408,
+  "check_missed_rows": 407,
   "check_missed_series": 95,
   "check_missed": [
    {
@@ -132,6 +132,13 @@
     "rows": 13
    },
    {
+    "title": "Karaoke Nights!",
+    "venue": "The Gallery Bar",
+    "town": "New Bedford",
+    "first_start": "2026-11-15T21:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
@@ -143,13 +150,6 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-11T07:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-09T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -237,10 +237,10 @@
     "rows": 13
    },
    {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
-    "first_start": "2026-11-15T21:00:00-05:00",
+    "first_start": "2026-11-16T14:00:00-05:00",
     "rows": 12
    },
    {
@@ -258,18 +258,18 @@
     "rows": 8
    },
    {
-    "title": "Nick Sanfilippo",
-    "venue": "The Tipsy Toboggan",
-    "town": "Fall River",
-    "first_start": "2026-11-09T18:30:00-05:00",
-    "rows": 8
-   },
-   {
     "title": "Planetarium Show: Death of the Dinosaurs",
     "venue": "BMC Durfee High School",
     "town": "Fall River",
     "first_start": "2026-11-20T16:00:00-05:00",
     "rows": 8
+   },
+   {
+    "title": "Nick Sanfilippo",
+    "venue": "The Tipsy Toboggan",
+    "town": "Fall River",
+    "first_start": "2026-11-16T18:30:00-05:00",
+    "rows": 7
    },
    {
     "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
@@ -774,7 +774,7 @@
    "New Bedford",
    "Swansea"
   ],
-  "primary_only_count": 126,
+  "primary_only_count": 125,
   "primary_only_series": 65,
   "coverage_ratio": 0.064
  },

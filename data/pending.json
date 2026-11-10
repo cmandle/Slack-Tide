@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-09T22:57:59.814022+00:00",
+ "generated_at": "2026-11-10T11:02:58.540467+00:00",
  "pending_count": 74,
- "soon_count": 47,
+ "soon_count": 48,
  "approved_count": 25,
  "rejected_count": 0,
  "series": [
@@ -1362,6 +1362,60 @@
    "soon": true
   },
   {
+   "id": "ddbedc78be36",
+   "title": "Walk for Warmth Kickoff",
+   "venue": "",
+   "town": "",
+   "category": "Outdoors & Nature",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/rizu9dx7uameqd65gubj5hnztps4cx",
+   "cost": "",
+   "first_start": "2026-11-15T10:00:00-05:00",
+   "last_start": "2026-11-15T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Join us this week for a beautiful stroll along the Mattapoisett rail trail where we will kick off our walk for warmth, our second winter giving initiative where we will begin collecting winter hats, gloves, and scarves for children in our community in partnership with the New Bedford Y!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-15T10:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "82a616dd4aad",
+   "title": "The Holiday Poppy Workshop",
+   "venue": "Hatch Street Studios",
+   "town": "New Bedford",
+   "category": "Education & Workshops",
+   "source_id": "hatch-street-studios",
+   "url": "https://www.hatchstreetstudios.com/events/the-holiday-poppy-workshop",
+   "cost": "",
+   "first_start": "2026-11-15T10:00:00-05:00",
+   "last_start": "2026-11-15T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Red Poppies, with touches of green and black make a dramatic addition to your mantel or table. Bad weather date - Nov. 22 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so sign up early! For more information email: alyncarlson@gmail.com",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-15T10:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "e2ba4aa4ad25",
    "title": "Live Music Beatles Brunch",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1370,17 +1424,12 @@
    "source_id": "standing-new-bedford",
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
-   "first_start": "2026-11-08T10:00:00-05:00",
+   "first_start": "2026-11-15T10:00:00-05:00",
    "last_start": "2027-02-07T10:00:00-05:00",
-   "count": 14,
+   "count": 13,
    "cadence": "weekly",
    "weekday": 6,
    "occurrences": [
-    {
-     "start": "2026-11-08T10:00:00-05:00",
-     "end": "2026-11-08T14:00:00-05:00",
-     "all_day": false
-    },
     {
      "start": "2026-11-15T10:00:00-05:00",
      "end": "2026-11-15T14:00:00-05:00",
@@ -1454,60 +1503,6 @@
    "soon": true
   },
   {
-   "id": "ddbedc78be36",
-   "title": "Walk for Warmth Kickoff",
-   "venue": "",
-   "town": "",
-   "category": "Outdoors & Nature",
-   "source_id": "south-coast-girls-walk",
-   "url": "https://www.southcoastgirlswalk.com/our-schedule/rizu9dx7uameqd65gubj5hnztps4cx",
-   "cost": "",
-   "first_start": "2026-11-15T10:00:00-05:00",
-   "last_start": "2026-11-15T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T11:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join us this week for a beautiful stroll along the Mattapoisett rail trail where we will kick off our walk for warmth, our second winter giving initiative where we will begin collecting winter hats, gloves, and scarves for children in our community in partnership with the New Bedford Y!",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-15T10:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "82a616dd4aad",
-   "title": "The Holiday Poppy Workshop",
-   "venue": "Hatch Street Studios",
-   "town": "New Bedford",
-   "category": "Education & Workshops",
-   "source_id": "hatch-street-studios",
-   "url": "https://www.hatchstreetstudios.com/events/the-holiday-poppy-workshop",
-   "cost": "",
-   "first_start": "2026-11-15T10:00:00-05:00",
-   "last_start": "2026-11-15T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Red Poppies, with touches of green and black make a dramatic addition to your mantel or table. Bad weather date - Nov. 22 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so sign up early! For more information email: alyncarlson@gmail.com",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-15T10:00:00-05:00",
-   "soon": true
-  },
-  {
    "id": "702e5491459b",
    "title": "World Day of Remembrance for Road Traffic Victims",
    "venue": "Noah's Place Playground",
@@ -1569,7 +1564,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-17T00:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "650e2b12417f",

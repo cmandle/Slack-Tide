@@ -1,98 +1,8 @@
 {
- "generated_at": "2026-11-09T22:57:59.814022+00:00",
+ "generated_at": "2026-11-10T11:02:58.540467+00:00",
  "series_count": 99,
- "occurrence_count": 161,
+ "occurrence_count": 160,
  "series": [
-  {
-   "id": "e2ba4aa4ad25",
-   "title": "Live Music Beatles Brunch",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.ciscokitchenbar.com/happenings/",
-   "cost": "",
-   "first_start": "2026-11-08T10:00:00-05:00",
-   "last_start": "2027-02-07T10:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-11-08T10:00:00-05:00",
-     "end": "2026-11-08T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": "2026-11-29T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T10:00:00-05:00",
-     "end": "2026-12-06T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T10:00:00-05:00",
-     "end": "2026-12-13T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-20T10:00:00-05:00",
-     "end": "2026-12-20T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-27T10:00:00-05:00",
-     "end": "2026-12-27T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-03T10:00:00-05:00",
-     "end": "2027-01-03T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-10T10:00:00-05:00",
-     "end": "2027-01-10T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-17T10:00:00-05:00",
-     "end": "2027-01-17T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-24T10:00:00-05:00",
-     "end": "2027-01-24T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-31T10:00:00-05:00",
-     "end": "2027-01-31T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-07T10:00:00-05:00",
-     "end": "2027-02-07T14:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
   {
    "id": "e9a8f861a681",
    "title": "Wernick Farm Trail Work Party",
@@ -1570,6 +1480,91 @@
     }
    ],
    "summary": "Red Poppies, with touches of green and black make a dramatic addition to your mantel or table. Bad weather date - Nov. 22 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so sign up early! For more information email: alyncarlson@gmail.com",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "e2ba4aa4ad25",
+   "title": "Live Music Beatles Brunch",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
+   "cost": "",
+   "first_start": "2026-11-15T10:00:00-05:00",
+   "last_start": "2027-02-07T10:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-11-15T10:00:00-05:00",
+     "end": "2026-11-15T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T10:00:00-05:00",
+     "end": "2026-12-20T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-27T10:00:00-05:00",
+     "end": "2026-12-27T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-03T10:00:00-05:00",
+     "end": "2027-01-03T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-10T10:00:00-05:00",
+     "end": "2027-01-10T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-17T10:00:00-05:00",
+     "end": "2027-01-17T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-24T10:00:00-05:00",
+     "end": "2027-01-24T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-31T10:00:00-05:00",
+     "end": "2027-01-31T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-07T10:00:00-05:00",
+     "end": "2027-02-07T14:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
    "approval": "pending",
    "decided_by": ""
   },
