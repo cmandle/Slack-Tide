@@ -1,58 +1,8 @@
 {
- "generated_at": "2026-11-10T22:55:50.177904+00:00",
- "series_count": 106,
- "occurrence_count": 167,
+ "generated_at": "2026-11-11T17:55:15.246902+00:00",
+ "series_count": 104,
+ "occurrence_count": 165,
  "series": [
-  {
-   "id": "e9a8f861a681",
-   "title": "Wernick Farm Trail Work Party",
-   "venue": "Wernick Farm",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/wernick-farm-trail-work-party/",
-   "cost": "Free",
-   "first_start": "2026-11-10T09:00:00-05:00",
-   "last_start": "2026-11-10T09:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T09:00:00-05:00",
-     "end": "2026-11-10T12:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "As always we are excited to be back at Wernick Farm for our work party! We will continue our work in the fields to mow and remove invasive plants. We will also have some other projects around the reserve. No registration required; just show up! Tools and snacks provided.",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
-  {
-   "id": "e80a59b774f0",
-   "title": "Bobcat Ecology in Southern New England",
-   "venue": "DNRT Center @ Helfand Farm",
-   "town": "Dartmouth",
-   "category": "",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/bobcat-ecology-in-southern-new-england/",
-   "cost": "$10",
-   "first_start": "2026-11-10T18:00:00-05:00",
-   "last_start": "2026-11-10T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-10T18:00:00-05:00",
-     "end": "2026-11-10T19:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Bobcats are important predators in eastern forests, and their numbers appear to be increasing locally according to recent camera trap data. The Rhode Island Bobcat Project uses GPS collars, camera traps, and citizen science to better understand how bobcats use highly fragmented, densely populated la",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "59a471eb1d08",
    "title": "Trivia night",
