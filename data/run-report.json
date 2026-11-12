@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 178,
-   "seconds": 5.1
+   "rows": 179,
+   "seconds": 4.89
   },
   "viva-fall-river": {
-   "rows": 249,
-   "seconds": 13.21
+   "rows": 251,
+   "seconds": 16.64
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 4.23
+   "seconds": 0.31
   },
   "zeiterion": {
    "rows": 26,
-   "seconds": 0.46
+   "seconds": 0.33
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 11.98
+   "seconds": 8.36
   },
   "aha-next-aha": {
    "rows": 30,
-   "seconds": 0.37
+   "seconds": 0.43
   },
   "cisco-live-music": {
    "rows": 8,
-   "seconds": 0.27
+   "seconds": 0.14
   },
   "south-coast-places-for-people": {
    "rows": 2,
-   "seconds": 0.29
+   "seconds": 0.53
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 1.07
+   "seconds": 1.02
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 1.44
+   "seconds": 0.42
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 1.01
+   "seconds": 0.22
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -97,9 +97,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 427,
+  "check_total": 430,
   "check_matched": 28,
-  "check_missed_rows": 399,
+  "check_missed_rows": 402,
   "check_missed_series": 94,
   "check_missed": [
    {
@@ -180,6 +180,13 @@
     "rows": 13
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-17T20:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -208,6 +215,13 @@
     "rows": 13
    },
    {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-11-17T19:30:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Thursday Night Trivia",
     "venue": "Saint James Irish Pub",
     "town": "Fall River",
@@ -227,20 +241,6 @@
     "town": "Fall River",
     "first_start": "2026-11-12T18:00:00-05:00",
     "rows": 13
-   },
-   {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-17T20:00:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-11-17T19:30:00-05:00",
-    "rows": 12
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
@@ -285,6 +285,13 @@
     "rows": 5
    },
    {
+    "title": "Monthly Artists Share!",
+    "venue": "Gallery X",
+    "town": "New Bedford",
+    "first_start": "2026-12-08T18:30:00-05:00",
+    "rows": 4
+   },
+   {
     "title": "Aging Well: Senior LGBTQ+ Breakfast Club",
     "venue": "Munchies",
     "town": "Fall River",
@@ -296,13 +303,6 @@
     "venue": "The Gallery Bar",
     "town": "New Bedford",
     "first_start": "2026-11-20T22:00:00-05:00",
-    "rows": 3
-   },
-   {
-    "title": "Monthly Artists Share!",
-    "venue": "Gallery X",
-    "town": "New Bedford",
-    "first_start": "2026-12-08T18:30:00-05:00",
     "rows": 3
    },
    {
@@ -768,7 +768,7 @@
   ],
   "primary_only_count": 131,
   "primary_only_series": 71,
-  "coverage_ratio": 0.066
+  "coverage_ratio": 0.065
  },
  "tide_error": null
 }
