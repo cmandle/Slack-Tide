@@ -1,32 +1,32 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 179,
-   "seconds": 4.89
+   "rows": 180,
+   "seconds": 5.44
   },
   "viva-fall-river": {
-   "rows": 251,
-   "seconds": 16.64
+   "rows": 247,
+   "seconds": 13.46
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 0.31
+   "seconds": 3.9
   },
   "zeiterion": {
    "rows": 26,
-   "seconds": 0.33
+   "seconds": 0.76
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 8.36
+   "seconds": 13.4
   },
   "aha-next-aha": {
    "rows": 30,
-   "seconds": 0.43
+   "seconds": 0.49
   },
   "cisco-live-music": {
    "rows": 8,
-   "seconds": 0.14
+   "seconds": 0.33
   },
   "south-coast-places-for-people": {
    "rows": 2,
@@ -34,23 +34,23 @@
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 1.02
+   "seconds": 1.22
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.42
+   "seconds": 0.92
   },
   "sakonnet-vineyard": {
    "rows": 10,
-   "seconds": 0.22
+   "seconds": 0.2
   },
   "standing-new-bedford": {
-   "rows": 61,
+   "rows": 63,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 165,
+ "primary_rows": 167,
  "dropped": {},
  "series": 104,
  "approval": {
@@ -97,10 +97,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 430,
-  "check_matched": 28,
-  "check_missed_rows": 402,
-  "check_missed_series": 94,
+  "check_total": 427,
+  "check_matched": 29,
+  "check_missed_rows": 398,
+  "check_missed_series": 95,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -108,13 +108,6 @@
     "town": "Fall River",
     "first_start": "2026-11-14T10:00:00-05:00",
     "rows": 26
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-11-11T18:30:00-05:00",
-    "rows": 13
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -148,7 +141,7 @@
     "title": "Kids eat FREE on Wednesdays",
     "venue": "Primo on Water Street",
     "town": "Fall River",
-    "first_start": "2026-11-11T07:00:00-05:00",
+    "first_start": "2026-11-18T07:00:00-05:00",
     "rows": 13
    },
    {
@@ -170,13 +163,6 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-12T18:30:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-11-11T19:00:00-05:00",
     "rows": 13
    },
    {
@@ -223,16 +209,9 @@
    },
    {
     "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
+    "venue": "St James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-11-12T20:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-11T18:00:00-05:00",
     "rows": 13
    },
    {
@@ -241,6 +220,27 @@
     "town": "Fall River",
     "first_start": "2026-11-12T18:00:00-05:00",
     "rows": 13
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-11-18T18:30:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-11-18T19:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Wing Wednesday!!",
+    "venue": "St James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-18T18:00:00-05:00",
+    "rows": 12
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
@@ -274,8 +274,8 @@
     "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
     "venue": "Bristol Community College, New Bedford",
     "town": "Fall River",
-    "first_start": "2026-11-11T17:30:00-05:00",
-    "rows": 6
+    "first_start": "2026-11-14T08:00:00-05:00",
+    "rows": 5
    },
    {
     "title": "Planetarium Show: Moons Worlds of Mystery",
@@ -338,13 +338,6 @@
     "venue": "Gathering Grounds Cafe, Fall River Carousel",
     "town": "Fall River",
     "first_start": "2026-11-17T18:30:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Blind Draw Double Elimination Cornhole (weekly)",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-11T18:00:00-05:00",
     "rows": 2
    },
    {
@@ -436,6 +429,13 @@
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-25T18:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Blind Draw Double Elimination Cornhole (weekly)",
+    "venue": "Canned Heat Craft Beer Co.",
+    "town": "Fall River",
+    "first_start": "2026-11-18T18:00:00-05:00",
     "rows": 1
    },
    {
@@ -759,6 +759,13 @@
     "town": "Fall River",
     "first_start": "2027-01-16T12:30:00-05:00",
     "rows": 1
+   },
+   {
+    "title": "Yuletide Faire & Holiday Market",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-12-05T10:00:00-05:00",
+    "rows": 1
    }
   ],
   "check_towns": [
@@ -766,9 +773,9 @@
    "New Bedford",
    "Swansea"
   ],
-  "primary_only_count": 131,
+  "primary_only_count": 133,
   "primary_only_series": 71,
-  "coverage_ratio": 0.065
+  "coverage_ratio": 0.068
  },
  "tide_error": null
 }
