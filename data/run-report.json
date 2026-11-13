@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 181,
-   "seconds": 4.16
+   "rows": 177,
+   "seconds": 4.97
   },
   "viva-fall-river": {
-   "rows": 249,
-   "seconds": 13.92
+   "rows": 246,
+   "seconds": 14.3
   },
   "dnrt": {
-   "rows": 13,
-   "seconds": 4.31
+   "rows": 12,
+   "seconds": 5.47
   },
   "zeiterion": {
-   "rows": 26,
-   "seconds": 0.5
+   "rows": 24,
+   "seconds": 0.45
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 6.99
+   "seconds": 5.41
   },
   "aha-next-aha": {
-   "rows": 30,
-   "seconds": 0.25
+   "rows": 31,
+   "seconds": 0.51
   },
   "cisco-live-music": {
    "rows": 8,
-   "seconds": 0.12
+   "seconds": 0.18
   },
   "south-coast-places-for-people": {
    "rows": 2,
-   "seconds": 0.39
+   "seconds": 0.41
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 0.85
+   "seconds": 1.12
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.22
+   "seconds": 0.52
   },
   "sakonnet-vineyard": {
    "rows": 11,
-   "seconds": 0.92
+   "seconds": 1.04
   },
   "standing-new-bedford": {
    "rows": 63,
@@ -50,40 +50,40 @@
   }
  },
  "errors": {},
- "primary_rows": 168,
+ "primary_rows": 166,
  "dropped": {},
- "series": 105,
+ "series": 103,
  "approval": {
   "pending": 78,
-  "approved": 27
+  "approved": 25
  },
  "by_town": {
-  "New Bedford": 72,
-  "Dartmouth": 13,
+  "New Bedford": 71,
   "Wareham": 2,
+  "Dartmouth": 12,
   "Little Compton": 10,
   "": 6,
   "Mattapoisett": 1,
   "Acushnet": 1
  },
  "by_category": {
-  "Sports & Recreation": 3,
-  "Outdoors & Nature": 19,
-  "Arts & Theatre": 36,
-  "Family & Children": 7,
+  "Arts & Theatre": 35,
+  "Outdoors & Nature": 18,
+  "Family & Children": 8,
   "Museums & Exhibitions": 2,
   "Markets & Fairs": 4,
   "Faith & Spiritual": 1,
-  "Music": 22,
+  "Music": 21,
   "Education & Workshops": 5,
   "Civic & Town Meetings": 1,
   "Library & Talks": 1,
-  "Food & Drink": 4
+  "Food & Drink": 4,
+  "Sports & Recreation": 3
  },
  "by_cadence": {
-  "weekly": 5,
-  "once": 94,
+  "once": 92,
   "monthly": 4,
+  "weekly": 5,
   "irregular": 1,
   "weekends": 1
  },
@@ -97,10 +97,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 430,
-  "check_matched": 29,
-  "check_missed_rows": 401,
-  "check_missed_series": 95,
+  "check_total": 423,
+  "check_matched": 26,
+  "check_missed_rows": 397,
+  "check_missed_series": 94,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -166,13 +166,6 @@
     "rows": 13
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-12T18:30:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Musical Bingo (weekly)",
     "venue": "The Liberal Club",
     "town": "Fall River",
@@ -222,25 +215,32 @@
     "rows": 13
    },
    {
-    "title": "Thursday Night Trivia",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-12T20:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
+    "venue": "Saint James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-11-18T18:00:00-05:00",
     "rows": 13
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-19T18:30:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-19T20:00:00-05:00",
+    "rows": 12
+   },
+   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
-    "first_start": "2026-11-12T18:00:00-05:00",
-    "rows": 13
+    "first_start": "2026-11-19T18:00:00-05:00",
+    "rows": 12
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
@@ -537,13 +537,6 @@
     "rows": 1
    },
    {
-    "title": "Jesse Cook - Fall River",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-11-12T00:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Jimmy Cash",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -773,9 +766,9 @@
    "New Bedford",
    "Swansea"
   ],
-  "primary_only_count": 133,
-  "primary_only_series": 71,
-  "coverage_ratio": 0.067
+  "primary_only_count": 132,
+  "primary_only_series": 70,
+  "coverage_ratio": 0.061
  },
  "tide_error": null
 }

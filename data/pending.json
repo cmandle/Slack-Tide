@@ -1,37 +1,10 @@
 {
- "generated_at": "2026-11-13T02:39:37.640609+00:00",
+ "generated_at": "2026-11-13T17:46:18.083457+00:00",
  "pending_count": 78,
  "soon_count": 48,
- "approved_count": 27,
+ "approved_count": 25,
  "rejected_count": 0,
  "series": [
-  {
-   "id": "f54e688a31cc",
-   "title": "Hikes for Tykes",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/hikes-for-tykes/",
-   "cost": "$10",
-   "first_start": "2026-11-12T10:00:00-05:00",
-   "last_start": "2026-11-12T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T10:00:00-05:00",
-     "end": "2027-07-15T11:15:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T10:00:00-05:00",
-   "soon": true
-  },
   {
    "id": "bd65c39d1d2d",
    "title": "Create, Explore, and Collect! Happy Birthday National Park!",
@@ -246,6 +219,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-12T16:30:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "461b72a2bfae",
+   "title": "Holiday Fun at New Bedford Community Health!",
+   "venue": "New Bedford Community Health Courtyard: 384 Acushnet Ave",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Holiday Fun at New Bedford Community Health! New Bedford Community Health Courtyard: 384 Acushnet Ave Get into the holiday spirit with New Bedford Community Health during December AHA! Night! Join us for a festive evening featuring photos with Santa, make-your-own Christmas ornaments, a hot chocolat",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-12T17:00:00-05:00",
    "soon": true
   },
   {
@@ -1272,17 +1272,12 @@
    "source_id": "standing-new-bedford",
    "url": "https://www.playarcadenb.com/",
    "cost": "",
-   "first_start": "2026-11-11T19:00:00-05:00",
+   "first_start": "2026-11-18T19:00:00-05:00",
    "last_start": "2027-02-10T19:00:00-05:00",
-   "count": 14,
+   "count": 13,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
-    {
-     "start": "2026-11-11T19:00:00-05:00",
-     "end": "2026-11-11T21:00:00-05:00",
-     "all_day": false
-    },
     {
      "start": "2026-11-18T19:00:00-05:00",
      "end": "2026-11-18T21:00:00-05:00",
@@ -1364,17 +1359,12 @@
    "source_id": "standing-new-bedford",
    "url": "https://newbeigema.squarespace.com/",
    "cost": "",
-   "first_start": "2026-11-11T19:00:00-05:00",
+   "first_start": "2026-11-18T19:00:00-05:00",
    "last_start": "2027-02-10T19:00:00-05:00",
-   "count": 14,
+   "count": 13,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
-    {
-     "start": "2026-11-11T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
     {
      "start": "2026-11-18T19:00:00-05:00",
      "end": null,
@@ -1489,8 +1479,8 @@
    "url": "https://www.playarcadenb.com/",
    "cost": "",
    "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2027-02-04T20:00:00-05:00",
-   "count": 13,
+   "last_start": "2027-02-11T20:00:00-05:00",
+   "count": 14,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -1557,6 +1547,11 @@
     {
      "start": "2027-02-04T20:00:00-05:00",
      "end": "2027-02-05T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T20:00:00-05:00",
+     "end": "2027-02-12T00:00:00-05:00",
      "all_day": false
     }
    ],
@@ -2185,8 +2180,8 @@
    "url": "https://ahanewbedford.org/",
    "cost": "",
    "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2027-01-14T17:00:00-05:00",
-   "count": 3,
+   "last_start": "2027-02-11T17:00:00-05:00",
+   "count": 4,
    "cadence": "monthly",
    "weekday": 3,
    "occurrences": [
@@ -2203,6 +2198,11 @@
     {
      "start": "2027-01-14T17:00:00-05:00",
      "end": "2027-01-14T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T17:00:00-05:00",
+     "end": "2027-02-11T21:00:00-05:00",
      "all_day": false
     }
    ],

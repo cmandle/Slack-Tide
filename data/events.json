@@ -1,213 +1,8 @@
 {
- "generated_at": "2026-11-13T02:39:37.640609+00:00",
- "series_count": 105,
- "occurrence_count": 168,
+ "generated_at": "2026-11-13T17:46:18.083457+00:00",
+ "series_count": 103,
+ "occurrence_count": 166,
  "series": [
-  {
-   "id": "59a471eb1d08",
-   "title": "Trivia night",
-   "venue": "PLAY Arcade",
-   "town": "New Bedford",
-   "category": "Sports & Recreation",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.playarcadenb.com/",
-   "cost": "",
-   "first_start": "2026-11-11T19:00:00-05:00",
-   "last_start": "2027-02-10T19:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-11T19:00:00-05:00",
-     "end": "2026-11-11T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T19:00:00-05:00",
-     "end": "2026-11-18T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T19:00:00-05:00",
-     "end": "2026-11-25T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T19:00:00-05:00",
-     "end": "2026-12-02T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T19:00:00-05:00",
-     "end": "2026-12-09T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T19:00:00-05:00",
-     "end": "2026-12-16T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T19:00:00-05:00",
-     "end": "2026-12-23T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T19:00:00-05:00",
-     "end": "2026-12-30T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-06T19:00:00-05:00",
-     "end": "2027-01-06T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-13T19:00:00-05:00",
-     "end": "2027-01-13T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-20T19:00:00-05:00",
-     "end": "2027-01-20T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-27T19:00:00-05:00",
-     "end": "2027-01-27T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-03T19:00:00-05:00",
-     "end": "2027-02-03T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-10T19:00:00-05:00",
-     "end": "2027-02-10T21:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "4c93cfea1082",
-   "title": "Trivia night",
-   "venue": "New Beige",
-   "town": "New Bedford",
-   "category": "Sports & Recreation",
-   "source_id": "standing-new-bedford",
-   "url": "https://newbeigema.squarespace.com/",
-   "cost": "",
-   "first_start": "2026-11-11T19:00:00-05:00",
-   "last_start": "2027-02-10T19:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-11T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-11-18T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-11-25T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-06T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-13T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-20T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-27T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-02-03T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-02-10T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "f54e688a31cc",
-   "title": "Hikes for Tykes",
-   "venue": "",
-   "town": "Dartmouth",
-   "category": "Outdoors & Nature",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/hikes-for-tykes/",
-   "cost": "$10",
-   "first_start": "2026-11-12T10:00:00-05:00",
-   "last_start": "2026-11-12T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T10:00:00-05:00",
-     "end": "2027-07-15T11:15:00-04:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
-   "approval": "pending",
-   "decided_by": ""
-  },
   {
    "id": "bd65c39d1d2d",
    "title": "Create, Explore, and Collect! Happy Birthday National Park!",
@@ -405,6 +200,31 @@
     }
    ],
    "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. 4:30 - 6:30pm Hands-on activities and resources with Livity Tree Art, South East Recovery Learning Community",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "461b72a2bfae",
+   "title": "Holiday Fun at New Bedford Community Health!",
+   "venue": "New Bedford Community Health Courtyard: 384 Acushnet Ave",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-11-12T17:00:00-05:00",
+   "last_start": "2026-11-12T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-12T17:00:00-05:00",
+     "end": "2026-11-12T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Holiday Fun at New Bedford Community Health! New Bedford Community Health Courtyard: 384 Acushnet Ave Get into the holiday spirit with New Bedford Community Health during December AHA! Night! Join us for a festive evening featuring photos with Santa, make-your-own Christmas ornaments, a hot chocolat",
    "approval": "pending",
    "decided_by": ""
   },
@@ -718,8 +538,8 @@
    "url": "https://ahanewbedford.org/",
    "cost": "",
    "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2027-01-14T17:00:00-05:00",
-   "count": 3,
+   "last_start": "2027-02-11T17:00:00-05:00",
+   "count": 4,
    "cadence": "monthly",
    "weekday": 3,
    "occurrences": [
@@ -736,6 +556,11 @@
     {
      "start": "2027-01-14T17:00:00-05:00",
      "end": "2027-01-14T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T17:00:00-05:00",
+     "end": "2027-02-11T21:00:00-05:00",
      "all_day": false
     }
    ],
@@ -817,31 +642,6 @@
    "summary": "AHA! Night Jazz Jam Featuring Manny Escobar and Mwalim DaPhunkee Professor Zeiterion 684 Purchase St Calling all musicians, lovers of music and artistic expression! Join both sax player/ music educator Emmanuel \"Manny\" Escobar, and musician/ educator Mwalim DaPhunkee Professor for free, fun jam sess",
    "approval": "pending",
    "decided_by": ""
-  },
-  {
-   "id": "bad28f902f46",
-   "title": "Jazz Jam",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/nov-jazz-jam",
-   "cost": "",
-   "first_start": "2026-11-12T18:00:00-05:00",
-   "last_start": "2026-11-12T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T18:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "source trust"
   },
   {
    "id": "01d3efa9f310",
@@ -974,31 +774,6 @@
    "decided_by": ""
   },
   {
-   "id": "c63c8dfd6392",
-   "title": "After Dark",
-   "venue": "The Zeiterion",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "zeiterion",
-   "url": "https://zeiterion.org/events/nov-aha-after-dark",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2026-11-12T20:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "source trust"
-  },
-  {
    "id": "9b2c28d4029e",
    "title": "AHHHhhh!-AHA AFTER DARK",
    "venue": "The Zeiterion",
@@ -1108,8 +883,8 @@
    "url": "https://www.playarcadenb.com/",
    "cost": "",
    "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2027-02-04T20:00:00-05:00",
-   "count": 13,
+   "last_start": "2027-02-11T20:00:00-05:00",
+   "count": 14,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -1176,6 +951,11 @@
     {
      "start": "2027-02-04T20:00:00-05:00",
      "end": "2027-02-05T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T20:00:00-05:00",
+     "end": "2027-02-12T00:00:00-05:00",
      "all_day": false
     }
    ],
@@ -1660,6 +1440,176 @@
     }
    ],
    "summary": "Get up-to-date information at: https://luma.com/8n8a60ur Address: Cork Wine and Tapas New Bedford, MA United States Hosted by Will Gardner",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "59a471eb1d08",
+   "title": "Trivia night",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Sports & Recreation",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
+   "cost": "",
+   "first_start": "2026-11-18T19:00:00-05:00",
+   "last_start": "2027-02-10T19:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-18T19:00:00-05:00",
+     "end": "2026-11-18T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T19:00:00-05:00",
+     "end": "2026-11-25T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": "2026-12-02T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": "2026-12-09T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": "2026-12-16T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T19:00:00-05:00",
+     "end": "2026-12-23T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T19:00:00-05:00",
+     "end": "2026-12-30T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-06T19:00:00-05:00",
+     "end": "2027-01-06T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-13T19:00:00-05:00",
+     "end": "2027-01-13T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-20T19:00:00-05:00",
+     "end": "2027-01-20T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-27T19:00:00-05:00",
+     "end": "2027-01-27T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-03T19:00:00-05:00",
+     "end": "2027-02-03T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-10T19:00:00-05:00",
+     "end": "2027-02-10T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "4c93cfea1082",
+   "title": "Trivia night",
+   "venue": "New Beige",
+   "town": "New Bedford",
+   "category": "Sports & Recreation",
+   "source_id": "standing-new-bedford",
+   "url": "https://newbeigema.squarespace.com/",
+   "cost": "",
+   "first_start": "2026-11-18T19:00:00-05:00",
+   "last_start": "2027-02-10T19:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-11-18T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-25T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-06T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-13T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-20T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-27T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-03T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-10T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
    "approval": "pending",
    "decided_by": ""
   },
