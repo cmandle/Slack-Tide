@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-12T18:21:46.816037+00:00",
- "series_count": 104,
- "occurrence_count": 167,
+ "generated_at": "2026-11-13T02:39:37.640609+00:00",
+ "series_count": 105,
+ "occurrence_count": 168,
  "series": [
   {
    "id": "59a471eb1d08",
@@ -2685,6 +2685,31 @@
     }
    ],
    "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Registration opens November 21.",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "d36010159f29",
+   "title": "Live Music: Jake Davis",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-jake-davis",
+   "cost": "",
+   "first_start": "2026-12-26T13:00:00-05:00",
+   "last_start": "2026-12-26T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-26T13:00:00-05:00",
+     "end": "2026-12-26T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
    "approval": "pending",
    "decided_by": ""
   },

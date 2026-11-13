@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-12T18:21:46.816037+00:00",
- "pending_count": 77,
+ "generated_at": "2026-11-13T02:39:37.640609+00:00",
+ "pending_count": 78,
  "soon_count": 48,
  "approved_count": 27,
  "rejected_count": 0,
@@ -870,93 +870,6 @@
    "soon": true
   },
   {
-   "id": "1fc8a5984799",
-   "title": "Karaoke",
-   "venue": "PLAY Arcade",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.playarcadenb.com/",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2027-02-04T20:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-13T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T20:00:00-05:00",
-     "end": "2026-11-20T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T20:00:00-05:00",
-     "end": "2026-11-27T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T20:00:00-05:00",
-     "end": "2026-12-04T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T20:00:00-05:00",
-     "end": "2026-12-11T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T20:00:00-05:00",
-     "end": "2026-12-18T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T20:00:00-05:00",
-     "end": "2026-12-25T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T20:00:00-05:00",
-     "end": "2027-01-01T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-07T20:00:00-05:00",
-     "end": "2027-01-08T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T20:00:00-05:00",
-     "end": "2027-01-15T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-21T20:00:00-05:00",
-     "end": "2027-01-22T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-28T20:00:00-05:00",
-     "end": "2027-01-29T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-04T20:00:00-05:00",
-     "end": "2027-02-05T00:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-12T20:00:00-05:00",
-   "soon": true
-  },
-  {
    "id": "1c0a1cb21bcc",
    "title": "Quincy Jacobs",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -1564,6 +1477,93 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-19T18:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "1fc8a5984799",
+   "title": "Karaoke",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
+   "cost": "",
+   "first_start": "2026-11-12T20:00:00-05:00",
+   "last_start": "2027-02-04T20:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-12T20:00:00-05:00",
+     "end": "2026-11-13T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-19T20:00:00-05:00",
+     "end": "2026-11-20T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T20:00:00-05:00",
+     "end": "2026-11-27T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-04T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T20:00:00-05:00",
+     "end": "2026-12-11T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": "2026-12-18T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T20:00:00-05:00",
+     "end": "2026-12-25T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T20:00:00-05:00",
+     "end": "2027-01-01T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-07T20:00:00-05:00",
+     "end": "2027-01-08T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T20:00:00-05:00",
+     "end": "2027-01-15T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-21T20:00:00-05:00",
+     "end": "2027-01-22T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-28T20:00:00-05:00",
+     "end": "2027-01-29T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-04T20:00:00-05:00",
+     "end": "2027-02-05T00:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-19T20:00:00-05:00",
    "soon": true
   },
   {
@@ -2291,6 +2291,33 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-21T10:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "d36010159f29",
+   "title": "Live Music: Jake Davis",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-jake-davis",
+   "cost": "",
+   "first_start": "2026-12-26T13:00:00-05:00",
+   "last_start": "2026-12-26T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-26T13:00:00-05:00",
+     "end": "2026-12-26T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-26T13:00:00-05:00",
    "soon": false
   },
   {

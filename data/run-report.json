@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 180,
-   "seconds": 5.44
+   "rows": 181,
+   "seconds": 4.16
   },
   "viva-fall-river": {
-   "rows": 247,
-   "seconds": 13.46
+   "rows": 249,
+   "seconds": 13.92
   },
   "dnrt": {
    "rows": 13,
-   "seconds": 3.9
+   "seconds": 4.31
   },
   "zeiterion": {
    "rows": 26,
-   "seconds": 0.76
+   "seconds": 0.5
   },
   "buzzards-bay-coalition": {
    "rows": 6,
-   "seconds": 13.4
+   "seconds": 6.99
   },
   "aha-next-aha": {
    "rows": 30,
-   "seconds": 0.49
+   "seconds": 0.25
   },
   "cisco-live-music": {
    "rows": 8,
-   "seconds": 0.33
+   "seconds": 0.12
   },
   "south-coast-places-for-people": {
    "rows": 2,
-   "seconds": 0.53
+   "seconds": 0.39
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 1.22
+   "seconds": 0.85
   },
   "hatch-street-studios": {
    "rows": 5,
-   "seconds": 0.92
+   "seconds": 0.22
   },
   "sakonnet-vineyard": {
-   "rows": 10,
-   "seconds": 0.2
+   "rows": 11,
+   "seconds": 0.92
   },
   "standing-new-bedford": {
    "rows": 63,
@@ -50,18 +50,18 @@
   }
  },
  "errors": {},
- "primary_rows": 167,
+ "primary_rows": 168,
  "dropped": {},
- "series": 104,
+ "series": 105,
  "approval": {
-  "pending": 77,
+  "pending": 78,
   "approved": 27
  },
  "by_town": {
   "New Bedford": 72,
   "Dartmouth": 13,
   "Wareham": 2,
-  "Little Compton": 9,
+  "Little Compton": 10,
   "": 6,
   "Mattapoisett": 1,
   "Acushnet": 1
@@ -74,7 +74,7 @@
   "Museums & Exhibitions": 2,
   "Markets & Fairs": 4,
   "Faith & Spiritual": 1,
-  "Music": 21,
+  "Music": 22,
   "Education & Workshops": 5,
   "Civic & Town Meetings": 1,
   "Library & Talks": 1,
@@ -82,7 +82,7 @@
  },
  "by_cadence": {
   "weekly": 5,
-  "once": 93,
+  "once": 94,
   "monthly": 4,
   "irregular": 1,
   "weekends": 1
@@ -97,9 +97,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 427,
+  "check_total": 430,
   "check_matched": 29,
-  "check_missed_rows": 398,
+  "check_missed_rows": 401,
   "check_missed_series": 95,
   "check_missed": [
    {
@@ -108,6 +108,13 @@
     "town": "Fall River",
     "first_start": "2026-11-14T10:00:00-05:00",
     "rows": 26
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-11-18T18:30:00-05:00",
+    "rows": 13
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -166,6 +173,13 @@
     "rows": 13
    },
    {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-11-18T19:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Open Mic",
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
@@ -215,32 +229,18 @@
     "rows": 13
    },
    {
+    "title": "Wing Wednesday!!",
+    "venue": "St James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-18T18:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-12T18:00:00-05:00",
     "rows": 13
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-11-18T18:30:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-11-18T19:00:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-18T18:00:00-05:00",
-    "rows": 12
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
@@ -775,7 +775,7 @@
   ],
   "primary_only_count": 133,
   "primary_only_series": 71,
-  "coverage_ratio": 0.068
+  "coverage_ratio": 0.067
  },
  "tide_error": null
 }
