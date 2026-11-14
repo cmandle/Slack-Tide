@@ -1,138 +1,8 @@
 {
- "generated_at": "2026-11-14T02:28:20.400933+00:00",
+ "generated_at": "2026-11-14T16:37:42.960018+00:00",
  "series_count": 102,
- "occurrence_count": 164,
+ "occurrence_count": 162,
  "series": [
-  {
-   "id": "a61790e6d5b5",
-   "title": "AHA! Night",
-   "venue": "Downtown New Bedford",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "standing-new-bedford",
-   "url": "https://ahanewbedford.org/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2027-02-11T17:00:00-05:00",
-   "count": 4,
-   "cadence": "monthly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T17:00:00-05:00",
-     "end": "2026-12-10T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T17:00:00-05:00",
-     "end": "2027-01-14T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-11T17:00:00-05:00",
-     "end": "2027-02-11T21:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "1fc8a5984799",
-   "title": "Karaoke",
-   "venue": "PLAY Arcade",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.playarcadenb.com/",
-   "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
-   "last_start": "2027-02-11T20:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-13T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-19T20:00:00-05:00",
-     "end": "2026-11-20T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T20:00:00-05:00",
-     "end": "2026-11-27T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T20:00:00-05:00",
-     "end": "2026-12-04T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T20:00:00-05:00",
-     "end": "2026-12-11T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T20:00:00-05:00",
-     "end": "2026-12-18T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T20:00:00-05:00",
-     "end": "2026-12-25T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T20:00:00-05:00",
-     "end": "2027-01-01T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-07T20:00:00-05:00",
-     "end": "2027-01-08T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T20:00:00-05:00",
-     "end": "2027-01-15T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-21T20:00:00-05:00",
-     "end": "2027-01-22T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-28T20:00:00-05:00",
-     "end": "2027-01-29T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-04T20:00:00-05:00",
-     "end": "2027-02-05T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-11T20:00:00-05:00",
-     "end": "2027-02-12T00:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
   {
    "id": "1c0a1cb21bcc",
    "title": "Quincy Jacobs",
@@ -826,6 +696,91 @@
     {
      "start": "2026-11-19T18:00:00-05:00",
      "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "1fc8a5984799",
+   "title": "Karaoke",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
+   "cost": "",
+   "first_start": "2026-11-19T20:00:00-05:00",
+   "last_start": "2027-02-11T20:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-19T20:00:00-05:00",
+     "end": "2026-11-20T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T20:00:00-05:00",
+     "end": "2026-11-27T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-04T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T20:00:00-05:00",
+     "end": "2026-12-11T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": "2026-12-18T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T20:00:00-05:00",
+     "end": "2026-12-25T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T20:00:00-05:00",
+     "end": "2027-01-01T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-07T20:00:00-05:00",
+     "end": "2027-01-08T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T20:00:00-05:00",
+     "end": "2027-01-15T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-21T20:00:00-05:00",
+     "end": "2027-01-22T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-28T20:00:00-05:00",
+     "end": "2027-01-29T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-04T20:00:00-05:00",
+     "end": "2027-02-05T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T20:00:00-05:00",
+     "end": "2027-02-12T00:00:00-05:00",
      "all_day": false
     }
    ],
@@ -2100,6 +2055,41 @@
     }
    ],
    "summary": "Local Artisan Showcase New Bedford Fishing Heritage Center, 38 Bethel Street Shop local this holiday season at FHC! We're hosting a local artisan showcase. Stop by the Center from 5-8pm to shop a great selection of fishing- and maritime-themed clothing, jewelry, artwork, and other handmade items, ma",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "a61790e6d5b5",
+   "title": "AHA! Night",
+   "venue": "Downtown New Bedford",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "standing-new-bedford",
+   "url": "https://ahanewbedford.org/",
+   "cost": "",
+   "first_start": "2026-12-10T17:00:00-05:00",
+   "last_start": "2027-02-11T17:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T17:00:00-05:00",
+     "end": "2027-01-14T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T17:00:00-05:00",
+     "end": "2027-02-11T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
    "approval": "pending",
    "decided_by": ""
   },

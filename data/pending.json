@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-14T02:28:20.400933+00:00",
+ "generated_at": "2026-11-14T16:37:42.960018+00:00",
  "pending_count": 77,
- "soon_count": 18,
+ "soon_count": 19,
  "approved_count": 25,
  "rejected_count": 0,
  "series": [
@@ -609,17 +609,12 @@
    "source_id": "standing-new-bedford",
    "url": "https://www.playarcadenb.com/",
    "cost": "",
-   "first_start": "2026-11-12T20:00:00-05:00",
+   "first_start": "2026-11-19T20:00:00-05:00",
    "last_start": "2027-02-11T20:00:00-05:00",
-   "count": 14,
+   "count": 13,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
-    {
-     "start": "2026-11-12T20:00:00-05:00",
-     "end": "2026-11-13T00:00:00-05:00",
-     "all_day": false
-    },
     {
      "start": "2026-11-19T20:00:00-05:00",
      "end": "2026-11-20T00:00:00-05:00",
@@ -776,7 +771,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-21T13:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "bc7996249b9b",
@@ -1491,48 +1486,6 @@
    "soon": false
   },
   {
-   "id": "a61790e6d5b5",
-   "title": "AHA! Night",
-   "venue": "Downtown New Bedford",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "standing-new-bedford",
-   "url": "https://ahanewbedford.org/",
-   "cost": "",
-   "first_start": "2026-11-12T17:00:00-05:00",
-   "last_start": "2027-02-11T17:00:00-05:00",
-   "count": 4,
-   "cadence": "monthly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-12T17:00:00-05:00",
-     "end": "2026-11-12T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T17:00:00-05:00",
-     "end": "2026-12-10T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T17:00:00-05:00",
-     "end": "2027-01-14T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-11T17:00:00-05:00",
-     "end": "2027-02-11T21:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-12-10T17:00:00-05:00",
-   "soon": false
-  },
-  {
    "id": "461b72a2bfae",
    "title": "Holiday Fun at New Bedford Community Health!",
    "venue": "New Bedford Community Health Courtyard: 384 Acushnet Ave",
@@ -1878,6 +1831,43 @@
     }
    ],
    "summary": "Local Artisan Showcase New Bedford Fishing Heritage Center, 38 Bethel Street Shop local this holiday season at FHC! We're hosting a local artisan showcase. Stop by the Center from 5-8pm to shop a great selection of fishing- and maritime-themed clothing, jewelry, artwork, and other handmade items, ma",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T17:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "a61790e6d5b5",
+   "title": "AHA! Night",
+   "venue": "Downtown New Bedford",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "standing-new-bedford",
+   "url": "https://ahanewbedford.org/",
+   "cost": "",
+   "first_start": "2026-12-10T17:00:00-05:00",
+   "last_start": "2027-02-11T17:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T17:00:00-05:00",
+     "end": "2027-01-14T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T17:00:00-05:00",
+     "end": "2027-02-11T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T17:00:00-05:00",
