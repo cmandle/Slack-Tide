@@ -1,33 +1,8 @@
 {
- "generated_at": "2026-11-14T16:37:42.960018+00:00",
- "series_count": 102,
- "occurrence_count": 162,
+ "generated_at": "2026-11-15T01:57:48.164492+00:00",
+ "series_count": 101,
+ "occurrence_count": 161,
  "series": [
-  {
-   "id": "1c0a1cb21bcc",
-   "title": "Quincy Jacobs",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-13T19:00:00-05:00",
-   "last_start": "2026-11-13T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-13T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
   {
    "id": "e0ede651223a",
    "title": "12th Annual Trail Race - 2026",
