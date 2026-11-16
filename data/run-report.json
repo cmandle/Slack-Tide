@@ -1,87 +1,78 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 176,
-   "seconds": 4.47
+   "rows": 177,
+   "seconds": 4.32
   },
   "viva-fall-river": {
    "rows": 243,
-   "seconds": 14.23
-  },
-  "dnrt": {
-   "rows": 11,
-   "seconds": 4.42
+   "seconds": 15.09
   },
   "zeiterion": {
-   "rows": 23,
-   "seconds": 0.39
+   "rows": 24,
+   "seconds": 0.34
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 8.92
-  },
-  "aha-next-aha": {
-   "rows": 31,
-   "seconds": 2.9
+   "seconds": 4.96
   },
   "cisco-live-music": {
-   "rows": 6,
-   "seconds": 0.22
+   "rows": 5,
+   "seconds": 0.09
   },
   "south-coast-places-for-people": {
    "rows": 2,
-   "seconds": 0.11
+   "seconds": 0.4
   },
   "south-coast-girls-walk": {
    "rows": 4,
-   "seconds": 1.21
+   "seconds": 0.98
   },
   "hatch-street-studios": {
    "rows": 4,
-   "seconds": 1.14
+   "seconds": 0.78
   },
   "sakonnet-vineyard": {
-   "rows": 10,
-   "seconds": 1.12
+   "rows": 9,
+   "seconds": 0.89
   },
   "standing-new-bedford": {
    "rows": 61,
    "seconds": 0.0
   }
  },
- "errors": {},
- "primary_rows": 157,
+ "errors": {
+  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)",
+  "aha-next-aha": "ValueError: no listings found at https://ahanewbedford.org/next-aha/; the selectors are probably stale"
+ },
+ "primary_rows": 114,
  "dropped": {},
- "series": 98,
+ "series": 55,
  "approval": {
-  "pending": 74,
-  "approved": 24
+  "pending": 35,
+  "approved": 20
  },
  "by_town": {
-  "Little Compton": 9,
-  "New Bedford": 69,
   "": 6,
-  "Dartmouth": 11,
+  "New Bedford": 38,
+  "Little Compton": 8,
   "Mattapoisett": 1,
   "Wareham": 1,
   "Acushnet": 1
  },
  "by_category": {
-  "Music": 20,
-  "Outdoors & Nature": 16,
-  "Education & Workshops": 5,
+  "Outdoors & Nature": 7,
+  "Education & Workshops": 4,
+  "Music": 14,
   "Civic & Town Meetings": 1,
-  "Arts & Theatre": 34,
-  "Library & Talks": 1,
+  "Arts & Theatre": 20,
   "Food & Drink": 4,
   "Sports & Recreation": 3,
-  "Family & Children": 8,
-  "Markets & Fairs": 3,
-  "Museums & Exhibitions": 2,
-  "Faith & Spiritual": 1
+  "Family & Children": 1,
+  "Markets & Fairs": 1
  },
  "by_cadence": {
-  "once": 88,
+  "once": 45,
   "weekly": 4,
   "monthly": 4,
   "irregular": 1,
@@ -96,8 +87,8 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 419,
-  "check_matched": 26,
+  "check_total": 420,
+  "check_matched": 27,
   "check_missed_rows": 393,
   "check_missed_series": 88,
   "check_missed": [
@@ -722,9 +713,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 127,
-  "primary_only_series": 69,
-  "coverage_ratio": 0.062
+  "primary_only_count": 96,
+  "primary_only_series": 38,
+  "coverage_ratio": 0.064
  },
  "tide_error": null
 }
