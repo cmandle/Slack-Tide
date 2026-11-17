@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-17T04:31:56.563724+00:00",
- "pending_count": 45,
+ "generated_at": "2026-11-17T19:12:28.865800+00:00",
+ "pending_count": 46,
  "soon_count": 14,
- "approved_count": 24,
+ "approved_count": 23,
  "rejected_count": 0,
  "series": [
   {
@@ -461,6 +461,33 @@
    "soon": true
   },
   {
+   "id": "b7301c4db9eb",
+   "title": "DayDreaming of Summer",
+   "venue": "",
+   "town": "",
+   "category": "Outdoors & Nature",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/daydreaming-of-summer-1",
+   "cost": "",
+   "first_start": "2026-11-22T10:00:00-05:00",
+   "last_start": "2026-11-22T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "This week we've got another double walk day, this time back to the shore to two of our favorite places! Start the morning with us at one of our all-time favorite spots, horseneck beach!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-22T10:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "e2ba4aa4ad25",
    "title": "Live Music Beatles Brunch",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -469,17 +496,12 @@
    "source_id": "standing-new-bedford",
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
-   "first_start": "2026-11-15T10:00:00-05:00",
+   "first_start": "2026-11-22T10:00:00-05:00",
    "last_start": "2027-02-14T10:00:00-05:00",
-   "count": 14,
+   "count": 13,
    "cadence": "weekly",
    "weekday": 6,
    "occurrences": [
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T14:00:00-05:00",
-     "all_day": false
-    },
     {
      "start": "2026-11-22T10:00:00-05:00",
      "end": "2026-11-22T14:00:00-05:00",
@@ -547,33 +569,6 @@
     }
    ],
    "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-22T10:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "b7301c4db9eb",
-   "title": "DayDreaming of Summer",
-   "venue": "",
-   "town": "",
-   "category": "Outdoors & Nature",
-   "source_id": "south-coast-girls-walk",
-   "url": "https://www.southcoastgirlswalk.com/our-schedule/daydreaming-of-summer-1",
-   "cost": "",
-   "first_start": "2026-11-22T10:00:00-05:00",
-   "last_start": "2026-11-22T10:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T11:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "This week we've got another double walk day, this time back to the shore to two of our favorite places! Start the morning with us at one of our all-time favorite spots, horseneck beach!",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-22T10:00:00-05:00",
@@ -1069,7 +1064,7 @@
      "all_day": false
     }
    ],
-   "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. 4:30 - 6:30pm Hands-on activities and resources with Livity Tree Art, South East Recovery Learning Community",
+   "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. *Community Note - 230 Union Street is a radically inclusive safe space where the door is kept locked. There ",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T16:30:00-05:00",
@@ -1140,6 +1135,33 @@
    "soon": false
   },
   {
+   "id": "856e99869fe4",
+   "title": "Arts Illuminated",
+   "venue": "Steeple Playhouse, 159 William St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T18:00:00-05:00",
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T20:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Arts Illuminated Steeple Playhouse, 159 William St. Hosted by The New Bedford Light, this free event features short, one-on-one sessions with selected creators, framed by samples of their work. Stay for our signature Afterglow reception, where you can mingle with the artists, browse works up close, ",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T18:00:00-05:00",
+   "soon": false
+  },
+  {
    "id": "d9993e826e2c",
    "title": "Jazz with the Buttonwood Brass Band",
    "venue": "New Bedford Harbor Hotel",
@@ -1187,7 +1209,7 @@
      "all_day": false
     }
    ],
-   "summary": "AHA! Moment- Seaport Sessions- Live Music and Zines! Aviary Books 22 William St. Ends: 9:00 pm",
+   "summary": "AHA! Moment- Seaport Sessions- Live Music and Zines! Aviary Books 22 William St. Join Cape Cod writer and musician Michael T. Fournier , whose zine Policymaker is celebrating its 55th issue, along with touring artists Amanda Huron and Mike Andre . Through zines, storytelling, and music, these indepe",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T19:00:00-05:00",

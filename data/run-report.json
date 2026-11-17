@@ -1,65 +1,65 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 175,
-   "seconds": 3.59
+   "rows": 178,
+   "seconds": 3.82
   },
   "viva-fall-river": {
    "rows": 243,
-   "seconds": 13.49
+   "seconds": 14.07
   },
   "dnrt": {
-   "rows": 11,
-   "seconds": 0.11
+   "rows": 10,
+   "seconds": 4.34
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 0.38
+   "seconds": 0.52
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 5.54
+   "seconds": 6.14
   },
   "aha-next-aha": {
-   "rows": 8,
-   "seconds": 2.29
+   "rows": 9,
+   "seconds": 3.03
   },
   "cisco-live-music": {
    "rows": 5,
-   "seconds": 0.36
+   "seconds": 0.24
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.6
+   "seconds": 0.37
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 0.91
+   "seconds": 0.89
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.77
+   "seconds": 0.85
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.31
+   "seconds": 1.12
   },
   "standing-new-bedford": {
-   "rows": 62,
+   "rows": 61,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 129,
+ "primary_rows": 128,
  "dropped": {},
  "series": 69,
  "approval": {
-  "pending": 45,
-  "approved": 24
+  "pending": 46,
+  "approved": 23
  },
  "by_town": {
-  "New Bedford": 43,
-  "Dartmouth": 11,
+  "New Bedford": 44,
+  "Dartmouth": 10,
   "": 4,
   "Little Compton": 8,
   "Mattapoisett": 1,
@@ -67,20 +67,19 @@
   "Acushnet": 1
  },
  "by_category": {
-  "Music": 18,
-  "Library & Talks": 1,
   "Food & Drink": 4,
   "Sports & Recreation": 3,
   "Outdoors & Nature": 14,
-  "Arts & Theatre": 20,
+  "Music": 18,
+  "Arts & Theatre": 21,
   "Education & Workshops": 4,
   "Family & Children": 4,
   "Markets & Fairs": 1
  },
  "by_cadence": {
-  "weekly": 4,
-  "once": 59,
   "monthly": 4,
+  "once": 59,
+  "weekly": 4,
   "irregular": 1,
   "weekends": 1
  },
@@ -93,10 +92,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 418,
-  "check_matched": 26,
-  "check_missed_rows": 392,
-  "check_missed_series": 87,
+  "check_total": 421,
+  "check_matched": 27,
+  "check_missed_rows": 394,
+  "check_missed_series": 89,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -151,7 +150,7 @@
     "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
-    "first_start": "2026-11-16T14:00:00-05:00",
+    "first_start": "2026-11-23T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -263,8 +262,8 @@
     "title": "Nick Sanfilippo",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-16T18:30:00-05:00",
-    "rows": 7
+    "first_start": "2026-11-23T18:30:00-05:00",
+    "rows": 6
    },
    {
     "title": "Planetarium Show: Moons Worlds of Mystery",
@@ -337,6 +336,13 @@
     "rows": 2
    },
    {
+    "title": "City of New Bedford Holiday Tree Lightings",
+    "venue": "Downtown New Bedford",
+    "town": "New Bedford",
+    "first_start": "2026-12-05T17:00:00-05:00",
+    "rows": 2
+   },
+   {
     "title": "Dance Prism Ballet Presents \"The Nutcracker\"",
     "venue": "Bristol Community College Arts Center",
     "town": "Fall River",
@@ -400,13 +406,6 @@
     "rows": 1
    },
    {
-    "title": "Arts Illuminated talk show, sale: Give the gift of art!",
-    "venue": "The Steeple Playhouse",
-    "town": "New Bedford",
-    "first_start": "2026-12-10T18:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Author Book Talk: Jen Rose Smith",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -439,6 +438,13 @@
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-12-26T15:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Ceramic Scrimshaw Workshop with Tom Hubbard, Artist-in-Residence",
+    "venue": "New Bedford Whaling National Historical Park",
+    "town": "New Bedford",
+    "first_start": "2026-12-05T13:00:00-05:00",
     "rows": 1
    },
    {
@@ -582,6 +588,13 @@
     "rows": 1
    },
    {
+    "title": "North Pole Live!",
+    "venue": "777 Elsbree Street",
+    "town": "Fall River",
+    "first_start": "2026-12-07T17:30:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Paint Nights",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
@@ -713,8 +726,8 @@
    "New Bedford"
   ],
   "primary_only_count": 102,
-  "primary_only_series": 43,
-  "coverage_ratio": 0.062
+  "primary_only_series": 44,
+  "coverage_ratio": 0.064
  },
  "tide_error": null
 }

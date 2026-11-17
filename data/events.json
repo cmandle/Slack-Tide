@@ -1,123 +1,8 @@
 {
- "generated_at": "2026-11-17T04:31:56.563724+00:00",
+ "generated_at": "2026-11-17T19:12:28.865800+00:00",
  "series_count": 69,
- "occurrence_count": 129,
+ "occurrence_count": 128,
  "series": [
-  {
-   "id": "e2ba4aa4ad25",
-   "title": "Live Music Beatles Brunch",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.ciscokitchenbar.com/happenings/",
-   "cost": "",
-   "first_start": "2026-11-15T10:00:00-05:00",
-   "last_start": "2027-02-14T10:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-11-15T10:00:00-05:00",
-     "end": "2026-11-15T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": "2026-11-29T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T10:00:00-05:00",
-     "end": "2026-12-06T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T10:00:00-05:00",
-     "end": "2026-12-13T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-20T10:00:00-05:00",
-     "end": "2026-12-20T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-27T10:00:00-05:00",
-     "end": "2026-12-27T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-03T10:00:00-05:00",
-     "end": "2027-01-03T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-10T10:00:00-05:00",
-     "end": "2027-01-10T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-17T10:00:00-05:00",
-     "end": "2027-01-17T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-24T10:00:00-05:00",
-     "end": "2027-01-24T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-31T10:00:00-05:00",
-     "end": "2027-01-31T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-07T10:00:00-05:00",
-     "end": "2027-02-07T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-14T10:00:00-05:00",
-     "end": "2027-02-14T14:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "342cee2c5258",
-   "title": "Naturalist's Book Club",
-   "venue": "DNRT Center @ Helfand Farm",
-   "town": "Dartmouth",
-   "category": "Library & Talks",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/naturalists-book-club/",
-   "cost": "Free",
-   "first_start": "2026-11-16T17:30:00-05:00",
-   "last_start": "2026-11-16T17:30:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-16T17:30:00-05:00",
-     "end": "2026-11-16T18:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join other nature lovers in DNRT's Naturalist Book Club! We will be meeting once a quarter at the DNRT Headquarters at Helfand Farm for lively discussion and good company. Books should be purchased or borrowed on your own and read prior to the November 16 meeting. The whole book does not need to be ",
-   "approval": "approved",
-   "decided_by": "bootstrap"
-  },
   {
    "id": "32167176f284",
    "title": "Chef Hiroki's omakase dinner",
@@ -685,6 +570,91 @@
     }
    ],
    "summary": "This week we've got another double walk day, this time back to the shore to two of our favorite places! Start the morning with us at one of our all-time favorite spots, horseneck beach!",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "e2ba4aa4ad25",
+   "title": "Live Music Beatles Brunch",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
+   "cost": "",
+   "first_start": "2026-11-22T10:00:00-05:00",
+   "last_start": "2027-02-14T10:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T10:00:00-05:00",
+     "end": "2026-12-20T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-27T10:00:00-05:00",
+     "end": "2026-12-27T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-03T10:00:00-05:00",
+     "end": "2027-01-03T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-10T10:00:00-05:00",
+     "end": "2027-01-10T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-17T10:00:00-05:00",
+     "end": "2027-01-17T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-24T10:00:00-05:00",
+     "end": "2027-01-24T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-31T10:00:00-05:00",
+     "end": "2027-01-31T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-07T10:00:00-05:00",
+     "end": "2027-02-07T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-14T10:00:00-05:00",
+     "end": "2027-02-14T14:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1329,7 +1299,7 @@
      "all_day": false
     }
    ],
-   "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. 4:30 - 6:30pm Hands-on activities and resources with Livity Tree Art, South East Recovery Learning Community",
+   "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. *Community Note - 230 Union Street is a radically inclusive safe space where the door is kept locked. There ",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1390,6 +1360,31 @@
     }
    ],
    "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "856e99869fe4",
+   "title": "Arts Illuminated",
+   "venue": "Steeple Playhouse, 159 William St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T18:00:00-05:00",
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T20:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Arts Illuminated Steeple Playhouse, 159 William St. Hosted by The New Bedford Light, this free event features short, one-on-one sessions with selected creators, framed by samples of their work. Stay for our signature Afterglow reception, where you can mingle with the artists, browse works up close, ",
    "approval": "pending",
    "decided_by": ""
   },
@@ -1464,7 +1459,7 @@
      "all_day": false
     }
    ],
-   "summary": "AHA! Moment- Seaport Sessions- Live Music and Zines! Aviary Books 22 William St. Ends: 9:00 pm",
+   "summary": "AHA! Moment- Seaport Sessions- Live Music and Zines! Aviary Books 22 William St. Join Cape Cod writer and musician Michael T. Fournier , whose zine Policymaker is celebrating its 55th issue, along with touring artists Amanda Huron and Mike Andre . Through zines, storytelling, and music, these indepe",
    "approval": "pending",
    "decided_by": ""
   },
