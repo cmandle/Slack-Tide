@@ -2,64 +2,58 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 178,
-   "seconds": 3.82
+   "seconds": 3.26
   },
   "viva-fall-river": {
-   "rows": 243,
-   "seconds": 14.07
-  },
-  "dnrt": {
-   "rows": 10,
-   "seconds": 4.34
+   "rows": 245,
+   "seconds": 12.82
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 0.52
+   "seconds": 0.57
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 6.14
-  },
-  "aha-next-aha": {
-   "rows": 9,
-   "seconds": 3.03
+   "seconds": 6.37
   },
   "cisco-live-music": {
-   "rows": 5,
-   "seconds": 0.24
+   "rows": 7,
+   "seconds": 0.1
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.37
+   "seconds": 0.33
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 0.89
+   "seconds": 0.72
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.85
+   "seconds": 0.1
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 1.12
+   "seconds": 0.89
   },
   "standing-new-bedford": {
    "rows": 61,
    "seconds": 0.0
   }
  },
- "errors": {},
- "primary_rows": 128,
+ "errors": {
+  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)",
+  "aha-next-aha": "ValueError: no listings found at https://ahanewbedford.org/next-aha/; the selectors are probably stale"
+ },
+ "primary_rows": 111,
  "dropped": {},
- "series": 69,
+ "series": 51,
  "approval": {
-  "pending": 46,
-  "approved": 23
+  "pending": 32,
+  "approved": 19
  },
  "by_town": {
-  "New Bedford": 44,
-  "Dartmouth": 10,
+  "New Bedford": 36,
   "": 4,
   "Little Compton": 8,
   "Mattapoisett": 1,
@@ -69,17 +63,17 @@
  "by_category": {
   "Food & Drink": 4,
   "Sports & Recreation": 3,
-  "Outdoors & Nature": 14,
-  "Music": 18,
-  "Arts & Theatre": 21,
-  "Education & Workshops": 4,
-  "Family & Children": 4,
-  "Markets & Fairs": 1
+  "Music": 15,
+  "Outdoors & Nature": 5,
+  "Arts & Theatre": 19,
+  "Family & Children": 1,
+  "Markets & Fairs": 1,
+  "Education & Workshops": 3
  },
  "by_cadence": {
   "monthly": 4,
-  "once": 59,
-  "weekly": 4,
+  "once": 40,
+  "weekly": 5,
   "irregular": 1,
   "weekends": 1
  },
@@ -92,10 +86,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 421,
-  "check_matched": 27,
-  "check_missed_rows": 394,
-  "check_missed_series": 89,
+  "check_total": 423,
+  "check_matched": 26,
+  "check_missed_rows": 397,
+  "check_missed_series": 92,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -337,7 +331,7 @@
    },
    {
     "title": "City of New Bedford Holiday Tree Lightings",
-    "venue": "Downtown New Bedford",
+    "venue": "Multiple Locations See Description",
     "town": "New Bedford",
     "first_start": "2026-12-05T17:00:00-05:00",
     "rows": 2
@@ -403,6 +397,13 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-12-02T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Arts Illuminated talk show, sale: Give the gift of art!",
+    "venue": "The Steeple Playhouse",
+    "town": "New Bedford",
+    "first_start": "2026-12-10T18:00:00-05:00",
     "rows": 1
    },
    {
@@ -518,6 +519,13 @@
     "rows": 1
    },
    {
+    "title": "Holiday Horror Store & Holiday Market",
+    "venue": "Factory of Terror",
+    "town": "Fall River",
+    "first_start": "2026-12-05T12:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Hop Quiz Trivia",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
@@ -529,6 +537,13 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2027-01-23T20:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Krampus (2015): Screened Inside Factory of Terror",
+    "venue": "Factory of Terror",
+    "town": "Fall River",
+    "first_start": "2026-12-04T18:30:00-05:00",
     "rows": 1
    },
    {
@@ -725,9 +740,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 102,
-  "primary_only_series": 44,
-  "coverage_ratio": 0.064
+  "primary_only_count": 95,
+  "primary_only_series": 36,
+  "coverage_ratio": 0.061
  },
  "tide_error": null
 }
