@@ -1,59 +1,65 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 178,
-   "seconds": 3.26
+   "rows": 184,
+   "seconds": 3.85
   },
   "viva-fall-river": {
-   "rows": 245,
-   "seconds": 12.82
+   "rows": 240,
+   "seconds": 14.53
+  },
+  "dnrt": {
+   "rows": 11,
+   "seconds": 4.61
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 0.57
+   "seconds": 0.36
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 6.37
+   "seconds": 5.61
+  },
+  "aha-next-aha": {
+   "rows": 10,
+   "seconds": 2.46
   },
   "cisco-live-music": {
    "rows": 7,
-   "seconds": 0.1
+   "seconds": 0.26
   },
   "south-coast-places-for-people": {
    "rows": 1,
-   "seconds": 0.33
+   "seconds": 0.43
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 0.72
+   "seconds": 0.95
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.1
+   "seconds": 0.84
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.89
+   "seconds": 1.0
   },
   "standing-new-bedford": {
-   "rows": 61,
+   "rows": 62,
    "seconds": 0.0
   }
  },
- "errors": {
-  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)",
-  "aha-next-aha": "ValueError: no listings found at https://ahanewbedford.org/next-aha/; the selectors are probably stale"
- },
- "primary_rows": 111,
+ "errors": {},
+ "primary_rows": 133,
  "dropped": {},
- "series": 51,
+ "series": 72,
  "approval": {
-  "pending": 32,
-  "approved": 19
+  "pending": 49,
+  "approved": 23
  },
  "by_town": {
-  "New Bedford": 36,
+  "New Bedford": 46,
+  "Dartmouth": 11,
   "": 4,
   "Little Compton": 8,
   "Mattapoisett": 1,
@@ -63,16 +69,16 @@
  "by_category": {
   "Food & Drink": 4,
   "Sports & Recreation": 3,
-  "Music": 15,
-  "Outdoors & Nature": 5,
-  "Arts & Theatre": 19,
-  "Family & Children": 1,
-  "Markets & Fairs": 1,
-  "Education & Workshops": 3
+  "Outdoors & Nature": 15,
+  "Music": 19,
+  "Arts & Theatre": 22,
+  "Education & Workshops": 4,
+  "Family & Children": 4,
+  "Markets & Fairs": 1
  },
  "by_cadence": {
   "monthly": 4,
-  "once": 40,
+  "once": 61,
   "weekly": 5,
   "irregular": 1,
   "weekends": 1
@@ -86,10 +92,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 423,
-  "check_matched": 26,
-  "check_missed_rows": 397,
-  "check_missed_series": 92,
+  "check_total": 424,
+  "check_matched": 30,
+  "check_missed_rows": 394,
+  "check_missed_series": 94,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -169,13 +175,6 @@
     "rows": 13
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-17T20:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -204,13 +203,6 @@
     "rows": 13
    },
    {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-11-17T19:30:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Thursday Night Trivia",
     "venue": "Saint James Irish Pub",
     "town": "Fall River",
@@ -232,6 +224,20 @@
     "rows": 13
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-24T20:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-11-24T19:30:00-05:00",
+    "rows": 12
+   },
+   {
     "title": "Planetarium Show: Death of the Dinosaurs",
     "venue": "BMC Durfee High School",
     "town": "Fall River",
@@ -242,15 +248,15 @@
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
-    "first_start": "2026-11-17T18:00:00-05:00",
-    "rows": 7
+    "first_start": "2026-11-24T18:00:00-05:00",
+    "rows": 6
    },
    {
     "title": "Half Priced Food (weekly)",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
-    "first_start": "2026-11-17T16:00:00-05:00",
-    "rows": 7
+    "first_start": "2026-11-24T16:00:00-05:00",
+    "rows": 6
    },
    {
     "title": "Nick Sanfilippo",
@@ -323,13 +329,6 @@
     "rows": 3
    },
    {
-    "title": "All Ages Book Club",
-    "venue": "Gathering Grounds Cafe, Fall River Carousel",
-    "town": "Fall River",
-    "first_start": "2026-11-17T18:30:00-05:00",
-    "rows": 2
-   },
-   {
     "title": "City of New Bedford Holiday Tree Lightings",
     "venue": "Multiple Locations See Description",
     "town": "New Bedford",
@@ -386,6 +385,13 @@
     "rows": 1
    },
    {
+    "title": "All Ages Book Club",
+    "venue": "Gathering Grounds Cafe, Fall River Carousel",
+    "town": "Fall River",
+    "first_start": "2026-12-16T18:30:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Amythyst Kiah",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -400,10 +406,10 @@
     "rows": 1
    },
    {
-    "title": "Arts Illuminated talk show, sale: Give the gift of art!",
-    "venue": "The Steeple Playhouse",
+    "title": "Author Book Talk Jen Rose Smith",
+    "venue": "",
     "town": "New Bedford",
-    "first_start": "2026-12-10T18:00:00-05:00",
+    "first_start": "2026-11-19T08:00:00-05:00",
     "rows": 1
    },
    {
@@ -425,6 +431,13 @@
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-25T18:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Beyond the Page: Exploring the Art of the Book",
+    "venue": "161 William St., New Bedford, MA02740",
+    "town": "New Bedford",
+    "first_start": "2026-11-19T17:00:00-05:00",
     "rows": 1
    },
    {
@@ -526,13 +539,6 @@
     "rows": 1
    },
    {
-    "title": "Hop Quiz Trivia",
-    "venue": "Canned Heat Craft Beer Co.",
-    "town": "Fall River",
-    "first_start": "2026-11-17T18:30:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Jimmy Cash",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -544,6 +550,13 @@
     "venue": "Factory of Terror",
     "town": "Fall River",
     "first_start": "2026-12-04T18:30:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Lighthouse Tavern Presents Escape the Box Comedy Night",
+    "venue": "Lighthouse Tavern",
+    "town": "New Bedford",
+    "first_start": "2026-12-03T20:00:00-05:00",
     "rows": 1
    },
    {
@@ -568,13 +581,6 @@
     "rows": 1
    },
    {
-    "title": "Name Change Clinic with South Coastal Counties Legal Services",
-    "venue": "New Bedford Free Public Library",
-    "town": "New Bedford",
-    "first_start": "2026-11-17T18:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "National Award-Winning Author, Nathaniel Philbrick, will discuss his newest book, THE RUSH at Spinner Publications Celebrates 45 Years \"Author Talk\"",
     "venue": "The Steeple Playhouse",
     "town": "New Bedford",
@@ -593,6 +599,13 @@
     "venue": "Wamsutta Club",
     "town": "New Bedford",
     "first_start": "2026-11-22T13:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "New Beige Bash Music Festival",
+    "venue": "Gallery X",
+    "town": "New Bedford",
+    "first_start": "2026-11-28T16:00:00-05:00",
     "rows": 1
    },
    {
@@ -734,15 +747,22 @@
     "town": "New Bedford",
     "first_start": "2026-12-05T10:00:00-05:00",
     "rows": 1
+   },
+   {
+    "title": "Zeiterion Presents The Muppet Christmas Carol (1992)",
+    "venue": "The Zeiterion",
+    "town": "New Bedford",
+    "first_start": "2026-11-18T14:00:00-05:00",
+    "rows": 1
    }
   ],
   "check_towns": [
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 95,
-  "primary_only_series": 36,
-  "coverage_ratio": 0.061
+  "primary_only_count": 106,
+  "primary_only_series": 46,
+  "coverage_ratio": 0.071
  },
  "tide_error": null
 }
