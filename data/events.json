@@ -1,48 +1,8 @@
 {
- "generated_at": "2026-11-19T03:33:23.071978+00:00",
- "series_count": 72,
- "occurrence_count": 133,
+ "generated_at": "2026-11-19T19:00:52.404850+00:00",
+ "series_count": 68,
+ "occurrence_count": 129,
  "series": [
-  {
-   "id": "32167176f284",
-   "title": "Chef Hiroki's omakase dinner",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Food & Drink",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.ciscokitchenbar.com/happenings/",
-   "cost": "",
-   "first_start": "2026-11-17T00:00:00-05:00",
-   "last_start": "2027-02-16T00:00:00-05:00",
-   "count": 4,
-   "cadence": "monthly",
-   "weekday": 1,
-   "occurrences": [
-    {
-     "start": "2026-11-17T00:00:00-05:00",
-     "end": null,
-     "all_day": true
-    },
-    {
-     "start": "2026-12-15T00:00:00-05:00",
-     "end": null,
-     "all_day": true
-    },
-    {
-     "start": "2027-01-19T00:00:00-05:00",
-     "end": null,
-     "all_day": true
-    },
-    {
-     "start": "2027-02-16T00:00:00-05:00",
-     "end": null,
-     "all_day": true
-    }
-   ],
-   "summary": "A ten to twelve course omakase dinner. Reservations on the venue's page.",
-   "approval": "pending",
-   "decided_by": ""
-  },
   {
    "id": "4b590850b626",
    "title": "SCPFP November Meetup",
@@ -78,8 +38,8 @@
    "url": "https://www.playarcadenb.com/",
    "cost": "",
    "first_start": "2026-11-18T19:00:00-05:00",
-   "last_start": "2027-02-10T19:00:00-05:00",
-   "count": 13,
+   "last_start": "2027-02-17T19:00:00-05:00",
+   "count": 14,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -147,6 +107,11 @@
      "start": "2027-02-10T19:00:00-05:00",
      "end": "2027-02-10T21:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2027-02-17T19:00:00-05:00",
+     "end": "2027-02-17T21:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "",
@@ -163,8 +128,8 @@
    "url": "https://newbeigema.squarespace.com/",
    "cost": "",
    "first_start": "2026-11-18T19:00:00-05:00",
-   "last_start": "2027-02-10T19:00:00-05:00",
-   "count": 13,
+   "last_start": "2027-02-17T19:00:00-05:00",
+   "count": 14,
    "cadence": "weekly",
    "weekday": 2,
    "occurrences": [
@@ -232,6 +197,11 @@
      "start": "2027-02-10T19:00:00-05:00",
      "end": null,
      "all_day": false
+    },
+    {
+     "start": "2027-02-17T19:00:00-05:00",
+     "end": null,
+     "all_day": false
     }
    ],
    "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
@@ -262,31 +232,6 @@
    "summary": "Are you a self-proclaimed turtle looking for a slower paced walk? This is the hike for you! Join Lynne Cotter for a leisurely stroll through Dike Creek Reserve. Register here!",
    "approval": "approved",
    "decided_by": "bootstrap"
-  },
-  {
-   "id": "bd542a86c2ff",
-   "title": "Day Drinkers",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-19T18:00:00-05:00",
-   "last_start": "2026-11-19T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-19T18:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
   },
   {
    "id": "1fc8a5984799",
@@ -399,31 +344,6 @@
    "decided_by": "bootstrap"
   },
   {
-   "id": "650e2b12417f",
-   "title": "Benjamin Quinn",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-20T19:00:00-05:00",
-   "last_start": "2026-11-20T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-20T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "9017f25a648c",
    "title": "Intro to Shellfishing at Monument Beach",
    "venue": "",
@@ -479,31 +399,6 @@
    "decided_by": ""
   },
   {
-   "id": "bc7996249b9b",
-   "title": "Matt Martin",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-21T19:00:00-05:00",
-   "last_start": "2026-11-21T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-21T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "e9ddfe0fb7a7",
    "title": "Goosby Plays Brahms",
    "venue": "The Zeiterion",
@@ -550,36 +445,6 @@
     }
    ],
    "summary": "Looking for a fun way to get moving before Thanksgiving?",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "aced7a2d1b73",
-   "title": "Bob Jennings from the legendary band Beatlejuice featuring Ed Grenga",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-22T10:00:00-05:00",
-   "last_start": "2026-11-29T10:00:00-05:00",
-   "count": 2,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
    "approval": "pending",
    "decided_by": ""
   },
@@ -794,31 +659,6 @@
    "decided_by": ""
   },
   {
-   "id": "db13d4947a44",
-   "title": "Declan Kelehan",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-27T19:00:00-05:00",
-   "last_start": "2026-11-27T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-27T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
    "id": "452cf38f822a",
    "title": "Wellness Series",
    "venue": "",
@@ -911,31 +751,6 @@
     {
      "start": "2026-11-28T13:00:00-05:00",
      "end": "2026-11-28T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": ""
-  },
-  {
-   "id": "cc95b9dda4c0",
-   "title": "Merrick Brannigan",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-28T19:00:00-05:00",
-   "last_start": "2026-11-28T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-28T19:00:00-05:00",
-     "end": null,
      "all_day": false
     }
    ],
@@ -1364,6 +1179,56 @@
    "decided_by": ""
   },
   {
+   "id": "ffda6c5704a3",
+   "title": "Open House & Community Art Engagement at the Unitarian Universalist Church",
+   "venue": "Unitarian Universalist Church, 71 8th St.",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T17:00:00-05:00",
+   "last_start": "2026-12-10T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Open House & Community Art Engagement at the Unitarian Universalist Church Unitarian Universalist Church, 71 8th St. Enjoy a performance by the Children's Choir in the Main Sanctuary and marvel at one of the finest and largest existing Tiffany mosaics, installed in 1911 and recognized as a remarkabl",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "854c84a5589a",
+   "title": "Open House At Pathways to Freedom and Caricatures with Deutra",
+   "venue": "Pathways 2 Freedom Hub, 669 Purchase Street",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T17:00:00-05:00",
+   "last_start": "2026-12-10T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T20:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Open House At Pathways to Freedom and Caricatures with Deutra Pathways 2 Freedom Hub, 669 Purchase Street Experience all that Pathways to Freedom has to offer the community at their Open House, and meet Deutra, a talented artist whose work celebrates creativity, storytelling, and self-expression. Wa",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "b66835cbbecd",
    "title": "On Matter: A Northeast Regional Ceramics & Printmaking Exhibition",
    "venue": "The Star Store",
@@ -1724,6 +1589,41 @@
    "decided_by": "source trust"
   },
   {
+   "id": "32167176f284",
+   "title": "Chef Hiroki's omakase dinner",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Food & Drink",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
+   "cost": "",
+   "first_start": "2026-12-15T00:00:00-05:00",
+   "last_start": "2027-02-16T00:00:00-05:00",
+   "count": 3,
+   "cadence": "monthly",
+   "weekday": 1,
+   "occurrences": [
+    {
+     "start": "2026-12-15T00:00:00-05:00",
+     "end": null,
+     "all_day": true
+    },
+    {
+     "start": "2027-01-19T00:00:00-05:00",
+     "end": null,
+     "all_day": true
+    },
+    {
+     "start": "2027-02-16T00:00:00-05:00",
+     "end": null,
+     "all_day": true
+    }
+   ],
+   "summary": "A ten to twelve course omakase dinner. Reservations on the venue's page.",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "73059079afa2",
    "title": "Helfand Farm Trail Work Party",
    "venue": "DNRT Center @ Helfand Farm",
@@ -1824,7 +1724,7 @@
      "all_day": false
     }
    ],
-   "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Registration opens November 21.",
+   "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Register here!",
    "approval": "pending",
    "decided_by": ""
   },
