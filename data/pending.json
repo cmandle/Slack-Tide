@@ -1,124 +1,10 @@
 {
- "generated_at": "2026-11-19T19:00:52.404850+00:00",
- "pending_count": 45,
- "soon_count": 11,
+ "generated_at": "2026-11-20T03:21:39.348201+00:00",
+ "pending_count": 46,
+ "soon_count": 10,
  "approved_count": 23,
  "rejected_count": 0,
  "series": [
-  {
-   "id": "4b590850b626",
-   "title": "SCPFP November Meetup",
-   "venue": "Cork Wine and Tapas, 90 Front St, New Bedford, MA 02740, USA",
-   "town": "New Bedford",
-   "category": "Food & Drink",
-   "source_id": "south-coast-places-for-people",
-   "url": "",
-   "cost": "",
-   "first_start": "2026-11-18T18:00:00-05:00",
-   "last_start": "2026-11-18T18:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-18T18:00:00-05:00",
-     "end": "2026-11-18T19:30:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Get up-to-date information at: https://luma.com/8n8a60ur Address: Cork Wine and Tapas New Bedford, MA United States Hosted by Will Gardner",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-18T18:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "1fc8a5984799",
-   "title": "Karaoke",
-   "venue": "PLAY Arcade",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.playarcadenb.com/",
-   "cost": "",
-   "first_start": "2026-11-19T20:00:00-05:00",
-   "last_start": "2027-02-11T20:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 3,
-   "occurrences": [
-    {
-     "start": "2026-11-19T20:00:00-05:00",
-     "end": "2026-11-20T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-26T20:00:00-05:00",
-     "end": "2026-11-27T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-03T20:00:00-05:00",
-     "end": "2026-12-04T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-10T20:00:00-05:00",
-     "end": "2026-12-11T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-17T20:00:00-05:00",
-     "end": "2026-12-18T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-24T20:00:00-05:00",
-     "end": "2026-12-25T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-31T20:00:00-05:00",
-     "end": "2027-01-01T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-07T20:00:00-05:00",
-     "end": "2027-01-08T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-14T20:00:00-05:00",
-     "end": "2027-01-15T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-21T20:00:00-05:00",
-     "end": "2027-01-22T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-28T20:00:00-05:00",
-     "end": "2027-01-29T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-04T20:00:00-05:00",
-     "end": "2027-02-05T00:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-11T20:00:00-05:00",
-     "end": "2027-02-12T00:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-19T20:00:00-05:00",
-   "soon": true
-  },
   {
    "id": "9017f25a648c",
    "title": "Intro to Shellfishing at Monument Beach",
@@ -558,6 +444,93 @@
    "soon": true
   },
   {
+   "id": "1fc8a5984799",
+   "title": "Karaoke",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
+   "cost": "",
+   "first_start": "2026-11-19T20:00:00-05:00",
+   "last_start": "2027-02-11T20:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-11-19T20:00:00-05:00",
+     "end": "2026-11-20T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-26T20:00:00-05:00",
+     "end": "2026-11-27T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-03T20:00:00-05:00",
+     "end": "2026-12-04T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T20:00:00-05:00",
+     "end": "2026-12-11T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T20:00:00-05:00",
+     "end": "2026-12-18T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-24T20:00:00-05:00",
+     "end": "2026-12-25T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-31T20:00:00-05:00",
+     "end": "2027-01-01T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-07T20:00:00-05:00",
+     "end": "2027-01-08T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-14T20:00:00-05:00",
+     "end": "2027-01-15T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-21T20:00:00-05:00",
+     "end": "2027-01-22T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-28T20:00:00-05:00",
+     "end": "2027-01-29T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-04T20:00:00-05:00",
+     "end": "2027-02-05T00:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-11T20:00:00-05:00",
+     "end": "2027-02-12T00:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-26T20:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "d89f8045f686",
    "title": "Live Music: Tayla Davis",
    "venue": "Sakonnet Vineyard",
@@ -916,6 +889,60 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T10:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "c630e36e3e56",
+   "title": "Youth Services: Paint a Holiday Tree!",
+   "venue": "New Bedford Free Public Library",
+   "town": "New Bedford",
+   "category": "Family & Children",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T15:00:00-05:00",
+   "last_start": "2026-12-10T15:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T15:00:00-05:00",
+     "end": "2026-12-10T17:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Youth Services: Paint a Holiday Tree! New Bedford Main Library's Youth Services 613 Pleasant Street Visit the New Bedford Main Library's Youth Services to Paint a Holiday Tree! Kids can paint their next masterpiece with washable paint supplies available. There is no registration for this free youth ",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T15:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "e54575eb80cb",
+   "title": "Christmas on County",
+   "venue": "Rotch Duff Jones House, 396 County St",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T16:00:00-05:00",
+   "last_start": "2026-12-10T16:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T16:00:00-05:00",
+     "end": "2026-12-10T18:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Christmas on County Rotch Duff Jones House, 396 County St Celebrate the season at the RJD with beautifully decorated holiday rooms, festive fun, and the annual Cookie Challenge. Wear your ugliest holiday sweater, sample homemade cookies, and vote for your favorite. Donations are welcome. This event ",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T16:00:00-05:00",
    "soon": false
   },
   {

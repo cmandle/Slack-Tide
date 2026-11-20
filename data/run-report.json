@@ -1,44 +1,44 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 192,
-   "seconds": 4.52
+   "rows": 164,
+   "seconds": 4.41
   },
   "viva-fall-river": {
-   "rows": 237,
-   "seconds": 17.12
+   "rows": 239,
+   "seconds": 14.56
   },
   "dnrt": {
    "rows": 11,
-   "seconds": 4.52
+   "seconds": 0.24
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 5.04
+   "seconds": 0.6
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 8.17
+   "seconds": 8.12
   },
   "aha-next-aha": {
-   "rows": 12,
-   "seconds": 0.47
+   "rows": 14,
+   "seconds": 2.62
   },
   "south-coast-places-for-people": {
-   "rows": 1,
-   "seconds": 0.27
+   "rows": 0,
+   "seconds": 0.41
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.19
+   "seconds": 1.04
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.97
+   "seconds": 1.04
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 1.13
+   "seconds": 0.23
   },
   "standing-new-bedford": {
    "rows": 63,
@@ -48,15 +48,15 @@
  "errors": {
   "cisco-live-music": "ValueError: no listings found at https://www.ciscokitchenbar.com/live-music/; the selectors are probably stale"
  },
- "primary_rows": 129,
+ "primary_rows": 130,
  "dropped": {},
- "series": 68,
+ "series": 69,
  "approval": {
-  "pending": 45,
+  "pending": 46,
   "approved": 23
  },
  "by_town": {
-  "New Bedford": 42,
+  "New Bedford": 43,
   "Dartmouth": 11,
   "": 4,
   "Little Compton": 8,
@@ -65,18 +65,18 @@
   "Acushnet": 1
  },
  "by_category": {
-  "Food & Drink": 4,
   "Sports & Recreation": 3,
   "Outdoors & Nature": 15,
   "Music": 13,
-  "Arts & Theatre": 24,
+  "Arts & Theatre": 25,
   "Education & Workshops": 4,
-  "Family & Children": 4,
+  "Family & Children": 5,
+  "Food & Drink": 3,
   "Markets & Fairs": 1
  },
  "by_cadence": {
-  "once": 58,
   "weekly": 4,
+  "once": 59,
   "monthly": 4,
   "irregular": 1,
   "weekends": 1
@@ -90,10 +90,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 429,
-  "check_matched": 30,
-  "check_missed_rows": 399,
-  "check_missed_series": 94,
+  "check_total": 403,
+  "check_matched": 17,
+  "check_missed_rows": 386,
+  "check_missed_series": 92,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -101,6 +101,13 @@
     "town": "Fall River",
     "first_start": "2026-11-21T10:00:00-05:00",
     "rows": 26
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-11-25T18:30:00-05:00",
+    "rows": 13
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -114,13 +121,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-11-20T17:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Karaoke Nights!",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-11-22T21:00:00-05:00",
     "rows": 13
    },
    {
@@ -156,6 +156,13 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-19T18:30:00-05:00",
+    "rows": 13
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-11-25T19:00:00-05:00",
     "rows": 13
    },
    {
@@ -208,32 +215,18 @@
     "rows": 13
    },
    {
+    "title": "Wing Wednesday!!",
+    "venue": "St James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-25T18:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-19T18:00:00-05:00",
     "rows": 13
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-11-25T18:30:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-11-25T19:00:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-25T18:00:00-05:00",
-    "rows": 12
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
@@ -296,13 +289,6 @@
     "venue": "Munchies",
     "town": "Fall River",
     "first_start": "2026-11-27T08:00:00-05:00",
-    "rows": 3
-   },
-   {
-    "title": "Exit 27: Underground Dance Party",
-    "venue": "The Gallery Bar",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T22:00:00-05:00",
     "rows": 3
    },
    {
@@ -758,9 +744,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 102,
-  "primary_only_series": 42,
-  "coverage_ratio": 0.07
+  "primary_only_count": 103,
+  "primary_only_series": 43,
+  "coverage_ratio": 0.042
  },
  "tide_error": null
 }
