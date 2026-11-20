@@ -1,63 +1,63 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 164,
-   "seconds": 4.41
+   "rows": 160,
+   "seconds": 4.31
   },
   "viva-fall-river": {
-   "rows": 239,
-   "seconds": 14.56
+   "rows": 237,
+   "seconds": 14.32
   },
   "dnrt": {
-   "rows": 11,
-   "seconds": 0.24
+   "rows": 10,
+   "seconds": 3.97
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 0.6
+   "seconds": 0.59
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 8.12
+   "seconds": 7.34
   },
   "aha-next-aha": {
    "rows": 14,
-   "seconds": 2.62
+   "seconds": 0.39
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.41
+   "seconds": 0.61
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.04
+   "seconds": 1.14
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 1.04
+   "seconds": 0.83
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.23
+   "seconds": 0.24
   },
   "standing-new-bedford": {
-   "rows": 63,
+   "rows": 62,
    "seconds": 0.0
   }
  },
  "errors": {
   "cisco-live-music": "ValueError: no listings found at https://www.ciscokitchenbar.com/live-music/; the selectors are probably stale"
  },
- "primary_rows": 130,
+ "primary_rows": 128,
  "dropped": {},
- "series": 69,
+ "series": 68,
  "approval": {
   "pending": 46,
-  "approved": 23
+  "approved": 22
  },
  "by_town": {
   "New Bedford": 43,
-  "Dartmouth": 11,
+  "Dartmouth": 10,
   "": 4,
   "Little Compton": 8,
   "Mattapoisett": 1,
@@ -65,10 +65,10 @@
   "Acushnet": 1
  },
  "by_category": {
-  "Sports & Recreation": 3,
-  "Outdoors & Nature": 15,
   "Music": 13,
+  "Outdoors & Nature": 14,
   "Arts & Theatre": 25,
+  "Sports & Recreation": 3,
   "Education & Workshops": 4,
   "Family & Children": 5,
   "Food & Drink": 3,
@@ -76,7 +76,7 @@
  },
  "by_cadence": {
   "weekly": 4,
-  "once": 59,
+  "once": 58,
   "monthly": 4,
   "irregular": 1,
   "weekends": 1
@@ -90,10 +90,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 403,
+  "check_total": 397,
   "check_matched": 17,
-  "check_missed_rows": 386,
-  "check_missed_series": 92,
+  "check_missed_rows": 380,
+  "check_missed_series": 89,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -152,13 +152,6 @@
     "rows": 13
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-19T18:30:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Musical Bingo (weekly)",
     "venue": "The Liberal Club",
     "town": "Fall River",
@@ -208,25 +201,32 @@
     "rows": 13
    },
    {
-    "title": "Thursday Night Trivia",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-19T20:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
+    "venue": "Saint James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-11-25T18:00:00-05:00",
     "rows": 13
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-26T18:30:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-26T20:00:00-05:00",
+    "rows": 12
+   },
+   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
-    "first_start": "2026-11-19T18:00:00-05:00",
-    "rows": 13
+    "first_start": "2026-11-26T18:00:00-05:00",
+    "rows": 12
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
@@ -418,20 +418,6 @@
     "rows": 1
    },
    {
-    "title": "Author Book Talk Jen Rose Smith",
-    "venue": "",
-    "town": "New Bedford",
-    "first_start": "2026-11-19T08:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Author Book Talk: Jen Rose Smith",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-19T12:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Author Book Talk: Steve Mentz",
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
@@ -443,13 +429,6 @@
     "venue": "Gallery X",
     "town": "New Bedford",
     "first_start": "2026-11-25T18:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Beyond the Page: Exploring the Art of the Book",
-    "venue": "161 William St., New Bedford, MA02740",
-    "town": "New Bedford",
-    "first_start": "2026-11-19T17:00:00-05:00",
     "rows": 1
    },
    {
@@ -733,7 +712,7 @@
     "rows": 1
    },
    {
-    "title": "Yuletide Faire & Holiday Market",
+    "title": "Yuletide Faire and Holiday Market",
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-12-05T10:00:00-05:00",
@@ -744,9 +723,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 103,
+  "primary_only_count": 102,
   "primary_only_series": 43,
-  "coverage_ratio": 0.042
+  "coverage_ratio": 0.043
  },
  "tide_error": null
 }
