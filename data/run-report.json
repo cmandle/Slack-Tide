@@ -1,47 +1,47 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 161,
-   "seconds": 4.02
+   "rows": 156,
+   "seconds": 3.71
   },
   "viva-fall-river": {
-   "rows": 239,
-   "seconds": 14.01
+   "rows": 230,
+   "seconds": 12.41
   },
   "dnrt": {
-   "rows": 10,
-   "seconds": 0.26
+   "rows": 9,
+   "seconds": 4.16
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 7.96
+   "seconds": 5.17
   },
   "aha-next-aha": {
-   "rows": 14,
-   "seconds": 3.26
+   "rows": 16,
+   "seconds": 2.07
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 2.92
+   "seconds": 0.35
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 0.74
+   "seconds": 0.76
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.9
+   "seconds": 0.14
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.85
+   "seconds": 0.73
   },
   "standing-new-bedford": {
-   "rows": 62,
+   "rows": 61,
    "seconds": 0.0
   }
  },
@@ -50,34 +50,35 @@
  },
  "primary_rows": 128,
  "dropped": {},
- "series": 68,
+ "series": 69,
  "approval": {
-  "pending": 46,
-  "approved": 22
+  "pending": 48,
+  "approved": 21
  },
  "by_town": {
-  "New Bedford": 43,
-  "Dartmouth": 10,
   "": 4,
   "Little Compton": 8,
+  "New Bedford": 44,
   "Mattapoisett": 1,
+  "Dartmouth": 9,
   "Wareham": 1,
-  "Acushnet": 1
+  "Acushnet": 2
  },
  "by_category": {
+  "Outdoors & Nature": 13,
   "Music": 13,
-  "Outdoors & Nature": 14,
-  "Arts & Theatre": 25,
+  "Arts & Theatre": 26,
   "Sports & Recreation": 3,
   "Education & Workshops": 4,
   "Family & Children": 5,
   "Food & Drink": 3,
-  "Markets & Fairs": 1
+  "Markets & Fairs": 1,
+  "Faith & Spiritual": 1
  },
  "by_cadence": {
-  "weekly": 4,
-  "once": 58,
+  "once": 59,
   "monthly": 4,
+  "weekly": 4,
   "irregular": 1,
   "weekends": 1
  },
@@ -90,10 +91,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 400,
+  "check_total": 386,
   "check_matched": 17,
-  "check_missed_rows": 383,
-  "check_missed_series": 89,
+  "check_missed_rows": 369,
+  "check_missed_series": 85,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -107,20 +108,6 @@
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
     "first_start": "2026-11-25T18:30:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Figure Drawing Open Studio",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T17:30:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Friday Night Volleyball (weekly)",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-11-20T17:00:00-05:00",
     "rows": 13
    },
    {
@@ -180,20 +167,6 @@
     "rows": 13
    },
    {
-    "title": "Primo After Dark - Weekly DJ Sets",
-    "venue": "Primo on Water Street",
-    "town": "Fall River",
-    "first_start": "2026-11-20T20:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Sketchbook Club",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T18:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Tai Chi at Buttonwood Park",
     "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
@@ -229,11 +202,32 @@
     "rows": 13
    },
    {
-    "title": "Planetarium Show: Death of the Dinosaurs",
-    "venue": "BMC Durfee High School",
+    "title": "Figure Drawing Open Studio",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-27T17:30:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Friday Night Volleyball (weekly)",
+    "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
-    "first_start": "2026-11-20T16:00:00-05:00",
-    "rows": 8
+    "first_start": "2026-11-27T17:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Primo After Dark - Weekly DJ Sets",
+    "venue": "Primo on Water Street",
+    "town": "Fall River",
+    "first_start": "2026-11-27T20:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Sketchbook Club",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-27T18:00:00-05:00",
+    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -313,10 +307,10 @@
     "rows": 3
    },
    {
-    "title": "Rhythm Is Going To Ge You",
-    "venue": "Fort Taber Community Center",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T19:00:00-05:00",
+    "title": "Planetarium Show: Death of the Dinosaurs",
+    "venue": "BMC Durfee High School",
+    "town": "Fall River",
+    "first_start": "2026-11-21T09:00:00-05:00",
     "rows": 3
    },
    {
@@ -352,6 +346,13 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-12-18T20:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Rhythm Is Going To Ge You",
+    "venue": "Fort Taber Community Center",
+    "town": "New Bedford",
+    "first_start": "2026-12-18T19:00:00-05:00",
     "rows": 2
    },
    {
@@ -457,13 +458,6 @@
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
     "first_start": "2026-12-11T17:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Dock-u-mentary: Truth - Fishing Crisis or Mismanagement?",
-    "venue": "New Bedford Whaling National Historical Park Theater",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T19:00:00-05:00",
     "rows": 1
    },
    {
@@ -593,13 +587,6 @@
     "rows": 1
    },
    {
-    "title": "New Ecologies: May Babcock",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-20T00:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "North Pole Live!",
     "venue": "777 Elsbree Street",
     "town": "Fall River",
@@ -621,13 +608,6 @@
     "rows": 1
    },
    {
-    "title": "Peter Wolf and The Midnight Travelers - Friday, Nov. 20",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-11-20T20:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Ronnie Earl & the Broadcasters",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -639,13 +619,6 @@
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
     "first_start": "2026-12-28T09:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Senior Social",
-    "venue": "Greater Fall River Re-CREATION",
-    "town": "Fall River",
-    "first_start": "2026-11-20T12:00:00-05:00",
     "rows": 1
    },
    {
@@ -724,8 +697,8 @@
    "New Bedford"
   ],
   "primary_only_count": 102,
-  "primary_only_series": 43,
-  "coverage_ratio": 0.043
+  "primary_only_series": 44,
+  "coverage_ratio": 0.044
  },
  "tide_error": null
 }

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-21T03:14:43.849812+00:00",
- "pending_count": 46,
- "soon_count": 11,
- "approved_count": 22,
+ "generated_at": "2026-11-21T17:35:54.306292+00:00",
+ "pending_count": 48,
+ "soon_count": 13,
+ "approved_count": 21,
  "rejected_count": 0,
  "series": [
   {
@@ -30,38 +30,6 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-21T00:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "fceaea0689fd",
-   "title": "Live Music: FrankenPhil",
-   "venue": "Sakonnet Vineyard",
-   "town": "Little Compton",
-   "category": "Music",
-   "source_id": "sakonnet-vineyard",
-   "url": "https://www.sakonnetwine.com/events/live-music-frankenphil-1",
-   "cost": "",
-   "first_start": "2026-11-21T13:00:00-05:00",
-   "last_start": "2026-12-19T13:00:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 5,
-   "occurrences": [
-    {
-     "start": "2026-11-21T13:00:00-05:00",
-     "end": "2026-11-21T16:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-19T13:00:00-05:00",
-     "end": "2026-12-19T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-21T13:00:00-05:00",
    "soon": true
   },
   {
@@ -442,17 +410,12 @@
    "source_id": "standing-new-bedford",
    "url": "https://www.playarcadenb.com/",
    "cost": "",
-   "first_start": "2026-11-19T20:00:00-05:00",
+   "first_start": "2026-11-26T20:00:00-05:00",
    "last_start": "2027-02-18T20:00:00-05:00",
-   "count": 14,
+   "count": 13,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
-    {
-     "start": "2026-11-19T20:00:00-05:00",
-     "end": "2026-11-20T00:00:00-05:00",
-     "all_day": false
-    },
     {
      "start": "2026-11-26T20:00:00-05:00",
      "end": "2026-11-27T00:00:00-05:00",
@@ -577,7 +540,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-28T09:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "1bf2b59ba8ce",
@@ -604,7 +567,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-28T10:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "0f566c0e4bb0",
@@ -631,7 +594,7 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-28T13:00:00-05:00",
-   "soon": false
+   "soon": true
   },
   {
    "id": "23b0b58d6454",
@@ -995,33 +958,6 @@
    "soon": false
   },
   {
-   "id": "ffda6c5704a3",
-   "title": "Open House & Community Art Engagement at the Unitarian Universalist Church",
-   "venue": "Unitarian Universalist Church, 71 8th St.",
-   "town": "New Bedford",
-   "category": "Arts & Theatre",
-   "source_id": "aha-next-aha",
-   "url": "https://ahanewbedford.org/next-aha/",
-   "cost": "",
-   "first_start": "2026-12-10T17:00:00-05:00",
-   "last_start": "2026-12-10T17:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-10T17:00:00-05:00",
-     "end": "2026-12-10T20:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Open House & Community Art Engagement at the Unitarian Universalist Church Unitarian Universalist Church, 71 8th St. Enjoy a performance by the Children's Choir in the Main Sanctuary and marvel at one of the finest and largest existing Tiffany mosaics, installed in 1911 and recognized as a remarkabl",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-12-10T17:00:00-05:00",
-   "soon": false
-  },
-  {
    "id": "854c84a5589a",
    "title": "Open House At Pathways to Freedom and Caricatures with Deutra",
    "venue": "Pathways 2 Freedom Hub, 669 Purchase Street",
@@ -1137,6 +1073,87 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T17:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "1923b818e08d",
+   "title": "Follow the Carrolers!- Traditional American Songs- AHA! Moment",
+   "venue": "Beauty Union 338 Acushnet Ave",
+   "town": "Acushnet",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T18:00:00-05:00",
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Follow the Carrolers!- Traditional American Songs- AHA! Moment Beauty Union 338 Acushnet Ave The Multi-Cultural Trio: Many Voices, One Community Stop by Beauty Union, a salon and collective of beauty artists in downtown New Bedford, and enjoy the sounds of the season and follow along with the Trio. ",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "2bb98af6d918",
+   "title": "Follow the Carrolers!- Songs of Africa- AHA! Moment",
+   "venue": "Bento's Bar and Grille",
+   "town": "New Bedford",
+   "category": "Arts & Theatre",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T18:00:00-05:00",
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Follow the Carrolers!- Songs of Africa- AHA! Moment Bento's Bar and Grille, 555 Pleasant St. Follow the Carrollers From Bento's! Gather with friends and neighbors for an inspiring holiday musical presentation featuring the renowned music ministry of Pastor Lauri Gomes and the congregation of Union B",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T18:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "8ac513a00ac8",
+   "title": "Follow The Carrolers! - Puerto Rican Traditions- AHA! Moment",
+   "venue": "Unitarian Universalist Church, 71 8th St.",
+   "town": "New Bedford",
+   "category": "Faith & Spiritual",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T18:00:00-05:00",
+   "last_start": "2026-12-10T18:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": "2026-12-10T19:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Follow The Carrolers! - Puerto Rican Traditions- AHA! Moment Unitarian Universalist Church, 71 8th St. Follow the Carrollers from First Unitarian Church! Join the Puerto Rican Holiday Parranda at 6:00 pm led by Angie Vargas and be part of this lively musical procession as it spreads music, culture, ",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-10T18:00:00-05:00",
    "soon": false
   },
   {
@@ -1390,6 +1407,38 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-17T09:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "fceaea0689fd",
+   "title": "Live Music: FrankenPhil",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Music",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-frankenphil-1",
+   "cost": "",
+   "first_start": "2026-11-21T13:00:00-05:00",
+   "last_start": "2026-12-19T13:00:00-05:00",
+   "count": 2,
+   "cadence": "monthly",
+   "weekday": 5,
+   "occurrences": [
+    {
+     "start": "2026-11-21T13:00:00-05:00",
+     "end": "2026-11-21T16:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-19T13:00:00-05:00",
+     "end": "2026-12-19T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-12-19T13:00:00-05:00",
    "soon": false
   },
   {
