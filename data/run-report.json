@@ -1,44 +1,44 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 160,
-   "seconds": 4.31
+   "rows": 161,
+   "seconds": 4.02
   },
   "viva-fall-river": {
-   "rows": 237,
-   "seconds": 14.32
+   "rows": 239,
+   "seconds": 14.01
   },
   "dnrt": {
    "rows": 10,
-   "seconds": 3.97
+   "seconds": 0.26
   },
   "zeiterion": {
    "rows": 23,
-   "seconds": 0.59
+   "seconds": 0.6
   },
   "buzzards-bay-coalition": {
    "rows": 5,
-   "seconds": 7.34
+   "seconds": 7.96
   },
   "aha-next-aha": {
    "rows": 14,
-   "seconds": 0.39
+   "seconds": 3.26
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.61
+   "seconds": 2.92
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.14
+   "seconds": 0.74
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.83
+   "seconds": 0.9
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.24
+   "seconds": 0.85
   },
   "standing-new-bedford": {
    "rows": 62,
@@ -90,9 +90,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 397,
+  "check_total": 400,
   "check_matched": 17,
-  "check_missed_rows": 380,
+  "check_missed_rows": 383,
   "check_missed_series": 89,
   "check_missed": [
    {
@@ -152,6 +152,13 @@
     "rows": 13
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-11-26T18:30:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Musical Bingo (weekly)",
     "venue": "The Liberal Club",
     "town": "Fall River",
@@ -201,6 +208,13 @@
     "rows": 13
    },
    {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-11-26T20:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Wing Wednesday!!",
     "venue": "Saint James Irish Pub",
     "town": "Fall River",
@@ -208,25 +222,11 @@
     "rows": 13
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-26T18:30:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-26T20:00:00-05:00",
-    "rows": 12
-   },
-   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-26T18:00:00-05:00",
-    "rows": 12
+    "rows": 13
    },
    {
     "title": "Planetarium Show: Death of the Dinosaurs",
