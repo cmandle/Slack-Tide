@@ -31,7 +31,7 @@ class Series:
     title: str
     venue: str
     town: str
-    category: str
+    category: str              # the primary category: categories[0], or "" when unclassified
     source_id: str
     url: str
     cost: str
@@ -42,9 +42,15 @@ class Series:
     weekday: Optional[int]     # 0 = Monday, for weekly series
     occurrences: list[dict]    # [{start, end, all_day}]
     summary: str = ""          # the first occurrence's description, trimmed, for the reviewer
+    categories: list[str] = field(default_factory=list)   # every category, primary first; the classifier gives one, an approver may set several
     approval: str = "pending"  # pending | approved | rejected, set by approval.apply
     decided_by: str = ""       # the approver's name, or "source trust"
-    category_by: str = ""      # the approver who set the category when it overrides the classifier, else ""
+    # The approver's edits (approval.apply_edits): the overrides in force, keyed as in
+    # config.EDITABLE_FIELDS; the pipeline's own values for those keys; who made them and when.
+    edits: dict = field(default_factory=dict)
+    original: dict = field(default_factory=dict)
+    edited_by: str = ""
+    edited_on: str = ""
 
     def to_dict(self) -> dict:
         d = asdict(self)

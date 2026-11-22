@@ -89,6 +89,38 @@ def canonical_category(name: str) -> str:
             return c
     return CATEGORY_RENAMES.get(s, "")
 
+def canonical_categories(values) -> list[str]:
+    """A series' category list from names as written: a list, or one string with commas. Each
+    name goes through canonical_category; unknown names and repeats are dropped, order kept.
+    The first entry is the primary category (the card colour, the illustration, the tile)."""
+    if isinstance(values, str):
+        values = values.split(",")
+    out: list[str] = []
+    for v in values or []:
+        c = canonical_category(v)
+        if c and c not in out:
+            out.append(c)
+    return out[:len(CATEGORIES)]
+
+def canonical_town(name: str) -> str:
+    """One of TOWNS for a town as written, case-insensitively, aliases included; else ''."""
+    s = str(name or "").strip()
+    if not s:
+        return ""
+    for t in TOWNS:
+        if s.lower() == t.lower():
+            return t
+    return TOWN_ALIASES.get(s.lower(), "")
+
+# What an approver may change on a series through an approvals.yaml entry (approval.apply_edits):
+# the display fields, and the category list. Keys are the names the entry, the admin page, the
+# Worker and `slacktide approve --set` all use; the value is the series record field each lands on.
+# Every one is safe to edit: the overrides are applied after the series id is computed, so the id
+# (source, title, venue as the source spells them) never moves and the approval holds.
+EDITABLE_FIELDS = {"title": "title", "venue": "venue", "town": "town", "description": "summary",
+                   "cost": "cost", "url": "url", "categories": "categories"}
+EDIT_MAX_LENGTH = {"title": 300, "venue": 300, "town": 60, "description": 2000, "cost": 120, "url": 500}
+
 # Municipal feeds carry public holidays as events. These are dropped.
 HOLIDAY_TITLES = {
     "new year's day", "new years day", "martin luther king day", "martin luther king jr. day",

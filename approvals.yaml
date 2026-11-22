@@ -2,8 +2,9 @@
 # Written by the admin page's Queue tab (/admin/) and by `slacktide approve` / `slacktide reject`.
 # Append, never rewrite history: a change of mind is a new entry below the old one.
 # title and venue are for the reader; matching is by id alone.
-# category, when present, is the approver's correction of the classifier (one of the seven in
-# config.CATEGORIES) and is applied on every run; an entry without it leaves the classifier in charge.
+# edits, when present, are the approver's overrides of what the pipeline read (title, venue, town,
+# description, cost, url, categories: the first category is the primary) and are laid over the
+# series on every run; an entry without them hands every field back to the pipeline and the classifier.
 - id: ee5aab63f527
   status: approved
   by: bootstrap

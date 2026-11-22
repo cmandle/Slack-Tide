@@ -10,11 +10,15 @@ new dates, but a retitled or moved series is a new id and comes back to the queu
 ``review: auto`` in sources.yaml publish without a decision; a recorded decision still wins, so a
 rejected series from such a source stays rejected. The Zeiterion was the first, 2026-11-08.
 
-An entry may also carry ``category``, one of config.CATEGORIES (since 2026-11-22). It is the
-approver's correction of the classifier: ``apply`` sets it on the series on every run, so it
-survives reclassification, and because the id does not hash the category it never sends an
-approved series back through the queue. The same last-entry-wins rule applies: a later entry
-for the id without a category hands the series back to the classifier.
+An entry may also carry ``edits`` (since 2026-11-22): the approver's overrides of what the
+pipeline read, keyed as in config.EDITABLE_FIELDS (title, venue, town, description, cost, url,
+categories). ``apply`` lays them over the series on every run, after normalisation and
+classification, so they survive re-ingest and reclassification; and because the id is computed
+from the source's own title and venue before the edits are applied (series.py), an edit never
+sends an approved series back through the queue. The same last-entry-wins rule applies to the
+edits: a later entry for the id without them hands every field back to the pipeline. The
+single ``category`` key of the first day of the seven categories is still read as
+``edits: {categories: [category]}``.
 """
 from __future__ import annotations
 from collections import Counter
@@ -22,7 +26,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import json
 import yaml
-from .config import CATEGORIES, canonical_category
+from .config import CATEGORIES, EDITABLE_FIELDS, EDIT_MAX_LENGTH, canonical_categories, canonical_town
 
 ROOT = Path(__file__).resolve().parents[2]
 APPROVALS = ROOT / "approvals.yaml"
@@ -33,9 +37,57 @@ HEADER = """# Approval decisions. One entry per series id; the last entry for an
 # Written by the admin page's Queue tab (/admin/) and by `slacktide approve` / `slacktide reject`.
 # Append, never rewrite history: a change of mind is a new entry below the old one.
 # title and venue are for the reader; matching is by id alone.
-# category, when present, is the approver's correction of the classifier (one of the seven in
-# config.CATEGORIES) and is applied on every run; an entry without it leaves the classifier in charge.
+# edits, when present, are the approver's overrides of what the pipeline read (title, venue, town,
+# description, cost, url, categories: the first category is the primary) and are laid over the
+# series on every run; an entry without them hands every field back to the pipeline and the classifier.
 """
+
+
+def clean_edits(raw, strict: bool = False) -> dict:
+    """The edit record as the pipeline applies it: known keys only, strings stripped, the town one
+    of config.TOWNS, the categories canonical and in order, a link starting with http. An empty
+    value is no override. With `strict`, anything dropped raises ValueError instead (what the CLI
+    wants); otherwise a bad value is dropped and the rest of the entry kept (what load wants)."""
+    if raw is None:
+        return {}
+    if not isinstance(raw, dict):
+        if strict:
+            raise ValueError("edits must be a mapping of field to value")
+        return {}
+    out: dict = {}
+    for key, value in raw.items():
+        if key not in EDITABLE_FIELDS:
+            if strict:
+                raise ValueError(f"{key!r} is not editable; the fields are {', '.join(EDITABLE_FIELDS)}")
+            continue
+        if key == "categories":
+            cats = canonical_categories(value)
+            asked = [v for v in (value.split(",") if isinstance(value, str) else (value or [])) if str(v).strip()]
+            if strict and len(cats) != len(dict.fromkeys(asked)):
+                raise ValueError(f"categories must be from {', '.join(CATEGORIES)}, got {value!r}")
+            if cats:
+                out["categories"] = cats
+            continue
+        s = str(value or "").strip()
+        if not s:
+            continue
+        if len(s) > EDIT_MAX_LENGTH[key]:
+            if strict:
+                raise ValueError(f"{key} is longer than {EDIT_MAX_LENGTH[key]} characters")
+            continue
+        if key == "town":
+            town = canonical_town(s)
+            if not town:
+                if strict:
+                    raise ValueError(f"town must be one of the fifteen in config.TOWNS, got {s!r}")
+                continue
+            s = town
+        if key == "url" and not s.lower().startswith(("http://", "https://")):
+            if strict:
+                raise ValueError("url must start with http:// or https://")
+            continue
+        out[key] = s
+    return out
 
 
 def load(path: Path = APPROVALS) -> dict[str, dict]:
@@ -53,13 +105,15 @@ def load(path: Path = APPROVALS) -> dict[str, dict]:
         if status not in STATUSES:
             continue
         entry = {**e, "id": str(e["id"]), "status": status}
-        # A category the approver wrote under an old name still lands on one of the seven; one
-        # that names nothing we know is dropped from the entry, not the entry from the file.
-        cat = canonical_category(entry.get("category") or "")
-        if cat:
-            entry["category"] = cat
-        else:
-            entry.pop("category", None)
+        # The edits as the pipeline will apply them. A value that names nothing we know (a
+        # category under an old name still lands on one of the seven) is dropped from the record,
+        # not the entry from the file. The single `category` key of the first entries is read as
+        # a one-item category list unless the entry's edits name their own.
+        edits = clean_edits(entry.pop("edits", None))
+        legacy = entry.pop("category", None)
+        if legacy and "categories" not in edits:
+            edits.update(clean_edits({"categories": legacy}))
+        entry["edits"] = edits
         out[entry["id"]] = entry
     return out
 
@@ -74,33 +128,52 @@ def decide(series_id: str, source_id: str, decisions: dict[str, dict], sources: 
     return "pending", ""
 
 
-def category_override(series_id: str, decisions: dict[str, dict]) -> tuple[str, str]:
-    """(category, set_by) when the last entry for the id carries a category, else ("", "")."""
+def edits_for(series_id: str, decisions: dict[str, dict]) -> tuple[dict, str, str]:
+    """(edits, by, date) from the last entry for the id; ({}, "", "") when it carries none."""
     d = decisions.get(series_id) or {}
-    cat = d.get("category") or ""
-    return (cat, str(d.get("by") or "")) if cat else ("", "")
+    edits = d.get("edits") or {}
+    if not edits:
+        return {}, "", ""
+    return edits, str(d.get("by") or ""), str(d.get("date") or "")
+
+
+def apply_edits(d: dict, edits: dict, by: str = "", on: str = "") -> None:
+    """Lay the approver's edits over one series record (a dict, or vars() of a Series) in place.
+
+    The pipeline's own value of every overridden field is kept in `original`, so the record can
+    be re-read and re-applied any number of times (reapply runs on data/events.json, which already
+    carries the last application) and a later entry without an edit restores the field. The
+    category list is the classifier's single category unless the edits set one; `category` is
+    always its first entry, for everything that still reads one."""
+    orig = dict(d.get("original") or {})
+    for key, fld in EDITABLE_FIELDS.items():
+        if key == "categories":
+            base = orig["categories"] if "categories" in orig else list(d.get("categories") or ([d["category"]] if d.get("category") else []))
+        else:
+            base = orig[key] if key in orig else d.get(fld, "")
+        if key in edits:
+            orig[key] = base
+            d[fld] = list(edits[key]) if key == "categories" else edits[key]
+        else:
+            orig.pop(key, None)
+            d[fld] = base
+    d["category"] = d["categories"][0] if d["categories"] else ""
+    d["original"] = orig
+    d["edits"] = dict(edits)
+    d["edited_by"] = by if edits else ""
+    d["edited_on"] = on if edits else ""
 
 
 def apply(series: list, decisions: dict[str, dict], sources: dict[str, dict]) -> Counter:
-    """Set approval, decided_by and, where an entry corrects it, category on Series objects (or
-    series dicts) in place. Runs on every ingest and on reapply, so a corrected category outlives
-    the classifier's next opinion."""
+    """Set approval and decided_by, and lay the entry's edits over the record, on Series objects
+    (or series dicts) in place. Runs on every ingest and on reapply, so an edit or a corrected
+    category outlives the pipeline's next reading."""
     counts: Counter = Counter()
     for s in series:
-        if isinstance(s, dict):
-            status, by = decide(s["id"], s["source_id"], decisions, sources)
-            s["approval"], s["decided_by"] = status, by
-            cat, cat_by = category_override(s["id"], decisions)
-            if cat:
-                s["category"] = cat
-            s["category_by"] = cat_by
-        else:
-            status, by = decide(s.id, s.source_id, decisions, sources)
-            s.approval, s.decided_by = status, by
-            cat, cat_by = category_override(s.id, decisions)
-            if cat:
-                s.category = cat
-            s.category_by = cat_by
+        d = s if isinstance(s, dict) else vars(s)
+        status, by = decide(d["id"], d["source_id"], decisions, sources)
+        d["approval"], d["decided_by"] = status, by
+        apply_edits(d, *edits_for(d["id"], decisions))
         counts[status] += 1
     return counts
 
@@ -139,16 +212,20 @@ def pending_payload(series: list, now: datetime | None = None) -> dict:
 
 
 def record(ids: list[str], status: str, by: str, series_by_id: dict[str, dict] | None = None,
-           note: str = "", on: date | None = None, path: Path = APPROVALS, category: str = "") -> int:
-    """Append one entry per id. Returns how many were written. `category` corrects the
-    classifier for every id in the call; approving an already approved series with a category
-    is the way to fix a live listing's category."""
+           note: str = "", on: date | None = None, path: Path = APPROVALS, category: str = "",
+           edits: dict | None = None) -> int:
+    """Append one entry per id. Returns how many were written. `edits` (config.EDITABLE_FIELDS)
+    and `category` (one name, or several with commas, the first primary) are laid over every id
+    in the call on every run; approving an already approved series with them is the way to edit
+    a live listing. A bad field or value raises ValueError before anything is written."""
     if status not in STATUSES:
         raise ValueError(f"status must be one of {STATUSES}")
     if not by:
         raise ValueError("a decision needs a name (--by)")
-    if category and category not in CATEGORIES:
-        raise ValueError(f"category must be one of {', '.join(CATEGORIES)}")
+    edits = dict(edits or {})
+    if category:
+        edits["categories"] = category
+    edits = clean_edits(edits, strict=True)
     series_by_id = series_by_id or {}
     existing = yaml.safe_load(path.read_text(encoding="utf-8")) if path.exists() else None
     entries = existing if isinstance(existing, list) else []
@@ -160,8 +237,8 @@ def record(ids: list[str], status: str, by: str, series_by_id: dict[str, dict] |
             entry["title"] = s["title"]
         if s.get("venue"):
             entry["venue"] = s["venue"]
-        if category:
-            entry["category"] = category
+        if edits:
+            entry["edits"] = edits
         if note:
             entry["note"] = note
         entries.append(entry)

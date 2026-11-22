@@ -11,9 +11,16 @@
   var CAL_SHOW = 3;
   var state = { town: "", cat: "" };
 
+  /* A listing carries every category it is in as data-cats (slugs, space-separated; the
+     primary alone is data-cat), so a tile matches it under any of them. */
+  function hasCat(el, cat) {
+    var cats = el.getAttribute("data-cats");
+    if (cats === null) cats = el.getAttribute("data-cat") || "";
+    return (" " + cats + " ").indexOf(" " + cat + " ") >= 0;
+  }
   function matches(el) {
     return (!state.town || el.getAttribute("data-town") === state.town) &&
-           (!state.cat || el.getAttribute("data-cat") === state.cat);
+           (!state.cat || hasCat(el, state.cat));
   }
 
   function applyFilters() {

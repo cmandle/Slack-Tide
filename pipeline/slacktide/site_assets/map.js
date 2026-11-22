@@ -102,15 +102,21 @@
   }
 
   /* Places and their listings follow the town select and the category tiles: a listing shows
-     when its family matches, a place shows when it is in the town and has a listing showing. The
-     first SHOW listings show, the rest fold behind "+N more" until the place is expanded. */
+     when any of its categories (data-cats) matches, a place shows when it is in the town and has
+     a listing showing. The first SHOW listings show, the rest fold behind "+N more" until the
+     place is expanded. */
+  function hasCat(el, cat) {
+    var cats = el.getAttribute("data-cats");
+    if (cats === null) cats = el.getAttribute("data-cat") || "";
+    return (" " + cats + " ").indexOf(" " + cat + " ") >= 0;
+  }
   function applyPlaceFilters(redraw) {
     var shown = 0;
     places.forEach(function (p) {
       var townOk = !state.town || p.getAttribute("data-town") === state.town;
       var expanded = p.hasAttribute("data-expanded"), n = 0;
       Array.prototype.forEach.call(p.querySelectorAll(".place-ev"), function (e) {
-        var on = townOk && (!state.cat || e.getAttribute("data-cat") === state.cat);
+        var on = townOk && (!state.cat || hasCat(e, state.cat));
         e.hidden = !on;
         if (on) { n++; if (!expanded && n > SHOW) e.setAttribute("data-folded", ""); else e.removeAttribute("data-folded"); }
       });

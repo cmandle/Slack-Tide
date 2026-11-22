@@ -5,7 +5,7 @@ from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from .config import TZ, CATEGORIES, load_sources, load_venues
+from .config import TZ, CATEGORIES, EDITABLE_FIELDS, load_sources, load_venues
 from .connectors import for_source
 from .normalize import normalize, venue_aliases
 from .series import collapse
@@ -144,6 +144,20 @@ def cmd_pending(args):
         print(f"{flag}{r['id']}  {when:16}  {r['title'][:50]:50}  {where}")
     return 0
 
+def parse_sets(pairs: list[str] | None) -> dict:
+    """`--set field=value` arguments into an edit record: {"title": "...", "categories": "A,B"}.
+    The field names are config.EDITABLE_FIELDS; approval.record checks the values."""
+    edits: dict = {}
+    for pair in pairs or []:
+        if "=" not in pair:
+            raise SystemExit(f"--set wants field=value, got {pair!r}")
+        field, value = pair.split("=", 1)
+        field = field.strip().lower()
+        if field not in EDITABLE_FIELDS:
+            raise SystemExit(f"--set {field}: not editable; the fields are {', '.join(EDITABLE_FIELDS)}")
+        edits[field] = value.strip()
+    return edits
+
 def _decide(args, status):
     events = _events()
     by_id = {s["id"]: s for s in events["series"]}
@@ -157,9 +171,14 @@ def _decide(args, status):
     ids = [i for i in ids if i in by_id]
     if not ids:
         print("nothing to decide"); return 1
-    n = approval.record(ids, status, args.by, by_id, note=args.note or "", category=args.category or "")
+    edits = parse_sets(getattr(args, "set", None))
+    try:
+        n = approval.record(ids, status, args.by, by_id, note=args.note or "", category=args.category or "", edits=edits)
+    except ValueError as e:
+        raise SystemExit(str(e))
     counts = approval.reapply(DATA, _sources_by_id())
-    cat = f" as {args.category}" if args.category else ""
+    what = {**edits, **({"categories": args.category} if args.category else {})}
+    cat = " with " + ", ".join(f"{k}={v}" for k, v in what.items()) if what else ""
     print(f"recorded {n} {status}{cat}; now {counts.get('approved', 0)} approved, {counts.get('pending', 0)} pending, "
           f"{counts.get('rejected', 0)} rejected. Commit approvals.yaml; the next ingest run publishes.")
     return 0
@@ -195,9 +214,12 @@ def main(argv=None):
         d.add_argument("ids", nargs="*", help="series ids from `slacktide pending`")
         d.add_argument("--by", required=True, help="who is deciding")
         d.add_argument("--note", help="a line for the record")
-        d.add_argument("--category", choices=CATEGORIES, metavar="CATEGORY",
-                       help=f"set the category, overriding the classifier on every run; one of {', '.join(CATEGORIES)}. "
-                            "Approving a live series again with --category is how its category is corrected")
+        d.add_argument("--category", metavar="CATEGORY[,CATEGORY...]",
+                       help=f"set the categories, overriding the classifier on every run; from {', '.join(CATEGORIES)}, "
+                            "the first one primary. Approving a live series again with --category is how its category is corrected")
+        d.add_argument("--set", action="append", metavar="FIELD=VALUE",
+                       help=f"override a field on every run (repeatable); one of {', '.join(EDITABLE_FIELDS)}. The series "
+                            "keeps its id, so it stays approved. An entry without --set or --category hands the fields back")
         d.add_argument("--all-pending", action="store_true", help="every series currently pending")
         d.set_defaults(fn=fn)
     sub.add_parser("apply", help="re-apply approvals.yaml to data/ without fetching").set_defaults(fn=cmd_apply)
