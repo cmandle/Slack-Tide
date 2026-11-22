@@ -1,0 +1,34 @@
+# The Slack Tide admin service. Deployed by .github/workflows/deploy-worker.yml on every push to
+# main that touches worker/, or by hand with `npx wrangler deploy` from this folder.
+#
+# Secrets (never in this file): GITHUB_TOKEN, a fine-grained personal access token for
+# cmandle/Slack-Tide only, Contents read and write and Actions read and write. Set it with
+# `npx wrangler secret put GITHUB_TOKEN` or in the dashboard (Workers & Pages, slack-tide-admin,
+# Settings, Variables and secrets).
+#
+# Variables below are plain values and are safe to keep here. ACCESS_AUD is the application
+# audience tag of "Slack-Tide Admin" in Zero Trust (also recorded in docs/CLOUDFLARE-ACCESS.md,
+# section 7); it changes only if that application is deleted and recreated.
+
+name = "slack-tide-admin"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+preview_urls = false
+
+# The route makes the Worker answer only the API path; the rest of /admin/ stays with GitHub
+# Pages. Access fronts /admin/* on this hostname, so every request here carries the visitor's
+# identity. `wrangler deploy` creates the route if the API token may edit Workers routes on the
+# zone; otherwise add it by hand (Workers & Pages, slack-tide-admin, Settings, Domains & Routes).
+routes = [
+  { pattern = "www.slack-tide.org/admin/api/*", zone_name = "slack-tide.org" },
+]
+
+[vars]
+ACCESS_TEAM = "slack-tide"
+ACCESS_AUD = "030ca921a895eca1f4822f5e775e579e7d9182f2ba1a488289218e6338aa5d0f"
+GITHUB_REPO = "cmandle/Slack-Tide"
+INGEST_WORKFLOW = "ingest.yml"
+
+[observability]
+enabled = true

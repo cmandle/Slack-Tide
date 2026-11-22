@@ -1,0 +1,59 @@
+# Deploys the admin service (worker/) to Cloudflare with `wrangler deploy` whenever a push to main
+# touches it. The Worker answers www.slack-tide.org/admin/api/* for the admin page.
+#
+# What a human sets up once, in this order (details in docs/CLOUDFLARE-ACCESS.md, section 7):
+#
+#   1. Cloudflare dashboard, My Profile, API Tokens, Create Token, template "Edit Cloudflare
+#      Workers", scoped to the account and the slack-tide.org zone. Copy the token.
+#   2. GitHub, cmandle/Slack-Tide, Settings, Secrets and variables, Actions, New repository secret:
+#      CLOUDFLARE_API_TOKEN = that token. This is the only secret this workflow reads.
+#   3. GitHub, Settings, Developer settings, Fine-grained personal access tokens: a token for
+#      cmandle/Slack-Tide only with Contents read and write and Actions read and write. It is the
+#      Worker's secret GITHUB_TOKEN, set after the first deploy in Cloudflare, Workers & Pages,
+#      slack-tide-admin, Settings, Variables and secrets (or `npx wrangler secret put GITHUB_TOKEN`
+#      from worker/). It is never a GitHub repository secret and never in a file.
+#   4. The Worker variable ACCESS_AUD (the AUD tag of the "Slack-Tide Admin" Access application)
+#      ships in worker/wrangler.toml [vars] with ACCESS_TEAM, GITHUB_REPO and INGEST_WORKFLOW;
+#      change it there if the Access application is ever recreated.
+#   5. The route www.slack-tide.org/admin/api/* on zone slack-tide.org is declared in wrangler.toml
+#      and created by the deploy. If the token could not add it, add it in the dashboard: Workers &
+#      Pages, slack-tide-admin, Settings, Domains & Routes, Add, Route.
+#
+# Then open https://www.slack-tide.org/admin/api/whoami signed in: it answers with your email.
+name: Deploy admin Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "worker/**"
+      - ".github/workflows/deploy-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Test the Worker offline
+        working-directory: worker
+        run: node --test test/*.test.js
+
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: worker
+          command: deploy

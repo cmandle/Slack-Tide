@@ -13,7 +13,8 @@ Slack tide is the still water at the turn of the tide. The platform gathers even
 | `data/` | The pipeline's output. `events.json` is committed by the scheduled run |
 | `site/` | Generated static site (Phase 1) |
 | `preview/` | Design mockups, served at `/preview/` on GitHub Pages |
-| `.github/workflows/` | Scheduled ingestion and Pages deployment |
+| `worker/` | The admin service: a Cloudflare Worker that makes the admin page's GitHub writes |
+| `.github/workflows/` | Scheduled ingestion, Pages deployment and the Worker deploy |
 
 ## Running the pipeline
 
