@@ -27,9 +27,9 @@ def test_zip_and_trailing_period_resolve_to_town(frozen, monkeypatch):
 def test_source_categories_ignored_and_rules_classify(frozen, monkeypatch):
     occs = _explore(frozen, monkeypatch)
     by = {o.title: o.category for o in occs}
-    assert by["Shakespeare in New Bedford: Hamlet"] == "Arts & Theatre"
-    assert by["Octave Avenue Open Mic"] == "Music"
-    assert by["Harbour walk: winter birds"] == "Outdoors & Nature"
+    assert by["Shakespeare in New Bedford: Hamlet"] == "Arts"
+    assert by["Octave Avenue Open Mic"] == "Nightlife"
+    assert by["Harbour walk: winter birds"] == "Active"
     assert "Free" not in set(by.values()) and "Downtown" not in set(by.values())
 
 def test_series_collapse_weekly_and_once(frozen, monkeypatch):
@@ -49,7 +49,7 @@ def test_holidays_dropped_and_bingo_weekly(frozen):
     bingo = next(s for s in series if s.title == "Bingo!")
     assert bingo.cadence == "weekly" and bingo.count == 3 and bingo.weekday == 0
     council = next(s for s in series if "Council" in s.title)
-    assert council.category == "Civic & Town Meetings"
+    assert council.category == "Community"
 
 def test_reconcile_counts(frozen, monkeypatch):
     check = _explore(frozen, monkeypatch)

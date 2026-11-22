@@ -5,7 +5,7 @@ from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from .config import TZ, load_sources, load_venues
+from .config import TZ, CATEGORIES, load_sources, load_venues
 from .connectors import for_source
 from .normalize import normalize, venue_aliases
 from .series import collapse
@@ -157,9 +157,10 @@ def _decide(args, status):
     ids = [i for i in ids if i in by_id]
     if not ids:
         print("nothing to decide"); return 1
-    n = approval.record(ids, status, args.by, by_id, note=args.note or "")
+    n = approval.record(ids, status, args.by, by_id, note=args.note or "", category=args.category or "")
     counts = approval.reapply(DATA, _sources_by_id())
-    print(f"recorded {n} {status}; now {counts.get('approved', 0)} approved, {counts.get('pending', 0)} pending, "
+    cat = f" as {args.category}" if args.category else ""
+    print(f"recorded {n} {status}{cat}; now {counts.get('approved', 0)} approved, {counts.get('pending', 0)} pending, "
           f"{counts.get('rejected', 0)} rejected. Commit approvals.yaml; the next ingest run publishes.")
     return 0
 
@@ -194,6 +195,9 @@ def main(argv=None):
         d.add_argument("ids", nargs="*", help="series ids from `slacktide pending`")
         d.add_argument("--by", required=True, help="who is deciding")
         d.add_argument("--note", help="a line for the record")
+        d.add_argument("--category", choices=CATEGORIES, metavar="CATEGORY",
+                       help=f"set the category, overriding the classifier on every run; one of {', '.join(CATEGORIES)}. "
+                            "Approving a live series again with --category is how its category is corrected")
         d.add_argument("--all-pending", action="store_true", help="every series currently pending")
         d.set_defaults(fn=fn)
     sub.add_parser("apply", help="re-apply approvals.yaml to data/ without fetching").set_defaults(fn=cmd_apply)

@@ -4,7 +4,7 @@ classify() later; the rest stays."""
 from __future__ import annotations
 import html, re
 from rapidfuzz import fuzz, process
-from .config import TOWNS, ZIP_TO_TOWN, TOWN_ALIASES, HOLIDAY_TITLES, CLOSURE_PATTERNS, CATEGORIES
+from .config import TOWNS, ZIP_TO_TOWN, TOWN_ALIASES, HOLIDAY_TITLES, CLOSURE_PATTERNS, CATEGORIES, canonical_category
 from .models import Occurrence
 
 _WS = re.compile(r"\s+")
@@ -159,23 +159,31 @@ def is_closure(title: str) -> bool:
     t = clean_text(title)
     return any(rx.search(t) for rx in _CLOSURE)
 
+# Rules over the seven categories in config.CATEGORIES (the editors' taxonomy, 2026-11-22).
+# Order matters: earlier rules win, so the specific comes before the general. A category may
+# appear twice: Community's civic words and Learn's library words sit high because a title such
+# as "Planning Board walk-through" or "Library craft hour" belongs to the institution; Nightlife's
+# activity nouns (karaoke, trivia, tasting) come before Arts' broad ones (play, art, dance); and
+# Community's social words and Learn's generic class words sit low so they only catch what no
+# stronger word did. Every category name here must be in config.CATEGORIES; _check() enforces it.
 _RULES = [
-    ("Civic & Town Meetings", r"\b(select ?board|town (council|meeting|hall)|planning board|zoning|board of|commission(ers)?|committee|probate court|public hearing|town clerk|dpw)\b"),
-    ("Library & Talks", r"\b(story ?time|story hour|book (club|talk|group)|author (talk|visit)|library|lifelong learning|lecture)\b"),
-    ("Family & Children", r"\b(kids?|children|toddler|family|teen|youth|storywalk|trunk or treat|zoo)\b"),
-    ("Outdoors & Nature", r"\b(hike|walk|trail|birds?|birding|paddle|kayak|beach|garden|reserve|woods|marsh|cleanup|stewards?)\b"),
-    ("Markets & Fairs", r"\b(farmers'? market|market|fair|bazaar|craft (show|fair)|flea|swap)\b"),
-    ("Food & Drink", r"\b(tasting|dinner|brunch|brewery|winery|wine|beer|oktoberfest|food truck|bake sale|supper|pancake)\b"),
-    ("Music", r"\b(concert|open mic|karaoke|jam|band|choir|chorus|choral|orchestra|symphony|live music|singer|dj|bluegrass|jazz)\b"),
-    ("Arts & Theatre", r"\b(theatre|theater|play|musical|shakespeare|dance|drawing|sketch|studio|printmaking|pottery|clay|gallery|art)\b"),
-    ("Museums & Exhibitions", r"\b(exhibit(ion)?|museum|opening night|tour)\b"),
-    ("Festivals", r"\b(festival|feast|parade|fest\b|illumination|fireworks)\b"),
-    ("Sports & Recreation", r"\b(yoga|fitness|run|5k|race|regatta|sailing|bingo|pickleball|basketball|swim|balance and mobility)\b"),
-    ("Education & Workshops", r"\b(workshop|class|course|clinic|training|seminar|session)\b"),
-    ("Faith & Spiritual", r"\b(mass|worship|service|blessing|church|parish|synagogue|prayer)\b"),
-    ("Volunteering & Causes", r"\b(volunteer|fundrais|donat|charity|benefit)\b"),
+    ("Fundraisers", r"\b(fundrais\w*|benefit|charity|donat\w*|gala|raffle|auction|telethon|bake sale|(food|coat|toy|blood|book) drive|pancake breakfast|spaghetti (supper|dinner)|ham and bean)\b"),
+    ("Community", r"\b(select ?board|town (council|meeting|hall)|city council|planning board|zoning|board of|commission(ers)?|committee|probate court|public hearing|town clerk|dpw|council on aging)\b"),
+    ("Community", r"\b(volunteer\w*|cleanup|clean-up|stewards?|worship|service|blessing|church|parish|synagogue|prayer|kids?|children|toddler|family|teen|youth|storywalk|zoo|seniors?|bingo|potluck|meetup|meet-up|support group|coffee hour|neighbo(u)?rhood|residents?)\b"),
+    ("Learn", r"\b(story ?time|story hour|book (club|talk|group)|author (talk|visit)|library|lifelong learning|lecture|history|historical|talk|panel|discussion|genealogy|tutoring)\b"),
+    ("Seasonal", r"\b(festival|feast|parade|\w*fest|illumination|fireworks|holiday|christmas|hanukkah|halloween|trunk or treat|haunted|pumpkin|easter|egg hunt|tree lighting|santa|carol\w*|harvest|farmers'? market|market|fair|bazaar|craft (show|fair)|flea|swap|first night|new year)\b"),
+    ("Active", r"\b(hike|walk|trail|birds?|birding|paddle|kayak|beach|garden|reserve|woods|marsh|yoga|fitness|run|5k|race|regatta|sailing|pickleball|basketball|swim|balance and mobility|bike|ride|cycling|tai chi|pilates|zumba|surf|skate|tennis|golf|soccer|softball|bowling|workout|stretch|outdoors?|nature)\b"),
+    ("Nightlife", r"\b(open mic|karaoke|jam|band|live music|singer|dj|bluegrass|jazz|trivia|comedy|cabaret|pub|bar|brewery|taproom|tap room|winery|wine|beer|cocktails?|happy hour|tasting|dinner|brunch|food truck|supper|late night|dance party)\b"),
+    ("Arts", r"\b(theatre|theater|play|musical|shakespeare|dance|drawing|sketch|studio|printmaking|pottery|clay|gallery|art|arts|exhibit(ion)?|museum|opening night|concert|orchestra|symphony|choir|chorus|choral|opera|recital|film|cinema|movie|poetry)\b"),
+    ("Learn", r"\b(workshop|class|course|clinic|training|seminar|session|tour|webinar|stem)\b"),
 ]
 _COMPILED = [(c, re.compile(p, re.I)) for c, p in _RULES]
+
+def _check():
+    bad = sorted({c for c, _ in _RULES} - set(CATEGORIES))
+    if bad:
+        raise ValueError(f"normalize._RULES names categories outside config.CATEGORIES: {bad}")
+_check()
 
 def classify(title: str, venue: str, description: str = "") -> str:
     """Rule classifier over the platform taxonomy. Order matters: earlier rules win.
@@ -218,8 +226,8 @@ def normalize(occs: list[Occurrence], default_town_by_source: dict[str, str],
         if not o.title:
             o.dropped = "no title"
             continue
-        o.category = (o.category                                   # already decided by the connector (a declared schedule's editor)
+        o.category = (canonical_category(o.category)               # already decided by the connector (a declared schedule's editor)
                       or classify(o.title, o.venue, o.description)
-                      or next((c for c in o.source_categories if c in CATEGORIES), "")   # a source naming OUR category exactly (the /add/ form does)
-                      or default_category_by_source.get(o.source_id, ""))
+                      or next((canonical_category(c) for c in o.source_categories if canonical_category(c)), "")   # a source naming OUR category (the /add/ form does), old names included
+                      or canonical_category(default_category_by_source.get(o.source_id, "")))
     return occs

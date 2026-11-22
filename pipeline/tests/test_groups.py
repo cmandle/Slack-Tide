@@ -1,4 +1,4 @@
-"""The Community groups & meetups directory: groups.yaml rendered at /groups/, with a group's
+"""The Groups & meetups directory: groups.yaml rendered at /groups/, with a group's
 next dates when its events come through the pipeline."""
 import json
 from datetime import datetime, timedelta
@@ -20,7 +20,7 @@ GROUPS = [
 
 def events_json(tmp_path: Path) -> Path:
     def s(title, start, source, approval="approved"):
-        return {"id": title.lower().replace(" ", "-"), "title": title, "venue": "Town Hall", "town": "Westport", "category": "Outdoors & Nature",
+        return {"id": title.lower().replace(" ", "-"), "title": title, "venue": "Town Hall", "town": "Westport", "category": "Active",
                 "source_id": source, "url": f"https://example.org/{title}", "cost": "", "first_start": start.isoformat(),
                 "last_start": start.isoformat(), "count": 1, "cadence": "once", "weekday": None,
                 "occurrences": [{"start": start.isoformat(), "end": None, "all_day": False}], "summary": "", "approval": approval, "decided_by": ""}
@@ -49,7 +49,8 @@ def test_groups_page_is_a_directory_with_next_dates(tmp_path, monkeypatch):
     out = tmp_path / "site"
     build.build(events_json(tmp_path), out, now=NOW)
     html = (out / "groups" / "index.html").read_text(encoding="utf-8")
-    assert "is coming" not in html and "<h1>Community groups &amp; meetups</h1>" in html
+    assert "is coming" not in html and "<h1>Groups &amp; meetups</h1>" in html and "Community groups" not in html
+    assert '<span class="long">Groups &amp; meetups</span>' in html and "<title>Slack Tide · Groups &amp; meetups</title>" in html
     assert "2 groups · Swansea to Little Compton" in html
     assert html.count('class="group-card"') == 2 and 'id="test-walkers"' in html
     assert '<h2 class="gc-name">Test Walkers</h2>' in html and "Walks on the shore &amp; talks about it." in html

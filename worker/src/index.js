@@ -8,7 +8,9 @@
 
    Endpoints (JSON in, JSON out):
      GET    /admin/api/whoami      -> { email }
-     POST   /admin/api/decisions   { decisions: [{ id, status, title, venue? }] } -> approvals.yaml
+     POST   /admin/api/decisions   { decisions: [{ id, status, title, venue?, category? }] } -> approvals.yaml
+                                   (category: the approver's correction of the classifier, kept on every
+                                   run; an empty string records the decision without one)
      POST   /admin/api/tracker     { edits: { "<row>": { "<Column>": "<value>" } } } -> docs/sources-tracker.csv
      POST   /admin/api/approvers   { name, email, role } -> approvers.yaml (append)
      DELETE /admin/api/approvers   { email } -> approvers.yaml (remove)
@@ -117,6 +119,7 @@ export function appendDecisions(text, decisions, by, date) {
     const lines = [`- id: ${yamlStr(d.id)}`, `  status: ${d.status}`, `  by: ${yamlStr(by)}`, `  date: ${yamlStr(date)}`,
                    `  title: ${yamlStr(d.title || "")}`];
     if (d.venue) lines.push(`  venue: ${yamlStr(d.venue)}`);
+    if (d.category) lines.push(`  category: ${yamlStr(d.category)}`);
     return lines.join("\n");
   }).join("\n") + "\n";
   if (!text) text = "# Approval decisions. One entry per series id; the last entry for an id wins.\n";
@@ -165,6 +168,7 @@ export function removeApprover(text, email) {
 /* ------------------------------------------------------------------ input validation */
 
 const EMAIL = /^[^\s@"']+@[^\s@"']+\.[^\s@"']+$/;
+const CATEGORY = /^[A-Za-z][A-Za-z &]{0,39}$/;
 function str(v, max, what) {
   if (typeof v !== "string" || !v.trim() || v.length > max || /[\r\n]/.test(v)) throw new HttpError(400, `Bad ${what}`);
   return v.trim();
@@ -174,8 +178,11 @@ export function validateDecisions(body) {
   if (!list || !list.length || list.length > 500) throw new HttpError(400, "Send between 1 and 500 decisions");
   return list.map((d) => {
     if (!d || !["approved", "rejected"].includes(d.status)) throw new HttpError(400, "Bad decision status");
+    /* The category list lives in the pipeline (config.CATEGORIES) and the page's select is built
+       from it; here only the shape is checked, and the pipeline drops a name it does not know. */
+    if (d.category !== undefined && d.category !== "" && (typeof d.category !== "string" || !CATEGORY.test(d.category))) throw new HttpError(400, "Bad category");
     return { id: str(d.id, 120, "series id"), status: d.status, title: str(d.title || "untitled", 300, "title"),
-             venue: d.venue ? str(d.venue, 300, "venue") : "" };
+             venue: d.venue ? str(d.venue, 300, "venue") : "", category: d.category ? d.category.trim() : "" };
   });
 }
 export function validateTrackerEdits(body) {

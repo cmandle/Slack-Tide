@@ -18,7 +18,7 @@ VENUES = [
 ]
 
 
-def series(title, start, venue, town, category="Music", approval="approved", cadence="once", count=1):
+def series(title, start, venue, town, category="Nightlife", approval="approved", cadence="once", count=1):
     occ = [{"start": (start + timedelta(days=7 * i)).isoformat(), "end": None, "all_day": False} for i in range(count)]
     return {"id": title.lower().replace(" ", "-"), "title": title, "venue": venue, "town": town, "category": category,
             "source_id": "aha-next-aha", "url": "https://example.org/" + title, "cost": "", "first_start": occ[0]["start"],
@@ -45,12 +45,12 @@ def test_venue_key_drops_a_street_address_and_aliases_win():
 def test_map_places_joins_venues_and_falls_back_to_town_centres():
     today = NOW.replace(hour=0, minute=0)
     rows = [
-        series("Opening", today + timedelta(days=1, hours=18), "Gallery X 169 William Street", "New Bedford", "Arts & Theatre"),
+        series("Opening", today + timedelta(days=1, hours=18), "Gallery X 169 William Street", "New Bedford", "Arts"),
         series("Cabaret", today + timedelta(days=2, hours=20), "Speakeasy @ The Z! - 984 Purchase St", "New Bedford"),
         series("Concert", today + timedelta(days=3, hours=19), "The Zeiterion", "New Bedford", count=5, cadence="weekly"),
         series("Unknown bar gig", today + timedelta(days=1, hours=21), "Some Bar, 9 Water St.", "New Bedford"),
-        series("Reserve walk", today + timedelta(days=4, hours=9), "Dike Creek Reserve", "Dartmouth", "Outdoors & Nature"),
-        series("No venue walk", today + timedelta(days=5, hours=9), "", "Dartmouth", "Outdoors & Nature"),
+        series("Reserve walk", today + timedelta(days=4, hours=9), "Dike Creek Reserve", "Dartmouth", "Active"),
+        series("No venue walk", today + timedelta(days=5, hours=9), "", "Dartmouth", "Active"),
         series("Nowhere", today + timedelta(days=5, hours=9), "", ""),
         series("Over", today - timedelta(days=5), "Gallery X", "New Bedford"),
         series("Pending", today + timedelta(days=1), "Gallery X", "New Bedford", approval="pending"),
@@ -61,7 +61,7 @@ def test_map_places_joins_venues_and_falls_back_to_town_centres():
     assert [p["id"] for p in places] == ["gallery-x", "the-z", "town-new-bedford", "town-dartmouth"]   # town order, pinned before approximate
     assert [r["series"]["title"] for r in by_id["gallery-x"]["rows"]] == ["Opening"]                    # the past series is gone
     assert [r["series"]["title"] for r in by_id["the-z"]["rows"]] == ["Cabaret", "Concert"]             # two spellings, one pin
-    assert by_id["the-z"]["family"] == "music" and by_id["gallery-x"]["family"] == "arts"
+    assert by_id["the-z"]["family"] == "nightlife" and by_id["gallery-x"]["family"] == "arts"
     assert by_id["town-new-bedford"]["approx"] and (by_id["town-new-bedford"]["lat"], by_id["town-new-bedford"]["lon"]) == config.TOWN_CENTERS["New Bedford"]
     assert [r["series"]["title"] for r in by_id["town-dartmouth"]["rows"]] == ["Reserve walk", "No venue walk"]   # known venue without coordinates, and no venue
     assert by_id["gallery-x"]["address"].startswith("169 William St") and by_id["gallery-x"]["url"] == "https://galleryx.org/"
@@ -70,9 +70,9 @@ def test_map_places_joins_venues_and_falls_back_to_town_centres():
 def test_map_page_renders_places_and_pins(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "load_venues", lambda path=None: VENUES)
     today = NOW.replace(hour=0, minute=0)
-    rows = [series("Opening", today + timedelta(days=1, hours=18), "Gallery X 169 William Street", "New Bedford", "Arts & Theatre"),
+    rows = [series("Opening", today + timedelta(days=1, hours=18), "Gallery X 169 William Street", "New Bedford", "Arts"),
             series("Concert", today + timedelta(days=3, hours=19), "The Zeiterion", "New Bedford", count=5, cadence="weekly"),
-            series("Reserve walk", today + timedelta(days=4, hours=9), "Dike Creek Reserve", "Dartmouth", "Outdoors & Nature")]
+            series("Reserve walk", today + timedelta(days=4, hours=9), "Dike Creek Reserve", "Dartmouth", "Active")]
     (tmp_path / "events.json").write_text(json.dumps({"generated_at": NOW.isoformat(), "series_count": 3, "occurrence_count": 7, "series": rows}), encoding="utf-8")
     out = tmp_path / "site"
     build.build(tmp_path, out, now=NOW)
@@ -86,7 +86,7 @@ def test_map_page_renders_places_and_pins(tmp_path, monkeypatch):
     assert "Town center, exact places to come" in html and '<span class="pe-venue">Dike Creek Reserve</span>' in html
     assert '<a href="https://galleryx.org/" rel="noopener" target="_blank">Gallery X</a>' in html
     assert '<div class="place-addr">169 William St, New Bedford, MA 02740</div>' in html
-    assert 'data-cats="arts" data-family="arts"' in html and 'style="--cat: var(--st-cat-music)"' in html
+    assert 'data-cats="arts" data-family="arts"' in html and 'style="--cat: var(--st-cat-nightlife)"' in html
     assert "THU JAN 1 · 6:00 PM" in html and "SAT JAN 3 · 7:00 PM · weekly" in html   # NOW is Wed Dec 31 2098
     assert 'data-tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png"' in html and "openstreetmap.org/copyright" in html
     assert 'assets/vendor/leaflet/leaflet.css' in html and 'assets/map.js' in html

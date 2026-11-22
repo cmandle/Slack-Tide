@@ -1,7 +1,9 @@
 # Approval decisions. One entry per series id; the last entry for an id wins.
-# Written by the review page (/review/) and by `slacktide approve` / `slacktide reject`.
+# Written by the admin page's Queue tab (/admin/) and by `slacktide approve` / `slacktide reject`.
 # Append, never rewrite history: a change of mind is a new entry below the old one.
 # title and venue are for the reader; matching is by id alone.
+# category, when present, is the approver's correction of the classifier (one of the seven in
+# config.CATEGORIES) and is applied on every run; an entry without it leaves the classifier in charge.
 - id: ee5aab63f527
   status: approved
   by: bootstrap

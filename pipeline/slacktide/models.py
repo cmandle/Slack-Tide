@@ -44,6 +44,7 @@ class Series:
     summary: str = ""          # the first occurrence's description, trimmed, for the reviewer
     approval: str = "pending"  # pending | approved | rejected, set by approval.apply
     decided_by: str = ""       # the approver's name, or "source trust"
+    category_by: str = ""      # the approver who set the category when it overrides the classifier, else ""
 
     def to_dict(self) -> dict:
         d = asdict(self)

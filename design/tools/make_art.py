@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Generate the card illustration set under design/art/.
 
-Flat-shape scenes in the Fumayo palette, three per category family plus three
-general ones, each a self-contained SVG with a grain filter. Family slugs match
-pipeline.slacktide.config.CATEGORY_FAMILIES and the --st-cat-* tokens. The site
-uses them as the card image when a series has no organiser photo:
-design/DESIGN.md, Images.
+Flat-shape scenes in the Fumayo palette, three per category plus three general
+ones, each a self-contained SVG with a grain filter. The file prefix is the
+category's slug in pipeline.slacktide.config (nightlife, active, arts, learn,
+seasonal, fundraisers, community: the editors' seven of 2026-11-22) and matches
+the --st-cat-* tokens. The site uses them as the card image when a series has
+no organiser photo: design/DESIGN.md, Images.
 
     python3 design/tools/make_art.py
 """
@@ -81,17 +82,17 @@ def main():
     p = P
     S = []
 
-    # Music
-    S.append(("music-1", "Lawn stage at dusk", p["dusk"],
+    # Nightlife (the Music scenes of the first taxonomy)
+    S.append(("nightlife-1", "Lawn stage at dusk", p["dusk"],
               circle(230, 230, 86, p["yellow"]) + rect(0, 360, W, H - 360, p["grass"])
               + rect(520, 300, 300, 80, p["ink"]) + posts([540, 800], 160, 300, 12, p["ink"])
               + rect(520, 150, 300, 30, p["coral"]) + bulbs(546, 806, 190, 9, p["yellow"]), 1))
-    S.append(("music-2", "Bandstand with bunting", p["sky"],
+    S.append(("nightlife-2", "Bandstand with bunting", p["sky"],
               rect(0, 420, W, H - 420, p["grass"]) + poly([(300, 260), (600, 260), (450, 130)], p["coral"])
               + posts([310, 440, 580], 260, 440, 14, p["white"]) + rect(300, 380, 300, 14, p["white"])
               + rect(280, 440, 340, 24, p["tan"])
               + "".join(poly([(x, 100), (x + 36, 100), (x + 18, 136)], [p["coral"], p["yellow"], p["sea"]][i % 3]) for i, x in enumerate(range(60, 880, 54))), 2))
-    S.append(("music-3", "String lights over the pier at night", p["night"],
+    S.append(("nightlife-3", "String lights over the pier at night", p["night"],
               circle(720, 120, 54, p["yellow"]) + rect(0, 380, W, H - 380, p["seadark"])
               + rect(80, 400, 740, 36, p["tan"]) + posts([110, 300, 500, 700], 300, 500, 14, p["brown"])
               + bulbs(116, 706, 300, 11, p["yellow"], 34), 3))
@@ -114,84 +115,85 @@ def main():
               + path("M680 540 L760 120 M740 540 L820 120 M700 440 L780 440 M712 360 L792 360 M724 280 L804 280 M736 200 L816 200", p["ink"], 8)
               + rect(600, 480, 60, 50, p["tangerine"]), 6))
 
-    # Outdoors
-    S.append(("outdoors-1", "Woodland trail", p["cream"],
+    # Active (the Outdoors scenes of the first taxonomy)
+    S.append(("active-1", "Woodland trail", p["cream"],
               rect(0, 420, W, H - 420, p["brown"]) + poly([(380, 640), (520, 640), (470, 420), (430, 420)], p["tan"])
               + trees([20, 120, 230, 330, 560, 660, 770], 440, 260, p["grassdark"])
               + trees([70, 290, 610, 720], 470, 180, p["grass"]), 7))
-    S.append(("outdoors-2", "Shore at sunset", p["dusk"],
+    S.append(("active-2", "Shore at sunset", p["dusk"],
               circle(680, 220, 70, p["coral"]) + poly([(0, 300), (260, 250), (520, 300)], p["grassdark"])
               + rect(0, 300, W, 160, p["sea"]) + rect(0, 460, W, H - 460, p["sand"]), 8))
-    S.append(("outdoors-3", "Kayak on the bay", p["sky"],
+    S.append(("active-3", "Kayak on the bay", p["sky"],
               poly([(0, 280), (300, 180), (620, 260), (W, 220), (W, 300), (0, 300)], p["grass"])
               + rect(0, 300, W, H - 300, p["sea"])
               + poly([(220, 430), (680, 430), (620, 480), (280, 480)], p["yellow"])
               + path("M470 320 L450 440 M380 360 L560 400", p["ink"], 8) + circle(452, 320, 18, p["coral"]), 9))
 
-    # Family
-    S.append(("family-1", "Kite on the beach", p["sky"],
-              rect(0, 460, W, H - 460, p["sand"]) + rect(0, 400, W, 60, p["sea"])
-              + poly([(560, 110), (700, 250), (560, 420), (420, 250)], p["yellow"])
-              + path("M560 110 L560 420 M420 250 L700 250 M560 420 Q500 480 540 540 Q580 600 520 620 L220 580", p["ink"], 6)
-              + poly([(530, 470), (560, 490), (530, 510)], p["coral"]) + poly([(545, 540), (575, 560), (545, 580)], p["sea"]), 10))
-    S.append(("family-2", "Tall ship", p["sky"],
-              rect(0, 420, W, H - 420, p["sea"])
-              + poly([(200, 420), (720, 420), (660, 500), (260, 500)], p["coral"])
-              + posts([360, 540], 120, 420, 12, p["ink"])
-              + poly([(372, 150), (520, 300), (372, 300)], p["white"]) + poly([(552, 130), (700, 300), (552, 300)], p["white"])
-              + poly([(348, 170), (220, 300), (348, 300)], p["white"]) + poly([(360, 110), (420, 130), (360, 150)], p["yellow"]), 11))
-    S.append(("family-3", "Playground swing", p["sky"],
-              rect(0, 460, W, H - 460, p["grass"])
-              + path("M160 460 L260 140 L360 460 M540 460 L640 140 L740 460 M260 140 L640 140", p["ink"], 12)
-              + line(400, 150, 400, 360, p["ink"]) + line(500, 150, 500, 360, p["ink"]) + rect(380, 360, 140, 22, p["coral"])
-              + circle(780, 560, 44, p["yellow"]) + circle(100, 580, 30, p["sea"]), 12))
+    # Fundraisers (new for the seven-category taxonomy; the Family scenes they replace are in git history)
+    S.append(("fundraisers-1", "Bake sale table", p["cream"],
+              rect(0, 480, W, H - 480, p["sand"]) + rect(120, 330, 660, 30, p["white"]) + rect(120, 360, 660, 120, p["coral"])
+              + posts([150, 730], 480, 560, 14, p["brown"])
+              + "".join(circle(210 + i * 95, 318, 34, p["white"]) for i in range(6))
+              + "".join(circle(210 + i * 95, 318, 18, [p["tangerine"], p["lilac"], p["yellow"], p["grass"], p["coral"], p["sea"]][i]) for i in range(6))
+              + rect(560, 120, 200, 120, p["yellow"]) + path("M600 150 L720 150 M600 180 L700 180 M600 210 L680 210", p["ink"], 6), 10))
+    S.append(("fundraisers-2", "Fundraising thermometer on the green", p["sky"],
+              rect(0, 440, W, H - 440, p["grass"]) + circle(160, 150, 60, p["yellow"])
+              + rect(420, 80, 60, 420, p["white"]) + rect(420, 230, 60, 270, p["coral"]) + circle(450, 520, 60, p["coral"])
+              + path("M480 140 L520 140 M480 220 L520 220 M480 300 L520 300 M480 380 L520 380", p["ink"], 6)
+              + trees([640, 760], 440, 220, p["grassdark"]) + poly([(570, 420), (690, 420), (630, 360)], p["lilac"]), 11))
+    S.append(("fundraisers-3", "Gala tent with bunting", p["dusk"],
+              rect(0, 440, W, H - 440, p["grass"]) + poly([(140, 300), (760, 300), (450, 120)], p["white"])
+              + rect(140, 300, 620, 140, p["lilac"]) + posts([160, 740], 300, 480, 14, p["ink"])
+              + rect(400, 340, 100, 100, p["ink"]) + bulbs(60, 450, 120, 7, p["yellow"]) + bulbs(450, 840, 120, 7, p["yellow"])
+              + "".join(poly([(x, 300), (x + 36, 300), (x + 18, 336)], [p["coral"], p["yellow"], p["sea"]][i % 3]) for i, x in enumerate(range(150, 740, 54)))
+              + circle(820, 540, 40, p["coral"]) + circle(90, 560, 30, p["yellow"]), 12))
 
-    # Library
-    S.append(("library-1", "Bookshelves", p["cream"],
+    # Learn (the Library scenes of the first taxonomy)
+    S.append(("learn-1", "Bookshelves", p["cream"],
               rect(80, 60, 740, 24, p["brown"]) + rect(80, 300, 740, 24, p["brown"]) + rect(80, 540, 740, 24, p["brown"])
               + "".join(rect(100 + i * 58, 100 + (i % 3) * 18, 44, 200 - (i % 3) * 18, [p["lilac"], p["sea"], p["coral"], p["yellow"], p["lilacdark"]][i % 5]) for i in range(12))
               + "".join(rect(100 + i * 58, 340 + (i % 2) * 22, 44, 200 - (i % 2) * 22, [p["yellow"], p["lilac"], p["grass"], p["coral"], p["sea"]][i % 5]) for i in range(12)), 13))
-    S.append(("library-2", "Reading chair and lamp", p["cream"],
+    S.append(("learn-2", "Reading chair and lamp", p["cream"],
               rect(0, 520, W, H - 520, p["slate"])
               + rect(220, 300, 300, 220, p["lilac"]) + rect(190, 260, 70, 260, p["lilacdark"]) + rect(480, 260, 70, 260, p["lilacdark"]) + rect(220, 200, 300, 110, p["lilacdark"])
               + line(700, 520, 700, 240, p["ink"], 8) + poly([(620, 240), (780, 240), (740, 160), (660, 160)], p["yellow"])
               + rect(70, 470, 90, 20, p["coral"]) + rect(60, 490, 110, 30, p["sea"]), 14))
-    S.append(("library-3", "Library building", p["lilac"],
+    S.append(("learn-3", "Library building", p["lilac"],
               rect(0, 520, W, H - 520, p["grass"]) + rect(150, 230, 600, 290, p["white"]) + poly([(120, 230), (780, 230), (450, 110)], p["slatedark"])
               + posts([200, 300, 400, 560, 660], 250, 520, 36, p["slate"]) + rect(430, 380, 90, 140, p["brown"])
               + rect(100, 520, 700, 20, p["slate"]) + rect(60, 540, 780, 20, p["slate"]), 15))
 
-    # Markets
-    S.append(("markets-1", "Striped awning", p["cream"],
+    # Seasonal (the Markets scenes of the first taxonomy)
+    S.append(("seasonal-1", "Striped awning", p["cream"],
               rect(0, 360, W, H - 360, p["sand"])
               + "".join(rect(i * 75, 120, 75, 180, p["coral"] if i % 2 == 0 else p["paper"]) for i in range(12))
               + "".join(circle(37 + i * 75, 300, 38, p["coral"] if i % 2 == 0 else p["paper"]) for i in range(12))
               + posts([100, 790], 300, 520, 14, p["ink"]) + rect(150, 380, 600, 90, p["brown"])
               + "".join(circle(200 + i * 70, 365, 24, [p["tangerine"], p["grass"], p["coral"]][i % 3]) for i in range(8)), 16))
-    S.append(("markets-2", "Crates of fruit", p["cream"],
+    S.append(("seasonal-2", "Crates of fruit", p["cream"],
               rect(0, 500, W, H - 500, p["sand"])
               + rect(120, 330, 300, 170, p["brown"]) + rect(480, 330, 300, 170, p["tan"]) + rect(300, 160, 300, 170, p["brown"])
               + "".join(circle(160 + i * 60, 320, 30, p["tangerine"]) for i in range(5))
               + "".join(circle(520 + i * 60, 320, 30, p["coral"]) for i in range(5))
               + "".join(circle(340 + i * 60, 150, 30, p["grass"]) for i in range(5)), 17))
-    S.append(("markets-3", "Farm stand with pumpkins", p["sky"],
+    S.append(("seasonal-3", "Farm stand with pumpkins", p["sky"],
               rect(0, 440, W, H - 440, p["grass"])
               + poly([(200, 240), (700, 240), (650, 150), (250, 150)], p["tangdark"]) + posts([230, 660], 240, 440, 14, p["brown"]) + rect(200, 360, 500, 80, p["tan"])
               + "".join(circle(260 + i * 100, 330, 40, p["tangerine"]) for i in range(5)) + "".join(rect(254 + i * 100, 280, 12, 20, p["grassdark"]) for i in range(5))
               + circle(790, 560, 50, p["tangerine"]) + circle(90, 580, 40, p["tangerine"]), 18))
 
-    # Civic
-    S.append(("civic-1", "Town hall", p["sky"],
+    # Community (the Civic scenes of the first taxonomy)
+    S.append(("community-1", "Town hall", p["sky"],
               rect(0, 500, W, H - 500, p["grass"]) + rect(180, 240, 540, 260, p["slate"]) + poly([(150, 240), (750, 240), (450, 120)], p["ink"])
               + posts([230, 330, 530, 630], 260, 500, 30, p["white"]) + rect(410, 380, 80, 120, p["brown"])
               + line(800, 500, 800, 160, p["ink"], 8) + poly([(804, 160), (880, 190), (804, 220)], p["coral"]), 19))
-    S.append(("civic-2", "Meeting hall", p["cream"],
+    S.append(("community-2", "Meeting hall", p["cream"],
               rect(0, 480, W, H - 480, p["slate"]) + rect(360, 100, 180, 140, p["sky"]) + rect(360, 100, 180, 140, "none")
               + rect(300, 280, 300, 24, p["brown"]) + posts([320, 570], 304, 400, 12, p["brown"])
               + "".join(rect(140 + i * 110, 400 + (i % 2) * 6, 70, 60, p["slatedark"]) for i in range(7))
               + "".join(rect(140 + i * 110, 440, 70, 10, p["ink"]) for i in range(7))
               + rect(700, 180, 60, 120, p["lilac"]), 20))
-    S.append(("civic-3", "Town green gazebo", p["sky"],
+    S.append(("community-3", "Town green gazebo", p["sky"],
               rect(0, 440, W, H - 440, p["grass"]) + poly([(300, 300), (600, 300), (450, 190)], p["slatedark"])
               + posts([320, 440, 570], 300, 440, 14, p["white"]) + rect(300, 400, 300, 12, p["white"]) + rect(280, 440, 340, 20, p["slate"])
               + line(760, 440, 760, 140, p["ink"], 8) + poly([(764, 140), (840, 170), (764, 200)], p["coral"])

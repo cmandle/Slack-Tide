@@ -63,7 +63,7 @@
   role: primary
   review: auto   # first source trusted to publish without review, 2026-11-08; recorded decisions still win
   provenance: Posted by the venue
-  default_category: Arts & Theatre   # our call for a theatre when the rule classifier finds nothing
+  default_category: Arts   # our call for a theatre when the rule classifier finds nothing
   select:
     item: ".events-list_item"
     title: ".ticket-block_title_text h2"
@@ -81,7 +81,7 @@
   town: ""
   role: primary
   provenance: Posted by the organisation
-  default_category: Outdoors & Nature
+  default_category: Active
   select:
     item: "a.discovery-card"
     title: ".discovery-card-title"
@@ -170,7 +170,7 @@
       end: ""
       venue: ""
       town: ""
-      kind: ""        # Events | Community groups & meetups | Volunteer opportunities
+      kind: ""        # Events | Groups & meetups
       category: ""    # one of config.CATEGORIES, or blank for "you choose"
       url: ""
       cost: ""
@@ -198,7 +198,7 @@
   role: primary
   enabled: false
   provenance: Posted by the organisation
-  default_category: Arts & Theatre
+  default_category: Arts
   note: >-
     Decision 13. On 2026-10-25 the plugin held three 2022 test events; on 2026-11-08 it answers
     with 28, still titled "Tested" and "December Test" but already carrying the second-Thursday
@@ -213,7 +213,7 @@
   town: New Bedford
   role: primary
   provenance: Posted by the organisation
-  default_category: Arts & Theatre
+  default_category: Arts
   select:
     item: "article.elementor-post"
     title: ".elementor-widget-theme-post-title .elementor-heading-title"
@@ -239,7 +239,7 @@
   venue: Cisco Brewers Kitchen & Bar
   role: primary
   provenance: Posted by the venue
-  default_category: Music
+  default_category: Nightlife
   select:
     item: ":is(section, div):has(> h2:-soup-contains('Live Music')) > p:has(> strong)"
     group_next: 1                 # the date paragraph plus the artist paragraph after it
@@ -263,7 +263,7 @@
   town: New Bedford
   role: primary
   provenance: Posted by the organisation
-  default_category: Civic & Town Meetings
+  default_category: Community
   note: >-
     Decision 13. Housing, transport and public-space advocacy group: monthly meetups at the
     Co-Creative Center, walk audits, talks. Publishes on Luma (luma.com/southcoastplacesforpeople);
@@ -277,7 +277,7 @@
   town: ""
   role: primary
   provenance: Posted by the organisation
-  default_category: Sports & Recreation
+  default_category: Active
   note: >-
     Decision 13. Squarespace events collection ("Walk Schedule"); ?format=json answers with
     upcoming and past walks, start and end in epoch milliseconds, the excerpt, and an empty
@@ -294,7 +294,7 @@
   town: New Bedford
   role: primary
   provenance: Posted by the venue
-  default_category: Arts & Theatre
+  default_category: Arts
   note: >-
     Artist studios on Hatch Street. Squarespace events collection with the location block
     filled (the building, or a studio inside it such as Catherine Carter Art School, Studio 210).
@@ -308,7 +308,7 @@
   town: Little Compton
   role: primary
   provenance: Posted by the venue
-  default_category: Food & Drink
+  default_category: Nightlife
   note: >-
     Squarespace events collection: weekend live music, Friday trivia, pop-up markets. 40 items
     on 2026-11-08, 10 in the window. The location block spells the venue two ways ("Sakonnet
@@ -325,8 +325,8 @@
   note: >-
     Decision 13. Weekly and monthly events the venues state in prose with no feed behind them.
     Each entry records where the schedule was seen and when; re-check them each season and remove
-    what has stopped. Publication still passes the approver. Categories for games nights are
-    provisional until issue 12 settles the taxonomy.
+    what has stopped. Publication still passes the approver. Games nights are Nightlife under the
+    seven-category taxonomy of 2026-11-22; the approver can correct any of these from the admin page.
   series:
     - title: Trivia night
       venue: PLAY Arcade
@@ -334,7 +334,7 @@
       start: "19:00"
       end: "21:00"
       url: https://www.playarcadenb.com/
-      category: Sports & Recreation
+      category: Nightlife
       confirmed: 2026-11-08
       confirmed_at: https://www.playarcadenb.com/   # home page: "Trivia every Wednesday from 7-9PM"
     - title: Karaoke
@@ -343,7 +343,7 @@
       start: "20:00"
       end: "00:00"
       url: https://www.playarcadenb.com/
-      category: Music
+      category: Nightlife
       confirmed: 2026-11-08
       confirmed_at: https://www.playarcadenb.com/   # home page: "Karaoke every Thursday from 8PM-12AM"
     - title: Trivia night
@@ -351,7 +351,7 @@
       weekday: wednesday
       start: "19:00"
       url: https://newbeigema.squarespace.com/
-      category: Sports & Recreation
+      category: Nightlife
       description: Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.
       confirmed: 2026-11-08
       confirmed_at: https://www.instagram.com/p/DYN1GvmFbWQ/   # the venue's post: "Every Wednesday at 7pm"; seen by the editor, not read by the pipeline
@@ -362,7 +362,7 @@
       start: "17:00"
       end: "21:00"
       url: https://ahanewbedford.org/
-      category: Arts & Theatre
+      category: Arts
       description: >-
         Free arts and culture night across downtown New Bedford on the second Thursday of every
         month. The month's theme and programme are on ahanewbedford.org.
@@ -374,7 +374,7 @@
       start: "10:00"
       end: "14:00"
       url: https://www.ciscokitchenbar.com/happenings/
-      category: Music
+      category: Nightlife
       confirmed: 2026-11-08
       confirmed_at: https://www.ciscokitchenbar.com/happenings/   # "every Sunday from 10am-2pm"
     - title: Chef Hiroki tuna carving
@@ -382,7 +382,7 @@
       weekday: tuesday
       week: 1
       url: https://www.ciscokitchenbar.com/happenings/
-      category: Food & Drink
+      category: Nightlife
       description: A whole sustainably caught tuna carved in front of the room, served as sashimi and poke. Reservations on the venue's page.
       confirmed: 2026-11-08
       confirmed_at: https://www.ciscokitchenbar.com/happenings/   # "First Tuesday of every Month"; no time given
@@ -391,7 +391,7 @@
       weekday: tuesday
       week: 3
       url: https://www.ciscokitchenbar.com/happenings/
-      category: Food & Drink
+      category: Nightlife
       description: A ten to twelve course omakase dinner. Reservations on the venue's page.
       confirmed: 2026-11-08
       confirmed_at: https://www.ciscokitchenbar.com/happenings/   # "Third Tuesday of every Month"; no time given

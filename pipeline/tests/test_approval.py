@@ -1,6 +1,7 @@
 """Decision 11: series-level approval from approvals.yaml, source trust, the pending queue,
 the record-and-reapply path the CLI uses, and the Sunday digest."""
 import json
+import pytest
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from slacktide import approval
@@ -11,7 +12,7 @@ NOW = datetime(2098, 12, 31, 12, 0, tzinfo=TZ)
 
 def series(sid, title, source="zeiterion", days=3, venue="The Zeiterion", town="New Bedford"):
     start = NOW + timedelta(days=days, hours=7)
-    return Series(id=sid, title=title, venue=venue, town=town, category="Music", source_id=source,
+    return Series(id=sid, title=title, venue=venue, town=town, category="Nightlife", source_id=source,
                   url=f"https://example.org/{sid}", cost="", first_start=start, last_start=start, count=1,
                   cadence="once", weekday=None,
                   occurrences=[{"start": start.isoformat(), "end": None, "all_day": False}], summary="A show.")
@@ -63,6 +64,41 @@ def test_record_then_reapply_round_trip(tmp_path, monkeypatch):
     # A change of mind is a new line; the loader takes the last one.
     approval.record(["b"], "approved", "luke", by_id, path=path)
     assert approval.load(path)["b"]["status"] == "approved"
+
+def test_category_override_survives_reclassification_and_stays_approved(tmp_path):
+    """The category on an entry corrects the classifier on every run without a new review; an
+    entry without one hands the series back; an old or unknown name never breaks the entry."""
+    p = tmp_path / "approvals.yaml"
+    p.write_text("- id: a\n  status: approved\n  by: luke\n  category: Arts\n"
+                 "- id: b\n  status: approved\n  by: luke\n  category: Music\n"        # the first taxonomy's name
+                 "- id: c\n  status: approved\n  by: luke\n  category: Downtown\n"     # not ours: dropped, the decision kept
+                 "- id: d\n  status: approved\n  by: luke\n  category: Learn\n- id: d\n  status: approved\n  by: coco\n", encoding="utf-8")
+    d = approval.load(p)
+    assert d["a"]["category"] == "Arts" and d["b"]["category"] == "Nightlife"
+    assert "category" not in d["c"] and d["c"]["status"] == "approved" and "category" not in d["d"]
+    rows = [series("a", "Reclassified show"), series("b", "Old name"), series("c", "Bad name"), series("d", "Handed back")]
+    for r in rows:
+        r.category = "Nightlife"                     # what the classifier said this run
+    approval.apply(rows, d, SOURCES)
+    assert [r.category for r in rows] == ["Arts", "Nightlife", "Nightlife", "Nightlife"]
+    assert rows[0].category_by == "luke" and rows[1].category_by == "luke" and rows[2].category_by == "" and rows[3].category_by == ""
+    assert all(r.approval == "approved" for r in rows) and rows[0].to_dict()["category_by"] == "luke"
+    # Dicts (events.json rows on reapply) take the override the same way.
+    row = {"id": "a", "source_id": "zeiterion", "category": "Nightlife"}
+    approval.apply([row], d, SOURCES)
+    assert row["category"] == "Arts" and row["category_by"] == "luke" and row["approval"] == "approved"
+
+def test_record_with_category_corrects_a_live_series(tmp_path):
+    path = tmp_path / "approvals.yaml"
+    rows = [series("a", "Show A")]
+    by_id = {s.id: s.to_dict() for s in rows}
+    approval.record(["a"], "approved", "luke", by_id, path=path)
+    approval.record(["a"], "approved", "luke", by_id, path=path, category="Learn")   # the fix: approve again with a category
+    text = path.read_text(encoding="utf-8")
+    assert text.count("- id: a") == 2 and "category: Learn" in text and "category," in text.split("- id:")[0]   # header explains the field
+    assert approval.load(path)["a"]["category"] == "Learn"
+    with pytest.raises(ValueError):
+        approval.record(["a"], "approved", "luke", by_id, path=path, category="Jazz")
 
 def test_admin_page_appended_entries_parse():
     """admin.js appends entries with JSON-quoted scalars; they must load as the CLI's do."""

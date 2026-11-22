@@ -60,6 +60,10 @@ test("decisions append as JSON-quoted YAML entries and a missing file gets a hea
   assert.ok(out.includes('- id: "abc"\n  status: approved\n  by: "luke@example.org"\n  date: "2026-11-22"\n  title: "Say \\"hi\\": a show"\n  venue: "The Z"\n'));
   assert.ok(out.includes('- id: "def"\n  status: rejected\n') && out.endsWith("\n"));
   assert.equal(appendDecisions("x: 1", [{ id: "a", status: "approved", title: "t" }], "me", "2026-01-01").slice(0, 5), "x: 1\n");
+  /* A corrected category rides on the entry; an empty one writes no category line (the classifier is back in charge). */
+  const fixed = appendDecisions("", [{ id: "abc", status: "approved", title: "t", category: "Arts" }, { id: "def", status: "approved", title: "t", category: "" }], "me", "2026-11-22");
+  assert.ok(fixed.includes('- id: "abc"\n  status: approved\n  by: "me"\n  date: "2026-11-22"\n  title: "t"\n  category: "Arts"\n'));
+  assert.ok(fixed.includes('- id: "def"\n  status: approved\n  by: "me"\n  date: "2026-11-22"\n  title: "t"\n') && fixed.split("category:").length === 2);
 });
 
 test("tracker edits rewrite the named cells and keep CSV quoting", () => {
@@ -80,7 +84,11 @@ test("input validation refuses what the page would never send", () => {
   assert.throws(() => validateDecisions({ decisions: [] }), (e) => e.status === 400);
   assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "maybe" }] }), (e) => e.status === 400);
   assert.throws(() => validateDecisions({ decisions: [{ id: "a\nb", status: "approved" }] }), (e) => e.status === 400);
-  assert.deepEqual(validateDecisions({ decisions: [{ id: " a ", status: "approved", title: "t" }] }), [{ id: "a", status: "approved", title: "t", venue: "" }]);
+  assert.deepEqual(validateDecisions({ decisions: [{ id: " a ", status: "approved", title: "t" }] }), [{ id: "a", status: "approved", title: "t", venue: "", category: "" }]);
+  assert.equal(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "Nightlife" }] })[0].category, "Nightlife");
+  assert.equal(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "" }] })[0].category, "");
+  assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "Arts\n- id: x" }] }), (e) => e.status === 400);
+  assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: 7 }] }), (e) => e.status === 400);
   assert.throws(() => validateTrackerEdits({ edits: { x: { A: "b" } } }), (e) => e.status === 400);
   assert.throws(() => validateTrackerEdits({ edits: { "1": { A: 5 } } }), (e) => e.status === 400);
   assert.deepEqual(validateTrackerEdits({ edits: { "1": { A: "b" } } }), { "1": { A: "b" } });

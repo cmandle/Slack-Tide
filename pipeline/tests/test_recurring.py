@@ -13,7 +13,7 @@ SOURCE = {
     "id": "standing-new-bedford", "kind": "recurring", "town": "New Bedford",
     "series": [
         {"title": "Trivia night", "venue": "PLAY Arcade", "weekday": "wednesday", "start": "19:00", "end": "21:00",
-         "url": "https://www.playarcadenb.com/", "category": "Sports & Recreation"},
+         "url": "https://www.playarcadenb.com/", "category": "Nightlife"},
         {"title": "Karaoke", "venue": "PLAY Arcade", "weekday": "Thu", "start": "8pm", "end": "12am",
          "skip": [date(2099, 1, 8)]},
         {"title": "AHA! Night", "venue": "Downtown New Bedford", "weekday": "thursday", "week": 2,
@@ -47,7 +47,7 @@ def test_expansion_weekly_monthly_skip_until_and_disabled(frozen):
     assert len(trivia) in (WINDOW_DAYS // 7, WINDOW_DAYS // 7 + 1)
     assert trivia[0].start.date() == NOW.date()            # today counts; yesterday is the window's floor
     assert trivia[0].venue_raw == "PLAY Arcade" and trivia[0].town == "New Bedford"
-    assert trivia[0].source_categories == ["Sports & Recreation"] and not trivia[0].all_day
+    assert trivia[0].source_categories == ["Nightlife"] and not trivia[0].all_day
     assert trivia[0].source_uid.startswith("trivia-night-play-arcade:2098-12-31")
 
     karaoke = by_title["Karaoke"]

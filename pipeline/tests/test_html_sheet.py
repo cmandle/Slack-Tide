@@ -76,10 +76,10 @@ def test_uncap_only_touches_shouting_titles():
 def test_default_category_is_ours_and_only_fills_gaps(frozen):
     c = HtmlConnector(ZEITERION, cache=False)
     occs = c.parse(fixture_text("zeiterion_listing.html"))
-    normalize(occs, {"zeiterion": "New Bedford"}, {"zeiterion": "The Zeiterion"}, {"zeiterion": "Arts & Theatre"})
+    normalize(occs, {"zeiterion": "New Bedford"}, {"zeiterion": "The Zeiterion"}, {"zeiterion": "Arts"})
     by_title = {o.title: o for o in occs}
-    assert by_title["Mystic Pizza: A New Musical"].category == "Arts & Theatre"   # from the rule ("musical")
-    assert by_title["All Souls"].category == "Arts & Theatre"                    # from the venue default
+    assert by_title["Mystic Pizza: A New Musical"].category == "Arts"   # from the rule ("musical")
+    assert by_title["All Souls"].category == "Arts"                    # from the venue default
     assert all(o.town == "New Bedford" and o.venue == "The Zeiterion" for o in occs)
 
 def test_sheet_columns_and_rows(frozen):
@@ -95,6 +95,6 @@ def test_sheet_columns_and_rows(frozen):
     assert "pat@example.org" not in (fair.description + fair.title + fair.venue_raw)   # organiser details never enter a record
     assert cleanup.source_categories == ["Volunteer opportunities", "Volunteering & Causes"]
     normalize(occs, {"submissions": ""}, {})
-    assert fair.town == "Westport" and fair.category == "Markets & Fairs"
-    assert yoga.category == "Sports & Recreation"            # the rules win when they match
-    assert cleanup.category == "Volunteering & Causes"       # no rule word in the title, so the organiser's own category fills the gap
+    assert fair.town == "Westport" and fair.category == "Seasonal"
+    assert yoga.category == "Active"                 # the rules win when they match
+    assert cleanup.category == "Community"           # no rule word in the title, so the organiser's own category fills the gap, old name mapped onto the seven
