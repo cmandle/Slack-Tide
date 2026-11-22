@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T18:17:39.292923+00:00",
+ "generated_at": "2026-11-22T21:45:21.274126+00:00",
  "series_count": 78,
  "occurrence_count": 144,
  "series": [
@@ -25,9 +25,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "aced7a2d1b73",
@@ -76,9 +82,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "b7301c4db9eb",
@@ -102,9 +114,15 @@
     }
    ],
    "summary": "This week we've got another double walk day, this time back to the shore to two of our favorite places! Start the morning with us at one of our all-time favorite spots, horseneck beach!",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "e2ba4aa4ad25",
@@ -188,9 +206,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "59c576de1986",
@@ -214,9 +238,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "aa916f2461c6",
@@ -240,9 +270,15 @@
     }
    ],
    "summary": "Join us for a fun pop-up walk at Russells Mills Woods. This walk is led by volunteer Kathryn Gollub. Women's walks are typically held rain or shine, but please check our website and social media before the walk for any weather related cancellations. We don't have an official address, but our closest",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "59a471eb1d08",
@@ -326,9 +362,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "4c93cfea1082",
@@ -412,9 +454,15 @@
     }
    ],
    "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "1fc8a5984799",
@@ -498,9 +546,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "d89f8045f686",
@@ -524,9 +578,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "db13d4947a44",
@@ -555,9 +615,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "452cf38f822a",
@@ -581,9 +647,15 @@
     }
    ],
    "summary": "Join us for six weeks of wellness, spread over the course of the year! Together, we'll explore themes like mindful awareness, natural movement, the health benefits of eating locally, and embracing joy through fun, community-centered activities. Whether you're looking to reboot your health routine, r",
+   "categories": [
+    "Learn"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "e9e34f0bd299",
@@ -607,9 +679,15 @@
     }
    ],
    "summary": "Join us for a fun walk through Russells Mills Woods. Throughout the hike, we will stop to perform other exercises, whether a standing yoga or strength pose, or something energetic. Explore nature, get your heartrate up, and feel strong! Led by Karen Rocha. About Karen: Karen is a DNRT Board Member a",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "bootstrap",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "1bf2b59ba8ce",
@@ -633,9 +711,15 @@
     }
    ],
    "summary": "Turn your family trail walk into an outdoor navigation quest with Compass Kids!",
+   "categories": [
+    "Community"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "d02b7dceb0ab",
@@ -659,9 +743,15 @@
     }
    ],
    "summary": "Small Business Saturday at Kilburn Mill 🛍️☕️ We're kicking off the weekend in New Bedford with coffee, movement, and holiday shopping! Fuel up: Grab a coffee at Society Coffee Bar at 9:00am Get moving: Choose between an indoor stroll through the mill or an outdoor walk (weather permitting!) 10:00am ",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "ac250c42a90d",
@@ -685,9 +775,15 @@
     }
    ],
    "summary": "We're taking things to a new neighborhood! Our amazing Ambassador Cindy is leading you to one of our most-requested spots for a scenic Sunday morning stroll right along the water at the much awaited Cape Cod Canal!",
+   "categories": [
+    "Community"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "0f566c0e4bb0",
@@ -711,9 +807,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "cc95b9dda4c0",
@@ -737,9 +839,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "23b0b58d6454",
@@ -773,9 +881,15 @@
     }
    ],
    "summary": "A whole sustainably caught tuna carved in front of the room, served as sashimi and poke. Reservations on the venue's page.",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "12ec6103cd39",
@@ -799,9 +913,15 @@
     }
    ],
    "summary": "Our Gnomes are roamin' again! Look for Wallace and Pebbles, our resident gnomes, and their tiny friends along the trail. Take a hike and see the gnomes anytime from dawn to dusk throughout December.",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "18527ed7c426",
@@ -835,9 +955,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "5092e8abea61",
@@ -861,9 +987,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "15d0e0e6fd43",
@@ -887,9 +1019,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "02b6bb19c462",
@@ -918,9 +1056,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "3f800ce1fd17",
@@ -944,9 +1088,15 @@
     }
    ],
    "summary": "Kick off the holiday season with us at Sakonnet Vineyard! Join us from 12-4 PM for a festive afternoon filled with holiday fun, including cookie decorating, a visit from Santa, and a holiday market in the barn featuring local vendors from Juicy Market! Bring the whole family and get into the holiday",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "eb05dc6421e3",
@@ -970,9 +1120,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "af8661b810e2",
@@ -1001,9 +1157,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "e5f990d8ab0e",
@@ -1027,9 +1189,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "583ace92d403",
@@ -1053,9 +1221,15 @@
     }
    ],
    "summary": "A tradition in Poland, this fun paper chandelier is so versatile. Students have made them to celebrate the birth of a child, give a wedding tent extra pizazz and add sparkle to a New Year's Eve party. Bad weather date - Dec. 13 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so ",
+   "categories": [
+    "Learn"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "ee040d6e7e41",
@@ -1079,9 +1253,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "a34b6600f405",
@@ -1105,9 +1285,15 @@
     }
    ],
    "summary": "ART SUPPLY BASICS Workshop Series for Adults Session 3: Water-Based Paints Including acrylics, watercolor, water-soluble colored pencils, and water-mixable oil paints. Join Catherine for a series of three workshops highlighting the properties and possibilities of a variety of drawing and painting ma",
+   "categories": [
+    "Learn"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "443923d848e0",
@@ -1131,9 +1317,15 @@
     }
    ],
    "summary": "Looking for your next wintry adventure? Join us for a quick boat ride over to Wickets Island, where you'll climb the stairs and experience the 360° view from the top of the island!",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "d54834761833",
@@ -1157,9 +1349,15 @@
     }
    ],
    "summary": "Details to be announced soon. No registration required; just show up! Tools and snacks provided.",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "bootstrap",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "3ae2e4cfbec0",
@@ -1183,9 +1381,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "f54e688a31cc",
@@ -1209,9 +1413,15 @@
     }
    ],
    "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "c630e36e3e56",
@@ -1235,9 +1445,15 @@
     }
    ],
    "summary": "Youth Services: Paint a Holiday Tree! New Bedford Main Library's Youth Services 613 Pleasant Street Visit the New Bedford Main Library's Youth Services to Paint a Holiday Tree! Kids can paint their next masterpiece with washable paint supplies available. There is no registration for this free youth ",
+   "categories": [
+    "Community"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "e54575eb80cb",
@@ -1261,9 +1477,15 @@
     }
    ],
    "summary": "Christmas on County Rotch Duff Jones House, 396 County St Celebrate the season at the RJD with beautifully decorated holiday rooms, festive fun, and the annual Cookie Challenge. Wear your ugliest holiday sweater, sample homemade cookies, and vote for your favorite. Donations are welcome. This event ",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "eb4ad85e22a1",
@@ -1287,9 +1509,15 @@
     }
    ],
    "summary": "Meet and Greet with Santa! United Way 128 Union St. Bring the whole family for a special Meet and Greet with Santa! Kids can share their wishes, snap festive photos, and experience the joy of the season. Enjoy cookies, crafts, and a visit from our festive face painter during AHA! New Bedford. Ends: ",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "d4237e80a7f7",
@@ -1313,9 +1541,15 @@
     }
    ],
    "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. *Community Note - 230 Union Street is a radically inclusive safe space where the door is kept locked. There ",
+   "categories": [
+    "Community"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "854c84a5589a",
@@ -1339,9 +1573,15 @@
     }
    ],
    "summary": "Open House At Pathways to Freedom and Caricatures with Deutra Pathways 2 Freedom Hub, 669 Purchase Street Experience all that Pathways to Freedom has to offer the community at their Open House, and meet Deutra, a talented artist whose work celebrates creativity, storytelling, and self-expression. Wa",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "b66835cbbecd",
@@ -1365,9 +1605,15 @@
     }
    ],
    "summary": "On Matter: A Northeast Regional Ceramics & Printmaking Exhibition The Star Store, 715 Purchase Street Join us at the Star Store for On Matter, a regional exhibition that brings together ceramics and printmaking, both practices rooted in materials and process. This exhibition explores why making matt",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "461b72a2bfae",
@@ -1391,9 +1637,15 @@
     }
    ],
    "summary": "Holiday Fun at New Bedford Community Health! New Bedford Community Health Courtyard: 384 Acushnet Ave Get into the holiday spirit with New Bedford Community Health during December AHA! Night! Join us for a festive evening featuring photos with Santa, make-your-own Christmas ornaments, a hot chocolat",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "a61790e6d5b5",
@@ -1427,9 +1679,15 @@
     }
    ],
    "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "fc247bff53f4",
@@ -1453,9 +1711,15 @@
     }
    ],
    "summary": "Follow the Carolers!- Traditional American Songs- AHA! Moment Beauty Union 338 Acushnet Ave The Multi-Cultural Trio: Many Voices, One Community Stop by Beauty Union, a salon and collective of beauty artists in downtown New Bedford, and enjoy the sounds of the season and follow along with the Trio. F",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "72b770c8842d",
@@ -1479,9 +1743,15 @@
     }
    ],
    "summary": "Follow the Carolers!- Songs of Africa- AHA! Moment Bento's Bar and Grille, 555 Pleasant St. Follow the Carolers From Bento's! Gather with friends and neighbors for an inspiring holiday musical presentation featuring the renowned music ministry of Pastor Lauri Gomes and the congregation of Union Bapt",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "98fe2d7e3acb",
@@ -1505,9 +1775,15 @@
     }
    ],
    "summary": "Follow The Carolers! - Puerto Rican Traditions- AHA! Moment Unitarian Universalist Church, 71 8th St. Follow the Carolers from First Unitarian Church! Join the Puerto Rican Holiday Parranda at 6:00 pm led by Angie Vargas, The Puerto Rican Latin American Art and Culture Commitee and First Encounters ",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "856e99869fe4",
@@ -1531,9 +1807,15 @@
     }
    ],
    "summary": "Arts Illuminated Steeple Playhouse, 159 William St. Hosted by The New Bedford Light, this free event features short, one-on-one sessions with selected creators, framed by samples of their work. Stay for our signature Afterglow reception, where you can mingle with the artists, browse works up close, ",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "d9993e826e2c",
@@ -1557,9 +1839,15 @@
     }
    ],
    "summary": "Jazz with the Buttonwood Brass Band New Bedford Harbor Hotel, 222 Union St. Enjoy some speakeasy jazz from the Buttonwood Brass Band , on every AHA! Night at the New Bedford Harbor Hotel. Ends: 8:00pm",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "8f4f66429cfe",
@@ -1583,9 +1871,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "8a57189c0cdc",
@@ -1609,9 +1903,15 @@
     }
    ],
    "summary": "AHA! Moment- Seaport Sessions- Live Music and Zines! Aviary Books 22 William St. Join Cape Cod writer and musician Michael T. Fournier , whose zine Policymaker is celebrating its 55th issue, along with touring artists Amanda Huron and Mike Andre . Through zines, storytelling, and music, these indepe",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "8a044b453d85",
@@ -1635,9 +1935,15 @@
     }
    ],
    "summary": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan Bento's Bar and Grille, 555 Pleasant St. Step into the spotlight and sing your heart out at Karaoke Night with DJ Chan! From today's biggest hits to favorite throwback tunes, there's a song for everyone. Whether you're taking the stage or cheer",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "c05ad05cf130",
@@ -1661,9 +1967,15 @@
     }
    ],
    "summary": "Neal McCarthy Trio The Pour Farm Tavern, 780 Purchase St. Grab a bite or a pint and listen to Electric Blues & Rock with the Neal McCarthy Trio as they play from 8-11:30pm. Ends: 11:30 pm",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "19708b8ba512",
@@ -1687,9 +1999,15 @@
     }
    ],
    "summary": "Karaoke at PLAY PLAY Arcade, 34 Union St. Belt out some tunes at PLAY Arcade! There's karaoke, food, fun, and games! Ends: Midnight",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "0afa3b86849a",
@@ -1713,9 +2031,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "b527625997d0",
@@ -1739,9 +2063,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "1667c518b923",
@@ -1765,9 +2095,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "e7e38fbf272a",
@@ -1791,9 +2127,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "188c25e70ad8",
@@ -1817,9 +2159,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "0371024d810a",
@@ -1843,9 +2191,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "32167176f284",
@@ -1879,9 +2233,15 @@
     }
    ],
    "summary": "A ten to twelve course omakase dinner. Reservations on the venue's page.",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "73059079afa2",
@@ -1905,9 +2265,15 @@
     }
    ],
    "summary": "Details to come. Lunch following trail work. Tools and snacks provided. No registration required; just show up!",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "35689837979c",
@@ -1931,9 +2297,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "1397a2bbf9e5",
@@ -1957,9 +2329,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "fceaea0689fd",
@@ -1983,9 +2361,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "5c6ba09dc6bc",
@@ -2009,9 +2393,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "7fc848d57904",
@@ -2040,9 +2430,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "c3aa825f1b94",
@@ -2066,9 +2462,15 @@
     }
    ],
    "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Register here!",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "d36010159f29",
@@ -2092,9 +2494,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "921b296fd4c6",
@@ -2118,9 +2526,15 @@
     }
    ],
    "summary": "Join us for a Stargazing Social at The Sawmill!",
+   "categories": [
+    "Active"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "4edf208dd814",
@@ -2144,9 +2558,15 @@
     }
    ],
    "summary": "Happy New Year! Start 2027 on the right foot, with a hike through the beautiful Dike Creek Reserve. Led by Kathryn & Brian Gollub. Registration opens December 1.",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "b650a075a259",
@@ -2175,9 +2595,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "0d6ba8328ca3",
@@ -2201,9 +2627,15 @@
     }
    ],
    "summary": "Take your paper flower making, to the next level. We will hand dye with inks, food coloring and even coffee to get surprising and exciting variations. You'll leave with a collection of unique papers to make bunches of bouquets. Bad weather date - Jan. 17 Lunch, snacks + drinks included Fee: $150 + a",
+   "categories": [
+    "Learn"
+   ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "ae04a769c7ad",
@@ -2227,9 +2659,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "39170b00c882",
@@ -2253,9 +2691,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Seasonal"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "5acb4d56ad4f",
@@ -2279,9 +2723,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "16001627a34e",
@@ -2305,9 +2755,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "0917615ad474",
@@ -2331,9 +2787,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   },
   {
    "id": "c7c558c7cd85",
@@ -2357,9 +2819,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Arts"
+   ],
    "approval": "approved",
    "decided_by": "source trust",
-   "category_by": ""
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
   }
  ]
 }

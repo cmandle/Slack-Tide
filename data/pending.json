@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T18:17:39.292923+00:00",
+ "generated_at": "2026-11-22T21:45:21.274126+00:00",
  "pending_count": 11,
  "soon_count": 4,
  "approved_count": 67,
@@ -27,9 +27,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-11-21T19:00:00-05:00",
    "soon": true
   },
@@ -60,9 +66,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-11-27T19:00:00-05:00",
    "soon": true
   },
@@ -88,9 +100,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-11-28T19:00:00-05:00",
    "soon": true
   },
@@ -141,9 +159,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-11-29T10:00:00-05:00",
    "soon": true
   },
@@ -179,9 +203,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-03T18:00:00-05:00",
    "soon": false
   },
@@ -207,9 +237,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-04T19:00:00-05:00",
    "soon": false
   },
@@ -235,9 +271,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-05T19:00:00-05:00",
    "soon": false
   },
@@ -263,9 +305,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-11T19:00:00-05:00",
    "soon": false
   },
@@ -291,9 +339,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-12T19:00:00-05:00",
    "soon": false
   },
@@ -319,9 +373,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-18T19:00:00-05:00",
    "soon": false
   },
@@ -347,9 +407,15 @@
     }
    ],
    "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
    "approval": "pending",
    "decided_by": "",
-   "category_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
    "next_start": "2026-12-19T19:00:00-05:00",
    "soon": false
   }

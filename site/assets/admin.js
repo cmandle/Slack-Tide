@@ -2,7 +2,7 @@
    Cloudflare Access, which fronts /admin/; every save goes to the admin service, a Cloudflare
    Worker on /admin/api/ behind the same gate (worker/ in the repository), which checks the
    visitor's Access identity and makes the commit itself. No token is kept in the browser.
-   Writes: approvals.yaml (append; a decision may carry a corrected category), docs/sources-tracker.csv
+   Writes: approvals.yaml (append; a decision may carry the approver's edits), docs/sources-tracker.csv
    (rewrite rows), approvers.yaml (append or remove), and a workflow dispatch for the pipeline. */
 (function () {
   "use strict";
@@ -71,24 +71,78 @@
   }
 
   /* ---- queue: decisions append to approvals.yaml. A decision is approve or reject on a pending
-     item, with the category when the approver changed it, or a changed category on a published
-     item (saved as approved again, with the category: that is how a live listing is corrected). */
+     item, or a change on a published item (saved as approved again: that is how a live listing
+     is edited). Either carries the approver's edits: the primary category select and the fields
+     of the Edit form. Every control holds two baselines: its default value (what the page
+     loaded with, what the site shows) says whether the approver changed anything, and
+     data-original (the pipeline's own value) says what goes in the entry. An entry replaces the
+     last one for the id, so it must carry every override in force, not only the ones changed
+     today; sending each field that differs from the pipeline's value does exactly that. */
   var queue = document.getElementById("queue");
   var items = Array.prototype.slice.call(document.querySelectorAll(".rev"));
   var pubs = Array.prototype.slice.call(document.querySelectorAll(".pub"));
   var list = document.getElementById("rev-list");
   var countEl = document.getElementById("rev-count"), saveBtn = document.getElementById("rev-save");
   function catSelect(el) { return el.querySelector("[data-category-select]"); }
-  function catChanged(el) { var s = catSelect(el); return !!s && s.value !== s.getAttribute("data-original"); }
+  function controls(el) { return Array.prototype.slice.call(el.querySelectorAll("[data-category-select], [data-field], [data-also]")); }
+  function isDirty(c) {
+    if (c.type === "checkbox") return c.checked !== c.defaultChecked;
+    if (c.tagName === "SELECT") { var o = c.options[c.selectedIndex]; return !!o && !o.defaultSelected; }
+    return c.value !== c.defaultValue;
+  }
+  function changed(el) { return !el.hasAttribute("data-saved") && controls(el).some(isDirty); }
+  function markSaved(el) {
+    controls(el).forEach(function (c) {
+      if (c.type === "checkbox") c.defaultChecked = c.checked;
+      else if (c.tagName === "SELECT") Array.prototype.forEach.call(c.options, function (o, i) { o.defaultSelected = i === c.selectedIndex; });
+      else c.defaultValue = c.value;
+    });
+  }
+  function categoriesOf(el) {
+    var primary = catSelect(el) ? catSelect(el).value : "", out = primary ? [primary] : [];
+    Array.prototype.forEach.call(el.querySelectorAll("[data-also]:checked"), function (c) { if (out.indexOf(c.value) < 0) out.push(c.value); });
+    return out;
+  }
+  /* The edit record for the entry: each field whose value differs from the pipeline's; an empty
+     value is no override. The category list goes when it differs from the classifier's. */
+  function editsOf(el) {
+    var edits = {};
+    Array.prototype.forEach.call(el.querySelectorAll("[data-field]"), function (c) {
+      var v = String(c.value || "").trim();
+      if (v && v !== c.getAttribute("data-original")) edits[c.getAttribute("data-field")] = v;
+    });
+    var cats = categoriesOf(el), base = (el.getAttribute("data-categories") || "").split("|").filter(Boolean);
+    if (cats.join("|") !== base.join("|")) edits.categories = cats;
+    return edits;
+  }
+  function decisionFor(el, status) {
+    var d = { id: el.getAttribute("data-id"), status: status, title: el.getAttribute("data-title"), venue: el.getAttribute("data-venue") || "" };
+    var edits = editsOf(el);
+    if (Object.keys(edits).length) d.edits = edits;
+    return d;
+  }
   function decided() { return items.filter(function (it) { return it.getAttribute("data-decision") && !it.hasAttribute("data-saved"); }); }
-  function recategorised() { return pubs.filter(catChanged); }
+  function edited() { return pubs.filter(changed); }
   function refreshQueue() {
-    var n = decided().length + recategorised().length;
+    var n = decided().length + edited().length;
     countEl.textContent = n + (n === 1 ? " decision" : " decisions");
     saveBtn.disabled = n === 0;
     var left = items.filter(function (it) { return !it.hasAttribute("data-saved") && !it.hidden; }).length;
     document.getElementById("rev-empty").hidden = left > 0;
-    pubs.forEach(function (p) { p.classList.toggle("is-changed", catChanged(p)); });
+    pubs.forEach(function (p) { p.classList.toggle("is-changed", changed(p)); });
+    items.forEach(function (it) { it.classList.toggle("is-edited", changed(it)); });
+  }
+  function wireEdits(el) {
+    var form = el.querySelector("[data-edit-form]"), btn = el.querySelector("[data-edit]");
+    if (btn && form) {
+      btn.addEventListener("click", function () {
+        form.hidden = !form.hidden; btn.setAttribute("aria-expanded", form.hidden ? "false" : "true");
+        if (!form.hidden) { var first = form.querySelector("input"); if (first) first.focus(); }
+      });
+      form.addEventListener("submit", function (e) { e.preventDefault(); });
+      form.addEventListener("reset", function () { setTimeout(refreshQueue, 0); });
+    }
+    controls(el).forEach(function (c) { c.addEventListener("change", refreshQueue); c.addEventListener("input", refreshQueue); });
   }
   items.forEach(function (it) {
     it.addEventListener("click", function (e) {
@@ -96,8 +150,9 @@
       if (btn) { var d = btn.getAttribute("data-decide"); it.setAttribute("data-decision", it.getAttribute("data-decision") === d ? "" : d); refreshQueue(); return; }
       if (e.target.closest("[data-ask]")) { window.location.href = "mailto:?subject=" + encodeURIComponent("Your event on Slack Tide: " + it.getAttribute("data-title")); }
     });
+    wireEdits(it);
   });
-  pubs.forEach(function (p) { var s = catSelect(p); if (s) s.addEventListener("change", refreshQueue); });
+  pubs.forEach(wireEdits);
   var qSource = document.getElementById("q-source"), qSort = document.getElementById("q-sort");
   function applyQueue() {
     var src = qSource.value;
@@ -114,20 +169,13 @@
   qSource.addEventListener("change", applyQueue); qSort.addEventListener("change", applyQueue);
   saveBtn.addEventListener("click", function () {
     if (!needLive(queue)) return;
-    var toSave = decided(), toFix = recategorised(); saveBtn.disabled = true; statusIn(queue, "Saving…");
-    var decisions = toSave.map(function (it) {
-      var d = { id: it.getAttribute("data-id"), status: it.getAttribute("data-decision"),
-                title: it.getAttribute("data-title"), venue: it.getAttribute("data-venue") || "" };
-      if (catChanged(it)) d.category = catSelect(it).value;   /* only a change becomes an override */
-      return d;
-    }).concat(toFix.map(function (p) {
-      return { id: p.getAttribute("data-id"), status: "approved", title: p.getAttribute("data-title"),
-               venue: p.getAttribute("data-venue") || "", category: catSelect(p).value };
-    }));
+    var toSave = decided(), toFix = edited(); saveBtn.disabled = true; statusIn(queue, "Saving…");
+    var decisions = toSave.map(function (it) { return decisionFor(it, it.getAttribute("data-decision")); })
+      .concat(toFix.map(function (p) { return decisionFor(p, "approved"); }));
     call("decisions", "POST", { decisions: decisions })
       .then(function (out) {
         toSave.forEach(function (it) { it.setAttribute("data-saved", "1"); it.hidden = true; });
-        toFix.forEach(function (p) { var s = catSelect(p); s.setAttribute("data-original", s.value); p.setAttribute("data-saved", "1"); });
+        toFix.forEach(markSaved);   /* what is on the page is now what the entry says; a further change is a new decision */
         refreshQueue(); statusIn(queue, "Saved " + out.saved + " as " + out.by + ". The site updates on the next pipeline run.");
       })
       .catch(function (e) { saveBtn.disabled = false; statusIn(queue, String(e.message || e), true); });
