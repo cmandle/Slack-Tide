@@ -118,7 +118,7 @@ def cmd_build(args):
         print("no data/events.json yet; run `slacktide run` first"); return 1
     r = build(DATA, Path(args.out) if args.out else SITE, now=now)
     print(f"wrote {r['out']}: {r['published']} series published, {r['pending']} waiting for review; "
-          f"{r['tonight']} tonight, {r['week']} in the week ahead; tide {r['tide']}; "
+          f"{r['tonight']} today, {r['week']} in the week ahead; tide {r['tide']}; "
           f"tokens from {r['tokens']}; icons from {r['icons']}")
     return 0
 

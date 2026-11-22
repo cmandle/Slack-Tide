@@ -9,7 +9,8 @@ as the variable layer plus the component layer in ``site_assets/site.css``. When
 ``site_assets/`` stand in.
 
 Towns and the category taxonomy come from ``config``; the template never lists them.
-Tonight shows series whose next occurrence is today. The week ahead lists the following seven
+Today (the first section, called tonight in the code) shows series whose next occurrence is
+today, at any hour; the badge and heading say "Today". The week ahead lists the following seven
 days with each collapsed series as one row, on the day of its next occurrence.
 """
 from __future__ import annotations
@@ -325,7 +326,7 @@ def card(row: dict, sources: dict, scenes: dict[str, list[str]], rel: str = "") 
     return (f'<a class="card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
             f'data-category="{esc(cat)}" data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
             f'<div class="card-title">{esc(s["title"])}</div>'
-            f'<div class="card-media">{art}<span class="card-badge">Tonight</span></div>'
+            f'<div class="card-media">{art}<span class="card-badge">Today</span></div>'
             f'<div class="card-strip" title="{esc(cat)}">{esc(short_label(cat))}</div></div>'
             f'<div class="card-when"><span>{esc(when)}</span><span>{esc(s.get("cost") or "")}</span></div>'
             f'<div class="card-where">{esc(where)}</div>'
@@ -368,12 +369,12 @@ def events_page(events: dict, tide: dict | None, now: datetime) -> str:
                    "local organizations already keep. Every listing is read by a person.")
     body = (head("events", "") +
             '<main class="content" id="main">'
-            f'<div class="hero"><div class="hero-text"><div class="hero-title"><h1>Tonight</h1>{stickers()}</div>'
+            f'<div class="hero"><div class="hero-text"><div class="hero-title"><h1>Today</h1>{stickers()}</div>'
             f'<div class="dateline">{esc(dateline)}<span class="long"> · {n_towns} town{"" if n_towns == 1 else "s"}</span></div></div>'
             + tide_box(tide, now) + '</div>'
             + filters(towns, "") +
-            f'<div class="cards" aria-label="Tonight">{cards_html}</div>'
-            f'<p class="empty" id="tonight-empty"{"" if not tonight else " hidden"}>Nothing listed for tonight in this view.</p>'
+            f'<div class="cards" aria-label="Today">{cards_html}</div>'
+            f'<p class="empty" id="tonight-empty"{"" if not tonight else " hidden"}>Nothing listed for today in this view.</p>'
             f'<section class="week" aria-labelledby="week-h"><h2 id="week-h"><span>The week ahead</span><span class="range">{esc(week_range_label(now.date()))}</span></h2>'
             f'<div class="week-grid">{rows_html}</div>'
             f'<p class="empty" id="week-empty"{" hidden" if n_week else ""}>Nothing listed for the week ahead in this view.</p>'
