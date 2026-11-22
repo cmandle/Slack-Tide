@@ -2,47 +2,47 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 157,
-   "seconds": 3.37
+   "seconds": 4.36
   },
   "viva-fall-river": {
    "rows": 227,
-   "seconds": 13.3
+   "seconds": 14.47
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.1
+   "seconds": 0.29
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.29
+   "seconds": 0.36
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 20.02
+   "seconds": 5.61
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 0.14
+   "seconds": 0.57
   },
   "cisco-live-music": {
    "rows": 19,
-   "seconds": 0.06
+   "seconds": 0.25
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.33
+   "seconds": 0.12
   },
   "south-coast-girls-walk": {
    "rows": 3,
-   "seconds": 0.79
+   "seconds": 0.38
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.81
+   "seconds": 0.31
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.15
+   "seconds": 0.31
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -66,12 +66,12 @@
   "Acushnet": 2
  },
  "by_category": {
-  "Nightlife": 28,
+  "Nightlife": 27,
   "Active": 9,
+  "Arts": 17,
   "Seasonal": 17,
   "Learn": 4,
-  "Community": 4,
-  "Arts": 16
+  "Community": 4
  },
  "by_cadence": {
   "once": 66,

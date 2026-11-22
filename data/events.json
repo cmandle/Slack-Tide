@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T21:45:21.274126+00:00",
+ "generated_at": "2026-11-22T21:50:01.506187+00:00",
  "series_count": 78,
  "occurrence_count": 144,
  "series": [
@@ -129,7 +129,7 @@
    "title": "Live Music Beatles Brunch",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Nightlife",
+   "category": "Arts",
    "source_id": "standing-new-bedford",
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
@@ -207,14 +207,22 @@
    ],
    "summary": "",
    "categories": [
-    "Nightlife"
+    "Arts"
    ],
    "approval": "approved",
    "decided_by": "mail@l3l.us",
-   "edits": {},
-   "original": {},
-   "edited_by": "",
-   "edited_on": ""
+   "edits": {
+    "categories": [
+     "Arts"
+    ]
+   },
+   "original": {
+    "categories": [
+     "Nightlife"
+    ]
+   },
+   "edited_by": "mail@l3l.us",
+   "edited_on": "2026-11-22"
   },
   {
    "id": "59c576de1986",
