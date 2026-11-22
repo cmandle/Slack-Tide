@@ -11,6 +11,9 @@
 # section 7); it changes only if that application is deleted and recreated.
 
 name = "slack-tide-admin"
+# The Cloudflare account that holds the slack-tide.org zone. Not a secret; naming it here lets an
+# account-owned API token deploy without wrangler asking which accounts the token can see.
+account_id = "b49273aa24630b42459dadddbb91142f"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 workers_dev = false
