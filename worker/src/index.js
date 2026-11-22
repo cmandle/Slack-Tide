@@ -8,9 +8,11 @@
 
    Endpoints (JSON in, JSON out):
      GET    /admin/api/whoami      -> { email }
-     POST   /admin/api/decisions   { decisions: [{ id, status, title, venue?, category? }] } -> approvals.yaml
-                                   (category: the approver's correction of the classifier, kept on every
-                                   run; an empty string records the decision without one)
+     POST   /admin/api/decisions   { decisions: [{ id, status, title, venue?, edits? }] } -> approvals.yaml
+                                   (edits: the approver's overrides of what the pipeline read, any of
+                                   title, venue, town, description, cost, url, categories (a list, the
+                                   first primary), kept on every run; an unknown field is refused. The
+                                   older single `category` string is taken as a one-item list.)
      POST   /admin/api/tracker     { edits: { "<row>": { "<Column>": "<value>" } } } -> docs/sources-tracker.csv
      POST   /admin/api/approvers   { name, email, role } -> approvers.yaml (append)
      DELETE /admin/api/approvers   { email } -> approvers.yaml (remove)
@@ -119,7 +121,14 @@ export function appendDecisions(text, decisions, by, date) {
     const lines = [`- id: ${yamlStr(d.id)}`, `  status: ${d.status}`, `  by: ${yamlStr(by)}`, `  date: ${yamlStr(date)}`,
                    `  title: ${yamlStr(d.title || "")}`];
     if (d.venue) lines.push(`  venue: ${yamlStr(d.venue)}`);
-    if (d.category) lines.push(`  category: ${yamlStr(d.category)}`);
+    const edits = d.edits || {};
+    const keys = Object.keys(edits).filter((k) => k === "categories" ? edits[k].length : edits[k]);
+    if (keys.length) {
+      lines.push("  edits:");
+      for (const k of keys) {
+        lines.push(k === "categories" ? `    categories: [${edits[k].map(yamlStr).join(", ")}]` : `    ${k}: ${yamlStr(edits[k])}`);
+      }
+    }
     return lines.join("\n");
   }).join("\n") + "\n";
   if (!text) text = "# Approval decisions. One entry per series id; the last entry for an id wins.\n";
@@ -169,20 +178,53 @@ export function removeApprover(text, email) {
 
 const EMAIL = /^[^\s@"']+@[^\s@"']+\.[^\s@"']+$/;
 const CATEGORY = /^[A-Za-z][A-Za-z &]{0,39}$/;
-function str(v, max, what) {
-  if (typeof v !== "string" || !v.trim() || v.length > max || /[\r\n]/.test(v)) throw new HttpError(400, `Bad ${what}`);
+/* The editable fields and their longest values, as the pipeline has them (config.EDITABLE_FIELDS,
+   config.EDIT_MAX_LENGTH); the category names and the town list live there too, so here only the
+   shape is checked and the pipeline drops a name it does not know. */
+const EDIT_FIELDS = { title: 300, venue: 300, town: 60, description: 2000, cost: 120, url: 500 };
+const MAX_CATEGORIES = 12;
+const DECISION_FIELDS = ["id", "status", "title", "venue", "category", "edits"];
+function str(v, max, what, multiline = false) {
+  if (typeof v !== "string" || !v.trim() || v.length > max || (!multiline && /[\r\n]/.test(v))) throw new HttpError(400, `Bad ${what}`);
   return v.trim();
+}
+export function validateEdits(e) {
+  if (e === undefined || e === null) return {};
+  if (typeof e !== "object" || Array.isArray(e)) throw new HttpError(400, "Bad edits");
+  const out = {};
+  for (const k of Object.keys(e)) {
+    const v = e[k];
+    if (k === "categories") {
+      if (!Array.isArray(v) || v.length > MAX_CATEGORIES) throw new HttpError(400, "Bad categories");
+      const cats = [];
+      for (const c of v) {
+        if (typeof c !== "string" || !CATEGORY.test(c)) throw new HttpError(400, "Bad category");
+        if (!cats.includes(c.trim())) cats.push(c.trim());
+      }
+      out.categories = cats;   /* an empty list is no override: the classifier is back in charge */
+    } else if (k in EDIT_FIELDS) {
+      if (v === "" || v === null || v === undefined) continue;   /* empty: no override */
+      const s = str(v, EDIT_FIELDS[k], k, k === "description");
+      if (k === "url" && !/^https?:\/\//i.test(s)) throw new HttpError(400, "Bad url");
+      out[k] = s;
+    } else throw new HttpError(400, `Unknown edit field: ${String(k).slice(0, 40)}`);
+  }
+  return out;
 }
 export function validateDecisions(body) {
   const list = body && Array.isArray(body.decisions) ? body.decisions : null;
   if (!list || !list.length || list.length > 500) throw new HttpError(400, "Send between 1 and 500 decisions");
   return list.map((d) => {
-    if (!d || !["approved", "rejected"].includes(d.status)) throw new HttpError(400, "Bad decision status");
-    /* The category list lives in the pipeline (config.CATEGORIES) and the page's select is built
-       from it; here only the shape is checked, and the pipeline drops a name it does not know. */
-    if (d.category !== undefined && d.category !== "" && (typeof d.category !== "string" || !CATEGORY.test(d.category))) throw new HttpError(400, "Bad category");
+    if (!d || typeof d !== "object" || !["approved", "rejected"].includes(d.status)) throw new HttpError(400, "Bad decision status");
+    for (const k of Object.keys(d)) if (!DECISION_FIELDS.includes(k)) throw new HttpError(400, `Unknown decision field: ${String(k).slice(0, 40)}`);
+    const edits = validateEdits(d.edits);
+    /* The single category of the first day of the seven: a one-item list, unless edits name their own. */
+    if (d.category !== undefined && d.category !== "") {
+      if (typeof d.category !== "string" || !CATEGORY.test(d.category)) throw new HttpError(400, "Bad category");
+      if (!edits.categories) edits.categories = [d.category.trim()];
+    }
     return { id: str(d.id, 120, "series id"), status: d.status, title: str(d.title || "untitled", 300, "title"),
-             venue: d.venue ? str(d.venue, 300, "venue") : "", category: d.category ? d.category.trim() : "" };
+             venue: d.venue ? str(d.venue, 300, "venue") : "", edits };
   });
 }
 export function validateTrackerEdits(body) {

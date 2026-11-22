@@ -4,7 +4,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import worker, { verifyAccessJwt, appendDecisions, applyTrackerEdits, addApprover, removeApprover,
-                 validateDecisions, validateTrackerEdits, validateApprover, HttpError } from "../src/index.js";
+                 validateDecisions, validateEdits, validateTrackerEdits, validateApprover, HttpError } from "../src/index.js";
 
 const AUD = "030ca921a895eca1f4822f5e775e579e7d9182f2ba1a488289218e6338aa5d0f";
 const ISS = "https://slack-tide.cloudflareaccess.com";
@@ -60,10 +60,32 @@ test("decisions append as JSON-quoted YAML entries and a missing file gets a hea
   assert.ok(out.includes('- id: "abc"\n  status: approved\n  by: "luke@example.org"\n  date: "2026-11-22"\n  title: "Say \\"hi\\": a show"\n  venue: "The Z"\n'));
   assert.ok(out.includes('- id: "def"\n  status: rejected\n') && out.endsWith("\n"));
   assert.equal(appendDecisions("x: 1", [{ id: "a", status: "approved", title: "t" }], "me", "2026-01-01").slice(0, 5), "x: 1\n");
-  /* A corrected category rides on the entry; an empty one writes no category line (the classifier is back in charge). */
-  const fixed = appendDecisions("", [{ id: "abc", status: "approved", title: "t", category: "Arts" }, { id: "def", status: "approved", title: "t", category: "" }], "me", "2026-11-22");
-  assert.ok(fixed.includes('- id: "abc"\n  status: approved\n  by: "me"\n  date: "2026-11-22"\n  title: "t"\n  category: "Arts"\n'));
-  assert.ok(fixed.includes('- id: "def"\n  status: approved\n  by: "me"\n  date: "2026-11-22"\n  title: "t"\n') && fixed.split("category:").length === 2);
+  /* The approver's edits ride on the entry as an edits block, the categories as a flow list; an
+     entry with no edits, or only an empty category list, writes no block (the pipeline is back in charge). */
+  const fixed = appendDecisions("", [
+    { id: "abc", status: "approved", title: "t", edits: { title: 'Say "hi"', town: "Fall River", categories: ["Arts", "Learn"] } },
+    { id: "def", status: "approved", title: "t", edits: { categories: [] } },
+    { id: "ghi", status: "approved", title: "t" }], "me", "2026-11-22");
+  assert.ok(fixed.includes('- id: "abc"\n  status: approved\n  by: "me"\n  date: "2026-11-22"\n  title: "t"\n  edits:\n    title: "Say \\"hi\\""\n    town: "Fall River"\n    categories: ["Arts", "Learn"]\n- id: "def"'));
+  assert.ok(fixed.includes('- id: "def"\n  status: approved\n  by: "me"\n  date: "2026-11-22"\n  title: "t"\n- id: "ghi"') && fixed.split("edits:").length === 2);
+});
+
+test("edits are checked for shape and length and unknown fields are refused", () => {
+  const ok = validateEdits({ title: " A show ", venue: "The Z", town: "Fall River", cost: "Free", url: "https://example.org/x",
+                             description: "Two\nlines", categories: ["Arts", "Arts", "Learn"] });
+  assert.deepEqual(ok, { title: "A show", venue: "The Z", town: "Fall River", cost: "Free", url: "https://example.org/x",
+                         description: "Two\nlines", categories: ["Arts", "Learn"] });
+  assert.deepEqual(validateEdits(undefined), {});
+  assert.deepEqual(validateEdits({ title: "", cost: null, categories: [] }), { categories: [] });   /* empty: no override */
+  for (const bad of [{ title: "x".repeat(301) }, { title: "a\nb" }, { url: "ftp://x" }, { url: "example.org" }, { town: 5 },
+                     { categories: "Arts" }, { categories: [7] }, { categories: ["Arts\n- id: x"] }, { approval: "approved" },
+                     { summary: "x" }, { id: "y" }, [], "x"]) {
+    assert.throws(() => validateEdits(bad), (e) => e instanceof HttpError && e.status === 400, JSON.stringify(bad));
+  }
+  const d = validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", edits: { title: "T", categories: ["Arts"] } }] })[0];
+  assert.deepEqual(d, { id: "a", status: "approved", title: "t", venue: "", edits: { title: "T", categories: ["Arts"] } });
+  assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", note: "x" }] }), (e) => e.status === 400 && /Unknown decision field/.test(e.message));
+  assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", edits: { nope: "x" } }] }), (e) => e.status === 400 && /Unknown edit field/.test(e.message));
 });
 
 test("tracker edits rewrite the named cells and keep CSV quoting", () => {
@@ -84,9 +106,11 @@ test("input validation refuses what the page would never send", () => {
   assert.throws(() => validateDecisions({ decisions: [] }), (e) => e.status === 400);
   assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "maybe" }] }), (e) => e.status === 400);
   assert.throws(() => validateDecisions({ decisions: [{ id: "a\nb", status: "approved" }] }), (e) => e.status === 400);
-  assert.deepEqual(validateDecisions({ decisions: [{ id: " a ", status: "approved", title: "t" }] }), [{ id: "a", status: "approved", title: "t", venue: "", category: "" }]);
-  assert.equal(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "Nightlife" }] })[0].category, "Nightlife");
-  assert.equal(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "" }] })[0].category, "");
+  assert.deepEqual(validateDecisions({ decisions: [{ id: " a ", status: "approved", title: "t" }] }), [{ id: "a", status: "approved", title: "t", venue: "", edits: {} }]);
+  /* The single category of the first day of the seven is a one-item list; edits that name their own win. */
+  assert.deepEqual(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "Nightlife" }] })[0].edits, { categories: ["Nightlife"] });
+  assert.deepEqual(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "" }] })[0].edits, {});
+  assert.deepEqual(validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "Nightlife", edits: { categories: ["Arts"] } }] })[0].edits, { categories: ["Arts"] });
   assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: "Arts\n- id: x" }] }), (e) => e.status === 400);
   assert.throws(() => validateDecisions({ decisions: [{ id: "a", status: "approved", title: "t", category: 7 }] }), (e) => e.status === 400);
   assert.throws(() => validateTrackerEdits({ edits: { x: { A: "b" } } }), (e) => e.status === 400);
@@ -133,11 +157,12 @@ test("end to end: a decision becomes a commit on approvals.yaml under the token'
     let r = await worker.fetch(req("whoami"), env);
     assert.equal(r.status, 200); assert.deepEqual(await r.json(), { email: "coco@example.org" });
 
-    r = await worker.fetch(req("decisions", { method: "POST", body: JSON.stringify({ decisions: [{ id: "abc", status: "approved", title: "T" }] }) }), env);
+    r = await worker.fetch(req("decisions", { method: "POST", body: JSON.stringify({ decisions: [{ id: "abc", status: "approved", title: "T", edits: { cost: "Free", categories: ["Arts", "Learn"] } }] }) }), env);
     assert.equal(r.status, 200);
     const out = await r.json();
     assert.equal(out.saved, 1); assert.equal(out.by, "coco@example.org"); assert.equal(out.commit, "abc123");
     assert.ok(files["approvals.yaml"].includes('  by: "coco@example.org"\n'));
+    assert.ok(files["approvals.yaml"].endsWith('  edits:\n    cost: "Free"\n    categories: ["Arts", "Learn"]\n'));
     assert.deepEqual(commits, ["Review: 1 decision by coco@example.org"]);   /* the 409 was retried once */
 
     r = await worker.fetch(req("run", { method: "POST" }), env);

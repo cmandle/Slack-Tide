@@ -11,7 +11,7 @@ Cloudflare Access fronts `/admin/*`, so by the time a request reaches the Worker
 | Method and path | Body | Does |
 |---|---|---|
 | `GET /admin/api/whoami` | | Returns the signed-in email |
-| `POST /admin/api/decisions` | `{ decisions: [{ id, status, title, venue, category }] }` | Appends to `approvals.yaml`; `status` is `approved` or `rejected`. `category` is optional: the approver's correction of the classifier, one of the pipeline's seven (`config.CATEGORIES`); the Worker checks its shape, the pipeline its name. Approving a live series again with a category is how a published listing's category is corrected |
+| `POST /admin/api/decisions` | `{ decisions: [{ id, status, title, venue, edits }] }` | Appends to `approvals.yaml`; `status` is `approved` or `rejected`. `edits` is optional: the approver's overrides of what the pipeline read, any of `title`, `venue`, `town`, `description`, `cost`, `url` (strings, with length limits) and `categories` (a list from the pipeline's seven, `config.CATEGORIES`, the first one primary). The Worker checks shape and length and refuses an unknown field, the pipeline checks the names. Approving a live series again with edits is how a published listing is edited; the entry replaces the last one for the id, so it carries every override in force. The older single `category` string is still accepted as a one-item list |
 | `POST /admin/api/tracker` | `{ edits: { "<row>": { "<Column>": "<value>" } } }` | Rewrites those rows of `docs/sources-tracker.csv`; row 0 is the first data row |
 | `POST /admin/api/approvers` | `{ name, email, role }` | Appends to `approvers.yaml`; `role` is `approver` or `admin` |
 | `DELETE /admin/api/approvers` | `{ email }` | Removes that entry from `approvers.yaml` |

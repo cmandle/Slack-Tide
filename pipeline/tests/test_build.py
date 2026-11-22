@@ -11,12 +11,17 @@ from slacktide import config, build, tide
 TZ = ZoneInfo("America/New_York")
 NOW = datetime(2098, 12, 31, 12, 0, tzinfo=TZ)   # a Wednesday
 
-def series(title, starts, town="Fall River", category="Nightlife", cadence="once", source="viva-fall-river", all_day=False, sid=None, approval="approved"):
+def series(title, starts, town="Fall River", category="Nightlife", cadence="once", source="viva-fall-river", all_day=False, sid=None,
+           approval="approved", categories=None, **extra):
     occ = [{"start": s.isoformat(), "end": (s + timedelta(hours=2)).isoformat(), "all_day": all_day} for s in starts]
-    return {"id": sid or title.lower().replace(" ", "-"), "title": title, "venue": "Narrows Center for the Arts",
-            "town": town, "category": category, "source_id": source, "url": "https://example.org/" + title,
-            "cost": "", "first_start": occ[0]["start"], "last_start": occ[-1]["start"], "count": len(occ),
-            "cadence": cadence, "weekday": None, "occurrences": occ, "summary": "", "approval": approval, "decided_by": ""}
+    row = {"id": sid or title.lower().replace(" ", "-"), "title": title, "venue": "Narrows Center for the Arts",
+           "town": town, "category": category, "source_id": source, "url": "https://example.org/" + title,
+           "cost": "", "first_start": occ[0]["start"], "last_start": occ[-1]["start"], "count": len(occ),
+           "cadence": cadence, "weekday": None, "occurrences": occ, "summary": "", "approval": approval, "decided_by": ""}
+    if categories is not None:   # otherwise the single-category shape of an older events.json, which must still build
+        row["categories"] = categories
+    row.update(extra)
+    return row
 
 @pytest.fixture
 def data(tmp_path):
@@ -29,8 +34,13 @@ def data(tmp_path):
         series("Next weekend fair", [today + timedelta(days=4)], town="Dartmouth", category="Seasonal", all_day=True, source="dnrt"),
         series("Too far out", [today + timedelta(days=8)]),
         series("Unclassified talk", [today + timedelta(days=1, hours=10)], category="", town="Little Compton", source="brownell-library"),
-        series("Waiting for review", [today + timedelta(days=2, hours=20)], town="New Bedford", source="zeiterion", approval="pending"),
+        series("Waiting for review", [today + timedelta(days=2, hours=20)], town="New Bedford", source="zeiterion", approval="pending",
+               categories=["Nightlife"], summary="A late show."),
         series("Rejected gig", [today.replace(hour=21)], town="New Bedford", source="zeiterion", approval="rejected"),
+        # An approver's edits in force: two categories (Arts primary), a retitled series with the pipeline's values in `original`.
+        series("Gallery jazz", [today.replace(hour=20)], town="New Bedford", category="Arts", categories=["Arts", "Nightlife"], source="zeiterion",
+               edits={"title": "Gallery jazz", "categories": ["Arts", "Nightlife"]}, original={"title": "Jazz @ Gallery X", "categories": ["Nightlife"]},
+               edited_by="coco@example.org", edited_on="2026-11-22"),
     ]
     payload = {"generated_at": NOW.isoformat(), "series_count": len(rows), "occurrence_count": sum(r["count"] for r in rows), "series": rows}
     (tmp_path / "events.json").write_text(json.dumps(payload), encoding="utf-8")
@@ -39,7 +49,7 @@ def data(tmp_path):
 def test_select_tonight_and_week(data):
     events = build.load_events(data / "events.json")
     tonight, week = build.select(build.published(events["series"]), NOW)
-    assert [r["series"]["title"] for r in tonight] == ["Tonight gig"]
+    assert [r["series"]["title"] for r in tonight] == ["Tonight gig", "Gallery jazz"]
     titles = {d: [r["series"]["title"] for r in rows] for d, rows in week.items() if rows}
     assert len(week) == 7 and set(sum(titles.values(), [])) == {"Weekly bingo", "Next weekend fair", "Unclassified talk"}
     bingo_day = next(d for d, t in titles.items() if "Weekly bingo" in t)
@@ -48,7 +58,7 @@ def test_select_tonight_and_week(data):
 def test_build_writes_pages_and_reads_config(data, tmp_path):
     out = tmp_path / "site"
     r = build.build(data, out, now=NOW)
-    assert r["tonight"] == 1 and r["week"] == 3 and r["tide"] == "unavailable"
+    assert r["tonight"] == 2 and r["week"] == 3 and r["tide"] == "unavailable"
     html = (out / "index.html").read_text(encoding="utf-8")
     for t in config.TOWNS:
         assert f'value="{t}"' in html
@@ -56,15 +66,20 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
         assert f'class="tile" type="button" data-cat="{cat.lower()}"' in html
     assert [t.split('"')[0] for t in html.split('class="tile" type="button" data-cat="')[2:]] == [c.lower() for c in config.CATEGORIES]
     assert set(config.CATEGORY_FAMILY_OF) == set(config.CATEGORIES)   # every taxonomy entry has a slug
-    assert 'data-cat="community" data-category="Community"' in html   # bingo is Community
-    assert html.count('class="card"') == 1 and html.count('class="week-card"') == 3 and 'class="week-grid"' in html
+    assert 'data-cat="community" data-category="Community" data-cats="community"' in html   # bingo is Community, and only that
+    # Two categories: the primary gives the colour and data-cat, data-cats carries both for the tiles to match
+    # on, and the strip names both. The tiles' own matching (site.js) reads data-cats.
+    jazz = html.split('data-series="gallery-jazz"')[0].rsplit("<a ", 1)[1] + html.split('data-series="gallery-jazz"')[1].split("</a>")[0]
+    assert 'data-cat="arts" data-category="Arts" data-cats="arts nightlife"' in jazz and 'style="--cat: var(--st-cat-arts)"' in jazz
+    assert '<div class="card-strip" title="Arts, Nightlife">Arts · Nightlife</div>' in jazz and "Gallery jazz" in jazz and "Jazz @ Gallery X" not in html
+    assert html.count('class="card"') == 2 and html.count('class="week-card"') == 3 and 'class="week-grid"' in html
     assert 'id="category"' not in html and 'id="section"' not in html   # removed 2026-11-08; tiles and tabs replace them
     assert '<a class="tab" href="groups/">' in html and "Volunteer opportunities" not in html
     assert 'data-source="viva-fall-river"' in html and 'class="card-prov" title="Viva Fall River">Read by a person' in html
     assert "Tide data unavailable" in html and 'data-state="unavailable"' in html
     assert "Too far out" not in html and "Already over" not in html
     assert "Waiting for review" not in html and "Rejected gig" not in html   # decision 11: only approved series publish
-    assert r["published"] == 6 and r["pending"] == 1
+    assert r["published"] == 7 and r["pending"] == 1
     # The week card: date cell, time, place, town chip and the category band, in start order.
     assert '<span class="wk-day">FRI JAN 2</span><span class="wk-time">6:00 PM</span>' in html   # NOW is Dec 31, the week is January
     assert '<span class="wk-chip">Tiverton</span>' in html and '<span class="wk-band" title="Community">Community</span>' in html
@@ -91,6 +106,7 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert '<a class="btn" href="../../calendar/">December →'.replace("December →", "") in jan and "← December" in jan
     today_cell = cal.split('data-date="2098-12-31"')[1].split('class="cal-day"')[0]
     assert "Tonight gig" in today_cell and "Already over" in today_cell and "Rejected gig" not in today_cell   # the day shows its whole day; rejected never
+    assert 'data-cat="arts" data-category="Arts" data-cats="arts nightlife"' in today_cell   # the calendar entry matches on either category too
     assert 'data-date="2099-01-02"' in jan and "Weekly bingo" in jan and "Too far out" in jan   # every date of a series, 8 days out included
     assert "Waiting for review" not in jan and 'class="tile"' in cal and 'href="../calendar/" aria-current="page"' in cal and 'aria-current="page">' + '' not in html.split('class="links"')[1].split('</nav>')[0] and 'id="category"' not in cal
     for a in ("tokens.css", "site.css", "site.js", "admin.js"):
@@ -113,13 +129,33 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert admin.count('class="rev"') == 1 and 'data-id="waiting-for-review"' in admin and 'data-decide="approved"' in admin
     assert 'data-source="zeiterion"' in admin and "Rejected gig" not in admin
     # The category select on the queue item carries the classifier's call and the seven to pick from;
-    # the Published list under the queue is where a live series' category is corrected.
+    # the Edit form under it the editable fields, each prefilled and carrying the pipeline's value;
+    # the Published list under the queue is where a live series is edited.
     rev = admin.split('class="rev"')[1].split("</article>")[0]
     assert 'data-category-select data-original="Nightlife"' in rev and '<option value="Nightlife" selected>Nightlife</option>' in rev
-    assert rev.count("<option") == 1 + len(config.CATEGORIES) and "Arts &amp; Theatre" not in admin
-    assert 'id="pub-list"' in admin and admin.count('class="pub"') == 6 and "Published series · 6 live" in admin
+    cat_select = rev.split("data-category-select")[1].split("</select>")[0]
+    assert cat_select.count("<option") == 1 + len(config.CATEGORIES) and "Arts &amp; Theatre" not in admin
+    assert 'data-categories="Nightlife"' in rev and '<button type="button" class="rev-btn" data-edit aria-expanded="false">Edit</button>' in rev
+    form = rev.split('<form class="rev-edit"')[1].split("</form>")[0]
+    assert 'id="edit-waiting-for-review" data-edit-form hidden' in form
+    assert 'data-field="title" data-original="Waiting for review" value="Waiting for review" maxlength="300"' in form
+    assert 'data-field="venue" data-original="Narrows Center for the Arts" value="Narrows Center for the Arts"' in form
+    assert 'data-field="town" data-original="New Bedford"' in form and '<option value="New Bedford" selected>New Bedford</option>' in form
+    assert form.count("<option") == 1 + len(config.TOWNS) and 'data-field="cost"' in form and 'type="url" data-field="url"' in form
+    assert 'data-field="description" data-original="A late show."' in form and ">A late show.</textarea>" in form
+    assert form.count('type="checkbox" data-also') == len(config.CATEGORIES) and 'data-also value="Arts"' in form and "checked" not in form
+    assert '<button type="reset" class="rev-btn">Undo edits</button>' in form
+    assert 'id="pub-list"' in admin and admin.count('class="pub"') == 7 and "Published series · 7 live" in admin
     pub = admin.split('data-id="tonight-gig"')[1].split("</div></div>")[0]
     assert 'data-original="Nightlife"' in pub and "Viva Fall River" in pub
+    # The edited live series: the form shows what the site shows, the pipeline's values as data-original, who edited it,
+    # the classifier's list on the row, the second category ticked under "Also in".
+    jazz = admin.split('<div class="pub" data-id="gallery-jazz"')[1].split("</form>")[0]
+    assert 'data-title="Jazz @ Gallery X"' in jazz and 'data-categories="Nightlife"' in jazz   # the entry's reader fields are the pipeline's
+    assert 'Edited by coco@example.org on 2026-11-22' in jazz and '<span class="pub-title">Gallery jazz</span>' in jazz
+    assert 'data-category-select data-original="Nightlife"' in jazz and '<option value="Arts" selected>Arts</option>' in jazz
+    assert 'data-field="title" data-original="Jazz @ Gallery X" value="Gallery jazz"' in jazz
+    assert 'data-also value="Nightlife" checked' in jazz and 'data-also value="Arts" checked' not in jazz
     assert "Waiting for review" not in admin.split('id="pub-list"')[1] and "Rejected gig" not in admin
     assert 'id="trk"' in admin and 'id="ppl"' in admin and "admin.js" in admin and "—" not in admin
     assert 'data-approvals="approvals.yaml"' in admin and 'data-tracker="docs/sources-tracker.csv"' in admin

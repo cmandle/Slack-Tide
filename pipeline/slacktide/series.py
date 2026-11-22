@@ -4,7 +4,10 @@ Measured 2026-10-11 on Explore New Bedford: 176 rows in 60 days, 56 distinct tit
 ratio 3.14. Hamlet 24 rows, Karaoke 17, nine titles at 8 or 9. Without this step the calendar
 shows the same five things every week.
 
-Grouping key is (source, normalised title, canonical venue). The title key ignores a trailing
+Grouping key is (source, normalised title, canonical venue), and the series id is a hash of that
+key alone: not the category, and not anything an approver edits afterwards (approval.apply_edits
+runs on the collapsed record), so an edited or recategorised series keeps its id and its
+approval. The title key ignores a trailing
 town ("Eric Lindell - Fall River"), a trailing date ("... - Friday, Nov. 20") and cadence
 parentheticals ("(weekly)"). Near-duplicate titles at the same source and venue that share a
 start time are one listing posted twice and are merged; the first live run found eight such
@@ -124,7 +127,8 @@ def collapse(occs: list[Occurrence]) -> list[Series]:
         sid = hashlib.sha1(f"{src}|{tk}|{vk}".encode()).hexdigest()[:12]
         out.append(Series(
             id=sid, title=title, venue=first.venue, town=first.town,
-            category=first.category, source_id=src, url=first.url, cost=first.cost,
+            category=first.category, categories=[first.category] if first.category else [],
+            source_id=src, url=first.url, cost=first.cost,
             first_start=starts[0], last_start=starts[-1], count=len(items),
             cadence=cadence, weekday=weekday,
             occurrences=[{"start": o.start.isoformat(), "end": o.end.isoformat() if o.end else None,

@@ -80,6 +80,35 @@ def short_label(cat: str) -> str:
     fam = family_of(cat)
     return config.CATEGORY_FAMILIES[fam][0] if fam else "Event"
 
+def cats_of(s: dict) -> list[str]:
+    """Every category of a series, primary first. A record with only the single `category` of
+    an older events.json gives a one-item list."""
+    cats = s.get("categories")
+    if cats is None:
+        cats = [s["category"]] if s.get("category") else []
+    return [c for c in cats if c]
+
+def primary_of(s: dict) -> str:
+    cats = cats_of(s)
+    return cats[0] if cats else ""
+
+def cat_attrs(s: dict) -> str:
+    """The category attributes on a listing: data-cat is the primary's slug (its colour and
+    illustration), data-category the primary's name, data-cats every slug, which the tiles match
+    on (site.js, map.js): a series shows under any of its categories."""
+    cats = cats_of(s)
+    fams = [family_of(c) for c in cats if family_of(c)]
+    return (f'data-cat="{esc(fams[0] if fams else "")}" data-category="{esc(cats[0] if cats else "")}" '
+            f'data-cats="{esc(" ".join(fams))}"')
+
+def cat_labels(s: dict) -> str:
+    """The category strip's text: the labels of every category, primary first."""
+    cats = cats_of(s)
+    return " · ".join(short_label(c) for c in cats) if cats else short_label("")
+
+def cat_title(s: dict) -> str:
+    return ", ".join(cats_of(s))
+
 def art_scenes() -> dict[str, list[str]]:
     """The card illustration set, design/art/<family>-<n>.svg, grouped by family. Empty when the
     design package has no art yet."""
@@ -94,7 +123,7 @@ def art_for(series: dict, scenes: dict[str, list[str]]) -> str:
     """DESIGN.md, Images: a series without a photo shows a stock scene chosen by family, then by a
     stable hash of the series id across the family's scenes. "general" when unclassified. Returns
     the file name, or "" when the set has nothing to offer."""
-    fam = family_of(series.get("category") or "") or "general"
+    fam = family_of(primary_of(series)) or "general"
     files = scenes.get(fam) or scenes.get("general") or []
     if not files:
         return ""
@@ -311,7 +340,7 @@ def filters(towns_with: Counter, rel: str, active: str = "events", view: str = "
 
 def card(row: dict, sources: dict, scenes: dict[str, list[str]], rel: str = "") -> str:
     s, start, o = row["series"], row["start"], row["occ"]
-    cat = s.get("category") or ""
+    cat = primary_of(s)
     when = f'{start.strftime("%a").upper()} {"ALL DAY" if o.get("all_day") else fmt_time(start)}'
     where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
     # Photographs take the halftone (.ht); illustrations render as drawn (.ill). No photo field
@@ -323,11 +352,11 @@ def card(row: dict, sources: dict, scenes: dict[str, list[str]], rel: str = "") 
         scene = art_for(s, scenes)
         art = (f'<div class="card-art ill" aria-hidden="true"><img src="{rel}assets/art/{esc(scene)}" alt="" loading="lazy">'
                if scene else '<div class="card-art ht" aria-hidden="true">')
-    return (f'<a class="card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
-            f'data-category="{esc(cat)}" data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
+    return (f'<a class="card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" {cat_attrs(s)} '
+            f'data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
             f'<div class="card-title">{esc(s["title"])}</div>'
             f'<div class="card-media">{art}<span class="card-badge">Today</span></div>'
-            f'<div class="card-strip" title="{esc(cat)}">{esc(short_label(cat))}</div></div>'
+            f'<div class="card-strip" title="{esc(cat_title(s))}">{esc(cat_labels(s))}</div></div>'
             f'<div class="card-when"><span>{esc(when)}</span><span>{esc(s.get("cost") or "")}</span></div>'
             f'<div class="card-where">{esc(where)}</div>'
             f'<div class="card-prov" title="{esc(source_name(s, sources))}">{esc(provenance(s, sources))}</div></a>')
@@ -337,18 +366,18 @@ def week_card(row: dict, sources: dict, today: date) -> str:
     cell, body with title, place and one town chip, category band on the right edge reading
     bottom to top. The month joins the day once the week crosses into the next month."""
     s, start, o = row["series"], row["start"], row["occ"]
-    cat = s.get("category") or ""
+    cat = primary_of(s)
     day = f'{start.strftime("%a").upper()} {start.day}' if start.month == today.month else \
           f'{start.strftime("%a").upper()} {start.strftime("%b").upper()} {start.day}'
     when = "All day" if o.get("all_day") else fmt_time(start)
     place = f'<span class="wk-place">{esc(s["venue"])}</span>' if s.get("venue") else ""
     chip = f'<span class="wk-chips"><span class="wk-chip">{esc(s["town"])}</span></span>' if s.get("town") else ""
-    return (f'<a class="week-card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
-            f'data-category="{esc(cat)}" data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}" '
+    return (f'<a class="week-card" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" {cat_attrs(s)} '
+            f'data-source="{esc(s["source_id"])}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}" '
             f'title="{esc(provenance(s, sources))} · {esc(source_name(s, sources))}">'
             f'<span class="wk-date"><span class="wk-day">{esc(day)}</span><span class="wk-time">{esc(when)}</span></span>'
             f'<span class="wk-body"><span class="wk-title">{esc(s["title"])}</span>{place}{chip}</span>'
-            f'<span class="wk-band" title="{esc(cat)}">{esc(short_label(cat))}</span></a>')
+            f'<span class="wk-band" title="{esc(cat_title(s))}">{esc(cat_labels(s))}</span></a>')
 
 def events_page(events: dict, tide: dict | None, now: datetime) -> str:
     sources = source_index()
@@ -494,11 +523,11 @@ def month_entries(series: list[dict], year: int, month: int) -> dict[date, list[
 
 def cal_event(row: dict, sources: dict) -> str:
     s, start, o = row["series"], row["start"], row["occ"]
-    cat = s.get("category") or ""
+    cat = primary_of(s)
     when = "All day" if o.get("all_day") else fmt_time_short(start)
     where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
-    return (f'<a class="cal-ev" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
-            f'data-category="{esc(cat)}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}" '
+    return (f'<a class="cal-ev" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" {cat_attrs(s)} '
+            f'data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}" '
             f'title="{esc(s["title"])} · {esc(where)} · {esc(source_name(s, sources))}">'
             f'<span class="cal-sw" aria-hidden="true"></span><span class="cal-time">{esc(when)}</span>'
             f'<span class="cal-title">{esc(s["title"])}</span><span class="cal-where">{esc(where)}</span></a>')
@@ -605,18 +634,63 @@ def chevron_select(id_: str, label: str, options: list[tuple[str, str]], selecte
     return (f'<div class="select"><label class="visually-hidden" for="{id_}">{esc(label)}</label>'
             f'<select id="{id_}">{opts}</select>{chevron()}</div>')
 
-def category_select(id_: str, current: str) -> str:
-    """The approver's category control: the seven from config.CATEGORIES, the classifier's call
-    selected, "Unclassified" when it had none. admin.js sends the value only when it changes."""
+def category_select(id_: str, current: str, original: str | None = None) -> str:
+    """The approver's primary category control: the seven from config.CATEGORIES, the series'
+    current primary selected, "Unclassified" when it has none. data-original is the classifier's
+    own call, which admin.js compares against: only a difference becomes an override."""
+    original = current if original is None else original
     opts = [f'<option value=""{" selected" if not current else ""}>Unclassified</option>']
     opts += [f'<option value="{esc(c)}"{" selected" if c == current else ""}>{esc(c)}</option>' for c in config.CATEGORIES]
     return (f'<div class="select rev-cat-select"><label class="visually-hidden" for="{id_}">Category</label>'
-            f'<select id="{id_}" data-category-select data-original="{esc(current)}">{"".join(opts)}</select>{chevron()}</div>')
+            f'<select id="{id_}" data-category-select data-original="{esc(original)}">{"".join(opts)}</select>{chevron()}</div>')
+
+def edit_form(s: dict, prefix: str) -> str:
+    """The approver's edit of a series, on a queue item and on a published one: the editable
+    fields of config.EDITABLE_FIELDS prefilled with what the site shows, each carrying the
+    pipeline's own value as data-original. admin.js sends a field only where the value differs
+    from that, so the entry carries every override in force and nothing else; the primary
+    category is the select beside the item, the boxes here add further categories."""
+    orig = s.get("original") or {}
+    def cur(key):
+        return str(s.get(config.EDITABLE_FIELDS[key]) or "")
+    def base(key):
+        return str(orig[key] if key in orig else cur(key))
+    def text(key, label, type_="text", extra=""):
+        return (f'<div class="field"><label for="{prefix}-{key}">{label}</label>'
+                f'<input id="{prefix}-{key}" type="{type_}" data-field="{key}" data-original="{esc(base(key))}" '
+                f'value="{esc(cur(key))}" maxlength="{config.EDIT_MAX_LENGTH[key]}"{extra}></div>')
+    towns = [f'<option value=""{" selected" if not cur("town") else ""}>No town</option>']
+    towns += [f'<option value="{esc(t)}"{" selected" if t == cur("town") else ""}>{esc(t)}</option>' for t in config.TOWNS]
+    cats = cats_of(s)
+    also = "".join(f'<label class="check"><input type="checkbox" data-also value="{esc(c)}"{" checked" if c in cats[1:] else ""}> {esc(c)}</label>'
+                   for c in config.CATEGORIES)
+    return (f'<form class="rev-edit" id="{prefix}" data-edit-form hidden>'
+            '<div class="field-row">' + text("title", "Title") + text("venue", "Venue") + '</div>'
+            '<div class="field-row">'
+            f'<div class="field"><label for="{prefix}-town">Town</label><select id="{prefix}-town" data-field="town" '
+            f'data-original="{esc(base("town"))}">{"".join(towns)}</select></div>'
+            + text("cost", "Cost", extra=' placeholder="Free, $10, suggested donation"')
+            + text("url", "Link", "url", ' placeholder="https://"') + '</div>'
+            f'<div class="field"><label for="{prefix}-description">Details</label>'
+            f'<textarea id="{prefix}-description" data-field="description" data-original="{esc(base("description"))}" rows="3" '
+            f'maxlength="{config.EDIT_MAX_LENGTH["description"]}">{esc(cur("description"))}</textarea></div>'
+            f'<fieldset class="rev-also"><legend>Also in</legend>{also}</fieldset>'
+            '<div class="rev-edit-bar"><button type="reset" class="rev-btn">Undo edits</button>'
+            '<span class="form-note">Edits change what the site shows. The series keeps its id, so it stays approved and the edits are kept on every run.</span></div>'
+            '</form>')
+
+def edited_line(s: dict) -> str:
+    if not s.get("edited_by"):
+        return ""
+    on = f' on {esc(s["edited_on"])}' if s.get("edited_on") else ""
+    return f'<span class="rev-edited">Edited by {esc(s["edited_by"])}{on}</span>'
 
 def queue_item(s: dict, sources: dict[str, dict]) -> str:
     """One pending series. A submission through the site shows its organiser details here and
     nowhere else, so the approver can judge it; they never reach a published record."""
-    cat = s.get("category") or ""
+    cat = primary_of(s)
+    orig = s.get("original") or {}
+    base_cats = orig["categories"] if "categories" in orig else cats_of(s)
     nxt = _parse(s["next_start"]) if s.get("next_start") else _parse(s["first_start"])
     occ = next((o for o in s["occurrences"] if o["start"] == s.get("next_start")), s["occurrences"][0])
     when = f'{nxt.strftime("%a %b")} {nxt.day}' + ("" if occ.get("all_day") else f" · {fmt_time(nxt)}")
@@ -631,38 +705,49 @@ def queue_item(s: dict, sources: dict[str, dict]) -> str:
     link = f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">View on {esc(src_name)} ↗</a>' if s.get("url") else ""
     badge = tag("Submitted", "sub") if submitted else tag(src_name, "src")
     extra = ('<button type="button" class="rev-btn" data-ask>Ask the sender</button>' if submitted else "")
-    return (f'<article class="rev" data-id="{esc(s["id"])}" data-title="{esc(s["title"])}" data-venue="{esc(s.get("venue") or "")}" '
+    # data-title and data-venue are the pipeline's own spellings (the entry's reader fields);
+    # data-categories the classifier's list, which admin.js compares the controls against.
+    return (f'<article class="rev" data-id="{esc(s["id"])}" data-title="{esc(orig.get("title", s["title"]))}" data-venue="{esc(orig.get("venue", s.get("venue") or ""))}" '
+            f'data-categories="{esc("|".join(base_cats))}" '
             f'data-source="{esc(s["source_id"])}" data-town="{esc(s.get("town") or "")}" data-start="{esc(s.get("next_start") or s["first_start"])}" '
             f'data-decision="" style="--cat: {stock_var(cat)}">'
             f'<div class="rev-main"><div class="rev-top"><span class="rev-swatch" aria-hidden="true"></span>'
-            f'<span class="rev-cat">{esc(cat or "Unclassified")}</span>{soon}</div>'
+            f'<span class="rev-cat">{esc(cat_title(s) or "Unclassified")}</span>{soon}{edited_line(s)}</div>'
             f'<h3 class="rev-title">{esc(s["title"])}</h3>'
             f'<div class="rev-meta">{esc(when)}</div><div class="rev-meta">{esc(where)}</div>'
             f'{"<p class=rev-summary>" + summary + "</p>" if summary else ""}'
-            f'<div class="rev-source">{badge}{" · " + link if link else ""} · <code>{esc(s["id"])}</code></div></div>'
+            f'<div class="rev-source">{badge}{" · " + link if link else ""} · <code>{esc(s["id"])}</code></div>'
+            f'{edit_form(s, "edit-" + s["id"])}</div>'
             '<div class="rev-actions">'
             '<button type="button" class="rev-btn rev-approve" data-decide="approved">Approve</button>'
             '<button type="button" class="rev-btn rev-reject" data-decide="rejected">Reject</button>'
-            f'{category_select("cat-" + s["id"], cat)}'
+            f'{category_select("cat-" + s["id"], cat, base_cats[0] if base_cats else "")}'
+            '<button type="button" class="rev-btn" data-edit aria-expanded="false">Edit</button>'
             f'{extra}</div></article>')
 
 def published_item(s: dict, sources: dict[str, dict], now: datetime) -> str:
-    """One live series on the Queue tab's Published list: enough to recognise it, and the
-    category select. A changed category saves as a new approved entry with the category on it."""
-    cat = s.get("category") or ""
+    """One live series on the Queue tab's Published list: enough to recognise it, the primary
+    category select and an Edit control. A change saves as a new approved entry carrying every
+    override in force, so the series stays live and the edits are kept on every run."""
+    cat = primary_of(s)
+    orig = s.get("original") or {}
+    base_cats = orig["categories"] if "categories" in orig else cats_of(s)
     nxt = next((_parse(o["start"]) for o in s["occurrences"] if _parse(o["start"]) >= now), _parse(s["last_start"]))
     when = f'{nxt.strftime("%a %b")} {nxt.day}'
     cadence = s.get("cadence", "once")
     if cadence != "once":
         when += f" · {cadence}"
     where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
-    by = f' · set by {esc(s["category_by"])}' if s.get("category_by") else ""
-    return (f'<div class="pub" data-id="{esc(s["id"])}" data-title="{esc(s["title"])}" data-venue="{esc(s.get("venue") or "")}" '
+    edited = " · " + edited_line(s) if s.get("edited_by") else ""
+    return (f'<div class="pub" data-id="{esc(s["id"])}" data-title="{esc(orig.get("title", s["title"]))}" data-venue="{esc(orig.get("venue", s.get("venue") or ""))}" '
+            f'data-categories="{esc("|".join(base_cats))}" '
             f'data-source="{esc(s["source_id"])}" data-town="{esc(s.get("town") or "")}" style="--cat: {stock_var(cat)}">'
             f'<span class="rev-swatch" aria-hidden="true"></span>'
             f'<span class="pub-main"><span class="pub-title">{esc(s["title"])}</span>'
-            f'<span class="pub-meta">{esc(when)} · {esc(where)} · {esc(source_name(s, sources))}{by}</span></span>'
-            f'{category_select("pubcat-" + s["id"], cat)}</div>')
+            f'<span class="pub-meta">{esc(when)} · {esc(where)} · {esc(source_name(s, sources))}{edited}</span></span>'
+            f'{category_select("pubcat-" + s["id"], cat, base_cats[0] if base_cats else "")}'
+            '<button type="button" class="rev-btn" data-edit aria-expanded="false">Edit</button>'
+            f'{edit_form(s, "pubedit-" + s["id"])}</div>')
 
 def admin_queue(pending: dict, sources: dict[str, dict], live: list[dict], now: datetime) -> str:
     rows = pending.get("series", [])
@@ -674,15 +759,17 @@ def admin_queue(pending: dict, sources: dict[str, dict], live: list[dict], now: 
     pubs = "".join(published_item(s, sources, now) for s in live_sorted)
     return (f'<section class="adm-section" id="queue"><h2><span>Review queue</span><span>{n} waiting · {soon} within 7 days</span></h2>'
             '<p class="add-intro">Approve what should publish, reject what should not, then save. New dates on an approved '
-            'series publish on their own; a retitled or moved series comes back here. The site changes on the next pipeline run. '
-            'The category on each item is the classifier\'s call; change it and the change is kept on every run.</p>'
+            'series publish on their own; a series the source retitles or moves comes back here. The site changes on the next pipeline run. '
+            'The category on each item is the classifier\'s call; change it, or open Edit to fix the title, place, cost, link or details '
+            'and add further categories, and the changes are kept on every run.</p>'
             '<div class="adm-filters">' + chevron_select("q-source", "Source", src_opts)
             + chevron_select("q-sort", "Order", [("soon", "Soonest first"), ("town", "By town"), ("source", "By source")]) + '</div>'
             f'<div class="rev-list" id="rev-list">{items}</div>'
             f'<p class="empty" id="rev-empty"{"" if not rows else " hidden"}>Nothing is waiting. Enjoy the evening.</p>'
-            f'<details class="pub-list" id="pub-list"><summary>Published series · {len(live_sorted)} live · correct a category here</summary>'
-            '<p class="add-intro">Everything approved and in the window, by town. Pick a different category and save; the series '
-            'stays live and keeps the new category on every run. Pick Unclassified to hand it back to the classifier.</p>'
+            f'<details class="pub-list" id="pub-list"><summary>Published series · {len(live_sorted)} live · edit a live listing here</summary>'
+            '<p class="add-intro">Everything approved and in the window, by town. Pick a different category, or open Edit to change '
+            'what the site shows, then save; the series stays live and keeps the edits on every run. Pick Unclassified with no '
+            'other edits to hand it back to the classifier.</p>'
             f'<div class="pub-rows">{pubs}</div></details>'
             '<div class="rev-bar"><span class="rev-count" id="rev-count">0 decisions</span>'
             '<button type="button" class="submit" id="rev-save" disabled>Save decisions</button>'
@@ -870,27 +957,27 @@ def map_places(series: list[dict], venues: list[dict], now: datetime) -> tuple[l
     order = {t: i for i, t in enumerate(config.TOWNS)}
     for p in places.values():
         p["rows"].sort(key=lambda r: (r["start"], r["series"]["title"]))
-        fams = Counter(family_of(r["series"].get("category") or "") for r in p["rows"])
+        fams = Counter(family_of(primary_of(r["series"])) for r in p["rows"])
         p["family"] = fams.most_common(1)[0][0] if fams else ""
     out = sorted(places.values(), key=lambda p: (order.get(p["town"], len(order)), p["approx"], p["name"].lower()))
     return out, unplaced
 
 def place_event(row: dict, show_venue: bool) -> str:
     s, start, o = row["series"], row["start"], row["occ"]
-    cat = s.get("category") or ""
+    cat = primary_of(s)
     day = f'{start.strftime("%a").upper()} {start.strftime("%b").upper()} {start.day}'
     when = "All day" if o.get("all_day") else fmt_time(start)
     cadence = s.get("cadence") or "once"
     if cadence != "once":
         when += f" · {cadence}"
     venue = f'<span class="pe-venue">{esc(s["venue"])}</span>' if show_venue and s.get("venue") else ""
-    return (f'<a class="place-ev" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" data-cat="{esc(family_of(cat))}" '
-            f'data-category="{esc(cat)}" data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
+    return (f'<a class="place-ev" href="{esc(s["url"] or "#")}" data-town="{esc(s["town"])}" {cat_attrs(s)} '
+            f'data-series="{esc(s["id"])}" style="--cat: {stock_var(cat)}">'
             f'<span class="cal-sw" aria-hidden="true"></span><span class="pe-when">{esc(day)} · {esc(when)}</span>'
             f'<span class="pe-title">{esc(s["title"])}</span>{venue}</a>')
 
 def place_card(p: dict) -> str:
-    fams = sorted({family_of(r["series"].get("category") or "") for r in p["rows"]} - {""})
+    fams = sorted({family_of(c) for r in p["rows"] for c in cats_of(r["series"])} - {""})
     rows = "".join(place_event(r, show_venue=p["approx"]) for r in p["rows"])
     more = len(p["rows"]) - MAP_SHOW
     if p["approx"]:
