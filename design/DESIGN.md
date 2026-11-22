@@ -43,7 +43,7 @@ Seven tappable elements above the first listing on the phone; nothing else.
 
 ## Listings
 
-**Tonight cards.** Two across on the phone, four across on desktop, 1 px ink outline, square. Cells top to bottom, divided by 1 px ink rules:
+**Today cards** (the canvas calls them Tonight; relabelled 2026-11-22 because the section holds every same-day event, a 10 AM brunch included). Two across on the phone, four across on desktop, 1 px ink outline, square. Cells top to bottom, divided by 1 px ink rules:
 
 1. Title cell, Archivo 700, minimum height 34 px (40 desktop).
 2. Image cell with a vertical category label block at its right, 26 px wide (34 desktop), filled in the category colour, mono uppercase, `writing-mode: vertical-rl`. The image is 76 px tall (120 desktop).
@@ -51,13 +51,13 @@ Seven tappable elements above the first listing on the phone; nothing else.
 4. Place line, mono.
 5. Provenance line, mono 8 px (9 desktop) uppercase at 75% opacity: "Posted by the venue", "Read by a person", "Verified organizer". Cancelled and rescheduled states use the same slot.
 
-On desktop a "Tonight" badge sits top-left on the image for same-day events: paper fill, 1.5 px ink outline, mono uppercase.
+On desktop a "Today" badge sits top-left on the image for same-day events: paper fill, 1.5 px ink outline, mono uppercase.
 
 **The week ahead.** A grid of cards, two across on desktop (`minmax(420px, 1fr)`) and one across on the phone, 16 px column gap and 14 px row gap on desktop, 10 px on the phone. The canvas sources are `design/canvas/Week-A-*.dc.html`; the flattened pages are `design/reference/week-desktop.html` and `week-phone.html`, with screenshots. Each card is a 1 px ink outline, square, minimum height 96 px (84 on the phone), three parts left to right:
 
 1. Date cell, 104 px wide (76 on the phone), yellow fill, no border on its right edge: day in Archivo 700 15 px (13) as "MON 26", time in mono 11 px (10) beneath, both centred.
 2. Body, 12 px by 14 px padding (9 by 10): title in Archivo 700 15 px (14) on one line with ellipsis, place in mono 11 px (10), then a single outlined town chip in mono 10 px (9) uppercase, 1 px ink border, no fill.
-3. Category band, 28 px wide (24), filled in the category colour, no border on its left edge, mono 10 px (9) uppercase label running vertically and reading bottom to top (`writing-mode: vertical-rl` plus `transform: rotate(180deg)`). Same device as the Tonight card's category block; note the Tonight block reads top to bottom.
+3. Category band, 28 px wide (24), filled in the category colour, no border on its left edge, mono 10 px (9) uppercase label running vertically and reading bottom to top (`writing-mode: vertical-rl` plus `transform: rotate(180deg)`). Same device as the Today card's category block; note the Today block reads top to bottom.
 
 Heading "The week ahead" with the date range at the right is mono uppercase with a 2 px ink underline, as before, and "See the whole month" follows the grid. Cards replace the earlier transparent rows on the ruling; the 28 px rhythm no longer governs this list. Listings are ordered by start time across the week; no day grouping, and the date repeats on every card. Decided 25 October 2026 from option 5A on the canvas.
 

@@ -74,6 +74,8 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert [html.index(t) for t in order] == sorted(html.index(t) for t in order)
     assert "Archivo" in html and 'href="calendar/"' in html and 'href="map/"' in html
     assert 'id="week-empty" hidden' in html and 'id="tonight-empty" hidden' in html   # both lists have rows
+    assert "<h1>Today</h1>" in html and '<span class="card-badge">Today</span>' in html   # same-day at any hour, relabelled 2026-11-22
+    assert 'aria-label="Today"' in html and "Nothing listed for today" in html and 'aria-label="Tonight"' not in html
     p = out / "map" / "index.html"
     assert p.exists() and "is coming" not in p.read_text(encoding="utf-8")   # the Map view; test_map.py covers it
     assert not (out / "volunteer").exists() and "volunteer/" not in html   # section retired 2026-11-08
