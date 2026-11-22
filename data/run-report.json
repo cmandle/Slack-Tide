@@ -2,43 +2,43 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 157,
-   "seconds": 5.55
+   "seconds": 4.59
   },
   "viva-fall-river": {
    "rows": 227,
-   "seconds": 15.54
+   "seconds": 14.75
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 4.28
+   "seconds": 0.22
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.43
+   "seconds": 0.47
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 6.43
+   "seconds": 5.28
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 2.84
+   "seconds": 2.23
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.14
+   "seconds": 0.51
   },
   "south-coast-girls-walk": {
    "rows": 3,
-   "seconds": 0.97
+   "seconds": 0.25
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.41
+   "seconds": 0.16
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.36
+   "seconds": 0.2
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -52,8 +52,8 @@
  "dropped": {},
  "series": 67,
  "approval": {
-  "pending": 47,
-  "approved": 20
+  "pending": 46,
+  "approved": 21
  },
  "by_town": {
   "Little Compton": 8,
