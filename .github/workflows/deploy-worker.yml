@@ -55,5 +55,9 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          # The action's default is wrangler 3, which looks the account up through a user-level
+          # endpoint that an account-owned API token cannot call. Wrangler 4 with account_id in
+          # wrangler.toml talks only to the account's own endpoints.
+          wranglerVersion: "4"
           workingDirectory: worker
           command: deploy
