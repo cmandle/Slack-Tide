@@ -760,12 +760,9 @@ def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, di
             f'<a class="adm-tab" href="#sources">Sources<span class="n">{len(sources)} · {n_cand}</span></a>'
             '<a class="adm-tab" href="#runs">Runs</a>'
             f'<a class="adm-tab" href="#people">People<span class="n">{len(approvers)}</span></a></nav>')
-    gate = ('<div class="gate" id="gate"><span class="who" id="who">Checking who is signed in…</span>'
-            '<details class="setup" id="setup"><summary>GitHub token</summary>'
-            '<div class="field"><label for="rev-token">Token for saving</label><input id="rev-token" type="password" autocomplete="off">'
-            '<p class="form-note">Until the admin service exists, saving writes to the repository with a fine-grained personal access '
-            'token for this repository only, Contents and Actions read and write. It stays in this browser.</p></div>'
-            '<button type="button" class="rev-btn" id="rev-save-setup">Keep</button></details></div>')
+    # Who is signed in, from Cloudflare Access. Saves go to the admin service on /admin/api/ (worker/),
+    # which takes the approver's name from the same sign-in; there is nothing to set up on the page.
+    gate = '<div class="gate" id="gate"><span class="who" id="who">Checking who is signed in…</span></div>'
     body = (head("events", rel) +
             f'<main class="content admin" id="main" data-repo="{REPO}" data-approvals="{APPROVALS_PATH}" data-tracker="{TRACKER_PATH}" '
             f'data-approvers="{APPROVERS_PATH}" data-workflow="{INGEST_WORKFLOW}">'

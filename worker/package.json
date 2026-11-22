@@ -1,0 +1,11 @@
+﻿{
+  "name": "slack-tide-admin",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker behind www.slack-tide.org/admin/api/* that makes the admin page's GitHub writes",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  }
+}

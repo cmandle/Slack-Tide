@@ -527,7 +527,6 @@ svg { display: block; }
 .gate .who { font: 400 11px/16px var(--st-font-mono); }
 .gate .who b { font-weight: 500; }
 .gate .who a { text-decoration: underline; }
-.gate .setup { border: 0; padding: 0; flex: 1 1 100%; }
 .adm-tabs { display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 2px solid var(--st-ink); }
 .adm-tab { padding: 8px 12px; border: 1px solid var(--st-ink); border-bottom: 0; background: var(--st-paper); color: var(--st-ink); font: 700 12px/1 var(--st-font-sans); }
 .adm-tab[aria-current] { background: var(--st-yellow); }
@@ -561,8 +560,6 @@ a.rev-btn { display: inline-flex; align-items: center; text-decoration: none; }
 @media (max-width: 699px) {
   .tbl { display: block; overflow-x: auto; }
 }
-.setup { border: 1px solid var(--st-ink); padding: 10px 12px; max-width: 560px; display: flex; flex-direction: column; gap: 10px; }
-.setup summary { font: 500 11px/28px var(--st-font-mono); letter-spacing: var(--st-letterspacing-caps); text-transform: uppercase; cursor: pointer; }
 .rev-list { display: flex; flex-direction: column; gap: 10px; }
 .rev {
   display: flex; gap: 12px; justify-content: space-between; align-items: stretch;
