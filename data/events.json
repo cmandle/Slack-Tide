@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-22T17:34:50.047305+00:00",
- "series_count": 67,
- "occurrence_count": 126,
+ "generated_at": "2026-11-22T17:44:46.888791+00:00",
+ "series_count": 78,
+ "occurrence_count": 145,
  "series": [
   {
    "id": "fceaea0689fd",
@@ -32,6 +32,81 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "mail@l3l.us"
+  },
+  {
+   "id": "bc7996249b9b",
+   "title": "Matt Martin",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-21T19:00:00-05:00",
+   "last_start": "2026-11-21T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-21T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "aced7a2d1b73",
+   "title": "Bob Jennings from the legendary band Beatlejuice featuring Ed Grenga",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-22T10:00:00-05:00",
+   "last_start": "2026-12-27T10:00:00-05:00",
+   "count": 6,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-27T10:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "b7301c4db9eb",
@@ -474,6 +549,36 @@
    "decided_by": "mail@l3l.us"
   },
   {
+   "id": "db13d4947a44",
+   "title": "Declan Kelehan",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-27T19:00:00-05:00",
+   "last_start": "2026-12-26T19:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-27T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-26T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "452cf38f822a",
    "title": "Wellness Series",
    "venue": "",
@@ -624,6 +729,31 @@
    "decided_by": "mail@l3l.us"
   },
   {
+   "id": "cc95b9dda4c0",
+   "title": "Merrick Brannigan",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-11-28T19:00:00-05:00",
+   "last_start": "2026-11-28T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "23b0b58d6454",
    "title": "Chef Hiroki tuna carving",
    "venue": "Cisco Brewers Kitchen & Bar",
@@ -684,6 +814,41 @@
    "decided_by": "mail@l3l.us"
   },
   {
+   "id": "18527ed7c426",
+   "title": "Day Drinkers Music Thursdays",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-03T18:00:00-05:00",
+   "last_start": "2026-12-17T18:00:00-05:00",
+   "count": 3,
+   "cadence": "weekly",
+   "weekday": 3,
+   "occurrences": [
+    {
+     "start": "2026-12-03T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-10T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-17T18:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "5092e8abea61",
    "title": "Trivia w/ Gary Farias",
    "venue": "Sakonnet Vineyard",
@@ -707,6 +872,31 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "mail@l3l.us"
+  },
+  {
+   "id": "15d0e0e6fd43",
+   "title": "Weston Faulkner",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-04T19:00:00-05:00",
+   "last_start": "2026-12-04T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-04T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "02b6bb19c462",
@@ -817,6 +1007,31 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
+  },
+  {
+   "id": "e5f990d8ab0e",
+   "title": "Ian Stackpole",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-05T19:00:00-05:00",
+   "last_start": "2026-12-05T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-05T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "583ace92d403",
@@ -1454,6 +1669,31 @@
    "decided_by": "mail@l3l.us"
   },
   {
+   "id": "0afa3b86849a",
+   "title": "Rob Davis",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-11T19:00:00-05:00",
+   "last_start": "2026-12-11T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-11T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
    "id": "b527625997d0",
    "title": "A Doo Wop Christmas",
    "venue": "The Zeiterion",
@@ -1527,6 +1767,31 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
+  },
+  {
+   "id": "188c25e70ad8",
+   "title": "Ed Grenga",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-12T19:00:00-05:00",
+   "last_start": "2026-12-12T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-12T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "0371024d810a",
@@ -1637,6 +1902,56 @@
    "summary": "",
    "approval": "approved",
    "decided_by": "source trust"
+  },
+  {
+   "id": "1397a2bbf9e5",
+   "title": "Truue Duo",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-18T19:00:00-05:00",
+   "last_start": "2026-12-18T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-18T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
+  },
+  {
+   "id": "5c6ba09dc6bc",
+   "title": "Jon Tyler",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "cisco-live-music",
+   "url": "https://www.ciscokitchenbar.com/live-music/",
+   "cost": "",
+   "first_start": "2026-12-19T19:00:00-05:00",
+   "last_start": "2026-12-19T19:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-19T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": ""
   },
   {
    "id": "7fc848d57904",

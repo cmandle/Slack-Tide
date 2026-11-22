@@ -2,68 +2,71 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 157,
-   "seconds": 3.33
+   "seconds": 4.3
   },
   "viva-fall-river": {
    "rows": 227,
-   "seconds": 13.41
+   "seconds": 15.17
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.1
+   "seconds": 0.31
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.51
+   "seconds": 0.47
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 4.22
+   "seconds": 5.73
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 0.18
+   "seconds": 0.47
+  },
+  "cisco-live-music": {
+   "rows": 19,
+   "seconds": 0.22
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.26
+   "seconds": 0.14
   },
   "south-coast-girls-walk": {
    "rows": 3,
-   "seconds": 0.23
+   "seconds": 0.41
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.14
+   "seconds": 0.32
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.12
+   "seconds": 0.44
   },
   "standing-new-bedford": {
    "rows": 61,
    "seconds": 0.0
   }
  },
- "errors": {
-  "cisco-live-music": "ValueError: no listings found at https://www.ciscokitchenbar.com/live-music/; the selectors are probably stale"
- },
- "primary_rows": 126,
+ "errors": {},
+ "primary_rows": 145,
  "dropped": {},
- "series": 67,
+ "series": 78,
  "approval": {
-  "approved": 67
+  "approved": 67,
+  "pending": 11
  },
  "by_town": {
   "Little Compton": 8,
+  "New Bedford": 54,
   "": 4,
-  "New Bedford": 43,
   "Dartmouth": 9,
   "Wareham": 1,
   "Acushnet": 2
  },
  "by_category": {
-  "Music": 13,
+  "Music": 24,
   "Outdoors & Nature": 12,
   "Arts & Theatre": 25,
   "Sports & Recreation": 3,
@@ -75,9 +78,9 @@
  },
  "by_cadence": {
   "monthly": 4,
-  "once": 57,
-  "weekly": 4,
-  "irregular": 1,
+  "once": 65,
+  "weekly": 6,
+  "irregular": 2,
   "weekends": 1
  },
  "weekend_gate": {
@@ -683,8 +686,8 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 101,
-  "primary_only_series": 43,
+  "primary_only_count": 120,
+  "primary_only_series": 54,
   "coverage_ratio": 0.042
  },
  "tide_error": null
