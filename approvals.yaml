@@ -664,3 +664,11 @@
   venue: "Cisco Brewers Kitchen & Bar"
   edits:
     categories: ["Arts"]
+- id: "e2ba4aa4ad25"
+  status: approved
+  by: "mail@l3l.us"
+  date: "2026-11-22"
+  title: "Live Music Beatles Brunch"
+  venue: "Cisco Brewers Kitchen & Bar"
+  edits:
+    categories: ["Arts"]
