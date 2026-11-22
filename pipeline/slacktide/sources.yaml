@@ -241,15 +241,20 @@
   provenance: Posted by the venue
   default_category: Music
   select:
-    item: "section.c-one-col--text:has(> h2:-soup-contains('Live Music')) p:has(> strong)"
+    item: ":is(section, div):has(> h2:-soup-contains('Live Music')) > p:has(> strong)"
     group_next: 1                 # the date paragraph plus the artist paragraph after it
     title: "p:nth-of-type(2)"     # "Day Drinkers 6pm"; the trailing time is dropped
     when: "p"                     # "Thursday, November 5" + "Day Drinkers 6pm"
+    start: "18:00"                # "Day Drinkers Music Thursdays" carries no time; the dated ones say 6pm
   note: >-
     Decision 13. BentoBox page written as pairs of paragraphs, a bold date then "artist time",
-    under an "Indoor Live Music" heading; artist bios follow in a second section. 11 shows for
-    November on 2026-11-08. Was a 404 on 2026-10-25. The weekly happenings (brunch, chef
-    nights) are declared on standing-new-bedford.
+    under a "Live Music" heading; artist bios follow in a later section. 11 shows for
+    November on 2026-11-08. Was a 404 on 2026-10-25. On 2026-11-22 the listing had moved from
+    a one-column section into the left column of a two-column one (the heading inside a
+    div.col-md-6, not the section), so the item selector matches the heading's parent whichever
+    it is; 21 shows, November 19 to December 27. The right column, "December Happenings",
+    describes one-off events in prose ("Saturday, December 12 | 8-11 PM") and is not read.
+    The weekly happenings (brunch, chef nights) are declared on standing-new-bedford.
 
 - id: south-coast-places-for-people
   name: South Coast Places for People

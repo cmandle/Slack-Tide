@@ -28,7 +28,7 @@ Source entry::
         when_class: "tag-"                         # optional; a time written into the item's class
                                                    # names, WordPress style: tag-200pm is 2:00pm
         start: "17:00"                             # optional; the start when an item has a date but
-                                                   # no time of its own
+                                                   # no time of its own (on the page or in the item)
         group_next: 1                              # optional; the item is this node plus the next N
                                                    # element siblings (a date <p> then an artist <p>)
         detail:                                    # optional; follow each item's url and read these
@@ -138,6 +138,14 @@ def last_time(text: str) -> time | None:
     return _as_time(found[-1]) if found else None
 
 
+def setting_time(text: str) -> time | None:
+    """A time written in sources.yaml: 24-hour "17:00" or a clock time such as "5pm"."""
+    try:
+        return time.fromisoformat((text or "").strip())
+    except ValueError:
+        return first_time(text)
+
+
 _ZIP = re.compile(r"\b(\d{5})\b")
 
 
@@ -212,7 +220,7 @@ class HtmlConnector(Connector):
             found = [d.date() for d in parse_when(heading_text, self.now)]
             if found:
                 page_date = Counter(found).most_common(1)[0][0]
-        default_start = first_time(sel["start"]) if sel.get("start") else None
+        default_start = setting_time(sel["start"]) if sel.get("start") else None
         group_next = int(sel.get("group_next") or 0)
         out: list[Occurrence] = []
         seen: set[str] = set()
@@ -228,6 +236,9 @@ class HtmlConnector(Connector):
                 when_text = (when_text + " " + times_from_classes(item, sel["when_class"])).strip()
             starts = parse_when(when_text, self.now)
             timed = has_time(when_text)
+            if starts and not timed and default_start is not None:   # a dated item with no time of its own
+                starts = [datetime.combine(s.date(), default_start, tzinfo=self.tz) for s in starts]
+                timed = True
             if not starts and page_date is not None:
                 t = first_time(when_text) or default_start
                 starts = [datetime.combine(page_date, t or time(0, 0), tzinfo=self.tz)]
