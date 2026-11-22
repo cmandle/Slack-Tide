@@ -2,7 +2,7 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 157,
-   "seconds": 3.56
+   "seconds": 3.44
   },
   "viva-fall-river": {
    "rows": 227,
@@ -10,39 +10,39 @@
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.27
+   "seconds": 0.08
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.55
+   "seconds": 0.52
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 5.24
+   "seconds": 4.35
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 0.21
+   "seconds": 2.33
   },
   "cisco-live-music": {
    "rows": 19,
-   "seconds": 0.16
+   "seconds": 0.14
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.37
+   "seconds": 0.26
   },
   "south-coast-girls-walk": {
    "rows": 3,
-   "seconds": 0.17
+   "seconds": 0.15
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.14
+   "seconds": 0.2
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.14
+   "seconds": 0.11
   },
   "standing-new-bedford": {
    "rows": 61,
