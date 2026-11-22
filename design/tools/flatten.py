@@ -23,10 +23,10 @@ ASSETS = {
     # the one photograph stand-in, shown with the halftone treatment
     "6b3c030ada2b926f2c8f42da495df9f1": "assets/harbor.jpg",
     # card illustrations from design/art/, shown as drawn
-    "6d579f224a254e1cf80daf4901b3f7ad": "../art/music-1.svg",
+    "6d579f224a254e1cf80daf4901b3f7ad": "../art/nightlife-1.svg",
     "fa44977142b21a8f508d62aea88ef582": "../art/arts-1.svg",
-    "653a020204c58a940d733b3b1cadff48": "../art/outdoors-2.svg",
-    "b41d7f4e50ae2633b43a25c7051c45cb": "../art/family-2.svg",
+    "653a020204c58a940d733b3b1cadff48": "../art/active-2.svg",
+    "b41d7f4e50ae2633b43a25c7051c45cb": "../art/fundraisers-2.svg",
 }
 
 

@@ -35,7 +35,7 @@ CONTACT = "mailto:hello@slack-tide.org"
 
 SECTIONS = [  # tabs; Volunteer opportunities was removed on 8 November 2026
     ("events", "Events", "Events", ""),
-    ("groups", "Community groups & meetups", "Groups & meetups", "groups/"),
+    ("groups", "Groups & meetups", "Groups & meetups", "groups/"),   # was "Community groups & meetups" until 2026-11-22
 ]
 RETIRED = ("volunteer",)  # pages an earlier build wrote; build() deletes them so the URL stops serving
 LINKS = [("calendar", "Calendar", "calendar/"), ("map", "Map", "map/"), ("add", "Add your event", "add/")]
@@ -604,6 +604,14 @@ def chevron_select(id_: str, label: str, options: list[tuple[str, str]], selecte
     return (f'<div class="select"><label class="visually-hidden" for="{id_}">{esc(label)}</label>'
             f'<select id="{id_}">{opts}</select>{chevron()}</div>')
 
+def category_select(id_: str, current: str) -> str:
+    """The approver's category control: the seven from config.CATEGORIES, the classifier's call
+    selected, "Unclassified" when it had none. admin.js sends the value only when it changes."""
+    opts = [f'<option value=""{" selected" if not current else ""}>Unclassified</option>']
+    opts += [f'<option value="{esc(c)}"{" selected" if c == current else ""}>{esc(c)}</option>' for c in config.CATEGORIES]
+    return (f'<div class="select rev-cat-select"><label class="visually-hidden" for="{id_}">Category</label>'
+            f'<select id="{id_}" data-category-select data-original="{esc(current)}">{"".join(opts)}</select>{chevron()}</div>')
+
 def queue_item(s: dict, sources: dict[str, dict]) -> str:
     """One pending series. A submission through the site shows its organiser details here and
     nowhere else, so the approver can judge it; they never reach a published record."""
@@ -634,21 +642,47 @@ def queue_item(s: dict, sources: dict[str, dict]) -> str:
             '<div class="rev-actions">'
             '<button type="button" class="rev-btn rev-approve" data-decide="approved">Approve</button>'
             '<button type="button" class="rev-btn rev-reject" data-decide="rejected">Reject</button>'
+            f'{category_select("cat-" + s["id"], cat)}'
             f'{extra}</div></article>')
 
-def admin_queue(pending: dict, sources: dict[str, dict]) -> str:
+def published_item(s: dict, sources: dict[str, dict], now: datetime) -> str:
+    """One live series on the Queue tab's Published list: enough to recognise it, and the
+    category select. A changed category saves as a new approved entry with the category on it."""
+    cat = s.get("category") or ""
+    nxt = next((_parse(o["start"]) for o in s["occurrences"] if _parse(o["start"]) >= now), _parse(s["last_start"]))
+    when = f'{nxt.strftime("%a %b")} {nxt.day}'
+    cadence = s.get("cadence", "once")
+    if cadence != "once":
+        when += f" · {cadence}"
+    where = ", ".join(x for x in (s.get("venue"), s.get("town")) if x)
+    by = f' · set by {esc(s["category_by"])}' if s.get("category_by") else ""
+    return (f'<div class="pub" data-id="{esc(s["id"])}" data-title="{esc(s["title"])}" data-venue="{esc(s.get("venue") or "")}" '
+            f'data-source="{esc(s["source_id"])}" data-town="{esc(s.get("town") or "")}" style="--cat: {stock_var(cat)}">'
+            f'<span class="rev-swatch" aria-hidden="true"></span>'
+            f'<span class="pub-main"><span class="pub-title">{esc(s["title"])}</span>'
+            f'<span class="pub-meta">{esc(when)} · {esc(where)} · {esc(source_name(s, sources))}{by}</span></span>'
+            f'{category_select("pubcat-" + s["id"], cat)}</div>')
+
+def admin_queue(pending: dict, sources: dict[str, dict], live: list[dict], now: datetime) -> str:
     rows = pending.get("series", [])
     items = "".join(queue_item(s, sources) for s in rows)
     present = sorted({r["source_id"] for r in rows})
     src_opts = [("", "All sources")] + [(sid, sources.get(sid, {}).get("name", sid)) for sid in present]
     n, soon = pending.get("pending_count", len(rows)), pending.get("soon_count", 0)
+    live_sorted = sorted(live, key=lambda s: (s.get("town") or "~", s["title"].lower()))
+    pubs = "".join(published_item(s, sources, now) for s in live_sorted)
     return (f'<section class="adm-section" id="queue"><h2><span>Review queue</span><span>{n} waiting · {soon} within 7 days</span></h2>'
             '<p class="add-intro">Approve what should publish, reject what should not, then save. New dates on an approved '
-            'series publish on their own; a retitled or moved series comes back here. The site changes on the next pipeline run.</p>'
+            'series publish on their own; a retitled or moved series comes back here. The site changes on the next pipeline run. '
+            'The category on each item is the classifier\'s call; change it and the change is kept on every run.</p>'
             '<div class="adm-filters">' + chevron_select("q-source", "Source", src_opts)
             + chevron_select("q-sort", "Order", [("soon", "Soonest first"), ("town", "By town"), ("source", "By source")]) + '</div>'
             f'<div class="rev-list" id="rev-list">{items}</div>'
             f'<p class="empty" id="rev-empty"{"" if not rows else " hidden"}>Nothing is waiting. Enjoy the evening.</p>'
+            f'<details class="pub-list" id="pub-list"><summary>Published series · {len(live_sorted)} live · correct a category here</summary>'
+            '<p class="add-intro">Everything approved and in the window, by town. Pick a different category and save; the series '
+            'stays live and keeps the new category on every run. Pick Unclassified to hand it back to the classifier.</p>'
+            f'<div class="pub-rows">{pubs}</div></details>'
             '<div class="rev-bar"><span class="rev-count" id="rev-count">0 decisions</span>'
             '<button type="button" class="submit" id="rev-save" disabled>Save decisions</button>'
             '<button type="button" class="rev-btn" data-run>Run the pipeline now</button>'
@@ -750,8 +784,10 @@ def admin_people(approvers: list[dict]) -> str:
             f'<div class="rev-bar"><span class="form-note">Then add the same address to the Access policy: Zero Trust, Access controls, Applications, Slack-Tide Admin, Approvers. '
             f'<a href="https://one.dash.cloudflare.com/" target="_blank" rel="noopener">Open Cloudflare ↗</a></span></div></section>')
 
-def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, dict], tracker: list[dict], approvers: list[dict]) -> str:
+def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, dict], tracker: list[dict], approvers: list[dict],
+               live: list[dict] | None = None) -> str:
     rel = "../"
+    live = live or []
     gen = pending.get("generated_at", "")
     gen_txt = _parse(gen).astimezone(now.tzinfo).strftime("%a %b %d, %I:%M %p").replace(" 0", " ") if gen else "unknown"
     n_cand = sum(1 for r in tracker if r.get("Status") in ("Candidate", "Disabled"))
@@ -768,7 +804,7 @@ def admin_page(now: datetime, pending: dict, report: dict, sources: dict[str, di
             f'data-approvers="{APPROVERS_PATH}" data-workflow="{INGEST_WORKFLOW}">'
             f'<div class="hero-text"><div class="hero-title"><h1>Admin</h1>{stickers()}</div>'
             f'<div class="dateline">Not public · queue as of {esc(gen_txt)}</div></div>'
-            + gate + tabs + admin_queue(pending, sources) + admin_sources(report, sources, tracker) + admin_runs(report) + admin_people(approvers) +
+            + gate + tabs + admin_queue(pending, sources, live, now) + admin_sources(report, sources, tracker) + admin_runs(report) + admin_people(approvers) +
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
     return page(f"{SITE_NAME} · Admin", body, rel, "The approvers' page. Not for the public.", now,
                 noindex=True, scripts=("site.js", "admin.js"))
@@ -911,7 +947,7 @@ def map_page(events: dict, venues: list[dict], now: datetime) -> str:
                 f"Every venue with a listing coming up, from {REGION}, on one map. Every listing is read by a person.",
                 now, scripts=("vendor/leaflet/leaflet.js", "site.js", "map.js"), styles=("vendor/leaflet/leaflet.css",))
 
-# ---------------------------------------------------------------- community groups & meetups
+# ---------------------------------------------------------------- groups & meetups
 
 GROUPS_PATH = "groups.yaml"
 GROUP_LINKS = [("website", "Website"), ("luma", "Luma"), ("meetup", "Meetup"), ("instagram", "Instagram"),
@@ -985,13 +1021,13 @@ def groups_page(groups: list[dict], events: dict, now: datetime) -> str:
     cards = "".join(group_card(g, events["series"], now) for g in groups)
     empty = '' if n else '<p class="empty">No groups listed yet.</p>'
     body = (head("groups", rel) +
-            f'<main class="content groups" id="main"><div class="hero-text"><div class="hero-title"><h1>Community groups &amp; meetups</h1>{stickers()}</div>'
+            f'<main class="content groups" id="main"><div class="hero-text"><div class="hero-title"><h1>Groups &amp; meetups</h1>{stickers()}</div>'
             f'<div class="dateline">{n} group{"" if n == 1 else "s"} · {esc(REGION)}</div></div>'
             f'<p class="intro">{esc(GROUPS_INTRO)}</p>'
             f'<div class="groups-grid">{cards}</div>{empty}'
             f'<a class="cta" href="{rel}add/">Tell us about a group</a>'
             f'<a class="back" href="{rel}">Back to events →</a></main>' + footer(rel))
-    return page(f"{SITE_NAME} · Community groups & meetups", body, rel,
+    return page(f"{SITE_NAME} · Groups & meetups", body, rel,
                 f"Standing groups, clubs and meetups from {REGION}: what they are for and where to find them.", now)
 
 # ---------------------------------------------------------------- build
@@ -1063,7 +1099,7 @@ def build(data_dir: Path, out: Path, now: datetime | None = None) -> dict:
     report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
     (out / "admin").mkdir(parents=True, exist_ok=True)
     (out / "admin" / "index.html").write_text(
-        admin_page(now, pending, report, sources, load_tracker(), load_approvers()), encoding="utf-8")
+        admin_page(now, pending, report, sources, load_tracker(), load_approvers(), published(events["series"])), encoding="utf-8")
     (out / "review").mkdir(parents=True, exist_ok=True)
     (out / "review" / "index.html").write_text(review_redirect(now), encoding="utf-8")
     live = published(events["series"])

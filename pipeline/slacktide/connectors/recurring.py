@@ -21,7 +21,7 @@ Source entry::
           start: "19:00"                  # omit for an all-day entry
           end: "21:00"                    # optional; at or before start means past midnight
           url: https://www.playarcadenb.com/
-          category: Sports & Recreation   # optional, one of config.CATEGORIES; the editor's call, kept as is
+          category: Nightlife   # optional, one of config.CATEGORIES; the editor's call, kept as is
           cost: Free                      # optional
           description: ""                 # optional
           town: New Bedford               # optional, overrides the source default

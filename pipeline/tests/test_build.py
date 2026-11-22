@@ -11,7 +11,7 @@ from slacktide import config, build, tide
 TZ = ZoneInfo("America/New_York")
 NOW = datetime(2098, 12, 31, 12, 0, tzinfo=TZ)   # a Wednesday
 
-def series(title, starts, town="Fall River", category="Music", cadence="once", source="viva-fall-river", all_day=False, sid=None, approval="approved"):
+def series(title, starts, town="Fall River", category="Nightlife", cadence="once", source="viva-fall-river", all_day=False, sid=None, approval="approved"):
     occ = [{"start": s.isoformat(), "end": (s + timedelta(hours=2)).isoformat(), "all_day": all_day} for s in starts]
     return {"id": sid or title.lower().replace(" ", "-"), "title": title, "venue": "Narrows Center for the Arts",
             "town": town, "category": category, "source_id": source, "url": "https://example.org/" + title,
@@ -25,8 +25,8 @@ def data(tmp_path):
         series("Tonight gig", [today.replace(hour=19, minute=30)]),
         series("Already over", [today.replace(hour=8)]),
         series("Weekly bingo", [today - timedelta(days=5), today + timedelta(days=2, hours=18), today + timedelta(days=9, hours=18)],
-               town="Tiverton", category="Sports & Recreation", cadence="weekly", source="town-tiverton"),
-        series("Next weekend fair", [today + timedelta(days=4)], town="Dartmouth", category="Markets & Fairs", all_day=True, source="dnrt"),
+               town="Tiverton", category="Community", cadence="weekly", source="town-tiverton"),
+        series("Next weekend fair", [today + timedelta(days=4)], town="Dartmouth", category="Seasonal", all_day=True, source="dnrt"),
         series("Too far out", [today + timedelta(days=8)]),
         series("Unclassified talk", [today + timedelta(days=1, hours=10)], category="", town="Little Compton", source="brownell-library"),
         series("Waiting for review", [today + timedelta(days=2, hours=20)], town="New Bedford", source="zeiterion", approval="pending"),
@@ -52,10 +52,11 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     html = (out / "index.html").read_text(encoding="utf-8")
     for t in config.TOWNS:
         assert f'value="{t}"' in html
-    for fam in config.CATEGORY_FAMILIES:          # one tile per display family, from configuration
-        assert f'class="tile" type="button" data-cat="{fam}"' in html
-    assert set(config.CATEGORY_FAMILY_OF) == set(config.CATEGORIES)   # every taxonomy entry has a family
-    assert 'data-cat="outdoors" data-category="Sports &amp; Recreation"' in html   # bingo is Sports, family Outdoors
+    for cat in config.CATEGORIES:                 # one tile per category, from configuration, in its order
+        assert f'class="tile" type="button" data-cat="{cat.lower()}"' in html
+    assert [t.split('"')[0] for t in html.split('class="tile" type="button" data-cat="')[2:]] == [c.lower() for c in config.CATEGORIES]
+    assert set(config.CATEGORY_FAMILY_OF) == set(config.CATEGORIES)   # every taxonomy entry has a slug
+    assert 'data-cat="community" data-category="Community"' in html   # bingo is Community
     assert html.count('class="card"') == 1 and html.count('class="week-card"') == 3 and 'class="week-grid"' in html
     assert 'id="category"' not in html and 'id="section"' not in html   # removed 2026-11-08; tiles and tabs replace them
     assert '<a class="tab" href="groups/">' in html and "Volunteer opportunities" not in html
@@ -66,7 +67,7 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     assert r["published"] == 6 and r["pending"] == 1
     # The week card: date cell, time, place, town chip and the category band, in start order.
     assert '<span class="wk-day">FRI JAN 2</span><span class="wk-time">6:00 PM</span>' in html   # NOW is Dec 31, the week is January
-    assert '<span class="wk-chip">Tiverton</span>' in html and '<span class="wk-band" title="Sports &amp; Recreation">Outdoors</span>' in html
+    assert '<span class="wk-chip">Tiverton</span>' in html and '<span class="wk-band" title="Community">Community</span>' in html
     assert '<span class="wk-time">All day</span>' in html
     assert '<span class="wk-day">SUN JAN 4</span>' in html   # the month joins the day across the month boundary
     order = [m for m in ("Unclassified talk", "Weekly bingo", "Next weekend fair") if m in html]
@@ -108,7 +109,16 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
     for tab in ("#queue", "#sources", "#runs", "#people"):
         assert f'href="{tab}"' in admin
     assert admin.count('class="rev"') == 1 and 'data-id="waiting-for-review"' in admin and 'data-decide="approved"' in admin
-    assert 'data-source="zeiterion"' in admin and "Rejected gig" not in admin and "Tonight gig" not in admin
+    assert 'data-source="zeiterion"' in admin and "Rejected gig" not in admin
+    # The category select on the queue item carries the classifier's call and the seven to pick from;
+    # the Published list under the queue is where a live series' category is corrected.
+    rev = admin.split('class="rev"')[1].split("</article>")[0]
+    assert 'data-category-select data-original="Nightlife"' in rev and '<option value="Nightlife" selected>Nightlife</option>' in rev
+    assert rev.count("<option") == 1 + len(config.CATEGORIES) and "Arts &amp; Theatre" not in admin
+    assert 'id="pub-list"' in admin and admin.count('class="pub"') == 6 and "Published series · 6 live" in admin
+    pub = admin.split('data-id="tonight-gig"')[1].split("</div></div>")[0]
+    assert 'data-original="Nightlife"' in pub and "Viva Fall River" in pub
+    assert "Waiting for review" not in admin.split('id="pub-list"')[1] and "Rejected gig" not in admin
     assert 'id="trk"' in admin and 'id="ppl"' in admin and "admin.js" in admin and "—" not in admin
     assert 'data-approvals="approvals.yaml"' in admin and 'data-tracker="docs/sources-tracker.csv"' in admin
     review = (out / "review" / "index.html").read_text(encoding="utf-8")
@@ -117,25 +127,34 @@ def test_build_writes_pages_and_reads_config(data, tmp_path):
 def test_card_art_by_family_and_stable_hash(data, tmp_path, monkeypatch):
     art = tmp_path / "design" / "art"
     art.mkdir(parents=True)
-    for name in ("music-1", "music-2", "music-3", "outdoors-1", "general-1", "general-2"):
+    for name in ("nightlife-1", "nightlife-2", "nightlife-3", "active-1", "general-1", "general-2"):
         (art / f"{name}.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6"/>', encoding="utf-8")
     monkeypatch.setattr(build, "DESIGN", tmp_path / "design")
     monkeypatch.setattr(build, "ART", art)
     scenes = build.art_scenes()
-    assert set(scenes) == {"music", "outdoors", "general"} and len(scenes["music"]) == 3
-    gig = {"id": "tonight-gig", "category": "Music"}
-    assert build.art_for(gig, scenes).startswith("music-")
+    assert set(scenes) == {"nightlife", "active", "general"} and len(scenes["nightlife"]) == 3
+    gig = {"id": "tonight-gig", "category": "Nightlife"}
+    assert build.art_for(gig, scenes).startswith("nightlife-")
     assert build.art_for(gig, scenes) == build.art_for(dict(gig), scenes)          # stable across builds
-    assert build.art_for({"id": "x", "category": "Sports & Recreation"}, scenes) == "outdoors-1.svg"   # by family
-    assert build.art_for({"id": "x", "category": ""}, scenes).startswith("general-")                     # unclassified
-    assert build.art_for({"id": "x", "category": "Library & Talks"}, scenes).startswith("general-")     # family with no scenes yet
-    picks = {build.art_for({"id": f"series-{i}", "category": "Music"}, scenes) for i in range(40)}
-    assert picks == {"music-1.svg", "music-2.svg", "music-3.svg"}                 # the hash spreads neighbours
+    assert build.art_for({"id": "x", "category": "Active"}, scenes) == "active-1.svg"       # by category slug
+    assert build.art_for({"id": "x", "category": ""}, scenes).startswith("general-")        # unclassified
+    assert build.art_for({"id": "x", "category": "Learn"}, scenes).startswith("general-")   # a category with no scenes in this set
+    picks = {build.art_for({"id": f"series-{i}", "category": "Nightlife"}, scenes) for i in range(40)}
+    assert picks == {"nightlife-1.svg", "nightlife-2.svg", "nightlife-3.svg"}     # the hash spreads neighbours
     out = tmp_path / "site"
     r = build.build(data, out, now=NOW)
-    assert r["art"] == 6 and (out / "assets" / "art" / "music-2.svg").exists()
+    assert r["art"] == 6 and (out / "assets" / "art" / "nightlife-2.svg").exists()
     html = (out / "index.html").read_text(encoding="utf-8")
-    assert 'class="card-art ill"' in html and 'src="assets/art/music-' in html and 'class="card-art ht"' not in html
+    assert 'class="card-art ill"' in html and 'src="assets/art/nightlife-' in html and 'class="card-art ht"' not in html
+
+def test_repository_art_and_icons_cover_every_category():
+    """design/art has three scenes per category plus three general; design/reference/icons and the
+    bundled copies have an icon per category plus All."""
+    scenes = build.art_scenes()
+    assert set(scenes) == {c.lower() for c in config.CATEGORIES} | {"general"}
+    assert all(len(v) == 3 for v in scenes.values())
+    for base in (build.DESIGN / "reference" / "icons", build.ASSETS / "icons"):
+        assert {p.stem for p in base.glob("*.svg")} == {c.lower() for c in config.CATEGORIES} | {"all"}
 
 def test_tide_parse_and_freshness(tmp_path):
     hilo = tide.parse_predictions(fixture_text("coops_hilo.json"))

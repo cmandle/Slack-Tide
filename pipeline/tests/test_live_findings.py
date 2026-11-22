@@ -20,9 +20,30 @@ def test_clean_text_strips_html_and_normalises_quotes():
 
 def test_html_in_description_does_not_classify_as_class():
     desc = '<p>An evening of song.</p> <span class="tribe-events">Doors 7pm</span>'
-    assert classify("Dar Williams", "Narrows Center for the Arts", desc) != "Education & Workshops"
-    assert classify("Printmaking Class", "", "") == "Arts & Theatre"
-    assert classify("Budgeting 101: Workshop Series", "", "") == "Education & Workshops"
+    assert classify("Dar Williams", "Narrows Center for the Arts", desc) == "Arts"   # the venue, not "class" in a tag
+    assert classify("Printmaking Class", "", "") == "Arts"
+    assert classify("Budgeting 101: Workshop Series", "", "") == "Learn"
+
+def test_seven_categories_and_the_rules_that_sort_into_them():
+    """Decision 14: the rule classifier produces only config.CATEGORIES, and the words that
+    carried the first taxonomy land where the rename table says."""
+    from slacktide.config import CATEGORIES, CATEGORY_RENAMES, canonical_category
+    assert CATEGORIES == ["Nightlife", "Active", "Arts", "Learn", "Seasonal", "Fundraisers", "Community"]
+    assert set(CATEGORY_RENAMES.values()) <= set(CATEGORIES)
+    assert canonical_category("Music") == "Nightlife" and canonical_category("arts") == "Arts" and canonical_category("Downtown") == ""
+    cases = {
+        "Karaoke Night": "Nightlife", "Trivia at the Arcade": "Nightlife", "Oyster and Wine Tasting": "Nightlife",
+        "Harbour walk: winter birds": "Active", "Free All Levels Yoga": "Active", "Beach Cleanup": "Community",
+        "Shakespeare in New Bedford: Hamlet": "Arts", "NBSO Concert": "Arts", "Gallery Opening": "Arts",
+        "Author Talk: Local History": "Learn", "Budgeting 101: Workshop Series": "Learn", "Story Time": "Learn",
+        "Holiday Craft Fair": "Seasonal", "Winterfest": "Seasonal", "Farmers Market": "Seasonal", "Trunk or Treat": "Seasonal",
+        "Spaghetti Supper Fundraiser": "Fundraisers", "Bake Sale": "Fundraisers", "Benefit Concert": "Fundraisers",
+        "Select Board Meeting": "Community", "Family Game Night": "Community", "Senior Bingo": "Community",
+        "Mass Audubon Bird Walk": "Active",   # "Mass" is not a service
+    }
+    for title, want in cases.items():
+        assert classify(title, "", "") == want, title
+    assert all(classify(t, "", "") in CATEGORIES for t in cases)
 
 def test_split_location_civicplus_shapes():
     assert split_location("<p>Dining Room</p> - Tiverton RI 02878") == ("", "Dining Room")
@@ -112,7 +133,7 @@ def test_weekend_and_weekday_cadences():
 def test_committees_and_commissions_are_civic():
     for t in ("Cemetery Commission Meeting", "Community Preservation Committee", "Board of Public Works Meeting",
               "Somerset Board of Water & Sewer Commissioners", "Probate Court", "Technical Review Committee"):
-        assert classify(t, "", "") == "Civic & Town Meetings", t
+        assert classify(t, "", "") == "Community", t
 
 def test_reconcile_requires_same_town_and_groups_missed():
     now = datetime(2098, 12, 31, 21, tzinfo=TZ)

@@ -42,29 +42,52 @@ TOWN_ALIASES = {
     "onset": "Wareham", "adamsville": "Little Compton",
 }
 
-# The platform's own taxonomy. Source categories are never trusted; see normalize.classify.
-CATEGORIES = [
-    "Music", "Arts & Theatre", "Museums & Exhibitions", "Outdoors & Nature", "Family & Children",
-    "Library & Talks", "Civic & Town Meetings", "Food & Drink", "Markets & Fairs",
-    "Sports & Recreation", "Faith & Spiritual", "Education & Workshops", "Festivals",
-    "Volunteering & Causes",
-]
+# The platform's own taxonomy, settled by the editors on 2026-11-22: seven categories, in
+# presentation order. This list is the one place the taxonomy lives. The rule classifier
+# (normalize.classify), the planned Haiku classifier, the /add/ form, the admin page's category
+# selects, the category tiles, the card labels, the swatch colours and the card illustrations
+# all read it. Source categories are never trusted; see normalize.classify.
+CATEGORIES = ["Nightlife", "Active", "Arts", "Learn", "Seasonal", "Fundraisers", "Community"]
 
-# Display families for the Events section. design/DESIGN.md draws seven category tiles plus
-# All, with one icon and one colour each (design/reference/icons, design/tokens.css); the
-# taxonomy above has fourteen entries, so each entry belongs to a family for the tile row, the
-# swatch and the card label. The family slug is the icon file name and the --st-cat-* token.
-# Open with the taxonomy issue: whether the taxonomy itself should shrink to these seven.
-CATEGORY_FAMILIES = {
-    "music": ("Music", ["Music", "Festivals"]),
-    "arts": ("Arts", ["Arts & Theatre", "Museums & Exhibitions", "Education & Workshops"]),
-    "outdoors": ("Outdoors", ["Outdoors & Nature", "Sports & Recreation"]),
-    "family": ("Family", ["Family & Children"]),
-    "library": ("Library", ["Library & Talks", "Faith & Spiritual"]),
-    "markets": ("Markets", ["Markets & Fairs", "Food & Drink"]),
-    "civic": ("Civic", ["Civic & Town Meetings", "Volunteering & Causes"]),
-}
+# The slug of a category is its icon file name (design/reference/icons/<slug>.svg), its
+# --st-cat-<slug> colour token (design/tokens.css), its art scene prefix (design/art/<slug>-N.svg)
+# and the data-cat value the tiles filter on. One per category since the taxonomy shrank to the
+# seven tiles; CATEGORY_FAMILIES keeps the (label, [categories]) shape the build reads.
+CATEGORY_SLUG = {c: c.lower() for c in CATEGORIES}
+CATEGORY_FAMILIES = {CATEGORY_SLUG[c]: (c, [c]) for c in CATEGORIES}
 CATEGORY_FAMILY_OF = {cat: slug for slug, (_, cats) in CATEGORY_FAMILIES.items() for cat in cats}
+
+# Where the fourteen categories of the first taxonomy (2026-09 to 2026-11-22) went. Read by
+# canonical_category() so a category written under the old names, in a submission sheet row
+# or an approvals.yaml entry, still lands on one of the seven. Series ids do not hash the
+# category (series.py), so the rename invalidated no approval.
+CATEGORY_RENAMES = {
+    "Music": "Nightlife",
+    "Food & Drink": "Nightlife",
+    "Outdoors & Nature": "Active",
+    "Sports & Recreation": "Active",
+    "Arts & Theatre": "Arts",
+    "Museums & Exhibitions": "Arts",
+    "Library & Talks": "Learn",
+    "Education & Workshops": "Learn",
+    "Markets & Fairs": "Seasonal",
+    "Festivals": "Seasonal",
+    "Volunteering & Causes": "Community",
+    "Civic & Town Meetings": "Community",
+    "Family & Children": "Community",
+    "Faith & Spiritual": "Community",
+}
+
+def canonical_category(name: str) -> str:
+    """One of CATEGORIES for a category name as written: exact, case-insensitive, or one of the
+    first taxonomy's names. Anything else is ''."""
+    s = str(name or "").strip()
+    if not s:
+        return ""
+    for c in CATEGORIES:
+        if s.lower() == c.lower():
+            return c
+    return CATEGORY_RENAMES.get(s, "")
 
 # Municipal feeds carry public holidays as events. These are dropped.
 HOLIDAY_TITLES = {

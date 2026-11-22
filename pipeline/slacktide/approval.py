@@ -9,6 +9,12 @@ The unit is the series. Its id is a hash of source, title key and venue, so a de
 new dates, but a retitled or moved series is a new id and comes back to the queue. Sources with
 ``review: auto`` in sources.yaml publish without a decision; a recorded decision still wins, so a
 rejected series from such a source stays rejected. The Zeiterion was the first, 2026-11-08.
+
+An entry may also carry ``category``, one of config.CATEGORIES (since 2026-11-22). It is the
+approver's correction of the classifier: ``apply`` sets it on the series on every run, so it
+survives reclassification, and because the id does not hash the category it never sends an
+approved series back through the queue. The same last-entry-wins rule applies: a later entry
+for the id without a category hands the series back to the classifier.
 """
 from __future__ import annotations
 from collections import Counter
@@ -16,6 +22,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import json
 import yaml
+from .config import CATEGORIES, canonical_category
 
 ROOT = Path(__file__).resolve().parents[2]
 APPROVALS = ROOT / "approvals.yaml"
@@ -23,9 +30,11 @@ STATUSES = ("approved", "rejected")
 SOON_DAYS = 7
 
 HEADER = """# Approval decisions. One entry per series id; the last entry for an id wins.
-# Written by the review page (/review/) and by `slacktide approve` / `slacktide reject`.
+# Written by the admin page's Queue tab (/admin/) and by `slacktide approve` / `slacktide reject`.
 # Append, never rewrite history: a change of mind is a new entry below the old one.
 # title and venue are for the reader; matching is by id alone.
+# category, when present, is the approver's correction of the classifier (one of the seven in
+# config.CATEGORIES) and is applied on every run; an entry without it leaves the classifier in charge.
 """
 
 
@@ -43,7 +52,15 @@ def load(path: Path = APPROVALS) -> dict[str, dict]:
         status = str(e.get("status", "")).lower()
         if status not in STATUSES:
             continue
-        out[str(e["id"])] = {**e, "id": str(e["id"]), "status": status}
+        entry = {**e, "id": str(e["id"]), "status": status}
+        # A category the approver wrote under an old name still lands on one of the seven; one
+        # that names nothing we know is dropped from the entry, not the entry from the file.
+        cat = canonical_category(entry.get("category") or "")
+        if cat:
+            entry["category"] = cat
+        else:
+            entry.pop("category", None)
+        out[entry["id"]] = entry
     return out
 
 
@@ -57,16 +74,33 @@ def decide(series_id: str, source_id: str, decisions: dict[str, dict], sources: 
     return "pending", ""
 
 
+def category_override(series_id: str, decisions: dict[str, dict]) -> tuple[str, str]:
+    """(category, set_by) when the last entry for the id carries a category, else ("", "")."""
+    d = decisions.get(series_id) or {}
+    cat = d.get("category") or ""
+    return (cat, str(d.get("by") or "")) if cat else ("", "")
+
+
 def apply(series: list, decisions: dict[str, dict], sources: dict[str, dict]) -> Counter:
-    """Set approval and decided_by on Series objects (or series dicts) in place."""
+    """Set approval, decided_by and, where an entry corrects it, category on Series objects (or
+    series dicts) in place. Runs on every ingest and on reapply, so a corrected category outlives
+    the classifier's next opinion."""
     counts: Counter = Counter()
     for s in series:
         if isinstance(s, dict):
             status, by = decide(s["id"], s["source_id"], decisions, sources)
             s["approval"], s["decided_by"] = status, by
+            cat, cat_by = category_override(s["id"], decisions)
+            if cat:
+                s["category"] = cat
+            s["category_by"] = cat_by
         else:
             status, by = decide(s.id, s.source_id, decisions, sources)
             s.approval, s.decided_by = status, by
+            cat, cat_by = category_override(s.id, decisions)
+            if cat:
+                s.category = cat
+            s.category_by = cat_by
         counts[status] += 1
     return counts
 
@@ -105,12 +139,16 @@ def pending_payload(series: list, now: datetime | None = None) -> dict:
 
 
 def record(ids: list[str], status: str, by: str, series_by_id: dict[str, dict] | None = None,
-           note: str = "", on: date | None = None, path: Path = APPROVALS) -> int:
-    """Append one entry per id. Returns how many were written."""
+           note: str = "", on: date | None = None, path: Path = APPROVALS, category: str = "") -> int:
+    """Append one entry per id. Returns how many were written. `category` corrects the
+    classifier for every id in the call; approving an already approved series with a category
+    is the way to fix a live listing's category."""
     if status not in STATUSES:
         raise ValueError(f"status must be one of {STATUSES}")
     if not by:
         raise ValueError("a decision needs a name (--by)")
+    if category and category not in CATEGORIES:
+        raise ValueError(f"category must be one of {', '.join(CATEGORIES)}")
     series_by_id = series_by_id or {}
     existing = yaml.safe_load(path.read_text(encoding="utf-8")) if path.exists() else None
     entries = existing if isinstance(existing, list) else []
@@ -122,6 +160,8 @@ def record(ids: list[str], status: str, by: str, series_by_id: dict[str, dict] |
             entry["title"] = s["title"]
         if s.get("venue"):
             entry["venue"] = s["venue"]
+        if category:
+            entry["category"] = category
         if note:
             entry["note"] = note
         entries.append(entry)

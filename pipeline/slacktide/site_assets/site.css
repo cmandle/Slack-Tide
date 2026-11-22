@@ -586,6 +586,20 @@ a.rev-btn { display: inline-flex; align-items: center; text-decoration: none; }
 .rev-btn:hover { background: var(--st-yellow); }
 .rev[data-decision="approved"] .rev-approve, .rev-approve[aria-pressed="true"] { background: var(--st-green); }
 .rev[data-decision="rejected"] .rev-reject { background: var(--st-coral); }
+.rev-cat-select select, .pub .select select { height: 36px; min-width: 150px; font-size: 11px; }
+.rev-cat-select svg, .pub .select svg { top: 14px; }
+/* Published series: the compact list under the queue where a live listing's category is corrected. */
+.pub-list { border: 1px solid var(--st-ink); background: var(--st-paper); }
+.pub-list summary { cursor: pointer; padding: 10px 12px; font: 700 13px/1.3 var(--st-font-sans); }
+.pub-list .add-intro { padding: 0 12px; }
+.pub-rows { display: flex; flex-direction: column; border-top: 1px solid var(--st-ink); }
+.pub { display: flex; gap: 10px; align-items: center; padding: 8px 12px; border-bottom: 1px solid var(--st-grid); }
+.pub:last-child { border-bottom: 0; }
+.pub.is-changed { background: color-mix(in srgb, var(--st-yellow) 45%, var(--st-paper)); }
+.pub-main { min-width: 0; flex: 1 1 auto; display: flex; flex-direction: column; gap: 1px; }
+.pub-title { font: 700 13px/1.25 var(--st-font-sans); }
+.pub-meta { font: 400 10px/14px var(--st-font-mono); opacity: 0.8; }
+.pub .select { flex: 0 0 auto; width: 160px; }
 .rev-bar {
   position: sticky; bottom: 0; display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
   border: 1px solid var(--st-ink); background: var(--st-paper); padding: 10px 12px;
