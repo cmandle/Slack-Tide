@@ -1,44 +1,44 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 159,
-   "seconds": 4.09
+   "rows": 157,
+   "seconds": 5.55
   },
   "viva-fall-river": {
-   "rows": 232,
-   "seconds": 13.73
+   "rows": 227,
+   "seconds": 15.54
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.2
+   "seconds": 4.28
   },
   "zeiterion": {
-   "rows": 23,
-   "seconds": 0.52
+   "rows": 22,
+   "seconds": 0.43
   },
   "buzzards-bay-coalition": {
-   "rows": 5,
-   "seconds": 8.46
+   "rows": 3,
+   "seconds": 6.43
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 2.28
+   "seconds": 2.84
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.35
+   "seconds": 0.14
   },
   "south-coast-girls-walk": {
-   "rows": 2,
-   "seconds": 1.02
+   "rows": 3,
+   "seconds": 0.97
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.3
+   "seconds": 0.41
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 0.31
+   "seconds": 0.36
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -48,26 +48,25 @@
  "errors": {
   "cisco-live-music": "ValueError: no listings found at https://www.ciscokitchenbar.com/live-music/; the selectors are probably stale"
  },
- "primary_rows": 128,
+ "primary_rows": 126,
  "dropped": {},
- "series": 69,
+ "series": 67,
  "approval": {
-  "pending": 48,
-  "approved": 21
+  "pending": 47,
+  "approved": 20
  },
  "by_town": {
-  "": 4,
   "Little Compton": 8,
-  "New Bedford": 44,
-  "Mattapoisett": 1,
+  "": 4,
+  "New Bedford": 43,
   "Dartmouth": 9,
   "Wareham": 1,
   "Acushnet": 2
  },
  "by_category": {
-  "Outdoors & Nature": 13,
   "Music": 13,
-  "Arts & Theatre": 26,
+  "Outdoors & Nature": 12,
+  "Arts & Theatre": 25,
   "Sports & Recreation": 3,
   "Education & Workshops": 4,
   "Family & Children": 5,
@@ -76,31 +75,31 @@
   "Faith & Spiritual": 1
  },
  "by_cadence": {
-  "once": 59,
   "monthly": 4,
+  "once": 57,
   "weekly": 4,
   "irregular": 1,
   "weekends": 1
  },
  "weekend_gate": {
-  "saturday": "2026-11-21",
-  "series": 2,
+  "saturday": "2026-11-28",
+  "series": 1,
   "towns": {
-   "New Bedford": 2
+   "Dartmouth": 1
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 391,
-  "check_matched": 17,
-  "check_missed_rows": 374,
-  "check_missed_series": 85,
+  "check_total": 384,
+  "check_matched": 16,
+  "check_missed_rows": 368,
+  "check_missed_series": 83,
   "check_missed": [
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-21T10:00:00-05:00",
+    "first_start": "2026-11-22T10:00:00-05:00",
     "rows": 26
    },
    {
@@ -286,13 +285,6 @@
     "rows": 3
    },
    {
-    "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
-    "venue": "Bristol Community College, New Bedford",
-    "town": "Fall River",
-    "first_start": "2026-11-21T08:00:00-05:00",
-    "rows": 3
-   },
-   {
     "title": "Octave Avenue Open Mic",
     "venue": "First Unitarian Church in New Bedford - Parish Hall",
     "town": "New Bedford",
@@ -304,13 +296,6 @@
     "venue": "The Belmont Club",
     "town": "Fall River",
     "first_start": "2026-12-03T19:00:00-05:00",
-    "rows": 3
-   },
-   {
-    "title": "Planetarium Show: Death of the Dinosaurs",
-    "venue": "BMC Durfee High School",
-    "town": "Fall River",
-    "first_start": "2026-11-21T09:00:00-05:00",
     "rows": 3
    },
    {
@@ -342,6 +327,13 @@
     "rows": 2
    },
    {
+    "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
+    "venue": "Bristol Community College, New Bedford",
+    "town": "Fall River",
+    "first_start": "2026-11-25T17:30:00-05:00",
+    "rows": 2
+   },
+   {
     "title": "Joan Osborne Sings The Songs of Bob Dylan - Fall River",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -360,13 +352,6 @@
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-29T17:00:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Wreath Making Workshop",
-    "venue": "New Bedford Art Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-21T11:00:00-05:00",
     "rows": 2
    },
    {
@@ -465,13 +450,6 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2027-01-16T20:00:00-05:00",
-    "rows": 1
-   },
-   {
-    "title": "Falco and Book Play Jerry Garcia",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-11-21T20:00:00-05:00",
     "rows": 1
    },
    {
@@ -678,6 +656,13 @@
     "rows": 1
    },
    {
+    "title": "Wreath Making Workshop",
+    "venue": "New Bedford Art Museum",
+    "town": "New Bedford",
+    "first_start": "2026-12-19T11:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Write Your Dream Book with Steven Manchester",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -696,9 +681,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 102,
-  "primary_only_series": 44,
-  "coverage_ratio": 0.043
+  "primary_only_count": 101,
+  "primary_only_series": 43,
+  "coverage_ratio": 0.042
  },
  "tide_error": null
 }

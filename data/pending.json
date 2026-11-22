@@ -1,64 +1,10 @@
 {
- "generated_at": "2026-11-22T02:16:51.396315+00:00",
- "pending_count": 48,
- "soon_count": 13,
- "approved_count": 21,
+ "generated_at": "2026-11-22T16:56:47.114266+00:00",
+ "pending_count": 47,
+ "soon_count": 12,
+ "approved_count": 20,
  "rejected_count": 0,
  "series": [
-  {
-   "id": "9017f25a648c",
-   "title": "Intro to Shellfishing at Monument Beach",
-   "venue": "",
-   "town": "",
-   "category": "Outdoors & Nature",
-   "source_id": "buzzards-bay-coalition",
-   "url": "https://savebuzzardsbay.org/events/bay-adventures/intro-to-shellfishing-at-monument-beach",
-   "cost": "",
-   "first_start": "2026-11-21T00:00:00-05:00",
-   "last_start": "2026-11-21T00:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-21T00:00:00-05:00",
-     "end": null,
-     "all_day": true
-    }
-   ],
-   "summary": "Curious about local shellfishing?",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-21T00:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "6fe0308349a1",
-   "title": "Turkey Trot at The Bogs",
-   "venue": "The Bogs",
-   "town": "Mattapoisett",
-   "category": "Outdoors & Nature",
-   "source_id": "buzzards-bay-coalition",
-   "url": "https://savebuzzardsbay.org/events/bay-adventures/turkey-trot-at-the-bogs",
-   "cost": "",
-   "first_start": "2026-11-22T09:00:00-05:00",
-   "last_start": "2026-11-22T09:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-22T09:00:00-05:00",
-     "end": "2026-11-22T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Looking for a fun way to get moving before Thanksgiving?",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-22T09:00:00-05:00",
-   "soon": true
-  },
   {
    "id": "b7301c4db9eb",
    "title": "DayDreaming of Summer",
@@ -84,120 +30,6 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-22T10:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "e2ba4aa4ad25",
-   "title": "Live Music Beatles Brunch",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Music",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.ciscokitchenbar.com/happenings/",
-   "cost": "",
-   "first_start": "2026-11-22T10:00:00-05:00",
-   "last_start": "2027-02-14T10:00:00-05:00",
-   "count": 13,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": "2026-11-29T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T10:00:00-05:00",
-     "end": "2026-12-06T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T10:00:00-05:00",
-     "end": "2026-12-13T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-20T10:00:00-05:00",
-     "end": "2026-12-20T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-27T10:00:00-05:00",
-     "end": "2026-12-27T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-03T10:00:00-05:00",
-     "end": "2027-01-03T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-10T10:00:00-05:00",
-     "end": "2027-01-10T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-17T10:00:00-05:00",
-     "end": "2027-01-17T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-24T10:00:00-05:00",
-     "end": "2027-01-24T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-31T10:00:00-05:00",
-     "end": "2027-01-31T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-07T10:00:00-05:00",
-     "end": "2027-02-07T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-14T10:00:00-05:00",
-     "end": "2027-02-14T14:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-22T10:00:00-05:00",
-   "soon": true
-  },
-  {
-   "id": "a9aff64785ba",
-   "title": "Sachuest Point",
-   "venue": "",
-   "town": "",
-   "category": "Sports & Recreation",
-   "source_id": "south-coast-girls-walk",
-   "url": "https://www.southcoastgirlswalk.com/our-schedule/q575dtg0zlp4ivt449vb5slyrt4kqp",
-   "cost": "",
-   "first_start": "2026-11-22T14:00:00-05:00",
-   "last_start": "2026-11-22T14:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-22T14:00:00-05:00",
-     "end": "2026-11-22T15:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join us for an afternoon stroll along the water at Sachuest Point nature preserve this week!",
-   "approval": "pending",
-   "decided_by": "",
-   "next_start": "2026-11-22T14:00:00-05:00",
    "soon": true
   },
   {
@@ -570,6 +402,60 @@
    "soon": true
   },
   {
+   "id": "d02b7dceb0ab",
+   "title": "Small Business Saturday",
+   "venue": "",
+   "town": "",
+   "category": "Outdoors & Nature",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/small-business-saturday",
+   "cost": "",
+   "first_start": "2026-11-28T10:00:00-05:00",
+   "last_start": "2026-11-28T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T10:00:00-05:00",
+     "end": "2026-11-28T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Small Business Saturday at Kilburn Mill 🛍️☕️ We're kicking off the weekend in New Bedford with coffee, movement, and holiday shopping! Fuel up: Grab a coffee at Society Coffee Bar at 9:00am Get moving: Choose between an indoor stroll through the mill or an outdoor walk (weather permitting!) 10:00am ",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-28T10:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "ac250c42a90d",
+   "title": "Cape Cod Canal",
+   "venue": "",
+   "town": "",
+   "category": "Sports & Recreation",
+   "source_id": "south-coast-girls-walk",
+   "url": "https://www.southcoastgirlswalk.com/our-schedule/small-business-saturday-t73ex",
+   "cost": "",
+   "first_start": "2026-11-28T10:00:00-05:00",
+   "last_start": "2026-11-28T10:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-11-28T10:00:00-05:00",
+     "end": "2026-11-28T11:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "We're taking things to a new neighborhood! Our amazing Ambassador Cindy is leading you to one of our most-requested spots for a scenic Sunday morning stroll right along the water at the much awaited Cape Cod Canal!",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-28T10:00:00-05:00",
+   "soon": true
+  },
+  {
    "id": "0f566c0e4bb0",
    "title": "Live Music: Dave Alves",
    "venue": "Sakonnet Vineyard",
@@ -594,6 +480,93 @@
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-11-28T13:00:00-05:00",
+   "soon": true
+  },
+  {
+   "id": "e2ba4aa4ad25",
+   "title": "Live Music Beatles Brunch",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Music",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
+   "cost": "",
+   "first_start": "2026-11-22T10:00:00-05:00",
+   "last_start": "2027-02-14T10:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-11-22T10:00:00-05:00",
+     "end": "2026-11-22T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T10:00:00-05:00",
+     "end": "2026-12-20T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-27T10:00:00-05:00",
+     "end": "2026-12-27T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-03T10:00:00-05:00",
+     "end": "2027-01-03T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-10T10:00:00-05:00",
+     "end": "2027-01-10T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-17T10:00:00-05:00",
+     "end": "2027-01-17T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-24T10:00:00-05:00",
+     "end": "2027-01-24T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-31T10:00:00-05:00",
+     "end": "2027-01-31T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-07T10:00:00-05:00",
+     "end": "2027-02-07T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-14T10:00:00-05:00",
+     "end": "2027-02-14T14:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "pending",
+   "decided_by": "",
+   "next_start": "2026-11-29T10:00:00-05:00",
    "soon": true
   },
   {
@@ -1076,8 +1049,8 @@
    "soon": false
   },
   {
-   "id": "1923b818e08d",
-   "title": "Follow the Carrolers!- Traditional American Songs- AHA! Moment",
+   "id": "fc247bff53f4",
+   "title": "Follow the Carolers!- Traditional American Songs- AHA! Moment",
    "venue": "Beauty Union 338 Acushnet Ave",
    "town": "Acushnet",
    "category": "Arts & Theatre",
@@ -1096,15 +1069,15 @@
      "all_day": false
     }
    ],
-   "summary": "Follow the Carrolers!- Traditional American Songs- AHA! Moment Beauty Union 338 Acushnet Ave The Multi-Cultural Trio: Many Voices, One Community Stop by Beauty Union, a salon and collective of beauty artists in downtown New Bedford, and enjoy the sounds of the season and follow along with the Trio. ",
+   "summary": "Follow the Carolers!- Traditional American Songs- AHA! Moment Beauty Union 338 Acushnet Ave The Multi-Cultural Trio: Many Voices, One Community Stop by Beauty Union, a salon and collective of beauty artists in downtown New Bedford, and enjoy the sounds of the season and follow along with the Trio. F",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T18:00:00-05:00",
    "soon": false
   },
   {
-   "id": "2bb98af6d918",
-   "title": "Follow the Carrolers!- Songs of Africa- AHA! Moment",
+   "id": "72b770c8842d",
+   "title": "Follow the Carolers!- Songs of Africa- AHA! Moment",
    "venue": "Bento's Bar and Grille",
    "town": "New Bedford",
    "category": "Arts & Theatre",
@@ -1123,15 +1096,15 @@
      "all_day": false
     }
    ],
-   "summary": "Follow the Carrolers!- Songs of Africa- AHA! Moment Bento's Bar and Grille, 555 Pleasant St. Follow the Carrollers From Bento's! Gather with friends and neighbors for an inspiring holiday musical presentation featuring the renowned music ministry of Pastor Lauri Gomes and the congregation of Union B",
+   "summary": "Follow the Carolers!- Songs of Africa- AHA! Moment Bento's Bar and Grille, 555 Pleasant St. Follow the Carolers From Bento's! Gather with friends and neighbors for an inspiring holiday musical presentation featuring the renowned music ministry of Pastor Lauri Gomes and the congregation of Union Bapt",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T18:00:00-05:00",
    "soon": false
   },
   {
-   "id": "8ac513a00ac8",
-   "title": "Follow The Carrolers! - Puerto Rican Traditions- AHA! Moment",
+   "id": "98fe2d7e3acb",
+   "title": "Follow The Carolers! - Puerto Rican Traditions- AHA! Moment",
    "venue": "Unitarian Universalist Church, 71 8th St.",
    "town": "New Bedford",
    "category": "Faith & Spiritual",
@@ -1150,7 +1123,7 @@
      "all_day": false
     }
    ],
-   "summary": "Follow The Carrolers! - Puerto Rican Traditions- AHA! Moment Unitarian Universalist Church, 71 8th St. Follow the Carrollers from First Unitarian Church! Join the Puerto Rican Holiday Parranda at 6:00 pm led by Angie Vargas and be part of this lively musical procession as it spreads music, culture, ",
+   "summary": "Follow The Carolers! - Puerto Rican Traditions- AHA! Moment Unitarian Universalist Church, 71 8th St. Follow the Carolers from First Unitarian Church! Join the Puerto Rican Holiday Parranda at 6:00 pm led by Angie Vargas, The Puerto Rican Latin American Art and Culture Commitee and First Encounters ",
    "approval": "pending",
    "decided_by": "",
    "next_start": "2026-12-10T18:00:00-05:00",
