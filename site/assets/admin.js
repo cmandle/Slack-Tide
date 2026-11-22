@@ -2,8 +2,8 @@
    Cloudflare Access, which fronts /admin/; every save goes to the admin service, a Cloudflare
    Worker on /admin/api/ behind the same gate (worker/ in the repository), which checks the
    visitor's Access identity and makes the commit itself. No token is kept in the browser.
-   Writes: approvals.yaml (append), docs/sources-tracker.csv (rewrite rows), approvers.yaml
-   (append or remove), and a workflow dispatch for the pipeline. */
+   Writes: approvals.yaml (append; a decision may carry a corrected category), docs/sources-tracker.csv
+   (rewrite rows), approvers.yaml (append or remove), and a workflow dispatch for the pipeline. */
 (function () {
   "use strict";
   var main = document.querySelector("main.admin");
@@ -70,18 +70,25 @@
     });
   }
 
-  /* ---- queue: decisions append to approvals.yaml */
+  /* ---- queue: decisions append to approvals.yaml. A decision is approve or reject on a pending
+     item, with the category when the approver changed it, or a changed category on a published
+     item (saved as approved again, with the category: that is how a live listing is corrected). */
   var queue = document.getElementById("queue");
   var items = Array.prototype.slice.call(document.querySelectorAll(".rev"));
+  var pubs = Array.prototype.slice.call(document.querySelectorAll(".pub"));
   var list = document.getElementById("rev-list");
   var countEl = document.getElementById("rev-count"), saveBtn = document.getElementById("rev-save");
+  function catSelect(el) { return el.querySelector("[data-category-select]"); }
+  function catChanged(el) { var s = catSelect(el); return !!s && s.value !== s.getAttribute("data-original"); }
   function decided() { return items.filter(function (it) { return it.getAttribute("data-decision") && !it.hasAttribute("data-saved"); }); }
+  function recategorised() { return pubs.filter(catChanged); }
   function refreshQueue() {
-    var n = decided().length;
+    var n = decided().length + recategorised().length;
     countEl.textContent = n + (n === 1 ? " decision" : " decisions");
     saveBtn.disabled = n === 0;
     var left = items.filter(function (it) { return !it.hasAttribute("data-saved") && !it.hidden; }).length;
     document.getElementById("rev-empty").hidden = left > 0;
+    pubs.forEach(function (p) { p.classList.toggle("is-changed", catChanged(p)); });
   }
   items.forEach(function (it) {
     it.addEventListener("click", function (e) {
@@ -90,6 +97,7 @@
       if (e.target.closest("[data-ask]")) { window.location.href = "mailto:?subject=" + encodeURIComponent("Your event on Slack Tide: " + it.getAttribute("data-title")); }
     });
   });
+  pubs.forEach(function (p) { var s = catSelect(p); if (s) s.addEventListener("change", refreshQueue); });
   var qSource = document.getElementById("q-source"), qSort = document.getElementById("q-sort");
   function applyQueue() {
     var src = qSource.value;
@@ -106,13 +114,22 @@
   qSource.addEventListener("change", applyQueue); qSort.addEventListener("change", applyQueue);
   saveBtn.addEventListener("click", function () {
     if (!needLive(queue)) return;
-    var toSave = decided(); saveBtn.disabled = true; statusIn(queue, "Saving…");
+    var toSave = decided(), toFix = recategorised(); saveBtn.disabled = true; statusIn(queue, "Saving…");
     var decisions = toSave.map(function (it) {
-      return { id: it.getAttribute("data-id"), status: it.getAttribute("data-decision"),
-               title: it.getAttribute("data-title"), venue: it.getAttribute("data-venue") || "" };
-    });
+      var d = { id: it.getAttribute("data-id"), status: it.getAttribute("data-decision"),
+                title: it.getAttribute("data-title"), venue: it.getAttribute("data-venue") || "" };
+      if (catChanged(it)) d.category = catSelect(it).value;   /* only a change becomes an override */
+      return d;
+    }).concat(toFix.map(function (p) {
+      return { id: p.getAttribute("data-id"), status: "approved", title: p.getAttribute("data-title"),
+               venue: p.getAttribute("data-venue") || "", category: catSelect(p).value };
+    }));
     call("decisions", "POST", { decisions: decisions })
-      .then(function (out) { toSave.forEach(function (it) { it.setAttribute("data-saved", "1"); it.hidden = true; }); refreshQueue(); statusIn(queue, "Saved " + out.saved + " as " + out.by + ". The site updates on the next pipeline run."); })
+      .then(function (out) {
+        toSave.forEach(function (it) { it.setAttribute("data-saved", "1"); it.hidden = true; });
+        toFix.forEach(function (p) { var s = catSelect(p); s.setAttribute("data-original", s.value); p.setAttribute("data-saved", "1"); });
+        refreshQueue(); statusIn(queue, "Saved " + out.saved + " as " + out.by + ". The site updates on the next pipeline run.");
+      })
       .catch(function (e) { saveBtn.disabled = false; statusIn(queue, String(e.message || e), true); });
   });
   refreshQueue();

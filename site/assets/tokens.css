@@ -13,7 +13,7 @@
   --st-yellow: #FFEF6B;        /* wordmark block, Add your event, selected category tile, card date strip */
   --st-green: #6CCB77;         /* active section tab */
   --st-blue: #86B2CB;          /* tide staff fill, Tonight badge border context */
-  --st-coral: #FF6B6C;         /* tide marker line; category Music */
+  --st-coral: #FF6B6C;         /* tide marker line; category Nightlife */
 
   /* Page ruling */
   --st-grid: #C7D6DE;          /* 1px square grid lines */
@@ -21,14 +21,14 @@
   --st-rule: #A9C1CF;          /* header and footer horizontal rules, tab outlines */
   --st-margin: #F3A6A4;        /* vertical margin lines, both sides, full frame height */
 
-  /* Category colours. Ink text on every one. */
-  --st-cat-music: #FF6B6C;
+  /* Category colours, one per entry of config.CATEGORIES, keyed by its slug. Ink text on every one. */
+  --st-cat-nightlife: #FF6B6C;
   --st-cat-arts: #86B2CB;
-  --st-cat-outdoors: #6CCB77;
-  --st-cat-family: #FFEF6B;
-  --st-cat-library: #C9A7E3;
-  --st-cat-markets: #FFA657;
-  --st-cat-civic: #B8C7D1;
+  --st-cat-active: #6CCB77;
+  --st-cat-learn: #C9A7E3;
+  --st-cat-seasonal: #FFA657;
+  --st-cat-fundraisers: #FFEF6B;
+  --st-cat-community: #B8C7D1;
 
   /* Type */
   --st-font-sans: 'Archivo', system-ui, sans-serif;        /* titles, tabs, buttons: 700 and 900 */

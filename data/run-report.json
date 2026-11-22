@@ -2,47 +2,47 @@
  "sources": {
   "explore-new-bedford": {
    "rows": 157,
-   "seconds": 3.69
+   "seconds": 3.56
   },
   "viva-fall-river": {
    "rows": 227,
-   "seconds": 13.17
+   "seconds": 13.54
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.26
+   "seconds": 0.27
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.51
+   "seconds": 0.55
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 4.24
+   "seconds": 5.24
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 2.13
+   "seconds": 0.21
   },
   "cisco-live-music": {
    "rows": 19,
-   "seconds": 0.17
+   "seconds": 0.16
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.27
+   "seconds": 0.37
   },
   "south-coast-girls-walk": {
    "rows": 3,
-   "seconds": 0.15
+   "seconds": 0.17
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.09
+   "seconds": 0.14
   },
   "sakonnet-vineyard": {
-   "rows": 9,
-   "seconds": 0.09
+   "rows": 8,
+   "seconds": 0.14
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -50,37 +50,34 @@
   }
  },
  "errors": {},
- "primary_rows": 145,
+ "primary_rows": 144,
  "dropped": {},
  "series": 78,
  "approval": {
-  "approved": 67,
-  "pending": 11
+  "pending": 11,
+  "approved": 67
  },
  "by_town": {
-  "Little Compton": 8,
   "New Bedford": 54,
   "": 4,
   "Dartmouth": 9,
+  "Little Compton": 8,
   "Wareham": 1,
   "Acushnet": 2
  },
  "by_category": {
-  "Music": 24,
-  "Outdoors & Nature": 12,
-  "Arts & Theatre": 25,
-  "Sports & Recreation": 3,
-  "Education & Workshops": 4,
-  "Family & Children": 5,
-  "Food & Drink": 3,
-  "Markets & Fairs": 1,
-  "Faith & Spiritual": 1
+  "Nightlife": 28,
+  "Active": 9,
+  "Seasonal": 17,
+  "Learn": 4,
+  "Community": 4,
+  "Arts": 16
  },
  "by_cadence": {
-  "monthly": 4,
-  "once": 65,
+  "once": 66,
   "weekly": 6,
   "irregular": 2,
+  "monthly": 3,
   "weekends": 1
  },
  "weekend_gate": {

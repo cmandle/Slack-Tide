@@ -1,44 +1,14 @@
 {
- "generated_at": "2026-11-22T17:51:45.085951+00:00",
+ "generated_at": "2026-11-22T18:07:07.334477+00:00",
  "series_count": 78,
- "occurrence_count": 145,
+ "occurrence_count": 144,
  "series": [
-  {
-   "id": "fceaea0689fd",
-   "title": "Live Music: FrankenPhil",
-   "venue": "Sakonnet Vineyard",
-   "town": "Little Compton",
-   "category": "Music",
-   "source_id": "sakonnet-vineyard",
-   "url": "https://www.sakonnetwine.com/events/live-music-frankenphil-1",
-   "cost": "",
-   "first_start": "2026-11-21T13:00:00-05:00",
-   "last_start": "2026-12-19T13:00:00-05:00",
-   "count": 2,
-   "cadence": "monthly",
-   "weekday": 5,
-   "occurrences": [
-    {
-     "start": "2026-11-21T13:00:00-05:00",
-     "end": "2026-11-21T16:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-19T13:00:00-05:00",
-     "end": "2026-12-19T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "approval": "approved",
-   "decided_by": "mail@l3l.us"
-  },
   {
    "id": "bc7996249b9b",
    "title": "Matt Martin",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -56,14 +26,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "aced7a2d1b73",
    "title": "Bob Jennings from the legendary band Beatlejuice featuring Ed Grenga",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -106,14 +77,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "b7301c4db9eb",
    "title": "DayDreaming of Summer",
    "venue": "",
    "town": "",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "south-coast-girls-walk",
    "url": "https://www.southcoastgirlswalk.com/our-schedule/daydreaming-of-summer-1",
    "cost": "",
@@ -131,14 +103,15 @@
    ],
    "summary": "This week we've got another double walk day, this time back to the shore to two of our favorite places! Start the morning with us at one of our all-time favorite spots, horseneck beach!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "e2ba4aa4ad25",
    "title": "Live Music Beatles Brunch",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "standing-new-bedford",
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
@@ -216,14 +189,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "59c576de1986",
    "title": "National Lampoon's Christmas Vacation (1989)",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/national-lampoon",
    "cost": "",
@@ -241,14 +215,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "aa916f2461c6",
    "title": "Women's Walk",
    "venue": "Russells Mills Woods",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/womens-walk/",
    "cost": "Free",
@@ -266,14 +241,15 @@
    ],
    "summary": "Join us for a fun pop-up walk at Russells Mills Woods. This walk is led by volunteer Kathryn Gollub. Women's walks are typically held rain or shine, but please check our website and social media before the walk for any weather related cancellations. We don't have an official address, but our closest",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "59a471eb1d08",
    "title": "Trivia night",
    "venue": "PLAY Arcade",
    "town": "New Bedford",
-   "category": "Sports & Recreation",
+   "category": "Nightlife",
    "source_id": "standing-new-bedford",
    "url": "https://www.playarcadenb.com/",
    "cost": "",
@@ -351,14 +327,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "4c93cfea1082",
    "title": "Trivia night",
    "venue": "New Beige",
    "town": "New Bedford",
-   "category": "Sports & Recreation",
+   "category": "Nightlife",
    "source_id": "standing-new-bedford",
    "url": "https://newbeigema.squarespace.com/",
    "cost": "",
@@ -436,14 +413,15 @@
    ],
    "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "1fc8a5984799",
    "title": "Karaoke",
    "venue": "PLAY Arcade",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "standing-new-bedford",
    "url": "https://www.playarcadenb.com/",
    "cost": "",
@@ -521,14 +499,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "d89f8045f686",
    "title": "Live Music: Tayla Davis",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/live-music-tayla-davis",
    "cost": "",
@@ -546,14 +525,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "db13d4947a44",
    "title": "Declan Kelehan",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -576,14 +556,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "452cf38f822a",
    "title": "Wellness Series",
    "venue": "",
    "town": "Dartmouth",
-   "category": "Education & Workshops",
+   "category": "Learn",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/wellness/",
    "cost": "$10 – $20",
@@ -601,14 +582,15 @@
    ],
    "summary": "Join us for six weeks of wellness, spread over the course of the year! Together, we'll explore themes like mindful awareness, natural movement, the health benefits of eating locally, and embracing joy through fun, community-centered activities. Whether you're looking to reboot your health routine, r",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "e9e34f0bd299",
    "title": "Exercise Walk",
    "venue": "Russells Mills Woods",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/exercise-walk/",
    "cost": "Free",
@@ -626,14 +608,15 @@
    ],
    "summary": "Join us for a fun walk through Russells Mills Woods. Throughout the hike, we will stop to perform other exercises, whether a standing yoga or strength pose, or something energetic. Explore nature, get your heartrate up, and feel strong! Led by Karen Rocha. About Karen: Karen is a DNRT Board Member a",
    "approval": "approved",
-   "decided_by": "bootstrap"
+   "decided_by": "bootstrap",
+   "category_by": ""
   },
   {
    "id": "1bf2b59ba8ce",
    "title": "Compass Kids at Four Ponds",
    "venue": "Four Ponds Conservation Area - Bourne Town Forest",
    "town": "",
-   "category": "Family & Children",
+   "category": "Community",
    "source_id": "buzzards-bay-coalition",
    "url": "https://savebuzzardsbay.org/events/bay-adventures/compass-kids-at-four-ponds",
    "cost": "",
@@ -651,14 +634,15 @@
    ],
    "summary": "Turn your family trail walk into an outdoor navigation quest with Compass Kids!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "d02b7dceb0ab",
    "title": "Small Business Saturday",
    "venue": "",
    "town": "",
-   "category": "Outdoors & Nature",
+   "category": "Seasonal",
    "source_id": "south-coast-girls-walk",
    "url": "https://www.southcoastgirlswalk.com/our-schedule/small-business-saturday",
    "cost": "",
@@ -676,14 +660,15 @@
    ],
    "summary": "Small Business Saturday at Kilburn Mill 🛍️☕️ We're kicking off the weekend in New Bedford with coffee, movement, and holiday shopping! Fuel up: Grab a coffee at Society Coffee Bar at 9:00am Get moving: Choose between an indoor stroll through the mill or an outdoor walk (weather permitting!) 10:00am ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "ac250c42a90d",
    "title": "Cape Cod Canal",
    "venue": "",
    "town": "",
-   "category": "Sports & Recreation",
+   "category": "Community",
    "source_id": "south-coast-girls-walk",
    "url": "https://www.southcoastgirlswalk.com/our-schedule/small-business-saturday-t73ex",
    "cost": "",
@@ -701,14 +686,15 @@
    ],
    "summary": "We're taking things to a new neighborhood! Our amazing Ambassador Cindy is leading you to one of our most-requested spots for a scenic Sunday morning stroll right along the water at the much awaited Cape Cod Canal!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "0f566c0e4bb0",
    "title": "Live Music: Dave Alves",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/c5bsdjd6p8wwgxn3kywflc47z6n7wc",
    "cost": "",
@@ -726,14 +712,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "cc95b9dda4c0",
    "title": "Merrick Brannigan",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -751,14 +738,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "23b0b58d6454",
    "title": "Chef Hiroki tuna carving",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Food & Drink",
+   "category": "Nightlife",
    "source_id": "standing-new-bedford",
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
@@ -786,14 +774,15 @@
    ],
    "summary": "A whole sustainably caught tuna carved in front of the room, served as sashimi and poke. Reservations on the venue's page.",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "12ec6103cd39",
    "title": "Holiday Gnome Roam - Self-Guided Hike",
    "venue": "Paskamansett Woods",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Seasonal",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/holiday-gnome-roam-self-guided-hike/",
    "cost": "Free",
@@ -811,14 +800,15 @@
    ],
    "summary": "Our Gnomes are roamin' again! Look for Wallace and Pebbles, our resident gnomes, and their tiny friends along the trail. Take a hike and see the gnomes anytime from dawn to dusk throughout December.",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "18527ed7c426",
    "title": "Day Drinkers Music Thursdays",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -846,14 +836,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "5092e8abea61",
    "title": "Trivia w/ Gary Farias",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Food & Drink",
+   "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/trivia-w-gary-farias-1",
    "cost": "",
@@ -871,14 +862,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "15d0e0e6fd43",
    "title": "Weston Faulkner",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -896,14 +888,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "02b6bb19c462",
    "title": "Zeiterion Guided Tours",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/guided-tours-december-5-2026",
    "cost": "",
@@ -926,14 +919,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "3f800ce1fd17",
    "title": "Juicy Market and Holiday Kick Off Party",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Markets & Fairs",
+   "category": "Seasonal",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/juicy-market-and-holiday-kick-off",
    "cost": "",
@@ -951,14 +945,15 @@
    ],
    "summary": "Kick off the holiday season with us at Sakonnet Vineyard! Join us from 12-4 PM for a festive afternoon filled with holiday fun, including cookie decorating, a visit from Santa, and a holiday market in the barn featuring local vendors from Juicy Market! Bring the whole family and get into the holiday",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "eb05dc6421e3",
    "title": "Live Music: Danilo Henriquez",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/gpd2rpatpbzn6lj4apfdgg87xewbng-khnm2",
    "cost": "",
@@ -976,14 +971,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "af8661b810e2",
    "title": "A Charlie Brown Christmas - Live on Stage",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/a-charlie-brown-christmas",
    "cost": "",
@@ -1006,14 +1002,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "e5f990d8ab0e",
    "title": "Ian Stackpole",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -1031,14 +1028,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "583ace92d403",
    "title": "The Pajaki Chandelier Workshop",
    "venue": "Hatch Street Studios",
    "town": "New Bedford",
-   "category": "Education & Workshops",
+   "category": "Learn",
    "source_id": "hatch-street-studios",
    "url": "https://www.hatchstreetstudios.com/events/the-pajaki-workshop",
    "cost": "",
@@ -1056,14 +1054,15 @@
    ],
    "summary": "A tradition in Poland, this fun paper chandelier is so versatile. Students have made them to celebrate the birth of a child, give a wedding tent extra pizazz and add sparkle to a New Year's Eve party. Bad weather date - Dec. 13 Lunch, snacks + drinks included Fee: $150 Limited to 10 participants so ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "ee040d6e7e41",
    "title": "Home Alone (1990)",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/home-alone",
    "cost": "",
@@ -1081,14 +1080,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "a34b6600f405",
    "title": "Session 3: Water-Based Paints",
    "venue": "Catherine Carter Art School",
    "town": "New Bedford",
-   "category": "Education & Workshops",
+   "category": "Learn",
    "source_id": "hatch-street-studios",
    "url": "https://www.hatchstreetstudios.com/events/session-3-water-based-paints",
    "cost": "",
@@ -1106,14 +1106,15 @@
    ],
    "summary": "ART SUPPLY BASICS Workshop Series for Adults Session 3: Water-Based Paints Including acrylics, watercolor, water-soluble colored pencils, and water-mixable oil paints. Join Catherine for a series of three workshops highlighting the properties and possibilities of a variety of drawing and painting ma",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "443923d848e0",
    "title": "Wickets Wonderland",
    "venue": "Onset Bay Center",
    "town": "Wareham",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "buzzards-bay-coalition",
    "url": "https://savebuzzardsbay.org/events/bay-adventures/wickets-wonderland",
    "cost": "",
@@ -1131,14 +1132,15 @@
    ],
    "summary": "Looking for your next wintry adventure? Join us for a quick boat ride over to Wickets Island, where you'll climb the stairs and experience the 360° view from the top of the island!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "d54834761833",
    "title": "Smith Farm Trail Work Party",
    "venue": "Smith Farm",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/smith-farm-trail-work-party/",
    "cost": "Free",
@@ -1156,14 +1158,15 @@
    ],
    "summary": "Details to be announced soon. No registration required; just show up! Tools and snacks provided.",
    "approval": "approved",
-   "decided_by": "bootstrap"
+   "decided_by": "bootstrap",
+   "category_by": ""
   },
   {
    "id": "3ae2e4cfbec0",
    "title": "Pete the Cat",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/pete-the-cat",
    "cost": "",
@@ -1181,14 +1184,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "f54e688a31cc",
    "title": "Hikes for Tykes",
    "venue": "",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/hikes-for-tykes/",
    "cost": "$10",
@@ -1206,14 +1210,15 @@
    ],
    "summary": "Bring your little explorer as we journey through the woods! Each month we will visit a new property and have a new topic for your preschool aged explorer to learn about. All sessions include a take home activity (these take home packets cannot be guaranteed for those that sign up with less than 24 h",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "c630e36e3e56",
    "title": "Youth Services: Paint a Holiday Tree!",
    "venue": "New Bedford Free Public Library",
    "town": "New Bedford",
-   "category": "Family & Children",
+   "category": "Community",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1231,14 +1236,15 @@
    ],
    "summary": "Youth Services: Paint a Holiday Tree! New Bedford Main Library's Youth Services 613 Pleasant Street Visit the New Bedford Main Library's Youth Services to Paint a Holiday Tree! Kids can paint their next masterpiece with washable paint supplies available. There is no registration for this free youth ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "e54575eb80cb",
    "title": "Christmas on County",
    "venue": "Rotch Duff Jones House, 396 County St",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1256,14 +1262,15 @@
    ],
    "summary": "Christmas on County Rotch Duff Jones House, 396 County St Celebrate the season at the RJD with beautifully decorated holiday rooms, festive fun, and the annual Cookie Challenge. Wear your ugliest holiday sweater, sample homemade cookies, and vote for your favorite. Donations are welcome. This event ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "eb4ad85e22a1",
    "title": "Meet and Greet with Santa!",
    "venue": "United Way 128 Union St.",
    "town": "New Bedford",
-   "category": "Family & Children",
+   "category": "Seasonal",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1281,14 +1288,15 @@
    ],
    "summary": "Meet and Greet with Santa! United Way 128 Union St. Bring the whole family for a special Meet and Greet with Santa! Kids can share their wishes, snap festive photos, and experience the joy of the season. Enjoy cookies, crafts, and a visit from our festive face painter during AHA! New Bedford. Ends: ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "d4237e80a7f7",
    "title": "Open House on AHA!",
    "venue": "3rd EyE Youth Empowerment",
    "town": "New Bedford",
-   "category": "Family & Children",
+   "category": "Community",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1306,14 +1314,15 @@
    ],
    "summary": "Open House on AHA! 3rd EyE Youth Empowerment, 230 Union Street Drop by 3rd EyE's community incubator at 230 Union Street for an evening of creativity, connections and community conversations. *Community Note - 230 Union Street is a radically inclusive safe space where the door is kept locked. There ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "854c84a5589a",
    "title": "Open House At Pathways to Freedom and Caricatures with Deutra",
    "venue": "Pathways 2 Freedom Hub, 669 Purchase Street",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1331,14 +1340,15 @@
    ],
    "summary": "Open House At Pathways to Freedom and Caricatures with Deutra Pathways 2 Freedom Hub, 669 Purchase Street Experience all that Pathways to Freedom has to offer the community at their Open House, and meet Deutra, a talented artist whose work celebrates creativity, storytelling, and self-expression. Wa",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "b66835cbbecd",
    "title": "On Matter: A Northeast Regional Ceramics & Printmaking Exhibition",
    "venue": "The Star Store",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1356,14 +1366,15 @@
    ],
    "summary": "On Matter: A Northeast Regional Ceramics & Printmaking Exhibition The Star Store, 715 Purchase Street Join us at the Star Store for On Matter, a regional exhibition that brings together ceramics and printmaking, both practices rooted in materials and process. This exhibition explores why making matt",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "461b72a2bfae",
    "title": "Holiday Fun at New Bedford Community Health!",
    "venue": "New Bedford Community Health Courtyard: 384 Acushnet Ave",
    "town": "New Bedford",
-   "category": "Family & Children",
+   "category": "Seasonal",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1381,14 +1392,15 @@
    ],
    "summary": "Holiday Fun at New Bedford Community Health! New Bedford Community Health Courtyard: 384 Acushnet Ave Get into the holiday spirit with New Bedford Community Health during December AHA! Night! Join us for a festive evening featuring photos with Santa, make-your-own Christmas ornaments, a hot chocolat",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "a61790e6d5b5",
    "title": "AHA! Night",
    "venue": "Downtown New Bedford",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "standing-new-bedford",
    "url": "https://ahanewbedford.org/",
    "cost": "",
@@ -1416,14 +1428,15 @@
    ],
    "summary": "Free arts and culture night across downtown New Bedford on the second Thursday of every month. The month's theme and programme are on ahanewbedford.org.",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "fc247bff53f4",
    "title": "Follow the Carolers!- Traditional American Songs- AHA! Moment",
    "venue": "Beauty Union 338 Acushnet Ave",
    "town": "Acushnet",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1441,14 +1454,15 @@
    ],
    "summary": "Follow the Carolers!- Traditional American Songs- AHA! Moment Beauty Union 338 Acushnet Ave The Multi-Cultural Trio: Many Voices, One Community Stop by Beauty Union, a salon and collective of beauty artists in downtown New Bedford, and enjoy the sounds of the season and follow along with the Trio. F",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "72b770c8842d",
    "title": "Follow the Carolers!- Songs of Africa- AHA! Moment",
    "venue": "Bento's Bar and Grille",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1466,14 +1480,15 @@
    ],
    "summary": "Follow the Carolers!- Songs of Africa- AHA! Moment Bento's Bar and Grille, 555 Pleasant St. Follow the Carolers From Bento's! Gather with friends and neighbors for an inspiring holiday musical presentation featuring the renowned music ministry of Pastor Lauri Gomes and the congregation of Union Bapt",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "98fe2d7e3acb",
    "title": "Follow The Carolers! - Puerto Rican Traditions- AHA! Moment",
    "venue": "Unitarian Universalist Church, 71 8th St.",
    "town": "New Bedford",
-   "category": "Faith & Spiritual",
+   "category": "Seasonal",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1491,14 +1506,15 @@
    ],
    "summary": "Follow The Carolers! - Puerto Rican Traditions- AHA! Moment Unitarian Universalist Church, 71 8th St. Follow the Carolers from First Unitarian Church! Join the Puerto Rican Holiday Parranda at 6:00 pm led by Angie Vargas, The Puerto Rican Latin American Art and Culture Commitee and First Encounters ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "856e99869fe4",
    "title": "Arts Illuminated",
    "venue": "Steeple Playhouse, 159 William St.",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1516,14 +1532,15 @@
    ],
    "summary": "Arts Illuminated Steeple Playhouse, 159 William St. Hosted by The New Bedford Light, this free event features short, one-on-one sessions with selected creators, framed by samples of their work. Stay for our signature Afterglow reception, where you can mingle with the artists, browse works up close, ",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "d9993e826e2c",
    "title": "Jazz with the Buttonwood Brass Band",
    "venue": "New Bedford Harbor Hotel",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1541,14 +1558,15 @@
    ],
    "summary": "Jazz with the Buttonwood Brass Band New Bedford Harbor Hotel, 222 Union St. Enjoy some speakeasy jazz from the Buttonwood Brass Band , on every AHA! Night at the New Bedford Harbor Hotel. Ends: 8:00pm",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "8f4f66429cfe",
    "title": "The Preacher's Wife (1996)",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/the-preachers-wife",
    "cost": "",
@@ -1566,14 +1584,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "8a57189c0cdc",
    "title": "AHA! Moment- Seaport Sessions- Live Music and Zines!",
    "venue": "Aviary Books 22 William St.",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1591,14 +1610,15 @@
    ],
    "summary": "AHA! Moment- Seaport Sessions- Live Music and Zines! Aviary Books 22 William St. Join Cape Cod writer and musician Michael T. Fournier , whose zine Policymaker is celebrating its 55th issue, along with touring artists Amanda Huron and Mike Andre . Through zines, storytelling, and music, these indepe",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "8a044b453d85",
    "title": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan",
    "venue": "Bento's Bar and Grille",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1616,14 +1636,15 @@
    ],
    "summary": "AHA! After Dark- Bento's Karaoke Night with DJ Big Chan Bento's Bar and Grille, 555 Pleasant St. Step into the spotlight and sing your heart out at Karaoke Night with DJ Chan! From today's biggest hits to favorite throwback tunes, there's a song for everyone. Whether you're taking the stage or cheer",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "c05ad05cf130",
    "title": "Neal McCarthy Trio",
    "venue": "The Pour Farm Tavern",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1641,14 +1662,15 @@
    ],
    "summary": "Neal McCarthy Trio The Pour Farm Tavern, 780 Purchase St. Grab a bite or a pint and listen to Electric Blues & Rock with the Neal McCarthy Trio as they play from 8-11:30pm. Ends: 11:30 pm",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "19708b8ba512",
    "title": "Karaoke at PLAY",
    "venue": "PLAY Arcade",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "aha-next-aha",
    "url": "https://ahanewbedford.org/next-aha/",
    "cost": "",
@@ -1666,14 +1688,15 @@
    ],
    "summary": "Karaoke at PLAY PLAY Arcade, 34 Union St. Belt out some tunes at PLAY Arcade! There's karaoke, food, fun, and games! Ends: Midnight",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "0afa3b86849a",
    "title": "Rob Davis",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -1691,14 +1714,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "b527625997d0",
    "title": "A Doo Wop Christmas",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/doo-wop-2026",
    "cost": "",
@@ -1716,14 +1740,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "1667c518b923",
    "title": "Live Music: Stefan Couture",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/gpd2rpatpbzn6lj4apfdgg87xewbng-khnm2-8zh9a",
    "cost": "",
@@ -1741,14 +1766,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "e7e38fbf272a",
    "title": "Carols & Cocktails",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/nbft-carols-cocktails",
    "cost": "",
@@ -1766,14 +1792,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "188c25e70ad8",
    "title": "Ed Grenga",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -1791,14 +1818,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "0371024d810a",
    "title": "The Muppet Christmas Carol (1992)",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/the-muppet-christmas-carol",
    "cost": "",
@@ -1816,14 +1844,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "32167176f284",
    "title": "Chef Hiroki's omakase dinner",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Food & Drink",
+   "category": "Nightlife",
    "source_id": "standing-new-bedford",
    "url": "https://www.ciscokitchenbar.com/happenings/",
    "cost": "",
@@ -1851,14 +1880,15 @@
    ],
    "summary": "A ten to twelve course omakase dinner. Reservations on the venue's page.",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "73059079afa2",
    "title": "Helfand Farm Trail Work Party",
    "venue": "DNRT Center @ Helfand Farm",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/helfand-farm-trail-work-party/",
    "cost": "Free",
@@ -1876,14 +1906,15 @@
    ],
    "summary": "Details to come. Lunch following trail work. Tools and snacks provided. No registration required; just show up!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "35689837979c",
    "title": "Pink Martini All-Stars present: A Season of Stars",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/pink-martini",
    "cost": "",
@@ -1901,14 +1932,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "1397a2bbf9e5",
    "title": "Truue Duo",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -1926,14 +1958,41 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
+  },
+  {
+   "id": "fceaea0689fd",
+   "title": "Live Music: FrankenPhil",
+   "venue": "Sakonnet Vineyard",
+   "town": "Little Compton",
+   "category": "Nightlife",
+   "source_id": "sakonnet-vineyard",
+   "url": "https://www.sakonnetwine.com/events/live-music-frankenphil-2",
+   "cost": "",
+   "first_start": "2026-12-19T13:00:00-05:00",
+   "last_start": "2026-12-19T13:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-19T13:00:00-05:00",
+     "end": "2026-12-19T16:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "approval": "approved",
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "5c6ba09dc6bc",
    "title": "Jon Tyler",
    "venue": "Cisco Brewers Kitchen & Bar",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "cisco-live-music",
    "url": "https://www.ciscokitchenbar.com/live-music/",
    "cost": "",
@@ -1951,14 +2010,15 @@
    ],
    "summary": "",
    "approval": "pending",
-   "decided_by": ""
+   "decided_by": "",
+   "category_by": ""
   },
   {
    "id": "7fc848d57904",
    "title": "Holiday Pops",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/nbso-holiday-pops",
    "cost": "",
@@ -1981,14 +2041,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "c3aa825f1b94",
    "title": "Solstice Stroll",
    "venue": "Destruction Brook Woods",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/solstice-stroll/",
    "cost": "Free",
@@ -2006,14 +2067,15 @@
    ],
    "summary": "Happy Solstice! It's officially winter. Join Linda Vanderveer on a chilly hike through DNRT's largest property. Register here!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "d36010159f29",
    "title": "Live Music: Jake Davis",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
-   "category": "Music",
+   "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
    "url": "https://www.sakonnetwine.com/events/live-music-jake-davis",
    "cost": "",
@@ -2031,14 +2093,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "921b296fd4c6",
    "title": "Stargazing Social at The Sawmill",
    "venue": "The Sawmill",
    "town": "Acushnet",
-   "category": "Outdoors & Nature",
+   "category": "Active",
    "source_id": "buzzards-bay-coalition",
    "url": "https://savebuzzardsbay.org/events/bay-adventures/stargazing-social-at-the-sawmill",
    "cost": "",
@@ -2056,14 +2119,15 @@
    ],
    "summary": "Join us for a Stargazing Social at The Sawmill!",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "4edf208dd814",
    "title": "New Year's Day Hike",
    "venue": "Dike Creek Reserve",
    "town": "Dartmouth",
-   "category": "Outdoors & Nature",
+   "category": "Seasonal",
    "source_id": "dnrt",
    "url": "https://dnrt.org/event/new-years-day-hike/",
    "cost": "Free",
@@ -2081,14 +2145,15 @@
    ],
    "summary": "Happy New Year! Start 2027 on the right foot, with a hike through the beautiful Dike Creek Reserve. Led by Kathryn & Brian Gollub. Registration opens December 1.",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "b650a075a259",
    "title": "Beloved Immortal",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/nbso-beloved-immortal",
    "cost": "",
@@ -2111,14 +2176,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "0d6ba8328ca3",
    "title": "The Paper Dying Workshop",
    "venue": "Hatch Street Studios",
    "town": "New Bedford",
-   "category": "Education & Workshops",
+   "category": "Learn",
    "source_id": "hatch-street-studios",
    "url": "https://www.hatchstreetstudios.com/events/the-paper-dying-workshop",
    "cost": "",
@@ -2136,14 +2202,15 @@
    ],
    "summary": "Take your paper flower making, to the next level. We will hand dye with inks, food coloring and even coffee to get surprising and exciting variations. You'll leave with a collection of unique papers to make bunches of bouquets. Bad weather date - Jan. 17 Lunch, snacks + drinks included Fee: $150 + a",
    "approval": "approved",
-   "decided_by": "mail@l3l.us"
+   "decided_by": "mail@l3l.us",
+   "category_by": ""
   },
   {
    "id": "ae04a769c7ad",
    "title": "Get the Led Out",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/get-the-led-out-2027",
    "cost": "",
@@ -2161,14 +2228,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "39170b00c882",
    "title": "Host Your Holiday Party at The Zeiterion",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Seasonal",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/ad-holiday-rentals",
    "cost": "",
@@ -2186,14 +2254,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "5acb4d56ad4f",
    "title": "The Princess Bride:",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/the-princess-bride",
    "cost": "",
@@ -2211,14 +2280,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "16001627a34e",
    "title": "The Greatest Love of All: A Tribute to Whitney Houston",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/the-greatest-love-of-all",
    "cost": "",
@@ -2236,14 +2306,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "0917615ad474",
    "title": "You've Still Got a Friend:",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Arts & Theatre",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/youve-still-got-a-friend",
    "cost": "",
@@ -2261,14 +2332,15 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   },
   {
    "id": "c7c558c7cd85",
    "title": "An Evening with the Buena Vista Orchestra",
    "venue": "The Zeiterion",
    "town": "New Bedford",
-   "category": "Music",
+   "category": "Arts",
    "source_id": "zeiterion",
    "url": "https://zeiterion.org/events/buena-vista-orchestra",
    "cost": "",
@@ -2286,7 +2358,8 @@
    ],
    "summary": "",
    "approval": "approved",
-   "decided_by": "source trust"
+   "decided_by": "source trust",
+   "category_by": ""
   }
  ]
 }
