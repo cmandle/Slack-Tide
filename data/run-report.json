@@ -1,81 +1,81 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 158,
-   "seconds": 3.86
+   "rows": 156,
+   "seconds": 4.41
   },
   "viva-fall-river": {
-   "rows": 228,
-   "seconds": 14.68
+   "rows": 227,
+   "seconds": 15.87
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.23
+   "seconds": 3.33
   },
   "zeiterion": {
-   "rows": 23,
-   "seconds": 0.41
+   "rows": 22,
+   "seconds": 0.58
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 5.53
+   "seconds": 6.55
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 0.39
+   "seconds": 0.36
   },
   "cisco-live-music": {
-   "rows": 18,
-   "seconds": 0.34
+   "rows": 17,
+   "seconds": 0.16
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 1.03
+   "seconds": 0.3
   },
   "south-coast-girls-walk": {
-   "rows": 3,
-   "seconds": 0.93
+   "rows": 2,
+   "seconds": 1.01
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.91
+   "seconds": 0.74
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.26
+   "seconds": 0.82
   },
   "standing-new-bedford": {
-   "rows": 61,
+   "rows": 62,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 144,
+ "primary_rows": 142,
  "dropped": {},
- "series": 78,
+ "series": 76,
  "approval": {
-  "pending": 10,
-  "approved": 68
+  "approved": 66,
+  "pending": 10
  },
  "by_town": {
-  "New Bedford": 54,
-  "": 4,
+  "New Bedford": 53,
   "Dartmouth": 9,
   "Little Compton": 8,
+  "": 3,
   "Wareham": 1,
   "Acushnet": 2
  },
  "by_category": {
-  "Nightlife": 26,
-  "Active": 9,
   "Arts": 18,
-  "Seasonal": 17,
+  "Active": 8,
+  "Nightlife": 26,
   "Learn": 4,
-  "Community": 4
+  "Community": 4,
+  "Seasonal": 16
  },
  "by_cadence": {
   "weekly": 6,
-  "once": 66,
+  "once": 64,
   "irregular": 2,
   "monthly": 3,
   "weekends": 1
@@ -92,16 +92,16 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 386,
-  "check_matched": 17,
-  "check_missed_rows": 369,
-  "check_missed_series": 84,
+  "check_total": 383,
+  "check_matched": 16,
+  "check_missed_rows": 367,
+  "check_missed_series": 82,
   "check_missed": [
    {
     "title": "Weekend Brunch",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-22T10:00:00-05:00",
+    "first_start": "2026-11-28T10:00:00-05:00",
     "rows": 26
    },
    {
@@ -129,7 +129,7 @@
     "title": "KidZone",
     "venue": "New Bedford Art Museum",
     "town": "New Bedford",
-    "first_start": "2026-11-22T14:00:00-05:00",
+    "first_start": "2026-11-29T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -150,7 +150,7 @@
     "title": "Matt Silva Sunday Funday",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-22T16:00:00-05:00",
+    "first_start": "2026-11-29T16:00:00-05:00",
     "rows": 13
    },
    {
@@ -178,7 +178,7 @@
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
-    "first_start": "2026-11-22T10:00:00-05:00",
+    "first_start": "2026-11-29T10:00:00-05:00",
     "rows": 13
    },
    {
@@ -199,7 +199,7 @@
     "title": "Tai Chi at Buttonwood Park",
     "venue": "Buttonwood Park 425 Hawthorn Street New Bedford, MA",
     "town": "New Bedford",
-    "first_start": "2026-11-22T09:30:00-05:00",
+    "first_start": "2026-11-29T09:30:00-05:00",
     "rows": 13
    },
    {
@@ -355,13 +355,6 @@
     "town": "Fall River",
     "first_start": "2026-11-29T17:00:00-05:00",
     "rows": 2
-   },
-   {
-    "title": "11th Annual Music of Michael Troy Concert",
-    "venue": "Narrows Center for the Arts",
-    "town": "Fall River",
-    "first_start": "2026-11-22T13:00:00-05:00",
-    "rows": 1
    },
    {
     "title": "Adam Ezra Group live at the Narrows",
@@ -560,13 +553,6 @@
     "rows": 1
    },
    {
-    "title": "New Bedford Ballet Nutcracker Tea",
-    "venue": "Wamsutta Club",
-    "town": "New Bedford",
-    "first_start": "2026-11-22T13:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "New Beige Bash Music Festival",
     "venue": "Gallery X",
     "town": "New Bedford",
@@ -690,9 +676,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 120,
-  "primary_only_series": 54,
-  "coverage_ratio": 0.044
+  "primary_only_count": 119,
+  "primary_only_series": 53,
+  "coverage_ratio": 0.042
  },
  "tide_error": null
 }
