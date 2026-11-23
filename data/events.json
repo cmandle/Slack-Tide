@@ -1,40 +1,8 @@
 {
- "generated_at": "2026-11-22T21:51:25.523047+00:00",
+ "generated_at": "2026-11-23T02:49:50.856732+00:00",
  "series_count": 78,
  "occurrence_count": 144,
  "series": [
-  {
-   "id": "bc7996249b9b",
-   "title": "Matt Martin",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Nightlife",
-   "source_id": "cisco-live-music",
-   "url": "https://www.ciscokitchenbar.com/live-music/",
-   "cost": "",
-   "first_start": "2026-11-21T19:00:00-05:00",
-   "last_start": "2026-11-21T19:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-21T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "categories": [
-    "Nightlife"
-   ],
-   "approval": "pending",
-   "decided_by": "",
-   "edits": {},
-   "original": {},
-   "edited_by": "",
-   "edited_on": ""
-  },
   {
    "id": "aced7a2d1b73",
    "title": "Bob Jennings from the legendary band Beatlejuice featuring Ed Grenga",
@@ -2822,6 +2790,38 @@
    "occurrences": [
     {
      "start": "2027-02-13T20:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "categories": [
+    "Arts"
+   ],
+   "approval": "approved",
+   "decided_by": "source trust",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
+  },
+  {
+   "id": "799e709ecd10",
+   "title": "Movie Pops: All John Williams",
+   "venue": "The Zeiterion",
+   "town": "New Bedford",
+   "category": "Arts",
+   "source_id": "zeiterion",
+   "url": "https://zeiterion.org/events/movie-pops-all-john-williams",
+   "cost": "",
+   "first_start": "2027-02-20T19:30:00-05:00",
+   "last_start": "2027-02-20T19:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2027-02-20T19:30:00-05:00",
      "end": null,
      "all_day": false
     }
