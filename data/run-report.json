@@ -1,28 +1,28 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 155,
-   "seconds": 4.31
+   "rows": 156,
+   "seconds": 4.48
   },
   "viva-fall-river": {
-   "rows": 226,
-   "seconds": 16.36
+   "rows": 230,
+   "seconds": 15.07
   },
   "dnrt": {
    "rows": 8,
-   "seconds": 4.23
+   "seconds": 2.46
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.33
+   "seconds": 0.47
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 5.57
+   "seconds": 11.34
   },
   "aha-next-aha": {
-   "rows": 16,
-   "seconds": 0.52
+   "rows": 19,
+   "seconds": 0.38
   },
   "cisco-live-music": {
    "rows": 17,
@@ -30,19 +30,19 @@
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.19
+   "seconds": 0.53
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.41
+   "seconds": 1.21
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.95
+   "seconds": 1.07
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 1.2
+   "seconds": 1.69
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -50,15 +50,15 @@
   }
  },
  "errors": {},
- "primary_rows": 140,
+ "primary_rows": 143,
  "dropped": {},
- "series": 75,
+ "series": 78,
  "approval": {
   "approved": 65,
-  "pending": 10
+  "pending": 13
  },
  "by_town": {
-  "New Bedford": 53,
+  "New Bedford": 56,
   "Little Compton": 8,
   "Dartmouth": 8,
   "": 3,
@@ -69,13 +69,13 @@
   "Nightlife": 26,
   "Learn": 4,
   "Active": 7,
-  "Community": 4,
-  "Seasonal": 16,
-  "Arts": 18
+  "Community": 5,
+  "Seasonal": 17,
+  "Arts": 19
  },
  "by_cadence": {
   "weekly": 6,
-  "once": 63,
+  "once": 66,
   "irregular": 2,
   "monthly": 3,
   "weekends": 1
@@ -92,10 +92,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 381,
+  "check_total": 386,
   "check_matched": 16,
-  "check_missed_rows": 365,
-  "check_missed_series": 82,
+  "check_missed_rows": 370,
+  "check_missed_series": 86,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -137,6 +137,13 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-25T07:00:00-05:00",
+    "rows": 13
+   },
+   {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-30T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -222,13 +229,6 @@
     "town": "Fall River",
     "first_start": "2026-11-26T18:00:00-05:00",
     "rows": 13
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-30T14:00:00-05:00",
-    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -434,6 +434,20 @@
     "rows": 1
    },
    {
+    "title": "Community Toy Drive Stuff-A-Truck - Burlington",
+    "venue": "Burlington",
+    "town": "Fall River",
+    "first_start": "2026-12-12T09:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Community Toy Drive Stuff-A-Truck - Walmart",
+    "venue": "walmart",
+    "town": "Fall River",
+    "first_start": "2026-12-05T10:00:00-05:00",
+    "rows": 1
+   },
+   {
     "title": "Dinner with Santa",
     "venue": "Greater Fall River Re-CREATION",
     "town": "Fall River",
@@ -452,6 +466,13 @@
     "venue": "Kennedy Park",
     "town": "Fall River",
     "first_start": "2026-12-05T13:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Fall River Tree Lighting Event",
+    "venue": "1 Government Ctr, Fall River, MA 02722",
+    "town": "Fall River",
+    "first_start": "2026-12-05T15:00:00-05:00",
     "rows": 1
    },
    {
@@ -494,6 +515,13 @@
     "venue": "Factory of Terror",
     "town": "Fall River",
     "first_start": "2026-12-05T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Holly Jolly Waterfront Trolley",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-12-09T17:00:00-05:00",
     "rows": 1
    },
    {
@@ -676,9 +704,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 118,
-  "primary_only_series": 53,
-  "coverage_ratio": 0.042
+  "primary_only_count": 121,
+  "primary_only_series": 56,
+  "coverage_ratio": 0.041
  },
  "tide_error": null
 }

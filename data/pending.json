@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T06:06:22.192973+00:00",
- "pending_count": 10,
+ "generated_at": "2026-11-24T20:41:21.468104+00:00",
+ "pending_count": 13,
  "soon_count": 3,
  "approved_count": 65,
  "rejected_count": 0,
@@ -242,6 +242,108 @@
    "edited_by": "",
    "edited_on": "",
    "next_start": "2026-12-05T19:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "076acb0fe7e7",
+   "title": "Digital Drawing with SketchyGOichie DRAW!",
+   "venue": "Third Eye Unlimited 230 Union St.",
+   "town": "New Bedford",
+   "category": "Arts",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T16:30:00-05:00",
+   "last_start": "2026-12-10T16:30:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T16:30:00-05:00",
+     "end": "2026-12-10T18:30:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Digital Drawing with SketchyGOichie DRAW! Third Eye Unlimited 230 Union St. Kids of all ages are invited to drop in and create their own festive artwork on iPads! Our teaching artists will guide young artists through digital drawing, from first sketch to finished piece, while they celebrate the seas",
+   "categories": [
+    "Arts"
+   ],
+   "approval": "pending",
+   "decided_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
+   "next_start": "2026-12-10T16:30:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "9314656798dd",
+   "title": "Scallop Shell Decorating & Holiday Shopping",
+   "venue": "New Bedford Fishing Heritage Center",
+   "town": "New Bedford",
+   "category": "Seasonal",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T17:00:00-05:00",
+   "last_start": "2026-12-10T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Scallop Shell Decorating & Holiday Shopping New Bedford Fishing Heritage Center, 33 Bethel Street Stop by the Center to decorate scallop shells, enjoy free hot chocolate, and shop our gift shop, which features wonderful items including clothing, books, jewelry, and more. As always, the Center will b",
+   "categories": [
+    "Seasonal"
+   ],
+   "approval": "pending",
+   "decided_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
+   "next_start": "2026-12-10T17:00:00-05:00",
+   "soon": false
+  },
+  {
+   "id": "5d3036b76147",
+   "title": "Unitarian Universalist Church Open House & Youth Celebration",
+   "venue": "The First Unitarian Church, 71 8th St.",
+   "town": "New Bedford",
+   "category": "Community",
+   "source_id": "aha-next-aha",
+   "url": "https://ahanewbedford.org/next-aha/",
+   "cost": "",
+   "first_start": "2026-12-10T17:00:00-05:00",
+   "last_start": "2026-12-10T17:00:00-05:00",
+   "count": 1,
+   "cadence": "once",
+   "weekday": null,
+   "occurrences": [
+    {
+     "start": "2026-12-10T17:00:00-05:00",
+     "end": "2026-12-10T20:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "Unitarian Universalist Church Open House & Youth Celebration The First Unitarian Church, 71 8th St. Step inside one of New Bedford's architectural treasures during the Unitarian Universalist Church Open House & Youth Celebration! Visit the sanctuary to experience the breathtaking 1911 Tiffany Mosaic",
+   "categories": [
+    "Community"
+   ],
+   "approval": "pending",
+   "decided_by": "",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": "",
+   "next_start": "2026-12-10T17:00:00-05:00",
    "soon": false
   },
   {
