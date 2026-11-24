@@ -1,81 +1,81 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 156,
-   "seconds": 4.41
+   "rows": 155,
+   "seconds": 4.31
   },
   "viva-fall-river": {
-   "rows": 227,
-   "seconds": 15.87
+   "rows": 226,
+   "seconds": 16.36
   },
   "dnrt": {
-   "rows": 9,
-   "seconds": 3.33
+   "rows": 8,
+   "seconds": 4.23
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.58
+   "seconds": 0.33
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 6.55
+   "seconds": 5.57
   },
   "aha-next-aha": {
    "rows": 16,
-   "seconds": 0.36
+   "seconds": 0.52
   },
   "cisco-live-music": {
    "rows": 17,
-   "seconds": 0.16
+   "seconds": 0.19
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.3
+   "seconds": 0.19
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.01
+   "seconds": 1.41
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.74
+   "seconds": 0.95
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.82
+   "seconds": 1.2
   },
   "standing-new-bedford": {
-   "rows": 62,
+   "rows": 61,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 142,
+ "primary_rows": 140,
  "dropped": {},
- "series": 76,
+ "series": 75,
  "approval": {
-  "approved": 66,
+  "approved": 65,
   "pending": 10
  },
  "by_town": {
   "New Bedford": 53,
-  "Dartmouth": 9,
   "Little Compton": 8,
+  "Dartmouth": 8,
   "": 3,
   "Wareham": 1,
   "Acushnet": 2
  },
  "by_category": {
-  "Arts": 18,
-  "Active": 8,
   "Nightlife": 26,
   "Learn": 4,
+  "Active": 7,
   "Community": 4,
-  "Seasonal": 16
+  "Seasonal": 16,
+  "Arts": 18
  },
  "by_cadence": {
   "weekly": 6,
-  "once": 64,
+  "once": 63,
   "irregular": 2,
   "monthly": 3,
   "weekends": 1
@@ -84,17 +84,17 @@
   "saturday": "2026-11-28",
   "series": 7,
   "towns": {
-   "New Bedford": 1,
    "Dartmouth": 2,
    "": 3,
-   "Little Compton": 1
+   "Little Compton": 1,
+   "New Bedford": 1
   },
   "passes": false
  },
  "reconcile": {
-  "check_total": 383,
+  "check_total": 381,
   "check_matched": 16,
-  "check_missed_rows": 367,
+  "check_missed_rows": 365,
   "check_missed_series": 82,
   "check_missed": [
    {
@@ -137,13 +137,6 @@
     "venue": "Primo on Water Street",
     "town": "Fall River",
     "first_start": "2026-11-25T07:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
-    "venue": "New Bedford Whaling Museum",
-    "town": "New Bedford",
-    "first_start": "2026-11-23T14:00:00-05:00",
     "rows": 13
    },
    {
@@ -231,6 +224,13 @@
     "rows": 13
    },
    {
+    "title": "LIFELONG LEARNING: Short-course in the History of Photography, 1839-1900",
+    "venue": "New Bedford Whaling Museum",
+    "town": "New Bedford",
+    "first_start": "2026-11-30T14:00:00-05:00",
+    "rows": 12
+   },
+   {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
@@ -248,8 +248,8 @@
     "title": "Nick Sanfilippo",
     "venue": "The Tipsy Toboggan",
     "town": "Fall River",
-    "first_start": "2026-11-23T18:30:00-05:00",
-    "rows": 6
+    "first_start": "2026-11-30T18:30:00-05:00",
+    "rows": 5
    },
    {
     "title": "Planetarium Show: Moons Worlds of Mystery",
@@ -676,7 +676,7 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 119,
+  "primary_only_count": 118,
   "primary_only_series": 53,
   "coverage_ratio": 0.042
  },

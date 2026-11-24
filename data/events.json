@@ -1,145 +1,8 @@
 {
- "generated_at": "2026-11-23T22:04:28.435205+00:00",
- "series_count": 76,
- "occurrence_count": 142,
+ "generated_at": "2026-11-24T06:06:22.192973+00:00",
+ "series_count": 75,
+ "occurrence_count": 140,
  "series": [
-  {
-   "id": "e2ba4aa4ad25",
-   "title": "Live Music Beatles Brunch",
-   "venue": "Cisco Brewers Kitchen & Bar",
-   "town": "New Bedford",
-   "category": "Arts",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.ciscokitchenbar.com/happenings/",
-   "cost": "",
-   "first_start": "2026-11-22T10:00:00-05:00",
-   "last_start": "2027-02-21T10:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 6,
-   "occurrences": [
-    {
-     "start": "2026-11-22T10:00:00-05:00",
-     "end": "2026-11-22T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-11-29T10:00:00-05:00",
-     "end": "2026-11-29T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-06T10:00:00-05:00",
-     "end": "2026-12-06T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-13T10:00:00-05:00",
-     "end": "2026-12-13T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-20T10:00:00-05:00",
-     "end": "2026-12-20T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-27T10:00:00-05:00",
-     "end": "2026-12-27T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-03T10:00:00-05:00",
-     "end": "2027-01-03T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-10T10:00:00-05:00",
-     "end": "2027-01-10T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-17T10:00:00-05:00",
-     "end": "2027-01-17T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-24T10:00:00-05:00",
-     "end": "2027-01-24T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-31T10:00:00-05:00",
-     "end": "2027-01-31T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-07T10:00:00-05:00",
-     "end": "2027-02-07T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-14T10:00:00-05:00",
-     "end": "2027-02-14T14:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-21T10:00:00-05:00",
-     "end": "2027-02-21T14:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "categories": [
-    "Arts"
-   ],
-   "approval": "approved",
-   "decided_by": "mail@l3l.us",
-   "edits": {
-    "categories": [
-     "Arts"
-    ]
-   },
-   "original": {
-    "categories": [
-     "Nightlife"
-    ]
-   },
-   "edited_by": "mail@l3l.us",
-   "edited_on": "2026-11-22"
-  },
-  {
-   "id": "aa916f2461c6",
-   "title": "Women's Walk",
-   "venue": "Russells Mills Woods",
-   "town": "Dartmouth",
-   "category": "Active",
-   "source_id": "dnrt",
-   "url": "https://dnrt.org/event/womens-walk/",
-   "cost": "Free",
-   "first_start": "2026-11-23T09:00:00-05:00",
-   "last_start": "2026-11-23T09:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-11-23T09:00:00-05:00",
-     "end": "2026-11-23T10:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "Join us for a fun pop-up walk at Russells Mills Woods. This walk is led by volunteer Kathryn Gollub. Women's walks are typically held rain or shine, but please check our website and social media before the walk for any weather related cancellations. We don't have an official address, but our closest",
-   "categories": [
-    "Active"
-   ],
-   "approval": "approved",
-   "decided_by": "mail@l3l.us",
-   "edits": {},
-   "original": {},
-   "edited_by": "",
-   "edited_on": ""
-  },
   {
    "id": "59a471eb1d08",
    "title": "Trivia night",
@@ -760,6 +623,106 @@
    "original": {},
    "edited_by": "",
    "edited_on": ""
+  },
+  {
+   "id": "e2ba4aa4ad25",
+   "title": "Live Music Beatles Brunch",
+   "venue": "Cisco Brewers Kitchen & Bar",
+   "town": "New Bedford",
+   "category": "Arts",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.ciscokitchenbar.com/happenings/",
+   "cost": "",
+   "first_start": "2026-11-29T10:00:00-05:00",
+   "last_start": "2027-02-21T10:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 6,
+   "occurrences": [
+    {
+     "start": "2026-11-29T10:00:00-05:00",
+     "end": "2026-11-29T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-06T10:00:00-05:00",
+     "end": "2026-12-06T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-13T10:00:00-05:00",
+     "end": "2026-12-13T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-20T10:00:00-05:00",
+     "end": "2026-12-20T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-27T10:00:00-05:00",
+     "end": "2026-12-27T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-03T10:00:00-05:00",
+     "end": "2027-01-03T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-10T10:00:00-05:00",
+     "end": "2027-01-10T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-17T10:00:00-05:00",
+     "end": "2027-01-17T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-24T10:00:00-05:00",
+     "end": "2027-01-24T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-31T10:00:00-05:00",
+     "end": "2027-01-31T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-07T10:00:00-05:00",
+     "end": "2027-02-07T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-14T10:00:00-05:00",
+     "end": "2027-02-14T14:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-21T10:00:00-05:00",
+     "end": "2027-02-21T14:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "categories": [
+    "Arts"
+   ],
+   "approval": "approved",
+   "decided_by": "mail@l3l.us",
+   "edits": {
+    "categories": [
+     "Arts"
+    ]
+   },
+   "original": {
+    "categories": [
+     "Nightlife"
+    ]
+   },
+   "edited_by": "mail@l3l.us",
+   "edited_on": "2026-11-22"
   },
   {
    "id": "23b0b58d6454",
