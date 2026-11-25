@@ -1,48 +1,48 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 156,
-   "seconds": 5.65
+   "rows": 155,
+   "seconds": 3.96
   },
   "viva-fall-river": {
-   "rows": 230,
-   "seconds": 14.64
+   "rows": 227,
+   "seconds": 14.59
   },
   "dnrt": {
-   "rows": 8,
-   "seconds": 3.9
+   "rows": 9,
+   "seconds": 4.48
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.43
+   "seconds": 0.32
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 5.27
+   "seconds": 8.02
   },
   "aha-next-aha": {
-   "rows": 19,
-   "seconds": 2.91
+   "rows": 22,
+   "seconds": 2.82
   },
   "cisco-live-music": {
    "rows": 17,
-   "seconds": 0.18
+   "seconds": 0.09
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.39
+   "seconds": 0.27
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.11
+   "seconds": 1.03
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.41
+   "seconds": 0.25
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.9
+   "seconds": 0.8
   },
   "standing-new-bedford": {
    "rows": 61,
@@ -50,17 +50,17 @@
   }
  },
  "errors": {},
- "primary_rows": 143,
+ "primary_rows": 147,
  "dropped": {},
- "series": 78,
+ "series": 82,
  "approval": {
   "approved": 65,
-  "pending": 13
+  "pending": 17
  },
  "by_town": {
-  "New Bedford": 56,
+  "New Bedford": 59,
   "Little Compton": 8,
-  "Dartmouth": 8,
+  "Dartmouth": 9,
   "": 3,
   "Wareham": 1,
   "Acushnet": 2
@@ -68,14 +68,14 @@
  "by_category": {
   "Nightlife": 26,
   "Learn": 4,
-  "Active": 7,
+  "Active": 8,
   "Community": 5,
-  "Seasonal": 17,
-  "Arts": 19
+  "Seasonal": 19,
+  "Arts": 20
  },
  "by_cadence": {
   "weekly": 6,
-  "once": 66,
+  "once": 70,
   "irregular": 2,
   "monthly": 3,
   "weekends": 1
@@ -92,9 +92,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 386,
+  "check_total": 382,
   "check_matched": 16,
-  "check_missed_rows": 370,
+  "check_missed_rows": 366,
   "check_missed_series": 86,
   "check_missed": [
    {
@@ -168,13 +168,6 @@
     "rows": 13
    },
    {
-    "title": "Open Mic",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-24T20:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Poppin' Prosecco with Primo! Brunch",
     "venue": "Primo on Water Street",
     "town": "Fall River",
@@ -203,13 +196,6 @@
     "rows": 13
    },
    {
-    "title": "The Waiting Room - Comedy Open Mic",
-    "venue": "",
-    "town": "Fall River",
-    "first_start": "2026-11-24T19:30:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Thursday Night Trivia",
     "venue": "Saint James Irish Pub",
     "town": "Fall River",
@@ -231,18 +217,32 @@
     "rows": 13
    },
    {
+    "title": "Open Mic",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-12-01T20:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "The Waiting Room - Comedy Open Mic",
+    "venue": "",
+    "town": "Fall River",
+    "first_start": "2026-12-01T19:30:00-05:00",
+    "rows": 12
+   },
+   {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
     "venue": "First Congregational Church of Fall River",
     "town": "Fall River",
-    "first_start": "2026-11-24T18:00:00-05:00",
-    "rows": 6
+    "first_start": "2026-12-01T18:00:00-05:00",
+    "rows": 5
    },
    {
     "title": "Half Priced Food (weekly)",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
-    "first_start": "2026-11-24T16:00:00-05:00",
-    "rows": 6
+    "first_start": "2026-12-01T16:00:00-05:00",
+    "rows": 5
    },
    {
     "title": "Nick Sanfilippo",
@@ -704,9 +704,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 121,
-  "primary_only_series": 56,
-  "coverage_ratio": 0.041
+  "primary_only_count": 124,
+  "primary_only_series": 59,
+  "coverage_ratio": 0.042
  },
  "tide_error": null
 }
