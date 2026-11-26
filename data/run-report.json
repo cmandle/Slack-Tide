@@ -1,56 +1,56 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 156,
-   "seconds": 5.08
+   "rows": 154,
+   "seconds": 5.63
   },
   "viva-fall-river": {
-   "rows": 228,
-   "seconds": 14.07
+   "rows": 225,
+   "seconds": 17.91
   },
   "dnrt": {
    "rows": 9,
-   "seconds": 0.26
+   "seconds": 2.62
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.6
+   "seconds": 0.42
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 7.12
+   "seconds": 7.83
   },
   "aha-next-aha": {
    "rows": 22,
-   "seconds": 2.34
+   "seconds": 2.46
   },
   "cisco-live-music": {
    "rows": 17,
-   "seconds": 0.23
+   "seconds": 0.21
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.52
+   "seconds": 1.85
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 0.84
+   "seconds": 1.06
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.23
+   "seconds": 0.87
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.82
+   "seconds": 0.37
   },
   "standing-new-bedford": {
-   "rows": 61,
+   "rows": 63,
    "seconds": 0.0
   }
  },
  "errors": {},
- "primary_rows": 147,
+ "primary_rows": 149,
  "dropped": {},
  "series": 82,
  "approval": {
@@ -92,10 +92,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 384,
+  "check_total": 379,
   "check_matched": 16,
-  "check_missed_rows": 368,
-  "check_missed_series": 86,
+  "check_missed_rows": 363,
+  "check_missed_series": 85,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -103,13 +103,6 @@
     "town": "Fall River",
     "first_start": "2026-11-28T10:00:00-05:00",
     "rows": 26
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-11-25T18:30:00-05:00",
-    "rows": 13
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -136,7 +129,7 @@
     "title": "Kids eat FREE on Wednesdays",
     "venue": "Primo on Water Street",
     "town": "Fall River",
-    "first_start": "2026-11-25T07:00:00-05:00",
+    "first_start": "2026-12-02T07:00:00-05:00",
     "rows": 13
    },
    {
@@ -158,13 +151,6 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-26T18:30:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-11-25T19:00:00-05:00",
     "rows": 13
    },
    {
@@ -211,16 +197,9 @@
    },
    {
     "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
+    "venue": "St James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-11-26T20:00:00-05:00",
-    "rows": 13
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-25T18:00:00-05:00",
     "rows": 13
    },
    {
@@ -229,6 +208,27 @@
     "town": "Fall River",
     "first_start": "2026-11-26T18:00:00-05:00",
     "rows": 13
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-12-02T18:30:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-12-02T19:00:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Wing Wednesday!!",
+    "venue": "St James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-12-02T18:00:00-05:00",
+    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -329,13 +329,6 @@
     "rows": 2
    },
    {
-    "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
-    "venue": "Bristol Community College, New Bedford",
-    "town": "Fall River",
-    "first_start": "2026-11-25T17:30:00-05:00",
-    "rows": 2
-   },
-   {
     "title": "Joan Osborne Sings The Songs of Bob Dylan - Fall River",
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
@@ -406,13 +399,6 @@
     "rows": 1
    },
    {
-    "title": "Balance & Swing Contradance",
-    "venue": "Gallery X",
-    "town": "New Bedford",
-    "first_start": "2026-11-25T18:00:00-05:00",
-    "rows": 1
-   },
-   {
     "title": "Breaking up Christmas",
     "venue": "Gallery X",
     "town": "New Bedford",
@@ -473,6 +459,13 @@
     "venue": "1 Government Ctr, Fall River, MA 02722",
     "town": "Fall River",
     "first_start": "2026-12-05T15:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "FiA (Females In Action) SouthCoast Exercise MeetUp",
+    "venue": "Bristol Community College, New Bedford",
+    "town": "Fall River",
+    "first_start": "2026-11-28T08:00:00-05:00",
     "rows": 1
    },
    {
@@ -704,7 +697,7 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 124,
+  "primary_only_count": 126,
   "primary_only_series": 59,
   "coverage_ratio": 0.042
  },
