@@ -1,90 +1,83 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 154,
-   "seconds": 5.63
+   "rows": 155,
+   "seconds": 5.62
   },
   "viva-fall-river": {
-   "rows": 225,
-   "seconds": 17.91
-  },
-  "dnrt": {
-   "rows": 9,
-   "seconds": 2.62
+   "rows": 227,
+   "seconds": 13.79
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.42
+   "seconds": 0.39
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 7.83
-  },
-  "aha-next-aha": {
-   "rows": 22,
-   "seconds": 2.46
+   "seconds": 5.67
   },
   "cisco-live-music": {
    "rows": 17,
-   "seconds": 0.21
+   "seconds": 0.23
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 1.85
+   "seconds": 0.36
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.06
+   "seconds": 1.04
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.87
+   "seconds": 0.88
   },
   "sakonnet-vineyard": {
    "rows": 8,
-   "seconds": 0.37
+   "seconds": 0.97
   },
   "standing-new-bedford": {
    "rows": 63,
    "seconds": 0.0
   }
  },
- "errors": {},
- "primary_rows": 149,
+ "errors": {
+  "dnrt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 11 (char 12)",
+  "aha-next-aha": "ValueError: no listings found at https://ahanewbedford.org/next-aha/; the selectors are probably stale"
+ },
+ "primary_rows": 118,
  "dropped": {},
- "series": 82,
+ "series": 51,
  "approval": {
-  "approved": 65,
-  "pending": 17
+  "approved": 41,
+  "pending": 10
  },
  "by_town": {
-  "New Bedford": 59,
+  "New Bedford": 38,
   "Little Compton": 8,
-  "Dartmouth": 9,
   "": 3,
   "Wareham": 1,
-  "Acushnet": 2
+  "Acushnet": 1
  },
  "by_category": {
-  "Nightlife": 26,
-  "Learn": 4,
-  "Active": 8,
-  "Community": 5,
-  "Seasonal": 19,
-  "Arts": 20
+  "Nightlife": 22,
+  "Community": 2,
+  "Seasonal": 8,
+  "Arts": 14,
+  "Learn": 3,
+  "Active": 2
  },
  "by_cadence": {
   "weekly": 6,
-  "once": 70,
+  "once": 39,
   "irregular": 2,
   "monthly": 3,
   "weekends": 1
  },
  "weekend_gate": {
   "saturday": "2026-11-28",
-  "series": 7,
+  "series": 5,
   "towns": {
-   "Dartmouth": 2,
    "": 3,
    "Little Compton": 1,
    "New Bedford": 1
@@ -92,10 +85,10 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 379,
-  "check_matched": 16,
-  "check_missed_rows": 363,
-  "check_missed_series": 85,
+  "check_total": 382,
+  "check_matched": 15,
+  "check_missed_rows": 367,
+  "check_missed_series": 86,
   "check_missed": [
    {
     "title": "Weekend Brunch",
@@ -103,6 +96,13 @@
     "town": "Fall River",
     "first_start": "2026-11-28T10:00:00-05:00",
     "rows": 26
+   },
+   {
+    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
+    "venue": "First Unitarian Church in New Bedford - Parish Hall",
+    "town": "New Bedford",
+    "first_start": "2026-12-02T18:30:00-05:00",
+    "rows": 13
    },
    {
     "title": "Figure Drawing Open Studio",
@@ -151,6 +151,13 @@
     "venue": "The Vault Performing Arts Center & Pub",
     "town": "New Bedford",
     "first_start": "2026-11-26T18:30:00-05:00",
+    "rows": 13
+   },
+   {
+    "title": "Musical Bingo (weekly)",
+    "venue": "The Liberal Club",
+    "town": "Fall River",
+    "first_start": "2026-12-02T19:00:00-05:00",
     "rows": 13
    },
    {
@@ -203,32 +210,18 @@
     "rows": 13
    },
    {
+    "title": "Wing Wednesday!!",
+    "venue": "St James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-12-02T18:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-11-26T18:00:00-05:00",
     "rows": 13
-   },
-   {
-    "title": "COME JOIN THE CHORUS! Greater New Bedford Choral Society Open Rehearsals Begin September 9th, 2026",
-    "venue": "First Unitarian Church in New Bedford - Parish Hall",
-    "town": "New Bedford",
-    "first_start": "2026-12-02T18:30:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Musical Bingo (weekly)",
-    "venue": "The Liberal Club",
-    "town": "Fall River",
-    "first_start": "2026-12-02T19:00:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-12-02T18:00:00-05:00",
-    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -389,6 +382,13 @@
     "venue": "New Bedford Whaling Museum",
     "town": "New Bedford",
     "first_start": "2026-12-02T12:00:00-05:00",
+    "rows": 1
+   },
+   {
+    "title": "Arts Illuminated talk show, sale: Give the gift of art!",
+    "venue": "The Steeple Playhouse",
+    "town": "New Bedford",
+    "first_start": "2026-12-10T18:00:00-05:00",
     "rows": 1
    },
    {
@@ -697,9 +697,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 126,
-  "primary_only_series": 59,
-  "coverage_ratio": 0.042
+  "primary_only_count": 105,
+  "primary_only_series": 38,
+  "coverage_ratio": 0.039
  },
  "tide_error": null
 }
