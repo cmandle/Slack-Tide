@@ -1,202 +1,8 @@
 {
- "generated_at": "2026-11-27T04:17:47.004001+00:00",
- "series_count": 51,
- "occurrence_count": 118,
+ "generated_at": "2026-11-27T19:29:52.309665+00:00",
+ "series_count": 50,
+ "occurrence_count": 117,
  "series": [
-  {
-   "id": "59a471eb1d08",
-   "title": "Trivia night",
-   "venue": "PLAY Arcade",
-   "town": "New Bedford",
-   "category": "Nightlife",
-   "source_id": "standing-new-bedford",
-   "url": "https://www.playarcadenb.com/",
-   "cost": "",
-   "first_start": "2026-11-25T19:00:00-05:00",
-   "last_start": "2027-02-24T19:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-25T19:00:00-05:00",
-     "end": "2026-11-25T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T19:00:00-05:00",
-     "end": "2026-12-02T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T19:00:00-05:00",
-     "end": "2026-12-09T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T19:00:00-05:00",
-     "end": "2026-12-16T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T19:00:00-05:00",
-     "end": "2026-12-23T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T19:00:00-05:00",
-     "end": "2026-12-30T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-06T19:00:00-05:00",
-     "end": "2027-01-06T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-13T19:00:00-05:00",
-     "end": "2027-01-13T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-20T19:00:00-05:00",
-     "end": "2027-01-20T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-01-27T19:00:00-05:00",
-     "end": "2027-01-27T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-03T19:00:00-05:00",
-     "end": "2027-02-03T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-10T19:00:00-05:00",
-     "end": "2027-02-10T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-17T19:00:00-05:00",
-     "end": "2027-02-17T21:00:00-05:00",
-     "all_day": false
-    },
-    {
-     "start": "2027-02-24T19:00:00-05:00",
-     "end": "2027-02-24T21:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "categories": [
-    "Nightlife"
-   ],
-   "approval": "approved",
-   "decided_by": "mail@l3l.us",
-   "edits": {},
-   "original": {},
-   "edited_by": "",
-   "edited_on": ""
-  },
-  {
-   "id": "4c93cfea1082",
-   "title": "Trivia night",
-   "venue": "New Beige",
-   "town": "New Bedford",
-   "category": "Nightlife",
-   "source_id": "standing-new-bedford",
-   "url": "https://newbeigema.squarespace.com/",
-   "cost": "",
-   "first_start": "2026-11-25T19:00:00-05:00",
-   "last_start": "2027-02-24T19:00:00-05:00",
-   "count": 14,
-   "cadence": "weekly",
-   "weekday": 2,
-   "occurrences": [
-    {
-     "start": "2026-11-25T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-02T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-09T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-16T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-23T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2026-12-30T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-06T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-13T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-20T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-01-27T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-02-03T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-02-10T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-02-17T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    },
-    {
-     "start": "2027-02-24T19:00:00-05:00",
-     "end": null,
-     "all_day": false
-    }
-   ],
-   "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
-   "categories": [
-    "Nightlife"
-   ],
-   "approval": "approved",
-   "decided_by": "mail@l3l.us",
-   "edits": {},
-   "original": {},
-   "edited_by": "",
-   "edited_on": ""
-  },
   {
    "id": "1fc8a5984799",
    "title": "Karaoke",
@@ -207,8 +13,8 @@
    "url": "https://www.playarcadenb.com/",
    "cost": "",
    "first_start": "2026-11-26T20:00:00-05:00",
-   "last_start": "2027-02-18T20:00:00-05:00",
-   "count": 13,
+   "last_start": "2027-02-25T20:00:00-05:00",
+   "count": 14,
    "cadence": "weekly",
    "weekday": 3,
    "occurrences": [
@@ -276,6 +82,11 @@
      "start": "2027-02-18T20:00:00-05:00",
      "end": "2027-02-19T00:00:00-05:00",
      "all_day": false
+    },
+    {
+     "start": "2027-02-25T20:00:00-05:00",
+     "end": "2027-02-26T00:00:00-05:00",
+     "all_day": false
     }
    ],
    "summary": "",
@@ -290,23 +101,28 @@
    "edited_on": ""
   },
   {
-   "id": "d89f8045f686",
-   "title": "Live Music: Tayla Davis",
+   "id": "d36010159f29",
+   "title": "Live Music: Jake Davis",
    "venue": "Sakonnet Vineyard",
    "town": "Little Compton",
    "category": "Nightlife",
    "source_id": "sakonnet-vineyard",
-   "url": "https://www.sakonnetwine.com/events/live-music-tayla-davis",
+   "url": "https://www.sakonnetwine.com/events/live-music-jake-davis-1",
    "cost": "",
    "first_start": "2026-11-27T15:00:00-05:00",
-   "last_start": "2026-11-27T15:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
+   "last_start": "2026-12-26T13:00:00-05:00",
+   "count": 2,
+   "cadence": "irregular",
    "weekday": null,
    "occurrences": [
     {
      "start": "2026-11-27T15:00:00-05:00",
      "end": "2026-11-27T18:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-26T13:00:00-05:00",
+     "end": "2026-12-26T16:00:00-05:00",
      "all_day": false
     }
    ],
@@ -702,6 +518,190 @@
     }
    ],
    "summary": "A whole sustainably caught tuna carved in front of the room, served as sashimi and poke. Reservations on the venue's page.",
+   "categories": [
+    "Nightlife"
+   ],
+   "approval": "approved",
+   "decided_by": "mail@l3l.us",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
+  },
+  {
+   "id": "59a471eb1d08",
+   "title": "Trivia night",
+   "venue": "PLAY Arcade",
+   "town": "New Bedford",
+   "category": "Nightlife",
+   "source_id": "standing-new-bedford",
+   "url": "https://www.playarcadenb.com/",
+   "cost": "",
+   "first_start": "2026-12-02T19:00:00-05:00",
+   "last_start": "2027-02-24T19:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": "2026-12-02T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": "2026-12-09T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": "2026-12-16T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T19:00:00-05:00",
+     "end": "2026-12-23T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T19:00:00-05:00",
+     "end": "2026-12-30T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-06T19:00:00-05:00",
+     "end": "2027-01-06T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-13T19:00:00-05:00",
+     "end": "2027-01-13T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-20T19:00:00-05:00",
+     "end": "2027-01-20T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-01-27T19:00:00-05:00",
+     "end": "2027-01-27T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-03T19:00:00-05:00",
+     "end": "2027-02-03T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-10T19:00:00-05:00",
+     "end": "2027-02-10T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-17T19:00:00-05:00",
+     "end": "2027-02-17T21:00:00-05:00",
+     "all_day": false
+    },
+    {
+     "start": "2027-02-24T19:00:00-05:00",
+     "end": "2027-02-24T21:00:00-05:00",
+     "all_day": false
+    }
+   ],
+   "summary": "",
+   "categories": [
+    "Nightlife"
+   ],
+   "approval": "approved",
+   "decided_by": "mail@l3l.us",
+   "edits": {},
+   "original": {},
+   "edited_by": "",
+   "edited_on": ""
+  },
+  {
+   "id": "4c93cfea1082",
+   "title": "Trivia night",
+   "venue": "New Beige",
+   "town": "New Bedford",
+   "category": "Nightlife",
+   "source_id": "standing-new-bedford",
+   "url": "https://newbeigema.squarespace.com/",
+   "cost": "",
+   "first_start": "2026-12-02T19:00:00-05:00",
+   "last_start": "2027-02-24T19:00:00-05:00",
+   "count": 13,
+   "cadence": "weekly",
+   "weekday": 2,
+   "occurrences": [
+    {
+     "start": "2026-12-02T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-09T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-16T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-23T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2026-12-30T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-06T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-13T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-20T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-01-27T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-03T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-10T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-17T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    },
+    {
+     "start": "2027-02-24T19:00:00-05:00",
+     "end": null,
+     "all_day": false
+    }
+   ],
+   "summary": "Themed rounds mixed with general trivia; play alone or with a team. Reservations are not required.",
    "categories": [
     "Nightlife"
    ],
@@ -1616,38 +1616,6 @@
    ],
    "approval": "approved",
    "decided_by": "source trust",
-   "edits": {},
-   "original": {},
-   "edited_by": "",
-   "edited_on": ""
-  },
-  {
-   "id": "d36010159f29",
-   "title": "Live Music: Jake Davis",
-   "venue": "Sakonnet Vineyard",
-   "town": "Little Compton",
-   "category": "Nightlife",
-   "source_id": "sakonnet-vineyard",
-   "url": "https://www.sakonnetwine.com/events/live-music-jake-davis",
-   "cost": "",
-   "first_start": "2026-12-26T13:00:00-05:00",
-   "last_start": "2026-12-26T13:00:00-05:00",
-   "count": 1,
-   "cadence": "once",
-   "weekday": null,
-   "occurrences": [
-    {
-     "start": "2026-12-26T13:00:00-05:00",
-     "end": "2026-12-26T16:00:00-05:00",
-     "all_day": false
-    }
-   ],
-   "summary": "",
-   "categories": [
-    "Nightlife"
-   ],
-   "approval": "approved",
-   "decided_by": "mail@l3l.us",
    "edits": {},
    "original": {},
    "edited_by": "",

@@ -1,43 +1,43 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 155,
-   "seconds": 5.62
+   "rows": 154,
+   "seconds": 4.85
   },
   "viva-fall-river": {
-   "rows": 227,
-   "seconds": 13.79
+   "rows": 224,
+   "seconds": 14.66
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.39
+   "seconds": 0.53
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 5.67
+   "seconds": 4.31
   },
   "cisco-live-music": {
    "rows": 17,
-   "seconds": 0.23
+   "seconds": 0.36
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.36
+   "seconds": 0.49
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 1.04
+   "seconds": 0.95
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.88
+   "seconds": 0.28
   },
   "sakonnet-vineyard": {
-   "rows": 8,
-   "seconds": 0.97
+   "rows": 9,
+   "seconds": 1.06
   },
   "standing-new-bedford": {
-   "rows": 63,
+   "rows": 62,
    "seconds": 0.0
   }
  },
@@ -47,20 +47,20 @@
  },
  "primary_rows": 118,
  "dropped": {},
- "series": 51,
+ "series": 50,
  "approval": {
-  "approved": 41,
+  "approved": 40,
   "pending": 10
  },
  "by_town": {
   "New Bedford": 38,
-  "Little Compton": 8,
+  "Little Compton": 7,
   "": 3,
   "Wareham": 1,
   "Acushnet": 1
  },
  "by_category": {
-  "Nightlife": 22,
+  "Nightlife": 21,
   "Community": 2,
   "Seasonal": 8,
   "Arts": 14,
@@ -69,8 +69,8 @@
  },
  "by_cadence": {
   "weekly": 6,
-  "once": 39,
-  "irregular": 2,
+  "irregular": 3,
+  "once": 37,
   "monthly": 3,
   "weekends": 1
  },
@@ -85,9 +85,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 382,
+  "check_total": 378,
   "check_matched": 15,
-  "check_missed_rows": 367,
+  "check_missed_rows": 363,
   "check_missed_series": 86,
   "check_missed": [
    {
@@ -147,13 +147,6 @@
     "rows": 13
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-11-26T18:30:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Musical Bingo (weekly)",
     "venue": "The Liberal Club",
     "town": "Fall River",
@@ -203,25 +196,32 @@
     "rows": 13
    },
    {
-    "title": "Thursday Night Trivia",
-    "venue": "St James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-11-26T20:00:00-05:00",
-    "rows": 13
-   },
-   {
     "title": "Wing Wednesday!!",
-    "venue": "St James Irish Pub",
+    "venue": "Saint James Irish Pub",
     "town": "Fall River",
     "first_start": "2026-12-02T18:00:00-05:00",
     "rows": 13
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-12-03T18:30:00-05:00",
+    "rows": 12
+   },
+   {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-12-03T20:00:00-05:00",
+    "rows": 12
+   },
+   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
-    "first_start": "2026-11-26T18:00:00-05:00",
-    "rows": 13
+    "first_start": "2026-12-03T18:00:00-05:00",
+    "rows": 12
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -301,13 +301,6 @@
     "rows": 3
    },
    {
-    "title": "Silent Book Club",
-    "venue": "Once Upon a Bookstore",
-    "town": "Fall River",
-    "first_start": "2026-11-26T18:30:00-05:00",
-    "rows": 3
-   },
-   {
     "title": "City of New Bedford Holiday Tree Lightings",
     "venue": "Multiple Locations See Description",
     "town": "New Bedford",
@@ -333,6 +326,13 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-12-18T20:00:00-05:00",
+    "rows": 2
+   },
+   {
+    "title": "Silent Book Club",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-12-31T18:30:00-05:00",
     "rows": 2
    },
    {
@@ -697,9 +697,9 @@
    "Fall River",
    "New Bedford"
   ],
-  "primary_only_count": 105,
+  "primary_only_count": 104,
   "primary_only_series": 38,
-  "coverage_ratio": 0.039
+  "coverage_ratio": 0.04
  },
  "tide_error": null
 }
