@@ -1,40 +1,40 @@
 {
  "sources": {
   "explore-new-bedford": {
-   "rows": 154,
-   "seconds": 4.85
+   "rows": 155,
+   "seconds": 4.58
   },
   "viva-fall-river": {
-   "rows": 224,
-   "seconds": 14.66
+   "rows": 227,
+   "seconds": 12.59
   },
   "zeiterion": {
    "rows": 22,
-   "seconds": 0.53
+   "seconds": 0.47
   },
   "buzzards-bay-coalition": {
    "rows": 3,
-   "seconds": 4.31
+   "seconds": 4.08
   },
   "cisco-live-music": {
    "rows": 17,
-   "seconds": 0.36
+   "seconds": 0.23
   },
   "south-coast-places-for-people": {
    "rows": 0,
-   "seconds": 0.49
+   "seconds": 0.47
   },
   "south-coast-girls-walk": {
    "rows": 2,
-   "seconds": 0.95
+   "seconds": 1.05
   },
   "hatch-street-studios": {
    "rows": 3,
-   "seconds": 0.28
+   "seconds": 0.37
   },
   "sakonnet-vineyard": {
    "rows": 9,
-   "seconds": 1.06
+   "seconds": 1.0
   },
   "standing-new-bedford": {
    "rows": 62,
@@ -85,9 +85,9 @@
   "passes": false
  },
  "reconcile": {
-  "check_total": 378,
+  "check_total": 382,
   "check_matched": 15,
-  "check_missed_rows": 363,
+  "check_missed_rows": 367,
   "check_missed_series": 86,
   "check_missed": [
    {
@@ -147,6 +147,13 @@
     "rows": 13
    },
    {
+    "title": "Musical Bingo",
+    "venue": "The Vault Performing Arts Center & Pub",
+    "town": "New Bedford",
+    "first_start": "2026-12-03T18:30:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Musical Bingo (weekly)",
     "venue": "The Liberal Club",
     "town": "Fall River",
@@ -196,6 +203,13 @@
     "rows": 13
    },
    {
+    "title": "Thursday Night Trivia",
+    "venue": "Saint James Irish Pub",
+    "town": "Fall River",
+    "first_start": "2026-12-03T20:00:00-05:00",
+    "rows": 13
+   },
+   {
     "title": "Wing Wednesday!!",
     "venue": "Saint James Irish Pub",
     "town": "Fall River",
@@ -203,25 +217,11 @@
     "rows": 13
    },
    {
-    "title": "Musical Bingo",
-    "venue": "The Vault Performing Arts Center & Pub",
-    "town": "New Bedford",
-    "first_start": "2026-12-03T18:30:00-05:00",
-    "rows": 12
-   },
-   {
-    "title": "Thursday Night Trivia",
-    "venue": "Saint James Irish Pub",
-    "town": "Fall River",
-    "first_start": "2026-12-03T20:00:00-05:00",
-    "rows": 12
-   },
-   {
     "title": "Zach Guillette Thursdays",
     "venue": "Canned Heat Craft Beer Co.",
     "town": "Fall River",
     "first_start": "2026-12-03T18:00:00-05:00",
-    "rows": 12
+    "rows": 13
    },
    {
     "title": "Free All Levels Yoga (Tuesdays & Thursdays)",
@@ -301,6 +301,13 @@
     "rows": 3
    },
    {
+    "title": "Silent Book Club",
+    "venue": "Once Upon a Bookstore",
+    "town": "Fall River",
+    "first_start": "2026-12-31T18:30:00-05:00",
+    "rows": 3
+   },
+   {
     "title": "City of New Bedford Holiday Tree Lightings",
     "venue": "Multiple Locations See Description",
     "town": "New Bedford",
@@ -326,13 +333,6 @@
     "venue": "Narrows Center for the Arts",
     "town": "Fall River",
     "first_start": "2026-12-18T20:00:00-05:00",
-    "rows": 2
-   },
-   {
-    "title": "Silent Book Club",
-    "venue": "Once Upon a Bookstore",
-    "town": "Fall River",
-    "first_start": "2026-12-31T18:30:00-05:00",
     "rows": 2
    },
    {
@@ -699,7 +699,7 @@
   ],
   "primary_only_count": 104,
   "primary_only_series": 38,
-  "coverage_ratio": 0.04
+  "coverage_ratio": 0.039
  },
  "tide_error": null
 }
